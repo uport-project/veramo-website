@@ -53,6 +53,8 @@ async function main() {
           if (id === 'index') {
             skip = true
           }
+
+          skip = true
         }
 
         // See issue #4. api-documenter expects \| to escape table

@@ -26,18 +26,18 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'docs/plugins/introduction',
+          to: 'docs/agent/core_plugins',
           activeBasePath: 'docs',
           label: 'Plugins',
           position: 'right',
         },
         {
-          to: 'docs/api/index',
+          to: 'docs/api/daf-core',
           activeBasePath: 'docs',
           label: 'API',
           position: 'right',
         },
-        { to: 'blog', label: 'Community', position: 'right' },
+        { to: 'community', label: 'Community', position: 'right' },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
           href: 'https://github.com/uport-project/daf',
