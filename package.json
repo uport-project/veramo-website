@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production yarn build && docusaurus serve --port $PORT",
+    "start": "NODE_ENV=production docusaurus serve --port $PORT",
     "dev": "docusaurus start",
     "serve": "docusaurus serve",
     "docusaurus": "docusaurus",
@@ -11,7 +11,8 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "docs:prepare": "ts-node ./scripts/prepare-docs.ts",
-    "docs:build": "ts-node ./scripts/build-docs.ts"
+    "docs:build": "ts-node ./scripts/build-docs.ts",
+    "postinstall": "yarn build"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.66",
