@@ -68,6 +68,10 @@ async function main() {
         // MDX cries when you put commects in there :(
         line = line.replace('<!-- -->', ' ')
 
+        if (id === 'daf-core') {
+          line = line.replace('daf-core package', '@veramo/core')
+        }
+
         if (!skip) {
           output.push(line)
         }

@@ -12,9 +12,7 @@ Description for plugin type.
 
 ### `@veramo/plugin-did-comm`
 
-Description for plugin. Each plugin should have description and a link to it's API docs if available.
-
-[API Reference](/docs/api/daf-did-comm)
+This plugin provides a method of creating an encrypted message according to the initial DIDComm-js implementation. See the [API Reference](/docs/api/daf-did-comm) for more info.
 
 ### `@veramo/plugin-did-jwt`
 
