@@ -37,8 +37,8 @@ module.exports = {
           label: 'API',
           position: 'right',
         },
-        {to: 'community', label: 'Community', position: 'right'},
-        {to: 'blog', label: 'Blog', position: 'right'},
+        { to: 'blog', label: 'Community', position: 'right' },
+        { to: 'blog', label: 'Blog', position: 'right' },
         {
           href: 'https://github.com/uport-project/daf',
           label: 'GitHub',
@@ -103,14 +103,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -118,4 +116,4 @@ module.exports = {
       },
     ],
   ],
-};
+}
