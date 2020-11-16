@@ -4,23 +4,21 @@ title: React Native
 sidebar_label: React Native
 ---
 
-This guide will walk you through setting up Veramo on React Native.
+This guide will walk you through setting up Veramo on React Native. You should have a good understanding of React Native and have your environment set up correctly to build iOS and Android apps. Check out the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more.
 
 ## Introduction
 
-For this guide we will setup Veramo run to locally on the device and use `sqlite` to store data, identities and keys. The identity provider will be `ethr-did`.
-
-Initially, we will setup the [agent](/docs/agent/introduction) in the most basic config and add more plugins for additional functionality. The stages will be:
+Let's setup Veramo run to locally on the device and use `sqlite` to store data, identities and keys. Our identity provider will be `ethr-did`. Initially, we will setup the [agent](/docs/agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/fundamentals/identifiers).
 
 ## Bootstrap React Native
 
-Use the React Native CLI bootstrap a new typescript react project
+Use the React Native CLI bootstrap a new typescript react project:
 
 ```bash
 npx react-native init Veramo --template react-native-template-typescript
 ```
 
-Ensuring your project is building and running ok before continuing to next step.
+Ensure your project is building and running ok before continuing to next step.
 
 ## Install Dependencies
 
@@ -144,12 +142,14 @@ export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & I
 })
 ```
 
+Awesome! That's the basic agent configured and ready to use. Let's try it out :rocket:
+
 ## Basic User Interface
 
-Now that the agent has been set and configured with plugins we can use it to create some identifers. For this we will need some basic UI.
+Now that the agent has been created and configured with plugins we can use it to create some identifers. For this we will need some basic UI.
 
 :::note
-Veramo does not impose decisions how you manage state in your app and will work along side any exsiting architecture like Redux or Mobx etc. You can treat Veramo like you would any async data source.
+Veramo does not impose decisions how you manage state in your app and will work along side any exsiting architecture like Redux or Mobx etc. For brevity we just use `useState` in this example but you can treat Veramo like you would any async data source.
 :::
 
 Open `App.tsx` and delete all the contents and add the following code:
@@ -194,7 +194,7 @@ const App = () => {
           <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Identifiers</Text>
           <View style={{ marginBottom: 50, marginTop: 20 }}>
             {identifiers && identifiers.length > 0 ? (
-              identifiers.map((id) => (
+              identifiers.map((id: Identifier) => (
                 <View key={id.did}>
                   <Text>{id.did}</Text>
                 </View>
@@ -215,4 +215,4 @@ Close the packager and rebuild the app. Once loaded hit the `Create identifier` 
 
 ## Verifiable Credentials
 
-So now we have the ability to create identifers, store them in a database and query form them. Next we will use an identifer to create some Verifiable Credentials, save them to the database and query for them.
+So now we have the ability to create identifers, store them in a database and query for them. Next we will use an identifer to create some Verifiable Credentials, save them to the database and query for them too.
