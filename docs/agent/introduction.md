@@ -19,7 +19,7 @@ An Agent is responsibe for but not limited to:
 
 The agent is the main class and when instantiated orchestrates the plugins; both core and custom. You can build plugins easily to support any standard you need and you can share or even sell & license them to others.
 
-Methods defines in plugins are available on the agent instance eg:
+Methods defined in plugins are available on the agent instance eg:
 
 ```javascript
 const message = await agent.handleMessage({
@@ -27,9 +27,67 @@ const message = await agent.handleMessage({
 })
 ```
 
-If the agent is exposed as a REST interface the method will also be available using Open API:
+If the agent is exposed as a REST interface the method will also be available using Open API. This is a [cloud agent](/docs/agent/cloud_agent).
 
 ```
 POST https://veramo.dev/agent/handleMessage
+```
 
+## Configuration
+
+An agent can be manually configured by installing plugins from npm, running a node application and [creating a setup](/docs/guides/introduction) file to instatiate the agent class. You can also create a `.yml` file with full configuration.
+
+Here is a trimmed down version of the configuration file used for the standard cloud agent [one click heroku deployment](https://github.com/uport-project/daf-deploy-heroku).
+
+```yml
+server:
+  baseUrl:
+    $env: APP_URL
+  port: 5000
+  apiKey:
+    $env: API_KEY
+  schemaPath: /open-api.json
+  apiBasePath:
+    $env: AGENT_ENDPOINT
+  apiDocsPath: /api-docs
+  defaultIdentity:
+    create: true
+    messagingServiceEndpoint: /messaging
+constants:
+  secretKey:
+    $env: SECRET_KEY
+dbConnection:
+  $require: typeorm?t=function#createConnection
+  $args:
+    - type: postgres
+      url:
+        $env: DATABASE_URL
+      synchronize: true
+      logging: false
+      entities:
+        $require: daf-typeorm?t=object#Entities
+messageHandler:
+  $require: daf-message-handler#MessageHandler
+  $args:
+    - messageHandlers:
+        - $require: daf-did-comm#DIDCommMessageHandler
+        - $require: daf-did-jwt#JwtMessageHandler
+        - $require: daf-w3c#W3cMessageHandler
+        - $require: daf-selective-disclosure#SdrMessageHandler
+agent:
+  $require: daf-core#Agent
+  $args:
+    - plugins:
+        - $require: daf-key-manager#KeyManager
+          $args:
+            - store:
+                $require: daf-typeorm#KeyStore
+                $args:
+                  - $ref: /dbConnection
+                  - $require: daf-libsodium#SecretBox
+                    $args:
+                      - $ref: /constants/secretKey
+              kms:
+                local:
+                  $require: daf-libsodium#KeyManagementSystem
 ```

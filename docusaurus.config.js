@@ -26,7 +26,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'docs/agent/core_plugins',
+          to: 'docs/agent/plugins_list',
           activeBasePath: 'docs',
           label: 'Plugins',
           position: 'right',

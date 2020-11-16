@@ -4,6 +4,6 @@ title: Cloud Agent
 sidebar_label: Cloud Agent
 ---
 
-A cloud agent is an agent that is running in your own cloud environment that you can access remotely over `REST` or `GraphQL`.
+A cloud agent is a server exposing agent OpenAPI and you can access the agent via REST using an API key. You can create your own cloud agent set or you can use the cli and a .yml configuration like we have in our [Heroku Cloud Agent](https://github.com/uport-project/daf-deploy-heroku).
 
-To deploy your own cloud agent you can follow our tutorial here. A cloud agent could be for an individual, an organisation or a service. Customising the cloud agent with your own plugins in very easy using a configuration file and the server included in the CLI. We also a have a cloud configuration wizard to help you.
+A cloud agent could be for an individual, an organisation or a service. Depending on what you are building you could have multiple cloud agents running in your infrastructure.
