@@ -8,102 +8,66 @@ We have a growing list of plugins to support a wide range of standards. If there
 
 ### @veramo/plugin-identity-manager
 
-[`identity-manager`](#identity-manager)
+[`identity-manager`](/docs/agent/plugins#identity-manager)
 
 ### @veramo/plugin-ethr-did
 
-[`identity-provider`](#identity-provider)
+[`identity-provider`](/docs/agent/plugins#identity-provider)
 
 ### @veramo/plugin-web-did
 
-[`identity-provider`](#identity-provider)
+[`identity-provider`](/docs/agent/plugins#identity-provider)
 
 ### @veramo/plugin-key-manager
 
-[`key-manager`](#key-manager)
+[`key-manager`](/docs/agent/plugins#key-manager)
 
 ### @veramo/plugin-lib-sodium
 
-[`kms`](#kms)
+[`kms`](/docs/agent/plugins#kms)
 
 ### @veramo/plugin-resolver
 
-[`resolver`](#resolver)
+[`resolver`](/docs/agent/plugins#resolver)
 
 ### @veramo/plugin-resolver-universal
 
-[`resolver`](#resolver)
+[`resolver`](/docs/agent/plugins#resolver)
 
 ### @veramo/plugin-did-comm
 
-[`message-handler`](#message-handler)
+[`message-handler`](/docs/agent/plugins#message-handler)
 
 This plugin provides a method of creating an encrypted message according to the initial DIDComm-js implementation. See the [API Reference](/docs/api/daf-did-comm) for more info.
 
 ### @veramo/plugin-did-jwt
 
-[`message-handler`](#message-handler)
+[`message-handler`](/docs/agent/plugins#message-handler)
 
 ### @veramo/plugin-message-handler
 
-[`message-handler`](#message-handler)
+[`message-handler`](/docs/agent/plugins#message-handler)
 
 ### @veramo/plugin-url
 
-[`message-handler`](#message-handler)
+[`message-handler`](/docs/agent/plugins#message-handler)
 
 ### @veramo/plugin-selective-disclosure
 
-[`message-handler`](#message-handler) [`action-handler`](#action-handler)
+[`message-handler`](/docs/agent/plugins#message-handler) [`action-handler`](/docs/agent/plugins#action-handler)
 
 ### @veramo/plugin-w3c
 
-[`message-handler`](#message-handler) [`action-handler`](#action-handler)
+[`message-handler`](/docs/agent/plugins#message-handler) [`action-handler`](/docs/agent/plugins#action-handler)
 
 ### @veramo/plugin-express
 
-[`enhancer`](#message-handler)
+[`enhancer`](/docs/agent/plugins#message-handler)
 
 ### @veramo/plugin-type-orm
 
-[`data-store`](#data-store) [`enhancer`](#message-handler)
+[`data-store`](/docs/agent/plugins#data-store) [`enhancer`](/docs/agent/plugins#message-handler)
 
 ### @veramo/plugin-rest
 
-[`enhancer`](#message-handler)
-
-## Plugin Types
-
-Plugins can extend core classes or provide convenicence functions to the agent.
-
-### `identity-manager`
-
-A common API for an identity manager. You extend this by adding providers.
-
-### `identity-provider`
-
-A specific identity provider implementation.
-
-### `key-manager`
-
-A common API for managing keys. You extend this by adding key management systems.
-
-### `kms`
-
-A specific implementation of a KMS.
-
-### `message-handler`
-
-A common API for handling messages.
-
-### `data-store`
-
-A common API for data storage.
-
-### `action-handler`
-
-?
-
-### `enhancer`
-
-Adds additional functionality to agent outside the core classes.
+[`enhancer`](/docs/agent/plugins#message-handler)

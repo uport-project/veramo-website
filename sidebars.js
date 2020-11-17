@@ -11,7 +11,7 @@ module.exports = {
       'fundamentals/verification',
     ],
     Agent: ['agent/introduction', 'agent/cloud_agent', 'agent/plugins', 'agent/plugins_list'],
-    Guides: ['guides/introduction', 'guides/browser', 'guides/react_native', 'guides/create_plugin'],
+    Guides: ['guides/nodejs', 'guides/browser', 'guides/react_native', 'guides/create_plugin'],
     Architecture: ['architecture/introduction'],
     // Plugins: ["plugins/introduction"]
   },

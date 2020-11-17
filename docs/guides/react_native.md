@@ -65,8 +65,8 @@ Close the react native packager, clean the project and run your app again. If ev
 
 Now let's install Veramo Core and some plugins. Don't worry, we will walk through what each one of these plugins does in the next step.
 
-```bash=
-yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-react-native-libsodium @veramo/plugin-ethr-did @veramo/plugin-key-manager @veramo/plugin-react-native-libsodium @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
+```bash
+yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-react-native-libsodium @veramo/plugin-ethr-did @veramo/plugin-key-manager @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
 ```
 
 ## Bootstrap Veramo
