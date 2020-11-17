@@ -84,9 +84,6 @@ import { createConnection } from 'typeorm'
 Create some variables that we will use later
 
 ```ts
-// This will be used to encrypt the database so it should be injected in here using an environment variable
-const SECRET_KEY = 'SOME_SECRET_KEY'
-
 // This will be the name for the local sqlite database for demo purposes
 const DATABASE_FILE = 'database.sqlite'
 
@@ -112,7 +109,7 @@ Create the agent by using the createAgent method from `@veramo/core`
 export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
   plugins: [
     new KeyManager({
-      store: new KeyStore(dbConnection, new SecretBox(SECRET_KEY)),
+      store: new KeyStore(dbConnection),
       kms: {
         local: new KeyManagementSystem(),
       },
