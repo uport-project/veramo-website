@@ -26,10 +26,28 @@ If you are more experienced with verifiable data concepts and or development in 
 
 You need to have fundamental knowledge of JavaScript or some other programming language.
 
-## How we got here
+## Why Veramo?
 
-The core team spent years working on products that used verifiable data and found that there were so many dependencies and moving parts that it was near impossible to manage across multiple platforms (mobile, web & server) and still have time to focus on the product.
+The core team have extensive experience working on digital identity products that use verifiable data as the core building blocks.
 
-Our objective was to create a framework that would abstract all of the underlying complexity that exists in applications that use digital data verification. Originally the team were focused on products in the identity space but when the core components were abstracted away it became clear that identity was just one of many product types that could be built using Veramo.
+A major problem the team encountered while working on [uPort](/docs/) and helping companies implement some flavour of digital identity was that managing dependencies across multiple platforms eg server, mobile and web became increasing more complex as time went on. Add changing standards to that and you quickly find you spend more time managing, debugging the tools juggling disparate systems than focusing on the product and delivering value to your users. Consistency, repeatability and thus scalablity was challenging to say the least. We needed a framework that abstracted away all of the underlying complexity. We yearned for a clean predicatable api that was the same no matter what platform you are on. Flexibility, modularity and scalability were among the most important mission critial attributes for Veramo.
 
-For these reasons we say that Veramo is not specifically an SSI (Self Sovereign Identity) framework; it provides the foundation and tools to build SSI and many other data verification related products.
+> Veramo was designed from the ground up on modularity, open standards and interoperability at its core.
+
+### The drawing board
+
+As with any good re-architecture we started from the most basic building blocks. We make no assumption from the beginning on the architecture of the applications that will build on Veramo. For this reason we belive that Veramo is a more low-level foundational framework than previous tooling and services provided by uPort.
+
+At uPort we built little pieces of the whole stack including a mobile app, messaging service and other infrastructure pieces which are all reaching end of life in the coming months.
+
+Veramo doesn't impose restrictions on your application logic or UX layer. We learned that in order to build a framework that can scale these higher level components need to be decoupled allowing product owners and developers the freedom to design products for their unique audience.
+
+### What happens if feature X is missing?
+
+We envision an ecosystem of great plugins that add lots of functionality for all sorts of applications. If there is something you are missing you have options:
+
+- Make a [plugin request](/docs/fundamentals/introduction) for the team to build it for you
+- Make a request for a member of the community to help build it
+- [Build it yourself](/docs/agent/plugins) and start an internal repository of private plugins that you can use in multiple products and or open-source or even license the plugin to others if you think others would benefit
+
+You can also [book a workshop](/docs/fundamentals/introduction) to discuss your architecture needs with the team.

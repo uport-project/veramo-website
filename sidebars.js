@@ -2,6 +2,7 @@ module.exports = {
   someSidebar: {
     Fundamentals: [
       'fundamentals/introduction',
+      'fundamentals/why_veramo',
       'fundamentals/verifiable_data',
       'fundamentals/identifiers',
       'fundamentals/signing_keys',
