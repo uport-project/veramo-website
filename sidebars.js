@@ -18,7 +18,7 @@ module.exports = {
       'advanced/data_flow',
       'advanced/event_system',
       'advanced/plugin_system',
-      'advanced/roadmap',
+      'advanced/beta_versions',
     ],
   },
 }

@@ -55,7 +55,7 @@ readonly schema: {
                     type: string;
                     properties: {
                         id: {
-                            type: string;
+                            type: string; /** {@inheritDoc daf-core#IMessageHandler.handleMessage} */
                             description: string;
                         };
                         type: {

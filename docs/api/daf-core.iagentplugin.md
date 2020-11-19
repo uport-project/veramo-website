@@ -13,8 +13,10 @@ Agent plugin interface
 <b>Signature:</b>
 
 ```typescript
-export interface IAgentPlugin
+export interface IAgentPlugin extends IEventListener
 ```
+
+<b>Extends:</b> [IEventListener](./daf-core.ieventlistener.md)
 
 ## Properties
 

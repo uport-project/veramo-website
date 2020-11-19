@@ -18,10 +18,10 @@ identityManagerSetAlias(args: IIdentityManagerSetAliasArgs, context: IAgentConte
 
 ## Parameters
 
-| Parameter | Type                                                                                                  | Description                                                                                                                                                         |
-| --------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [IIdentityManagerSetAliasArgs](./daf-core.iidentitymanagersetaliasargs.md)                            | Required. Arguments to set identity alias                                                                                                                           |
-| context   | [IAgentContext](./daf-core.iagentcontext.md) &lt;[IKeyManager](./daf-core.ikeymanager.md)<!-- -->&gt; | <a href="/docs/agent/plugins#executing-plugin-methods">Execution context</a>. Requires <code>agent</code> that has [IKeyManager](./daf-core.ikeymanager.md) methods |
+| Parameter | Type                                                                                                  | Description                                                                                                                                                  |
+| --------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| args      | [IIdentityManagerSetAliasArgs](./daf-core.iidentitymanagersetaliasargs.md)                            | Required. Arguments to set identity alias                                                                                                                    |
+| context   | [IAgentContext](./daf-core.iagentcontext.md) &lt;[IKeyManager](./daf-core.ikeymanager.md)<!-- -->&gt; | <a href="../plugin.md#executing-plugin-methods">Execution context</a>. Requires <code>agent</code> that has [IKeyManager](./daf-core.ikeymanager.md) methods |
 
 <b>Returns:</b>
 
