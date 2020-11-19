@@ -13,7 +13,12 @@ module.exports = {
     ],
     Agent: ['agent/introduction', 'agent/cloud_agent', 'agent/plugins', 'agent/plugins_list'],
     Guides: ['guides/nodejs', 'guides/browser', 'guides/react_native', 'guides/create_plugin'],
-    Architecture: ['architecture/introduction'],
-    // Plugins: ["plugins/introduction"]
+    Advanced: [
+      'advanced/introduction',
+      'advanced/data_flow',
+      'advanced/event_system',
+      'advanced/plugin_system',
+      'advanced/roadmap',
+    ],
   },
 }
