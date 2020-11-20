@@ -1,7 +1,7 @@
 ---
 id: nodejs
-title: NodeJs
-sidebar_label: NodeJs
+title: Node
+sidebar_label: Node
 ---
 
 This guide covers setting up an agent and creating identifers in Node.
