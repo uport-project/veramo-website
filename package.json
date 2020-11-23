@@ -10,14 +10,17 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "docs:prepare": "ts-node ./scripts/prepare-docs.ts",
-    "docs:build": "ts-node ./scripts/build-docs.ts"
+    "docs:pretty": "pretty-quick",
+    "docs:extract": "ts-node ./scripts/docs-extract.ts",
+    "docs:copy": "ts-node ./scripts/docs-copy.ts",
+    "docs:build": "ts-node ./scripts/docs-build.ts && yarn docs:pretty"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.66",
     "@docusaurus/preset-classic": "2.0.0-alpha.66",
     "@mdx-js/react": "^1.5.8",
     "@microsoft/api-documenter": "^7.9.24",
+    "@microsoft/api-extractor": "^7.12.0",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
