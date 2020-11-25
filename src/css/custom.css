@@ -52,7 +52,8 @@
 }
 .hero__title {
   color: var(--brand);
-  font-size: 100px;
+  font-size: 7rem;
+  letter-spacing: 0.1rem;
   font-weight: 500;
 }
 .hero__subtitle {

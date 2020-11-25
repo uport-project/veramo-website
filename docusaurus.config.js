@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Veramo',
+  title: 'Serto',
   tagline: 'A JavaScript Framework for Verifiable Data',
   url: 'https://veramo.herokuapp.com',
   baseUrl: '/',
@@ -13,7 +13,7 @@ module.exports = {
       theme: require('prism-react-renderer/themes/vsDark'),
     },
     navbar: {
-      title: 'Veramo',
+      title: 'Serto',
       logo: {
         alt: 'My Site Logo',
         src: 'img/veramo.png',

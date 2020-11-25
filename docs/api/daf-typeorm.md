@@ -44,6 +44,7 @@ hide_title: true
 | ----------------------------------------- | ----------- |
 | [Entities](./daf-typeorm.entities.md)     |             |
 | [migrations](./daf-typeorm.migrations.md) |             |
+| [schema](./daf-typeorm.schema.md)         |             |
 
 ## Type Aliases
 

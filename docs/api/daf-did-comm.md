@@ -23,3 +23,9 @@ Provides a [plugin](./daf-did-comm.didcomm.md) for the [Agent](./daf-core.agent.
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | [IDIDComm](./daf-did-comm.ididcomm.md)                                           | <b><i>(BETA)</i></b> DID Comm plugin interface for [Agent](./daf-core.agent.md)                                                     |
 | [ISendMessageDIDCommAlpha1Args](./daf-did-comm.isendmessagedidcommalpha1args.md) | <b><i>(BETA)</i></b> Input arguments for [IDIDComm.sendMessageDIDCommAlpha1()](./daf-did-comm.ididcomm.sendmessagedidcommalpha1.md) |
+
+## Variables
+
+| Variable                           | Description |
+| ---------------------------------- | ----------- |
+| [schema](./daf-did-comm.schema.md) |             |

@@ -4,18 +4,18 @@ title: Beta Versions
 sidebar_label: Beta Versions
 ---
 
-We are currently in public beta but we want to make sure that the road is smooth as possible for anyone starting to build applications on Veramo with a view to deploying in production. If you are planning on deploying an application in production within the next year please [contact us here](/docs/) and talk with us about your plans.
+We are currently in public beta but we want to make sure that the road is smooth as possible for anyone starting to build applications on Serto with a view to deploying in production. If you are planning on deploying an application in production within the next year please [contact us here](/docs/) and talk with us about your plans.
 
 Versions for beta will follow this pattern.
 
 ```
-@veramo/core@beta.3
+@serto/core@beta.3
 ```
 
 Minor feature version. This will have new features or refactorings of previous features.
 
 ```
-@veramo/core@beta.3.1 - Minor fix version
+@serto/core@beta.3.1 - Minor fix version
 ```
 
 Patch fix version. This will have bug fixes from the previous major version.

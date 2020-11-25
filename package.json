@@ -10,17 +10,16 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "docs:pretty": "pretty-quick",
+    "docs": "yarn docs:extract && yarn docs:copy && yarn docs:build",
     "docs:extract": "ts-node ./scripts/docs-extract.ts",
     "docs:copy": "ts-node ./scripts/docs-copy.ts",
-    "docs:build": "ts-node ./scripts/docs-build.ts && yarn docs:pretty"
+    "docs:build": "ts-node ./scripts/docs-build.ts && yarn docs:pretty",
+    "docs:pretty": "pretty-quick"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.66",
     "@docusaurus/preset-classic": "2.0.0-alpha.66",
     "@mdx-js/react": "^1.5.8",
-    "@microsoft/api-documenter": "^7.9.24",
-    "@microsoft/api-extractor": "^7.12.0",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
@@ -48,6 +47,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",
     "@docusaurus/types": "^2.0.0-alpha.37",
+    "@microsoft/api-documenter": "^7.9.24",
+    "@microsoft/api-extractor": "^7.12.0",
     "@tsconfig/docusaurus": "^1.0.2",
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.56",

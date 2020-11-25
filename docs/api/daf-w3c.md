@@ -24,3 +24,9 @@ Provides a [plugin](./daf-w3c.credentialissuer.md) for the [Agent](./daf-core.ag
 | [ICreateVerifiableCredentialArgs](./daf-w3c.icreateverifiablecredentialargs.md)     | Encapsulates the parameters required to create a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)     |
 | [ICreateVerifiablePresentationArgs](./daf-w3c.icreateverifiablepresentationargs.md) | Encapsulates the parameters required to create a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations) |
 | [ICredentialIssuer](./daf-w3c.icredentialissuer.md)                                 | The interface definition for a plugin that can generate Verifiable Credentials and Presentations                                   |
+
+## Variables
+
+| Variable                      | Description |
+| ----------------------------- | ----------- |
+| [schema](./daf-w3c.schema.md) |             |

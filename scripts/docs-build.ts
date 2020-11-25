@@ -69,7 +69,7 @@ async function main() {
         line = line.replace('<!-- -->', ' ')
 
         if (id === 'daf-core') {
-          line = line.replace('daf-core package', '@veramo/core')
+          line = line.replace('daf-core package', '@serto/core')
         }
 
         if (!skip) {

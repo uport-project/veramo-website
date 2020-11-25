@@ -41,16 +41,16 @@ const features = [
 ]
 
 const textContent = {
-  tooling: `Veramo is written in TypeScript and includes typings for everything.
+  tooling: `Serto is written in TypeScript and includes typings for everything.
   I’m sure this could be expressed much better but it’s more important to try and fill up this box with real words that 
   people will read.`,
   codeExample: `
-  import * as Veramo from '@veramo/core'
-  import { MessageHandler } from '@veramo/message-handler'
-  import { KeyManager } from '@veramo/key-manager'
+  import * as Serto from '@serto/core'
+  import { MessageHandler } from '@serto/message-handler'
+  import { KeyManager } from '@serto/key-manager'
 
   /* Configure the agent */
-  const agent = Veramo.createAgent({
+  const agent = Serto.createAgent({
     plugins: [
       new KeyManager(/* Key config */),
       new MessageHandler(/* Message config */),
@@ -84,10 +84,10 @@ const textContent = {
   $ veramo credential --create
   `,
 
-  multiPlatform: `Veramo runs on Node, Browsers and React Native straight out of the box`,
-  orchestrateStandards: `Start builing trust layer in your applications today with Veramo. We obsess over standards
+  multiPlatform: `Serto runs on Node, Browsers and React Native straight out of the box`,
+  orchestrateStandards: `Start builing trust layer in your applications today with Serto. We obsess over standards
   and interoperability making it easy to support a wide list of standards in the data verification space.`,
-  awesomeCLI: `Everything in Veramo is exposed by our CLI tool. Create identifiers, run agents and connect to remote agents from you terminal.`,
+  awesomeCLI: `Everything in Serto is exposed by our CLI tool. Create identifiers, run agents and connect to remote agents from you terminal.`,
 }
 
 function BuildTrustNetworks() {
@@ -221,7 +221,7 @@ function Home() {
   return (
     <Layout
       wrapperClassName={'home-page'}
-      title={`Veramo - ${siteConfig.tagline}`}
+      title={`Serto - ${siteConfig.tagline}`}
       description="Description will go into a meta tag in <head />"
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
