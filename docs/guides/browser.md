@@ -9,7 +9,7 @@ Serto core runs natively in the browser. The plugins you use need to also be bro
 Initialise a new `Create React App` project
 
 ```bash
-npx create-react-app init veramo-browser --template typescript
+npx create-react-app init serto-browser --template typescript
 ```
 
 Install veramo core and resolver plugin
@@ -21,8 +21,8 @@ yarn add @serto/core @serto/plugin-resolver
 Create a setup file in `scr/veramo/setup.ts` and add the following code.
 
 ```ts
-import { createAgent, IResolver } from 'daf-core'
-import { DafResolver } from 'daf-resolver'
+import { createAgent, IResolver } from '@serto/core'
+import { DafResolver } from '@serto/resolver'
 
 export const agent = createAgent<IResolver>({
   plugins: [new DafResolver({ infuraProjectId: 'INFURA_PROJECT_ID' })],

@@ -13,7 +13,7 @@ You need to have Node v10 or later installed. In this example we use yarn as the
 Start by creating a directory for our project and initialising the npm package.
 
 ```bash
-mkdir veramo-agent && cd veramo-agent
+mkdir serto-agent && cd serto-agent
 yarn init -y
 ```
 
