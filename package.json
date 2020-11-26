@@ -10,11 +10,13 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "build:daf": "bash ./scripts/build-daf.sh",
     "docs": "yarn docs:extract && yarn docs:copy && yarn docs:build",
     "docs:extract": "ts-node ./scripts/docs-extract.ts",
     "docs:copy": "ts-node ./scripts/docs-copy.ts",
     "docs:build": "ts-node ./scripts/docs-build.ts && yarn docs:pretty",
-    "docs:pretty": "pretty-quick"
+    "docs:pretty": "pretty-quick",
+    "prettier": "prettier --write '{src,docs, !build}/**/*'"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.66",

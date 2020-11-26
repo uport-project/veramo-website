@@ -4,6 +4,7 @@
 # Production
 /build
 /temp
+/daf
 
 # Generated files
 .docusaurus

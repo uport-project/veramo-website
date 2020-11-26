@@ -1,0 +1,79 @@
+version: 2
+aliases:
+  - &check-code-format
+    name: Check code formatting
+    command: yarn prettier --check
+
+  - &restore-cache
+    keys:
+      - v2-dependencies-{{ .Branch }}-{{ checksum "package.json" }}
+      - v2-dependencies-{{ .Branch }}
+  - &save-node-cache
+    key: v2-dependencies-{{ .Branch }}-{{ checksum "package.json" }}
+    paths:
+      - node_modules
+
+  - &install-node-dependencies
+    name: Install node dependencies
+    command: yarn install --frozen-lockfile
+
+defaults: &defaults
+  working_directory: ~/website
+
+jobs:
+  check-formatting:
+    <<: *defaults
+    docker:
+      - image: node:10
+    resource_class: small
+    steps:
+      - checkout
+      - restore_cache: *restore-cache
+      - run: *install-node-dependencies
+      - run: *check-code-format
+      - save_cache: *save-node-cache
+
+  build-api-docs:
+    working_directory: ~/website
+    docker:
+      - image: node:10
+    resource_class: medium
+    steps:
+      - checkout
+      - restore_cache: *restore-cache
+      - run: *install-node-dependencies
+      - run:
+          name: Build Daf
+          command: yarn build:daf
+      - run:
+          name: Build Documentation
+          command: yarn docs
+      - run:
+          name: Authenticate Github
+          command: |
+            git remote set-url origin https://uport-project:$GITHUB_TOKEN@github.com/uport-project/daf-website.git
+            git config --global user.email $GITHUB_EMAIL
+            git config --global user.name $GITHUB_USER
+      - run:
+          name: Push changes to repo
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              git status
+              git add .
+              git commit -m `chore(release)::rocket: api docs v${echo "console.log(require('./daf/lerna.json').version)" | node}`
+              git tag -a v${echo "console.log(require('./daf/lerna.json').version)" | node}
+              git push origin master
+            else
+              echo Not master branch
+              echo "console.log(require('./daf/lerna.json').version)" | node
+            fi
+
+workflows:
+  version: 2
+
+  verify-build-docs:
+    jobs:
+      - check-formatting
+      - build-api-docs:
+          requires:
+            - check-formatting
