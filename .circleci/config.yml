@@ -33,13 +33,25 @@ jobs:
       - run: *check-code-format
       - save_cache: *save-node-cache
 
+  build-api-docs:
+    working_directory: ~/daf
+    docker:
+      - image: node:10
+    resource_class: small
+    steps:
+      - run:
+          name: Checkout Daf
+          conmand: git clone git@github.com:uport-project/daf.git .
+      - run:
+          name: Build Daf Packages
+          command: yarn && yarn build
+
 workflows:
   version: 2
 
   verify-build-local-docs:
     jobs:
       - check-formatting
-
-  # verify-build-api-docs:
-  #   jobs:
-  #     - check-formatting:
+      - build-api-docs:
+          requires:
+            - check-formatting
