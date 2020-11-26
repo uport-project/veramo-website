@@ -10,7 +10,7 @@ Serto is in public beta. There will be some breaking changes in the coming month
 
 :::
 
-Serto is a framework that makes it easy for anyone to use cryptographically verifiable data in their applications. Serto was created to make it easy for developers who want to use dids, verifiable credentials and other data centric protocols to bring next generation features to their users.
+Serto is a JavaScript framework that makes it easy for anyone to use cryptographically verifiable data in their applications. It was designed to make it easy for developers who want to use dids, verifiable credentials and other data centric protocols to bring next generation features to their users.
 
 These docs are written for anyone wishing to learn more about the grounding principles behind verifiable data and develop a deeper understanding of the Serto framework in order to build next generation apps that leverage the many benefits of [trust networks](/docs/).
 
