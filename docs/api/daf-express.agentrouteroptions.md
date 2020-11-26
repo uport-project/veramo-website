@@ -16,9 +16,7 @@ export interface AgentRouterOptions
 
 ## Properties
 
-| Property                                                                     | Type                                                                | Description                                                                                |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| [basePath](./daf-express.agentrouteroptions.basepath.md)                     | string                                                              | Base path                                                                                  |
-| [exposedMethods](./daf-express.agentrouteroptions.exposedmethods.md)         | Array&lt;string&gt;                                                 | List of exposed methods                                                                    |
-| [getAgentForRequest](./daf-express.agentrouteroptions.getagentforrequest.md) | (req: Request) =&gt; Promise&lt;[IAgent](./daf-core.iagent.md) &gt; | Function that returns configured agent for specific request                                |
-| [serveSchema](./daf-express.agentrouteroptions.serveschema.md)               | boolean                                                             | If set to <code>true</code>, router will serve OpenAPI schema JSON on <code>/</code> route |
+| Property                                                                     | Type                                                                | Description                                                 |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
+| [exposedMethods](./daf-express.agentrouteroptions.exposedmethods.md)         | Array&lt;string&gt;                                                 | List of exposed methods                                     |
+| [getAgentForRequest](./daf-express.agentrouteroptions.getagentforrequest.md) | (req: Request) =&gt; Promise&lt;[IAgent](./daf-core.iagent.md) &gt; | Function that returns configured agent for specific request |

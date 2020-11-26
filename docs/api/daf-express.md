@@ -15,26 +15,48 @@ hide_title: true
 ```typescript
 import express from 'express'
 import { agent } from './agent'
-import { AgentRouter } from 'daf-express'
+import { AgentRouter, ApiSchemaRouter, WebDidDocRouter } from 'daf-express'
+
+const getAgentForRequest = async (req: express.Request) => agent
+const exposedMethods = agent.availableMethods()
+const basePath = '/agent'
+const schemaPath = '/open-api.json'
 
 const agentRouter = AgentRouter({
-  getAgentForRequest: async (req) => agent,
-  exposedMethods: agent.availableMethods(),
+  getAgentForRequest,
+  exposedMethods,
+})
+
+const schemaRouter = ApiSchemaRouter({
+  basePath,
+  getAgentForRequest,
+  exposedMethods,
+})
+
+const didDocRouter = WebDidDocRouter({
+  getAgentForRequest,
 })
 
 const app = express()
-app.use('/agent', agentRouter)
+app.use(basePath, agentRouter)
+app.use(schemaPath, schemaRouter)
+app.use(didDocRouter)
 app.listen(3002)
 ```
 
 ## Interfaces
 
-| Interface                                                 | Description |
-| --------------------------------------------------------- | ----------- |
-| [AgentRouterOptions](./daf-express.agentrouteroptions.md) |             |
+| Interface                                                         | Description |
+| ----------------------------------------------------------------- | ----------- |
+| [AgentRouterOptions](./daf-express.agentrouteroptions.md)         |             |
+| [ApiSchemaRouterOptions](./daf-express.apischemarouteroptions.md) |             |
+| [WebDidDocRouterOptions](./daf-express.webdiddocrouteroptions.md) |             |
 
 ## Variables
 
-| Variable                                    | Description                                                        |
-| ------------------------------------------- | ------------------------------------------------------------------ |
-| [AgentRouter](./daf-express.agentrouter.md) | Creates a router that exposes [Agent](./daf-core.agent.md) methods |
+| Variable                                            | Description                                                               |
+| --------------------------------------------------- | ------------------------------------------------------------------------- |
+| [AgentRouter](./daf-express.agentrouter.md)         | Creates a router that exposes [Agent](./daf-core.agent.md) methods        |
+| [ApiSchemaRouter](./daf-express.apischemarouter.md) | Creates a router that exposes [Agent](./daf-core.agent.md) OpenAPI schema |
+| [didDocEndpoint](./daf-express.diddocendpoint.md)   |                                                                           |
+| [WebDidDocRouter](./daf-express.webdiddocrouter.md) | Creates a router that serves <code>did:web</code> DID Documents           |
