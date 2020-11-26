@@ -60,7 +60,7 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               git status
               git add .
-              git commit -m `chore::rocket: api docs v${echo "console.log(require('./daf/lerna.json').version)" | node}`
+              git commit -m `chore(release)::rocket: api docs v${echo "console.log(require('./daf/lerna.json').version)" | node}`
               git tag -a v${echo "console.log(require('./daf/lerna.json').version)" | node}
               git push origin master
             else
@@ -71,7 +71,7 @@ jobs:
 workflows:
   version: 2
 
-  verify-build-local-docs:
+  verify-build-docs:
     jobs:
       - check-formatting
       - build-api-docs:
