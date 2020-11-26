@@ -36,9 +36,9 @@ jobs:
 workflows:
   version: 2
 
-verify-build-local-docs:
-  jobs:
-    - check-formatting:
+  verify-build-local-docs:
+    jobs:
+      - check-formatting:
 
   # verify-build-api-docs:
   #   jobs:
