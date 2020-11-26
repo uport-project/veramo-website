@@ -34,20 +34,23 @@ jobs:
       - save_cache: *save-node-cache
 
   build-api-docs:
-    working_directory: ~/daf
+    working_directory: ~/website
     docker:
       - image: node:10
-    resource_class: small
+    resource_class: medium
     steps:
+      - checkout
+      - restore_cache: *restore-cache
+      - run: *install-node-dependencies
       - run:
-          name: Checkout Daf
-          command: git clone https://github.com/uport-project/daf.git .
+          name: Build Daf
+          command: yarn build:daf
       - run:
-          name: Checkout beta branch
-          command: git checkout beta
+          name: Build Documentation
+          command: yarn build:docs
       - run:
-          name: Build Daf Packages
-          command: yarn && yarn build
+          name: Commit changes back to repo
+          command: echo committing changes placeholder...
 
 workflows:
   version: 2

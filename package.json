@@ -10,6 +10,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "build:daf": "bash ./scripts/build-daf.sh",
     "docs": "yarn docs:extract && yarn docs:copy && yarn docs:build",
     "docs:extract": "ts-node ./scripts/docs-extract.ts",
     "docs:copy": "ts-node ./scripts/docs-copy.ts",
