@@ -58,11 +58,10 @@ jobs:
           name: Push changes to repo
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              git status
               git add .
               git commit -m `chore(release)::rocket: api docs v${echo "console.log(require('./daf/lerna.json').version)" | node}`
               git tag -a v${echo "console.log(require('./daf/lerna.json').version)" | node}
-              git push origin master
+              git push origin master --tags
             else
               echo Not master branch
               echo "console.log(require('./daf/lerna.json').version)" | node
