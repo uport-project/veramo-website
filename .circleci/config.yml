@@ -47,7 +47,7 @@ jobs:
           command: yarn build:daf
       - run:
           name: Build Documentation
-          command: yarn docs:build
+          command: yarn docs
       - run:
           name: Authenticate Github
           command: |
