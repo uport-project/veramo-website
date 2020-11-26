@@ -49,8 +49,22 @@ jobs:
           name: Build Documentation
           command: yarn docs:build
       - run:
-          name: Commit changes back to repo
-          command: echo committing changes placeholder...
+          name: Authenticate Github
+          command: |
+            git remote set-url origin https://uport-project:$GITHUB_TOKEN@github.com/uport-project/daf-website.git
+            git config --global user.email $GITHUB_EMAIL
+            git config --global user.name $GITHUB_USER
+      - run:
+          name: Push changes to repo
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              git status
+              git add .
+              git commit -m `chore::rocket: new api docs version`
+              git push origin master
+            else
+              echo Not master branch
+            fi
 
 workflows:
   version: 2
