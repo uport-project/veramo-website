@@ -41,7 +41,10 @@ jobs:
     steps:
       - run:
           name: Checkout Daf
-          command: git clone git@github.com:uport-project/daf.git .
+          command: git clone https://github.com/uport-project/daf.git .
+      - run:
+          name: Checkout beta branch
+          command: git checkout beta
       - run:
           name: Build Daf Packages
           command: yarn && yarn build
