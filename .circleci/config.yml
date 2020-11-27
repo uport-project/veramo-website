@@ -1,4 +1,17 @@
 version: 2
+parameters:
+  run_workflow_local_docs:
+    default: true
+    type: boolean
+
+  run_workflow_api_docs:
+    default: false
+    type: boolean
+
+  run_workflow_dummy_test:
+    default: false
+    type: boolean
+
 aliases:
   - &check-code-format
     name: Check code formatting
@@ -21,6 +34,16 @@ defaults: &defaults
   working_directory: ~/website
 
 jobs:
+  dummy-job:
+    <<: *defaults
+    docker:
+      - image: node:10
+    resource_class: small
+    steps:
+      - run:
+          name: Dummy Release
+          command: echo Dummy Release Done
+
   check-formatting:
     <<: *defaults
     docker:
@@ -72,9 +95,17 @@ jobs:
 workflows:
   version: 2
 
-  verify-build-docs:
+  verify-local-docs:
+    when: << pipeline.parameters.run_workflow_local_docs >>
     jobs:
       - check-formatting
-      - build-api-docs:
-          requires:
-            - check-formatting
+
+  verify-build-api-docs:
+    when: << pipeline.parameters.run_workflow_api_docs >>
+    jobs:
+      - build-api-docs
+
+  verify-dummy-test:
+    when: << pipeline.parameters.run_workflow_dummy_test >>
+    jobs:
+      - dummy-job
