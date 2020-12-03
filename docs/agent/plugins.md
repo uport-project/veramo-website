@@ -4,11 +4,11 @@ title: Plugins
 sidebar_label: Plugins
 ---
 
-Functionality in Serto is added to the agent via the plugin system. Writing and configuring plugins is where almost all of the custom work will happen when building applications on Serto. This makes Serto extremely versatile and modular. Your custom plugins can just live in a directory, private repository or on npm where they can be shared with others. We encourage developers to follow some best practices when writing plugins to ensure we have an ecosystem of highly interoperable functions.
+Functionality in Veramo is added to the agent via the plugin system. Writing and configuring plugins is where almost all of the custom work will happen when building applications on Veramo. This makes Veramo extremely versatile and modular. Your custom plugins can just live in a directory, private repository or on npm where they can be shared with others. We encourage developers to follow some best practices when writing plugins to ensure we have an ecosystem of highly interoperable functions.
 
 ## Capability Tags
 
-Plugins can have many capabilities. In Serto we have a tagging system that describes what a plugin can do. The capability tags are as follows:
+Plugins can have many capabilities. In Veramo we have a tagging system that describes what a plugin can do. The capability tags are as follows:
 
 ### `identity-manager`
 

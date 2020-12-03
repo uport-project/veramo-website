@@ -4,18 +4,18 @@ title: React Native
 sidebar_label: React Native
 ---
 
-This guide will walk you through setting up Serto on React Native. You should have a good understanding of React Native and have your environment set up correctly to build iOS and Android apps. Check out the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more.
+This guide will walk you through setting up Veramo on React Native. You should have a good understanding of React Native and have your environment set up correctly to build iOS and Android apps. Check out the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more.
 
 ## Introduction
 
-Let's setup Serto run to locally on the device and use `sqlite` to store data, identities and keys. Our identity provider will be `ethr-did`. Initially, we will setup the [agent](/docs/agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/fundamentals/identifiers).
+Let's setup Veramo run to locally on the device and use `sqlite` to store data, identities and keys. Our identity provider will be `ethr-did`. Initially, we will setup the [agent](/docs/agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/fundamentals/identifiers).
 
 ## Bootstrap React Native
 
 Use the React Native CLI bootstrap a new typescript react project:
 
 ```bash
-npx react-native init Serto --template react-native-template-typescript
+npx react-native init Veramo --template react-native-template-typescript
 ```
 
 Ensure your project is building and running ok before continuing to next step.
@@ -24,7 +24,7 @@ Ensure your project is building and running ok before continuing to next step.
 
 ### Native
 
-We need to setup some native depenencies and shims that Serto plugins will use for database and key management.
+We need to setup some native depenencies and shims that Veramo plugins will use for database and key management.
 
 ```bash
 yarn add react-native-sodium react-native-sqlite-storage
@@ -61,39 +61,39 @@ npx pod-install
 
 Close the react native packager, clean the project and run your app again. If everything is good you should see the default React Native screen as before.
 
-### Serto
+### Veramo
 
-Now let's install Serto Core and some plugins. Don't worry, we will walk through what each one of these plugins does in the next step.
+Now let's install Veramo Core and some plugins. Don't worry, we will walk through what each one of these plugins does in the next step.
 
 ```bash
-yarn add @serto/core @serto/plugin-identity-manager @serto/plugin-react-native-libsodium @serto/plugin-ethr-did @serto/plugin-key-manager @serto/plugin-resolver @serto/plugin-typeorm @serto/plugin-w3c
+yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-react-native-libsodium @veramo/plugin-ethr-did @veramo/plugin-key-manager @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
 ```
 
-## Bootstrap Serto
+## Bootstrap Veramo
 
-We bootstrap Serto by creating a setup file and initialising the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initialising the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
 
 ```tsx
 // Core interfaces
-import { createAgent, IIdentityManager, IResolver, IDataStore, IKeyManager } from '@serto/core'
+import { createAgent, IIdentityManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
 
 // Core identity manager plugin
-import { IdentityManager } from '@serto/plugin-identity-manager'
+import { IdentityManager } from '@veramo/plugin-identity-manager'
 
 // Ethr did identity provider
-import { EthrIdentityProvider } from '@serto/plugin-ethr-did'
+import { EthrIdentityProvider } from '@veramo/plugin-ethr-did'
 
 // Core key manager plugin
-import { KeyManager } from '@serto/plugin-key-manager'
+import { KeyManager } from '@veramo/plugin-key-manager'
 
 // Custom key management system for RN
-import { KeyManagementSystem } from '@serto/plugin-react-native-libsodium'
+import { KeyManagementSystem } from '@veramo/plugin-react-native-libsodium'
 
 // Custom resolver
-import { SertoResolver } from '@serto/plugin-resolver'
+import { VeramoResolver } from '@veramo/plugin-resolver'
 
 // Storage plugin using TypeOrm
-import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@serto/plugin-typeorm'
+import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@veramo/plugin-typeorm'
 
 // TypeORM is installed with daf-typeorm
 import { createConnection } from 'typeorm'
@@ -137,7 +137,7 @@ export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & I
         }),
       },
     }),
-    new SertoResolver({ infuraProjectId: 'INFURA_PROJECT_ID' }),
+    new VeramoResolver({ infuraProjectId: 'INFURA_PROJECT_ID' }),
   ],
 })
 ```
@@ -149,7 +149,7 @@ Awesome! That's the basic agent configured and ready to use. Let's try it out :r
 Now that the agent has been created and configured with plugins we can use it to create some identifers. For this we will need some basic UI.
 
 :::note
-Serto does not impose decisions how you manage state in your app and will work along side any exsiting architecture like Redux or Mobx etc. For brevity we just use `useState` in this example but you can treat Serto like you would any async data source.
+Veramo does not impose decisions how you manage state in your app and will work along side any exsiting architecture like Redux or Mobx etc. For brevity we just use `useState` in this example but you can treat Veramo like you would any async data source.
 :::
 
 Open `App.tsx` and delete all the contents and add the following code:
