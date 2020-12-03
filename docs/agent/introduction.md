@@ -4,9 +4,9 @@ title: Agent
 sidebar_label: Introduction
 ---
 
-The `Agent` is the entry point into the Serto framework. Using Serto you create an `Agent` and most of the functionality comes from plugins that you add to the configuration. We have included a set of plugins to get you started and they also serve as a guide to start writing your own plugins.
+The `Agent` is the entry point into the Veramo framework. Using Veramo you create an `Agent` and most of the functionality comes from plugins that you add to the configuration. We have included a set of plugins to get you started and they also serve as a guide to start writing your own plugins.
 
-One of the most powerful features of Serto plugin system is that it is composable. Every plugin has the ability to hook into other plugins making it a very flexibile and customisable architecture. You can learn more about our architecture here.
+One of the most powerful features of Veramo plugin system is that it is composable. Every plugin has the ability to hook into other plugins making it a very flexibile and customisable architecture. You can learn more about our architecture here.
 
 An Agent is responsibe for but not limited to:
 

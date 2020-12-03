@@ -4,7 +4,7 @@ title: Event System
 sidebar_label: Event System
 ---
 
-The event system provides a way for components to interact in a decoupled way. Serto agents provide a simple event system where events can be emitted by application code or plugin and consumed asynchronously by event listeners.
+The event system provides a way for components to interact in a decoupled way. Veramo agents provide a simple event system where events can be emitted by application code or plugin and consumed asynchronously by event listeners.
 
 ### Emitting an event
 

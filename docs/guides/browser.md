@@ -4,25 +4,25 @@ title: Create React App
 sidebar_label: Create React App
 ---
 
-Serto core runs natively in the browser. The plugins you use need to also be browser compatible. In the this guide we will set up a DID resolver to work in a standard `create-react-app setup`. It is possible to add your own identity, key management and storage plugins that are browser compatible. We plan to add these plugins and you can [get involved in the conversation here](https://github.com/uport-project/daf/issues/276)
+Veramo core runs natively in the browser. The plugins you use need to also be browser compatible. In the this guide we will set up a DID resolver to work in a standard `create-react-app setup`. It is possible to add your own identity, key management and storage plugins that are browser compatible. We plan to add these plugins and you can [get involved in the conversation here](https://github.com/uport-project/daf/issues/276)
 
 Initialise a new `Create React App` project
 
 ```bash
-npx create-react-app init serto-browser --template typescript
+npx create-react-app init veramo-browser --template typescript
 ```
 
 Install veramo core and resolver plugin
 
 ```bash
-yarn add @serto/core @serto/plugin-resolver
+yarn add @veramo/core @veramo/plugin-resolver
 ```
 
 Create a setup file in `scr/veramo/setup.ts` and add the following code.
 
 ```ts
-import { createAgent, IResolver } from '@serto/core'
-import { DafResolver } from '@serto/resolver'
+import { createAgent, IResolver } from '@veramo/core'
+import { DafResolver } from '@veramo/resolver'
 
 export const agent = createAgent<IResolver>({
   plugins: [new DafResolver({ infuraProjectId: 'INFURA_PROJECT_ID' })],

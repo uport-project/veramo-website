@@ -13,7 +13,7 @@ You need to have Node v10 or later installed. In this example we use yarn as the
 Start by creating a directory for our project and initialising the npm package.
 
 ```bash
-mkdir serto-agent && cd serto-agent
+mkdir veramo-agent && cd veramo-agent
 yarn init -y
 ```
 
@@ -23,10 +23,10 @@ Install dev dependencies
 yarn add typescript ts-node --dev
 ```
 
-Install Serto core and plugins
+Install Veramo core and plugins
 
 ```bash
-yarn add @serto/core @serto/plugin-identity-manager @serto/plugin-libsodium @serto/plugin-ethr-did @serto/plugin-web-did @serto/plugin-key-manager @serto/plugin-resolver @serto/plugin-typeorm @serto/plugin-w3c
+yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-libsodium @veramo/plugin-ethr-did @veramo/plugin-web-did @veramo/plugin-key-manager @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
 ```
 
 Install sqlite
@@ -51,31 +51,31 @@ Add a tsconfig.json to your project
 }
 ```
 
-## Bootstrap Serto
+## Bootstrap Veramo
 
-We bootstrap Serto by creating a setup file and initialising the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initialising the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
 
 ```ts
 // Core interfaces
-import { createAgent, IIdentityManager, IResolver, IDataStore, IKeyManager } from '@serto/core'
+import { createAgent, IIdentityManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
 
 // Core identity manager plugin
-import { IdentityManager } from '@serto/plugin-identity-manager'
+import { IdentityManager } from '@veramo/plugin-identity-manager'
 
 // Ethr did identity provider
-import { EthrIdentityProvider } from '@serto/plugin-ethr-did'
+import { EthrIdentityProvider } from '@veramo/plugin-ethr-did'
 
 // Core key manager plugin
-import { KeyManager } from '@serto/plugin-key-manager'
+import { KeyManager } from '@veramo/plugin-key-manager'
 
 // Custom key management system for RN
-import { KeyManagementSystem } from '@serto/plugin-libsodium'
+import { KeyManagementSystem } from '@veramo/plugin-libsodium'
 
 // Custom resolver
-import { SertoResolver } from '@serto/plugin-resolver'
+import { VeramoResolver } from '@veramo/plugin-resolver'
 
 // Storage plugin using TypeOrm
-import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@serto/plugin-typeorm'
+import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@veramo/plugin-typeorm'
 
 // TypeORM is installed with daf-typeorm
 import { createConnection } from 'typeorm'
@@ -103,7 +103,7 @@ const dbConnection = createConnection({
 })
 ```
 
-Create the agent by using the createAgent method from `@serto/core`
+Create the agent by using the createAgent method from `@veramo/core`
 
 ```ts
 export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
@@ -128,7 +128,7 @@ export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & I
         }),
       },
     }),
-    new SertoResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+    new VeramoResolver({ infuraProjectId: INFURA_PROJECT_ID }),
   ],
 })
 ```
