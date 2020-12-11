@@ -41,9 +41,8 @@ const features = [
 ]
 
 const textContent = {
-  tooling: `Veramo is written in TypeScript and includes typings for everything.
-  I’m sure this could be expressed much better but it’s more important to try and fill up this box with real words that 
-  people will read.`,
+  tooling: `Veramo was design from the ground up to be flexible and modular which makes it highly scalable. Create an agent, add plugins, run on server or mobile. 
+  You can also expose your agent over REST.`,
   codeExample: `
   import * as Veramo from '@veramo/core'
   import { MessageHandler } from '@veramo/message-handler'
@@ -80,14 +79,30 @@ const textContent = {
 
   `,
   cliExample: `
+  /* Install the CLI globally */
+  $ npm install veramo -g
+
+  /* Resolve a DID */
+  $ veramo resolve did:web:veramo.io
+
+  /* Create an identifier */
   $ veramo identifier --create
+
+  /* Create a verifiable credential */
   $ veramo credential --create
+
+  /* Rum a local cloud agent */
+  $ veramo server
   `,
 
-  multiPlatform: `Veramo runs on Node, Browsers and React Native straight out of the box`,
+  multiPlatform: `
+  Veramo runs on Node, Browsers and React Native straight out of the box. 
+  
+  Save time by using the same api across all platforms.
+  `,
   orchestrateStandards: `Start builing trust layer in your applications today with Veramo. We obsess over standards
   and interoperability making it easy to support a wide list of standards in the data verification space.`,
-  awesomeCLI: `Everything in Veramo is exposed by our CLI tool. Create identifiers, run agents and connect to remote agents from you terminal.`,
+  awesomeCLI: `The Veramo core API is exposed by our CLI tool. Get started quickly creating DIDs and VCs from your terminal or run a local cloud agent. Developers will love the plugin development tools included.`,
 }
 
 function BuildTrustNetworks() {
@@ -97,10 +112,10 @@ function BuildTrustNetworks() {
         <div className={'container'} style={{ display: 'flex', flexDirection: 'row' }}>
           <div
             className={'column left'}
-            style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', padding: 50 }}
+            style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', padding: 10 }}
           >
             <div className={'content'}>
-              <img src="" width="350" height="350" />
+              <img src="/img/layers.png" />
             </div>
           </div>
           <div className={'column right'} style={{ flex: 1, padding: 50 }}>
@@ -155,7 +170,7 @@ function MultiPlatform() {
           style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', padding: 50 }}
         >
           <div className={'content'}>
-            <img src="" width="350" height="350" />
+            <img src="/img/multi-platform.png" />
           </div>
         </div>
         <div className={'column right'} style={{ flex: 1, padding: 50 }}>
@@ -192,7 +207,7 @@ function CommandLineTool() {
             </div>
           </div>
           <div className={'column right'} style={{ flex: 1 }}>
-            <CodeBlock language="bash">{textContent.codeExample}</CodeBlock>
+            <CodeBlock language="bash">{textContent.cliExample}</CodeBlock>
           </div>
         </div>
       </div>
