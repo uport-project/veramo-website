@@ -1,9 +1,13 @@
 import * as path from 'path'
 import { Extractor, ExtractorConfig, ExtractorResult } from '@microsoft/api-extractor'
-import { packages } from './constants'
 
-packages.map((packagePath: string) => {
-  const apiExtractorJsonPath: string = path.join(__dirname, packagePath + '/api-extractor.json')
+const { documentPackages } = require('../daf/docsconfig.json')
+
+documentPackages.map((packageName: string) => {
+  const apiExtractorJsonPath: string = path.join(
+    __dirname,
+    `../daf/packages/${packageName}/api-extractor.json`,
+  )
   // Load and parse the api-extractor.json file
   const extractorConfig: ExtractorConfig = ExtractorConfig.loadFileAndPrepare(apiExtractorJsonPath)
 

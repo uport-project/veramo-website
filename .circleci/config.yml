@@ -83,6 +83,10 @@ jobs:
             RELEASE_VERSION=`echo "console.log(require('./daf/lerna.json').version)" | node`
 
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              git status
+
+              echo Deploying docs for version v$RELEASE_VERSION
+
               git add .
               git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
               git tag -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"

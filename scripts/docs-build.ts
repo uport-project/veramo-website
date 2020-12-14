@@ -11,7 +11,7 @@ async function main() {
       if (err) {
         reject(err)
       } else {
-        resolve()
+        resolve('')
       }
     }),
   )
