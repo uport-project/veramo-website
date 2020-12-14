@@ -12,6 +12,7 @@ Provides a [plugin](./daf-resolver.dafresolver.md) for the [Agent](./daf-core.ag
 
 ## Classes
 
-| Class                                        | Description |
-| -------------------------------------------- | ----------- |
-| [DafResolver](./daf-resolver.dafresolver.md) |             |
+| Class                                                    | Description |
+| -------------------------------------------------------- | ----------- |
+| [DafResolver](./daf-resolver.dafresolver.md)             |             |
+| [UniversalResolver](./daf-resolver.universalresolver.md) |             |
