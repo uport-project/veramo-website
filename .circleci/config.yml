@@ -1,11 +1,11 @@
 version: 2.1
 parameters:
   run_workflow_local_docs:
-    default: false
+    default: true
     type: boolean
 
   run_workflow_api_docs:
-    default: true
+    default: false
     type: boolean
 
   run_workflow_dummy_test:
@@ -82,9 +82,15 @@ jobs:
           command: |
             RELEASE_VERSION=`echo "console.log(require('./daf/lerna.json').version)" | node`
 
-            if [ "${CIRCLE_BRANCH}" == "fix/docs-deploy" ]; then
-              echo v$RELEASE_VERSION
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
               git status
+
+              echo Deploying docs for version v$RELEASE_VERSION
+
+              git add .
+              git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
+              git tag -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
+              git push origin master --tags
             else
               echo Not master branch
               echo v$RELEASE_VERSION
