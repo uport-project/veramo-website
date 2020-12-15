@@ -4,19 +4,25 @@ title: CLI
 sidebar_label: CLI
 ---
 
+This guide will walk you through the basic functions to get you started with the Veramo CLI.
+
 :::important
 
 The CLI tool is currently only supported on MACOS and Linux systems. Windows support is coming soon.
 
 :::
 
-The core API of Veramo is exposed by the CLI tool. You can perform all major functions using the CLI locally. This guide will walk you through the basic functions to get you started.
+> The core API of Veramo is exposed by the CLI tool. All major functions can be executed locally using the CLI tool.
 
 First we need to install the CLI globally:
 
 ```bash
 npm i veramo -g
 ```
+
+:::note
+:hear_no_evil: Currently the install is a bit noisy. We are working to improve this.
+:::
 
 To check the CLI has installed run:
 
@@ -26,6 +32,10 @@ veramo -v
 # Output
 1.x.x
 ```
+
+## Basics
+
+Create an identifier, a credential and learn where everything is stored.
 
 ### Methods
 
@@ -90,7 +100,7 @@ veramo resolve did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8
 
 ### Create a verifiable credential
 
-Now let's create your forst credential with Veramo using the DID you just created as both issuer and subject. This will be a self-signed credential. Follow the command prompt after running:
+Now let's create your first credential with Veramo using the DID you just created as both **issuer** and **subject**. This will be a _self-signed_ credential. Follow the command prompt after running:
 
 ```bash
 veramo create credential
@@ -111,7 +121,7 @@ veramo create credential
 
 ```
 
-## Go Explore
+### Go Explore
 
 Run the explorer to open a commander terminal that shows you everything in your database!
 
@@ -119,7 +129,7 @@ Run the explorer to open a commander terminal that shows you everything in your 
 veramo data-explorer
 ```
 
-## Where is the data stored?
+### Where is the data stored?
 
 By default the first time you run the CLI tool a local agent will be created and this will create a number of files on your computer.
 

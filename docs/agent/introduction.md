@@ -27,7 +27,7 @@ const message = await agent.handleMessage({
 })
 ```
 
-If the agent is exposed as a REST interface the method will also be available using Open API. This is a [cloud agent](/docs/agent/cloud_agent).
+If the agent is exposed as a REST interface the method will also be available using Open API. This is a [cloud agent](/docs/guides/cloud_agent).
 
 ```
 POST https://veramo.dev/agent/handleMessage

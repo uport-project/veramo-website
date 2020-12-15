@@ -10,14 +10,19 @@ module.exports = {
       'fundamentals/messages',
       'fundamentals/verification',
     ],
-    Agent: ['agent/introduction', 'agent/cloud_agent', 'agent/plugins', 'agent/plugins_list'],
+    Agent: [
+      'agent/introduction',
+      // 'agent/cloud_agent',
+      'agent/plugins',
+      'agent/plugins_list',
+    ],
     Guides: [
       'guides/cli',
       'guides/nodejs',
       'guides/browser',
       'guides/react_native',
       'guides/create_plugin',
-      // 'guides/uport',
+      'guides/cloud_agent',
     ],
     Advanced: [
       'advanced/introduction',

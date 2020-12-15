@@ -20,7 +20,7 @@ Looking for ideas? You can [check out how you can easily build](/docs/) systems 
 
 If you are new to the concept of verifiable data it would be best to read the fundamentals section linearly as each section builds on knowledge and terminology gained in the previous.
 
-If you are more experienced with verifiable data concepts and or development in general you can dive into the architecture section where more specifics of how the internals work are covered or you could [deploy your own cloud agent](/docs/agent/cloud_agent). You can also jump over to the API reference section. Links and more info about these packages can also be found in the plugins section.
+If you are more experienced with verifiable data concepts and or development in general you can dive into the architecture section where more specifics of how the internals work are covered or you could [deploy your own cloud agent](/docs/guides/cloud_agent). You can also jump over to the API reference section. Links and more info about these packages can also be found in the plugins section.
 
 ## Mission
 
