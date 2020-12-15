@@ -141,13 +141,17 @@ By default the first time you run the CLI tool a local agent will be created and
     ├── database.sqlite
 ```
 
-If you want to create a custom location to store an agent config and database instances you can use additional parameters.
+You can also use per-project configuration, or specify a configuration file with each command.
+If the current folder contains an `agent.yml` configuration file, it will be used instead of the `.veramo/agent.yml` path.
 
-```
-veramo create config myagent
-```
+Alternatively, you can specify a config file with each command using the `--config /path/to/your/config.yml` option. This will be used instead of a per-project or default configuration file.
 
-This will create a directory called myagent with an agent.yml. The database for this agent will also be stored in the directory.
+You can create a configuration file in the current folder by invoking:
+
+> `veramo create config`
+
+This will create an `agent.yml` file that will get used next time you invoke a CLI command in this folder.
+By default, the database files are created in the same folder as the config file.
 
 ```bash
 # From outside the directory
