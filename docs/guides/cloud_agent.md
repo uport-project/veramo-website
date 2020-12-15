@@ -29,4 +29,4 @@ Your API & Secret will be in the Heroku env vars section. You may want to save t
 
 ### Client UI
 
-Would you like a UI to explore what's in your agent? You can tryout one of our experimental client UIs. This one is called [Mars Client](https://mars.veramo.io/). Yes, there is a space theme going on here. It's one of the few places where there's enough names for a lifetime of naming things.
+Would you like a UI to explore what's in your agent? You can tryout one of our experimental client UIs. This one is called [Mars Client](https://mars.veramo.io/). Add your cloud agent and api key to explore everything. Yes, there is a space theme going on here. It's one of the few places where there's enough names for a lifetime of naming things.
