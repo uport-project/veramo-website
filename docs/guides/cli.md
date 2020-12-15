@@ -72,7 +72,6 @@ Commands:
 The first thing you will want to do is create an identifier using the `create` command. This command will create a DID and store the keys in a local database.
 
 ```bash
-# daf identity-manager --create
 veramo create did
 ```
 
