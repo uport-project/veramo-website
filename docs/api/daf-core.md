@@ -81,9 +81,10 @@ Provides [Agent](./daf-core.agent.md) implementation and defines [IResolver](./d
 
 ## Variables
 
-| Variable                       | Description |
-| ------------------------------ | ----------- |
-| [schema](./daf-core.schema.md) |             |
+| Variable                               | Description                                   |
+| -------------------------------------- | --------------------------------------------- |
+| [CoreEvents](./daf-core.coreevents.md) | This collection defines the core event types. |
+| [schema](./daf-core.schema.md)         |                                               |
 
 ## Type Aliases
 

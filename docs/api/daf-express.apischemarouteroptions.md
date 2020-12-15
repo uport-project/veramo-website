@@ -18,6 +18,8 @@ export interface ApiSchemaRouterOptions
 
 | Property                                                                         | Type                                                                | Description                                                 |
 | -------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
+| [apiName](./daf-express.apischemarouteroptions.apiname.md)                       | string                                                              | Name used in OpenAPI schema                                 |
+| [apiVersion](./daf-express.apischemarouteroptions.apiversion.md)                 | string                                                              | Version used in OpenAPI schema                              |
 | [basePath](./daf-express.apischemarouteroptions.basepath.md)                     | string                                                              | Base path                                                   |
 | [exposedMethods](./daf-express.apischemarouteroptions.exposedmethods.md)         | Array&lt;string&gt;                                                 | List of exposed methods                                     |
 | [getAgentForRequest](./daf-express.apischemarouteroptions.getagentforrequest.md) | (req: Request) =&gt; Promise&lt;[IAgent](./daf-core.iagent.md) &gt; | Function that returns configured agent for specific request |

@@ -11,5 +11,11 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-getOpenApiSchema: (agent: IAgent, basePath: string, exposedMethods: Array<string>) => OpenAPIV3.Document
+getOpenApiSchema: (
+  agent: IAgent,
+  basePath: string,
+  exposedMethods: Array<string>,
+  name?: string | undefined,
+  version?: string | undefined,
+) => OpenAPIV3.Document
 ```

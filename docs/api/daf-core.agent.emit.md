@@ -18,9 +18,9 @@ Events are processed asynchronously, so the general pattern to be used is fire-a
 
 In situations where you need to make sure that all events in the queue have been exhausted, the `Promise` returned by `emit` can be awaited. Ex: `await agent.emit('foo', {eventData})`
 
-In case an error is thrown while processing an event, the error is re-emitted as an event of type `error` with a `EventListenerError` as payload.
+In case an error is thrown while processing an event, the error is re-emitted as an event of type `CoreEvents.error` with a `EventListenerError` as payload.
 
-Note that `await agent.emit()` will NOT throw an error. To process errors, use a listener with `eventTypes: ["error"]` in the definition.
+Note that `await agent.emit()` will NOT throw an error. To process errors, use a listener with `eventTypes: [ CoreEvents.error ]` in the definition.
 
 <b>Signature:</b>
 
