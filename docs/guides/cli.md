@@ -10,15 +10,15 @@ The CLI tool is currently only supported on MACOS and Linux systems. Windows sup
 
 :::
 
-The core API of Veramo is exposed by the CLI tool. You can perform all major functions using the CLI locally.
+The core API of Veramo is exposed by the CLI tool. You can perform all major functions using the CLI locally. This guide will walk you through the basic functions to get you started.
 
-First we need to install the CLI gloablly:
+First we need to install the CLI globally:
 
 ```bash
 npm i veramo -g
 ```
 
-To check the CLI has installed run
+To check the CLI has installed run:
 
 ```bash
 veramo -v
@@ -29,7 +29,7 @@ veramo -v
 
 ### Methods
 
-To see all the commands run
+To see all the commands run:
 
 ```
 veramo --help
@@ -59,7 +59,7 @@ Commands:
 
 ### Create an identity
 
-The first thing you will want to do is create an identifier using the `create` command. This command will create a DID and store the keys in a local database
+The first thing you will want to do is create an identifier using the `create` command. This command will create a DID and store the keys in a local database.
 
 ```bash
 # daf identity-manager --create
@@ -67,6 +67,8 @@ veramo create did
 ```
 
 ### Resolve a DID
+
+You can resolve any DID using the resolver:
 
 ```bash
 veramo resolve did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8
@@ -87,6 +89,8 @@ veramo resolve did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8
 ```
 
 ### Create a verifiable credential
+
+Now let's create your forst credential with Veramo using the DID you just created as both issuer and subject. This will be a self-signed credential. Follow the command prompt after running:
 
 ```bash
 veramo create credential
@@ -109,7 +113,7 @@ veramo create credential
 
 ## Go Explore
 
-Run the explorer to open a commander terminal that shows you everything in your database
+Run the explorer to open a commander terminal that shows you everything in your database!
 
 ```
 veramo data-explorer
@@ -142,3 +146,7 @@ veramo create did --config ./myagent/agent.yml
 # It will detect a local agent.yml file when run from within the myagent directory
 veramo create did
 ```
+
+## Advanced
+
+Coming soon: We will cover more advanced features such as selective disclosure, presentations and messages.
