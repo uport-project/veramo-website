@@ -4,13 +4,13 @@ title: Node
 sidebar_label: Node
 ---
 
-This guide covers setting up an agent and creating identifers in Node.
+This guide covers setting up an agent and creating identifiers in Node.
 
 ### Prerequisites
 
-You need to have Node v10 or later installed. In this example we use yarn as the package manager but you can also use npm.
+You need to have Node v10 or later installed. In this example, we use yarn as the package manager, but you can also use npm.
 
-Start by creating a directory for our project and initialising the npm package.
+Start by creating a directory for our project and initializing the npm package.
 
 ```bash
 mkdir veramo-agent && cd veramo-agent
@@ -29,7 +29,7 @@ Install Veramo core and plugins
 yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-libsodium @veramo/plugin-ethr-did @veramo/plugin-web-did @veramo/plugin-key-manager @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
 ```
 
-Install sqlite
+Install `sqlite`
 
 ```bash
 yarn add sqlite3
@@ -53,7 +53,7 @@ Add a tsconfig.json to your project
 
 ## Bootstrap Veramo
 
-We bootstrap Veramo by creating a setup file and initialising the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
 
 ```ts
 // Core interfaces
@@ -174,7 +174,7 @@ async function main() {
 main().catch(console.log)
 ```
 
-To run those functions add the folling script commands to `package.json`
+To run those functions add the following script commands to `package.json`
 
 ```json
 {

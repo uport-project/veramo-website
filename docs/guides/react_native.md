@@ -8,7 +8,7 @@ This guide will walk you through setting up Veramo on React Native. You should h
 
 ## Introduction
 
-Let's setup Veramo run to locally on the device and use `sqlite` to store data, identities and keys. Our identity provider will be `ethr-did`. Initially, we will setup the [agent](/docs/agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/fundamentals/identifiers).
+Let's setup Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity provider will be `ethr-did`. Initially, we will set up the [agent](/docs/agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/fundamentals/identifiers).
 
 ## Bootstrap React Native
 
@@ -24,13 +24,13 @@ Ensure your project is building and running ok before continuing to next step.
 
 ### Native
 
-We need to setup some native depenencies and shims that Veramo plugins will use for database and key management.
+We need to set up some native dependencies and shims that Veramo plugins will use for database and key management.
 
 ```bash
 yarn add react-native-sodium react-native-sqlite-storage
 ```
 
-In order to access node methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev dependencies.
+To access node methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev dependencies.
 
 ```bash
 yarn add rn-nodeify --dev
@@ -59,11 +59,11 @@ Install all of the pods in your project that came with the new dependencies.
 npx pod-install
 ```
 
-Close the react native packager, clean the project and run your app again. If everything is good you should see the default React Native screen as before.
+Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
 
 ### Veramo
 
-Now let's install Veramo Core and some plugins. Don't worry, we will walk through what each one of these plugins does in the next step.
+Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next step.
 
 ```bash
 yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-react-native-libsodium @veramo/plugin-ethr-did @veramo/plugin-key-manager @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
@@ -71,7 +71,7 @@ yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-react-nativ
 
 ## Bootstrap Veramo
 
-We bootstrap Veramo by creating a setup file and initialising the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
 
 ```tsx
 // Core interfaces
@@ -113,7 +113,7 @@ const dbConnection = createConnection({
 })
 ```
 
-Finally, create the agent and add plugins for Key, Identity, Storage and Resolver. You will need to get an infura projectId from [Infura](https://infura.io/)
+Finally, create the agent and add plugins for Key, Identity, Storage, and Resolver. You will need to get an infura projectId from [Infura](https://infura.io/)
 
 ```tsx
 export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
@@ -146,10 +146,10 @@ Awesome! That's the basic agent configured and ready to use. Let's try it out :r
 
 ## Basic User Interface
 
-Now that the agent has been created and configured with plugins we can use it to create some identifers. For this we will need some basic UI.
+Now that the agent has been created and configured with plugins, we can create some identifiers. For this, we will need some basic UI.
 
 :::note
-Veramo does not impose decisions how you manage state in your app and will work along side any exsiting architecture like Redux or Mobx etc. For brevity we just use `useState` in this example but you can treat Veramo like you would any async data source.
+Veramo does not impose decisions on how you manage state in your app and will work alongside any existing architecture like Redux or Mobx etc. For brevity, we use `useState` in this example, but you can treat Veramo like you would any async data source.
 :::
 
 Open `App.tsx` and delete all the contents and add the following code:
@@ -215,4 +215,4 @@ Close the packager and rebuild the app. Once loaded hit the `Create identifier` 
 
 ## Verifiable Credentials
 
-So now we have the ability to create identifers, store them in a database and query for them. Next we will use an identifer to create some Verifiable Credentials, save them to the database and query for them too.
+So now we can create identifiers, store them in a database, and query for them. Next, we will use an identifier to create some Verifiable Credentials, save them to the database, and query for them too.
