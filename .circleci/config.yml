@@ -17,6 +17,10 @@ aliases:
     name: Check code formatting
     command: yarn prettier --check
 
+  - &build-docs
+    name: Build documentaion
+    command: yarn build
+
   - &restore-cache
     keys:
       - v2-dependencies-{{ .Branch }}-{{ checksum "package.json" }}
@@ -54,6 +58,7 @@ jobs:
       - restore_cache: *restore-cache
       - run: *install-node-dependencies
       - run: *check-code-format
+      - run: *build-docs
       - save_cache: *save-node-cache
 
   build-api-docs:
