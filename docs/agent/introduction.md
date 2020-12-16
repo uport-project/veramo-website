@@ -37,7 +37,7 @@ POST https://veramo.dev/agent/handleMessage
 
 An agent can be manually configured by installing plugins from npm, running a node application and [creating a setup](/docs/guides/nodejs) file to instatiate the agent class. You can also create a `.yml` file with full configuration.
 
-Here is a trimmed down version of the configuration file used for the standard cloud agent [one click heroku deployment](https://github.com/uport-project/daf-deploy-heroku).
+Here is a trimmed down version of the configuration file used for the standard cloud agent [one click heroku deployment](https://github.com/uport-project/daf-agent-deploy).
 
 ```yml
 server:

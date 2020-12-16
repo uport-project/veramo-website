@@ -8,7 +8,7 @@ module.exports = {
       'fundamentals/selective_disclosure',
       'fundamentals/presentations',
       'fundamentals/messages',
-      'fundamentals/verification',
+      // 'fundamentals/verification',
     ],
     Agent: [
       'agent/introduction',
@@ -25,11 +25,11 @@ module.exports = {
       'guides/cloud_agent',
     ],
     Advanced: [
-      'advanced/introduction',
-      'advanced/data_flow',
+      // 'advanced/introduction',
+      // 'advanced/data_flow',
       'advanced/event_system',
-      'advanced/plugin_system',
-      'advanced/beta_versions',
+      // 'advanced/plugin_system',
+      // 'advanced/beta_versions',
     ],
   },
 }
