@@ -42,4 +42,4 @@ However, this should not prevent businesses from bringing the immense value of d
 
 At Veramo, we work closely with the [W3C](https://www.w3.org/) and [DIF](https://identity.foundation/) to build compatibility across many projects and initiatives in the space.
 
-Using Veramo, you can design your DID agent how you want it by using the [core plugins](/docs/agent/plugins) or [write your own custom plugins.](/docs/guides/create_plugin). We have plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentication, and many more
+Using Veramo, you can design your DID agent how you want it by using the [core plugins](/docs/agent/plugins) or [write your custom plugins](/docs/guides/create_plugin). We have plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentication, and many more.
