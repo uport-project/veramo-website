@@ -42,6 +42,6 @@ Common API for handling actions?
 
 Adds additional functionality to agent outside the core classes.
 
-## Executing plugin methods
+<!-- ## Executing plugin methods
 
-Place holder for some linkage from API docs. Topic may not live here.
+Place holder for some linkage from API docs. Topic may not live here. -->

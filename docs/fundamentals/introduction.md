@@ -12,15 +12,13 @@ Veramo is in a public beta. There will be some breaking changes in the coming mo
 
 Veramo is a JavaScript framework that makes it easy for anyone to use cryptographically verifiable data in their applications. It was designed to make it easy for developers who want to use DIDs, verifiable credentials, and other data-centric protocols to bring next-generation features to their users.
 
-These docs are written for anyone wishing to learn more about the grounding principles behind verifiable data and develop a deeper understanding of the Veramo framework to build next-generation apps that leverage the many benefits of [trust networks](/docs/).
-
-Are you looking for ideas? You can [check out how you can quickly build](/docs/) systems like Uport, BrightId, a custodial identity platform, a covid vaccine verification app, and many more.
+These docs are written for anyone wishing to learn more about the grounding principles behind verifiable data and develop a deeper understanding of the Veramo framework to build next-generation apps that leverage the many benefits of trust networks.
 
 ## How to use these docs
 
 If you are new to the concept of verifiable data, it would be best to read the fundamentals section linearly as each section builds on knowledge and terminology gained in the previous.
 
-If you are more experienced with verifiable data concepts and or development in general, you can dive into the architecture section where more specifics of how the internals work is covered, or you could [deploy your own cloud agent](/docs/agent/cloud_agent). You can also jump over to the API reference section. Links and more info about these packages can also be found in the plugins section.
+If you are more experienced with verifiable data concepts and or development in general, you can dive into the architecture section where more specifics of how the internals work is covered, or you could [deploy your own cloud agent](/docs/guides/cloud_agent). You can also jump over to the [API reference](/docs/api/daf-core) section. Links and more info about these packages can also be found in the plugins section.
 
 ## Mission
 
@@ -42,4 +40,4 @@ However, this should not prevent businesses from bringing the immense value of d
 
 At Veramo, we work closely with the [W3C](https://www.w3.org/) and [DIF](https://identity.foundation/) to build compatibility across many projects and initiatives in the space.
 
-Using Veramo, you can design your DID agent how you want it by using the [core plugins](/docs/agent/plugins) or [write your custom plugins](/docs/guides/create_plugin). We have plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentication, and many more.
+Using Veramo, you can design your DID agent how you want it by using the [core plugins](/docs/agent/plugins) or you can [write custom plugins](/docs/guides/create_plugin). We have plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentication, and many more.

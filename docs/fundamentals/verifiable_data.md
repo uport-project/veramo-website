@@ -41,5 +41,3 @@ This is the current v1 format for a W3C compliant Verifiable Credential:
   }
 }
 ```
-
-Learn more about [use cases](/docs/)
