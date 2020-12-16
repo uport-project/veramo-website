@@ -108,17 +108,14 @@ const textContent = {
 function BuildTrustNetworks() {
   return (
     <section>
-      <div className={'section tooling'} style={{ backgroundColor: 'white' }}>
-        <div className={'container'} style={{ display: 'flex', flexDirection: 'row' }}>
-          <div
-            className={'column left'}
-            style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', padding: 10 }}
-          >
+      <div className={'container tooling'} style={{ backgroundColor: 'white' }}>
+        <div className={'row'}>
+          <div className={'col col--6'} style={{ padding: 10, textAlign: 'center' }}>
             <div className={'content'}>
-              <img src="/img/layers.png" />
+              <img src="/img/layers.png" style={{ maxHeight: 300 }} />
             </div>
           </div>
-          <div className={'column right'} style={{ flex: 1, padding: 50 }}>
+          <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
             <div className={'content'}>
               <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
                 Orchestrate standards and build trust layers into your apps
@@ -136,13 +133,10 @@ function BuildTrustNetworks() {
 
 function NextGenerationTooling() {
   return (
-    <section>
-      <div className={'section tooling'} style={{ backgroundColor: 'whitesmoke' }}>
-        <div className={'container'} style={{ display: 'flex', flexDirection: 'row' }}>
-          <div
-            className={'column left'}
-            style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', padding: '50px 20px 0 0' }}
-          >
+    <section style={{ backgroundColor: 'whitesmoke' }}>
+      <div className={'container tooling'}>
+        <div className={'row'}>
+          <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
             <div className={'content'}>
               <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
                 Modular, composable, scalable
@@ -152,7 +146,7 @@ function NextGenerationTooling() {
               </p>
             </div>
           </div>
-          <div className={'column right'} style={{ flex: 1 }}>
+          <div className={'col col--6 right'}>
             <CodeBlock language="typescript">{textContent.codeExample}</CodeBlock>
           </div>
         </div>
@@ -163,17 +157,14 @@ function NextGenerationTooling() {
 
 function MultiPlatform() {
   return (
-    <section>
-      <div className={'section tooling container'} style={{ display: 'flex', flexDirection: 'row' }}>
-        <div
-          className={'column left'}
-          style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', padding: 50 }}
-        >
+    <section className={'container tooling'}>
+      <div className={'row'}>
+        <div className={'col col--6'} style={{ padding: 50, textAlign: 'center' }}>
           <div className={'content'}>
-            <img src="/img/multi-platform.png" />
+            <img src="/img/multi-platform.png" style={{ maxHeight: 275 }} />
           </div>
         </div>
-        <div className={'column right'} style={{ flex: 1, padding: 50 }}>
+        <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
           <div className={'content'}>
             <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
               Multi-Platform out of the box
@@ -190,13 +181,10 @@ function MultiPlatform() {
 
 function CommandLineTool() {
   return (
-    <section>
-      <div className={'section tooling'} style={{ backgroundColor: 'whitesmoke' }}>
-        <div className={'container'} style={{ display: 'flex', flexDirection: 'row' }}>
-          <div
-            className={'column left'}
-            style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', padding: '50px 20px 0 0' }}
-          >
+    <section style={{ backgroundColor: 'whitesmoke' }}>
+      <div className={'container tooling'}>
+        <div className={'row'}>
+          <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
             <div className={'content'}>
               <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
                 Awesome CLI
@@ -206,7 +194,7 @@ function CommandLineTool() {
               </p>
             </div>
           </div>
-          <div className={'column right'} style={{ flex: 1 }}>
+          <div className={'col col--6 right'}>
             <CodeBlock language="bash">{textContent.cliExample}</CodeBlock>
           </div>
         </div>
