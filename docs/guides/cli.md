@@ -45,71 +45,62 @@ To see all the commands run:
 veramo --help
 
 Options:
-  --config <path>                configuration file (default: "./agent.yml")
-  -v, --version                  output the version number
-  -h, --help                     display help for command
+  --config <path>                       configuration file (default: "./agent.yml")
+  -v, --version                         output the version number
+  -h, --help                            display help for command
 
 Commands:
 
-  add key                        add cryptographic key to did document
-  add service                    add service endpoint to did document
+  did resolve <didUrl>                  resolve DID Document
+  did list                              list managed identifiers
+  did providers                         list available identifier providers
+  did create                            create an identifier
+  did delete                            delete an identifier
+  did export                            export an identifier
+  did import                            import an identifier
+  did add-key                           create and add a public key to did document
+  did add-service                       add a service endpoint to did document
+  did remove-key                        remove a public key from did document
+  did remove-service                    remove a service endpoint from did document
 
-  create config [options]        create default agent config
-  create credential              create verifiable credential
-  create did                     create decentralized identifier
-  create key                     create cryptographic key
-  create message                 create verifiable message
-  create presentation            create verifiable presentation
-  create sdr                     create selective disclosure request
-  create sdr-response            create selective disclosure response (presentation)
-  create secret                  create secret key
+  credential create [options]           create W3C Verifiable Credential
+  credential revoke [options]           revoke W3C Verifiable Credential
+  credential verify [options]           verify W3C Verifiable Credential
+  credential import [options]           import W3C Verifiable Credential
+  credential export [options]           export W3C Verifiable Credential
 
-  delete did                     delete identifier
+  presentation create [options]         create W3C Verifiable Presentation
+  presentation revoke [options]         revoke W3C Verifiable Presentation
+  presentation verify [options]         verify W3C Verifiable Presentation
+  presentation import [options]         import W3C Verifiable Presentation
+  presentation export [options]         export W3C Verifiable Presentation
 
-  developer api [options]        extract API
-  developer schema [options]     generate plugin schema
+  message handle [options]              handle raw message
+  message create [options]              create message
 
-  execute [options]              executes agent method
+  sdr create                            create Selective Disclosure Request
+  sdr respond                           respond to Selective Disclosure Request
 
-  explore                        launch Verifiable Data explorer
+  config create [options]               create default agent config
+  config create-secret-key [options]    generate secret key
 
-  export credential              export verifiable credential
-  export did                     export decentralized identifier
-  export key                     export cryptographic key
-  export message                 export verifiable message
-  export presentation            export verifiable presentation
+  server [options]                      launch OpenAPI server
+  explore                               launch Verifiable Data explorer
+  execute [options]                     executes agent method
 
-  import credential              import verifiable credential
-  import did                     import decentralized identifier
-  import key                     import cryptographic key
-  import message [options]       import (handle) message
-  import presentation            import verifiable presentation
+  dev generate-plugin-schema [options]  generate plugin schema
+  dev extract-api [options]             extract API
 
-  list credentials               list verifiable credentials
-  list dids                      list managed identifiers
-  list messages                  list messages
-  list presentations             list verifiable presentations
-  list providers                 list available identifier providers
+  help [command]                        display help for command
 
-  remove key                     remove cryptographic key to did document
-  remove service                 remove service endpoint to did document
-
-  resolve                        resolve did document
-
-  revoke credential              revoke verifiable credential
-  revoke presentation            revoke verifiable presentation
-
-  server [options]               launch OpenAPI server
-
-  help [command]                 display help for command
 ```
 
 ### Create an identity
 
-The first thing you will want to do is create an identifier using the `create did` command. This command will create a DID and store the keys in a local database.
+The first thing you will want to do is create an identifier using the `did create` command. This command will create a DID and store the keys in a local database.
 
 ```bash
-veramo create did
+veramo did create
 ```
 
 ### Resolve a DID
@@ -139,7 +130,7 @@ veramo resolve did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8
 Now let's create your first credential with Veramo using the DID you just created as both **issuer** and **subject**. This will be a _self-signed_ credential. Follow the command prompt after running:
 
 ```bash
-veramo create credential
+veramo credential create
 
 # Output
 { credentialSubject:
@@ -184,17 +175,17 @@ Alternatively, you can specify a config file with each command using the `--conf
 
 You can create a configuration file in the current folder by invoking:
 
-> `veramo create config`
+> `veramo config create `
 
 This will create an `agent.yml` file that will get used next time you invoke a CLI command in this folder.
 By default, the database files are created in the same folder as the config file.
 
 ```bash
 # From outside the directory
-veramo create did --config ./myagent/agent.yml
+veramo did create --config ./myagent/agent.yml
 
 # It will detect a local agent.yml file when run from within the myagent directory
-veramo create did
+veramo did create
 ```
 
 ## Advanced
