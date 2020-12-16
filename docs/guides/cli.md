@@ -45,31 +45,70 @@ To see all the commands run:
 veramo --help
 
 Options:
-  --config <path>                   Configuration file (default: "./agent.yml")
-  -v, --version                     output the version number
-  -h, --help                        display help for command
+  --config <path>                configuration file (default: "./agent.yml")
+  -v, --version                  output the version number
+  -h, --help                     display help for command
 
 Commands:
-  create-config [options]           Create default agent config
-  identity-manager [options]        Manage identities
-  resolve <didUrl>                  Resolve DID Document
-  credential [options]              Create W3C Verifiable Credential
-  presentation [options]            Create W3C Verifiable Presentation
-  data-explorer                     Data explorer
-  sdr-create                        Create Selective Disclosure Request
-  sdr-reply                         Reply to Selective Disclosure Request
-  msg [options]                     Handle raw message
-  crypto [options]                  Crypto
-  execute [options]                 Executes agent method
-  server [options]                  Launch OpenAPI server
-  generate-plugin-schema [options]  Generate plugin schema
-  extract-api [options]             Extract API
-  help [command]                    display help for command
+
+  add key                        add cryptographic key to did document
+  add service                    add service endpoint to did document
+
+  create config [options]        create default agent config
+  create credential              create verifiable credential
+  create did                     create decentralized identifier
+  create key                     create cryptographic key
+  create message                 create verifiable message
+  create presentation            create verifiable presentation
+  create sdr                     create selective disclosure request
+  create sdr-response            create selective disclosure response (presentation)
+  create secret                  create secret key
+
+  delete did                     delete identifier
+
+  developer api [options]        extract API
+  developer schema [options]     generate plugin schema
+
+  execute [options]              executes agent method
+
+  explore                        launch Verifiable Data explorer
+
+  export credential              export verifiable credential
+  export did                     export decentralized identifier
+  export key                     export cryptographic key
+  export message                 export verifiable message
+  export presentation            export verifiable presentation
+
+  import credential              import verifiable credential
+  import did                     import decentralized identifier
+  import key                     import cryptographic key
+  import message                 import verifiable message
+  import presentation            import verifiable presentation
+
+  list credentials               list verifiable credentials
+  list dids                      list managed identifiers
+  list messages                  list messages
+  list presentations             list verifiable presentations
+  list providers                 list available identifier providers
+
+  msg [options]                  handle raw message
+
+  remove key                     remove cryptographic key to did document
+  remove service                 remove service endpoint to did document
+
+  resolve                        resolve did document
+
+  revoke credential              revoke verifiable credential
+  revoke presentation            revoke verifiable presentation
+
+  server [options]               launch OpenAPI server
+
+  help [command]                 display help for command
 ```
 
 ### Create an identity
 
-The first thing you will want to do is create an identifier using the `create` command. This command will create a DID and store the keys in a local database.
+The first thing you will want to do is create an identifier using the `create did` command. This command will create a DID and store the keys in a local database.
 
 ```bash
 veramo create did
@@ -125,7 +164,7 @@ veramo create credential
 Run the explorer to open a commander terminal that shows you everything in your database!
 
 ```
-veramo data-explorer
+veramo explore
 ```
 
 ### Where is the data stored?
