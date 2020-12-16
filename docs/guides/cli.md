@@ -14,17 +14,17 @@ The CLI tool is currently only supported on MACOS and Linux systems. Windows sup
 
 > The core API of Veramo is exposed by the CLI tool. All major functions can be executed locally using the CLI tool.
 
-First we need to install the CLI globally:
+First, we need to install the CLI globally:
 
 ```bash
 npm i veramo -g
 ```
 
 :::note
-:hear_no_evil: Currently the install is a bit noisy. We are working to improve this.
+:hear_no_evil: Currently, the install is a bit noisy. We are working to improve this.
 :::
 
-To check the CLI has installed run:
+To check the CLI has installed, run:
 
 ```bash
 veramo -v
@@ -35,7 +35,7 @@ veramo -v
 
 ## Basics
 
-Create an identifier, a credential and learn where everything is stored.
+Create an identifier, a credential, and learn where everything is stored.
 
 ### Methods
 
@@ -130,7 +130,7 @@ veramo data-explorer
 
 ### Where is the data stored?
 
-By default the first time you run the CLI tool a local agent will be created and this will create a number of files on your computer.
+By default, the first time you run the CLI tool, a local agent will be created, and this will create a number of files on your computer.
 
 ```
 ~ Home
@@ -140,7 +140,7 @@ By default the first time you run the CLI tool a local agent will be created and
     ├── database.sqlite
 ```
 
-You can also use per-project configuration, or specify a configuration file with each command.
+You can also use a per-project configuration or specify a configuration file with each command.
 If the current folder contains an `agent.yml` configuration file, it will be used instead of the `.veramo/agent.yml` path.
 
 Alternatively, you can specify a config file with each command using the `--config /path/to/your/config.yml` option. This will be used instead of a per-project or default configuration file.
@@ -162,4 +162,4 @@ veramo create did
 
 ## Advanced
 
-Coming soon: We will cover more advanced features such as selective disclosure, presentations and messages.
+Coming soon: We will cover more advanced features such as selective disclosure, presentations, and messages.
