@@ -115,7 +115,7 @@ function BuildTrustNetworks() {
               <img src="/img/layers.png" style={{ maxHeight: 300 }} />
             </div>
           </div>
-          <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
+          <div className={'col col--6'} style={{ paddingTop: 50, paddingLeft: 20 }}>
             <div className={'content'}>
               <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
                 Orchestrate standards and build trust layers into your apps
@@ -136,7 +136,7 @@ function NextGenerationTooling() {
     <section style={{ backgroundColor: 'whitesmoke' }}>
       <div className={'container tooling'}>
         <div className={'row'}>
-          <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
+          <div className={'col col--6'} style={{ paddingTop: 50, paddingLeft: 20 }}>
             <div className={'content'}>
               <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
                 Modular, composable, scalable
@@ -164,7 +164,7 @@ function MultiPlatform() {
             <img src="/img/multi-platform.png" style={{ maxHeight: 275 }} />
           </div>
         </div>
-        <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
+        <div className={'col col--6'} style={{ paddingTop: 50, paddingLeft: 20 }}>
           <div className={'content'}>
             <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
               Multi-Platform out of the box
@@ -184,7 +184,7 @@ function CommandLineTool() {
     <section style={{ backgroundColor: 'whitesmoke' }}>
       <div className={'container tooling'}>
         <div className={'row'}>
-          <div className={'col col--6'} style={{ paddingInline: 20, paddingBlock: 50 }}>
+          <div className={'col col--6'} style={{ paddingTop: 50 }}>
             <div className={'content'}>
               <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
                 Awesome CLI
