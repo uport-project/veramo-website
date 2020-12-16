@@ -41,7 +41,7 @@ const features = [
 ]
 
 const textContent = {
-  tooling: `Veramo was design from the ground up to be flexible and modular which makes it highly scalable. Create an agent, add plugins, run on server or mobile. 
+  tooling: `Veramo was designed from the ground up to be flexible and modular which makes it highly scalable. Create an agent, add plugins, run on server or mobile. 
   You can also expose your agent over REST.`,
   codeExample: `
   import * as Veramo from '@veramo/core'
@@ -57,7 +57,7 @@ const textContent = {
     ],
   })
 
-  /* Create an identifier and optionally link to existing user */
+  /* Create an identifier and optionally link to an existing user */
   const user = await agent.identityManagerGetOrCreateIdentity()
 
   const verifiableCredential = await agent.createVerifiableCredential({
@@ -96,11 +96,11 @@ const textContent = {
   `,
 
   multiPlatform: `
-  Veramo runs on Node, Browsers and React Native straight out of the box. 
+  Veramo runs on Node, Browsers, and React Native straight out of the box. 
   
-  Save time by using the same api across all platforms.
+  Save time by using the same API across all platforms.
   `,
-  orchestrateStandards: `Start builing trust layer in your applications today with Veramo. We obsess over standards
+  orchestrateStandards: `Start building the trust layer in your applications today with Veramo. We obsess over standards
   and interoperability making it easy to support a wide list of standards in the data verification space.`,
   awesomeCLI: `The Veramo core API is exposed by our CLI tool. Get started quickly creating DIDs and VCs from your terminal or run a local cloud agent. Developers will love the plugin development tools included.`,
 }
