@@ -48,7 +48,7 @@ jobs:
           name: Dummy Release
           command: echo Dummy Release Done
 
-  check-formatting:
+  verify-build:
     <<: *defaults
     docker:
       - image: node:10
@@ -107,7 +107,7 @@ workflows:
   verify-local-docs:
     when: << pipeline.parameters.run_workflow_local_docs >>
     jobs:
-      - check-formatting
+      - verify-build
 
   verify-build-api-docs:
     when: << pipeline.parameters.run_workflow_api_docs >>
