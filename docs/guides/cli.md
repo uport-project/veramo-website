@@ -82,7 +82,7 @@ Commands:
   import credential              import verifiable credential
   import did                     import decentralized identifier
   import key                     import cryptographic key
-  import message                 import verifiable message
+  import message [options]       import (handle) message
   import presentation            import verifiable presentation
 
   list credentials               list verifiable credentials
@@ -90,8 +90,6 @@ Commands:
   list messages                  list messages
   list presentations             list verifiable presentations
   list providers                 list available identifier providers
-
-  msg [options]                  handle raw message
 
   remove key                     remove cryptographic key to did document
   remove service                 remove service endpoint to did document
