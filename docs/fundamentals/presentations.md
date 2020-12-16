@@ -11,8 +11,8 @@ A [Verifiable Presentation](/docs/api/daf-core.w3cpresentation) is a signed enve
 {
   "@context": ["https://www.w3.org/2018/credentials/v1"],
   "type": "VerifiablePresentation",
-  "issuer": { "id": "did:example:user" },
-  "audience": ["did:web:community.com"],
+  "holder": { "id": "did:example:user" },
+  "verifier": ["did:web:community.com"],
   "verifiableCredential": [
     {
       "@context": ["https://www.w3.org/2018/credentials/v1"],
@@ -43,4 +43,4 @@ A [Verifiable Presentation](/docs/api/daf-core.w3cpresentation) is a signed enve
 }
 ```
 
-The above is a minnimal example of a presentaation that presents 2 credentials; one for community rank and the other for username. Both the credentials and the wrapper have signed proofs so not only can the individual credentials be verified but the whole wrapper too. How you verify and trust credentials and presentations is application.
+The above is a minimal example of a presentation that presents two credentials: community rank and the other for username. Both the credentials and the wrapper have signed proofs, so not only can the individual credentials be verified, but the whole wrapper too. How you verify and trust credentials and presentations is application-specific.

@@ -3,7 +3,7 @@ id: identifiers
 title: Identifiers
 ---
 
-Identifiers are critical component to verifiable data. Without unique verifiable identifiers you cannot make decsions to trust the asserted data. The most widely adopted standard for identifiers is the `Decentralized Identifier` or `DID`.
+Identifiers are a critical component of verifiable data. Without unique, verifiable identifiers, you cannot make decisions to trust the asserted data. The most widely adopted standard for identifiers is the `Decentralized Identifier` or `DID`.
 
 ## Decentralized Identifier
 
@@ -13,15 +13,15 @@ The DID for this website is:
 did:web:veramo.dev
 ```
 
-If dids are unique identifers, then a DID method is essentially a type of identifier. The example above is known as a web did. Anybody can create a new DID method for their specific purpose or use one of the existing methods.
+If DIDs are unique identifiers, then a DID method is essentially a type of identifier. The example above is known as a web did. Anybody can create a new DID method for their specific purpose or use one of the existing methods.
 
 ### DID Creation
 
-When a DID is created is associated with a private and public keypair. The public key will be visible in the DID Document
+When a DID is created, it is associated with a private and public key pair. The public key will be visible in the DID Document.
 
 ### DID Document
 
-Every DID has a public DID Document that presents information about the identifier. in the case of web:did the DID Document is hosted on the website in the following format. It contains important cryptographic information and also services that the DID has available. This is the foundation of how DIDs can start to communicate with each other.
+Every DID has a public DID Document that presents information about the identifier. In the case of `did:web` the DID Document is hosted on the website in the following format. It contains essential cryptographic information and also services that the DID has available. This is the foundation of how DIDs can start to communicate with each other.
 
 ```json
 // 20201110152830
@@ -48,7 +48,7 @@ Every DID has a public DID Document that presents information about the identifi
     {
       "id": "did:web:veramo.dev#msg",
       "type": "Messaging",
-      "serviceEndpoint": "did:web:veramo.dev/messaging",
+      "serviceEndpoint": "https://veramo.dev/messaging",
       "description": "Handles incoming POST messages"
     }
   ]
@@ -57,7 +57,7 @@ Every DID has a public DID Document that presents information about the identifi
 
 ### DID Resolution
 
-A DID resolver has the ability to take DID as input and resolve the DID Document to perform some application action. This is an important concept in how data flows in verifiable data systems. A high level example is the DID resolver can check the DID and see where we can send a messsage to or if it even accepts messages.
+A DID resolver can take DID as input and resolve the DID Document to perform some application action. This is an important concept in how data flows in verifiable data systems. A high-level example is when the DID resolver can check the DID and see where we can send a message to or if it even accepts messages.
 
 ### DID methods
 
