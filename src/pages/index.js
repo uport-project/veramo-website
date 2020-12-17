@@ -44,25 +44,26 @@ const textContent = {
   tooling: `Veramo was designed from the ground up to be flexible and modular which makes it highly scalable. Create an agent, add plugins, run on server or mobile. 
   You can also expose your agent over REST.`,
   codeExample: `
-  import * as Veramo from '@veramo/core'
-  import { MessageHandler } from '@veramo/message-handler'
+  import { createAgent } from '@veramo/core'
   import { KeyManager } from '@veramo/key-manager'
+  import { IdManager } from '@veramo/id-manager'
 
   /* Configure the agent */
-  const agent = Veramo.createAgent({
+  const agent = createAgent({
     plugins: [
-      new KeyManager(/* Key config */),
-      new MessageHandler(/* Message config */),
-      new IdentityManager(/* Identity config */)
+      new KeyManager(/* config */),
+      new IdManager(/* config */)
     ],
   })
 
   /* Create an identifier and optionally link to an existing user */
-  const user = await agent.identityManagerGetOrCreateIdentity()
+  const user = await agent.idManagerGetOrCreateId({
+    alias: 'alice'
+  })
 
   const verifiableCredential = await agent.createVerifiableCredential({
     credential: {
-      issuer: { id: did:web:veramo.dev },
+      issuer: { id: 'did:web:veramo.dev' },
       '@context': ['https://www.w3.org/2018/credentials/v1'],
       type: ['VerifiableCredential'],
       issuanceDate: new Date().toISOString(),
@@ -83,13 +84,13 @@ const textContent = {
   $ npm install veramo -g
 
   /* Resolve a DID */
-  $ veramo resolve did:web:veramo.io
+  $ veramo did resolve did:web:veramo.io
 
   /* Create an identifier */
-  $ veramo identifier --create
+  $ veramo did create
 
   /* Create a verifiable credential */
-  $ veramo credential --create
+  $ veramo credential create
 
   /* Rum a local cloud agent */
   $ veramo server
