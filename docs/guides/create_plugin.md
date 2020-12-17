@@ -4,7 +4,7 @@ title: Custom Plugin
 sidebar_label: Custom Plugin
 ---
 
-This guide will show you how to create a simple custom plugin for Veramo.
+This is abasic guide to getting started creating Veramo plugins. More indepth tutorials to follow.
 
 Start by using the [veramo-plugin-template](https://github.com/uport-project/daf-plugin) repo on Github. Click the `Use this template` button to copy the repo to your account. Clone the repo locally and rename the package name in `package.json`.
 
@@ -40,4 +40,18 @@ Replace the `NGROK_URL` and `API_KEY` with your own and run:
 curl -X POST "https://<NGROK_URL>/agent/idManagerCreateId" -H "accept: application/json; charset=utf-8" -H "Authorization: Bearer <APIKEY>" -H "Content-Type: application/json" -d "{}"
 ```
 
-A new identifier JSON representation should be printed in your console.
+A new identifier should be printed in your console.
+
+## Customization
+
+1. Rename instances of `MyAgentPlugin` with your plugin name
+2. Define your plugin interfaces in `IMyAgentPlugin.ts`
+3. Extend your plugin context by importing other types from Veramo fro imstance if you want to issue credentials from your plugin, add the `ICredentialIssuer` type.
+4. Replace sample arguments with your own
+5. Every time you update the types of your plugin, make sure you run:
+
+```bash
+yarn generate-plugin-schema
+```
+
+6. The file `my-agent-plugin.ts` holds the implementation of your agent. It uses the interfaces defined in the `src/types` folder to define each method implementation. Again, review all the JSDOCS and add your plugin implementation.
