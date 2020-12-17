@@ -46,32 +46,28 @@ const textContent = {
   codeExample: `
   import { createAgent } from '@veramo/core'
   import { KeyManager } from '@veramo/key-manager'
-  import { IdManager } from '@veramo/id-manager'
+  import { DIDManager } from '@veramo/did-manager'
 
   /* Configure the agent */
   const agent = createAgent({
     plugins: [
       new KeyManager(/* config */),
-      new IdManager(/* config */)
+      new DIDManager(/* config */)
     ],
   })
 
   /* Create an identifier and optionally link to an existing user */
-  const user = await agent.idManagerGetOrCreateId({
+  const user = await agent.didManagerGetOrCreate({
     alias: 'alice'
   })
 
   const verifiableCredential = await agent.createVerifiableCredential({
     credential: {
       issuer: { id: 'did:web:veramo.dev' },
-      '@context': ['https://www.w3.org/2018/credentials/v1'],
-      type: ['VerifiableCredential'],
-      issuanceDate: new Date().toISOString(),
       credentialSubject: {
         id: user.did,
-        tutorial_22: {
-          status: 'completed'
-        }
+        tutorial: 22,
+        status: 'completed'
       }
     },
     proofFormat: 'jwt',
