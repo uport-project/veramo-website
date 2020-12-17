@@ -46,7 +46,7 @@ A new identifier should be printed in your console.
 
 1. Rename instances of `MyAgentPlugin` with your plugin name
 2. Define your plugin interfaces in `IMyAgentPlugin.ts`
-3. Extend your plugin context by importing other types from Veramo fro imstance if you want to issue credentials from your plugin, add the `ICredentialIssuer` type.
+3. Extend your plugin context by importing other types from Veramo for example if you want to issue credentials from your plugin, import the `ICredentialIssuer` type.
 4. Replace sample arguments with your own
 5. Every time you update the types of your plugin, make sure you run:
 
