@@ -17,7 +17,7 @@ The CLI tool is currently only supported on MACOS and Linux systems. Windows sup
 First, we need to install the CLI globally:
 
 ```bash
-npm i veramo -g
+npm i @veramo/cli -g
 ```
 
 :::note
@@ -173,9 +173,11 @@ If the current folder contains an `agent.yml` configuration file, it will be use
 
 Alternatively, you can specify a config file with each command using the `--config /path/to/your/config.yml` option. This will be used instead of a per-project or default configuration file.
 
-You can create a configuration file in the current folder by invoking:
+You can create a configuration file in the current folder by running:
 
-> `veramo config create `
+```bash
+veramo config create
+```
 
 This will create an `agent.yml` file that will get used next time you invoke a CLI command in this folder.
 By default, the database files are created in the same folder as the config file.
