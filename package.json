@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production docusaurus serve --port $PORT",
+    "start": "NODE_ENV=production HTTPS=true docusaurus serve --port $PORT",
     "dev": "docusaurus start",
     "serve": "docusaurus serve",
     "docusaurus": "docusaurus",
