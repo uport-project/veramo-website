@@ -1,12 +1,12 @@
 import * as path from 'path'
 import { Extractor, ExtractorConfig, ExtractorResult } from '@microsoft/api-extractor'
 
-const { documentPackages } = require('../daf/docsconfig.json')
+const { documentPackages } = require('../veramo/docsconfig.json')
 
 documentPackages.map((packageName: string) => {
   const apiExtractorJsonPath: string = path.join(
     __dirname,
-    `../daf/packages/${packageName}/api-extractor.json`,
+    `../veramo/packages/${packageName}/api-extractor.json`,
   )
   // Load and parse the api-extractor.json file
   const extractorConfig: ExtractorConfig = ExtractorConfig.loadFileAndPrepare(apiExtractorJsonPath)

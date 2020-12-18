@@ -2,7 +2,7 @@ import * as path from 'path'
 import { resolve } from 'path'
 import { existsSync, readdirSync, copyFileSync, mkdirSync, unlinkSync } from 'fs'
 const outputFolder = './temp'
-const { documentPackages } = require('../daf/docsconfig.json')
+const { documentPackages } = require('../veramo/docsconfig.json')
 
 if (!existsSync(resolve(outputFolder))) {
   console.log('Creating', outputFolder)
@@ -15,7 +15,7 @@ if (!existsSync(resolve(outputFolder))) {
 }
 
 for (const packageName of documentPackages) {
-  const apiDocsPath: string = path.join(__dirname, `../daf/packages/${packageName}/api`)
+  const apiDocsPath: string = path.join(__dirname, `../veramo/packages/${packageName}/api`)
 
   readdirSync(apiDocsPath).forEach((file) => {
     console.log('Copying', resolve(outputFolder, file))

@@ -1,5 +1,5 @@
 {
-  "name": "daf-site-docs",
+  "name": "veramo-site-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "build:daf": "bash ./scripts/build-daf.sh",
+    "build:veramo": "bash ./scripts/build-veramo.sh",
     "docs": "yarn docs:extract && yarn docs:copy && yarn docs:build",
     "docs:extract": "ts-node ./scripts/docs-extract.ts",
     "docs:copy": "ts-node ./scripts/docs-copy.ts",

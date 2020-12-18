@@ -4,70 +4,68 @@ title: Plugin Directory
 sidebar_label: Plugin Directory
 ---
 
-We have a growing list of plugins to support a wide range of standards. If there's a plugin you you are looking for you could [make a request](/docs/) here or to [build it yourself](/docs/).
+We have a growing list of plugins to support a wide range of standards. You can build your own plugins to add any functionality you need. Get started by [creating a basic plugin](/docs/guides/create_plugin).
 
-### @veramo/plugin-identity-manager
+View all the [plugin docs here](/docs/api/index/).
 
-[`identity-manager`](/docs/agent/plugins#identity-manager)
+### @veramo/id-manager
 
-### @veramo/plugin-ethr-did
+[`id-manager`](/docs/agent/plugins#id-manager)
 
-[`identity-provider`](/docs/agent/plugins#identity-provider)
+### @veramo/did-provider-ethr
 
-### @veramo/plugin-web-did
+[`id-provider`](/docs/agent/plugins#id-provider)
 
-[`identity-provider`](/docs/agent/plugins#identity-provider)
+### @veramo/did-provider-web
 
-### @veramo/plugin-key-manager
+[`id-provider`](/docs/agent/plugins#id-provider)
+
+### @veramo/key-manager
 
 [`key-manager`](/docs/agent/plugins#key-manager)
 
-### @veramo/plugin-lib-sodium
+### @veramo/kms-local
 
 [`kms`](/docs/agent/plugins#kms)
 
-### @veramo/plugin-resolver
+### @veramo/did-resolver
 
 [`resolver`](/docs/agent/plugins#resolver)
 
-### @veramo/plugin-resolver-universal
-
-[`resolver`](/docs/agent/plugins#resolver)
-
-### @veramo/plugin-did-comm
+### @veramo/did-comm
 
 [`message-handler`](/docs/agent/plugins#message-handler)
 
-This plugin provides a method of creating an encrypted message according to the initial DIDComm-js implementation. See the [API Reference](/docs/api/daf-did-comm) for more info.
+This plugin provides a method of creating an encrypted message according to the initial DIDComm-js implementation. See the [API Reference](/docs/api/did-comm) for more info.
 
-### @veramo/plugin-did-jwt
-
-[`message-handler`](/docs/agent/plugins#message-handler)
-
-### @veramo/plugin-message-handler
+### @veramo/did-jwt
 
 [`message-handler`](/docs/agent/plugins#message-handler)
 
-### @veramo/plugin-url
+### @veramo/message-handler
 
 [`message-handler`](/docs/agent/plugins#message-handler)
 
-### @veramo/plugin-selective-disclosure
+### @veramo/url-handler
+
+[`message-handler`](/docs/agent/plugins#message-handler)
+
+### @veramo/selective-disclosure
 
 [`message-handler`](/docs/agent/plugins#message-handler) [`action-handler`](/docs/agent/plugins#action-handler)
 
-### @veramo/plugin-w3c
+### @veramo/credential-w3c
 
 [`message-handler`](/docs/agent/plugins#message-handler) [`action-handler`](/docs/agent/plugins#action-handler)
 
-### @veramo/plugin-express
+### @veramo/remote-server
 
 [`enhancer`](/docs/agent/plugins#message-handler)
 
-### @veramo/plugin-type-orm
+### @veramo/data-store
 
 [`data-store`](/docs/agent/plugins#data-store) [`enhancer`](/docs/agent/plugins#message-handler)
 
-### @veramo/plugin-rest
+### @veramo/remote-client
 
 [`enhancer`](/docs/agent/plugins#message-handler)

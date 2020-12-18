@@ -1,12 +1,12 @@
 module.exports = {
   title: 'Veramo',
   tagline: 'A JavaScript Framework for Verifiable Data',
-  url: 'https://veramo.herokuapp.com',
+  url: 'https://veramo.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'uport-project', // Usually your GitHub org/user name.
-  projectName: 'daf', // Usually your repo name.
+  projectName: 'veramo', // Usually your repo name.
   themeConfig: {
     prism: {
       defaultLanguage: 'javascript',
@@ -32,15 +32,19 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'docs/api/daf-core',
+          to: 'docs/api/core',
           activeBasePath: 'docs',
           label: 'API',
           position: 'right',
         },
-        { href: 'https://github.com/uport-project/daf/discussions', label: 'Community', position: 'right' },
+        {
+          href: 'https://github.com/uport-project/veramo/discussions',
+          label: 'Community',
+          position: 'right',
+        },
         // { to: 'blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://github.com/uport-project/daf',
+          href: 'https://github.com/uport-project/veramo',
           label: 'GitHub',
           position: 'right',
         },
@@ -84,11 +88,11 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/uport-project/daf',
+              href: 'https://github.com/uport-project/veramo',
             },
             {
               label: 'Discussions',
-              href: 'https://github.com/uport-project/daf/discussions',
+              href: 'https://github.com/uport-project/veramo/discussions',
             },
           ],
         },
@@ -103,12 +107,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/uport-project/daf-website/blob/master/',
+          editUrl: 'https://github.com/uport-project/veramo-website/blob/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/uport-project/daf-website/edit/master/website/blog/',
+          editUrl: 'https://github.com/uport-project/veramo-website/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

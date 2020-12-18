@@ -10,11 +10,11 @@ Functionality in Veramo is added to the agent via the plugin system. Writing and
 
 Plugins can have many capabilities. In Veramo we have a tagging system that describes what a plugin can do. The capability tags are as follows:
 
-### `identity-manager`
+### `id-manager`
 
 A common API for an identity manager. You extend this by adding providers.
 
-### `identity-provider`
+### `id-provider`
 
 A specific identity provider implementation.
 
@@ -36,7 +36,7 @@ A common API for data storage.
 
 ### `action-handler`
 
-Common API for handling actions?
+Common API for handling actions
 
 ### `enhancer`
 

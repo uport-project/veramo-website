@@ -37,7 +37,7 @@ POST https://veramo.dev/agent/handleMessage
 
 An agent can be manually configured by installing plugins from npm, running a node application and [creating a setup](/docs/guides/nodejs) file to instatiate the agent class. You can also create a `.yml` file with full configuration.
 
-Here is a trimmed down version of the configuration file used for the standard cloud agent [one click heroku deployment](https://github.com/uport-project/daf-agent-deploy).
+Here is a trimmed down version of the configuration file used for the standard cloud agent [one click heroku deployment](https://github.com/uport-project/veramo-agent-deploy).
 
 ```yml
 server:
@@ -65,29 +65,29 @@ dbConnection:
       synchronize: true
       logging: false
       entities:
-        $require: daf-typeorm?t=object#Entities
+        $require: typeorm?t=object#Entities
 messageHandler:
-  $require: daf-message-handler#MessageHandler
+  $require: message-handler#MessageHandler
   $args:
     - messageHandlers:
-        - $require: daf-did-comm#DIDCommMessageHandler
-        - $require: daf-did-jwt#JwtMessageHandler
-        - $require: daf-w3c#W3cMessageHandler
-        - $require: daf-selective-disclosure#SdrMessageHandler
+        - $require: did-comm#DIDCommMessageHandler
+        - $require: did-jwt#JwtMessageHandler
+        - $require: credential-w3c#W3cMessageHandler
+        - $require: selective-disclosure#SdrMessageHandler
 agent:
-  $require: daf-core#Agent
+  $require: core#Agent
   $args:
     - plugins:
-        - $require: daf-key-manager#KeyManager
+        - $require: key-manager#KeyManager
           $args:
             - store:
-                $require: daf-typeorm#KeyStore
+                $require: typeorm#KeyStore
                 $args:
                   - $ref: /dbConnection
-                  - $require: daf-libsodium#SecretBox
+                  - $require: kms-local#SecretBox
                     $args:
                       - $ref: /constants/secretKey
               kms:
                 local:
-                  $require: daf-libsodium#KeyManagementSystem
+                  $require: kms-local#KeyManagementSystem
 ```

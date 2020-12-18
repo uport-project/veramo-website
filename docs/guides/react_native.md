@@ -95,7 +95,7 @@ import { VeramoResolver } from '@veramo/plugin-resolver'
 // Storage plugin using TypeOrm
 import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@veramo/plugin-typeorm'
 
-// TypeORM is installed with daf-typeorm
+// TypeORM is installed with @veramo/typeorm
 import { createConnection } from 'typeorm'
 ```
 
@@ -105,7 +105,7 @@ Next initilize our sqlite database using TypeORM:
 // Create react native db connection
 const dbConnection = createConnection({
   type: 'react-native',
-  database: 'daf.sqlite',
+  database: 'veramo.sqlite',
   location: 'default',
   synchronize: true,
   logging: ['error', 'info', 'warn'],
