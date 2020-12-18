@@ -66,7 +66,7 @@ const textContent = {
       issuer: { id: 'did:web:veramo.dev' },
       credentialSubject: {
         id: user.did,
-        tutorial: 22,
+        tutorial: 42,
         status: 'completed'
       }
     },
@@ -88,7 +88,7 @@ const textContent = {
   /* Create a verifiable credential */
   $ veramo credential create
 
-  /* Rum a local cloud agent */
+  /* Run a local cloud agent */
   $ veramo server
   `,
 
