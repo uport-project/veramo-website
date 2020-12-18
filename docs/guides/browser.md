@@ -4,7 +4,7 @@ title: Create React App
 sidebar_label: Create React App
 ---
 
-Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up a DID resolver to work in a standard `create-react-app setup`. It is possible to add your own identity, key management, and storage plugins that are browser compatible. We plan to add these plugins, and you can [get involved in the conversation here](https://github.com/uport-project/daf/issues/276)
+Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up a DID resolver to work in a standard `create-react-app setup`. It is possible to add your own identity, key management, and storage plugins that are browser compatible. We plan to add these plugins, and you can [get involved in the conversation here](https://github.com/uport-project/veramo/issues/276)
 
 Initialize a new `Create React App` project
 

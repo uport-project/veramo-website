@@ -4,13 +4,13 @@ title: Cloud Agent
 sidebar_label: Cloud Agent
 ---
 
-A cloud agent is a server that exposes the agent OpenAPI. You can access the agent over REST using an API key. You can create your own cloud agent, or you can use the CLI and an agent.yml configuration as we have in our [Veramo Cloud Agent](https://github.com/uport-project/daf-agent-deploy) deployments repo. This repo also contains Docker config to create, build, and push an image to your registry.
+A cloud agent is a server that exposes the agent OpenAPI. You can access the agent over REST using an API key. You can create your own cloud agent, or you can use the CLI and an agent.yml configuration as we have in our [Veramo Cloud Agent](https://github.com/uport-project/veramo-agent-deploy) deployments repo. This repo also contains Docker config to create, build, and push an image to your registry.
 
 A cloud agent could be for an individual, an organization, or a service. Depending on what you are building, you could have multiple cloud agents running in your infrastructure.
 
 ## Deploy a cloud agent
 
-The quickest way to deploy an agent is to use a free Heroku account. Go to the [Veramo Cloud Agent](https://github.com/uport-project/daf-agent-deploy) repo and hit the Heroku deploy button.
+The quickest way to deploy an agent is to use a free Heroku account. Go to the [Veramo Cloud Agent](https://github.com/uport-project/veramo-agent-deploy) repo and hit the Heroku deploy button.
 
 Once you have an account, you will be presented with a configuration screen. Most of the values will be generated for you, but you will need to fill out the `AGENT_URL`. The other values are optional or generated for you.
 

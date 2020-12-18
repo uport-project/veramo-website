@@ -77,7 +77,7 @@ import { VeramoResolver } from '@veramo/plugin-resolver'
 // Storage plugin using TypeOrm
 import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@veramo/plugin-typeorm'
 
-// TypeORM is installed with daf-typeorm
+// TypeORM is installed with @veramo/typeorm
 import { createConnection } from 'typeorm'
 ```
 

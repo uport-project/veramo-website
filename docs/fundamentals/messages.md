@@ -3,7 +3,7 @@ id: messages
 title: Messages
 ---
 
-A [Message](/docs/api/daf-message-handler.message) is a data format specific to the Veramo framework. All incoming data that passes through the core message handler will get formated when successfully parsed.
+A [Message](/docs/api/message-handler) is a data format specific to the Veramo framework. All incoming data that passes through the core message handler will get formated when successfully parsed.
 
 ```
 {

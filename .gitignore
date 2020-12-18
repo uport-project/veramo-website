@@ -5,6 +5,7 @@
 /build
 /temp
 /daf
+/veramo
 
 # Generated files
 .docusaurus
