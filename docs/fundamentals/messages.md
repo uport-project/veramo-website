@@ -13,7 +13,7 @@ A [Message](/docs/api/daf-message-handler.message) is a data format specific to 
 
 ```
 
-The Message Handler method takes a JWT as input and can perform actions based on the decoded message type. If the message handler does not understand the message type, it will do nothing by default, but this can also be customized.
+The Message Handler method takes a message as input and can perform actions based on the decoded message type. If the message handler does not understand the message type, it will do nothing by default, but this can also be customized.
 
 Creating or adding plugins to decode, interpret, and perform actions based on message types is where you will begin to see the composability and interoperability at the heart of Veramo.
 
