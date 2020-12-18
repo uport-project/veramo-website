@@ -7,39 +7,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 import CodeBlock from '@theme/CodeBlock'
 
-const features = [
-  {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and used to get your website up and
-        running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into
-        the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the
-        same header and footer.
-      </>
-    ),
-  },
-]
-
 const textContent = {
   tooling: `Veramo was designed from the ground up to be flexible and modular which makes it highly scalable. Create an agent, add plugins, run on server or mobile. 
   You can also expose your agent over REST.`,
@@ -105,7 +72,7 @@ const textContent = {
 function BuildTrustNetworks() {
   return (
     <section>
-      <div className={'container tooling'} style={{ backgroundColor: 'white' }}>
+      <div className={'container tooling'}>
         <div className={'row'}>
           <div className={'col col--6'} style={{ padding: 10, textAlign: 'center' }}>
             <div className={'content'}>
@@ -130,7 +97,7 @@ function BuildTrustNetworks() {
 
 function NextGenerationTooling() {
   return (
-    <section style={{ backgroundColor: 'whitesmoke' }}>
+    <section className={'composable'}>
       <div className={'container tooling'}>
         <div className={'row'}>
           <div className={'col col--6'} style={{ paddingTop: 50, paddingLeft: 20 }}>
@@ -178,7 +145,7 @@ function MultiPlatform() {
 
 function CommandLineTool() {
   return (
-    <section style={{ backgroundColor: 'whitesmoke' }}>
+    <section className={'cli'}>
       <div className={'container tooling'}>
         <div className={'row'}>
           <div className={'col col--6'} style={{ paddingTop: 50 }}>
@@ -230,13 +197,16 @@ function Home() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx('button button--primary button--lg button--square', styles.getStarted)}
+              className={clsx(
+                'button button--primary button--lg button--square getStarted',
+                styles.getStarted,
+              )}
               to={useBaseUrl('docs/fundamentals/introduction')}
             >
               Get Started
             </Link>
             <Link
-              className={clsx('button  button--lg button--no-border', styles.learnMore)}
+              className={clsx('button  button--lg button--no-border learnMore', styles.learnMore)}
               to={useBaseUrl('docs/fundamentals/introduction')}
             >
               Learn more
