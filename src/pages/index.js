@@ -30,7 +30,7 @@ const textContent = {
 
   const verifiableCredential = await agent.createVerifiableCredential({
     credential: {
-      issuer: { id: 'did:web:veramo.dev' },
+      issuer: { id: 'did:web:sun.veramo.dev' },
       credentialSubject: {
         id: user.did,
         tutorial: 42,
@@ -47,7 +47,7 @@ const textContent = {
   $ npm install @veramo/cli -g
 
   /* Resolve a DID */
-  $ veramo did resolve did:web:veramo.io
+  $ veramo did resolve did:web:sun.veramo.io
 
   /* Create an identifier */
   $ veramo did create
