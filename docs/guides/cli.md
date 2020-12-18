@@ -64,19 +64,10 @@ Commands:
   did remove-service                    remove a service endpoint from did document
 
   credential create [options]           create W3C Verifiable Credential
-  credential revoke [options]           revoke W3C Verifiable Credential
-  credential verify [options]           verify W3C Verifiable Credential
-  credential import [options]           import W3C Verifiable Credential
-  credential export [options]           export W3C Verifiable Credential
 
   presentation create [options]         create W3C Verifiable Presentation
-  presentation revoke [options]         revoke W3C Verifiable Presentation
-  presentation verify [options]         verify W3C Verifiable Presentation
-  presentation import [options]         import W3C Verifiable Presentation
-  presentation export [options]         export W3C Verifiable Presentation
 
   message handle [options]              handle raw message
-  message create [options]              create message
 
   sdr create                            create Selective Disclosure Request
   sdr respond                           respond to Selective Disclosure Request
