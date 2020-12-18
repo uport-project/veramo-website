@@ -44,7 +44,7 @@ const textContent = {
   `,
   cliExample: `
   /* Install the CLI globally */
-  $ npm install veramo -g
+  $ npm install @veramo/cli -g
 
   /* Resolve a DID */
   $ veramo did resolve did:web:veramo.io
