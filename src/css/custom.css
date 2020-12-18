@@ -16,15 +16,36 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
 
-  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-background-color: #0a1f2b;
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-toggle-color: white;
 
   --ifm-menu-color-active: #6d6d6d;
   --ifm-menu-color: #6d6d6d;
 
-  /* --ifm-font-family-base: "Helvetica Neue, sans-serif"; */
+  --ifm-hero-bg-color: #0d2a39;
+  --ifm-hero-title-color: white;
+  --ifm-hero-txt-color: white;
 
   --brand: #25c2a0;
   --body-text-primary: #4e4e4e;
+  --body-section-composable: whitesmoke;
+}
+
+html[data-theme='dark'] {
+  --ifm-navbar-background-color: #0a1f2b;
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-toggle-color: white;
+
+  --ifm-menu-color-active: #aeaeae;
+  --ifm-menu-color: #aeaeae;
+
+  --ifm-hero-bg-color: #0d2a39;
+  --ifm-hero-title-color: white;
+  --ifm-hero-txt-color: white;
+
+  --body-text-primary: #999999;
+  --body-section-composable: #2c2c2c;
 }
 
 .main-wrapper.home-page {
@@ -39,7 +60,7 @@
 }
 
 .navbar {
-  background-color: #0a1f2b;
+  background-color: var(--ifm-navbar-background-color);
 }
 .navbar__brand:hover {
   color: var(--ifm-navbar-link-color);
@@ -48,27 +69,37 @@
   color: var(--ifm-navbar-link-color);
 }
 .navbar__toggle {
-  color: white;
-}
-.hero--primary {
-  background-color: #0d2a39;
+  color: var(--ifm-navbar-toggle-color);
 }
 .hero__title {
-  color: var(--brand);
+  color: var(--ifm-hero-title-color);
   font-size: 5rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
 }
 .hero__subtitle {
   font-size: 1.5rem;
+  color: var(--ifm-hero-txt-color);
 }
-
+.hero--primary {
+  background-color: var(--ifm-hero-bg-color);
+}
 .promoText {
   color: var(--body-text-primary);
 }
 
 .menu__link.menu__link--active {
-  color: black;
+  color: var(--ifm-menu-color-active);
+}
+
+section.composable,
+section.cli {
+  background-color: var(--body-section-composable);
+}
+
+.getStarted,
+.learnMore {
+  color: var(--ifm-hero-txt-color);
 }
 
 .video-container {
@@ -98,6 +129,8 @@
     margin-right: -9999px;
     padding: 0;
     border-radius: 0;
+  }
+  .composable .col.right .prism-code {
     height: 450px;
   }
 }
