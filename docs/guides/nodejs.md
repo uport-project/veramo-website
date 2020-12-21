@@ -26,7 +26,7 @@ yarn add typescript ts-node --dev
 Install Veramo core and plugins
 
 ```bash
-yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-libsodium @veramo/plugin-ethr-did @veramo/plugin-web-did @veramo/plugin-key-manager @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
+yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-provider-web @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver
 ```
 
 Install `sqlite`
@@ -57,27 +57,33 @@ We bootstrap Veramo by creating a setup file and initializing the agent. Create 
 
 ```ts
 // Core interfaces
-import { createAgent, IIdentityManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
+import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
 
 // Core identity manager plugin
-import { IdentityManager } from '@veramo/plugin-identity-manager'
+import { DIDManager } from '@veramo/did-manager'
 
 // Ethr did identity provider
-import { EthrIdentityProvider } from '@veramo/plugin-ethr-did'
+import { EthrDIDProvider } from '@veramo/did-provider-ethr'
+
+// Web did identity provider
+import { WebDIDProvider } from '@veramo/did-provider-web'
 
 // Core key manager plugin
-import { KeyManager } from '@veramo/plugin-key-manager'
+import { KeyManager } from '@veramo/key-manager'
 
 // Custom key management system for RN
-import { KeyManagementSystem } from '@veramo/plugin-libsodium'
+import { KeyManagementSystem } from '@veramo/kms-local'
 
-// Custom resolver
-import { VeramoResolver } from '@veramo/plugin-resolver'
+// Custom resolvers
+import { DIDResolverPlugin } from '@veramo/did-resolver'
+import { Resolver } from 'did-resolver'
+import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
+import { getResolver as webDidResolver } from 'web-did-resolver'
 
 // Storage plugin using TypeOrm
-import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@veramo/plugin-typeorm'
+import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
 
-// TypeORM is installed with @veramo/typeorm
+// TypeORM is installed with daf-typeorm
 import { createConnection } from 'typeorm'
 ```
 
@@ -106,7 +112,7 @@ const dbConnection = createConnection({
 Create the agent by using the createAgent method from `@veramo/core`
 
 ```ts
-export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
+export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
   plugins: [
     new KeyManager({
       store: new KeyStore(dbConnection),
@@ -114,21 +120,28 @@ export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & I
         local: new KeyManagementSystem(),
       },
     }),
-    new IdentityManager({
-      store: new IdentityStore(dbConnection),
+    new DIDManager({
+      store: new DIDStore(dbConnection),
       defaultProvider: 'did:ethr:rinkeby',
       providers: {
-        'did:ethr:rinkeby': new EthrIdentityProvider({
+        'did:ethr:rinkeby': new EthrDIDProvider({
           defaultKms: 'local',
           network: 'rinkeby',
           rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID,
         }),
-        'did:web': new WebIdentityProvider({
+        'did:web': new WebDIDProvider({
           defaultKms: 'local',
         }),
       },
     }),
-    new VeramoResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+    new DIDResolverPlugin({
+      resolver: new Resolver({
+        ethr: ethrDidResolver({
+          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID }],
+        }).ethr,
+        web: webDidResolver().web,
+      }),
+    }),
   ],
 })
 ```
@@ -145,7 +158,7 @@ Add the following code to `./src/list-identifiers`
 import { agent } from './veramo/setup'
 
 async function main() {
-  const identifiers = await agent.identityManagerGetIdentities()
+  const identifiers = await agent.didManagerFind()
 
   console.log(`There are ${identifiers.length} identifiers`)
 
@@ -166,7 +179,7 @@ Add the following code to `./src/create-identifier.ts`
 import { agent } from './veramo/setup'
 
 async function main() {
-  const identity = await agent.identityManagerCreateIdentity()
+  const identity = await agent.didManagerCreate()
   console.log(`New identity created`)
   console.log(identity)
 }
