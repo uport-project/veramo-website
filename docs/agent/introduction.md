@@ -13,7 +13,7 @@ An Agent is responsibe for but not limited to:
 - Creating Identifiers
 - Resolving Identifiers
 - Credential Issuance
-- Credential Revokation
+- Credential Revocation
 - Credential Exchange
 - Secret Application Hot Sauce
 
