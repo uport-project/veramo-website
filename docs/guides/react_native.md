@@ -66,7 +66,7 @@ Close the react native packager, clean the project, and rerun your app. If every
 Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next step.
 
 ```bash
-yarn add @veramo/core @veramo/plugin-identity-manager @veramo/plugin-react-native-libsodium @veramo/plugin-ethr-did @veramo/plugin-key-manager @veramo/plugin-resolver @veramo/plugin-typeorm @veramo/plugin-w3c
+yarn add @veramo/core @veramo/did-manager @veramo/kms-local-react-native @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
 ```
 
 ## Bootstrap Veramo
@@ -75,25 +75,29 @@ We bootstrap Veramo by creating a setup file and initializing the agent. Create 
 
 ```tsx
 // Core interfaces
-import { createAgent, IIdentityManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
+import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
 
 // Core identity manager plugin
-import { IdentityManager } from '@veramo/plugin-identity-manager'
+import { DIDManager } from '@veramo/did-manager'
 
 // Ethr did identity provider
-import { EthrIdentityProvider } from '@veramo/plugin-ethr-did'
+import { EthrDIDProvider } from '@veramo/did-provider-ethr'
 
 // Core key manager plugin
-import { KeyManager } from '@veramo/plugin-key-manager'
+import { KeyManager } from '@veramo/key-manager'
 
 // Custom key management system for RN
-import { KeyManagementSystem } from '@veramo/plugin-react-native-libsodium'
+import { KeyManagementSystem } from '@veramo/kms-local-react-native'
 
 // Custom resolver
-import { VeramoResolver } from '@veramo/plugin-resolver'
+// Custom resolvers
+import { DIDResolverPlugin } from '@veramo/did-resolver'
+import { Resolver } from 'did-resolver'
+import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
+import { getResolver as webDidResolver } from 'web-did-resolver'
 
 // Storage plugin using TypeOrm
-import { Entities, KeyStore, IdentityStore, IDataStoreORM } from '@veramo/plugin-typeorm'
+import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
 
 // TypeORM is installed with @veramo/typeorm
 import { createConnection } from 'typeorm'
@@ -116,7 +120,7 @@ const dbConnection = createConnection({
 Finally, create the agent and add plugins for Key, Identity, Storage, and Resolver. You will need to get an infura projectId from [Infura](https://infura.io/)
 
 ```tsx
-export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
+export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
   plugins: [
     new KeyManager({
       store: new KeyStore(dbConnection),
@@ -124,11 +128,11 @@ export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & I
         local: new KeyManagementSystem(),
       },
     }),
-    new IdentityManager({
-      store: new IdentityStore(dbConnection),
+    new DIDManager({
+      store: new DIDStore(dbConnection),
       defaultProvider: 'did:ethr:rinkeby',
       providers: {
-        'did:ethr:rinkeby': new EthrIdentityProvider({
+        'did:ethr:rinkeby': new EthrDIDProvider({
           defaultKms: 'local',
           network: 'rinkeby',
           rpcUrl: 'https://rinkeby.infura.io/v3/' + infuraProjectId,
@@ -137,7 +141,14 @@ export const agent = createAgent<IIdentityManager & IKeyManager & IDataStore & I
         }),
       },
     }),
-    new VeramoResolver({ infuraProjectId: 'INFURA_PROJECT_ID' }),
+    new DIDResolverPlugin({
+      resolver: new Resolver({
+        ethr: ethrDidResolver({
+          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + infuraProjectId }],
+        }).ethr,
+        web: webDidResolver().web,
+      }),
+    }),
   ],
 })
 ```
@@ -170,14 +181,14 @@ const App = () => {
 
   // Add the new identifier to state
   const createIdentifier = async () => {
-    const _id = await agent.identityManagerCreateIdentity()
+    const _id = await agent.didManagerCreate()
     setIdentifiers((s) => s.concat([_id]))
   }
 
   // Check for existing identifers on load and set them to state
   useEffect(() => {
     const getIdentifiers = async () => {
-      const _ids = await agent.identityManagerGetIdentities()
+      const _ids = await agent.didManagerFind()
       setIdentifiers(_ids)
 
       // Inspect the id object in your debug tool
