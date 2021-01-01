@@ -81,7 +81,7 @@ import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager } from '@v
 import { DIDManager } from '@veramo/did-manager'
 
 // Ethr did identity provider
-import { EthrDIDProvider } from '@veramo/plugin-ethr-did'
+import { EthrDIDProvider } from '@veramo/did-provider-ethr'
 
 // Web did identity provider
 import { WebDIDProvider } from '@veramo/did-provider-web'
