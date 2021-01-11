@@ -150,9 +150,9 @@ That's the minimal agent setup complete. Let's use it to create and list identif
 
 ## App Logic
 
-Create 2 files `./src/create-identifier.ts` and `./src/list-identifiers`
+Create 2 files `./src/create-identifier.ts` and `./src/list-identifiers.ts`
 
-Add the following code to `./src/list-identifiers`
+Add the following code to `./src/list-identifiers.ts`
 
 ```ts
 import { agent } from './veramo/setup'
