@@ -12,20 +12,38 @@ Initialize a new `Create React App` project
 npx create-react-app init veramo-browser --template typescript
 ```
 
-Install veramo core and resolver plugin
+Install veramo core, DIDResolver plugin and dependencies
 
 ```bash
-yarn add @veramo/core @veramo/plugin-resolver
+yarn add @veramo/core @veramo/did-resolver ethr-did-resolver web-did-resolver did-resolver
 ```
 
 Create a setup file in `scr/veramo/setup.ts` and add the following code.
 
+Create some variables that we will use later
+
 ```ts
 import { createAgent, IResolver } from '@veramo/core'
-import { DafResolver } from '@veramo/resolver'
+
+import { DIDResolverPlugin } from '@veramo/did-resolver'
+import { Resolver } from 'did-resolver'
+import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
+import { getResolver as webDidResolver } from 'web-did-resolver'
+
+// You will need to get a project ID from infura https://www.infura.io
+const INFURA_PROJECT_ID = 'INFURA_PROJECT_ID'
 
 export const agent = createAgent<IResolver>({
-  plugins: [new DafResolver({ infuraProjectId: 'INFURA_PROJECT_ID' })],
+  plugins: [
+    new DIDResolverPlugin({
+      resolver: new Resolver({
+        ethr: ethrDidResolver({
+          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID }],
+        }).ethr,
+        web: webDidResolver().web,
+      }),
+    }),
+  ],
 })
 ```
 
