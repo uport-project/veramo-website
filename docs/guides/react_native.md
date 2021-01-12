@@ -47,10 +47,29 @@ Add the following snippets to your package.json file
 }
 ```
 
-Run yarn again to trigger the `postinstall` script. This will install some additional dependencies based on the `rn-nodeify` command to your app.
+Install a TextEncoder polyfill and this will also trigger the `postinstall` script to install additional dependencies based on the `rn-nodeify` command to your app.
 
 ```bash
-yarn
+yarn add @zxing/text-encoding
+```
+
+Import `shim.js` (created by rn-nodify) and `@zxing/text-encoding` into the top of `index.ts`. Please refer to this [issue regarding the TextEncoder polyfill](https://github.com/uport-project/veramo-website/issues/33).
+
+```ts
+{
+  import './shim'
+  import '@zxing/text-encoding'
+
+  ...
+}
+```
+
+Open `shim.js` and uncomment `require('crypto)`
+
+```js
+// If using the crypto shim, uncomment the following line to ensure
+// crypto is loaded first, so it can populate global.crypto
+require('crypto')
 ```
 
 Install all of the pods in your project that came with the new dependencies.
@@ -103,6 +122,13 @@ import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
 import { createConnection } from 'typeorm'
 ```
 
+Create an infura variable:
+
+```ts
+// You will need to get a project ID from infura https://www.infura.io
+const INFURA_PROJECT_ID = 'INFURA_PROJECT_ID'
+```
+
 Next initilize our sqlite database using TypeORM:
 
 ```tsx
@@ -117,7 +143,7 @@ const dbConnection = createConnection({
 })
 ```
 
-Finally, create the agent and add plugins for Key, Identity, Storage, and Resolver. You will need to get an infura projectId from [Infura](https://infura.io/)
+Finally, create the agent and add plugins for Key, Identity, Storage, and Resolver.
 
 ```tsx
 export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
@@ -144,7 +170,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     new DIDResolverPlugin({
       resolver: new Resolver({
         ethr: ethrDidResolver({
-          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + infuraProjectId }],
+          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID }],
         }).ethr,
         web: webDidResolver().web,
       }),
