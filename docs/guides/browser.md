@@ -9,8 +9,21 @@ Veramo core runs natively in the browser. The plugins you use also need to be br
 Initialize a new `Create React App` project
 
 ```bash
-npx create-react-app init veramo-browser --template typescript
+npx create-react-app veramo-react-app veramo-browser --template typescript
+cd veramo-react-app
 ```
+
+:::note
+Stop if you see this message at the end:
+
+```
+A template was not provided. This is likely because you're using an outdated version of create-react-app.
+Please note that global installs of create-react-app are no longer supported.
+You can fix this by running npm uninstall -g create-react-app or yarn global remove create-react-app before using create-react-app again.
+```
+
+Be sure to follow those instructions and then run the `npx` command again (because otherwise `yarn start` won't even run).  If you can't get rid of that message, [this answer may help](https://stackoverflow.com/questions/59188624/template-not-provided-using-create-react-app).
+:::
 
 Install veramo core and resolver plugin
 
