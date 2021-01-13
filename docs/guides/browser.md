@@ -4,12 +4,13 @@ title: Create React App
 sidebar_label: Create React App
 ---
 
-Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up a DID resolver to work in a standard `create-react-app setup`. It is possible to add your own identity, key management, and storage plugins that are browser compatible. We plan to add these plugins, and you can [get involved in the conversation here](https://github.com/uport-project/veramo/issues/276)
+Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up a DID resolver to work in a standard `create-react-app setup`. It is possible to add your own identity, key management, and storage plugins that are browser compatible. We plan to add these plugins, and you can [get involved in the conversation here](https://github.com/uport-project/veramo/issues/276).
 
 Initialize a new `Create React App` project
 
 ```bash
-npx create-react-app init veramo-browser --template typescript
+npx create-react-app veramo-react-app veramo-browser --template typescript
+cd veramo-react-app
 ```
 
 Install veramo core, DIDResolver plugin and dependencies
@@ -18,9 +19,7 @@ Install veramo core, DIDResolver plugin and dependencies
 yarn add @veramo/core @veramo/did-resolver ethr-did-resolver web-did-resolver did-resolver
 ```
 
-Create a setup file in `scr/veramo/setup.ts` and add the following code.
-
-Create some variables that we will use later
+Create a setup file in `src/veramo/setup.ts` and add the following code, replacing the `INFURA_PROJECT_ID` with your own.
 
 ```ts
 import { createAgent, IResolver } from '@veramo/core'
@@ -47,7 +46,7 @@ export const agent = createAgent<IResolver>({
 })
 ```
 
-Open `App.css` and add the following styles to the top of the file:
+Open `src/App.css` and add the following styles to the top of the file:
 
 ```css
 pre {
@@ -65,7 +64,7 @@ pre {
 }
 ```
 
-Open `App.tsx` and replace with the following code:
+Open `src/App.tsx` and replace with the following code:
 
 ```tsx
 import React, { useEffect, useState } from 'react'
@@ -100,4 +99,4 @@ function App() {
 export default App
 ```
 
-And that's it! You should see a DID document being resolved instead of the default landing page. What's next? Perhaps you could [write a plugin](/docs/guides/create_plugin) that allows you to store data in local storage?
+And that's it! When you `yarn start` you should see a DID document being resolved instead of the default landing page. What's next? Perhaps you could [write a plugin](/docs/guides/create_plugin) that allows you to store data in local storage?
