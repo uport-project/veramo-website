@@ -9,8 +9,7 @@ Veramo core runs natively in the browser. The plugins you use also need to be br
 Initialize a new `Create React App` project
 
 ```bash
-npx create-react-app veramo-react-app veramo-browser --template typescript
-cd veramo-react-app
+npx create-react-app init veramo-browser --template typescript
 ```
 
 :::note
