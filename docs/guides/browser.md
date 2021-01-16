@@ -100,3 +100,15 @@ export default App
 ```
 
 And that's it! When you `yarn start` you should see a DID document being resolved instead of the default landing page. What's next? Perhaps you could [write a plugin](/docs/guides/create_plugin) that allows you to store data in local storage?
+
+## Troubleshooting
+
+If after running `create-react-app`, you see the following message:
+
+```
+A template was not provided. This is likely because you're using an outdated version of create-react-app.
+Please note that global installs of create-react-app are no longer supported.
+You can fix this by running npm uninstall -g create-react-app or yarn global remove create-react-app before using create-react-app again.
+```
+
+Be sure to follow the instructions in that message, and then run the `npx` command again. If you still the message, [this answer may help](https://stackoverflow.com/questions/59188624/template-not-provided-using-create-react-app).
