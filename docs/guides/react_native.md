@@ -161,7 +161,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
         'did:ethr:rinkeby': new EthrDIDProvider({
           defaultKms: 'local',
           network: 'rinkeby',
-          rpcUrl: 'https://rinkeby.infura.io/v3/' + infuraProjectId,
+          rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID,
           gas: 1000001,
           ttl: 60 * 60 * 24 * 30 * 12 + 1,
         }),
@@ -246,6 +246,8 @@ const App = () => {
     </SafeAreaView>
   )
 }
+
+export default App
 ```
 
 Close the packager and rebuild the app. Once loaded hit the `Create identifier` button a few times and you should see your identifiers being created!
