@@ -15,7 +15,7 @@ Let's setup Veramo to run locally on the device and use `sqlite` to store data, 
 Use the React Native CLI bootstrap a new typescript react project:
 
 ```bash
-npx react-native init Veramo --template react-native-template-typescript
+npx react-native init Veramo_React_Native --template react-native-template-typescript
 ```
 
 Ensure your project is building and running ok before continuing to next step.
@@ -53,15 +53,14 @@ Install a TextEncoder polyfill and this will also trigger the `postinstall` scri
 yarn add @zxing/text-encoding
 ```
 
+Rename `index.js` to `index.ts`.
+
 Import `shim.js` (created by rn-nodify) and `@zxing/text-encoding` into the top of `index.ts`. Please refer to this [issue regarding the TextEncoder polyfill](https://github.com/uport-project/veramo-website/issues/33).
 
 ```ts
-{
-  import './shim'
-  import '@zxing/text-encoding'
-
-  ...
-}
+import './shim'
+import '@zxing/text-encoding'
+...
 ```
 
 Open `shim.js` and uncomment `require('crypto)`
@@ -79,6 +78,10 @@ npx pod-install
 ```
 
 Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
+
+:::note
+If you get errors, see the Troubleshooting section below.
+:::
 
 ### Veramo
 
@@ -218,7 +221,7 @@ const App = () => {
       setIdentifiers(_ids)
 
       // Inspect the id object in your debug tool
-      console.log(ids)
+      console.log('_ids:', _ids)
     }
 
     getIdentifiers()
@@ -255,3 +258,21 @@ Close the packager and rebuild the app. Once loaded hit the `Create identifier` 
 ## Verifiable Credentials
 
 So now we can create identifiers, store them in a database, and query for them. Next, we will use an identifier to create some Verifiable Credentials, save them to the database, and query for them too.
+
+## Troubleshooting
+
+Before the Veramo section, you may see this error:
+
+```
+error: Error: Unable to resolve module `events` from `node_modules/stream-browserify/index.js`: events could not be found within the project.
+
+If you are sure the module exists, try these steps:
+ 1. Clear watchman watches: watchman watch-del-all
+ 2. Delete node_modules: rm -rf node_modules and run yarn install
+ 3. Reset Metro's cache: yarn start --reset-cache
+ 4. Remove the cache: rm -rf /tmp/metro-*
+```
+
+It can be resolved with: `yarn add events`
+
+(It should have been installed with [@veramo/core](https://www.npmjs.com/package/@veramo/core). There may be caching issues.)
