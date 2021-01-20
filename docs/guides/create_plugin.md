@@ -4,7 +4,7 @@ title: Custom Plugin
 sidebar_label: Custom Plugin
 ---
 
-This is abasic guide to getting started creating Veramo plugins. More indepth tutorials to follow.
+This is a basic guide to getting started creating Veramo plugins. More in-depth tutorials to follow.
 
 Start by using the [veramo-plugin-template](https://github.com/uport-project/veramo-plugin) repo on Github. Click the `Use this template` button to copy the repo to your account. Clone the repo locally and rename the package name in `package.json`.
 
