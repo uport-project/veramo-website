@@ -15,7 +15,7 @@ Let's setup Veramo to run locally on the device and use `sqlite` to store data, 
 Use the React Native CLI bootstrap a new typescript react project:
 
 ```bash
-npx react-native init Veramo_React_Native --template react-native-template-typescript
+npx react-native init VeramoMobile --template react-native-template-typescript
 ```
 
 Ensure your project is building and running ok before continuing to next step.
