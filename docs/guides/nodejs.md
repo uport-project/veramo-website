@@ -240,3 +240,11 @@ New identity created
 ```
 
 Congrats, You have set up the agent and created identifiers!
+
+If you want to use Verifiable Credentials, Verifiable Presentations or Selective Disclosure Requests, you'll need to import DataStore from @veramo/data-store, then add the following to the agent creation parameters:
+
+```ts
+new CredentialIssuer(),
+new SelectiveDisclosure(), 
+new DataStore(dbConnection)
+```
