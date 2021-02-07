@@ -77,19 +77,17 @@ Install all of the pods in your project that came with the new dependencies.
 npx pod-install
 ```
 
-Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
-
-:::note
-If you get errors, see the Troubleshooting section below.
-:::
+:::note The app may not run at this point (due to an error with `events`) but that will be fixed in the next step. :::
 
 ### Veramo
 
-Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next step.
+Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next section.
 
 ```bash
 yarn add @veramo/core @veramo/did-manager @veramo/kms-local-react-native @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
 ```
+
+Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
 
 ## Bootstrap Veramo
 
@@ -258,21 +256,3 @@ Close the packager and rebuild the app. Once loaded hit the `Create identifier` 
 ## Verifiable Credentials
 
 So now we can create identifiers, store them in a database, and query for them. Next, we will use an identifier to create some Verifiable Credentials, save them to the database, and query for them too.
-
-## Troubleshooting
-
-Before the Veramo section, you may see this error:
-
-```
-error: Error: Unable to resolve module `events` from `node_modules/stream-browserify/index.js`: events could not be found within the project.
-
-If you are sure the module exists, try these steps:
- 1. Clear watchman watches: watchman watch-del-all
- 2. Delete node_modules: rm -rf node_modules and run yarn install
- 3. Reset Metro's cache: yarn start --reset-cache
- 4. Remove the cache: rm -rf /tmp/metro-*
-```
-
-It can be resolved with: `yarn add events`
-
-(It should have been installed with [@veramo/core](https://www.npmjs.com/package/@veramo/core). There may be caching issues.)
