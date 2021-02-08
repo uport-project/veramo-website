@@ -15,7 +15,7 @@ Let's setup Veramo to run locally on the device and use `sqlite` to store data, 
 Use the React Native CLI bootstrap a new typescript react project:
 
 ```bash
-npx react-native init Veramo --template react-native-template-typescript
+npx react-native init VeramoMobile --template react-native-template-typescript
 ```
 
 Ensure your project is building and running ok before continuing to next step.
@@ -53,15 +53,14 @@ Install a TextEncoder polyfill and this will also trigger the `postinstall` scri
 yarn add @zxing/text-encoding
 ```
 
+Rename `index.js` to `index.ts`.
+
 Import `shim.js` (created by rn-nodify) and `@zxing/text-encoding` into the top of `index.ts`. Please refer to this [issue regarding the TextEncoder polyfill](https://github.com/uport-project/veramo-website/issues/33).
 
 ```ts
-{
-  import './shim'
-  import '@zxing/text-encoding'
-
-  ...
-}
+import './shim'
+import '@zxing/text-encoding'
+...
 ```
 
 Open `shim.js` and uncomment `require('crypto)`
@@ -78,15 +77,17 @@ Install all of the pods in your project that came with the new dependencies.
 npx pod-install
 ```
 
-Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
+:::note The app may not run at this point (due to an error with `events`) but that will be fixed in the next step. :::
 
 ### Veramo
 
-Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next step.
+Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next section.
 
 ```bash
 yarn add @veramo/core @veramo/did-manager @veramo/kms-local-react-native @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
 ```
+
+Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
 
 ## Bootstrap Veramo
 
@@ -218,7 +219,7 @@ const App = () => {
       setIdentifiers(_ids)
 
       // Inspect the id object in your debug tool
-      console.log(ids)
+      console.log('_ids:', _ids)
     }
 
     getIdentifiers()
