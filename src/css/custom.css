@@ -32,6 +32,11 @@
   --body-section-composable: whitesmoke;
 }
 
+.alert--danger {
+  --ifm-alert-background-color: #e66367;
+  --ifm-alert-border-color: #e46367;
+}
+
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #0a1f2b;
   --ifm-navbar-link-color: white;
