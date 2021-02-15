@@ -142,8 +142,18 @@ Create a custom name. Inside your component function:
 
 ```jsx
 import { Form, Input, Button } from 'antd'
+import { useQuery } from 'react-query'
+import { useVeramo } from 'veramo-react'
 
 const HelloWorld: React.FC<PageModuleProps> = ({ title, isLoading, remove, config, saveConfig }) => {
+
+  const { agent } = useVeramo()
+
+  const { data, isLoading } = useQuery(
+    ['credentialCount'],
+    () => agent?.dataStoreORMGetVerifiableCredentialsCount(),
+  )
+
   const [_title, setTitle] = useState(title)
 
   const save = () => {
@@ -171,11 +181,11 @@ const HelloWorld: React.FC<PageModuleProps> = ({ title, isLoading, remove, confi
       )}
     >
       <Typography.Text>
-        Hi I'm a dynamic page module <b>{_title}</b>
+        Hi I'm a custom page module called: <b>{_title}</b> and you have a total of {data} credentials in this agent.
       </Typography.Text>
     </PageModule>
   )
 }
 ```
 
-On the overview page, add a name for your module and hit save. Your module settings are now persisted in local storage.
+On the overview page, add a name for your module and hit save. Your module settings are now persisted in local storage and you will see how many credentials are stored.
