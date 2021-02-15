@@ -4,7 +4,7 @@ title: Agent Explorer
 sidebar_label: Agent Explorer
 ---
 
-Agent Explorer is a customisable dashboard for your agents. It is designed to be used while developing applications using Veramo. In this guide we will walk through deploying the dashboard and adding a custom module.
+Agent Explorer is a customisable dashboard for your agents. It is designed to be used while developing applications using Veramo. In this guide we will walk through deploying the dashboard, adding a module and creating your own custom module in React.
 
 :::note
 Agent Explorer is in early preview so breaking changes will be often. The goal is to create a highly customisable developer dashboard experience. If you have any feedback please let us know!
@@ -12,7 +12,7 @@ Agent Explorer is in early preview so breaking changes will be often. The goal i
 
 ## Run Local Agent
 
-In order to use the dashboard we need an instance if an agent. For this guide we will run a local agent using the `veramo-agent-deploy` repo
+In order to use the dashboard you need an agent instance. For this guide we will run a local agent using the `veramo-agent-deploy` repo
 
 Clone the repo
 
@@ -31,13 +31,13 @@ Your local cloud will be running on [http://localhost:3332](http://localhost:333
 
 ## Run Local Explorer
 
-You can run the explorer from npm. You will not be able to create your own custom module which will be required for the nex section.
+You can run the explorer from npm. However, you will not be able to create your own custom module which will be required for the next section.
 
 ```bash
 npx agent-explore serve
 ```
 
-Or you can run locally by cloning the repo:
+Running locally by cloning the repo:
 
 ```bash
 git clone git@github.com:veramolabs/agent-explorer.git veramo-dashboard
@@ -49,6 +49,8 @@ Run the dashboard
 cd veramo-dashboard
 yarn && yarn dev
 ```
+
+Your dashboard will be available on [http://localhost:3000](http://localhost:3000)
 
 ### Add Agent
 
@@ -87,9 +89,9 @@ You should now see the name associated with the subject of the current credentia
 
 ## Create custom module
 
-Creating custom modules for yourself and other is how you will expland the capabilities of the dashboard. Here we will walk through building the react component and installing it.
+Creating custom modules for yourself and others is how you will expland the capabilities of the dashboard. Here we will walk through building the react component and installing it.
 
-Create a file called `HelloWorld.tsx` and import the following boilerplate:
+Create a file called `components/modules/HelloWorld.tsx` and import the following boilerplate:
 
 ```jsx
 import React from 'react'
@@ -113,12 +115,14 @@ export default HelloWorld
 Open `components/modules/index.ts` and add your new module to both the module map and list of modules
 
 ```ts
- // Make sure this key does not conflict with others
- ...
- HELLO_WORLD: {
-    moduleName: 'HelloWorld',
-    moduleLabel: 'Hello World!',
-    config: {},
+export const MODULE_MAP: { [index: string]: PageModuleConfig } = {
+    ...
+    // Make sure this key does not conflict with others
+    HELLO_WORLD: {
+        moduleName: 'HelloWorld',
+        moduleLabel: 'Hello World!',
+        config: {},
+    }
  }
 ```
 
@@ -127,8 +131,7 @@ Open `components/modules/index.ts` and add your new module to both the module ma
  ...
 export const DYNAMIC_MODULES = {
   ...
-  // Use correct path to your module!
-  HelloWorld: React.lazy(() => import('./HelloWorld'))
+  [MODULE_MAP.HELLO_WORLD.moduleName]:React.lazy(() => import('./HelloWorld')),
 }
 
 ```
