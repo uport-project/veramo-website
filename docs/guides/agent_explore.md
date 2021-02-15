@@ -99,9 +99,9 @@ import { Typography } from 'antd'
 import PageModule from '../../layout/PageModule'
 import { PageModuleProps } from '../../types'
 
-const HelloWorld: React.FC<PageModuleProps> = ({ title, isLoading, remove, config }) => {
+const HelloWorld: React.FC<PageModuleProps> = ({ title, remove, config }) => {
   return (
-    <PageModule title={title} remove={remove} isLoading={isLoading}>
+    <PageModule title={title} remove={remove}>
       <Typography.Text>
         Hi I'm a dynamic page module <b>{title}</b>
       </Typography.Text>
@@ -143,21 +143,19 @@ Create a custom name. Inside your component function:
 ```jsx
 import { Form, Input, Button } from 'antd'
 import { useQuery } from 'react-query'
-import { useVeramo } from 'veramo-react'
+import { useVeramo } from '@veramo-community/veramo-react'
 
-const HelloWorld: React.FC<PageModuleProps> = ({ title, isLoading, remove, config, saveConfig }) => {
-
+const HelloWorld: React.FC<PageModuleProps> = ({ title, remove, config, saveConfig }) => {
   const { agent } = useVeramo()
 
-  const { data, isLoading } = useQuery(
-    ['credentialCount'],
-    () => agent?.dataStoreORMGetVerifiableCredentialsCount(),
+  const { data, isLoading } = useQuery(['credentialCount'], () =>
+    agent?.dataStoreORMGetVerifiableCredentialsCount(),
   )
 
   const [_title, setTitle] = useState(title)
 
   const save = () => {
-    saveConfig({}, _title)
+    saveConfig && saveConfig({}, _title)
   }
 
   return (
@@ -169,19 +167,18 @@ const HelloWorld: React.FC<PageModuleProps> = ({ title, isLoading, remove, confi
         <>
           <Form>
             <Form.Item>
-                <Input type="text" onChange={(e) => setTitle(e.target.value)}>
+              <Input type="text" onChange={(e) => setTitle(e.target.value)} />
             </Form.Item>
             <Form.Item>
-                <Button onClick={() => save()} >
-                    Save settings
-                </Button>
+              <Button onClick={() => save()}>Save settings</Button>
             </Form.Item>
           </Form>
         </>
       )}
     >
       <Typography.Text>
-        Hi I'm a custom page module called: <b>{_title}</b> and you have a total of {data} credentials in this agent.
+        Hi I'm a custom page module called: <b>{_title}</b> and you have a total of <b>{data}</b> credentials
+        in this agent.
       </Typography.Text>
     </PageModule>
   )
