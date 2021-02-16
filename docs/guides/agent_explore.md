@@ -12,7 +12,7 @@ Agent Explorer is in early preview so breaking changes will be often. The goal i
 
 ## Run Local Agent
 
-In order to use the dashboard you need an agent instance. For this guide we will run a local agent using the `veramo-agent-deploy` repo
+In order to use the dashboard you need an agent instance. For this guide we will run a local agent using the `veramo-agent-deploy` repo. You can also use the [Veramo CLI](/docs/guides/cli) tool but this repo is pre-configured for deployment to Heroku, Docker. Later in this guide we will also add a plugin and consume it in the Explorer.
 
 Clone the repo
 
@@ -79,7 +79,7 @@ Click on the overview page and you will find 2 default modules have been loaded.
 When developing application on Veramo you may wish to experiment with contextual data using Veramo querying capabilities. Here we will add a `name` module to show the most recent `name` claim for an identifer.
 
 - Click on the add module button at the bottom of the credential page
-- Select Query Module
+- Select the `Query Identifier` module
 - Add module label: `Subject name`
 - Select identifier type: `Subject`
 - Add a claim to query: `name`
@@ -91,7 +91,7 @@ You should now see the name associated with the subject of the current credentia
 
 Creating custom modules for yourself and others is how you will expland the capabilities of the dashboard. Here we will walk through building the react component and installing it.
 
-Create a file called `components/modules/HelloWorld.tsx` and import the following boilerplate:
+Create a file called `HelloWorld.tsx` in `components/modules/` and import the following boilerplate:
 
 ```jsx
 import React from 'react'
@@ -138,9 +138,18 @@ export const DYNAMIC_MODULES = {
 
 Open the dashboard on the Overview page and add a new module. Select `Hello World!` from the list and you will see your custom module. A static module is great and everything but not very useful. Let's make it dynamic by querying for some data and saving our settings.
 
-Create a custom name. Inside your component function:
+Change `HelloWorld.tsx` to look like this snippet. Some items to take note of:
+
+- Ading a `_title` state variable
+- Adding a `save` function for configs
+- Adding a data query to the `dataStoreORMGetVerifiableCredentialsCount` method
+- Importing the current agent with `useVeramo` hook from the [veramo-react](/veramo_react) library
 
 ```jsx
+import React, { useReact } from 'react'
+import { Typography } from 'antd'
+import PageModule from '../../layout/PageModule'
+import { PageModuleProps } from '../../types'
 import { Form, Input, Button } from 'antd'
 import { useQuery } from 'react-query'
 import { useVeramo } from '@veramo-community/veramo-react'
