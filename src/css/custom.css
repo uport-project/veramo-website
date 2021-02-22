@@ -95,7 +95,7 @@ html[data-theme='dark'] {
   font-size: 4.4rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
-  max-width: 600px;
+  max-width: 700px;
 }
 .hero__subtitle {
   font-size: 2rem;
@@ -106,14 +106,9 @@ html[data-theme='dark'] {
 .hero--primary {
   background-color: var(--ifm-hero-bg-color);
 }
-.button.getStarted_src-pages- {
-  border-radius: 5px;
-}
+
 .promoText {
   color: var(--body-text-primary);
-}
-.buttons_src-pages- {
-  margin: 30px 0;
 }
 
 .menu__link.menu__link--active {
@@ -152,7 +147,7 @@ section.oddRow {
 @media only screen and (min-width: 961px) {
   .hero__title {
     font-size: 4.4rem;
-    max-width: 600px;
+    max-width: 700px;
   }
   .tooling .col.right .prism-code {
     margin-right: -9999px;

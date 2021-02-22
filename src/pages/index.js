@@ -200,24 +200,23 @@ function Code() {
     <section className={'codeBg'} style={{ backgroundColor: '#0d2a39' }}>
       <div className={'container tooling'}>
         <div className={'row'}>
-          <iframe
-            src="https://codesandbox.io/embed/muddy-sound-q9iil?fontsize=14&theme=dark"
+          <div
             style={{
               width: '100%',
-              height: '80vh',
               border: 0,
               borderRadius: 4,
               overflow: 'hidden',
               marginTop: -200,
               boxShadow: '0 25px 50px -12px rgb(0 0 0 / 25%)',
             }}
-            title="muddy-sound-q9iil"
-            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-          ></iframe>
+          >
+            <CodeBlock language="typescript" style={{ height: '100%' }}>
+              {textContent.codeExample}
+            </CodeBlock>
+          </div>
         </div>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
-          <h1 style={{ fontSize: '3rem', color: 'white' }}>Try out the Veramo playground</h1>
+          <h1 style={{ fontSize: '3rem', color: 'white' }}>Blah, blah</h1>
         </div>
       </div>
     </section>
@@ -245,10 +244,13 @@ function Home() {
   return (
     <Layout
       wrapperClassName={'home-page'}
-      title={`Veramo - ${siteConfig.tagline}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Veramo - A JavaScript Framework for Verifiable Data`}
+      description={siteConfig.tagline}
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <div className="text--center" className={styles.hexagons}>
+          <img style={{ maxWidth: 800, height: 'auto' }} src="img/hexagons.svg" />
+        </div>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
