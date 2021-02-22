@@ -26,6 +26,12 @@ module.exports = {
           position: 'right',
         },
         {
+          to: 'docs/project/project_introduction',
+          activeBasePath: 'project',
+          label: 'Project',
+          position: 'right',
+        },
+        {
           to: 'docs/agent/plugins_list',
           activeBasePath: 'docs',
           label: 'Plugins',
@@ -35,11 +41,6 @@ module.exports = {
           to: 'docs/api/core',
           activeBasePath: 'docs',
           label: 'API',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/uport-project/veramo/discussions',
-          label: 'Community',
           position: 'right',
         },
         // { to: 'blog', label: 'Blog', position: 'right' },
@@ -84,7 +85,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Community Forum',
           items: [
             {
               label: 'GitHub',
