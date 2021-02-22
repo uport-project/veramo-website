@@ -7,6 +7,34 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 import CodeBlock from '@theme/CodeBlock'
 
+const features = [
+  {
+    title: 'Modular, Composable, Scalable',
+    imageUrl: 'img/modular.svg',
+    description: (
+      <>
+        Veramo was designed from the ground up to be flexible and modular making it highly scalable. Create an
+        agent, add plugins, run on server or mobile. You can also expose your agent over REST.
+      </>
+    ),
+  },
+  {
+    title: 'Awesome CLI',
+    imageUrl: 'img/cli-tool.svg',
+    description: (
+      <>
+        The Veramo core API is exposed by our CLI tool. Get started quickly creating DIDs and VCs from your
+        terminal or run a local cloud agent. Developers will love the plugin development tools included.
+      </>
+    ),
+  },
+  {
+    title: 'Multi-Platform',
+    imageUrl: 'img/multi-platform.svg',
+    description: <>Veramo runs on Node, Browsers, and React Native right out of the box.</>,
+  },
+]
+
 const textContent = {
   tooling: `Veramo was designed from the ground up to be flexible and modular which makes it highly scalable. Create an agent, add plugins, run on server or mobile. 
   You can also expose your agent over REST.`,
@@ -143,24 +171,53 @@ function MultiPlatform() {
   )
 }
 
-function CommandLineTool() {
+function Talk() {
   return (
-    <section className={'cli'}>
+    <section style={{ paddingBottom: 150, height: 300 }} className={'oddRow'}>
+      <div className={'container tooling'}>
+        <div className="container">
+          <h1>Talk to us about your project</h1>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Playground() {
+  return (
+    <section style={{ paddingBottom: 150, height: 500 }} className={'oddRow'}>
+      <div className={'container tooling'}>
+        <div className="container" style={{ textAlign: 'center', padding: 100 }}>
+          <h1 style={{ fontSize: '3rem' }}>Some other big tagline</h1>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Code() {
+  return (
+    <section className={'codeBg'} style={{ backgroundColor: '#0d2a39' }}>
       <div className={'container tooling'}>
         <div className={'row'}>
-          <div className={'col col--6'} style={{ paddingTop: 50 }}>
-            <div className={'content'}>
-              <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
-                Awesome CLI
-              </h3>
-              <p className={'promoText'} style={{ fontSize: 18 }}>
-                {textContent.awesomeCLI}
-              </p>
-            </div>
-          </div>
-          <div className={'col col--6 right'}>
-            <CodeBlock language="bash">{textContent.cliExample}</CodeBlock>
-          </div>
+          <iframe
+            src="https://codesandbox.io/embed/muddy-sound-q9iil?fontsize=14&theme=dark"
+            style={{
+              width: '100%',
+              height: '80vh',
+              border: 0,
+              borderRadius: 4,
+              overflow: 'hidden',
+              marginTop: -200,
+              boxShadow: '0 25px 50px -12px rgb(0 0 0 / 25%)',
+            }}
+            title="muddy-sound-q9iil"
+            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+          ></iframe>
+        </div>
+        <div className="container" style={{ textAlign: 'center', padding: 100 }}>
+          <h1 style={{ fontSize: '3rem', color: 'white' }}>Try out the Veramo playground</h1>
         </div>
       </div>
     </section>
@@ -172,7 +229,7 @@ function Feature({ imageUrl, title, description }) {
   return (
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
-        <div className="text--center">
+        <div className="text--center" style={{ marginBottom: 10 }}>
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
@@ -206,7 +263,7 @@ function Home() {
               Get Started
             </Link>
             <Link
-              className={clsx('button  button--lg button--no-border learnMore', styles.learnMore)}
+              className={clsx('button button--secondary button--lg button--no-border', styles.learnMore)}
               to={useBaseUrl('docs/fundamentals/introduction')}
             >
               Learn more
@@ -214,7 +271,7 @@ function Home() {
           </div>
         </div>
       </header>
-      {/* <main>
+      <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
@@ -226,11 +283,10 @@ function Home() {
             </div>
           </section>
         )}
-      </main> */}
-      <BuildTrustNetworks />
-      <NextGenerationTooling />
-      <MultiPlatform />
-      <CommandLineTool />
+      </main>
+      <Playground />
+      <Code />
+      <Talk />
     </Layout>
   )
 }

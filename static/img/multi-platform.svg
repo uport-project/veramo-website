@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="370" viewBox="0 0 460 370">
+  <g id="Group_18" data-name="Group 18" transform="translate(-2167 -2727)">
+    <rect id="Rectangle_61" data-name="Rectangle 61" width="460" height="370" transform="translate(2167 2727)" fill="none"/>
+    <path id="Subtraction_41" data-name="Subtraction 41" d="M-3258.645,261.076h-202.917V157.207a12.419,12.419,0,0,0-3.661-8.839,12.418,12.418,0,0,0-8.839-3.661h-51.691V53.452a8.51,8.51,0,0,1,8.5-8.5h171.76a57.589,57.589,0,0,0-2.816,10.7,3.225,3.225,0,0,0-.98-.074,27.306,27.306,0,0,0-10.523,2.329,20.557,20.557,0,0,0-6.263,4.312,19.267,19.267,0,0,0-4.556,7.655,28.035,28.035,0,0,0-1.573,12.5A29.92,29.92,0,0,0-3370.869,89a23.63,23.63,0,0,0,2.883,5.981,17.361,17.361,0,0,0,5.905,5.505,17.573,17.573,0,0,0,8.656,2.127l.268,0c4.716.2,18.042.3,39.607.3,21.376,0,46.769-.1,63.405-.2V252.576A8.51,8.51,0,0,1-3258.645,261.076Z" transform="translate(5788.818 2750.986)" fill="none" stroke="#939393" stroke-width="3"/>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(2268.999 2802.442)" fill="none" stroke="#939393" stroke-width="3">
+      <ellipse cx="6.289" cy="6.575" rx="6.289" ry="6.575" stroke="none"/>
+      <ellipse cx="6.289" cy="6.575" rx="4.789" ry="5.075" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(2285.579 2802.442)" fill="none" stroke="#939393" stroke-width="3">
+      <circle cx="6.575" cy="6.575" r="6.575" stroke="none"/>
+      <circle cx="6.575" cy="6.575" r="5.075" fill="none"/>
+    </g>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(2302.73 2802.442)" fill="none" stroke="#939393" stroke-width="3">
+      <ellipse cx="6.861" cy="6.575" rx="6.861" ry="6.575" stroke="none"/>
+      <ellipse cx="6.861" cy="6.575" rx="5.361" ry="5.075" fill="none"/>
+    </g>
+    <g id="Group_17" data-name="Group 17" transform="translate(1564.169 18.242)">
+      <path id="Path_5" data-name="Path 5" d="M1857.523,3162.356c14.567.616,108.13.114,117.014,0s30.314-3.857,29.032-29.585-27.24-26.887-27.24-26.887,5.067-34.013-30.814-44.3-49.663,25.835-49.663,25.835-27.219-8.819-33.48,27.972c-.031-.241-17.492-.752-22.323,14.223C1835.485,3141.163,1839.75,3162.574,1857.523,3162.356Z" transform="translate(-986.03 -327)" fill="none" stroke="#939393" stroke-width="3"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(2221.818 2894)" fill="none" stroke="#939393" stroke-width="3">
+      <rect width="106.939" height="161.808" rx="14" stroke="none"/>
+      <rect x="1.5" y="1.5" width="103.939" height="158.808" rx="12.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="89.702" height="4.556" rx="2.278" transform="translate(2230.931 3041.001)" fill="#a2a2a2"/>
+    <g id="Ellipse_42" data-name="Ellipse 42" transform="translate(2261.864 3005.308)" fill="none" stroke="#939393" stroke-width="3">
+      <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+      <circle cx="13.5" cy="13.5" r="12" fill="none"/>
+    </g>
+  </g>
+</svg>

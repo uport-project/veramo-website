@@ -27,13 +27,13 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
 }
 
 .featureImage {
   height: 200px;
-  width: 200px;
+  width: auto;
 }
 
 .getStarted {
@@ -48,10 +48,5 @@
   padding: 15px 30px;
   font-weight: 500;
   font-size: 1.3rem;
-}
-
-.learnMore:after {
-  content: '>';
-  font-size: 24px;
-  margin-left: 5px;
+  margin-left: 20px;
 }

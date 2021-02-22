@@ -15,6 +15,7 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  /* --ifm-container-width: 1400px; */
 
   --ifm-navbar-background-color: #0a1f2b;
   --ifm-navbar-link-color: white;
@@ -24,7 +25,7 @@
   --ifm-menu-color: #6d6d6d;
 
   --ifm-hero-bg-color: #0d2a39;
-  --ifm-hero-title-color: white;
+  --ifm-hero-title-color: #25c2a0;
   --ifm-hero-txt-color: white;
 
   --brand: #25c2a0;
@@ -46,12 +47,21 @@ html[data-theme='dark'] {
   --ifm-menu-color: #aeaeae;
 
   --ifm-hero-bg-color: #0d2a39;
-  --ifm-hero-title-color: white;
+  --ifm-hero-title-color: #25c2a0;
   --ifm-hero-txt-color: white;
 
   --body-text-primary: #999999;
   --body-section-composable: #2c2c2c;
 }
+
+/* .main-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+} */
+
+/* .menu--responsive {
+  width: 280px;
+} */
 
 .main-wrapper.home-page {
   overflow-x: hidden;
@@ -67,6 +77,10 @@ html[data-theme='dark'] {
 .navbar {
   background-color: var(--ifm-navbar-background-color);
 }
+/* .navbar__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+} */
 .navbar__brand:hover {
   color: var(--ifm-navbar-link-color);
 }
@@ -78,19 +92,28 @@ html[data-theme='dark'] {
 }
 .hero__title {
   color: var(--ifm-hero-title-color);
-  font-size: 5rem;
+  font-size: 4.4rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
+  max-width: 600px;
 }
 .hero__subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--ifm-hero-txt-color);
+  max-width: 600px;
+  line-height: 2.9rem;
 }
 .hero--primary {
   background-color: var(--ifm-hero-bg-color);
 }
+.button.getStarted_src-pages- {
+  border-radius: 5px;
+}
 .promoText {
   color: var(--body-text-primary);
+}
+.buttons_src-pages- {
+  margin: 30px 0;
 }
 
 .menu__link.menu__link--active {
@@ -98,7 +121,7 @@ html[data-theme='dark'] {
 }
 
 section.composable,
-section.cli {
+section.oddRow {
   background-color: var(--body-section-composable);
 }
 
@@ -128,7 +151,8 @@ section.cli {
 
 @media only screen and (min-width: 961px) {
   .hero__title {
-    font-size: 7rem;
+    font-size: 4.4rem;
+    max-width: 600px;
   }
   .tooling .col.right .prism-code {
     margin-right: -9999px;
