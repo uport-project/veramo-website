@@ -183,7 +183,8 @@ function Talk() {
           <p className={'promoText'} style={{ fontSize: 18 }}>
             We live in a data driven, digital world and make decisions based on reputation. Off-chain
             verifiabilty is a critical building block for the economy of tomorrow. We can build trust networks
-            to accelerate efficiency and productivity. Veramo gives you the tools to start exploring.
+            to accelerate efficiency and productivity. Veramo gives you the tools to start exploring the world
+            of digital trust.
           </p>
         </div>
       </div>

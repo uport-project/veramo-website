@@ -10,7 +10,7 @@
   text-align: left;
   position: relative;
   overflow: hidden;
-  background-image: url('/static/img/hexagons.svg');
+  background-image: url('/img/hexagons.svg');
 }
 
 .hexagons {
