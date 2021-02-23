@@ -36,18 +36,21 @@ const features = [
 ]
 
 const textContent = {
-  tooling: `Veramo was designed from the ground up to be flexible and modular which makes it highly scalable. Create an agent, add plugins, run on server or mobile. 
-  You can also expose your agent over REST.`,
+  pluginsTitle: 'Scalable plugin architecture',
+  plugins:
+    'Most of the functionality of Veramo is provided by plugins. We have a growing list of core plugins and adding your own custom plugin is easy. Here is how you would bootstrap a minnimal DID agent ~',
   codeExample: `
   import { createAgent } from '@veramo/core'
   import { KeyManager } from '@veramo/key-manager'
   import { DIDManager } from '@veramo/did-manager'
+  import { CredentialIssuer } from '@veramo/credential-w3c'
 
   /* Configure the agent */
   const agent = createAgent({
     plugins: [
       new KeyManager(/* config */),
-      new DIDManager(/* config */)
+      new DIDManager(/* config */),
+      new CredentialIssuer(),
     ],
   })
 
@@ -175,8 +178,13 @@ function Talk() {
   return (
     <section style={{ paddingBottom: 150, height: 300 }} className={'oddRow'}>
       <div className={'container tooling'}>
-        <div className="container">
-          <h1>Talk to us about your project</h1>
+        <div className="container" style={{ textAlign: 'center', padding: 100 }}>
+          <h1 style={{ fontSize: '3rem' }}>Verifiable Data is the new standard</h1>
+          <p className={'promoText'} style={{ fontSize: 18 }}>
+            We live in a data driven, digital world and make decisions based on reputation. Off-chain
+            verifiabilty is a critical building block for the economy of tomorrow. We can build trust networks
+            to accelerate efficiency and productivity. Veramo gives you the tools to start exploring.
+          </p>
         </div>
       </div>
     </section>
@@ -188,7 +196,10 @@ function Playground() {
     <section style={{ paddingBottom: 150, height: 500 }} className={'oddRow'}>
       <div className={'container tooling'}>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
-          <h1 style={{ fontSize: '3rem' }}>Some other big tagline</h1>
+          <h1 style={{ fontSize: '3rem' }}>{textContent.pluginsTitle}</h1>
+          <p className={'promoText'} style={{ fontSize: 18 }}>
+            {textContent.plugins}
+          </p>
         </div>
       </div>
     </section>
@@ -248,9 +259,6 @@ function Home() {
       description={siteConfig.tagline}
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="text--center" className={styles.hexagons}>
-          <img style={{ maxWidth: 800, height: 'auto' }} src="img/hexagons.svg" />
-        </div>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
