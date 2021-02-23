@@ -176,16 +176,20 @@ function MultiPlatform() {
 
 function Talk() {
   return (
-    <section style={{ paddingBottom: 150, height: 300 }} className={'oddRow'}>
+    <section style={{ paddingBottom: 150 }} className={'oddRow'}>
       <div className={'container tooling'}>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
           <h1 style={{ fontSize: '3rem' }}>Verifiable Data is the new standard</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             We live in a data driven, digital world and make decisions based on reputation. Off-chain
-            verifiabilty is a critical building block for the economy of tomorrow. We can build trust networks
-            to accelerate efficiency and productivity. Veramo gives you the tools to start exploring the world
-            of digital trust.
+            verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools
+            to start building trust network that accelerate decision making, efficiency and productivity.
           </p>
+          <div className="row">
+            <Feature imageUrl="img/vc_pass.svg" />
+            <Feature imageUrl="img/vc_kyc.svg" />
+            <Feature imageUrl="img/vc_access.svg" />
+          </div>
         </div>
       </div>
     </section>
@@ -228,7 +232,17 @@ function Code() {
           </div>
         </div>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
-          <h1 style={{ fontSize: '3rem', color: 'white' }}>Blah, blah</h1>
+          <h1 style={{ fontSize: '3rem', color: 'white' }}>Verifiable Data is the new standard</h1>
+          <p className={'promoText'} style={{ fontSize: 18 }}>
+            We live in a data driven, digital world and make decisions based on reputation. Off-chain
+            verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools
+            to start building trust network that accelerate decision making, efficiency and productivity.
+          </p>
+          <div className="row">
+            <Feature imageUrl="img/vc_pass.svg" />
+            <Feature imageUrl="img/vc_kyc.svg" />
+            <Feature imageUrl="img/vc_access.svg" />
+          </div>
         </div>
       </div>
     </section>

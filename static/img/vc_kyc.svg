@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="917" height="596" viewBox="0 0 917 596">
+  <g id="Group_27" data-name="Group 27" transform="translate(-1463 -1404)">
+    <g id="Rectangle_63" data-name="Rectangle 63" transform="translate(1463 1404)" fill="none" stroke="#4b4b4b" stroke-width="10">
+      <rect width="917" height="596" rx="75" stroke="none"/>
+      <rect x="5" y="5" width="907" height="586" rx="70" fill="none"/>
+    </g>
+    <line id="Line_14" data-name="Line 14" x2="769.851" transform="translate(1545.5 1681.5)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-width="29"/>
+    <line id="Line_15" data-name="Line 15" x2="769.851" transform="translate(1545.5 1770.5)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-width="29"/>
+    <line id="Line_16" data-name="Line 16" x2="769.851" transform="translate(1545.5 1859.5)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-width="29"/>
+    <text id="KYC" transform="translate(1530 1590)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">KYC</tspan></text>
+  </g>
+</svg>
