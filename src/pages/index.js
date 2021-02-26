@@ -87,13 +87,13 @@ const features = [
 function VerifiableData() {
   return (
     <section className={'oddRow'}>
-      <div className={'container tooling'}>
-        <div className="container" style={{ textAlign: 'center', padding: 100 }}>
+      <div className={'container'}>
+        <div className="container" style={{ textAlign: 'center', padding: 100, paddingBottom: 50 }}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.verifiableDataTitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.verifiableDataContent}
           </p>
-          <div className="row">
+          <div className="row" style={{ paddingTop: 50 }}>
             <Feature imageUrl="img/vc_pass.svg" />
             <Feature imageUrl="img/vc_kyc.svg" />
             <Feature imageUrl="img/vc_access.svg" />

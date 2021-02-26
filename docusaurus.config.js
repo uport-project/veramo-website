@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Modular and flexible APIs for Verifiable Data and SSI',
+  title: 'Performant and modular APIs for Verifiable Data and SSI',
   tagline:
     'Create and manage decentralized identifiers + verifiable credentials without worrying about interop and vendor lock-in.',
   url: 'https://veramo.io',
