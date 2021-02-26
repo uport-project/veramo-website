@@ -36,9 +36,12 @@ const features = [
 ]
 
 const textContent = {
-  pluginsTitle: 'Scalable plugin architecture',
+  cleanApi: 'Clean API backed by TypeScript',
+  cleanApiContent:
+    'Veramo has a simple and clean API that is easy to reason about. This example bootstraps your agent with minnimal configuration.',
+  pluginsTitle: 'Plugins at the core',
   plugins:
-    'Most of the functionality of Veramo is provided by plugins. We have a growing list of core plugins and adding your own custom plugin is easy. Here is how you would bootstrap a minnimal DID agent ~',
+    'Veramo is powered by a flexible plugin system. We have a growing list of core plugins and adding your own custom plugin is easy.',
   codeExample: `
   import { createAgent } from '@veramo/core'
   import { KeyManager } from '@veramo/key-manager'
@@ -97,86 +100,13 @@ const textContent = {
   `,
   orchestrateStandards: `Start building the trust layer in your applications today with Veramo. We obsess over standards
   and interoperability making it easy to support a wide list of standards in the data verification space.`,
-  awesomeCLI: `The Veramo core API is exposed by our CLI tool. Get started quickly creating DIDs and VCs from your terminal or run a local cloud agent. Developers will love the plugin development tools included.`,
+  awesomeCLITitle: 'Awesome CLI',
+  awesomeCLI: `No framework is complete without a fully featured CLI tool that gives you access to all the core functionality from your terminal. Veramo's CLI tool contains everything you need to get started.`,
 }
 
-function BuildTrustNetworks() {
+function VerifiableData() {
   return (
-    <section>
-      <div className={'container tooling'}>
-        <div className={'row'}>
-          <div className={'col col--6'} style={{ padding: 10, textAlign: 'center' }}>
-            <div className={'content'}>
-              <img src="/img/layers.png" style={{ maxHeight: 300 }} />
-            </div>
-          </div>
-          <div className={'col col--6'} style={{ paddingTop: 50, paddingLeft: 20 }}>
-            <div className={'content'}>
-              <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
-                Orchestrate standards and build trust layers into your apps
-              </h3>
-              <p className={'promoText'} style={{ fontSize: 18 }}>
-                {textContent.orchestrateStandards}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function NextGenerationTooling() {
-  return (
-    <section className={'composable'}>
-      <div className={'container tooling'}>
-        <div className={'row'}>
-          <div className={'col col--6'} style={{ paddingTop: 50, paddingLeft: 20 }}>
-            <div className={'content'}>
-              <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
-                Modular, composable, scalable
-              </h3>
-              <p className={'promoText'} style={{ fontSize: 18 }}>
-                {textContent.tooling}
-              </p>
-            </div>
-          </div>
-          <div className={'col col--6 right'}>
-            <CodeBlock language="typescript">{textContent.codeExample}</CodeBlock>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function MultiPlatform() {
-  return (
-    <section className={'container tooling'}>
-      <div className={'row'}>
-        <div className={'col col--6'} style={{ padding: 50, textAlign: 'center' }}>
-          <div className={'content'}>
-            <img src="/img/multi-platform.png" style={{ maxHeight: 275 }} />
-          </div>
-        </div>
-        <div className={'col col--6'} style={{ paddingTop: 50, paddingLeft: 20 }}>
-          <div className={'content'}>
-            <h3 className={'promoTitle'} style={{ fontSize: 24 }}>
-              Multi-Platform out of the box
-            </h3>
-            <p className={'promoText'} style={{ fontSize: 18 }}>
-              {textContent.multiPlatform}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function Talk() {
-  return (
-    <section style={{ paddingBottom: 150 }} className={'oddRow'}>
+    <section className={'oddRow'}>
       <div className={'container tooling'}>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
           <h1 style={{ fontSize: '3rem' }}>Verifiable Data is the new standard</h1>
@@ -196,15 +126,45 @@ function Talk() {
   )
 }
 
-function Playground() {
+function CleanAPI() {
   return (
-    <section style={{ paddingBottom: 150, height: 500 }} className={'oddRow'}>
+    <section style={{ paddingBottom: 150 }}>
       <div className={'container tooling'}>
-        <div className="container" style={{ textAlign: 'center', padding: 100 }}>
-          <h1 style={{ fontSize: '3rem' }}>{textContent.pluginsTitle}</h1>
+        <div className="container" style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
+          <h1 style={{ fontSize: '3rem' }}>{textContent.cleanApi}</h1>
+          <p className={'promoText'} style={{ fontSize: 18 }}>
+            {textContent.cleanApiContent}
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Plugins() {
+  return (
+    <section className={'oddRow'}>
+      <div className={'container tooling'}>
+        <div className="container" style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 150 }}>
+          <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.plugins}
           </p>
+          <div className="row">
+            <Feature title="id-manager" />
+            <Feature title="did-provider-ethr" />
+            <Feature title="did-provider-web" />
+            <Feature title="key-manager" />
+            <Feature title="kms-local" />
+            <Feature title="did-comm" />
+            <Feature title="did-jwt" />
+            <Feature title="message-handler" />
+            <Feature title="selective-disclosure" />
+            <Feature title="credential-w3c" />
+            <Feature title="remote-server" />
+            <Feature title="data-store" />
+            <Feature title="remote-client" />
+          </div>
         </div>
       </div>
     </section>
@@ -213,7 +173,7 @@ function Playground() {
 
 function Code() {
   return (
-    <section className={'codeBg'} style={{ backgroundColor: '#0d2a39' }}>
+    <section className={styles.codeBg} style={{ backgroundColor: '#0d2a39' }}>
       <div className={'container tooling'}>
         <div className={'row'}>
           <div
@@ -222,7 +182,7 @@ function Code() {
               border: 0,
               borderRadius: 4,
               overflow: 'hidden',
-              marginTop: -200,
+              marginTop: -150,
               boxShadow: '0 25px 50px -12px rgb(0 0 0 / 25%)',
             }}
           >
@@ -231,19 +191,48 @@ function Code() {
             </CodeBlock>
           </div>
         </div>
+        <div className="container" style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
+          {/* <h1 style={{ fontSize: '3rem', color: 'white' }}>Plugins included</h1> */}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function AwesomeCli() {
+  return (
+    <section style={{ paddingBottom: 150, height: 500 }}>
+      <div className={'container tooling'}>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
-          <h1 style={{ fontSize: '3rem', color: 'white' }}>Verifiable Data is the new standard</h1>
+          <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
-            We live in a data driven, digital world and make decisions based on reputation. Off-chain
-            verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools
-            to start building trust network that accelerate decision making, efficiency and productivity.
+            {textContent.awesomeCLI}
           </p>
-          <div className="row">
-            <Feature imageUrl="img/vc_pass.svg" />
-            <Feature imageUrl="img/vc_kyc.svg" />
-            <Feature imageUrl="img/vc_access.svg" />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Cli() {
+  return (
+    <section className={styles.codeBg} style={{ backgroundColor: '#0d2a39' }}>
+      <div className={'container tooling'}>
+        <div className={'row'}>
+          <div
+            style={{
+              width: '100%',
+              border: 0,
+              borderRadius: 10,
+              overflow: 'hidden',
+              marginTop: -200,
+              boxShadow: '0 25px 50px -12px rgb(0 0 0 / 25%)',
+            }}
+          >
+            <img className={styles.cliAnimation} src="img/veramo_cli.gif" alt="Veramo CLI" />
           </div>
         </div>
+        <div className="container" style={{ textAlign: 'center', padding: 100 }}></div>
       </div>
     </section>
   )
@@ -309,9 +298,12 @@ function Home() {
           </section>
         )}
       </main>
-      <Playground />
+      <VerifiableData />
+      <CleanAPI />
       <Code />
-      <Talk />
+      <Plugins />
+      <AwesomeCli />
+      <Cli />
     </Layout>
   )
 }

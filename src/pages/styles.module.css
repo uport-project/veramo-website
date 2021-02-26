@@ -13,6 +13,10 @@
   background-image: url('/img/hexagons.svg');
 }
 
+.codeBg {
+  background-image: url('/img/hexagons.svg');
+}
+
 .hexagons {
   position: absolute;
   right: 0;
@@ -45,6 +49,21 @@
 .featureImage {
   height: 200px;
   width: auto;
+}
+
+.cliAnimation {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+.featureList {
+  list-style: none;
+  color: white;
+}
+
+.featureList li {
+  font-size: larger;
 }
 
 .getStarted {
