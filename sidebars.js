@@ -23,6 +23,7 @@ module.exports = {
       'guides/react_native',
       'guides/create_plugin',
       'guides/cloud_agent',
+      'guides/aws_deployment',
     ],
     Advanced: [
       // 'advanced/introduction',
