@@ -6,7 +6,7 @@
  */
 
 .heroBanner {
-  padding: 7rem 0;
+  padding: 5rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
@@ -81,6 +81,7 @@
   padding: 15px 30px;
   font-weight: 500;
   font-size: 1.3rem;
+  margin-right: 20px;
 }
 
 .learnMore {
@@ -88,5 +89,8 @@
   padding: 15px 30px;
   font-weight: 500;
   font-size: 1.3rem;
-  margin-left: 20px;
+  margin-right: 20px;
 }
+
+/* .socialLinks {
+} */

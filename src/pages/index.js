@@ -6,36 +6,12 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 import CodeBlock from '@theme/CodeBlock'
-
-const features = [
-  {
-    title: 'Modular, Composable, Scalable',
-    imageUrl: 'img/modular.svg',
-    description: (
-      <>
-        Veramo was designed from the ground up to be flexible and modular making it highly scalable. Create an
-        agent, add plugins, run on server or mobile. You can also expose your agent over REST.
-      </>
-    ),
-  },
-  {
-    title: 'Awesome CLI',
-    imageUrl: 'img/cli-tool.svg',
-    description: (
-      <>
-        The Veramo core API is exposed by our CLI tool. Get started quickly creating DIDs and VCs from your
-        terminal or run a local cloud agent. Developers will love the plugin development tools included.
-      </>
-    ),
-  },
-  {
-    title: 'Multi-Platform',
-    imageUrl: 'img/multi-platform.svg',
-    description: <>Veramo runs on Node, Browsers, and React Native right out of the box.</>,
-  },
-]
+import GitHubButton from 'react-github-btn'
 
 const textContent = {
+  verifiableDataTitle: 'Verifiable data is the new standard',
+  verifiableDataContent:
+    'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust network that accelerate decision making, efficiency and productivity',
   cleanApi: 'Clean API backed by TypeScript',
   cleanApiContent:
     'Veramo has a simple and clean API that is easy to reason about. This example bootstraps your agent with minnimal configuration.',
@@ -76,44 +52,46 @@ const textContent = {
   })
 
   `,
-  cliExample: `
-  /* Install the CLI globally */
-  $ npm install @veramo/cli -g
-
-  /* Resolve a DID */
-  $ veramo did resolve did:web:sun.veramo.io
-
-  /* Create an identifier */
-  $ veramo did create
-
-  /* Create a verifiable credential */
-  $ veramo credential create
-
-  /* Run a local cloud agent */
-  $ veramo server
-  `,
-
-  multiPlatform: `
-  Veramo runs on Node, Browsers, and React Native straight out of the box. 
-  
-  Save time by using the same API across all platforms.
-  `,
-  orchestrateStandards: `Start building the trust layer in your applications today with Veramo. We obsess over standards
-  and interoperability making it easy to support a wide list of standards in the data verification space.`,
   awesomeCLITitle: 'Awesome CLI',
   awesomeCLI: `No framework is complete without a fully featured CLI tool that gives you access to all the core functionality from your terminal. Veramo's CLI tool contains everything you need to get started.`,
 }
+
+const features = [
+  {
+    title: 'Modular, Composable, Scalable',
+    imageUrl: 'img/modular.svg',
+    description: (
+      <>
+        Veramo was designed from the ground up to be flexible and modular making it highly scalable. Create an
+        agent, add plugins, run on server or mobile. You can also expose your agent over REST.
+      </>
+    ),
+  },
+  {
+    title: 'Awesome CLI',
+    imageUrl: 'img/cli-tool.svg',
+    description: (
+      <>
+        The Veramo core API is exposed by our CLI tool. Get started quickly creating DIDs and VCs from your
+        terminal or run a local cloud agent. Developers will love the plugin development tools included.
+      </>
+    ),
+  },
+  {
+    title: 'Multi-Platform',
+    imageUrl: 'img/multi-platform.svg',
+    description: <>Veramo runs on Node, Browsers, and React Native right out of the box.</>,
+  },
+]
 
 function VerifiableData() {
   return (
     <section className={'oddRow'}>
       <div className={'container tooling'}>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
-          <h1 style={{ fontSize: '3rem' }}>Verifiable Data is the new standard</h1>
+          <h1 style={{ fontSize: '3rem' }}>{textContent.verifiableDataTitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
-            We live in a data driven, digital world and make decisions based on reputation. Off-chain
-            verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools
-            to start building trust network that accelerate decision making, efficiency and productivity.
+            {textContent.verifiableDataContent}
           </p>
           <div className="row">
             <Feature imageUrl="img/vc_pass.svg" />
@@ -144,26 +122,28 @@ function CleanAPI() {
 function Plugins() {
   return (
     <section className={'oddRow'}>
-      <div className={'container tooling'}>
-        <div className="container" style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 150 }}>
+      <div className={'container'}>
+        <div style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
           <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.plugins}
           </p>
-          <div className="row">
-            <Feature title="id-manager" />
-            <Feature title="did-provider-ethr" />
-            <Feature title="did-provider-web" />
-            <Feature title="key-manager" />
-            <Feature title="kms-local" />
-            <Feature title="did-comm" />
-            <Feature title="did-jwt" />
-            <Feature title="message-handler" />
-            <Feature title="selective-disclosure" />
-            <Feature title="credential-w3c" />
-            <Feature title="remote-server" />
-            <Feature title="data-store" />
-            <Feature title="remote-client" />
+          <div className="row plugins" style={{ paddingTop: 50 }}>
+            <Feature title="id-manager" description="Create a custom DID method" />
+            <Feature title="did-provider-ethr" description="Support Ethr-DID method" />
+            <Feature title="did-provider-web" description="Support Web-DID method" />
+            <Feature title="did-provider-key" description="Support Key-DID method" />
+            <Feature title="key-manager" description="Create a custom kms" />
+            <Feature title="kms-local" description="Support local kms" />
+            <Feature title="kms-local-react-native" description="Support local kms for React Native" />
+            <Feature title="message-handler" description="Create a custom message parser" />
+            <Feature title="did-comm" description="Support DIDcomm messaging" />
+            <Feature title="selective-disclosure" description="Support request messages" />
+            <Feature title="credential-w3c" description="Support W3C Verifiable Credential standard" />
+            <Feature title="did-jwt" description="Support DIDJwt" />
+            <Feature title="remote-server" description="Serve agent methods over REST" />
+            <Feature title="data-store" description="Suport local data storage" />
+            <Feature title="remote-client" description="Expose methods from a remote agent locally" />
           </div>
         </div>
       </div>
@@ -242,13 +222,15 @@ function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center" style={{ marginBottom: 10 }}>
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div className="featureInner">
+        {imgUrl && (
+          <div className="text--center" style={{ marginBottom: 10 }}>
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </div>
+        )}
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </div>
   )
 }
@@ -264,6 +246,17 @@ function Home() {
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
+          <div className={styles.socialLinks}>
+            <GitHubButton
+              href="https://github.com/uport-project/veramo"
+              data-color-scheme="no-preference: dark; light: light; dark: light;"
+              data-icon="octicon-star"
+              data-size="large"
+              aria-label="Star uport-project/veramo on GitHub"
+            >
+              Star
+            </GitHubButton>
+          </div>
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
