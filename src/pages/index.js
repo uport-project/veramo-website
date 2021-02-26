@@ -86,7 +86,7 @@ const features = [
 
 function VerifiableData() {
   return (
-    <section className={'oddRow'}>
+    <section>
       <div className={'container'}>
         <div className="container" style={{ textAlign: 'center', padding: 100, paddingBottom: 50 }}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.verifiableDataTitle}</h1>
@@ -106,7 +106,7 @@ function VerifiableData() {
 
 function CleanAPI() {
   return (
-    <section style={{ paddingBottom: 150 }}>
+    <section style={{ paddingBottom: 150 }} className={'oddRow'}>
       <div className={'container tooling'}>
         <div className="container" style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.cleanApi}</h1>
@@ -259,6 +259,7 @@ function Home() {
           </div>
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+          {/* <CodeBlock className="hero-code">npm i @veramo/cli --global</CodeBlock> */}
           <div className={styles.buttons}>
             <Link
               className={clsx(
@@ -291,12 +292,12 @@ function Home() {
           </section>
         )}
       </main>
-      <VerifiableData />
       <CleanAPI />
       <Code />
       <Plugins />
       <AwesomeCli />
       <Cli />
+      <VerifiableData />
     </Layout>
   )
 }
