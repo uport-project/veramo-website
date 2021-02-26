@@ -14,6 +14,7 @@
 }
 
 .codeBg {
+  background-color: var(--ifm-hero-bg-color);
   background-image: url('/img/hexagons.svg');
 }
 

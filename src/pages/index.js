@@ -173,7 +173,7 @@ function Plugins() {
 
 function Code() {
   return (
-    <section className={styles.codeBg} style={{ backgroundColor: '#0d2a39' }}>
+    <section className={styles.codeBg}>
       <div className={'container tooling'}>
         <div className={'row'}>
           <div
@@ -216,7 +216,7 @@ function AwesomeCli() {
 
 function Cli() {
   return (
-    <section className={styles.codeBg} style={{ backgroundColor: '#0d2a39' }}>
+    <section className={styles.codeBg}>
       <div className={'container tooling'}>
         <div className={'row'}>
           <div
