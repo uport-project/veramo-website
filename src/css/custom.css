@@ -15,7 +15,8 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
-  /* --ifm-container-width: 1400px; */
+  --ifm-footer-background-color: #0a1f2b;
+  --ifm-footer-color: whitesmoke;
 
   --ifm-navbar-background-color: #0a1f2b;
   --ifm-navbar-link-color: white;
@@ -42,6 +43,8 @@ html[data-theme='dark'] {
   --ifm-navbar-background-color: #0a1f2b;
   --ifm-navbar-link-color: white;
   --ifm-navbar-toggle-color: white;
+  --ifm-footer-background-color: #191919;
+  --ifm-navbar-background-color: #121415;
 
   --ifm-menu-color-active: #aeaeae;
   --ifm-menu-color: #aeaeae;
@@ -143,6 +146,10 @@ section.oddRow {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.footer--dark {
+  background-color: var(--ifm-footer-background-color);
 }
 
 @media only screen and (min-width: 961px) {
