@@ -17,6 +17,7 @@
   --ifm-code-font-size: 95%;
   --ifm-footer-background-color: #0a1f2b;
   --ifm-footer-color: whitesmoke;
+  --ifm-footer-border-color: #0a1f2b;
 
   --ifm-navbar-background-color: #0a1f2b;
   --ifm-navbar-link-color: white;
@@ -31,7 +32,7 @@
 
   --brand: #25c2a0;
   --body-text-primary: #4e4e4e;
-  --body-section-composable: whitesmoke;
+  --body-section-composable: #f5f5f5;
 }
 
 .alert--danger {
@@ -45,6 +46,7 @@ html[data-theme='dark'] {
   --ifm-navbar-toggle-color: white;
   --ifm-footer-background-color: #191919;
   --ifm-navbar-background-color: #121415;
+  --ifm-footer-border-color: #4e4e4e;
 
   --ifm-menu-color-active: #aeaeae;
   --ifm-menu-color: #aeaeae;
@@ -148,7 +150,8 @@ section.oddRow {
   height: 100%;
 }
 
-.footer--dark {
+.footer {
+  border-top: 1px solid var(--ifm-footer-border-color);
   background-color: var(--ifm-footer-background-color);
 }
 
