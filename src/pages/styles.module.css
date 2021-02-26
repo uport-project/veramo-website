@@ -31,6 +31,15 @@
   .hexagons {
     opacity: 0.1;
   }
+  .codeBg {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .codeBg {
+    padding: 0 50px;
+  }
 }
 
 .buttons {

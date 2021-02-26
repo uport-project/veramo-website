@@ -201,7 +201,7 @@ function Code() {
 
 function AwesomeCli() {
   return (
-    <section style={{ paddingBottom: 150, height: 500 }}>
+    <section style={{ paddingBottom: 150 }}>
       <div className={'container tooling'}>
         <div className="container" style={{ textAlign: 'center', padding: 100 }}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
