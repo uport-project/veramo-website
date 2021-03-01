@@ -76,11 +76,11 @@ docker push ############.dkr.ecr.<region>.amazonaws.com/veramo-ecr:latest
 
 ### Create the database
 
-Next, create the Postgres database that we'll be connecting to in the AWS RDS Console.
+Next, go to the [RDS console](https://console.aws.amazon.com/rds/home?region=us-east-1#) for your region to create the Postgres database that we'll be connecting to.
 
-![Create Postgres Database](../../static/img/guides/aws_deployment/sample-RDS-setup.png)
-
-- Take note of the URI and user/pass combo - we'll need those for connecting to the database later.
+- Choose Postgres for the Database type
+- Take note of the user/pass combo you enter - we'll need that later on.
+- After creating the databse, also take note of the generated URL.
 
 ### Create ECS Cluster
 
