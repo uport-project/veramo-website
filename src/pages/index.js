@@ -11,7 +11,7 @@ import GitHubButton from 'react-github-btn'
 const textContent = {
   verifiableDataTitle: 'Verifiable data is the new standard',
   verifiableDataContent:
-    'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust network that accelerate decision making, efficiency and productivity',
+    'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust networks that accelerate decision making, efficiency and productivity',
   cleanApi: 'Clean API backed by TypeScript',
   cleanApiContent:
     'Veramo has a simple and clean API that is easy to reason about. This example bootstraps your agent with minnimal configuration.',
@@ -87,8 +87,8 @@ const features = [
 function VerifiableData() {
   return (
     <section>
-      <div className={'container'}>
-        <div className={styles.infoSection}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.verifiableDataTitle}</h1>
           <p className={styles.promoText} style={{ fontSize: 18 }}>
             {textContent.verifiableDataContent}
@@ -107,8 +107,8 @@ function VerifiableData() {
 function CleanAPI() {
   return (
     <section className={'oddRow'}>
-      <div className={'container tooling'}>
-        <div className={clsx(styles.infoSection, styles.infoSectionLifted)}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.cleanApi}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.cleanApiContent}
@@ -122,14 +122,12 @@ function CleanAPI() {
 function Code() {
   return (
     <section className={styles.hexagonsBg}>
-      <div className={'container tooling'}>
-        <div className={''}>
-          <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
-            <div className={styles.codeContent}>
-              <CodeBlock language="typescript" style={{ height: '100%' }}>
-                {textContent.codeExample}
-              </CodeBlock>
-            </div>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
+          <div className={styles.codeContent}>
+            <CodeBlock language="typescript" style={{ height: '100%' }}>
+              {textContent.codeExample}
+            </CodeBlock>
           </div>
         </div>
       </div>
@@ -139,9 +137,9 @@ function Code() {
 
 function AwesomeCli() {
   return (
-    <section>
-      <div className={'container tooling'}>
-        <div className={clsx(styles.infoSection, styles.infoSectionLifted)}>
+    <section className={'oddRow'}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.awesomeCLI}
@@ -155,7 +153,7 @@ function AwesomeCli() {
 function Cli() {
   return (
     <section className={styles.hexagonsBg}>
-      <div className={'container tooling'}>
+      <div className={styles.container}>
         <div className={'row'}>
           <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
             <div className={styles.cliContent}></div>
@@ -202,9 +200,9 @@ function Plugin({ imageUrl, title, description }) {
 
 function Plugins() {
   return (
-    <section className={'oddRow'}>
-      <div className={'container'}>
-        <div style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
+    <section>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
           <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.plugins}
@@ -272,6 +270,9 @@ function Home() {
             >
               Learn more
             </Link>
+            <div className={styles.npmInstall}>
+              <CodeBlock language={'bash'}>npm i @veramo/cli -g</CodeBlock>
+            </div>
           </div>
         </div>
       </header>
