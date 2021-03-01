@@ -87,8 +87,8 @@ const features = [
 function VerifiableData() {
   return (
     <section>
-      <div className={'container'}>
-        <div className={styles.infoSection}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.verifiableDataTitle}</h1>
           <p className={styles.promoText} style={{ fontSize: 18 }}>
             {textContent.verifiableDataContent}
@@ -107,8 +107,8 @@ function VerifiableData() {
 function CleanAPI() {
   return (
     <section className={'oddRow'}>
-      <div className={'container tooling'}>
-        <div className={clsx(styles.infoSection, styles.infoSectionLifted)}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.cleanApi}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.cleanApiContent}
@@ -122,14 +122,12 @@ function CleanAPI() {
 function Code() {
   return (
     <section className={styles.hexagonsBg}>
-      <div className={'container tooling'}>
-        <div className={''}>
-          <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
-            <div className={styles.codeContent}>
-              <CodeBlock language="typescript" style={{ height: '100%' }}>
-                {textContent.codeExample}
-              </CodeBlock>
-            </div>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
+          <div className={styles.codeContent}>
+            <CodeBlock language="typescript" style={{ height: '100%' }}>
+              {textContent.codeExample}
+            </CodeBlock>
           </div>
         </div>
       </div>
@@ -140,8 +138,8 @@ function Code() {
 function AwesomeCli() {
   return (
     <section className={'oddRow'}>
-      <div className={'container tooling'}>
-        <div className={clsx(styles.infoSection, styles.infoSectionLifted)}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.awesomeCLI}
@@ -155,7 +153,7 @@ function AwesomeCli() {
 function Cli() {
   return (
     <section className={styles.hexagonsBg}>
-      <div className={'container tooling'}>
+      <div className={styles.container}>
         <div className={'row'}>
           <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
             <div className={styles.cliContent}></div>
@@ -203,8 +201,8 @@ function Plugin({ imageUrl, title, description }) {
 function Plugins() {
   return (
     <section>
-      <div className={'container'}>
-        <div style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
           <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.plugins}

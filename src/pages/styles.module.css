@@ -5,6 +5,10 @@
  * and scoped locally.
  */
 
+.container {
+  width: 100%;
+}
+
 .heroBanner {
   padding: 5rem 0;
   text-align: left;
@@ -51,8 +55,10 @@
 .infoSection {
   text-align: center;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+}
+
+.infoSectionPadding {
+  padding: 30px 15px;
 }
 
 .cliContent {
@@ -165,6 +171,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--ifm-container-width);
+    padding-left: var(--ifm-spacing-horizontal);
+    padding-right: var(--ifm-spacing-horizontal);
+    width: 100%;
+  }
+  .infoSection {
+    padding: 30px 15px;
+  }
   .heroBanner {
     padding: 5rem 2rem;
   }
