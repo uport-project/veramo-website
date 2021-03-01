@@ -88,9 +88,9 @@ function VerifiableData() {
   return (
     <section>
       <div className={'container'}>
-        <div className="container" style={{ textAlign: 'center', padding: 100, paddingBottom: 50 }}>
+        <div className={styles.infoSection}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.verifiableDataTitle}</h1>
-          <p className={'promoText'} style={{ fontSize: 18 }}>
+          <p className={styles.promoText} style={{ fontSize: 18 }}>
             {textContent.verifiableDataContent}
           </p>
           <div className="row" style={{ paddingTop: 50 }}>
@@ -106,9 +106,9 @@ function VerifiableData() {
 
 function CleanAPI() {
   return (
-    <section style={{ paddingBottom: 150 }} className={'oddRow'}>
+    <section className={'oddRow'}>
       <div className={'container tooling'}>
-        <div className="container" style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
+        <div className={clsx(styles.infoSection, styles.infoSectionLifted)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.cleanApi}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.cleanApiContent}
@@ -119,60 +119,18 @@ function CleanAPI() {
   )
 }
 
-function Plugins() {
-  return (
-    <section className={'oddRow'}>
-      <div className={'container'}>
-        <div style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
-          <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
-          <p className={'promoText'} style={{ fontSize: 18 }}>
-            {textContent.plugins}
-          </p>
-          <div className="row plugins" style={{ paddingTop: 50 }}>
-            <Feature title="id-manager" description="Create a custom DID method" />
-            <Feature title="did-provider-ethr" description="Support Ethr-DID method" />
-            <Feature title="did-provider-web" description="Support Web-DID method" />
-            <Feature title="did-provider-key" description="Support Key-DID method" />
-            <Feature title="key-manager" description="Create a custom kms" />
-            <Feature title="kms-local" description="Support local kms" />
-            <Feature title="kms-local-react-native" description="Support local kms for React Native" />
-            <Feature title="message-handler" description="Create a custom message parser" />
-            <Feature title="did-comm" description="Support DIDcomm messaging" />
-            <Feature title="selective-disclosure" description="Support request messages" />
-            <Feature title="credential-w3c" description="Support W3C Verifiable Credential standard" />
-            <Feature title="did-jwt" description="Support DIDJwt" />
-            <Feature title="remote-server" description="Serve agent methods over REST" />
-            <Feature title="data-store" description="Suport local data storage" />
-            <Feature title="remote-client" description="Expose methods from a remote agent locally" />
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function Code() {
   return (
-    <section className={styles.codeBg}>
+    <section className={styles.hexagonsBg}>
       <div className={'container tooling'}>
-        <div className={'row'}>
-          <div
-            style={{
-              width: '100%',
-              border: 0,
-              borderRadius: 4,
-              overflow: 'hidden',
-              marginTop: -150,
-              boxShadow: '0 25px 50px -12px rgb(0 0 0 / 25%)',
-            }}
-          >
-            <CodeBlock language="typescript" style={{ height: '100%' }}>
-              {textContent.codeExample}
-            </CodeBlock>
+        <div className={''}>
+          <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
+            <div className={styles.codeContent}>
+              <CodeBlock language="typescript" style={{ height: '100%' }}>
+                {textContent.codeExample}
+              </CodeBlock>
+            </div>
           </div>
-        </div>
-        <div className="container" style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
-          {/* <h1 style={{ fontSize: '3rem', color: 'white' }}>Plugins included</h1> */}
         </div>
       </div>
     </section>
@@ -181,9 +139,9 @@ function Code() {
 
 function AwesomeCli() {
   return (
-    <section style={{ paddingBottom: 150 }}>
+    <section>
       <div className={'container tooling'}>
-        <div className="container" style={{ textAlign: 'center', padding: 100 }}>
+        <div className={clsx(styles.infoSection, styles.infoSectionLifted)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.awesomeCLI}
@@ -196,23 +154,13 @@ function AwesomeCli() {
 
 function Cli() {
   return (
-    <section className={styles.codeBg}>
+    <section className={styles.hexagonsBg}>
       <div className={'container tooling'}>
         <div className={'row'}>
-          <div
-            style={{
-              width: '100%',
-              border: 0,
-              borderRadius: 10,
-              overflow: 'hidden',
-              marginTop: -200,
-              boxShadow: '0 25px 50px -12px rgb(0 0 0 / 25%)',
-            }}
-          >
-            <img className={styles.cliAnimation} src="img/veramo_cli.gif" alt="Veramo CLI" />
+          <div className={clsx(styles.infoSection, styles.infoSectionLeft)}>
+            <div className={styles.cliContent}></div>
           </div>
         </div>
-        <div className="container" style={{ textAlign: 'center', padding: 100 }}></div>
       </div>
     </section>
   )
@@ -235,6 +183,55 @@ function Feature({ imageUrl, title, description }) {
   )
 }
 
+function Plugin({ imageUrl, title, description }) {
+  const imgUrl = useBaseUrl(imageUrl)
+  return (
+    <div className={clsx('col col--4', styles.feature)}>
+      <div className={styles.pluginsFeatureInner}>
+        {imgUrl && (
+          <div className="text--center" style={{ marginBottom: 10 }}>
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </div>
+        )}
+        <h3 className={styles.pluginsHeader}>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </div>
+  )
+}
+
+function Plugins() {
+  return (
+    <section className={'oddRow'}>
+      <div className={'container'}>
+        <div style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
+          <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
+          <p className={'promoText'} style={{ fontSize: 18 }}>
+            {textContent.plugins}
+          </p>
+          <div className={clsx(styles.plugins, 'row')} style={{ paddingTop: 50 }}>
+            <Plugin title="id-manager" description="Create a custom DID method" />
+            <Plugin title="did-provider-ethr" description="Support Ethr-DID method" />
+            <Plugin title="did-provider-web" description="Support Web-DID method" />
+            <Plugin title="did-provider-key" description="Support Key-DID method" />
+            <Plugin title="key-manager" description="Create a custom kms" />
+            <Plugin title="kms-local" description="Support local kms" />
+            <Plugin title="kms-local-react-native" description="Support local kms for React Native" />
+            <Plugin title="message-handler" description="Create a custom message parser" />
+            <Plugin title="did-comm" description="Support DIDcomm messaging" />
+            <Plugin title="selective-disclosure" description="Support request messages" />
+            <Plugin title="credential-w3c" description="Support W3C Verifiable Credential standard" />
+            <Plugin title="did-jwt" description="Support DIDJwt" />
+            <Plugin title="remote-server" description="Serve agent methods over REST" />
+            <Plugin title="data-store" description="Suport local data storage" />
+            <Plugin title="remote-client" description="Expose methods from a remote agent locally" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function Home() {
   const context = useDocusaurusContext()
   const { siteConfig = {} } = context
@@ -244,7 +241,7 @@ function Home() {
       title={`Veramo - A JavaScript Framework for Verifiable Data`}
       description={siteConfig.tagline}
     >
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
           <div className={styles.socialLinks}>
             <GitHubButton
@@ -257,21 +254,20 @@ function Home() {
               Star
             </GitHubButton>
           </div>
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+          <p className={styles.heroSubtitle}>
+            <i>{siteConfig.tagline}</i>
+          </p>
           {/* <CodeBlock className="hero-code">npm i @veramo/cli --global</CodeBlock> */}
           <div className={styles.buttons}>
             <Link
-              className={clsx(
-                'button button--primary button--lg button--square getStarted',
-                styles.getStarted,
-              )}
+              className={clsx('button button--primary button--square getStarted', styles.getStarted)}
               to={useBaseUrl('docs/fundamentals/introduction')}
             >
               Get Started
             </Link>
             <Link
-              className={clsx('button button--secondary button--lg button--no-border', styles.learnMore)}
+              className={clsx('button button--secondary button--no-border', styles.learnMore)}
               to={useBaseUrl('docs/fundamentals/introduction')}
             >
               Learn more
