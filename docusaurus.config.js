@@ -11,7 +11,7 @@ module.exports = {
   themeConfig: {
     prism: {
       defaultLanguage: 'javascript',
-      theme: require('prism-react-renderer/themes/vsDark'),
+      theme: require('prism-react-renderer/themes/nightOwl'),
     },
     navbar: {
       title: 'Veramo',

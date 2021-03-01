@@ -11,7 +11,7 @@ import GitHubButton from 'react-github-btn'
 const textContent = {
   verifiableDataTitle: 'Verifiable data is the new standard',
   verifiableDataContent:
-    'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust network that accelerate decision making, efficiency and productivity',
+    'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust networks that accelerate decision making, efficiency and productivity',
   cleanApi: 'Clean API backed by TypeScript',
   cleanApiContent:
     'Veramo has a simple and clean API that is easy to reason about. This example bootstraps your agent with minnimal configuration.',
@@ -139,7 +139,7 @@ function Code() {
 
 function AwesomeCli() {
   return (
-    <section>
+    <section className={'oddRow'}>
       <div className={'container tooling'}>
         <div className={clsx(styles.infoSection, styles.infoSectionLifted)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
@@ -202,7 +202,7 @@ function Plugin({ imageUrl, title, description }) {
 
 function Plugins() {
   return (
-    <section className={'oddRow'}>
+    <section>
       <div className={'container'}>
         <div style={{ textAlign: 'center', paddingTop: 100, paddingBottom: 50 }}>
           <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
@@ -272,6 +272,9 @@ function Home() {
             >
               Learn more
             </Link>
+            <div className={styles.npmInstall}>
+              <CodeBlock language={'bash'}>npm i @veramo/cli -g</CodeBlock>
+            </div>
           </div>
         </div>
       </header>
