@@ -29,6 +29,7 @@
   --ifm-hero-bg-color: #0d2a39;
   --ifm-hero-title-color: #25c2a0;
   --ifm-hero-txt-color: white;
+  --ifm-hero-subtitle-color: #cfcfcf;
 
   --brand: #25c2a0;
   --body-text-primary: #4e4e4e;
@@ -55,7 +56,7 @@ html[data-theme='dark'] {
   --ifm-hero-bg-color: #121415;
   --ifm-hero-title-color: #25c2a0;
   --ifm-hero-txt-color: white;
-  --ifm-hero-subtitle-color: rgb(207, 207, 207);
+  --ifm-hero-subtitle-color: #cfcfcf;
 
   --body-text-primary: #999999;
   --body-section-composable: #151515;
