@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="917" height="596" viewBox="0 0 917 596">
+  <g id="Group_28" data-name="Group 28" transform="translate(-2610 -1404)">
+    <g id="Rectangle_64" data-name="Rectangle 64" transform="translate(2610 1404)" fill="none" stroke="#4b4b4b" stroke-width="10">
+      <rect width="917" height="596" rx="75" stroke="none"/>
+      <rect x="5" y="5" width="907" height="586" rx="70" fill="none"/>
+    </g>
+    <line id="Line_17" data-name="Line 17" x2="508.913" transform="translate(2687.5 1681.5)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-width="29"/>
+    <line id="Line_18" data-name="Line 18" x2="508.913" transform="translate(2687.5 1770.5)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-width="29"/>
+    <line id="Line_19" data-name="Line 19" x2="508.913" transform="translate(2687.5 1859.5)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-width="29"/>
+    <text id="ACCESS" transform="translate(2672 1590)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ACCESS</tspan></text>
+  </g>
+</svg>

@@ -1,6 +1,7 @@
 module.exports = {
-  title: 'Veramo',
-  tagline: 'A JavaScript Framework for Verifiable Data',
+  title: 'Performant and modular APIs for Verifiable Data and SSI',
+  tagline:
+    'Create and manage decentralized identifiers + verifiable credentials without worrying about interop and vendor lock-in.',
   url: 'https://veramo.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -51,7 +52,6 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Docs',

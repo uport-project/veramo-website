@@ -6,41 +6,126 @@
  */
 
 .heroBanner {
-  padding: 7rem 0;
+  padding: 5rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
+  background-image: url('/img/hexagons.svg');
+  background-color: var(--ifm-hero-bg-color);
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.hexagonsBg {
+  background-color: var(--ifm-hero-bg-color);
+  /* background-image: url('/img/hexagons.svg'); */
+}
+
+.hexagons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.heroTitle {
+  color: var(--ifm-hero-title-color);
+  font-size: 2.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-shadow: 0px 0px 40px rgb(0 0 0 / 40%);
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  color: var(--ifm-hero-subtitle-color);
+  /* max-width: 600px; */
+  line-height: 1.8rem;
+}
+
+.promoText {
+  color: var(--body-text-primary);
+}
+
+.infoSection {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cliContent {
+  background-image: url('/img/veramo_cli.gif');
+  background-size: auto;
+  height: 600px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.codeContent {
+  margin-top: 0px;
+}
+
+.infoSectionLeft {
+  text-align: left;
+}
+
+.plugins {
+  display: none;
+}
+
+.pluginsFeatureInner {
+  justify-content: center;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 3px dashed var(--ifm-plugin-border-color);
+  border-radius: 25px;
+}
+
+.pluginsHeader {
+  color: var(--ifm-color-primary-dark);
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin: 30px 0;
 }
 
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
 }
 
 .featureImage {
   height: 200px;
-  width: 200px;
+  width: auto;
+}
+
+.cliAnimation {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+.featureList {
+  list-style: none;
+  color: white;
+}
+
+.featureList li {
+  font-size: larger;
 }
 
 .getStarted {
-  border-radius: 0;
+  border-radius: 5px;
   padding: 15px 30px;
   font-weight: 500;
   font-size: 1.3rem;
+  margin-right: 10px;
 }
 
 .learnMore {
@@ -48,10 +133,76 @@
   padding: 15px 30px;
   font-weight: 500;
   font-size: 1.3rem;
+  margin-right: 20px;
 }
 
-.learnMore:after {
-  content: '>';
-  font-size: 24px;
-  margin-left: 5px;
+@media screen and (min-width: 500px) {
+  .heroBanner {
+    padding: 5rem 2rem;
+  }
+  .heroTitle {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+  }
+  .heroSubtitle {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  .getStarted {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroBanner {
+    padding: 5rem 2rem;
+  }
+  .heroTitle {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+  }
+  .heroSubtitle {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hexagonsBg {
+    background-image: url('/img/hexagons.svg');
+  }
+
+  .codeContent {
+    width: 100%;
+    margin-top: -200px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .cliContent {
+    margin-top: -200px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    overflow: hidden;
+    border: 0;
+    border-radius: 14px;
+    background-size: cover;
+  }
+
+  .infoSection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .infoSectionLifted {
+    padding-bottom: 200px;
+    padding-top: 80px;
+  }
+
+  .plugins {
+    display: flex;
+  }
 }
