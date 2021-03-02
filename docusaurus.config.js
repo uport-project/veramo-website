@@ -21,13 +21,13 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/fundamentals/introduction',
+          to: 'docs/basics/introduction',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'right',
         },
         {
-          to: 'docs/agent/plugins_list',
+          to: 'docs/veramo_agent/plugins_list',
           activeBasePath: 'docs',
           label: 'Plugins',
           position: 'right',
@@ -58,7 +58,7 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/fundamentals/introduction',
+              to: 'docs/basics/introduction',
             },
             {
               label: 'Agent',

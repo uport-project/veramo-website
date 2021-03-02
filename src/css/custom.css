@@ -24,7 +24,8 @@
   --ifm-navbar-toggle-color: white;
 
   --ifm-menu-color-active: #6d6d6d;
-  --ifm-menu-color: #6d6d6d;
+  --ifm-menu-color: #8f8f8f;
+  --ifm-menu-section-title-color: #505050;
 
   --ifm-hero-bg-color: #0d2a39;
   --ifm-hero-title-color: #25c2a0;
@@ -52,6 +53,7 @@ html[data-theme='dark'] {
 
   --ifm-menu-color-active: #aeaeae;
   --ifm-menu-color: #aeaeae;
+  --ifm-menu-section-title-color: #646464;
 
   --ifm-hero-bg-color: #121415;
   --ifm-hero-title-color: #25c2a0;
@@ -102,6 +104,20 @@ html[data-theme='dark'] {
 
 .menu__link.menu__link--active {
   color: var(--ifm-menu-color-active);
+}
+
+a.menu__link--sublist {
+  color: var(--ifm-menu-section-title-color);
+}
+.menu__link:hover {
+  color: var(--ifm-color-primary-dark);
+}
+.menu__link--sublist.menu__link--active {
+  color: var(--ifm-color-primary-dark);
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-navbar-link-color);
 }
 
 section.composable,

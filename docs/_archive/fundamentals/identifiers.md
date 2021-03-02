@@ -7,14 +7,13 @@ title: Identifiers
 
 ## Decentralized Identifier
 
-Different flavors of `DIDs` exist today. The flavor of a `DID` or more accurately the `DID Method` defines how CRUD operations for a DID of that `DID Method` are executed. Each `DID Method` has different tradeoffs in specific use cases. For example, a web DID can be created without a Blockchain but `DID Methods` exist that have a dependency on a Blockchain. All of them are valid `DIDs` but have different guaranteees. 
+Different flavors of `DIDs` exist today. The flavor of a `DID` or more accurately the `DID Method` defines how CRUD operations for a DID of that `DID Method` are executed. Each `DID Method` has different tradeoffs in specific use cases. For example, a web DID can be created without a Blockchain but `DID Methods` exist that have a dependency on a Blockchain. All of them are valid `DIDs` but have different guaranteees.
 
-The example below shows how a web DID for veramo.dev might look like. 
+The example below shows how a web DID for veramo.dev might look like.
 
 ```
 did:web:veramo.dev
 ```
-
 
 ### DID Creation
 
