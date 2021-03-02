@@ -22,8 +22,8 @@ Veramo doesn't impose restrictions on your application logic or UX layer. We lea
 
 We envision an ecosystem of great plugins that add lots of functionality for all sorts of applications. If there is something you are missing you have options:
 
-- Make a [plugin request](/docs/fundamentals/introduction) for the team to build it for you
+- Make a [plugin request](/docs/basics/introduction) for the team to build it for you
 - Make a request for a member of the community to help build it
-- [Build it yourself](/docs/agent/plugins) and start an internal repository of private plugins that you can use in multiple products and or open-source or even license the plugin to others if you think others would benefit
+- [Build it yourself](/docs/veramo_agent/plugins) and start an internal repository of private plugins that you can use in multiple products and or open-source or even license the plugin to others if you think others would benefit
 
-You can also [book a workshop](/docs/fundamentals/introduction) to discuss your architecture needs with the team.
+You can also [book a workshop](/docs/basics/introduction) to discuss your architecture needs with the team.

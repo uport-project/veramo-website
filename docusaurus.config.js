@@ -4,7 +4,7 @@ module.exports = {
     'Create and manage decentralized identifiers + verifiable credentials without worrying about interop and vendor lock-in.',
   url: 'https://veramo.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'uport-project', // Usually your GitHub org/user name.
   projectName: 'veramo', // Usually your repo name.
@@ -62,24 +62,41 @@ module.exports = {
             },
             {
               label: 'Agent',
-              to: 'docs/agent/introduction',
+              to: 'docs/veramo_agent/introduction',
             },
           ],
         },
         {
-          title: 'Guides',
+          title: 'Tutorials',
           items: [
             {
-              label: 'CLI',
-              to: 'docs/guides/cli',
+              label: 'Node',
+              to: 'docs/node_tutorial/introduction',
+            },
+            {
+              label: 'React',
+              to: 'docs/react_tutorial/introduction',
             },
             {
               label: 'React Native',
-              to: 'docs/guides/react_native',
+              to: 'docs/react_native_tutorial/introduction',
+            },
+          ],
+        },
+        {
+          title: 'Developer Tools',
+          items: [
+            {
+              label: 'CLI',
+              to: 'docs/dev_tools/cli',
             },
             {
-              label: 'Node',
-              to: 'docs/guides/nodejs',
+              label: 'NFT DevKit',
+              to: 'docs/dev_tools/nft_devkit',
+            },
+            {
+              label: 'DApp DevKit',
+              to: 'docs/dev_tools/dapp_devkit',
             },
           ],
         },

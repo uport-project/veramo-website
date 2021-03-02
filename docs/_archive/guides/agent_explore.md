@@ -12,7 +12,7 @@ Agent Explorer is in early preview so breaking changes will be often. The goal i
 
 ## Run Local Agent
 
-In order to use the dashboard you need an agent instance. For this guide we will run a local agent using the `veramo-agent-deploy` repo. You can also use the [Veramo CLI](/docs/guides/cli) tool but this repo is pre-configured for deployment to Heroku, Docker. Later in this guide we will also add a plugin and consume it in the Explorer.
+In order to use the dashboard you need an agent instance. For this guide we will run a local agent using the `veramo-agent-deploy` repo. You can also use the [Veramo CLI](/docs/dev_tools/veramo_cli) tool but this repo is pre-configured for deployment to Heroku, Docker. Later in this guide we will also add a plugin and consume it in the Explorer.
 
 Clone the repo
 

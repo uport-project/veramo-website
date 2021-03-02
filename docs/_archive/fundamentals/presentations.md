@@ -5,7 +5,7 @@ title: Presentations
 
 The `w3c.vp` message type is a wrapper for the W3C Verifiable Presentation format.
 
-A [Verifiable Presentation](/docs/api/core.w3cpresentation) is a signed envelope for 1 or more [Verifiable Credentials.](/docs/fundamentals/verifiable_data)
+A [Verifiable Presentation](/docs/api/core.w3cpresentation) is a signed envelope for 1 or more [Verifiable Credentials.](/docs/basics/verifiable_data)
 
 ```json
 {

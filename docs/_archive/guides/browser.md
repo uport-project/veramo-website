@@ -99,7 +99,7 @@ function App() {
 export default App
 ```
 
-And that's it! When you `yarn start` you should see a DID document being resolved instead of the default landing page. What's next? Perhaps you could [write a plugin](/docs/guides/create_plugin) that allows you to store data in local storage?
+And that's it! When you `yarn start` you should see a DID document being resolved instead of the default landing page.
 
 ## Troubleshooting
 

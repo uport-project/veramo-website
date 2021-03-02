@@ -18,7 +18,7 @@ These docs are written for anyone wishing to learn more about the grounding prin
 
 If you are new to the concept of verifiable data, it would be best to read the fundamentals section linearly as each section builds on knowledge and terminology gained in the previous.
 
-If you are more experienced with verifiable data concepts and/or development in general, you can dive into the architecture section where more specifics of how the internals work is covered, or you could [deploy your own cloud agent](/docs/guides/cloud_agent). You can also jump over to the [API reference](/docs/api/core) section. Links and more info about these packages can also be found in the [Plugins](/docs/agent/plugins_list) section.
+If you are more experienced with verifiable data concepts and/or development in general, you can dive into the architecture section where more specifics of how the internals work is covered. You can also jump over to the [API reference](/docs/api/core) section. Links and more info about these packages can also be found in the [Plugins](/docs/veramo_agent/plugins) section.
 
 ## Mission
 
@@ -40,4 +40,4 @@ However, this should not prevent businesses from bringing the immense value of v
 
 At Veramo, we work closely with the [W3C](https://www.w3.org/) and [DIF](https://identity.foundation/) to build compatibility across many projects and initiatives in the space.
 
-Using Veramo, you can design your agent how you want it by using the [core plugins](/docs/agent/plugins) or you can [write custom plugins](/docs/guides/create_plugin). We have plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentication, and many more.
+Using Veramo, you can design your agent how you want it by using the [core plugins](/docs/veramo_agent/plugins). We have plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentication, and many more.

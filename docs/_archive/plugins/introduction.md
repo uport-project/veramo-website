@@ -4,7 +4,7 @@ title: Plugins
 sidebar_label: Plugins
 ---
 
-Check the [plugins](/docs/agent/plugins) documentaion to learn more.
+Check the [plugins](/docs/veramo_agent/plugins) documentaion to learn more.
 
 ## Lorem
 

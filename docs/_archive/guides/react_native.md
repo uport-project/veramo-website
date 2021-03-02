@@ -8,7 +8,7 @@ This guide will walk you through setting up Veramo on React Native. You should h
 
 ## Introduction
 
-Let's setup Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity provider will be `ethr-did`. Initially, we will set up the [agent](/docs/agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/fundamentals/identifiers).
+Let's setup Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity provider will be `ethr-did`. Initially, we will set up the [agent](/docs/veramo_agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/basics/identifiers).
 
 ## Bootstrap React Native
 

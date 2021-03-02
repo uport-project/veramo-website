@@ -37,7 +37,7 @@ You will need the API key which you can get from the agent.yml file.
 Replace the `NGROK_URL` and `API_KEY` with your own and run:
 
 ```bash
-curl -X POST "https://<NGROK_URL>/agent/idManagerCreateId" -H "accept: application/json; charset=utf-8" -H "Authorization: Bearer <APIKEY>" -H "Content-Type: application/json" -d "{}"
+curl -X POST "https://<NGROK_URL>/veramo_agent/idManagerCreateId" -H "accept: application/json; charset=utf-8" -H "Authorization: Bearer <APIKEY>" -H "Content-Type: application/json" -d "{}"
 ```
 
 A new identifier should be printed in your console.

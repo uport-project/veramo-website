@@ -260,13 +260,13 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx('button button--primary button--square getStarted', styles.getStarted)}
-              to={useBaseUrl('docs/fundamentals/introduction')}
+              to={useBaseUrl('docs/basics/introduction')}
             >
               Get Started
             </Link>
             <Link
               className={clsx('button button--secondary button--no-border', styles.learnMore)}
-              to={useBaseUrl('docs/fundamentals/introduction')}
+              to={useBaseUrl('docs/basics/introduction')}
             >
               Learn more
             </Link>

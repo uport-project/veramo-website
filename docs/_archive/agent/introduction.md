@@ -27,15 +27,15 @@ const message = await agent.handleMessage({
 })
 ```
 
-If the agent is exposed as a REST interface the method will also be available using Open API. This is a [cloud agent](/docs/guides/cloud_agent).
+If the agent is exposed as a REST interface the method will also be available using Open API.
 
 ```
-POST https://veramo.dev/agent/handleMessage
+POST https://veramo.dev/veramo_agent/handleMessage
 ```
 
 ## Configuration
 
-An agent can be manually configured by installing plugins from npm, running a node application and [creating a setup](/docs/guides/nodejs) file to instatiate the agent class. You can also create a `.yml` file with full configuration.
+An agent can be manually configured by installing plugins from npm, running a node application and [creating a setup](/docs/node_tutorial/nodejs) file to instatiate the agent class. You can also create a `.yml` file with full configuration.
 
 Here is a trimmed down version of the configuration file used for the standard cloud agent [one click heroku deployment](https://github.com/uport-project/veramo-agent-deploy).
 
