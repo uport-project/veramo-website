@@ -27,6 +27,12 @@ module.exports = {
           position: 'right',
         },
         {
+          to: 'developer_tools',
+          activeBasePath: '/',
+          label: 'Tools',
+          position: 'right',
+        },
+        {
           to: 'docs/veramo_agent/plugins_list',
           activeBasePath: 'docs',
           label: 'Plugins',

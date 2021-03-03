@@ -7,6 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 import CodeBlock from '@theme/CodeBlock'
 import GitHubButton from 'react-github-btn'
+import Feature from '../components/Feature'
 
 const textContent = {
   verifiableDataTitle: 'Verifiable data is the new standard',
@@ -161,23 +162,6 @@ function Cli() {
         </div>
       </div>
     </section>
-  )
-}
-
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl)
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      <div className="featureInner">
-        {imgUrl && (
-          <div className="text--center" style={{ marginBottom: 10 }}>
-            <img className={styles.featureImage} src={imgUrl} alt={title} />
-          </div>
-        )}
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
   )
 }
 

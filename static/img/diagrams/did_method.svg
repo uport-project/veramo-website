@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4100" height="1384" viewBox="0 0 4100 1384">
+  <g id="Group_44" data-name="Group 44" transform="translate(-192 -86)">
+    <rect id="Rectangle_92" data-name="Rectangle 92" width="4100" height="1384" transform="translate(192 86)" fill="rgba(216,216,216,0.11)"/>
+    <text id="did:example:0x12a0e25e62c1dbd32e505446062b26aecb65f028" transform="translate(465 744)" fill="#909090" font-size="120" font-family="Consolas-Bold, Consolas" font-weight="700"><tspan x="0" y="0">did</tspan><tspan y="0" fill="#4b4b4b">:</tspan><tspan y="0" fill="#3d659b">example</tspan><tspan y="0" fill="#4b4b4b">:</tspan><tspan y="0" fill="#73c394">0x12a0e25e62c1dbd32e505446062b26aecb65f028</tspan></text>
+    <text id="DID_Method" data-name="DID Method" transform="translate(620 1145)" fill="#587aa9" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">DID Method</tspan></text>
+    <text id="Scheme" transform="translate(364 390)" fill="#909090" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Scheme</tspan></text>
+    <text id="DID_Method-Specific_Identifier" data-name="DID Method-Specific Identifier" transform="translate(2019 1143)" fill="#73c394" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">DID Method-Specific Identifier</tspan></text>
+    <line id="Line_20" data-name="Line 20" y2="172" transform="translate(571.5 443.5)" fill="none" stroke="#bababa" stroke-width="15"/>
+    <line id="Line_21" data-name="Line 21" x2="6" y2="204.5" transform="translate(961.5 775)" fill="none" stroke="#c9c9c9" stroke-width="15"/>
+    <line id="Line_22" data-name="Line 22" y2="205" transform="translate(2790 775)" fill="none" stroke="#c9c9c9" stroke-width="15"/>
+  </g>
+</svg>

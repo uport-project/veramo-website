@@ -6,7 +6,7 @@ sidebar_label: Plugin Directory
 
 We have a growing list of plugins to support a wide range of standards. You can build your own plugins to add any functionality you need.
 
-View all the [plugin docs here](/docs/api/index/).
+<!-- View all the [plugin docs here](/docs/api/index/). -->
 
 ### @veramo/id-manager
 

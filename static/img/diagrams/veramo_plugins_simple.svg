@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7228" height="5044" viewBox="0 0 7228 5044">
+  <g id="Group_43" data-name="Group 43" transform="translate(-149 -132)">
+    <rect id="Rectangle_91" data-name="Rectangle 91" width="7228" height="5044" transform="translate(149 132)" fill="none"/>
+    <g id="Rectangle_65" data-name="Rectangle 65" transform="translate(3011 289)" fill="#e8e8e8" stroke="#4b4b4b" stroke-width="10">
+      <rect width="1245" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1235" height="274" rx="63" fill="none"/>
+    </g>
+    <text id="Veramo_DID_Agent" data-name="Veramo DID Agent" transform="translate(3152 473)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Veramo DID Agent</tspan></text>
+    <g id="Rectangle_66" data-name="Rectangle 66" transform="translate(805 1693)" fill="#fcf7d7" stroke="#e3ddb8" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_75" data-name="Rectangle 75" transform="translate(275 2812)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="IKeyManager" transform="translate(991 1854)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">IKeyManager</tspan></text>
+    <g id="Group_30" data-name="Group 30">
+      <rect id="Rectangle_90" data-name="Rectangle 90" width="395" height="85" transform="translate(870 1617)" fill="#e3ddb8"/>
+      <text id="INTERFACE" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">INTERFACE</tspan></text>
+    </g>
+    <g id="Group_34" data-name="Group 34" transform="translate(-514 1110)">
+      <rect id="Rectangle_90-2" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_40" data-name="Group 40" transform="translate(-514 2116)">
+      <rect id="Rectangle_90-3" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-2" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_35" data-name="Group 35" transform="translate(599 1110)">
+      <rect id="Rectangle_90-4" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-3" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_36" data-name="Group 36" transform="translate(1850 1110)">
+      <rect id="Rectangle_90-5" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-4" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_37" data-name="Group 37" transform="translate(2968 1110)">
+      <rect id="Rectangle_90-6" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-5" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_41" data-name="Group 41" transform="translate(2968 2132)">
+      <rect id="Rectangle_90-7" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-6" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_38" data-name="Group 38" transform="translate(4203 1110)">
+      <rect id="Rectangle_90-8" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-7" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_42" data-name="Group 42" transform="translate(4203 2134)">
+      <rect id="Rectangle_90-9" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-8" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_39" data-name="Group 39" transform="translate(5390 1110)">
+      <rect id="Rectangle_90-10" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN-9" data-name="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <g id="Group_31" data-name="Group 31" transform="translate(1182)">
+      <rect id="Rectangle_90-11" data-name="Rectangle 90" width="395" height="85" transform="translate(870 1617)" fill="#e3ddb8"/>
+      <text id="INTERFACE-2" data-name="INTERFACE" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">INTERFACE</tspan></text>
+    </g>
+    <g id="Group_32" data-name="Group 32" transform="translate(2345)">
+      <rect id="Rectangle_90-12" data-name="Rectangle 90" width="395" height="85" transform="translate(870 1617)" fill="#e3ddb8"/>
+      <text id="INTERFACE-3" data-name="INTERFACE" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">INTERFACE</tspan></text>
+    </g>
+    <g id="Group_33" data-name="Group 33" transform="translate(3520)">
+      <rect id="Rectangle_90-13" data-name="Rectangle 90" width="395" height="85" transform="translate(870 1617)" fill="#e3ddb8"/>
+      <text id="INTERFACE-4" data-name="INTERFACE" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">INTERFACE</tspan></text>
+    </g>
+    <text id="KMS" transform="translate(664 2973)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">KMS</tspan></text>
+    <g id="Rectangle_70" data-name="Rectangle 70" transform="translate(1978 1693)" fill="#fcf7d7" stroke="#e3ddb8" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_76" data-name="Rectangle 76" transform="translate(1406 2812)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="IDataStore" transform="translate(2229 1850)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">IDataStore</tspan></text>
+    <text id="KeyStore" transform="translate(1657 2969)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">KeyStore</tspan></text>
+    <g id="Rectangle_71" data-name="Rectangle 71" transform="translate(3151 1693)" fill="#fcf7d7" stroke="#e3ddb8" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_77" data-name="Rectangle 77" transform="translate(2621 2812)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="IDIDManager" transform="translate(3327 1850)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">IDIDManager</tspan></text>
+    <text id="DIDStore" transform="translate(2910 2973)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">DIDStore</tspan></text>
+    <g id="Rectangle_72" data-name="Rectangle 72" transform="translate(4324 1693)" fill="#fcf7d7" stroke="#e3ddb8" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(3742 2808)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="IResolver" transform="translate(4597 1850)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">IResolver</tspan></text>
+    <text id="Providers" transform="translate(4017 2980)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Providers</tspan></text>
+    <g id="Rectangle_73" data-name="Rectangle 73" transform="translate(5497 1693)" fill="#fcf7d7" stroke="#e3ddb8" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_79" data-name="Rectangle 79" transform="translate(4967 2812)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_80" data-name="Rectangle 80" transform="translate(6158 2812)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="ICredentialIssuer" transform="translate(5578 1854)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ICredentialIssuer</tspan></text>
+    <text id="Resolver" transform="translate(5255 2973)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Resolver</tspan></text>
+    <text id="JWT" transform="translate(6555 2973)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">JWT</tspan></text>
+    <path id="Path_93" data-name="Path 93" d="M-8664,1346.813s-1555.239,115.335-2304.723,1072.767" transform="translate(12297 -760)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_94" data-name="Path 94" d="M-10968.723,1346.813S-9413.483,1462.147-8664,2419.58" transform="translate(14601.723 -760)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_95" data-name="Path 95" d="M-8664,1346.813s-1048.6,274.906-1125.93,1080.33" transform="translate(12297 -760)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_96" data-name="Path 96" d="M-9789.93,1346.813s1094.849,275.012,1172.177,1080.435" transform="translate(13422.93 -760)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_97" data-name="Path 97" d="M-8664,1346.813V2439.058" transform="translate(12297 -760)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_98" data-name="Path 98" d="M-10978.018-4565s-132.254,237.811-479.465,839.2" transform="translate(12243.482 6513.401)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_103" data-name="Path 103" d="M-10978.018-4565s294.612,396.69,599.1,839.914" transform="translate(15839.921 6513.401)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_112" data-name="Path 112" d="M-10978.018-4565s294.612,396.69,599.1,839.914" transform="translate(17047.416 6512.685)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_101" data-name="Path 101" d="M-10978.018-4565s-139.5,234.958-479.465,823.787" transform="translate(14608.482 6528.813)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_100" data-name="Path 100" d="M-10978.018-4565s-6.784,1248.323,0,1885.413" transform="translate(13519.088 6515.587)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_106" data-name="Path 106" d="M-10978.018-4565s-6.784,277.417,0,419" transform="translate(13519.088 8639)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_107" data-name="Path 107" d="M-10978.018-4565s-6.784,501.205,0,757" transform="translate(11763.018 7626)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_110" data-name="Path 110" d="M-10978.018-4565s-6.784,501.205,0,757" transform="translate(15232.518 7626)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_111" data-name="Path 111" d="M-10978.018-4565s-6.784,501.205,0,757" transform="translate(16476.525 7626)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_108" data-name="Path 108" d="M-10964.285-4591.2s124.2,185.04,541.215,790.04" transform="translate(12870.533 7641)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_109" data-name="Path 109" d="M-11011.741-4563.762s-89.294,133.959-443.787,742.661" transform="translate(14151.883 7641)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <g id="Rectangle_85" data-name="Rectangle 85" transform="translate(2028 3836)" fill="#f2f5fc" stroke="#afb3be" stroke-width="5" stroke-dasharray="23">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="2.5" y="2.5" width="1016" height="233" rx="65.5" fill="none"/>
+    </g>
+    <text id="DBConnection" transform="translate(2168 4000)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">DBConnection</tspan></text>
+    <path id="Path_104" data-name="Path 104" d="M-11458.631-4565s126.418,227.7,479.465,839.2" transform="translate(15158.15 6528.813)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_105" data-name="Path 105" d="M-11457.482-4565s140.479,216.827,505.385,848.862" transform="translate(12722.947 6513.401)" fill="none" stroke="#707070" stroke-width="7" stroke-dasharray="26"/>
+    <g id="Rectangle_84" data-name="Rectangle 84" transform="translate(3784 3833)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="WebDIDProvider" transform="translate(3891 3994)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">WebDIDProvider</tspan></text>
+    <g id="Rectangle_83" data-name="Rectangle 83" transform="translate(4996 3835)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="WebDIDResolver" transform="translate(5094 3992)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">WebDIDResolver</tspan></text>
+    <g id="Rectangle_87" data-name="Rectangle 87" transform="translate(2031 4493)" fill="#f2f5fc" stroke="#afb3be" stroke-width="5" stroke-dasharray="23">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="2.5" y="2.5" width="1016" height="233" rx="65.5" fill="none"/>
+    </g>
+    <text id="Postgres" transform="translate(2315 4654)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Postgres</tspan></text>
+    <g id="Rectangle_86" data-name="Rectangle 86" transform="translate(280 3818)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1013" height="230" rx="64" fill="none"/>
+    </g>
+    <text id="Local" transform="translate(669 3979)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Local</tspan></text>
+  </g>
+</svg>
