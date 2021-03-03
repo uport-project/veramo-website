@@ -39,7 +39,7 @@
 
   --ifm-blockquote-color: #25c2a0;
   --ifm-link-color: #246ab3;
-  --ifm-link-decoration: underline;
+  /* --ifm-link-decoration: underline; */
 
   --ifm-pagination-nav-color-hover: var(--ifm-link-color);
 
