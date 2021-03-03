@@ -34,7 +34,14 @@ const tools = [
 function DeveloperTools() {
   return (
     <Layout title="Developer Tools">
-      <main>
+      <section>
+        <div className="container">
+          <div className={'row'}>
+            <h3>Page in progress...</h3>
+          </div>
+        </div>
+      </section>
+      <main style={{ opacity: 0.3 }}>
         {tools && tools.length > 0 && (
           <section className={styles.features}>
             <div className="container">

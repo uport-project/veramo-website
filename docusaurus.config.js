@@ -33,7 +33,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'docs/veramo_agent/plugins_list',
+          to: 'docs/veramo_agent/plugins',
           activeBasePath: 'docs',
           label: 'Plugins',
           position: 'right',
