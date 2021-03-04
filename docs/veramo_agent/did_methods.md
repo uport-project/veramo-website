@@ -3,7 +3,7 @@ id: did_methods
 title: DID Methods
 ---
 
-What is a DID Methods explain...
+A definition of how a specific DID method scheme is implemented. A DID method is defined by a DID method specification, which specifies the precise operations by which DIDs and DID documents are created, resolved, updated, and deactivated. See [DID Methods W3C Spec](https://www.w3.org/TR/did-core/#methods).
 
 ![img](../../static/img/diagrams/did_method.svg)
 
