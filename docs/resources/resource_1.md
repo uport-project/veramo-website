@@ -1,4 +1,4 @@
 ---
 id: resource_1
-title: Resource 1
+title: Category 1
 ---
