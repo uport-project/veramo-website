@@ -11,9 +11,12 @@ module.exports = {
       items: [
         'veramo_agent/introduction',
         'veramo_agent/plugins',
+        'veramo_agent/configuration',
         'veramo_agent/did_methods',
         'veramo_agent/messages',
+        'veramo_agent/message_handlers',
         'veramo_agent/sdr_request',
+        'veramo_agent/event_system',
       ],
     },
     {
