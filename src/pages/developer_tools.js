@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '@theme/Layout'
+import clsx from 'clsx'
 import styles from './styles.module.css'
 import Feature from '../components/Feature'
 
@@ -70,50 +71,60 @@ const toolkits = [
   },
 ]
 
-function DeveloperTools() {
+function Tools() {
   return (
-    <Layout title="Developer Tools">
-      <section className="container padding-vert--lg">
-        <div>
-          <h1 style={{ fontSize: '3rem' }}>Developer Tools & Kits</h1>
-          <p>Our developer tools make building apps with Veramo a breeze.</p>
-        </div>
-        <main>
-          <h3>Core Developer Tools</h3>
-          <p>
-            The core developer tools are specific libraries that use Veramo and make using Veramno easier.
+    <section>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
+          <h1 style={{ fontSize: '3rem' }}>Developer Tools</h1>
+          <p className={'promoText'} style={{ fontSize: 18 }}>
+            The core developer tools are specific libraries that use Veramo and make using Veramo easier.
           </p>
-          {tools && tools.length > 0 && (
-            <section className={styles.features}>
-              <div className="container">
-                <div className="row">
-                  {tools.map((props, idx) => (
-                    <Feature key={idx} {...props} />
-                  ))}
-                </div>
-              </div>
-            </section>
-          )}
-        </main>
-        <main>
-          <h3>Developer Toolkits</h3>
-          <p>
+          <div className="row" style={{ marginTop: 50 }}>
+            {tools.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Kits() {
+  return (
+    <section className={'oddRow'}>
+      <div className={styles.container}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
+          <h1 style={{ fontSize: '3rem' }}>Developer Toolkits</h1>
+          <p className={'promoText'} style={{ fontSize: 18 }}>
             These kits consist of recommended plugins, agent configurations, architecture and step-by-step
             tutorials that are geared towards specific industries and use cases.
           </p>
-          {toolkits && toolkits.length > 0 && (
-            <section className={styles.features}>
-              <div className="container">
-                <div className="row">
-                  {toolkits.map((props, idx) => (
-                    <Feature key={idx} {...props} />
-                  ))}
-                </div>
-              </div>
-            </section>
-          )}
-        </main>
-      </section>
+          <div className="row" style={{ marginTop: 50 }}>
+            {toolkits.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function DeveloperTools() {
+  return (
+    <Layout wrapperClassName={'devtools-page'}>
+      <header className={clsx('hero', styles.heroBanner)}>
+        <div className="container">
+          <h1 className={styles.heroTitle}>Developer Tooling</h1>
+          <p className={styles.heroSubtitle}>
+            <i>Tools and Kits designed for a more productive experience</i>
+          </p>
+        </div>
+      </header>
+      <Tools />
+      <Kits />
     </Layout>
   )
 }
