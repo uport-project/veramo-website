@@ -24,12 +24,12 @@ module.exports = {
       type: 'category',
       label: 'Development Tools',
       items: [
-        'dev_tools/introduction',
         'dev_tools/veramo_cli',
         'dev_tools/veramo_react',
-        'dev_tools/nft_devkit',
-        'dev_tools/dapp_devkit',
         'dev_tools/agent_explorer',
+        'dev_tools/ssi_toolkit',
+        'dev_tools/nft_toolkit',
+        'dev_tools/web3_toolkit',
       ],
     },
     {
