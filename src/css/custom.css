@@ -72,7 +72,13 @@ html[data-theme='dark'] {
   --body-section-composable: #151515;
   --ifm-plugin-border-color: #242424;
 
+  --ifm-link-color: #3e94ef;
+
   /* --ifm-blockquote-color: #3d6b9e; */
+}
+
+img[alt='veramo-devtool'] {
+  max-width: 250px;
 }
 
 /* .main-wrapper {

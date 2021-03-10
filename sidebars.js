@@ -16,6 +16,7 @@ module.exports = {
         'veramo_agent/messages',
         'veramo_agent/message_handlers',
         'veramo_agent/sdr_request',
+        'veramo_agent/key_management',
         'veramo_agent/event_system',
       ],
     },
@@ -23,6 +24,7 @@ module.exports = {
       type: 'category',
       label: 'Development Tools',
       items: [
+        'dev_tools/introduction',
         'dev_tools/veramo_cli',
         'dev_tools/veramo_react',
         'dev_tools/nft_devkit',

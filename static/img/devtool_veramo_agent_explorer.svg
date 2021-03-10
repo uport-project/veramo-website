@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="382" height="291" viewBox="0 0 382 291">
+  <g id="Group_55" data-name="Group 55" transform="translate(-1459 -1541)">
+    <rect id="Rectangle_125" data-name="Rectangle 125" width="382" height="291" transform="translate(1459 1541)" fill="none"/>
+    <g id="Rectangle_116" data-name="Rectangle 116" transform="translate(1517 1579)" fill="none" stroke="#454545" stroke-width="7">
+      <rect width="277" height="215" rx="10" stroke="none"/>
+      <rect x="3.5" y="3.5" width="270" height="208" rx="6.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_117" data-name="Rectangle 117" width="101" height="102" rx="5" transform="translate(1593 1610)" fill="#ebebeb"/>
+    <rect id="Rectangle_118" data-name="Rectangle 118" width="101" height="38" rx="5" transform="translate(1593 1722)" fill="#ebebeb"/>
+    <rect id="Rectangle_119" data-name="Rectangle 119" width="69" height="38" rx="5" transform="translate(1705 1613)" fill="#ebebeb"/>
+    <rect id="Rectangle_120" data-name="Rectangle 120" width="69" height="38" rx="5" transform="translate(1705 1663)" fill="#ebebeb"/>
+    <rect id="Rectangle_121" data-name="Rectangle 121" width="69" height="38" rx="5" transform="translate(1705 1713)" fill="#ebebeb"/>
+    <g id="Ellipse_53" data-name="Ellipse 53" transform="translate(1530.999 1594.425)" fill="none" stroke="#454545" stroke-width="3">
+      <ellipse cx="6.289" cy="6.575" rx="6.289" ry="6.575" stroke="none"/>
+      <ellipse cx="6.289" cy="6.575" rx="4.789" ry="5.075" fill="none"/>
+    </g>
+    <g id="Ellipse_54" data-name="Ellipse 54" transform="translate(1547.579 1594.425)" fill="none" stroke="#454545" stroke-width="3">
+      <circle cx="6.575" cy="6.575" r="6.575" stroke="none"/>
+      <circle cx="6.575" cy="6.575" r="5.075" fill="none"/>
+    </g>
+    <g id="Ellipse_55" data-name="Ellipse 55" transform="translate(1564.73 1594.425)" fill="none" stroke="#454545" stroke-width="3">
+      <ellipse cx="6.861" cy="6.575" rx="6.861" ry="6.575" stroke="none"/>
+      <ellipse cx="6.861" cy="6.575" rx="5.361" ry="5.075" fill="none"/>
+    </g>
+  </g>
+</svg>

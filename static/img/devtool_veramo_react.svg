@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="382" height="291" viewBox="0 0 382 291">
+  <g id="Group_54" data-name="Group 54" transform="translate(-1024 -1541)">
+    <rect id="Rectangle_123" data-name="Rectangle 123" width="382" height="291" transform="translate(1024 1541)" fill="none"/>
+    <g id="Subtraction_43" data-name="Subtraction 43" transform="translate(690.725 -4432.435)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M677.856,6201.124H474.939v-103.87a12.5,12.5,0,0,0-12.5-12.5H410.748V5993.5a8.509,8.509,0,0,1,8.5-8.5H677.856a8.509,8.509,0,0,1,8.5,8.5v199.124A8.51,8.51,0,0,1,677.856,6201.124Z" stroke="none"/>
+      <path d="M 677.856201171875 6194.1240234375 C 678.6827392578125 6194.1240234375 679.355224609375 6193.45068359375 679.355224609375 6192.62353515625 L 679.355224609375 5993.49951171875 C 679.355224609375 5992.6728515625 678.6827392578125 5992.00048828125 677.856201171875 5992.00048828125 L 419.247314453125 5992.00048828125 C 418.4207153320312 5992.00048828125 417.7482299804688 5992.6728515625 417.7482299804688 5993.49951171875 L 417.7482299804688 6077.75439453125 L 462.4396362304688 6077.75439453125 C 467.6476440429688 6077.75439453125 472.5442199707031 6079.78271484375 476.2277221679688 6083.46630859375 C 479.9107055664062 6087.1494140625 481.9389953613281 6092.0458984375 481.9389953613281 6097.25390625 L 481.9389953613281 6194.1240234375 L 677.856201171875 6194.1240234375 M 677.856201171875 6201.1240234375 L 474.9389953613281 6201.1240234375 L 474.9389953613281 6097.25390625 C 474.9389953613281 6093.91552734375 473.6387023925781 6090.77685546875 471.2776794433594 6088.41552734375 C 468.916748046875 6086.0546875 465.7780151367188 6084.75439453125 462.4396362304688 6084.75439453125 L 410.7482299804688 6084.75439453125 L 410.7482299804688 5993.49951171875 C 410.7482299804688 5988.81298828125 414.5609130859375 5985.00048828125 419.247314453125 5985.00048828125 L 677.856201171875 5985.00048828125 C 682.5425415039062 5985.00048828125 686.355224609375 5988.81298828125 686.355224609375 5993.49951171875 L 686.355224609375 6192.62353515625 C 686.355224609375 6197.310546875 682.5425415039062 6201.1240234375 677.856201171875 6201.1240234375 Z" stroke="none" fill="#454545"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1115.406 1567.069)" fill="none" stroke="#454545" stroke-width="3">
+      <ellipse cx="6.289" cy="6.575" rx="6.289" ry="6.575" stroke="none"/>
+      <ellipse cx="6.289" cy="6.575" rx="4.789" ry="5.075" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1131.986 1567.069)" fill="none" stroke="#454545" stroke-width="3">
+      <circle cx="6.575" cy="6.575" r="6.575" stroke="none"/>
+      <circle cx="6.575" cy="6.575" r="5.075" fill="none"/>
+    </g>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(1149.137 1567.069)" fill="none" stroke="#454545" stroke-width="3">
+      <ellipse cx="6.861" cy="6.575" rx="6.861" ry="6.575" stroke="none"/>
+      <ellipse cx="6.861" cy="6.575" rx="5.361" ry="5.075" fill="none"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(1058.92 1652.627)" fill="none" stroke="#454545" stroke-width="7">
+      <rect width="106.939" height="161.808" rx="14" stroke="none"/>
+      <rect x="-3.5" y="-3.5" width="113.939" height="168.808" rx="17.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="89.702" height="4.556" rx="2.278" transform="translate(1069.337 1800.628)" fill="#d9d9d9"/>
+    <g id="Ellipse_42" data-name="Ellipse 42" transform="translate(1100.271 1761.935)" fill="none" stroke="#454545" stroke-width="3">
+      <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+      <circle cx="13.5" cy="13.5" r="12" fill="none"/>
+    </g>
+    <line id="Line_6" data-name="Line 6" x2="163" transform="translate(1190.907 1668.627)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-width="6"/>
+    <line id="Line_7" data-name="Line 7" x2="89" transform="translate(1190.907 1688.127)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-width="6"/>
+    <line id="Line_8" data-name="Line 8" x2="89" transform="translate(1190.907 1707.627)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-width="6"/>
+    <line id="Line_9" data-name="Line 9" x2="89" transform="translate(1190.907 1727.127)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-width="6"/>
+    <g id="Ellipse_48" data-name="Ellipse 48" transform="translate(1280.644 1585.128) rotate(-30)" fill="none" stroke="#ebebeb" stroke-linejoin="bevel" stroke-width="5">
+      <ellipse cx="18.409" cy="43.589" rx="18.409" ry="43.589" stroke="none"/>
+      <ellipse cx="18.409" cy="43.589" rx="15.909" ry="41.089" fill="none"/>
+    </g>
+    <g id="Ellipse_49" data-name="Ellipse 49" transform="translate(1324.233 1566.72) rotate(30)" fill="none" stroke="#ebebeb" stroke-linejoin="bevel" stroke-width="5">
+      <ellipse cx="18.409" cy="43.589" rx="18.409" ry="43.589" stroke="none"/>
+      <ellipse cx="18.409" cy="43.589" rx="15.909" ry="41.089" fill="none"/>
+    </g>
+    <g id="Ellipse_50" data-name="Ellipse 50" transform="translate(1361.907 1595.42) rotate(90)" fill="none" stroke="#ebebeb" stroke-linejoin="bevel" stroke-width="5">
+      <ellipse cx="18.353" cy="43.453" rx="18.353" ry="43.453" stroke="none"/>
+      <ellipse cx="18.353" cy="43.453" rx="15.853" ry="40.953" fill="none"/>
+    </g>
+    <path id="Subtraction_42" data-name="Subtraction 42" d="M400.25,6043.5a29.451,29.451,0,0,1-5.895-.595,29.084,29.084,0,0,1-10.459-4.4,29.339,29.339,0,0,1-10.6-12.869,29.1,29.1,0,0,1-1.7-5.49,29.537,29.537,0,0,1,0-11.79A29.1,29.1,0,0,1,376,5997.9a29.335,29.335,0,0,1,12.869-10.6,29.146,29.146,0,0,1,5.491-1.7,29.56,29.56,0,0,1,11.79,0A29.1,29.1,0,0,1,416.6,5990a29.332,29.332,0,0,1,10.6,12.869,29.1,29.1,0,0,1,1.7,5.49,29.536,29.536,0,0,1,0,11.79,29.088,29.088,0,0,1-4.4,10.458,29.333,29.333,0,0,1-12.869,10.6,29.107,29.107,0,0,1-5.491,1.7A29.451,29.451,0,0,1,400.25,6043.5ZM382.4,6009.374h0l16.619,26.573,19.136-37.132-19.136,19.555-16.619-9Z" transform="translate(713.521 -4306.624)" fill="#73c394"/>
+  </g>
+</svg>
