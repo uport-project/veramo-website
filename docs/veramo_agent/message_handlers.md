@@ -37,6 +37,6 @@ W3CMessageHandler checks the message payload for Verifiable Credentials and Veri
 
 [selective-disclosure](/docs/api/selective-disclosure) • [SDRMessageHandler](/docs/api/selective-disclosure.sdrmessagehandler)
 
-SDRMessageHandler checks the message payload for Selective Disclosure Request formats the message object accordingly.
+SDRMessageHandler checks the message payload for Selective Disclosure Request formats the message object accordingly. Learm more about selective disclosure requests in the next section.
 
 ![img](../../static/img/diagrams/message_sdr.svg)

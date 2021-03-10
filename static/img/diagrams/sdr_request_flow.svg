@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7051" height="2048" viewBox="0 0 7051 2048">
+  <g id="Group_60" data-name="Group 60" transform="translate(-291 -261)">
+    <rect id="Rectangle_140" data-name="Rectangle 140" width="7051" height="2048" transform="translate(291 261)" fill="none"/>
+    <g id="Rectangle_126" data-name="Rectangle 126" transform="translate(407 759)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1358" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1348" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_135" data-name="Rectangle 135" transform="translate(3034 759)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1474" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1464" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_136" data-name="Rectangle 136" transform="translate(5520 760)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1737" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1727" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_137" data-name="Rectangle 137" transform="translate(5520 1723)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1737" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1727" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_138" data-name="Rectangle 138" transform="translate(2903 1723)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1737" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1727" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_139" data-name="Rectangle 139" transform="translate(407 1723)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1737" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1727" height="274" rx="63" fill="none"/>
+    </g>
+    <text id="SDR_Request" data-name="SDR Request" transform="translate(712 943)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">SDR Request</tspan></text>
+    <text id="Agent_Message_Handler" data-name="Agent Message Handler" transform="translate(3162 943)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Agent Message Handler</tspan></text>
+    <text id="Get_Credentials_for_Request" data-name="Get Credentials for Request" transform="translate(5648 944)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Get Credentials for Request</tspan></text>
+    <text id="Select_Credentials_to_Share" data-name="Select Credentials to Share" transform="translate(5678 1907)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Select Credentials to Share</tspan></text>
+    <text id="Create_Verifiable_Presentation" data-name="Create Verifiable Presentation" transform="translate(3012 1907)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Create Verifiable Presentation</tspan></text>
+    <text id="SDR_Response_DIDComm_" data-name="SDR Response (DIDComm)" transform="translate(565 1907)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">SDR Response (DIDComm)</tspan></text>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(2932.449 879.055) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_11" data-name="Polygon 11" transform="translate(2245.551 1892) rotate(150)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_9" data-name="Polygon 9" transform="translate(5428.44 879.055) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_12" data-name="Polygon 12" transform="translate(6412.89 1621.449) rotate(60)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_10" data-name="Polygon 10" transform="translate(4640 1904.5) rotate(-90)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <path id="Path_119" data-name="Path 119" d="M-8664,1346.813V2565.037" transform="translate(418.188 -7764.705) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7"/>
+    <path id="Path_129" data-name="Path 129" d="M-8664,1346.812v693.643" transform="translate(862.545 -6788.705) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7"/>
+    <path id="Path_127" data-name="Path 127" d="M-8664,1346.813v971.215" transform="translate(3161.188 -7761.5) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7"/>
+    <path id="Path_130" data-name="Path 130" d="M-8664,1346.813v628.223" transform="translate(15053.444 -302.813)" fill="none" stroke="#a8a8a8" stroke-width="7"/>
+    <path id="Path_128" data-name="Path 128" d="M-8664,1346.813v837.776" transform="translate(3345.402 -6798.5) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7"/>
+    <text id="Request_name_email_credentials" data-name="Request name, email credentials" transform="translate(1678 591)" fill="#4b4b4b" font-size="90" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Request name, email credentials</tspan></text>
+    <text id="Create_message_with_type_sdr" data-name="Create message with type sdr" transform="translate(4382 591)" fill="#4b4b4b" font-size="90" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Create message with type sdr</tspan></text>
+  </g>
+</svg>
