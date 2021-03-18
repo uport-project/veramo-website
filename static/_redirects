@@ -1,2 +1,2 @@
 # Redirects from what the browser requests to what we serve
-/contexts              https://veramolabs.github.io/ld-context/contexts
+/contexts/*            https://veramolabs.github.io/ld-context/contexts/:splat
