@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6962" height="3618" viewBox="0 0 6962 3618">
+  <g id="Group_47" data-name="Group 47" transform="translate(-251 -678)">
+    <rect id="Rectangle_100" data-name="Rectangle 100" width="6962" height="3618" transform="translate(251 678)" fill="none"/>
+    <path id="Path_113" data-name="Path 113" d="M-8664,1346.813s-1555.239,83.922-2304.723,780.589" transform="translate(12379 1409.147)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_116" data-name="Path 116" d="M-10968.723,1346.813S-9413.483,1430.735-8664,2127.4" transform="translate(14683.723 1409.147)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_114" data-name="Path 114" d="M-8825.924,1346.813s-897.8,200.557-964.006,788.152" transform="translate(12540.924 1409.147)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_115" data-name="Path 115" d="M-9789.93,1346.813s961.211,200.641,1029.1,788.258" transform="translate(13504.93 1409.147)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <g id="Rectangle_93" data-name="Rectangle 93" transform="translate(3110 985)" fill="#e8e8e8" stroke="#ccc" stroke-width="10">
+      <rect width="1245" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1235" height="274" rx="63" fill="none"/>
+    </g>
+    <text id="Veramo_DID_Agent" data-name="Veramo DID Agent" transform="translate(3251 1169)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Veramo DID Agent</tspan></text>
+    <g id="Rectangle_94" data-name="Rectangle 94" transform="translate(3104 1773)" fill="#fcf7d7" stroke="#e3ddb8" stroke-width="8">
+      <rect width="1256" height="277" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1248" height="269" rx="64" fill="none"/>
+    </g>
+    <text id="IMessageHandler" transform="translate(3290 1955)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">IMessageHandler</tspan></text>
+    <g id="Group_45" data-name="Group 45" transform="translate(3169 1697)">
+      <rect id="Rectangle_90" data-name="Rectangle 90" width="395" height="85" fill="#e3ddb8"/>
+      <text id="INTERFACE" transform="translate(28 62)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">INTERFACE</tspan></text>
+    </g>
+    <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(3110 2475)" fill="#e2edd9" stroke="#c6d5b9" stroke-width="8">
+      <rect width="1245" height="281" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1237" height="273" rx="64" fill="none"/>
+    </g>
+    <g id="Group_46" data-name="Group 46" transform="translate(2321 776)">
+      <rect id="Rectangle_90-2" data-name="Rectangle 90" width="279" height="85" transform="translate(870 1617)" fill="#c6d5b9"/>
+      <text id="PLUGIN" transform="translate(898 1679)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">PLUGIN</tspan></text>
+    </g>
+    <text id="MessageHandler" transform="translate(3256 2647)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">MessageHandler</tspan></text>
+    <g id="Rectangle_96" data-name="Rectangle 96" transform="translate(448 3505)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1401" height="276" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1393" height="268" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_97" data-name="Rectangle 97" transform="translate(1967 3509)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1401" height="272" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1393" height="264" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_98" data-name="Rectangle 98" transform="translate(3504 3515)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1712" height="266" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1704" height="258" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(5369 3515)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1388" height="266" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1380" height="258" rx="64" fill="none"/>
+    </g>
+    <rect id="Rectangle_90-3" data-name="Rectangle 90" width="1010" height="85" transform="translate(529 3428)" fill="#a9b7c6"/>
+    <rect id="Rectangle_101" data-name="Rectangle 101" width="1010" height="85" transform="translate(2045 3430)" fill="#a9b7c6"/>
+    <rect id="Rectangle_102" data-name="Rectangle 102" width="1010" height="85" transform="translate(3591 3431)" fill="#a9b7c6"/>
+    <rect id="Rectangle_103" data-name="Rectangle 103" width="1010" height="85" transform="translate(5448 3431)" fill="#a9b7c6"/>
+    <text id="ABSTRACT_MESSAGE_HANDLER" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(557 3490)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="ABSTRACT_MESSAGE_HANDLER-2" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(2073 3492)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="ABSTRACT_MESSAGE_HANDLER-3" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(3619 3496)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="ABSTRACT_MESSAGE_HANDLER-4" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(5476 3496)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="W3CMessageHandler" transform="translate(594 3685)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">W3CMessageHandler</tspan></text>
+    <text id="JWTMessageHandler" transform="translate(2113 3688)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">JWTMessageHandler</tspan></text>
+    <text id="DIDComm_MessageHandler" data-name="DIDComm MessageHandler" transform="translate(3653 3690)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">DIDComm MessageHandler</tspan></text>
+    <text id="SDR_Message_Handler" data-name="SDR Message Handler" transform="translate(5515 3694)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">SDR Message Handler</tspan></text>
+    <path id="Path_117" data-name="Path 117" d="M-8664,1346.813v405" transform="translate(12366 723.188)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_118" data-name="Path 118" d="M-8664,1346.813v490.519" transform="translate(12366 -77.831)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+  </g>
+</svg>

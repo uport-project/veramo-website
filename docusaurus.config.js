@@ -4,14 +4,14 @@ module.exports = {
     'Create and manage decentralized identifiers + verifiable credentials without worrying about interop and vendor lock-in.',
   url: 'https://veramo.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'uport-project', // Usually your GitHub org/user name.
   projectName: 'veramo', // Usually your repo name.
   themeConfig: {
     prism: {
       defaultLanguage: 'javascript',
-      theme: require('prism-react-renderer/themes/nightOwl'),
+      theme: require('prism-react-renderer/themes/dracula'),
     },
     navbar: {
       title: 'Veramo',
@@ -21,13 +21,19 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/fundamentals/introduction',
+          to: 'docs/basics/introduction',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'right',
         },
+        // {
+        //   to: 'developer_tools',
+        //   activeBasePath: '/',
+        //   label: 'Tools',
+        //   position: 'right',
+        // },
         {
-          to: 'docs/agent/plugins_list',
+          to: 'docs/veramo_agent/plugins',
           activeBasePath: 'docs',
           label: 'Plugins',
           position: 'right',
@@ -58,31 +64,48 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/fundamentals/introduction',
+              to: 'docs/basics/introduction',
             },
             {
               label: 'Agent',
-              to: 'docs/agent/introduction',
+              to: 'docs/veramo_agent/introduction',
             },
           ],
         },
         {
-          title: 'Guides',
+          title: 'Tutorials',
           items: [
             {
-              label: 'CLI',
-              to: 'docs/guides/cli',
+              label: 'Node',
+              to: 'docs/node_tutorial/introduction',
+            },
+            {
+              label: 'React',
+              to: 'docs/react_tutorial/introduction',
             },
             {
               label: 'React Native',
-              to: 'docs/guides/react_native',
-            },
-            {
-              label: 'Node',
-              to: 'docs/guides/nodejs',
+              to: 'docs/react_native_tutorial/introduction',
             },
           ],
         },
+        // {
+        //   title: 'Developer Tools',
+        //   items: [
+        //     {
+        //       label: 'CLI',
+        //       to: 'docs/dev_tools/cli',
+        //     },
+        //     {
+        //       label: 'NFT DevKit',
+        //       to: 'docs/dev_tools/nft_devkit',
+        //     },
+        //     {
+        //       label: 'DApp DevKit',
+        //       to: 'docs/dev_tools/dapp_devkit',
+        //     },
+        //   ],
+        // },
         {
           title: 'Community',
           items: [

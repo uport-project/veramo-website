@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7313" height="1091" viewBox="0 0 7313 1091">
+  <g id="Group_47" data-name="Group 47" transform="translate(-84 -85)">
+    <rect id="Rectangle_104" data-name="Rectangle 104" width="7313" height="1091" transform="translate(84 85)" fill="none"/>
+    <g id="Rectangle_96" data-name="Rectangle 96" transform="translate(3862 542)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1401" height="276" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1393" height="268" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_97" data-name="Rectangle 97" transform="translate(2228 546)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1401" height="272" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1393" height="264" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_98" data-name="Rectangle 98" transform="translate(306 550)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1712" height="266" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1704" height="258" rx="64" fill="none"/>
+    </g>
+    <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(5531 552)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="8">
+      <rect width="1388" height="266" rx="68" stroke="none"/>
+      <rect x="4" y="4" width="1380" height="258" rx="64" fill="none"/>
+    </g>
+    <rect id="Rectangle_90" data-name="Rectangle 90" width="1010" height="85" transform="translate(3943 465)" fill="#a9b7c6"/>
+    <rect id="Rectangle_101" data-name="Rectangle 101" width="1010" height="85" transform="translate(2306 467)" fill="#a9b7c6"/>
+    <rect id="Rectangle_102" data-name="Rectangle 102" width="1010" height="85" transform="translate(393 466)" fill="#a9b7c6"/>
+    <rect id="Rectangle_103" data-name="Rectangle 103" width="1010" height="85" transform="translate(5610 468)" fill="#a9b7c6"/>
+    <text id="ABSTRACT_MESSAGE_HANDLER" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(3971 527)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="ABSTRACT_MESSAGE_HANDLER-2" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(2334 529)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="ABSTRACT_MESSAGE_HANDLER-3" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(421 531)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="ABSTRACT_MESSAGE_HANDLER-4" data-name="ABSTRACT MESSAGE HANDLER" transform="translate(5638 533)" fill="#fff" font-size="60" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">ABSTRACT MESSAGE HANDLER</tspan></text>
+    <text id="W3CMessageHandler" transform="translate(4008 722)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">W3CMessageHandler</tspan></text>
+    <text id="JWTMessageHandler" transform="translate(2374 725)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">JWTMessageHandler</tspan></text>
+    <text id="DIDComm_MessageHandler" data-name="DIDComm MessageHandler" transform="translate(455 725)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">DIDComm MessageHandler</tspan></text>
+    <text id="SDR_Message_Handler" data-name="SDR Message Handler" transform="translate(5677 731)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">SDR Message Handler</tspan></text>
+    <path id="Path_119" data-name="Path 119" d="M-8664,1346.813v213.26" transform="translate(667.928 -7973.76) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_120" data-name="Path 120" d="M-8664,1346.813v213.26" transform="translate(2292.559 -7973.76) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_121" data-name="Path 121" d="M-8664,1346.813v274.262" transform="translate(3909.926 -7973.76) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(2122.08 669) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.863165557384491 67.5 L 38.99996948242188 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 38.99996566772461 2.009994506835938 L 1.726318359375 67 L 76.27367401123047 67 L 38.99996566772461 2.009994506835938 M 38.99996566772461 0 L 78 68 L 0 68 L 38.99996566772461 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_3" data-name="Polygon 3" transform="translate(3761.711 669) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.863165557384491 67.5 L 38.99996948242188 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 38.99996566772461 2.009994506835938 L 1.726318359375 67 L 76.27367401123047 67 L 38.99996566772461 2.009994506835938 M 38.99996566772461 0 L 78 68 L 0 68 L 38.99996566772461 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_4" data-name="Polygon 4" transform="translate(5429.449 669) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.863165557384491 67.5 L 38.99996948242188 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 38.99996566772461 2.009994506835938 L 1.726318359375 67 L 76.27367401123047 67 L 38.99996566772461 2.009994506835938 M 38.99996566772461 0 L 78 68 L 0 68 L 38.99996566772461 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>

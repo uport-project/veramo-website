@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6074" height="2323" viewBox="0 0 6074 2323">
+  <g id="Group_29" data-name="Group 29" transform="translate(-659 -762)">
+    <rect id="Rectangle_74" data-name="Rectangle 74" width="6074" height="2323" transform="translate(659 762)" fill="none"/>
+    <g id="Rectangle_65" data-name="Rectangle 65" transform="translate(2941 1049)" fill="#f4f4f4" stroke="#4b4b4b" stroke-width="10">
+      <rect width="1245" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1235" height="274" rx="63" fill="none"/>
+    </g>
+    <text id="Veramo_DID_Agent" data-name="Veramo DID Agent" transform="translate(3082 1233)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Veramo DID Agent</tspan></text>
+    <g id="Rectangle_66" data-name="Rectangle 66" transform="translate(735 2453)" fill="#f4f4f4" stroke="#4b4b4b" stroke-width="10">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1011" height="228" rx="63" fill="none"/>
+    </g>
+    <text id="Messages" transform="translate(986 2610)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Messages</tspan></text>
+    <g id="Rectangle_70" data-name="Rectangle 70" transform="translate(1908 2453)" fill="#f4f4f4" stroke="#4b4b4b" stroke-width="10">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1011" height="228" rx="63" fill="none"/>
+    </g>
+    <text id="Identifiers" transform="translate(2159 2610)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Identifiers</tspan></text>
+    <g id="Rectangle_71" data-name="Rectangle 71" transform="translate(3081 2453)" fill="#f4f4f4" stroke="#4b4b4b" stroke-width="10">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1011" height="228" rx="63" fill="none"/>
+    </g>
+    <text id="Credentials" transform="translate(3332 2610)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Credentials</tspan></text>
+    <g id="Rectangle_72" data-name="Rectangle 72" transform="translate(4254 2453)" fill="#f4f4f4" stroke="#4b4b4b" stroke-width="10">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1011" height="228" rx="63" fill="none"/>
+    </g>
+    <text id="Keys" transform="translate(4628 2610)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Keys</tspan></text>
+    <g id="Rectangle_73" data-name="Rectangle 73" transform="translate(5427 2453)" fill="#f4f4f4" stroke="#4b4b4b" stroke-width="10" stroke-dasharray="26">
+      <rect width="1021" height="238" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1011" height="228" rx="63" fill="none"/>
+    </g>
+    <text id="Custom" transform="translate(5748 2610)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Custom</tspan></text>
+    <path id="Path_93" data-name="Path 93" d="M-8664,1346.813s-1555.239,115.335-2304.723,1072.767" transform="translate(12227)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_94" data-name="Path 94" d="M-10968.723,1346.813S-9413.483,1462.147-8664,2419.58" transform="translate(14531.723)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_95" data-name="Path 95" d="M-8664,1346.813s-1048.6,274.906-1125.93,1080.33" transform="translate(12227)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_96" data-name="Path 96" d="M-9789.93,1346.813s1048.6,274.906,1125.93,1080.33" transform="translate(13352.93)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_97" data-name="Path 97" d="M-8664,1346.813V2439.058" transform="translate(12227)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+  </g>
+</svg>

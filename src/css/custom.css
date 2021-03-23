@@ -24,7 +24,8 @@
   --ifm-navbar-toggle-color: white;
 
   --ifm-menu-color-active: #6d6d6d;
-  --ifm-menu-color: #6d6d6d;
+  --ifm-menu-color: #8f8f8f;
+  --ifm-menu-section-title-color: #505050;
 
   --ifm-hero-bg-color: #0d2a39;
   --ifm-hero-title-color: #25c2a0;
@@ -35,6 +36,14 @@
   --body-text-primary: #4e4e4e;
   --body-section-composable: #f5f5f5;
   --ifm-plugin-border-color: #e9e9e9;
+
+  --ifm-blockquote-color: #25c2a0;
+  --ifm-link-color: #246ab3;
+  /* --ifm-link-decoration: underline; */
+
+  --ifm-pagination-nav-color-hover: var(--ifm-link-color);
+
+  --ifm-color-info: #69bad4;
 }
 
 .alert--danger {
@@ -51,7 +60,8 @@ html[data-theme='dark'] {
   --ifm-footer-border-color: #4e4e4e;
 
   --ifm-menu-color-active: #aeaeae;
-  --ifm-menu-color: #aeaeae;
+  --ifm-menu-color: #6e6e6e;
+  --ifm-menu-section-title-color: #aaaaaa;
 
   --ifm-hero-bg-color: #121415;
   --ifm-hero-title-color: #25c2a0;
@@ -61,6 +71,14 @@ html[data-theme='dark'] {
   --body-text-primary: #999999;
   --body-section-composable: #151515;
   --ifm-plugin-border-color: #242424;
+
+  --ifm-link-color: #3e94ef;
+
+  /* --ifm-blockquote-color: #3d6b9e; */
+}
+
+img[alt='veramo-devtool'] {
+  max-width: 200px;
 }
 
 /* .main-wrapper {
@@ -86,9 +104,15 @@ html[data-theme='dark'] {
 .navbar {
   background-color: var(--ifm-navbar-background-color);
 }
-/* .navbar__inner {
+/* .navbar .navbar__inner {
   max-width: 1400px;
   margin: 0 auto;
+}
+.main-wrapper {
+  max-width: 1400px;
+  width: 1400px;
+  align-self: center;
+  flex: 1 0 auto;
 } */
 .navbar__brand:hover {
   color: var(--ifm-navbar-link-color);
@@ -100,8 +124,27 @@ html[data-theme='dark'] {
   color: var(--ifm-navbar-toggle-color);
 }
 
+.menu__link,
+.pagination-nav__link {
+  text-decoration: none;
+}
+
 .menu__link.menu__link--active {
   color: var(--ifm-menu-color-active);
+}
+
+a.menu__link--sublist {
+  color: var(--ifm-menu-section-title-color);
+}
+.menu__link:hover {
+  color: var(--ifm-color-primary-dark);
+}
+.menu__link--sublist.menu__link--active {
+  color: var(--ifm-color-primary-dark);
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-navbar-link-color);
 }
 
 section.composable,
@@ -136,4 +179,10 @@ section.oddRow {
 .footer {
   border-top: 1px solid var(--ifm-footer-border-color);
   background-color: var(--ifm-footer-background-color);
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: 40px 0;
 }

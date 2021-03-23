@@ -7,6 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 import CodeBlock from '@theme/CodeBlock'
 import GitHubButton from 'react-github-btn'
+import Feature from '../components/Feature'
 
 const textContent = {
   verifiableDataTitle: 'Verifiable data is the new standard',
@@ -164,23 +165,6 @@ function Cli() {
   )
 }
 
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl)
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      <div className="featureInner">
-        {imgUrl && (
-          <div className="text--center" style={{ marginBottom: 10 }}>
-            <img className={styles.featureImage} src={imgUrl} alt={title} />
-          </div>
-        )}
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  )
-}
-
 function Plugin({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl)
   return (
@@ -260,13 +244,13 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx('button button--primary button--square getStarted', styles.getStarted)}
-              to={useBaseUrl('docs/fundamentals/introduction')}
+              to={useBaseUrl('docs/basics/introduction')}
             >
               Get Started
             </Link>
             <Link
               className={clsx('button button--secondary button--no-border', styles.learnMore)}
-              to={useBaseUrl('docs/fundamentals/introduction')}
+              to={useBaseUrl('docs/basics/introduction')}
             >
               Learn more
             </Link>

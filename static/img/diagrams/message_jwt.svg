@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6822" height="995" viewBox="0 0 6822 995">
+  <g id="Group_59" data-name="Group 59" transform="translate(-94 -160)">
+    <rect id="Rectangle_134" data-name="Rectangle 134" width="6822" height="995" transform="translate(94 160)" fill="none"/>
+    <g id="Rectangle_126" data-name="Rectangle 126" transform="translate(207 499)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="908" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="898" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_127" data-name="Rectangle 127" transform="translate(1328 499)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1245" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1235" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_130" data-name="Rectangle 130" transform="translate(2786 499)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="1651" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="1641" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_128" data-name="Rectangle 128" transform="translate(4650 499)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="820" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="810" height="274" rx="63" fill="none"/>
+    </g>
+    <g id="Rectangle_129" data-name="Rectangle 129" transform="translate(5682.999 499)" fill="#d9e3ed" stroke="#a9b7c6" stroke-width="10">
+      <rect width="834" height="284" rx="68" stroke="none"/>
+      <rect x="5" y="5" width="824" height="274" rx="63" fill="none"/>
+    </g>
+    <text id="Message" transform="translate(431 683)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Message</tspan></text>
+    <text id="JWT_Check" data-name="JWT Check" transform="translate(1659 683)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">JWT Check</tspan></text>
+    <text id="Decode_Resolve_DID" data-name="Decode / Resolve DID" transform="translate(3028 683)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Decode / Resolve DID</tspan></text>
+    <text id="Format" transform="translate(4864 683)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Format</tspan></text>
+    <text id="Next" transform="translate(5965.999 683)" fill="#4b4b4b" font-size="110" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Next</tspan></text>
+    <path id="Path_119" data-name="Path 119" d="M-8664,1346.813v213.26" transform="translate(-231.813 -8011.705) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_123" data-name="Path 123" d="M-8664,1346.813v213.26" transform="translate(1226.188 -8011.705) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_124" data-name="Path 124" d="M-8664,1346.813v213.26" transform="translate(4123.188 -8011.705) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_126" data-name="Path 126" d="M-8664,1346.813v213.26" transform="translate(3090.188 -8011.705) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <path id="Path_125" data-name="Path 125" d="M-8664,1346.813v213.26" transform="translate(2736.559 -8011.703) rotate(-90)" fill="none" stroke="#a8a8a8" stroke-width="7" stroke-dasharray="26"/>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(1222.34 631.055) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_5" data-name="Polygon 5" transform="translate(2680.34 631.055) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_6" data-name="Polygon 6" transform="translate(5577.34 631.055) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_8" data-name="Polygon 8" transform="translate(4544.34 631.055) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_7" data-name="Polygon 7" transform="translate(4190.711 631.056) rotate(-30)" fill="#a8a8a8">
+      <path d="M 77.13683319091797 67.5 L 0.8631658554077148 67.5 L 39 1.005007147789001 L 77.13683319091797 67.5 Z" stroke="none"/>
+      <path d="M 39 2.009994506835938 L 1.726325988769531 67 L 76.273681640625 67 L 39 2.009994506835938 M 39 0 L 78 68 L 0 68 L 39 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>
