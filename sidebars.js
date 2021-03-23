@@ -20,18 +20,18 @@ module.exports = {
         'veramo_agent/event_system',
       ],
     },
-    // {
-    //   type: 'category',
-    //   label: 'Development Tools',
-    //   items: [
-    //     'dev_tools/veramo_cli',
-    //     'dev_tools/veramo_react',
-    //     'dev_tools/agent_explorer',
-    //     'dev_tools/ssi_toolkit',
-    //     'dev_tools/nft_toolkit',
-    //     'dev_tools/web3_toolkit',
-    //   ],
-    // },
+    {
+      type: 'category',
+      label: 'Development Tools',
+      items: [
+        'dev_tools/veramo_cli',
+        'dev_tools/veramo_react',
+        'dev_tools/agent_explorer',
+        'dev_tools/ssi_toolkit',
+        'dev_tools/nft_toolkit',
+        'dev_tools/web3_toolkit',
+      ],
+    },
     {
       type: 'category',
       label: 'Node Tutorials',
