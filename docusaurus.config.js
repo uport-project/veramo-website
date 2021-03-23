@@ -26,12 +26,12 @@ module.exports = {
           label: 'Docs',
           position: 'right',
         },
-        {
-          to: 'developer_tools',
-          activeBasePath: '/',
-          label: 'Tools',
-          position: 'right',
-        },
+        // {
+        //   to: 'developer_tools',
+        //   activeBasePath: '/',
+        //   label: 'Tools',
+        //   position: 'right',
+        // },
         {
           to: 'docs/veramo_agent/plugins',
           activeBasePath: 'docs',
@@ -89,23 +89,23 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'Developer Tools',
-          items: [
-            {
-              label: 'CLI',
-              to: 'docs/dev_tools/cli',
-            },
-            {
-              label: 'NFT DevKit',
-              to: 'docs/dev_tools/nft_devkit',
-            },
-            {
-              label: 'DApp DevKit',
-              to: 'docs/dev_tools/dapp_devkit',
-            },
-          ],
-        },
+        // {
+        //   title: 'Developer Tools',
+        //   items: [
+        //     {
+        //       label: 'CLI',
+        //       to: 'docs/dev_tools/cli',
+        //     },
+        //     {
+        //       label: 'NFT DevKit',
+        //       to: 'docs/dev_tools/nft_devkit',
+        //     },
+        //     {
+        //       label: 'DApp DevKit',
+        //       to: 'docs/dev_tools/dapp_devkit',
+        //     },
+        //   ],
+        // },
         {
           title: 'Community',
           items: [
