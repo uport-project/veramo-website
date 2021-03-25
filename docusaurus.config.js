@@ -81,7 +81,7 @@ module.exports = {
             },
             {
               label: 'React',
-              to: 'docs/react_tutorial/introduction',
+              to: 'docs/react_tutorials/react_setup_resolver',
             },
             {
               label: 'React Native',
