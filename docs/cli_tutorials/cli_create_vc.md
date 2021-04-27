@@ -56,41 +56,13 @@ Commands:
 
 ```
 
-### Where is the data stored?
-
-By default, the first time you run the CLI tool, a local agent will be created, and this will create a number of files on your computer.
-
-```
-~ Home
-└─ .veramo/
-    ├── .env
-    ├── agent.yml # created when you run veramo create-config
-    ├── database.sqlite
-```
-
-### Create configuration
-
-You can also use a per-project configuration or specify a configuration file with each command.
-If the current folder contains an `agent.yml` configuration file, it will be used instead of the `.veramo/agent.yml` path.
-
-Alternatively, you can specify a config file with each command using the `--config /path/to/your/config.yml` option. This will be used instead of a per-project or default configuration file.
-
-You can create a configuration file in the current folder by running:
+### Create configuration file
 
 ```bash
 veramo config create
 ```
 
-This will create an `agent.yml` file that will get used next time you invoke a CLI command in this folder.
-By default, the database files are created in the same folder as the config file.
-
-```bash
-# From outside the directory
-veramo did create --config ./myagent/agent.yml
-
-# It will detect a local agent.yml file when run from within the myagent directory
-veramo did create
-```
+[More details about the configuration file](./cli_config)
 
 ### Create a DID
 
@@ -106,8 +78,9 @@ You can resolve any DID using the resolver:
 
 ```bash
 veramo did resolve did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8
+```
 
-# Output
+```
 { '@context': 'https://w3id.org/did/v1',
   id: 'did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8',
   publicKey:
@@ -128,8 +101,9 @@ Now let's create your first credential with Veramo using the DID you just create
 
 ```bash
 veramo credential create
+```
 
-# Output
+```
 { credentialSubject:
    { name: 'Veramo',
      id: 'did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8' },
