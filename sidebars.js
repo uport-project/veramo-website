@@ -51,8 +51,8 @@ module.exports = {
       type: 'category',
       label: 'CLI Tutorials',
       items: [
-        'cli_tutorials/cli_create_vc',
         'cli_tutorials/cli_config',
+        'cli_tutorials/cli_create_vc',
         // 'cli_tutorials/cli_selective_disclosure'
       ],
     },

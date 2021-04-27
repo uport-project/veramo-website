@@ -1,7 +1,7 @@
 ---
 id: cli_config
-title: Configuration file
-sidebar_label: Configuration file
+title: Configuration
+sidebar_label: Configuration
 ---
 
 ## Create configuration
@@ -40,7 +40,7 @@ veramo did create
 
 Objects are created by a helper function [createObjects](https://github.com/uport-project/veramo/blob/faa7940c515bbd65dfaf9370594794f627099a38/packages/cli/src/lib/objectCreator.ts#L5), which recursively mutates the configuration object that was parsed from a YAML file and applies custom rules for objects containing:
 
-* Module imports
+- Module imports
 
 ```json
 {
@@ -49,25 +49,21 @@ Objects are created by a helper function [createObjects](https://github.com/upor
 }
 ```
 
-* Object references
+- Object references
 
 ```json
 {
-  "$ref": "/json/pointer",
+  "$ref": "/json/pointer"
 }
 ```
 
-* Environment variables
+- Environment variables
 
 ```json
 {
-  "$env": "ENV_VAR",
+  "$env": "ENV_VAR"
 }
 ```
-
-
-
-
 
 ### Requiring npm modules
 
@@ -77,19 +73,15 @@ This:
 import { Agent } from '@veramo/core'
 import { DIDComm } from '@veramo/did-comm'
 const agent = new Agent({
-  plugins: [
-    new DIDComm()
-  ]
+  plugins: [new DIDComm()],
 })
 ```
 
 is equivalent to:
 
 ```typescript
-const agent = new (require('@veramo/core'))['Agent']({
-  plugins: [
-    new (require('@veramo/core'))['DIDComm']()
-  ]
+const agent = new (require('@veramo/core')['Agent'])({
+  plugins: [new (require('@veramo/core')['DIDComm'])()],
 })
 ```
 
@@ -107,14 +99,13 @@ agent:
 
 `ethr-did-resolver?t=function&p=/ethr#getResolver`
 
- - `ethr-did-resolver` - Module name
- - `t=function` - Optional. Type can be `function`, `object`, `class`. Default is `class`
-   - `class` - imported symbol will be initiated with `new symbolName(args)`
-   - `function` - imported symbol will be initiated with `symbolName(args)`
-   - `object` - imported object will be returned without aditional processing
- - `p=/ethr` - Optional. Pointer to an attribute in imported symbol
- - `#getResolver` - Imported symbol name
-
+- `ethr-did-resolver` - Module name
+- `t=function` - Optional. Type can be `function`, `object`, `class`. Default is `class`
+  - `class` - imported symbol will be initiated with `new symbolName(args)`
+  - `function` - imported symbol will be initiated with `symbolName(args)`
+  - `object` - imported object will be returned without aditional processing
+- `p=/ethr` - Optional. Pointer to an attribute in imported symbol
+- `#getResolver` - Imported symbol name
 
 ```yaml
 result:
@@ -133,23 +124,21 @@ is equivalent to:
 import { getResolver } from 'ethr-did-resolver'
 const obj = getResolver({
   networks: [
-    { 
+    {
       name: 'mainnet',
-      rpcUrl: 'https://mainnet.infura.io/v3/5ffc47f65c4042ce847ef66a3fa70d4c'
+      rpcUrl: 'https://mainnet.infura.io/v3/5ffc47f65c4042ce847ef66a3fa70d4c',
     },
-    { 
+    {
       name: 'rinkeby',
-      rpcUrl: 'https://rinkeby.infura.io/v3/5ffc47f65c4042ce847ef66a3fa70d4c'
+      rpcUrl: 'https://rinkeby.infura.io/v3/5ffc47f65c4042ce847ef66a3fa70d4c',
     },
-  ]
+  ],
 })
 
 const result = obj.ethr
 ```
 
-
 ### Referencing objects ( `$ref` )
-
 
 ```yaml
 agent:
@@ -174,9 +163,7 @@ agent:
 
 By referencing objects you can ensure that only one copy of the object is created in memory and can be shared by different modules. For example the same database connection used by different plugins:
 
-
 ```yaml
-
 dbConnection:
   $require: 'typeorm?t=function#createConnection'
   $args:
@@ -185,7 +172,7 @@ dbConnection:
         $env: 'DATABASE_FILE'
       entities:
         $require: '@veramo/data-store?t=object#Entities'
-        
+
 agent:
   $require: '@veramo/core#Agent'
   $args:
@@ -196,8 +183,9 @@ agent:
             - $ref: /dbConnection
         - $require: '@veramo/data-store#DataStoreORM'
           $args:
-            - $ref: /dbConnection        
+            - $ref: /dbConnection
 ```
+
 ## Server
 
 Example:
@@ -206,7 +194,7 @@ Example:
 server:
   baseUrl: 'http://localhost:3332'
   port: '3332'
-  
+
   # Array of express middleware
   use:
     # CORS
