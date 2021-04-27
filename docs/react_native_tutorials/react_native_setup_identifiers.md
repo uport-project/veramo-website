@@ -4,7 +4,7 @@ title: React Native Setup & Identifiers
 sidebar_label: Setup & Identifiers
 ---
 
-This guide will walk you through setting up Veramo on React Native. You should have a good understanding of React Native and have your environment set up correctly to build iOS and Android apps. Check out the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more.
+This guide will walk you through setting up Veramo on React Native. You should have a good understanding of React Native and have your environment set up correctly to build iOS and Android apps. Check out the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. Node v12 or later is required to run Veramo.
 
 ## Introduction
 
@@ -47,19 +47,10 @@ Add the following snippets to your package.json file
 }
 ```
 
-Install a TextEncoder polyfill and this will also trigger the `postinstall` script to install additional dependencies based on the `rn-nodeify` command to your app.
-
-```bash
-yarn add @zxing/text-encoding
-```
-
-Rename `index.js` to `index.ts`.
-
-Import `shim.js` (created by rn-nodify) and `@zxing/text-encoding` into the top of `index.ts`. Please refer to this [issue regarding the TextEncoder polyfill](https://github.com/uport-project/veramo-website/issues/33).
+Import `shim.js` (created by rn-nodify) into the top of `index.js`.
 
 ```ts
 import './shim'
-import '@zxing/text-encoding'
 ...
 ```
 
@@ -83,23 +74,6 @@ Now let's install Veramo Core and some plugins. Don't worry; we will walk throug
 
 ```bash
 yarn add @veramo/core @veramo/did-manager @veramo/kms-local-react-native @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
-```
-
-:::warning
-The latest version of `TypeOrm` breaks in React Native. To get around this you need to install the lastest working version `v0.2.24`. See more about this [issue here](https://github.com/uport-project/veramo/issues/373)
-:::
-
-```bash
-yarn add typeorm@0.2.24
-```
-
-Add a `resolutions` key to your `package.json` file:
-
-```json
-"resolutions:" {
-  "typeorm": "0.2.24"
-}
-
 ```
 
 Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
@@ -134,7 +108,7 @@ import { getResolver as webDidResolver } from 'web-did-resolver'
 // Storage plugin using TypeOrm
 import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
 
-// TypeORM is installed with @veramo/typeorm
+// TypeORM is installed with '@veramo/data-store'
 import { createConnection } from 'typeorm'
 ```
 
@@ -142,7 +116,7 @@ Create an infura variable:
 
 ```ts
 // You will need to get a project ID from infura https://www.infura.io
-const INFURA_PROJECT_ID = 'INFURA_PROJECT_ID'
+const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 ```
 
 Next initilize our sqlite database using TypeORM:
@@ -185,10 +159,8 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDResolverPlugin({
       resolver: new Resolver({
-        ethr: ethrDidResolver({
-          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID }],
-        }).ethr,
-        web: webDidResolver().web,
+        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+        ...webDidResolver(),
       }),
     }),
   ],
