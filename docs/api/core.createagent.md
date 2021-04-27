@@ -13,18 +13,24 @@ Helper function to create a new instance of the [Agent](./core.agent.md) class w
 <b>Signature:</b>
 
 ```typescript
-export declare function createAgent<T extends IPluginMethodMap>(options: IAgentOptions): TAgent<T>
+export declare function createAgent<T extends IPluginMethodMap, C = Record<string, any>>(
+  options: IAgentOptions & {
+    context?: C
+  },
+): TAgent<T> & {
+  context?: C
+}
 ```
 
 ## Parameters
 
-| Parameter | Type                                     | Description                 |
-| --------- | ---------------------------------------- | --------------------------- |
-| options   | [IAgentOptions](./core.iagentoptions.md) | Agent configuration options |
+| Parameter | Type                                                            | Description                 |
+| --------- | --------------------------------------------------------------- | --------------------------- |
+| options   | [IAgentOptions](./core.iagentoptions.md) &amp; { context?: C; } | Agent configuration options |
 
 <b>Returns:</b>
 
-[TAgent](./core.tagent.md) &lt;T&gt;
+[TAgent](./core.tagent.md) &lt;T&gt; &amp; { context?: C; }
 
 configured agent
 

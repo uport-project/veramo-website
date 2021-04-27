@@ -8,6 +8,10 @@ hide_title: true
 
 ## UniversalResolver class
 
+> Warning: This API is now obsolete.
+>
+> please use `getUniresolver(url)` or `getUniresolverFor(methods, url)` instead
+
 <b>Signature:</b>
 
 ```typescript

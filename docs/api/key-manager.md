@@ -18,3 +18,4 @@ Provides a [plugin](./key-manager.keymanager.md) for the [Agent](./core.agent.md
 | [AbstractKeyStore](./key-manager.abstractkeystore.md)                       |                                                                         |
 | [AbstractSecretBox](./key-manager.abstractsecretbox.md)                     |                                                                         |
 | [KeyManager](./key-manager.keymanager.md)                                   | Agent plugin that provides [IKeyManager](./core.ikeymanager.md) methods |
+| [MemoryKeyStore](./key-manager.memorykeystore.md)                           |                                                                         |

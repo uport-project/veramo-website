@@ -16,7 +16,6 @@ export interface AgentRouterOptions
 
 ## Properties
 
-| Property                                                                       | Type                                                            | Description                                                 |
-| ------------------------------------------------------------------------------ | --------------------------------------------------------------- | ----------------------------------------------------------- |
-| [exposedMethods](./remote-server.agentrouteroptions.exposedmethods.md)         | Array&lt;string&gt;                                             | List of exposed methods                                     |
-| [getAgentForRequest](./remote-server.agentrouteroptions.getagentforrequest.md) | (req: Request) =&gt; Promise&lt;[IAgent](./core.iagent.md) &gt; | Function that returns configured agent for specific request |
+| Property                                                               | Type                | Description             |
+| ---------------------------------------------------------------------- | ------------------- | ----------------------- |
+| [exposedMethods](./remote-server.agentrouteroptions.exposedmethods.md) | Array&lt;string&gt; | List of exposed methods |

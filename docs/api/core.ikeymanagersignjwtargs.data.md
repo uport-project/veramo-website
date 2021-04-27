@@ -13,5 +13,5 @@ Data to sign
 <b>Signature:</b>
 
 ```typescript
-data: string
+data: string | Uint8Array
 ```

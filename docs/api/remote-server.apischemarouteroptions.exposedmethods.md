@@ -13,5 +13,5 @@ List of exposed methods
 <b>Signature:</b>
 
 ```typescript
-exposedMethods: Array<string>;
+exposedMethods?: Array<string>;
 ```

@@ -13,7 +13,7 @@ Signs JWT
 <b>Signature:</b>
 
 ```typescript
-keyManagerSignJWT({ kid, data }: IKeyManagerSignJWTArgs): Promise<EcdsaSignature>;
+keyManagerSignJWT({ kid, data }: IKeyManagerSignJWTArgs): Promise<string>;
 ```
 
 ## Parameters
@@ -24,4 +24,4 @@ keyManagerSignJWT({ kid, data }: IKeyManagerSignJWTArgs): Promise<EcdsaSignature
 
 <b>Returns:</b>
 
-Promise&lt;[EcdsaSignature](./core.ecdsasignature.md) &gt;
+Promise&lt;string&gt;

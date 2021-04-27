@@ -16,11 +16,10 @@ export interface ApiSchemaRouterOptions
 
 ## Properties
 
-| Property                                                                           | Type                                                            | Description                                                 |
-| ---------------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------- |
-| [apiName](./remote-server.apischemarouteroptions.apiname.md)                       | string                                                          | Name used in OpenAPI schema                                 |
-| [apiVersion](./remote-server.apischemarouteroptions.apiversion.md)                 | string                                                          | Version used in OpenAPI schema                              |
-| [basePath](./remote-server.apischemarouteroptions.basepath.md)                     | string                                                          | Base path                                                   |
-| [exposedMethods](./remote-server.apischemarouteroptions.exposedmethods.md)         | Array&lt;string&gt;                                             | List of exposed methods                                     |
-| [getAgentForRequest](./remote-server.apischemarouteroptions.getagentforrequest.md) | (req: Request) =&gt; Promise&lt;[IAgent](./core.iagent.md) &gt; | Function that returns configured agent for specific request |
-| [securityScheme](./remote-server.apischemarouteroptions.securityscheme.md)         | string                                                          | Security scheme                                             |
+| Property                                                                   | Type                | Description                    |
+| -------------------------------------------------------------------------- | ------------------- | ------------------------------ |
+| [apiName](./remote-server.apischemarouteroptions.apiname.md)               | string              | Name used in OpenAPI schema    |
+| [apiVersion](./remote-server.apischemarouteroptions.apiversion.md)         | string              | Version used in OpenAPI schema |
+| [basePath](./remote-server.apischemarouteroptions.basepath.md)             | string              | Base path                      |
+| [exposedMethods](./remote-server.apischemarouteroptions.exposedmethods.md) | Array&lt;string&gt; | List of exposed methods        |
+| [securityScheme](./remote-server.apischemarouteroptions.securityscheme.md) | string              | Security scheme                |

@@ -31,6 +31,6 @@ export declare class DIDResolverPlugin implements IAgentPlugin
 
 ## Methods
 
-| Method                                                                   | Modifiers | Description |
-| ------------------------------------------------------------------------ | --------- | ----------- |
-| [resolveDid({ didUrl })](./did-resolver.didresolverplugin.resolvedid.md) |           |             |
+| Method                                                                            | Modifiers | Description |
+| --------------------------------------------------------------------------------- | --------- | ----------- |
+| [resolveDid({ didUrl, options })](./did-resolver.didresolverplugin.resolvedid.md) |           |             |

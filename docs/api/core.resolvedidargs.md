@@ -18,6 +18,7 @@ export interface ResolveDidArgs
 
 ## Properties
 
-| Property                                  | Type   | Description |
-| ----------------------------------------- | ------ | ----------- |
-| [didUrl](./core.resolvedidargs.didurl.md) | string | DID URL     |
+| Property                                    | Type                 | Description                                                                                                                                                                                                             |
+| ------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [didUrl](./core.resolvedidargs.didurl.md)   | string               | DID URL                                                                                                                                                                                                                 |
+| [options](./core.resolvedidargs.options.md) | DIDResolutionOptions | DID resolution options that will be passed to the method specific resolver. See: https://w3c.github.io/did-spec-registries/\#did-resolution-input-metadata See: https://www.w3.org/TR/did-core/\#did-resolution-options |

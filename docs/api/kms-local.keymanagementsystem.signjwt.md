@@ -13,16 +13,16 @@ hide_title: true
 ```typescript
 signJWT({ key, data }: {
         key: IKey;
-        data: string;
-    }): Promise<EcdsaSignature>;
+        data: string | Uint8Array;
+    }): Promise<string>;
 ```
 
 ## Parameters
 
-| Parameter     | Type                                            | Description |
-| ------------- | ----------------------------------------------- | ----------- |
-| { key, data } | { key: [IKey](./core.ikey.md) ; data: string; } |             |
+| Parameter     | Type                                                              | Description |
+| ------------- | ----------------------------------------------------------------- | ----------- |
+| { key, data } | { key: [IKey](./core.ikey.md) ; data: string &#124; Uint8Array; } |             |
 
 <b>Returns:</b>
 
-Promise&lt;[EcdsaSignature](./core.ecdsasignature.md) &gt;
+Promise&lt;string&gt;

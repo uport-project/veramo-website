@@ -11,17 +11,18 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-resolveDid({ didUrl }: {
+resolveDid({ didUrl, options }: {
         didUrl: string;
-    }): Promise<DIDDocument>;
+        options?: DIDResolutionOptions;
+    }): Promise<DIDResolutionResult>;
 ```
 
 ## Parameters
 
-| Parameter  | Type                | Description |
-| ---------- | ------------------- | ----------- |
-| { didUrl } | { didUrl: string; } |             |
+| Parameter           | Type                                                | Description |
+| ------------------- | --------------------------------------------------- | ----------- |
+| { didUrl, options } | { didUrl: string; options?: DIDResolutionOptions; } |             |
 
 <b>Returns:</b>
 
-Promise&lt;DIDDocument&gt;
+Promise&lt;DIDResolutionResult&gt;

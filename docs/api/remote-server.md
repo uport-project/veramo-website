@@ -44,19 +44,27 @@ app.use(didDocRouter)
 app.listen(3002)
 ```
 
+## Functions
+
+| Function                                                         | Description |
+| ---------------------------------------------------------------- | ----------- |
+| [apiKeyAuth({ apiKey })](./remote-server.apikeyauth.md)          |             |
+| [createDefaultDid(options)](./remote-server.createdefaultdid.md) |             |
+
 ## Interfaces
 
 | Interface                                                           | Description |
 | ------------------------------------------------------------------- | ----------- |
 | [AgentRouterOptions](./remote-server.agentrouteroptions.md)         |             |
 | [ApiSchemaRouterOptions](./remote-server.apischemarouteroptions.md) |             |
-| [WebDidDocRouterOptions](./remote-server.webdiddocrouteroptions.md) |             |
 
 ## Variables
 
-| Variable                                              | Description                                                           |
-| ----------------------------------------------------- | --------------------------------------------------------------------- |
-| [AgentRouter](./remote-server.agentrouter.md)         | Creates a router that exposes [Agent](./core.agent.md) methods        |
-| [ApiSchemaRouter](./remote-server.apischemarouter.md) | Creates a router that exposes [Agent](./core.agent.md) OpenAPI schema |
-| [didDocEndpoint](./remote-server.diddocendpoint.md)   |                                                                       |
-| [WebDidDocRouter](./remote-server.webdiddocrouter.md) | Creates a router that serves <code>did:web</code> DID Documents       |
+| Variable                                                            | Description                                                           |
+| ------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AgentRouter](./remote-server.agentrouter.md)                       | Creates a router that exposes [Agent](./core.agent.md) methods        |
+| [ApiSchemaRouter](./remote-server.apischemarouter.md)               | Creates a router that exposes [Agent](./core.agent.md) OpenAPI schema |
+| [didDocEndpoint](./remote-server.diddocendpoint.md)                 |                                                                       |
+| [MessagingRouter](./remote-server.messagingrouter.md)               | Creates a router for handling incoming messages                       |
+| [RequestWithAgentRouter](./remote-server.requestwithagentrouter.md) | Creates a router that adds veramo agent to the request object         |
+| [WebDidDocRouter](./remote-server.webdiddocrouter.md)               | Creates a router that serves <code>did:web</code> DID Documents       |
