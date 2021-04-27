@@ -22,7 +22,7 @@ To check the CLI has installed, run:
 veramo -v
 
 # Output
-1.x.x
+2.x.x
 ```
 
 ## Basics

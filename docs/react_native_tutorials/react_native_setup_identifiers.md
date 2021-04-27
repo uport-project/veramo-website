@@ -47,19 +47,10 @@ Add the following snippets to your package.json file
 }
 ```
 
-Install a TextEncoder polyfill and this will also trigger the `postinstall` script to install additional dependencies based on the `rn-nodeify` command to your app.
-
-```bash
-yarn add @zxing/text-encoding
-```
-
-Rename `index.js` to `index.ts`.
-
-Import `shim.js` (created by rn-nodify) and `@zxing/text-encoding` into the top of `index.ts`. Please refer to this [issue regarding the TextEncoder polyfill](https://github.com/uport-project/veramo-website/issues/33).
+Import `shim.js` (created by rn-nodify) into the top of `index.js`.
 
 ```ts
 import './shim'
-import '@zxing/text-encoding'
 ...
 ```
 
@@ -83,23 +74,6 @@ Now let's install Veramo Core and some plugins. Don't worry; we will walk throug
 
 ```bash
 yarn add @veramo/core @veramo/did-manager @veramo/kms-local-react-native @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
-```
-
-:::warning
-The latest version of `TypeOrm` breaks in React Native. To get around this you need to install the lastest working version `v0.2.24`. See more about this [issue here](https://github.com/uport-project/veramo/issues/373)
-:::
-
-```bash
-yarn add typeorm@0.2.24
-```
-
-Add a `resolutions` key to your `package.json` file:
-
-```json
-"resolutions:" {
-  "typeorm": "0.2.24"
-}
-
 ```
 
 Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
