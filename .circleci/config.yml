@@ -64,7 +64,7 @@ jobs:
   build-api-docs:
     working_directory: ~/website
     docker:
-      - image: node:10
+      - image: node:12
     resource_class: medium
     steps:
       - checkout
