@@ -8,7 +8,7 @@ This guide covers setting up an agent and creating identifiers in Node.
 
 ### Prerequisites
 
-You need to have Node v10 or later installed. In this example, we use yarn as the package manager, but you can also use npm.
+You need to have Node v12 or later installed. In this example, we use yarn as the package manager, but you can also use npm.
 
 Start by creating a directory for our project and initializing the npm package.
 

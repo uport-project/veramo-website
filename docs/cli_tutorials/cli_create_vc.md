@@ -7,7 +7,7 @@ sidebar_label: Create Credential
 This guide will walk you through the basic functions to get you started with the Veramo CLI by learning the basic commands and issuing a credential. The core API of Veramo is exposed by the CLI tool. All major functions can be executed locally using the CLI tool.
 
 :::important
-The CLI tool is currently only supported on MACOS and Linux systems. Windows support is coming soon.
+Ensure you have Node v12 or later installed. The CLI tool is currently only supported on MACOS and Linux systems. Windows support is coming soon.
 :::
 
 First, we need to install the CLI globally:
