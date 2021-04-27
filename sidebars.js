@@ -18,6 +18,8 @@ module.exports = {
         'veramo_agent/sdr_request',
         // 'veramo_agent/key_management',
         'veramo_agent/event_system',
+        'veramo_agent/cli_tool',
+        'veramo_agent/configuration_internals',
       ],
     },
     // {
@@ -51,7 +53,6 @@ module.exports = {
       type: 'category',
       label: 'CLI Tutorials',
       items: [
-        'cli_tutorials/cli_config',
         'cli_tutorials/cli_create_vc',
         // 'cli_tutorials/cli_selective_disclosure'
       ],

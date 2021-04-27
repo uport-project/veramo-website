@@ -1,42 +1,10 @@
 ---
-id: cli_config
-title: Configuration
-sidebar_label: Configuration
+id: configuration_internals
+title: YAML Configuration
+sidebar_label: YAML Configuration
 ---
 
-## Create configuration
-
-You can use a per-project configuration or specify a configuration file with each command.
-If the current folder contains an `agent.yml` configuration file, for every command.
-
-Alternatively, you can specify a config file with each command using the `--config /path/to/your/config.yml` option. This will be used instead of a per-project configuration file.
-
-You can create a configuration file in the current folder by running:
-
-```bash
-veramo config create
-```
-
-This will create an `agent.yml` file that will get used next time you invoke a CLI command in this folder.
-By default, the database files are created in the same folder as the config file.
-
-If you want to connect to a hosted veramo instance you can create a configuration file by running:
-
-```bash
-veramo config create --template client
-```
-
-Using configuration file:
-
-```bash
-# From outside the directory
-veramo did create --config ./myagent/agent.yml
-
-# It will detect a local agent.yml file when run from within the myagent directory
-veramo did create
-```
-
-## How it works internally
+The CLI uses a YAML file for configuration. This is a deep dive into the internals and how the yaml is converted into executable code.
 
 Objects are created by a helper function [createObjects](https://github.com/uport-project/veramo/blob/faa7940c515bbd65dfaf9370594794f627099a38/packages/cli/src/lib/objectCreator.ts#L5), which recursively mutates the configuration object that was parsed from a YAML file and applies custom rules for objects containing:
 

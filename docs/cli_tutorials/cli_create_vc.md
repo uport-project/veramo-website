@@ -4,65 +4,15 @@ title: Create Credential
 sidebar_label: Create Credential
 ---
 
-This guide will walk you through the basic functions to get you started with the Veramo CLI by learning the basic commands and issuing a credential. The core API of Veramo is exposed by the CLI tool. All major functions can be executed locally using the CLI tool.
+This guide will walk you through the basic functions to get you started with the Veramo CLI by learning the basic commands and issuing a credential. The core API of Veramo is exposed by the CLI tool. Learn more about [installing and configuring the Veramo CLI](/docs/veramo_agent/cli_tool).
 
-:::important
-Ensure you have Node v12 or later installed. The CLI tool is currently only supported on MACOS and Linux systems. Windows support is coming soon.
-:::
-
-First, we need to install the CLI globally:
-
-```bash
-npm i @veramo/cli -g
-```
-
-To check the CLI has installed, run:
-
-```bash
-veramo -v
-
-# Output
-2.x.x
-```
-
-## Basics
-
-Create an identifier, a credential, and learn where everything is stored.
-
-### Methods
-
-To see all the commands run:
-
-```
-veramo --help
-
-Options:
-  -v, --version      output the version number
-  --config <path>    Configuration file (default: "./agent.yml")
-  -h, --help         display help for command
-
-Commands:
-  did                Decentralized identifiers
-  credential         W3C Verifiable Credential
-  presentation       W3C Verifiable Presentation
-  explore            launch Verifiable Data explorer
-  sdr                Selective Disclosure Request
-  message            Messages
-  execute [options]  Executes agent method
-  server [options]   Launch OpenAPI server
-  config             Agent configuration
-  dev                Plugin developer tools
-  help [command]     display help for command
-
-```
+Now, let's create an identifier, a credential, and learn where everything is stored.
 
 ### Create configuration file
 
 ```bash
 veramo config create
 ```
-
-[More details about the configuration file](./cli_config)
 
 ### Create a DID
 
