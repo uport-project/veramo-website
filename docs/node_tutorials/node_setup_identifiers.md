@@ -55,7 +55,7 @@ Add a tsconfig.json to your project
 
 We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
 
-```ts
+```typescript
 // Core interfaces
 import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
 
@@ -83,7 +83,7 @@ import { getResolver as webDidResolver } from 'web-did-resolver'
 // Storage plugin using TypeOrm
 import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
 
-// TypeORM is installed with daf-typeorm
+// TypeORM is installed with `@veramo/data-store`
 import { createConnection } from 'typeorm'
 ```
 
@@ -94,7 +94,7 @@ Create some variables that we will use later
 const DATABASE_FILE = 'database.sqlite'
 
 // You will need to get a project ID from infura https://www.infura.io
-const INFURA_PROJECT_ID = 'INFURA_PROJECT_ID'
+const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 ```
 
 Initialise a database using TypeORM
@@ -136,17 +136,28 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDResolverPlugin({
       resolver: new Resolver({
-        ethr: ethrDidResolver({
-          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID }],
-        }).ethr,
-        web: webDidResolver().web,
+        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID })
+        ...webDidResolver(),
       }),
     }),
   ],
 })
 ```
 
-That's the minimal agent setup complete. Let's use it to create and list identifiers.
+> **Note:**
+> 
+> The types you specify for agent creation are optional, but may be very helpful when writing TypeScript, as long as they
+> match the plugins that you add to the agent.
+>
+> ```typescript
+> <IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>
+> ```
+>
+> These types help the typescript compiler to figure out what plugin methods get exposed by the agent and what parameters
+> those methods require. These types are also very helpful for development in VSCode, or other IDEs that provide
+> auto-complete.
+
+That's one possible agent setup. Let's use it to create and list identifiers.
 
 ## App Logic
 

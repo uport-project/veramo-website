@@ -108,7 +108,7 @@ import { getResolver as webDidResolver } from 'web-did-resolver'
 // Storage plugin using TypeOrm
 import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
 
-// TypeORM is installed with @veramo/typeorm
+// TypeORM is installed with '@veramo/data-store'
 import { createConnection } from 'typeorm'
 ```
 
@@ -116,7 +116,7 @@ Create an infura variable:
 
 ```ts
 // You will need to get a project ID from infura https://www.infura.io
-const INFURA_PROJECT_ID = 'INFURA_PROJECT_ID'
+const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 ```
 
 Next initilize our sqlite database using TypeORM:
@@ -159,10 +159,8 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDResolverPlugin({
       resolver: new Resolver({
-        ethr: ethrDidResolver({
-          networks: [{ name: 'rinkeby', rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID }],
-        }).ethr,
-        web: webDidResolver().web,
+        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+        ...webDidResolver(),
       }),
     }),
   ],
