@@ -1,3 +1,5 @@
+const version = require('./package.json').version
+
 module.exports = {
   title: 'Performant and modular APIs for Verifiable Data and SSI',
   tagline:
@@ -14,9 +16,9 @@ module.exports = {
       theme: require('prism-react-renderer/themes/dracula'),
     },
     navbar: {
-      title: 'Veramo',
+      title: 'Veramo ' + '(v' + version + ')',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Veramo Logo',
         src: 'img/veramo.png',
       },
       items: [
@@ -44,12 +46,12 @@ module.exports = {
           label: 'API',
           position: 'right',
         },
+        { to: 'blog', label: 'Blog', position: 'right' },
         {
           href: 'https://github.com/uport-project/veramo/discussions',
           label: 'Community',
           position: 'right',
         },
-        // { to: 'blog', label: 'Blog', position: 'right' },
         {
           href: 'https://github.com/uport-project/veramo',
           label: 'GitHub',
