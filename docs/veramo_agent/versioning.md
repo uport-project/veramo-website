@@ -4,7 +4,7 @@ title: Versioning
 sidebar_label: Versioning
 ---
 
-We are currently in public beta but we want to make sure that the road is smooth as possible for anyone starting to
+Veramo is currently in public beta but we want to make sure that the road is smooth as possible for anyone starting to
 build applications on Veramo with a view to deploying in production. If you are planning on deploying an application in
 production within the next year please [contact us here](/docs/) and talk with us about your plans.
 
@@ -30,11 +30,3 @@ Occasionally we may publish experimental code under the `unstable` tag.
 ```bash
 yarn add @veramo/core@unstable
 ```
-
-### `@1.0.0`
-
-18th December 2020 This is our first official public release after 14 months of development, internal alpha and beta
-battle testing. We have arrived at a relatively stable core api that we can iterate on without too many breaking
-changes. Core API as is per docs.
-
-### `@1.2.0`
