@@ -26,6 +26,10 @@ This diagram shows the high level relationship between the core agent, interface
 
 [API Reference](/docs/api/did-provider-web)
 
+### `@veramo/did-provider-key`
+
+[API Reference](/docs/api/did-provider-key)
+
 ### `@veramo/key-manager`
 
 [API Reference](/docs/api/key-manager)
