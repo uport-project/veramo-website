@@ -49,7 +49,7 @@ const textContent = {
       }
     },
     proofFormat: 'jwt',
-    save: true
+    save: false
   })
 
   `,
