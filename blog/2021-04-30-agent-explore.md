@@ -20,8 +20,8 @@ There are a number of ways to use the explorer depending on your workflow. (1 + 
 
 1. Run directly from npm: `npx agent-explore serve`. This will run on your localhost on port 5000.
 
-2. Visit https://explore.veramo.io and connect your running agent.
+2. Visit https://explore.veramo.dev and connect your running agent.
 
-3. Fork the [agent-explorer](https://github.com/veramolabs/agent-explorer) repo and run locally. If you build a widget that you think is useful to have in the main repo and therefore available on https://explore.veramo.io then please open a PR/discussion and we will review!
+3. Fork the [agent-explorer](https://github.com/veramolabs/agent-explorer) repo and run locally. If you build a widget that you think is useful to have in the main repo and therefore available on https://explore.veramo.dev then please open a PR/discussion and we will review!
 
 Note that the explorer depends on another library that we have in the pipeline `Veramo React`. Veramo React makes it easy to use Veramo APIs in React/React Native. We plan to open source this library very shortly.
