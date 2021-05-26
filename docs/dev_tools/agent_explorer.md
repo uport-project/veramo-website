@@ -15,7 +15,7 @@ As the Agent Explorer is a developer dashboard, the design was to be kept minima
 
 ## Install
 
-After you have deployed an agent using our [1 button Heroku deploy](https://github.com/uport-project/veramo-agent-deploy) for example. In you heroku settings you will find the API key for your agent. Using this API key you can connect this agent and others to an instance of the explorer.
+After you have deployed an agent using our [1 button Heroku deploy](https://github.com/uport-project/veramo-agent-deploy) for example. In your heroku settings you will find the API key for your agent. Using this API key you can connect this agent and others to an instance of the explorer.
 
 ### Run locally using `npx`
 
