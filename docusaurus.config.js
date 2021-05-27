@@ -79,7 +79,7 @@ module.exports = {
           items: [
             {
               label: 'Node',
-              to: 'docs/node_tutorial/node_setup_identifiers',
+              to: 'docs/node_tutorials/node_setup_identifiers',
             },
             {
               label: 'React',
