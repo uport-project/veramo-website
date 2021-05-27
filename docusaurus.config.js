@@ -87,7 +87,7 @@ module.exports = {
             },
             {
               label: 'React Native',
-              to: 'docs/react_native_tutorial/react_native_setup_identifers',
+              to: 'docs/react_native_tutorials/react_native_setup_identifers',
             },
           ],
         },
