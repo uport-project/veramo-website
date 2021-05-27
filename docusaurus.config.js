@@ -79,7 +79,7 @@ module.exports = {
           items: [
             {
               label: 'Node',
-              to: 'docs/node_tutorial/introduction',
+              to: 'docs/node_tutorials/node_setup_identifiers',
             },
             {
               label: 'React',
@@ -87,7 +87,7 @@ module.exports = {
             },
             {
               label: 'React Native',
-              to: 'docs/react_native_tutorial/introduction',
+              to: 'docs/react_native_tutorials/react_native_setup_identifers',
             },
           ],
         },
