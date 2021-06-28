@@ -17,27 +17,26 @@ This is the current v1 format for a W3C compliant Verifiable Credential:
 
 ```json
 {
+  "issuer": {
+    "id": "did:ethr:rinkeby:0x022494a622f736987a5fdd89c2506d8d524f21437aa34c9afe75272ee9e3d7a52d"
+  },
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
+    "https://veramo.io/contexts/profile/v1",
+    "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld"
   ],
-  "type": ["VerifiableCredential"],
-  "issuer": {"id": "did:web:veramo.dev"},
-  "issuanceDate": "2010-01-01T19:73:24Z",
+  "type": ["VerifiableCredential", "Profile"],
+  "issuanceDate": "2021-04-19T21:10:24.187Z",
   "credentialSubject": {
-    "id": "did:example:user",
-    "community": {
-        "rank": "rockstar"
-    }
+    "id": "did:ethr:rinkeby:0x022494a622f736987a5fdd89c2506d8d524f21437aa34c9afe75272ee9e3d7a52d",
+    "name": "Oliver, the great"
   },
   "proof": {
-    "type": "RsaSignature2018",
-    "created": "2017-06-18T21:19:10Z",
+    "type": "EcdsaSecp256k1RecoverySignature2020",
+    "created": "2021-04-20T04:45:17Z",
+    "verificationMethod": "did:ethr:rinkeby:0x022494a622f736987a5fdd89c2506d8d524f21437aa34c9afe75272ee9e3d7a52d#controller",
     "proofPurpose": "assertionMethod",
-    "verificationMethod": "https://example.edu/issuers/keys/1",
-    "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5X
-      sITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUc
-      X16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtj
-      PAYuNzVBAh4vGHSrQyHUdBBPM"
+    "jws": "eyJhbGciOiJFUzI1NkstUiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..0ys35VqBMtJti-DY6uacJyPxoxhXyrpIcLiQVEDQQPAGQb1ZmRDZf01y-thW4Pxt95pLV09R2vK-2BfWiu-nFgE"
   }
 }
 ```
