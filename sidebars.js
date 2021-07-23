@@ -20,6 +20,7 @@ module.exports = {
         'veramo_agent/event_system',
         'veramo_agent/cli_tool',
         'veramo_agent/configuration_internals',
+        'veramo_agent/remote_agent',
         'veramo_agent/versioning',
       ],
     },

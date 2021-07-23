@@ -1,0 +1,120 @@
+<svg width="692pt" height="260pt" viewBox="0.00 0.00 692.34 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<title>hierarchy</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-256 688.3394,-256 688.3394,4 -4,4"></polygon>
+<!-- UX -->
+<g id="node1" class="node">
+<title>UX</title>
+<polygon fill="none" stroke="#c0c0c0" points="257.6627,-252 203.6627,-252 203.6627,-216 257.6627,-216 257.6627,-252"></polygon>
+<text text-anchor="middle" x="230.6627" y="-229.8" font-family="Arial" font-size="14.00" fill="#000000">UX</text>
+</g>
+<!-- PublicAgent -->
+<g id="node2" class="node">
+<title>PublicAgent</title>
+<ellipse fill="none" stroke="#c0c0c0" cx="230.6627" cy="-162" rx="62.6127" ry="18"></ellipse>
+<text text-anchor="middle" x="230.6627" y="-157.8" font-family="Arial" font-size="14.00" fill="#000000">PublicAgent</text>
+</g>
+<!-- UX&#45;&gt;PublicAgent -->
+<g id="edge1" class="edge">
+<title>UX-&gt;PublicAgent</title>
+<path fill="none" stroke="#000000" d="M230.6627,-215.8314C230.6627,-208.131 230.6627,-198.9743 230.6627,-190.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="234.1628,-190.4132 230.6627,-180.4133 227.1628,-190.4133 234.1628,-190.4132"></polygon>
+</g>
+<!-- DIDResolver -->
+<g id="node3" class="node">
+<title>DIDResolver</title>
+<polygon fill="none" stroke="#c0c0c0" points="95.4887,-36 -.1633,-36 -.1633,0 95.4887,0 95.4887,-36"></polygon>
+<text text-anchor="middle" x="47.6627" y="-13.8" font-family="Arial" font-size="14.00" fill="#000000">DIDResolver</text>
+</g>
+<!-- PublicAgent&#45;&gt;DIDResolver -->
+<g id="edge2" class="edge">
+<title>PublicAgent-&gt;DIDResolver</title>
+<path fill="none" stroke="#000000" d="M208.9516,-144.9158C176.6481,-119.4967 115.7725,-71.5946 78.7511,-42.463"></path>
+<polygon fill="#000000" stroke="#000000" points="80.8064,-39.6266 70.7833,-36.1932 76.4776,-45.1277 80.8064,-39.6266"></polygon>
+</g>
+<!-- CredentialIssuer -->
+<g id="node4" class="node">
+<title>CredentialIssuer</title>
+<polygon fill="none" stroke="#c0c0c0" points="231.5631,-36 113.7623,-36 113.7623,0 231.5631,0 231.5631,-36"></polygon>
+<text text-anchor="middle" x="172.6627" y="-13.8" font-family="Arial" font-size="14.00" fill="#000000">CredentialIssuer</text>
+</g>
+<!-- PublicAgent&#45;&gt;CredentialIssuer -->
+<g id="edge3" class="edge">
+<title>PublicAgent-&gt;CredentialIssuer</title>
+<path fill="none" stroke="#000000" d="M223.4342,-144.0535C213.4921,-119.3696 195.5047,-74.7111 183.8264,-45.7167"></path>
+<polygon fill="#000000" stroke="#000000" points="186.965,-44.1409 179.9823,-36.1727 180.4719,-46.7562 186.965,-44.1409"></polygon>
+</g>
+<!-- DataAgent -->
+<g id="node5" class="node">
+<title>DataAgent</title>
+<ellipse fill="none" stroke="#c0c0c0" cx="288.6627" cy="-90" rx="56.8142" ry="18"></ellipse>
+<text text-anchor="middle" x="288.6627" y="-85.8" font-family="Arial" font-size="14.00" fill="#000000">DataAgent</text>
+</g>
+<!-- PublicAgent&#45;&gt;DataAgent -->
+<g id="edge4" class="edge">
+<title>PublicAgent-&gt;DataAgent</title>
+<path fill="none" stroke="#000000" d="M244.9998,-144.2022C251.9532,-135.5704 260.4329,-125.0439 268.0633,-115.5717"></path>
+<polygon fill="#000000" stroke="#000000" points="270.9429,-117.5763 274.4905,-107.593 265.4916,-113.1849 270.9429,-117.5763"></polygon>
+</g>
+<!-- CustodyAgent -->
+<g id="node6" class="node">
+<title>CustodyAgent</title>
+<ellipse fill="none" stroke="#c0c0c0" cx="523.6627" cy="-90" rx="71.8647" ry="18"></ellipse>
+<text text-anchor="middle" x="523.6627" y="-85.8" font-family="Arial" font-size="14.00" fill="#000000">CustodyAgent</text>
+</g>
+<!-- PublicAgent&#45;&gt;CustodyAgent -->
+<g id="edge5" class="edge">
+<title>PublicAgent-&gt;CustodyAgent</title>
+<path fill="none" stroke="#000000" d="M278.3903,-150.2717C328.4617,-137.9675 407.3476,-118.5826 462.0808,-105.1328"></path>
+<polygon fill="#000000" stroke="#000000" points="463.1314,-108.4788 472.0072,-102.6935 461.4609,-101.681 463.1314,-108.4788"></polygon>
+</g>
+<!-- DataStore -->
+<g id="node7" class="node">
+<title>DataStore</title>
+<polygon fill="none" stroke="#c0c0c0" points="328.1781,-36 249.1473,-36 249.1473,0 328.1781,0 328.1781,-36"></polygon>
+<text text-anchor="middle" x="288.6627" y="-13.8" font-family="Arial" font-size="14.00" fill="#000000">DataStore</text>
+</g>
+<!-- DataAgent&#45;&gt;DataStore -->
+<g id="edge6" class="edge">
+<title>DataAgent-&gt;DataStore</title>
+<path fill="none" stroke="#000000" d="M288.6627,-71.8314C288.6627,-64.131 288.6627,-54.9743 288.6627,-46.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="292.1628,-46.4132 288.6627,-36.4133 285.1628,-46.4133 292.1628,-46.4132"></polygon>
+</g>
+<!-- DataStoreORM -->
+<g id="node8" class="node">
+<title>DataStoreORM</title>
+<polygon fill="none" stroke="#c0c0c0" points="457.3364,-36 345.989,-36 345.989,0 457.3364,0 457.3364,-36"></polygon>
+<text text-anchor="middle" x="401.6627" y="-13.8" font-family="Arial" font-size="14.00" fill="#000000">DataStoreORM</text>
+</g>
+<!-- DataAgent&#45;&gt;DataStoreORM -->
+<g id="edge7" class="edge">
+<title>DataAgent-&gt;DataStoreORM</title>
+<path fill="none" stroke="#000000" d="M314.0221,-73.8418C328.846,-64.3965 347.8291,-52.3011 364.3353,-41.7838"></path>
+<polygon fill="#000000" stroke="#000000" points="366.6557,-44.4555 373.2084,-36.1301 362.8941,-38.552 366.6557,-44.4555"></polygon>
+</g>
+<!-- DIDManager -->
+<g id="node9" class="node">
+<title>DIDManager</title>
+<polygon fill="none" stroke="#c0c0c0" points="571.5013,-36 475.8241,-36 475.8241,0 571.5013,0 571.5013,-36"></polygon>
+<text text-anchor="middle" x="523.6627" y="-13.8" font-family="Arial" font-size="14.00" fill="#000000">DIDManager</text>
+</g>
+<!-- CustodyAgent&#45;&gt;DIDManager -->
+<g id="edge8" class="edge">
+<title>CustodyAgent-&gt;DIDManager</title>
+<path fill="none" stroke="#000000" d="M523.6627,-71.8314C523.6627,-64.131 523.6627,-54.9743 523.6627,-46.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="527.1628,-46.4132 523.6627,-36.4133 520.1628,-46.4133 527.1628,-46.4132"></polygon>
+</g>
+<!-- KeyManager -->
+<g id="node10" class="node">
+<title>KeyManager</title>
+<polygon fill="none" stroke="#c0c0c0" points="684.5168,-36 588.8086,-36 588.8086,0 684.5168,0 684.5168,-36"></polygon>
+<text text-anchor="middle" x="636.6627" y="-13.8" font-family="Arial" font-size="14.00" fill="#000000">KeyManager</text>
+</g>
+<!-- CustodyAgent&#45;&gt;KeyManager -->
+<g id="edge9" class="edge">
+<title>CustodyAgent-&gt;KeyManager</title>
+<path fill="none" stroke="#000000" d="M550.1562,-73.1192C564.907,-63.7204 583.502,-51.8723 599.6683,-41.5716"></path>
+<polygon fill="#000000" stroke="#000000" points="601.8071,-44.359 608.3599,-36.0336 598.0456,-38.4555 601.8071,-44.359"></polygon>
+</g>
+</g>
+</svg>
