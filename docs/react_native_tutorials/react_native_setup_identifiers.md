@@ -27,7 +27,13 @@ Ensure your project is building and running ok before continuing to next step.
 We need to set up some native dependencies and shims that Veramo plugins will use for database and key management.
 
 ```bash
-yarn add @veramo/kms-local react-native-sqlite-storage @ethersproject/shims
+yarn add @veramo/kms-local react-native-sqlite-storage
+```
+
+Next, add the shim from `@ethersproject/shims` and the polyfill for strong random values following the recomendation [here](https://docs.ethers.io/v5/cookbook/react-native/#cookbook-reactnative-security).
+
+```bash
+yarn add @ethersproject/shims react-native-get-random-values
 ```
 
 To access node methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev dependencies.
@@ -47,10 +53,12 @@ Add the following snippets to your package.json file
 }
 ```
 
-Import `shim.js` (created by rn-nodify) into the top of `index.js`.
+Import `shim.js` (created by rn-nodify),`react-native-get-random-values`, and `@ethersproject/shims` into the top of `index.js`.
 
 ```ts
 import './shim'
+import "react-native-get-random-values"
+import "@ethersproject/shims"
 ...
 ```
 
