@@ -27,7 +27,7 @@ Ensure your project is building and running ok before continuing to next step.
 We need to set up some native dependencies and shims that Veramo plugins will use for database and key management.
 
 ```bash
-yarn add react-native-sodium react-native-sqlite-storage
+yarn add @veramo/kms-local react-native-sqlite-storage @ethersproject/shims
 ```
 
 To access node methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev dependencies.
@@ -73,7 +73,7 @@ npx pod-install
 Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next section.
 
 ```bash
-yarn add @veramo/core @veramo/did-manager @veramo/kms-local-react-native @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
+yarn add @veramo/core @veramo/did-manager @veramo/kms-local @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
 ```
 
 Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
@@ -96,7 +96,7 @@ import { EthrDIDProvider } from '@veramo/did-provider-ethr'
 import { KeyManager } from '@veramo/key-manager'
 
 // Custom key management system for RN
-import { KeyManagementSystem } from '@veramo/kms-local-react-native'
+import { KeyManagementSystem } from '@veramo/kms-local'
 
 // Custom resolver
 // Custom resolvers
