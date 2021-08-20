@@ -10,10 +10,16 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Constructs a new instance of the `DIDComm` class
+Constructor that takes a list of objects.
 
 <b>Signature:</b>
 
 ```typescript
-constructor()
+constructor(transports?: IDIDCommTransport[]);
 ```
+
+## Parameters
+
+| Parameter  | Type                  | Description        |
+| ---------- | --------------------- | ------------------ |
+| transports | IDIDCommTransport\[\] | A list of objects. |

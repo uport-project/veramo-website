@@ -16,5 +16,6 @@ Provides a [plugin](./did-manager.didmanager.md) for the [Agent](./core.agent.md
 | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | [AbstractDIDStore](./did-manager.abstractdidstore.md)                     | An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier store     |
 | [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md) | An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier providers |
+| [AliasDiscoveryProvider](./did-manager.aliasdiscoveryprovider.md)         |                                                                                          |
 | [DIDManager](./did-manager.didmanager.md)                                 | Agent plugin that implements [IDIDManager](./core.ididmanager.md) interface              |
 | [MemoryDIDStore](./did-manager.memorydidstore.md)                         |                                                                                          |

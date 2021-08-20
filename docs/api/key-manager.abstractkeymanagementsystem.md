@@ -16,11 +16,11 @@ export declare abstract class AbstractKeyManagementSystem
 
 ## Methods
 
-| Method                                                                      | Modifiers | Description |
-| --------------------------------------------------------------------------- | --------- | ----------- |
-| [createKey(args)](./key-manager.abstractkeymanagementsystem.createkey.md)   |           |             |
-| [decryptJWE(args)](./key-manager.abstractkeymanagementsystem.decryptjwe.md) |           |             |
-| [deleteKey(args)](./key-manager.abstractkeymanagementsystem.deletekey.md)   |           |             |
-| [encryptJWE(args)](./key-manager.abstractkeymanagementsystem.encryptjwe.md) |           |             |
-| [signEthTX(args)](./key-manager.abstractkeymanagementsystem.signethtx.md)   |           |             |
-| [signJWT(args)](./key-manager.abstractkeymanagementsystem.signjwt.md)       |           |             |
+| Method                                                                                    | Modifiers | Description |
+| ----------------------------------------------------------------------------------------- | --------- | ----------- |
+| [createKey(args)](./key-manager.abstractkeymanagementsystem.createkey.md)                 |           |             |
+| [deleteKey(args)](./key-manager.abstractkeymanagementsystem.deletekey.md)                 |           |             |
+| [sharedSecret(args)](./key-manager.abstractkeymanagementsystem.sharedsecret.md)           |           |             |
+| [sign(args)](./key-manager.abstractkeymanagementsystem.sign.md)                           |           |             |
+| [signEthTX({ key, transaction })](./key-manager.abstractkeymanagementsystem.signethtx.md) |           |             |
+| [signJWT({ key, data })](./key-manager.abstractkeymanagementsystem.signjwt.md)            |           |             |

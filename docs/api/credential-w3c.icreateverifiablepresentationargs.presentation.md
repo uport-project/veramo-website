@@ -17,15 +17,5 @@ The signer of the Presentation is chosen based on the `holder` property of the `
 <b>Signature:</b>
 
 ```typescript
-presentation: {
-        id?: string;
-        holder: string;
-        issuanceDate?: string;
-        expirationDate?: string;
-        '@context'?: string[];
-        type?: string[];
-        verifier: string[];
-        verifiableCredential: VerifiableCredential[];
-        [x: string]: any;
-    };
+presentation: Partial<PresentationPayload>;
 ```

@@ -12,19 +12,20 @@ hide_title: true
 
 ## Classes
 
-| Class                                        | Description |
-| -------------------------------------------- | ----------- |
-| [Claim](./data-store.claim.md)               |             |
-| [Credential_2](./data-store.credential_2.md) |             |
-| [DataStore](./data-store.datastore.md)       |             |
-| [DataStoreORM](./data-store.datastoreorm.md) |             |
-| [DIDStore](./data-store.didstore.md)         |             |
-| [Identifier](./data-store.identifier.md)     |             |
-| [Key](./data-store.key.md)                   |             |
-| [KeyStore](./data-store.keystore.md)         |             |
-| [Message](./data-store.message.md)           |             |
-| [Presentation](./data-store.presentation.md) |             |
-| [Service](./data-store.service.md)           |             |
+| Class                                                                | Description |
+| -------------------------------------------------------------------- | ----------- |
+| [Claim](./data-store.claim.md)                                       |             |
+| [Credential_2](./data-store.credential_2.md)                         |             |
+| [DataStore](./data-store.datastore.md)                               |             |
+| [DataStoreORM](./data-store.datastoreorm.md)                         |             |
+| [DIDStore](./data-store.didstore.md)                                 |             |
+| [Identifier](./data-store.identifier.md)                             |             |
+| [Key](./data-store.key.md)                                           |             |
+| [KeyStore](./data-store.keystore.md)                                 |             |
+| [Message](./data-store.message.md)                                   |             |
+| [Presentation](./data-store.presentation.md)                         |             |
+| [ProfileDiscoveryProvider](./data-store.profilediscoveryprovider.md) |             |
+| [Service](./data-store.service.md)                                   |             |
 
 ## Interfaces
 

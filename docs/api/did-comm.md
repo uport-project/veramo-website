@@ -17,15 +17,33 @@ Provides a [plugin](./did-comm.didcomm.md) for the [Agent](./core.agent.md) that
 | [DIDComm](./did-comm.didcomm.md)                             | <b><i>(BETA)</i></b> DID Comm plugin for [Agent](./core.agent.md) This plugin provides a method of creating an encrypted message according to the initial [DIDComm-js](https://github.com/decentralized-identifier/DIDComm-js) implementation. |
 | [DIDCommMessageHandler](./did-comm.didcommmessagehandler.md) | <b><i>(BETA)</i></b> A plugin for the [MessageHandler](./message-handler.messagehandler.md) that decrypts DIDComm messages.                                                                                                                    |
 
+## Enumerations
+
+| Enumeration                                                      | Description                                                                |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md) | <b><i>(BETA)</i></b> Represents different DIDComm v2 message encapsulation |
+
 ## Interfaces
 
-| Interface                                                                    | Description                                                                                                                     |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [IDIDComm](./did-comm.ididcomm.md)                                           | <b><i>(BETA)</i></b> DID Comm plugin interface for [Agent](./core.agent.md)                                                     |
-| [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md) | <b><i>(BETA)</i></b> Input arguments for [IDIDComm.sendMessageDIDCommAlpha1()](./did-comm.ididcomm.sendmessagedidcommalpha1.md) |
+| Interface                                                                    | Description                                                                                                                                                                                                                             |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [IDIDComm](./did-comm.ididcomm.md)                                           | <b><i>(BETA)</i></b> DID Comm plugin interface for [Agent](./core.agent.md)                                                                                                                                                             |
+| [IDIDCommMessage](./did-comm.ididcommmessage.md)                             | <b><i>(BETA)</i></b> The DIDComm message structure. See https://identity.foundation/didcomm-messaging/spec/\#plaintext-message-structure                                                                                                |
+| [IDIDCommMessageMetaData](./did-comm.ididcommmessagemetadata.md)             | <b><i>(BETA)</i></b> Metadata resulting from unpacking a DIDComm v2 message                                                                                                                                                             |
+| [IPackDIDCommMessageArgs](./did-comm.ipackdidcommmessageargs.md)             | <b><i>(BETA)</i></b> The input to the [DIDComm.packDIDCommMessage()](./did-comm.didcomm.packdidcommmessage.md) method. When <code>packing</code> is <code>authcrypt</code> or <code>jws</code>, a <code>keyRef</code> MUST be provided. |
+| [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)                 | <b><i>(BETA)</i></b> The result of packing a DIDComm v2 message. The message is always serialized as string.                                                                                                                            |
+| [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md) | <b><i>(BETA)</i></b> Input arguments for [IDIDComm.sendMessageDIDCommAlpha1()](./did-comm.ididcomm.sendmessagedidcommalpha1.md)                                                                                                         |
+| [IUnpackedDIDCommMessage](./did-comm.iunpackeddidcommmessage.md)             | <b><i>(BETA)</i></b> The result of unpacking a DIDComm v2 message                                                                                                                                                                       |
 
 ## Variables
 
-| Variable                       | Description |
-| ------------------------------ | ----------- |
-| [schema](./did-comm.schema.md) |             |
+| Variable                       | Description          |
+| ------------------------------ | -------------------- |
+| [schema](./did-comm.schema.md) | <b><i>(BETA)</i></b> |
+
+## Type Aliases
+
+| Type Alias                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md)         | <b><i>(BETA)</i></b> The possible types of message packing. \* <code>authcrypt</code>, <code>anoncrypt</code>, <code>anoncrypt+authcrypt</code>, and <code>anoncrypt+jws</code> will produce [DIDCommMessageMediaType.ENCRYPTED](./did-comm.didcommmessagemediatype.encrypted.md) messages. \* <code>jws</code> will produce [DIDCommMessageMediaType.SIGNED](./did-comm.didcommmessagemediatype.signed.md) messages. \* <code>none</code> will produce [DIDCommMessageMediaType.PLAIN](./did-comm.didcommmessagemediatype.plain.md) messages. |
+| [IUnpackDIDCommMessageArgs](./did-comm.iunpackdidcommmessageargs.md) | <b><i>(BETA)</i></b> The input to the [DIDComm.unpackDIDCommMessage()](./did-comm.didcomm.unpackdidcommmessage.md) method.                                                                                                                                                                                                                                                                                                                                                                                                                     |

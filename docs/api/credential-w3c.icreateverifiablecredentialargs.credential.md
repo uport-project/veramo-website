@@ -17,24 +17,5 @@ The signer of the Credential is chosen based on the `issuer.id` property of the 
 <b>Signature:</b>
 
 ```typescript
-credential: {
-        '@context'?: string[];
-        id?: string;
-        type?: string[];
-        issuer: {
-            id: string;
-            [x: string]: any;
-        };
-        issuanceDate?: string;
-        expirationDate?: string;
-        credentialSubject: {
-            id?: string;
-            [x: string]: any;
-        };
-        credentialStatus?: {
-            id: string;
-            type: string;
-        };
-        [x: string]: any;
-    };
+credential: Partial<CredentialPayload>;
 ```

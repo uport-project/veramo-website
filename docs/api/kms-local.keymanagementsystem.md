@@ -18,11 +18,9 @@ export declare class KeyManagementSystem extends AbstractKeyManagementSystem
 
 ## Methods
 
-| Method                                                                          | Modifiers | Description |
-| ------------------------------------------------------------------------------- | --------- | ----------- |
-| [createKey({ type })](./kms-local.keymanagementsystem.createkey.md)             |           |             |
-| [decryptJWE({ key, data })](./kms-local.keymanagementsystem.decryptjwe.md)      |           |             |
-| [deleteKey(args)](./kms-local.keymanagementsystem.deletekey.md)                 |           |             |
-| [encryptJWE({ key, to, data })](./kms-local.keymanagementsystem.encryptjwe.md)  |           |             |
-| [signEthTX({ key, transaction })](./kms-local.keymanagementsystem.signethtx.md) |           |             |
-| [signJWT({ key, data })](./kms-local.keymanagementsystem.signjwt.md)            |           |             |
+| Method                                                                    | Modifiers | Description |
+| ------------------------------------------------------------------------- | --------- | ----------- |
+| [createKey({ type })](./kms-local.keymanagementsystem.createkey.md)       |           |             |
+| [deleteKey(args)](./kms-local.keymanagementsystem.deletekey.md)           |           |             |
+| [sharedSecret(args)](./kms-local.keymanagementsystem.sharedsecret.md)     |           |             |
+| [sign({ key, algorithm, data })](./kms-local.keymanagementsystem.sign.md) |           |             |

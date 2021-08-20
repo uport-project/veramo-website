@@ -11,7 +11,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-deleteIdentifier(identifier: IIdentifier, context: IContext): Promise<boolean>;
+deleteIdentifier(identifier: IIdentifier, context: IRequiredContext): Promise<boolean>;
 ```
 
 ## Parameters
@@ -19,7 +19,7 @@ deleteIdentifier(identifier: IIdentifier, context: IContext): Promise<boolean>;
 | Parameter  | Type                                 | Description |
 | ---------- | ------------------------------------ | ----------- |
 | identifier | [IIdentifier](./core.iidentifier.md) |             |
-| context    | IContext                             |             |
+| context    | IRequiredContext                     |             |
 
 <b>Returns:</b>
 

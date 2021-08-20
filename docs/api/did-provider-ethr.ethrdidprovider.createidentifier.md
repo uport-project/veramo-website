@@ -14,7 +14,7 @@ hide_title: true
 createIdentifier({ kms, options }: {
         kms?: string;
         options?: any;
-    }, context: IContext): Promise<Omit<IIdentifier, 'provider'>>;
+    }, context: IRequiredContext): Promise<Omit<IIdentifier, 'provider'>>;
 ```
 
 ## Parameters
@@ -22,7 +22,7 @@ createIdentifier({ kms, options }: {
 | Parameter        | Type                             | Description |
 | ---------------- | -------------------------------- | ----------- |
 | { kms, options } | { kms?: string; options?: any; } |             |
-| context          | IContext                         |             |
+| context          | IRequiredContext                 |             |
 
 <b>Returns:</b>
 

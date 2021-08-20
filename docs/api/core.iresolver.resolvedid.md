@@ -8,7 +8,7 @@ hide_title: true
 
 ## IResolver.resolveDid() method
 
-Resolves DID and returns DID Document
+Resolves DID and returns DID Resolution Result
 
 <b>Signature:</b>
 

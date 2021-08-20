@@ -17,7 +17,7 @@ constructor(options: {
         defaultKms: string;
         network: string;
         rpcUrl?: string;
-        web3Provider?: object;
+        web3Provider?: Provider;
         ttl?: number;
         gas?: number;
         registry?: string;
@@ -26,6 +26,6 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                            | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | { defaultKms: string; network: string; rpcUrl?: string; web3Provider?: object; ttl?: number; gas?: number; registry?: string; } |             |
+| Parameter | Type                                                                                                                              | Description |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| options   | { defaultKms: string; network: string; rpcUrl?: string; web3Provider?: Provider; ttl?: number; gas?: number; registry?: string; } |             |

@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-meta?: object | null;
+meta?: KeyMetadata | null;
 ```

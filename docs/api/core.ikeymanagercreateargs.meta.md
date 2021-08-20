@@ -13,5 +13,5 @@ Optional. Key meta data
 <b>Signature:</b>
 
 ```typescript
-meta?: object;
+meta?: KeyMetadata;
 ```

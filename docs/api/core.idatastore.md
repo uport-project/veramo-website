@@ -20,11 +20,12 @@ export interface IDataStore extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                                | Description                                      |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| [dataStoreGetMessage(args)](./core.idatastore.datastoregetmessage.md)                                 | Gets message from the data store                 |
-| [dataStoreGetVerifiableCredential(args)](./core.idatastore.datastoregetverifiablecredential.md)       | Gets verifiable credential from the data store   |
-| [dataStoreGetVerifiablePresentation(args)](./core.idatastore.datastoregetverifiablepresentation.md)   | Gets verifiable presentation from the data store |
-| [dataStoreSaveMessage(args)](./core.idatastore.datastoresavemessage.md)                               | Saves message to the data store                  |
-| [dataStoreSaveVerifiableCredential(args)](./core.idatastore.datastoresaveverifiablecredential.md)     | Saves verifiable credential to the data store    |
-| [dataStoreSaveVerifiablePresentation(args)](./core.idatastore.datastoresaveverifiablepresentation.md) | Saves verifiable presentation to the data store  |
+| Method                                                                                                | Description                                       |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| [dataStoreDeleteVerifiableCredential(args)](./core.idatastore.datastoredeleteverifiablecredential.md) | Deletes verifiable credential from the data store |
+| [dataStoreGetMessage(args)](./core.idatastore.datastoregetmessage.md)                                 | Gets message from the data store                  |
+| [dataStoreGetVerifiableCredential(args)](./core.idatastore.datastoregetverifiablecredential.md)       | Gets verifiable credential from the data store    |
+| [dataStoreGetVerifiablePresentation(args)](./core.idatastore.datastoregetverifiablepresentation.md)   | Gets verifiable presentation from the data store  |
+| [dataStoreSaveMessage(args)](./core.idatastore.datastoresavemessage.md)                               | Saves message to the data store                   |
+| [dataStoreSaveVerifiableCredential(args)](./core.idatastore.datastoresaveverifiablecredential.md)     | Saves verifiable credential to the data store     |
+| [dataStoreSaveVerifiablePresentation(args)](./core.idatastore.datastoresaveverifiablepresentation.md) | Saves verifiable presentation to the data store   |

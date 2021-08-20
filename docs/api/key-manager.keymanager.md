@@ -33,14 +33,17 @@ export declare class KeyManager implements IAgentPlugin
 
 ## Methods
 
-| Method                                                                                               | Modifiers | Description                            |
-| ---------------------------------------------------------------------------------------------------- | --------- | -------------------------------------- |
-| [keyManagerCreate(args)](./key-manager.keymanager.keymanagercreate.md)                               |           | Creates and returns a new key          |
-| [keyManagerDecryptJWE({ kid, data })](./key-manager.keymanager.keymanagerdecryptjwe.md)              |           | Decrypts data                          |
-| [keyManagerDelete({ kid })](./key-manager.keymanager.keymanagerdelete.md)                            |           | Deletes a key                          |
-| [keyManagerEncryptJWE({ kid, to, data })](./key-manager.keymanager.keymanagerencryptjwe.md)          |           | Encrypts data                          |
-| [keyManagerGet({ kid })](./key-manager.keymanager.keymanagerget.md)                                  |           | Returns an existing key                |
-| [keyManagerGetKeyManagementSystems()](./key-manager.keymanager.keymanagergetkeymanagementsystems.md) |           | Lists available key management systems |
-| [keyManagerImport(key)](./key-manager.keymanager.keymanagerimport.md)                                |           | Imports a created key                  |
-| [keyManagerSignEthTX({ kid, transaction })](./key-manager.keymanager.keymanagersignethtx.md)         |           | Signs Ethereum transaction             |
-| [keyManagerSignJWT({ kid, data })](./key-manager.keymanager.keymanagersignjwt.md)                    |           | Signs JWT                              |
+| Method                                                                                               | Modifiers | Description                                                 |
+| ---------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------- |
+| [createX25519ECDH(secretKeyRef)](./key-manager.keymanager.createx25519ecdh.md)                       |           |                                                             |
+| [keyManagerCreate(args)](./key-manager.keymanager.keymanagercreate.md)                               |           | Creates and returns a new key                               |
+| [keyManagerDecryptJWE({ kid, data })](./key-manager.keymanager.keymanagerdecryptjwe.md)              |           | Decrypts data                                               |
+| [keyManagerDelete({ kid })](./key-manager.keymanager.keymanagerdelete.md)                            |           | Deletes a key                                               |
+| [keyManagerEncryptJWE({ kid, to, data })](./key-manager.keymanager.keymanagerencryptjwe.md)          |           | Encrypts data                                               |
+| [keyManagerGet({ kid })](./key-manager.keymanager.keymanagerget.md)                                  |           | Returns an existing key                                     |
+| [keyManagerGetKeyManagementSystems()](./key-manager.keymanager.keymanagergetkeymanagementsystems.md) |           | Lists available key management systems                      |
+| [keyManagerImport(key)](./key-manager.keymanager.keymanagerimport.md)                                |           | Imports a created key                                       |
+| [keyManagerSharedSecret(args)](./key-manager.keymanager.keymanagersharedsecret.md)                   |           |                                                             |
+| [keyManagerSign(args)](./key-manager.keymanager.keymanagersign.md)                                   |           | Generates a signature according to the algorithm specified. |
+| [keyManagerSignEthTX({ kid, transaction })](./key-manager.keymanager.keymanagersignethtx.md)         |           | Signs Ethereum transaction                                  |
+| [keyManagerSignJWT({ kid, data })](./key-manager.keymanager.keymanagersignjwt.md)                    |           | Signs JWT                                                   |

@@ -8,10 +8,14 @@ hide_title: true
 
 ## AbstractKeyManagementSystem.signEthTX() method
 
+> Warning: This API is now obsolete.
+>
+> please use `sign({key, alg: 'eth_signTransaction', data: arrayify(serialize(transaction))})` instead
+
 <b>Signature:</b>
 
 ```typescript
-abstract signEthTX(args: {
+signEthTX({ key, transaction }: {
         key: IKey;
         transaction: object;
     }): Promise<string>;
@@ -19,9 +23,9 @@ abstract signEthTX(args: {
 
 ## Parameters
 
-| Parameter | Type                                                   | Description |
-| --------- | ------------------------------------------------------ | ----------- |
-| args      | { key: [IKey](./core.ikey.md) ; transaction: object; } |             |
+| Parameter            | Type                                                   | Description |
+| -------------------- | ------------------------------------------------------ | ----------- |
+| { key, transaction } | { key: [IKey](./core.ikey.md) ; transaction: object; } |             |
 
 <b>Returns:</b>
 

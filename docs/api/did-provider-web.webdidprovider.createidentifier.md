@@ -11,18 +11,19 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-createIdentifier({ kms, alias }: {
+createIdentifier({ kms, alias, options }: {
         kms?: string;
         alias?: string;
+        options: any;
     }, context: IContext): Promise<Omit<IIdentifier, 'provider'>>;
 ```
 
 ## Parameters
 
-| Parameter      | Type                              | Description |
-| -------------- | --------------------------------- | ----------- |
-| { kms, alias } | { kms?: string; alias?: string; } |             |
-| context        | IContext                          |             |
+| Parameter               | Type                                            | Description |
+| ----------------------- | ----------------------------------------------- | ----------- |
+| { kms, alias, options } | { kms?: string; alias?: string; options: any; } |             |
+| context                 | IContext                                        |             |
 
 <b>Returns:</b>
 

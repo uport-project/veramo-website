@@ -26,11 +26,11 @@ export declare class WebDIDProvider extends AbstractIdentifierProvider
 
 ## Methods
 
-| Method                                                                                                   | Modifiers | Description |
-| -------------------------------------------------------------------------------------------------------- | --------- | ----------- |
-| [addKey({ identifier, key, options }, context)](./did-provider-web.webdidprovider.addkey.md)             |           |             |
-| [addService({ identifier, service, options }, context)](./did-provider-web.webdidprovider.addservice.md) |           |             |
-| [createIdentifier({ kms, alias }, context)](./did-provider-web.webdidprovider.createidentifier.md)       |           |             |
-| [deleteIdentifier(identifier, context)](./did-provider-web.webdidprovider.deleteidentifier.md)           |           |             |
-| [removeKey(args, context)](./did-provider-web.webdidprovider.removekey.md)                               |           |             |
-| [removeService(args, context)](./did-provider-web.webdidprovider.removeservice.md)                       |           |             |
+| Method                                                                                                      | Modifiers | Description |
+| ----------------------------------------------------------------------------------------------------------- | --------- | ----------- |
+| [addKey({ identifier, key, options }, context)](./did-provider-web.webdidprovider.addkey.md)                |           |             |
+| [addService({ identifier, service, options }, context)](./did-provider-web.webdidprovider.addservice.md)    |           |             |
+| [createIdentifier({ kms, alias, options }, context)](./did-provider-web.webdidprovider.createidentifier.md) |           |             |
+| [deleteIdentifier(identifier, context)](./did-provider-web.webdidprovider.deleteidentifier.md)              |           |             |
+| [removeKey(args, context)](./did-provider-web.webdidprovider.removekey.md)                                  |           |             |
+| [removeService(args, context)](./did-provider-web.webdidprovider.removeservice.md)                          |           |             |

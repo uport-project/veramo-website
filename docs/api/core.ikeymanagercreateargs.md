@@ -18,8 +18,8 @@ export interface IKeyManagerCreateArgs
 
 ## Properties
 
-| Property                                     | Type                           | Description             |
-| -------------------------------------------- | ------------------------------ | ----------------------- |
-| [kms](./core.ikeymanagercreateargs.kms.md)   | string                         | Key Management System   |
-| [meta](./core.ikeymanagercreateargs.meta.md) | object                         | Optional. Key meta data |
-| [type](./core.ikeymanagercreateargs.type.md) | [TKeyType](./core.tkeytype.md) | Key type                |
+| Property                                     | Type                                 | Description             |
+| -------------------------------------------- | ------------------------------------ | ----------------------- |
+| [kms](./core.ikeymanagercreateargs.kms.md)   | string                               | Key Management System   |
+| [meta](./core.ikeymanagercreateargs.meta.md) | [KeyMetadata](./core.keymetadata.md) | Optional. Key meta data |
+| [type](./core.ikeymanagercreateargs.type.md) | [TKeyType](./core.tkeytype.md)       | Key type                |

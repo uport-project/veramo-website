@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare type KeyType = 'Ed25519' | 'Secp256k1'
+export declare type KeyType = TKeyType
 ```

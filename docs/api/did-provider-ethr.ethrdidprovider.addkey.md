@@ -15,7 +15,7 @@ addKey({ identifier, key, options }: {
         identifier: IIdentifier;
         key: IKey;
         options?: any;
-    }, context: IContext): Promise<any>;
+    }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
@@ -23,7 +23,7 @@ addKey({ identifier, key, options }: {
 | Parameter                    | Type                                                                                                       | Description |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------- |
 | { identifier, key, options } | { identifier: [IIdentifier](./core.iidentifier.md) ; key: [IKey](./core.ikey.md)<!-- -->; options?: any; } |             |
-| context                      | IContext                                                                                                   |             |
+| context                      | IRequiredContext                                                                                           |             |
 
 <b>Returns:</b>
 

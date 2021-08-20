@@ -8,10 +8,12 @@ hide_title: true
 
 ## DIDResolverPlugin.resolveDid() method
 
+Resolves DID and returns DID Resolution Result
+
 <b>Signature:</b>
 
 ```typescript
-resolveDid({ didUrl, options }: {
+resolveDid({ didUrl, options, }: {
         didUrl: string;
         options?: DIDResolutionOptions;
     }): Promise<DIDResolutionResult>;
@@ -19,9 +21,9 @@ resolveDid({ didUrl, options }: {
 
 ## Parameters
 
-| Parameter           | Type                                                | Description |
-| ------------------- | --------------------------------------------------- | ----------- |
-| { didUrl, options } | { didUrl: string; options?: DIDResolutionOptions; } |             |
+| Parameter            | Type                                                | Description |
+| -------------------- | --------------------------------------------------- | ----------- |
+| { didUrl, options, } | { didUrl: string; options?: DIDResolutionOptions; } |             |
 
 <b>Returns:</b>
 

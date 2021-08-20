@@ -15,7 +15,7 @@ addService({ identifier, service, options }: {
         identifier: IIdentifier;
         service: IService;
         options?: any;
-    }, context: IContext): Promise<any>;
+    }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
@@ -23,7 +23,7 @@ addService({ identifier, service, options }: {
 | Parameter                        | Type                                                                                                                   | Description |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------- |
 | { identifier, service, options } | { identifier: [IIdentifier](./core.iidentifier.md) ; service: [IService](./core.iservice.md)<!-- -->; options?: any; } |             |
-| context                          | IContext                                                                                                               |             |
+| context                          | IRequiredContext                                                                                                       |             |
 
 <b>Returns:</b>
 

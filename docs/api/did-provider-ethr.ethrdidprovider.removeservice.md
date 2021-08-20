@@ -15,7 +15,7 @@ removeService(args: {
         identifier: IIdentifier;
         id: string;
         options?: any;
-    }, context: IContext): Promise<any>;
+    }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
@@ -23,7 +23,7 @@ removeService(args: {
 | Parameter | Type                                                                              | Description |
 | --------- | --------------------------------------------------------------------------------- | ----------- |
 | args      | { identifier: [IIdentifier](./core.iidentifier.md) ; id: string; options?: any; } |             |
-| context   | IContext                                                                          |             |
+| context   | IRequiredContext                                                                  |             |
 
 <b>Returns:</b>
 

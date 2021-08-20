@@ -10,7 +10,11 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-This is used to create a message according to the initial [DIDComm-js](https://github.com/decentralized-identifier/DIDComm-js) implementation.
+> Warning: This API is now obsolete.
+>
+> TBD - will be replaced by [DIDComm.sendDIDCommMessage()](./did-comm.didcomm.senddidcommmessage.md)
+>
+> This is used to create a message according to the initial [DIDComm-js](https://github.com/decentralized-identifier/DIDComm-js) implementation.
 
 <b>Signature:</b>
 

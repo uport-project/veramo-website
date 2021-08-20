@@ -33,6 +33,7 @@ export declare class DataStore implements IAgentPlugin
 
 | Method                                                                                                     | Modifiers | Description |
 | ---------------------------------------------------------------------------------------------------------- | --------- | ----------- |
+| [dataStoreDeleteVerifiableCredential(args)](./data-store.datastore.datastoredeleteverifiablecredential.md) |           |             |
 | [dataStoreGetMessage(args)](./data-store.datastore.datastoregetmessage.md)                                 |           |             |
 | [dataStoreGetVerifiableCredential(args)](./data-store.datastore.datastoregetverifiablecredential.md)       |           |             |
 | [dataStoreGetVerifiablePresentation(args)](./data-store.datastore.datastoregetverifiablepresentation.md)   |           |             |

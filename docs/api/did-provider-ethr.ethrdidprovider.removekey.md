@@ -15,7 +15,7 @@ removeKey(args: {
         identifier: IIdentifier;
         kid: string;
         options?: any;
-    }, context: IContext): Promise<any>;
+    }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
@@ -23,7 +23,7 @@ removeKey(args: {
 | Parameter | Type                                                                               | Description |
 | --------- | ---------------------------------------------------------------------------------- | ----------- |
 | args      | { identifier: [IIdentifier](./core.iidentifier.md) ; kid: string; options?: any; } |             |
-| context   | IContext                                                                           |             |
+| context   | IRequiredContext                                                                   |             |
 
 <b>Returns:</b>
 

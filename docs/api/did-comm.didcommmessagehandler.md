@@ -28,6 +28,6 @@ export declare class DIDCommMessageHandler extends AbstractMessageHandler
 
 ## Methods
 
-| Method                                                                 | Modifiers | Description          |
-| ---------------------------------------------------------------------- | --------- | -------------------- |
-| [handle(message, context)](./did-comm.didcommmessagehandler.handle.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                                 | Modifiers | Description                                                                                                                                                                                                    |
+| ---------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [handle(message, context)](./did-comm.didcommmessagehandler.handle.md) |           | <b><i>(BETA)</i></b> Handles a new packed DIDCommV2 Message (also Alpha support but soon deprecated). - Tests whether raw message is a DIDCommV2 message - Unpacks raw message (JWM/JWE/JWS, or plain JSON). - |

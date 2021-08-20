@@ -10,6 +10,8 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
+Handles a new packed DIDCommV2 Message (also Alpha support but soon deprecated). - Tests whether raw message is a DIDCommV2 message - Unpacks raw message (JWM/JWE/JWS, or plain JSON). -
+
 <b>Signature:</b>
 
 ```typescript

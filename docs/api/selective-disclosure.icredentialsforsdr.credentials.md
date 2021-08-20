@@ -13,5 +13,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-credentials: VerifiableCredential[];
+credentials: UniqueVerifiableCredential[];
 ```

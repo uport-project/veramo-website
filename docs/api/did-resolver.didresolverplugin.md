@@ -31,6 +31,7 @@ export declare class DIDResolverPlugin implements IAgentPlugin
 
 ## Methods
 
-| Method                                                                            | Modifiers | Description |
-| --------------------------------------------------------------------------------- | --------- | ----------- |
-| [resolveDid({ didUrl, options })](./did-resolver.didresolverplugin.resolvedid.md) |           |             |
+| Method                                                                                                            | Modifiers | Description                                                                       |
+| ----------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------- |
+| [getDIDComponentById({ didDocument, didUrl, section, })](./did-resolver.didresolverplugin.getdidcomponentbyid.md) |           | Dereferences a DID URL fragment and returns the corresponding DID document entry. |
+| [resolveDid({ didUrl, options, })](./did-resolver.didresolverplugin.resolvedid.md)                                |           | Resolves DID and returns DID Resolution Result                                    |

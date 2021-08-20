@@ -8,10 +8,14 @@ hide_title: true
 
 ## AbstractKeyManagementSystem.signJWT() method
 
+> Warning: This API is now obsolete.
+>
+> please use `sign({key, data})` instead, with `Uint8Array` data
+
 <b>Signature:</b>
 
 ```typescript
-abstract signJWT(args: {
+signJWT({ key, data }: {
         key: IKey;
         data: string | Uint8Array;
     }): Promise<string>;
@@ -19,9 +23,9 @@ abstract signJWT(args: {
 
 ## Parameters
 
-| Parameter | Type                                                              | Description |
-| --------- | ----------------------------------------------------------------- | ----------- |
-| args      | { key: [IKey](./core.ikey.md) ; data: string &#124; Uint8Array; } |             |
+| Parameter     | Type                                                              | Description |
+| ------------- | ----------------------------------------------------------------- | ----------- |
+| { key, data } | { key: [IKey](./core.ikey.md) ; data: string &#124; Uint8Array; } |             |
 
 <b>Returns:</b>
 
