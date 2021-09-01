@@ -101,6 +101,31 @@ So if you don't need this functionality, instead of setting `server.defaultDID.c
 
 This is an additional package that allows you to create, use and resolve `did:key` identifiers directly in Veramo.
 
+To be able to create and manage `did:key` identifiers you'll have to add the provider to the `DIDManager` plugin:
+
+```typescript
+import { KeyDIDProvider } from '@veramo/did-provider-key'
+
+const agent = createAgent<>({
+  plugins: [
+    // ...
+    new DIDManager({
+      // ...
+      providers: {
+        // ...
+        'did:key': new KeyDIDProvider({
+          defaultKms: 'local',
+        }),
+      },
+// ...
+```
+
+And then to create a `did:key` identifier:
+
+```typescript
+const myKeyDid = await agent.didManagerCreate({ provider: 'did:key' })
+```
+
 ---
 
 As always, if there are any issues, [let us know abut them](https://github.com/uport-project/veramo/issues), and if
