@@ -4,7 +4,7 @@ title: Create Credential
 sidebar_label: Create Credential
 ---
 
-This guide will walk you through the basic functions to get you started with the Veramo CLI by learning the basic commands and issuing a credential. The core API of Veramo is exposed by the CLI tool. Learn more about [installing and configuring the Veramo CLI](/docs/veramo_agent/cli_tool).
+This guide will walk you through the basic functions to get you started with the Veramo CLI by learning the basic commands and issuing a credential. The core API of Veramo is exposed by the CLI tool. Learn more about [installing and configuring the Veramo CLI](/docs/veramo_agent/cli_tool.md).
 
 Now, let's create an identifier, a credential, and learn where everything is stored.
 
@@ -29,7 +29,9 @@ You can resolve any DID using the resolver:
 ```bash
 veramo did resolve did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8
 ```
+
 _Output:_
+
 ```json
 {
   "didDocumentMetadata": {},
@@ -50,12 +52,8 @@ _Output:_
         "blockchainAccountId": "0xF3AbEbb0d4F5d7e08c2557772f9Ce8692A795ab8@eip155:1"
       }
     ],
-    "authentication": [
-      "did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8#controller"
-    ],
-    "assertionMethod": [
-      "did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8#controller"
-    ]
+    "authentication": ["did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8#controller"],
+    "assertionMethod": ["did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8#controller"]
   }
 }
 ```
@@ -67,7 +65,9 @@ Now let's create your first credential with Veramo using the DID you just create
 ```bash
 veramo credential create
 ```
+
 _Output:_
+
 ```json
 {
   "credentialSubject": {
@@ -77,13 +77,8 @@ _Output:_
   "issuer": {
     "id": "did:ethr:0xf3abebb0d4f5d7e08c2557772f9ce8692a795ab8"
   },
-  "type": [
-    "VerifiableCredential",
-    "Profile"
-  ],
-  "@context": [
-    "https://www.w3.org/2018/credentials/v1"
-  ],
+  "type": ["VerifiableCredential", "Profile"],
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
   "issuanceDate": "2020-12-15T12:57:25.000Z",
   "proof": {
     "type": "JwtProof2020",
