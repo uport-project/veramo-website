@@ -1,5 +1,6 @@
 ---
-id: did_methods title: DID Methods
+id: did_methods
+title: DID Methods
 ---
 
 A definition of how a specific DID method scheme is implemented. A DID method is defined by a DID method specification,
