@@ -145,7 +145,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
 ```
 
 > **Note:**
-> 
+>
 > The types you specify for agent creation are optional, but may be very helpful when writing TypeScript, as long as they
 > match the plugins that you add to the agent.
 >

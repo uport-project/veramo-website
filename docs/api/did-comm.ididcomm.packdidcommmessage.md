@@ -29,4 +29,4 @@ packDIDCommMessage(args: IPackDIDCommMessageArgs, context: IAgentContext<IDIDMan
 
 Promise&lt;[IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) &gt;
 
-Promise &lt;<!-- -->{<!-- -->message: string<!-- -->}<!-- -->&gt; - a Promise that resolves to an object containing the serialized packed message
+a Promise that resolves to an object containing the serialized packed `message` string

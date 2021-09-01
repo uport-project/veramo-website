@@ -12,7 +12,11 @@ hide_title: true
 
 The possible types of message packing.
 
-\* `authcrypt` , `anoncrypt`<!-- -->, `anoncrypt+authcrypt`<!-- -->, and `anoncrypt+jws` will produce [DIDCommMessageMediaType.ENCRYPTED](./did-comm.didcommmessagemediatype.encrypted.md) messages. \* `jws` will produce [DIDCommMessageMediaType.SIGNED](./did-comm.didcommmessagemediatype.signed.md) messages. \* `none` will produce [DIDCommMessageMediaType.PLAIN](./did-comm.didcommmessagemediatype.plain.md) messages.
+`authcrypt` , `anoncrypt`<!-- -->, `anoncrypt+authcrypt`<!-- -->, and `anoncrypt+jws` will produce `DIDCommMessageMediaType.ENCRYPTED` messages.
+
+`jws` will produce `DIDCommMessageMediaType.SIGNED` messages.
+
+`none` will produce `DIDCommMessageMediaType.PLAIN` messages.
 
 <b>Signature:</b>
 

@@ -10,7 +10,9 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Input arguments for [IDIDComm.sendMessageDIDCommAlpha1()](./did-comm.ididcomm.sendmessagedidcommalpha1.md)
+> Warning: This API is now obsolete.
+>
+> Please use [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) instead. This will be removed in Veramo 4.0. Input arguments for [IDIDComm.sendMessageDIDCommAlpha1()](./did-comm.ididcomm.sendmessagedidcommalpha1.md)
 
 <b>Signature:</b>
 
