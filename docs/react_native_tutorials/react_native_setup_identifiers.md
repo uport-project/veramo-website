@@ -4,11 +4,17 @@ title: React Native Setup & Identifiers
 sidebar_label: Setup & Identifiers
 ---
 
-This guide will walk you through setting up Veramo on React Native. You should have a good understanding of React Native and have your environment set up correctly to build iOS and Android apps. Check out the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. Node v12 or later is required to run Veramo.
+This guide will walk you through setting up Veramo on React Native. You should have a good understanding of React Native
+and have your environment set up correctly to build iOS and Android apps. Check out
+the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. Node v12 or later is required to
+run Veramo.
 
 ## Introduction
 
-Let's set up Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity provider will be `ethr-did`. Initially, we will set up the [agent](../veramo_agent/introduction.md) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](../basics/identifiers.md).
+Let's set up Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity
+provider will be `ethr-did`. Initially, we will set up the [agent](../veramo_agent/introduction.md) in the most basic
+config and add more plugins for additional functionality as we go. Right now we just want to create
+an [identifier](../basics/identifiers.md).
 
 ## Bootstrap React Native
 
@@ -30,13 +36,15 @@ We need to set up some native dependencies and shims that Veramo plugins will us
 yarn add @veramo/kms-local react-native-sqlite-storage
 ```
 
-Next, add the shim from `@ethersproject/shims` and the polyfill for strong random values following the recommendation [here](https://docs.ethers.io/v5/cookbook/react-native/#cookbook-reactnative-security).
+Next, add the shim from `@ethersproject/shims` and the polyfill for strong random values following the
+recommendation [here](https://docs.ethers.io/v5/cookbook/react-native/#cookbook-reactnative-security).
 
 ```bash
 yarn add @ethersproject/shims react-native-get-random-values
 ```
 
-To access node methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev dependencies.
+To access node methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev
+dependencies.
 
 ```bash
 yarn add rn-nodeify --dev
@@ -46,14 +54,15 @@ Add the following snippets to your package.json file
 
 ```json
 {
-    "scripts": {
+  "scripts": {
     ...
-        "postinstall": "rn-nodeify --install assert,buffer,process,crypto,stream,vm --hack"
-    }
+    "postinstall": "rn-nodeify --install assert,buffer,process,crypto,stream,vm --hack"
+  }
 }
 ```
 
-Import `shim.js` (created by rn-nodify),`react-native-get-random-values`, and `@ethersproject/shims` into the top of `index.js`.
+Import `shim.js` (created by rn-nodify),`react-native-get-random-values`, and `@ethersproject/shims` into the top
+of `index.js`.
 
 ```ts
 import './shim'
@@ -78,17 +87,20 @@ npx pod-install
 
 ### Veramo
 
-Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the next section.
+Now let's install Veramo Core and some plugins. Don't worry; we will walk through what each of these plugins does in the
+next section.
 
 ```bash
 yarn add @veramo/core @veramo/did-manager @veramo/kms-local @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
 ```
 
-Close the React native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
+Close the React native packager, clean the project, and rerun your app. If everything is okay, you should see the
+default React Native screen as before.
 
 ## Bootstrap Veramo
 
-We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts`
+and import the following dependencies:
 
 ```tsx
 // Core interfaces
@@ -179,10 +191,12 @@ Awesome! That's the basic agent configured and ready to use. Let's try it out :r
 
 ## Basic User Interface
 
-Now that the agent has been created and configured with plugins, we can create some identifiers. For this, we will need some basic UI.
+Now that the agent has been created and configured with plugins, we can create some identifiers. For this, we will need
+some basic UI.
 
-:::note
-Veramo does not impose decisions on how you manage state in your app and will work alongside any existing architecture like Redux or Mobx etc. For brevity, we use `useState` in this example, but you can treat Veramo like you would any async data source.
+:::note Veramo does not impose decisions on how you manage state in your app and will work alongside any existing
+architecture like Redux or Mobx etc. For brevity, we use `useState` in this example, but you can treat Veramo like you
+would any async data source.
 :::
 
 Open `App.tsx` and delete all the contents and add the following code:
@@ -246,4 +260,5 @@ const App = () => {
 export default App
 ```
 
-Close the packager and rebuild the app. Once loaded hit the **Create identifier** button a few times and you should see your identifiers being created!
+Close the packager and rebuild the app. Once loaded hit the **Create identifier** button a few times and you should see
+your identifiers being created!

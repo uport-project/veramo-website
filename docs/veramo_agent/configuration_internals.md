@@ -4,9 +4,13 @@ title: YAML Configuration
 sidebar_label: YAML Configuration
 ---
 
-The CLI uses a YAML file for configuration. This is a deep dive into the internals and how the yaml is converted into executable code.
+The CLI uses a YAML file for configuration. This is a deep dive into the internals and how the yaml is converted into
+executable code.
 
-Objects are created by a helper function [createObjects](https://github.com/uport-project/veramo/blob/faa7940c515bbd65dfaf9370594794f627099a38/packages/cli/src/lib/objectCreator.ts#L5), which recursively mutates the configuration object that was parsed from a YAML file and applies custom rules for objects containing:
+Objects are created by a helper
+function [createObjects](https://github.com/uport-project/veramo/blob/faa7940c515bbd65dfaf9370594794f627099a38/packages/cli/src/lib/objectCreator.ts#L5)
+, which recursively mutates the configuration object that was parsed from a YAML file and applies custom rules for
+objects containing:
 
 - Module imports
 
@@ -129,7 +133,8 @@ agent:
         - $ref: /didComm
 ```
 
-By referencing objects you can ensure that only one copy of the object is created in memory and can be shared by different modules. For example the same database connection used by different plugins:
+By referencing objects you can ensure that only one copy of the object is created in memory and can be shared by
+different modules. For example the same database connection used by different plugins:
 
 ```yaml
 dbConnection:

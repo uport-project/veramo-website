@@ -4,8 +4,8 @@ title: CLI Tool
 sidebar_label: CLI Tool
 ---
 
-:::important
-Ensure you have Node v12 or later installed. The CLI tool is currently only supported on MACOS and Linux systems. Windows support is coming soon.
+:::important Ensure you have Node v12 or later installed. The CLI tool is currently only supported on MACOS and Linux
+systems. Windows support is coming soon.
 :::
 
 The Veramo CLI exposes a configurable agent and includes an express server, open-api and swagger docs.
@@ -58,10 +58,11 @@ Commands:
 
 ## Create configuration
 
-You can use a per-project configuration or specify a configuration file with each command.
-If the current folder contains an `agent.yml` configuration file, for every command.
+You can use a per-project configuration or specify a configuration file with each command. If the current folder
+contains an `agent.yml` configuration file, for every command.
 
-Alternatively, you can specify a config file with each command using the `--config /path/to/your/config.yml` option. This will be used instead of a per-project configuration file.
+Alternatively, you can specify a config file with each command using the `--config /path/to/your/config.yml` option.
+This will be used instead of a per-project configuration file.
 
 You can create a configuration file in the current folder by running:
 
@@ -69,8 +70,8 @@ You can create a configuration file in the current folder by running:
 veramo config create
 ```
 
-This will create an `agent.yml` file that will get used next time you invoke a CLI command in this folder.
-By default, the database files are created in the same folder as the config file.
+This will create an `agent.yml` file that will get used next time you invoke a CLI command in this folder. By default,
+the database files are created in the same folder as the config file.
 
 If you want to connect to a hosted veramo instance you can create a configuration file by running:
 

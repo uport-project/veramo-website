@@ -4,7 +4,10 @@ title: AWS Deployment
 sidebar_label: AWS Deployment
 ---
 
-This guide covers the deployment of a [Veramo Cloud Agent](https://github.com/uport-project/veramo-agent-deploy) to AWS using Elastic Container Registry (ECR), Elastic Container Service (ECS), and Relational Database Service (RDS). We will also show how to use a GitHub action to automate building an image, pushing to your container repository, and deploying to the ECS cluster. This setup can be done either through the AWS Console UI or through the CLI
+This guide covers the deployment of a [Veramo Cloud Agent](https://github.com/uport-project/veramo-agent-deploy) to AWS
+using Elastic Container Registry (ECR), Elastic Container Service (ECS), and Relational Database Service (RDS). We will
+also show how to use a GitHub action to automate building an image, pushing to your container repository, and deploying
+to the ECS cluster. This setup can be done either through the AWS Console UI or through the CLI
 
 ### Prerequisites
 
@@ -48,7 +51,8 @@ Which should output something like this:
 
 ### Push the image to ECR
 
-The following steps can also be found in the AWS Console under "View Push Commands", and those will already have the correct region and URL values for your registry. The commands below will need to be updated with your own values.
+The following steps can also be found in the AWS Console under "View Push Commands", and those will already have the
+correct region and URL values for your registry. The commands below will need to be updated with your own values.
 
 - Retrieve an authentication token and authenticate your Docker client to your registry.
 
@@ -76,7 +80,8 @@ docker push ############.dkr.ecr.<region>.amazonaws.com/veramo-ecr:latest
 
 ### Create the database
 
-Next, go to the [RDS console](https://console.aws.amazon.com/rds/home?region=us-east-1#) for your region to create the Postgres database that we'll be connecting to.
+Next, go to the [RDS console](https://console.aws.amazon.com/rds/home?region=us-east-1#) for your region to create the
+Postgres database that we'll be connecting to.
 
 - Choose Postgres for the Database type
 - Take note of the user/pass combo you enter - we'll need that later on.
@@ -110,7 +115,8 @@ Once that is done, click "View Cluster". We'll need to get the public URL for ou
 - Add container
   ![Container Configuration](../../static/img/guides/aws_deployment/ecs-task-container-config.png)
 
-c. Pay special attention to the environment variables section. This is where important details are passed to the container. Also note that if the DB username or password contain special characters, they will need to be URL encoded.
+c. Pay special attention to the environment variables section. This is where important details are passed to the
+container. Also note that if the DB username or password contain special characters, they will need to be URL encoded.
 
 ### Create ECS Service
 
@@ -118,12 +124,17 @@ With the cluster defined, and the task definition configured, the last step is t
 
 - Go to the cluster and click Create under the Services tab:
   ![Create Service](../../static/img/guides/aws_deployment/ecs-create-service.png)
-- In the next screen, give your service a name, and for simplicity, choose Daemon for the service type which will make it easier to update the service with a GitHub Action.
+- In the next screen, give your service a name, and for simplicity, choose Daemon for the service type which will make
+  it easier to update the service with a GitHub Action.
 
 ![Service Configuration](../../static/img/guides/aws_deployment/ecs-service-config.png)
 
-Note: Adding a load balancer is optional, but not necessary. The aim for this guide was to keep things fairly simple, but you can add a load balancer here if that fits your project's requirements.
+Note: Adding a load balancer is optional, but not necessary. The aim for this guide was to keep things fairly simple,
+but you can add a load balancer here if that fits your project's requirements.
 
-Once the service is running, go to the URL for your instance and you should see the default Veramo page containing links to the DID doc, API Docs, and API Schema. Congrats! You're up and running.
+Once the service is running, go to the URL for your instance and you should see the default Veramo page containing links
+to the DID doc, API Docs, and API Schema. Congrats! You're up and running.
 
-One advantage of using ECS is that is quite straightforward to trigger an update using a Github Action and following [these steps](https://docs.github.com/en/actions/guides/deploying-to-amazon-elastic-container-service), beginning with 3: Store your Amazon ECS task definition as a JSON file in your GitHub repository.
+One advantage of using ECS is that is quite straightforward to trigger an update using a Github Action and
+following [these steps](https://docs.github.com/en/actions/guides/deploying-to-amazon-elastic-container-service),
+beginning with 3: Store your Amazon ECS task definition as a JSON file in your GitHub repository.

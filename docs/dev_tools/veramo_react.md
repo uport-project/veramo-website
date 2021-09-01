@@ -7,7 +7,9 @@ Veramo React makes it easy to interact with multiple agents in React Application
 
 ## Motivation
 
-When using veramo in your front end React apps you may need to manage the state of multiple remote and local agents. Veramo React makes it easy to manage agents without needing to write or maintain boilerplate code. It also enables making new features available to front-end stacks without developers needing to implement them manually.
+When using veramo in your front end React apps you may need to manage the state of multiple remote and local agents.
+Veramo React makes it easy to manage agents without needing to write or maintain boilerplate code. It also enables
+making new features available to front-end stacks without developers needing to implement them manually.
 
 When you add an agent configuration it is persisted to local storage. A randomly generated ID is assigned to each agent.
 
@@ -19,9 +21,12 @@ yarn add @veramo-community/veramo-react
 
 **_NOTE:_** Veramo React depends on the `@next` versions of `@veramo`
 
-Installation includes `@veramo/core@next` and `@veramo/remote-client@next`. You will **NOT** need to add additional `@veramo` dependencies to your app if you are just working with remote agents.
+Installation includes `@veramo/core@next` and `@veramo/remote-client@next`. You will **NOT** need to add
+additional `@veramo` dependencies to your app if you are just working with remote agents.
 
-The following sippet is a simplified extract from [Veramo Agent Explorer](https://github.com/veramolabs/agent-explorer) that uses [React Query](https://github.com/tannerlinsley/react-query) ontop of `Veramo React` to manage the data layer including caching and global data syncing.
+The following sippet is a simplified extract from [Veramo Agent Explorer](https://github.com/veramolabs/agent-explorer)
+that uses [React Query](https://github.com/tannerlinsley/react-query) ontop of `Veramo React` to manage the data layer
+including caching and global data syncing.
 
 ```tsx
 import React from 'react'
@@ -75,7 +80,8 @@ export const agent = createAgent<IResolver>({
 })
 ```
 
-In the provider setup above, add the following to bootstrap the local agent. You can also call [addAgent](#addagent) to add while your application is running.
+In the provider setup above, add the following to bootstrap the local agent. You can also call [addAgent](#addagent) to
+add while your application is running.
 
 ```tsx
 import {agent} from '../veramo'
@@ -85,7 +91,8 @@ import {agent} from '../veramo'
 
 ## `useVeramo hook`
 
-The primary hook that provides the following API to your app. The below syntax uses React Query to fetch the data and uses the cache key of `credentials + agentID` to identify the data to your app.
+The primary hook that provides the following API to your app. The below syntax uses React Query to fetch the data and
+uses the cache key of `credentials + agentID` to identify the data to your app.
 
 ```tsx
 import { useVeramo } from '@veramo-community/veramo-react'
@@ -109,7 +116,8 @@ export default = () => {
 }
 ```
 
-If you are not using React Query you can just call `agent?.dataStoreORMGetVerifiableCredentials()` and manage the data like any async data source.
+If you are not using React Query you can just call `agent?.dataStoreORMGetVerifiableCredentials()` and manage the data
+like any async data source.
 
 ## API
 

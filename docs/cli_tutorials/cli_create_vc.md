@@ -4,7 +4,9 @@ title: Create Credential
 sidebar_label: Create Credential
 ---
 
-This guide will walk you through the basic functions to get you started with the Veramo CLI by learning the basic commands and issuing a credential. The core API of Veramo is exposed by the CLI tool. Learn more about [installing and configuring the Veramo CLI](/docs/veramo_agent/cli_tool.md).
+This guide will walk you through the basic functions to get you started with the Veramo CLI by learning the basic
+commands and issuing a credential. The core API of Veramo is exposed by the CLI tool. Learn more
+about [installing and configuring the Veramo CLI](../veramo_agent/cli_tool.md).
 
 Now, let's create an identifier, a credential, and learn where everything is stored.
 
@@ -16,7 +18,8 @@ veramo config create
 
 ### Create a DID
 
-The first thing you will want to do is create an identifier using the `did create` command. This command will create a DID and store the keys in a local database.
+The first thing you will want to do is create an identifier using the `did create` command. This command will create a
+DID and store the keys in a local database.
 
 ```bash
 veramo did create
@@ -60,7 +63,8 @@ _Output:_
 
 ### Create a verifiable credential
 
-Now let's create your first credential with Veramo using the DID you just created as both **issuer** and **subject**. This will be a _self-signed_ credential. Follow the command prompt after running:
+Now let's create your first credential with Veramo using the DID you just created as both **issuer** and **subject**.
+This will be a _self-signed_ credential. Follow the command prompt after running:
 
 ```bash
 veramo credential create

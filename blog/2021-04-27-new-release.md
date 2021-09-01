@@ -40,7 +40,7 @@ those for best compatibility.
 ## Some changes to the CLI configuration
 
 There are some slight changes to the `@veramo/cli` configuration, mostly around the `veramo server`. options. Check out
-the [veramo docs](https://veramo.io/docs/veramo_agent/configuration_internals) to see how the CLI configuration file
+the [veramo docs](../docs/veramo_agent/configuration_internals) to see how the CLI configuration file
 works.
 
 ### Ngrok is no longer included

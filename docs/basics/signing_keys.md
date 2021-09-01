@@ -3,7 +3,8 @@ id: signing_keys
 title: Signing & Keys
 ---
 
-To understand how verifiable data works it is important to have an understanding public keys and signing. The following videos provide an excellent overview.
+To understand how verifiable data works it is important to have an understanding public keys and signing. The following
+videos provide an excellent overview.
 
 Robert Miles PhD Student at University of Nottingham
 

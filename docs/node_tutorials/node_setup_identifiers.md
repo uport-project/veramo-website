@@ -8,7 +8,8 @@ This guide covers setting up an agent and creating identifiers in Node.
 
 ### Prerequisites
 
-You need to have Node v12 or later installed. In this example, we use yarn as the package manager, but you can also use npm.
+You need to have Node v12 or later installed. In this example, we use yarn as the package manager, but you can also use
+npm.
 
 Start by creating a directory for our project and initializing the npm package.
 
@@ -53,7 +54,8 @@ Add a tsconfig.json to your project
 
 ## Bootstrap Veramo
 
-We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts`
+and import the following dependencies:
 
 ```typescript
 // Core interfaces

@@ -4,7 +4,9 @@ title: React Setup & Resolver
 sidebar_label: Setup & Resolver
 ---
 
-Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up a DID resolver to work in a standard [Create React App](https://create-react-app.dev/) setup. It is possible to add your own identity, key management, and storage plugins that are browser compatible.
+Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up
+a DID resolver to work in a standard [Create React App](https://create-react-app.dev/) setup. It is possible to add your
+own identity, key management, and storage plugins that are browser compatible.
 
 ### Initialize app
 
@@ -21,7 +23,8 @@ Install veramo core, DIDResolver plugin and dependencies
 yarn add @veramo/core @veramo/did-resolver ethr-did-resolver web-did-resolver did-resolver
 ```
 
-Create a setup file in `src/veramo/setup.ts` and add the following code, replacing the `INFURA_PROJECT_ID` with your own.
+Create a setup file in `src/veramo/setup.ts` and add the following code, replacing the `INFURA_PROJECT_ID` with your
+own.
 
 ```ts
 import { createAgent, IResolver } from '@veramo/core'
@@ -111,4 +114,6 @@ Please note that global installs of create-react-app are no longer supported.
 You can fix this by running npm uninstall -g create-react-app or yarn global remove create-react-app before using create-react-app again.
 ```
 
-Be sure to follow the instructions in that message, and then run the `npx` command again. If you still the message, [this answer may help](https://stackoverflow.com/questions/59188624/template-not-provided-using-create-react-app).
+Be sure to follow the instructions in that message, and then run the `npx` command again. If you still the
+message, [this answer may help](https://stackoverflow.com/questions/59188624/template-not-provided-using-create-react-app)
+.
