@@ -3,7 +3,7 @@ id: agent_explorer
 title: Agent Explorer
 ---
 
-Agent explorer makes it easy to browse and interact with multiple agents while devoping apps on Veramo. At it's most basic it is a dashboard but could also be considered a front-end for a credential wallet.
+Agent explorer makes it easy to browse and interact with multiple agents while developing apps on Veramo. At it's most basic it is a dashboard but could also be considered a front-end for a credential wallet.
 
 ## Motivation
 

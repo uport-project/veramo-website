@@ -4,7 +4,7 @@ title: Veramo Agent
 sidebar_label: Introduction
 ---
 
-The **Veramo DID Agent** is the entry point into the Veramo framework. A Veramo Agent is an implmentation of an **Agent** using a plugin architecture. This architecture allows Veramo to be modular, scale well and play nicely with the vast array of standards in the verifiable data space. Veramo is opinionated when it comes to standards compliance but not when it comes to how you build your application layers.
+The **Veramo DID Agent** is the entry point into the Veramo framework. A Veramo Agent is an implementation of an **Agent** using a plugin architecture. This architecture allows Veramo to be modular, scale well and play nicely with the vast array of standards in the verifiable data space. Veramo is opinionated when it comes to standards compliance but not when it comes to how you build your application layers.
 
 ![img](../../static/img/diagrams/veramo_agent_simple.svg)
 

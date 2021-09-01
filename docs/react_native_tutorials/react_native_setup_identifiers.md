@@ -8,7 +8,7 @@ This guide will walk you through setting up Veramo on React Native. You should h
 
 ## Introduction
 
-Let's setup Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity provider will be `ethr-did`. Initially, we will set up the [agent](/docs/veramo_agent/introduction) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](/docs/basics/identifiers).
+Let's set up Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity provider will be `ethr-did`. Initially, we will set up the [agent](../veramo_agent/introduction.md) in the most basic config and add more plugins for additional functionality as we go. Right now we just want to create an [identifer](../basics/identifiers.md).
 
 ## Bootstrap React Native
 
@@ -30,7 +30,7 @@ We need to set up some native dependencies and shims that Veramo plugins will us
 yarn add @veramo/kms-local react-native-sqlite-storage
 ```
 
-Next, add the shim from `@ethersproject/shims` and the polyfill for strong random values following the recomendation [here](https://docs.ethers.io/v5/cookbook/react-native/#cookbook-reactnative-security).
+Next, add the shim from `@ethersproject/shims` and the polyfill for strong random values following the recommendation [here](https://docs.ethers.io/v5/cookbook/react-native/#cookbook-reactnative-security).
 
 ```bash
 yarn add @ethersproject/shims react-native-get-random-values
@@ -70,7 +70,7 @@ Open `shim.js` and uncomment `require('crypto)`
 require('crypto')
 ```
 
-Install all of the pods in your project that came with the new dependencies.
+Install all the pods in your project that came with the new dependencies.
 
 ```bash
 npx pod-install
@@ -84,7 +84,7 @@ Now let's install Veramo Core and some plugins. Don't worry; we will walk throug
 yarn add @veramo/core @veramo/did-manager @veramo/kms-local @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
 ```
 
-Close the react native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
+Close the React native packager, clean the project, and rerun your app. If everything is okay, you should see the default React Native screen as before.
 
 ## Bootstrap Veramo
 

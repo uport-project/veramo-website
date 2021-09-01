@@ -17,7 +17,7 @@ When you add an agent configuration it is persisted to local storage. A randomly
 yarn add @veramo-community/veramo-react
 ```
 
-**_NOTE:_** Veramo React depends on `@next` versions of `@veramo`
+**_NOTE:_** Veramo React depends on the `@next` versions of `@veramo`
 
 Installation includes `@veramo/core@next` and `@veramo/remote-client@next`. You will **NOT** need to add additional `@veramo` dependencies to your app if you are just working with remote agents.
 
@@ -75,7 +75,7 @@ export const agent = createAgent<IResolver>({
 })
 ```
 
-In the provider setup above, add the following to bootstrap the local agent. You can also call [addAgent](#addAgent) to add while your application is running.
+In the provider setup above, add the following to bootstrap the local agent. You can also call [addAgent](#addagent) to add while your application is running.
 
 ```tsx
 import {agent} from '../veramo'
