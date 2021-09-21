@@ -14,7 +14,7 @@ hide_title: true
 abstract createKey(args: {
         type: TKeyType;
         meta?: any;
-    }): Promise<Omit<IKey, 'kms'>>;
+    }): Promise<ManagedKeyInfo>;
 ```
 
 ## Parameters
@@ -25,4 +25,4 @@ abstract createKey(args: {
 
 <b>Returns:</b>
 
-Promise&lt;Omit&lt;[IKey](./core.ikey.md) , 'kms'&gt;&gt;
+Promise&lt;[ManagedKeyInfo](./core.managedkeyinfo.md) &gt;

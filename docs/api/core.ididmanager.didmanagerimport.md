@@ -13,14 +13,14 @@ Imports identifier
 <b>Signature:</b>
 
 ```typescript
-didManagerImport(args: IIdentifier, context: IAgentContext<IKeyManager>): Promise<IIdentifier>;
+didManagerImport(args: MinimalImportableIdentifier, context: IAgentContext<IKeyManager>): Promise<IIdentifier>;
 ```
 
 ## Parameters
 
 | Parameter | Type                                                                                          | Description |
 | --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IIdentifier](./core.iidentifier.md)                                                          |             |
+| args      | [MinimalImportableIdentifier](./core.minimalimportableidentifier.md)                          |             |
 | context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
 
 <b>Returns:</b>

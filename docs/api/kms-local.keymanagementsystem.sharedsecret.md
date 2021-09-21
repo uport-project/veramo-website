@@ -12,16 +12,16 @@ hide_title: true
 
 ```typescript
 sharedSecret(args: {
-        myKey: IKey;
+        myKeyRef: Pick<IKey, 'kid'>;
         theirKey: Pick<IKey, 'type' | 'publicKeyHex'>;
     }): Promise<string>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                                    | Description |
-| --------- | ----------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | { myKey: [IKey](./core.ikey.md) ; theirKey: Pick&lt;[IKey](./core.ikey.md)<!-- -->, 'type' &#124; 'publicKeyHex'&gt;; } |             |
+| Parameter | Type                                                                                                                                          | Description |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | { myKeyRef: Pick&lt;[IKey](./core.ikey.md) , 'kid'&gt;; theirKey: Pick&lt;[IKey](./core.ikey.md)<!-- -->, 'type' &#124; 'publicKeyHex'&gt;; } |             |
 
 <b>Returns:</b>
 

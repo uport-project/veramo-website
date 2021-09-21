@@ -39,6 +39,8 @@ export declare class Message extends BaseEntity
 
 ## Methods
 
-| Method                                   | Modifiers | Description |
-| ---------------------------------------- | --------- | ----------- |
-| [setId()](./data-store.message.setid.md) |           |             |
+| Method                                                   | Modifiers | Description |
+| -------------------------------------------------------- | --------- | ----------- |
+| [setId()](./data-store.message.setid.md)                 |           |             |
+| [setSaveDate()](./data-store.message.setsavedate.md)     |           |             |
+| [setUpdateDate()](./data-store.message.setupdatedate.md) |           |             |

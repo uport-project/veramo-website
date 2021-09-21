@@ -20,6 +20,8 @@ export declare abstract class AbstractKeyManagementSystem
 | ----------------------------------------------------------------------------------------- | --------- | ----------- |
 | [createKey(args)](./key-manager.abstractkeymanagementsystem.createkey.md)                 |           |             |
 | [deleteKey(args)](./key-manager.abstractkeymanagementsystem.deletekey.md)                 |           |             |
+| [importKey(args)](./key-manager.abstractkeymanagementsystem.importkey.md)                 |           |             |
+| [listKeys()](./key-manager.abstractkeymanagementsystem.listkeys.md)                       |           |             |
 | [sharedSecret(args)](./key-manager.abstractkeymanagementsystem.sharedsecret.md)           |           |             |
 | [sign(args)](./key-manager.abstractkeymanagementsystem.sign.md)                           |           |             |
 | [signEthTX({ key, transaction })](./key-manager.abstractkeymanagementsystem.signethtx.md) |           |             |

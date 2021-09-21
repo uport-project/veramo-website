@@ -21,3 +21,4 @@ export declare abstract class AbstractKeyStore
 | [delete(args)](./key-manager.abstractkeystore.delete.md) |           |             |
 | [get(args)](./key-manager.abstractkeystore.get.md)       |           |             |
 | [import(args)](./key-manager.abstractkeystore.import.md) |           |             |
+| [list(args)](./key-manager.abstractkeystore.list.md)     |           |             |

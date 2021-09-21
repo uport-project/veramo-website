@@ -16,16 +16,16 @@ hide_title: true
 
 ```typescript
 signJWT({ key, data }: {
-        key: IKey;
+        key: Pick<IKey, 'kid'>;
         data: string | Uint8Array;
     }): Promise<string>;
 ```
 
 ## Parameters
 
-| Parameter     | Type                                                              | Description |
-| ------------- | ----------------------------------------------------------------- | ----------- |
-| { key, data } | { key: [IKey](./core.ikey.md) ; data: string &#124; Uint8Array; } |             |
+| Parameter     | Type                                                                                 | Description |
+| ------------- | ------------------------------------------------------------------------------------ | ----------- |
+| { key, data } | { key: Pick&lt;[IKey](./core.ikey.md) , 'kid'&gt;; data: string &#124; Uint8Array; } |             |
 
 <b>Returns:</b>
 

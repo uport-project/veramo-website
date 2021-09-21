@@ -13,12 +13,11 @@ Constructs a new instance of the `KeyStore` class
 <b>Signature:</b>
 
 ```typescript
-constructor(dbConnection: Promise<Connection>, secretBox?: AbstractSecretBox | undefined);
+constructor(dbConnection: Promise<Connection>);
 ```
 
 ## Parameters
 
-| Parameter    | Type                                                                     | Description |
-| ------------ | ------------------------------------------------------------------------ | ----------- |
-| dbConnection | Promise&lt;Connection&gt;                                                |             |
-| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined |             |
+| Parameter    | Type                      | Description |
+| ------------ | ------------------------- | ----------- |
+| dbConnection | Promise&lt;Connection&gt; |             |

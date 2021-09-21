@@ -13,7 +13,7 @@ Creates and returns a new key
 <b>Signature:</b>
 
 ```typescript
-keyManagerCreate(args: IKeyManagerCreateArgs): Promise<IKey>;
+keyManagerCreate(args: IKeyManagerCreateArgs): Promise<ManagedKeyInfo>;
 ```
 
 ## Parameters
@@ -24,4 +24,4 @@ keyManagerCreate(args: IKeyManagerCreateArgs): Promise<IKey>;
 
 <b>Returns:</b>
 
-Promise&lt;[IKey](./core.ikey.md) &gt;
+Promise&lt;[ManagedKeyInfo](./core.managedkeyinfo.md) &gt;

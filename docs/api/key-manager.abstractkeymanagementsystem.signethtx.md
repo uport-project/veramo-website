@@ -16,16 +16,16 @@ hide_title: true
 
 ```typescript
 signEthTX({ key, transaction }: {
-        key: IKey;
+        key: Pick<IKey, 'kid'>;
         transaction: object;
     }): Promise<string>;
 ```
 
 ## Parameters
 
-| Parameter            | Type                                                   | Description |
-| -------------------- | ------------------------------------------------------ | ----------- |
-| { key, transaction } | { key: [IKey](./core.ikey.md) ; transaction: object; } |             |
+| Parameter            | Type                                                                      | Description |
+| -------------------- | ------------------------------------------------------------------------- | ----------- |
+| { key, transaction } | { key: Pick&lt;[IKey](./core.ikey.md) , 'kid'&gt;; transaction: object; } |             |
 
 <b>Returns:</b>
 

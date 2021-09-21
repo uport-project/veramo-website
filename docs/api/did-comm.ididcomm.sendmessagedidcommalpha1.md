@@ -12,7 +12,7 @@ hide_title: true
 
 > Warning: This API is now obsolete.
 >
-> TBD - will be replaced by [DIDComm.sendDIDCommMessage()](./did-comm.didcomm.senddidcommmessage.md)
+> Please use instead. This will be removed in Veramo 4.0
 >
 > This is used to create a message according to the initial [DIDComm-js](https://github.com/decentralized-identifier/DIDComm-js) implementation.
 

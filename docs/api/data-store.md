@@ -23,7 +23,10 @@ hide_title: true
 | [Key](./data-store.key.md)                                           |             |
 | [KeyStore](./data-store.keystore.md)                                 |             |
 | [Message](./data-store.message.md)                                   |             |
+| [PreMigrationKey](./data-store.premigrationkey.md)                   |             |
 | [Presentation](./data-store.presentation.md)                         |             |
+| [PrivateKey](./data-store.privatekey.md)                             |             |
+| [PrivateKeyStore](./data-store.privatekeystore.md)                   |             |
 | [ProfileDiscoveryProvider](./data-store.profilediscoveryprovider.md) |             |
 | [Service](./data-store.service.md)                                   |             |
 

@@ -11,14 +11,14 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-abstract import(args: IKey): Promise<boolean>;
+abstract import(args: Partial<IKey>): Promise<boolean>;
 ```
 
 ## Parameters
 
-| Parameter | Type                   | Description |
-| --------- | ---------------------- | ----------- |
-| args      | [IKey](./core.ikey.md) |             |
+| Parameter | Type                                   | Description |
+| --------- | -------------------------------------- | ----------- |
+| args      | Partial&lt;[IKey](./core.ikey.md) &gt; |             |
 
 <b>Returns:</b>
 

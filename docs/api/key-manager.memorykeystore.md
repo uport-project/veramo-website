@@ -23,3 +23,4 @@ export declare class MemoryKeyStore extends AbstractKeyStore
 | [delete({ kid })](./key-manager.memorykeystore.delete.md) |           |             |
 | [get({ kid })](./key-manager.memorykeystore.get.md)       |           |             |
 | [import(args)](./key-manager.memorykeystore.import.md)    |           |             |
+| [list(args)](./key-manager.memorykeystore.list.md)        |           |             |

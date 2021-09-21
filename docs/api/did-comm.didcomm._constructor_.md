@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Constructor that takes a list of objects.
+Constructor that takes a list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects.
 
 <b>Signature:</b>
 
@@ -20,6 +20,6 @@ constructor(transports?: IDIDCommTransport[]);
 
 ## Parameters
 
-| Parameter  | Type                  | Description        |
-| ---------- | --------------------- | ------------------ |
-| transports | IDIDCommTransport\[\] | A list of objects. |
+| Parameter  | Type                                                      | Description                                                             |
+| ---------- | --------------------------------------------------------- | ----------------------------------------------------------------------- |
+| transports | [IDIDCommTransport](./did-comm.ididcommtransport.md) \[\] | A list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects. |

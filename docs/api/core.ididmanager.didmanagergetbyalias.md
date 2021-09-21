@@ -30,7 +30,7 @@ Promise&lt;[IIdentifier](./core.iidentifier.md) &gt;
 
 ```typescript
 const identifier = await agent.didManagerGetByAlias({
-  alias: 'alice',
+  alias: 'charlie',
   provider: 'did:ethr:rinkeby',
 })
 ```

@@ -18,12 +18,11 @@ export declare class Key extends BaseEntity
 
 ## Properties
 
-| Property                                           | Modifiers | Type                                             | Description |
-| -------------------------------------------------- | --------- | ------------------------------------------------ | ----------- |
-| [identifier](./data-store.key.identifier.md)       |           | [Identifier](./data-store.identifier.md)         |             |
-| [kid](./data-store.key.kid.md)                     |           | string                                           |             |
-| [kms](./data-store.key.kms.md)                     |           | string                                           |             |
-| [meta](./data-store.key.meta.md)                   |           | [KeyMetadata](./core.keymetadata.md) &#124; null |             |
-| [privateKeyHex](./data-store.key.privatekeyhex.md) |           | string                                           |             |
-| [publicKeyHex](./data-store.key.publickeyhex.md)   |           | string                                           |             |
-| [type](./data-store.key.type.md)                   |           | KeyType                                          |             |
+| Property                                         | Modifiers | Type                                             | Description |
+| ------------------------------------------------ | --------- | ------------------------------------------------ | ----------- |
+| [identifier](./data-store.key.identifier.md)     |           | [Identifier](./data-store.identifier.md)         |             |
+| [kid](./data-store.key.kid.md)                   |           | string                                           |             |
+| [kms](./data-store.key.kms.md)                   |           | string                                           |             |
+| [meta](./data-store.key.meta.md)                 |           | [KeyMetadata](./core.keymetadata.md) &#124; null |             |
+| [publicKeyHex](./data-store.key.publickeyhex.md) |           | string                                           |             |
+| [type](./data-store.key.type.md)                 |           | KeyType                                          |             |

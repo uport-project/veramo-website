@@ -13,7 +13,7 @@ hide_title: true
 ```typescript
 createKey({ type }: {
         type: TKeyType;
-    }): Promise<Omit<IKey, 'kms'>>;
+    }): Promise<ManagedKeyInfo>;
 ```
 
 ## Parameters
@@ -24,4 +24,4 @@ createKey({ type }: {
 
 <b>Returns:</b>
 
-Promise&lt;Omit&lt;[IKey](./core.ikey.md) , 'kms'&gt;&gt;
+Promise&lt;[ManagedKeyInfo](./core.managedkeyinfo.md) &gt;

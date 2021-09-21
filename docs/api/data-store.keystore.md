@@ -18,9 +18,9 @@ export declare class KeyStore extends AbstractKeyStore
 
 ## Constructors
 
-| Constructor                                                                      | Modifiers | Description                                                  |
-| -------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ |
-| [(constructor)(dbConnection, secretBox)](./data-store.keystore._constructor_.md) |           | Constructs a new instance of the <code>KeyStore</code> class |
+| Constructor                                                           | Modifiers | Description                                                  |
+| --------------------------------------------------------------------- | --------- | ------------------------------------------------------------ |
+| [(constructor)(dbConnection)](./data-store.keystore._constructor_.md) |           | Constructs a new instance of the <code>KeyStore</code> class |
 
 ## Methods
 
@@ -29,3 +29,4 @@ export declare class KeyStore extends AbstractKeyStore
 | [delete({ kid })](./data-store.keystore.delete.md) |           |             |
 | [get({ kid })](./data-store.keystore.get.md)       |           |             |
 | [import(args)](./data-store.keystore.import.md)    |           |             |
+| [list(args)](./data-store.keystore.list.md)        |           |             |

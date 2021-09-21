@@ -11,8 +11,8 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-sign({ key, algorithm, data }: {
-        key: IKey;
+sign({ keyRef, algorithm, data, }: {
+        keyRef: Pick<IKey, 'kid'>;
         algorithm?: string;
         data: Uint8Array;
     }): Promise<string>;
@@ -20,9 +20,9 @@ sign({ key, algorithm, data }: {
 
 ## Parameters
 
-| Parameter                | Type                                                                    | Description |
-| ------------------------ | ----------------------------------------------------------------------- | ----------- |
-| { key, algorithm, data } | { key: [IKey](./core.ikey.md) ; algorithm?: string; data: Uint8Array; } |             |
+| Parameter                    | Type                                                                                          | Description |
+| ---------------------------- | --------------------------------------------------------------------------------------------- | ----------- |
+| { keyRef, algorithm, data, } | { keyRef: Pick&lt;[IKey](./core.ikey.md) , 'kid'&gt;; algorithm?: string; data: Uint8Array; } |             |
 
 <b>Returns:</b>
 

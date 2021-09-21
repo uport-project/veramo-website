@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-migrations: never[]
+migrations: (typeof CreateDatabase1447159020001)[]
 ```

@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-Entities: (typeof Key | typeof Identifier | typeof Service | typeof Claim | typeof Credential | typeof Presentation | typeof Message)[]
+Entities: (typeof Key | typeof Identifier | typeof Service | typeof Claim | typeof Credential | typeof Presentation | typeof Message | typeof PrivateKey | typeof PreMigrationKey)[]
 ```

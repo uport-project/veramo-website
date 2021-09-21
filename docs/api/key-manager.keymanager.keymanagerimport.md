@@ -13,15 +13,15 @@ Imports a created key
 <b>Signature:</b>
 
 ```typescript
-keyManagerImport(key: IKey): Promise<boolean>;
+keyManagerImport(key: MinimalImportableKey): Promise<ManagedKeyInfo>;
 ```
 
 ## Parameters
 
-| Parameter | Type                   | Description |
-| --------- | ---------------------- | ----------- |
-| key       | [IKey](./core.ikey.md) |             |
+| Parameter | Type                                                   | Description |
+| --------- | ------------------------------------------------------ | ----------- |
+| key       | [MinimalImportableKey](./core.minimalimportablekey.md) |             |
 
 <b>Returns:</b>
 
-Promise&lt;boolean&gt;
+Promise&lt;[ManagedKeyInfo](./core.managedkeyinfo.md) &gt;

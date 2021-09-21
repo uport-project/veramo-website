@@ -28,17 +28,17 @@ Be advised that this spec is still not final and that this protocol may need to 
 
 ## Constructors
 
-| Constructor                                                      | Modifiers | Description                                                    |
-| ---------------------------------------------------------------- | --------- | -------------------------------------------------------------- |
-| [(constructor)(transports)](./did-comm.didcomm._constructor_.md) |           | <b><i>(BETA)</i></b> Constructor that takes a list of objects. |
+| Constructor                                                      | Modifiers | Description                                                                                                         |
+| ---------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------- |
+| [(constructor)(transports)](./did-comm.didcomm._constructor_.md) |           | <b><i>(BETA)</i></b> Constructor that takes a list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects. |
 
 ## Properties
 
-| Property                                       | Modifiers | Type                               | Description                         |
-| ---------------------------------------------- | --------- | ---------------------------------- | ----------------------------------- |
-| [methods](./did-comm.didcomm.methods.md)       |           | [IDIDComm](./did-comm.ididcomm.md) | <b><i>(BETA)</i></b> Plugin methods |
-| [schema](./did-comm.didcomm.schema.md)         |           | any                                | <b><i>(BETA)</i></b>                |
-| [transports](./did-comm.didcomm.transports.md) |           | IDIDCommTransport\[\]              | <b><i>(BETA)</i></b>                |
+| Property                                       | Modifiers | Type                                                      | Description                         |
+| ---------------------------------------------- | --------- | --------------------------------------------------------- | ----------------------------------- |
+| [methods](./did-comm.didcomm.methods.md)       |           | [IDIDComm](./did-comm.ididcomm.md)                        | <b><i>(BETA)</i></b> Plugin methods |
+| [schema](./did-comm.didcomm.schema.md)         |           | any                                                       | <b><i>(BETA)</i></b>                |
+| [transports](./did-comm.didcomm.transports.md) |           | [IDIDCommTransport](./did-comm.ididcommtransport.md) \[\] | <b><i>(BETA)</i></b>                |
 
 ## Methods
 

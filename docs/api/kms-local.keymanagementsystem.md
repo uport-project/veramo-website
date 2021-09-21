@@ -16,11 +16,19 @@ export declare class KeyManagementSystem extends AbstractKeyManagementSystem
 
 <b>Extends:</b> [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md)
 
+## Constructors
+
+| Constructor                                                                 | Modifiers | Description                                                             |
+| --------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------- |
+| [(constructor)(keyStore)](./kms-local.keymanagementsystem._constructor_.md) |           | Constructs a new instance of the <code>KeyManagementSystem</code> class |
+
 ## Methods
 
-| Method                                                                    | Modifiers | Description |
-| ------------------------------------------------------------------------- | --------- | ----------- |
-| [createKey({ type })](./kms-local.keymanagementsystem.createkey.md)       |           |             |
-| [deleteKey(args)](./kms-local.keymanagementsystem.deletekey.md)           |           |             |
-| [sharedSecret(args)](./kms-local.keymanagementsystem.sharedsecret.md)     |           |             |
-| [sign({ key, algorithm, data })](./kms-local.keymanagementsystem.sign.md) |           |             |
+| Method                                                                        | Modifiers | Description |
+| ----------------------------------------------------------------------------- | --------- | ----------- |
+| [createKey({ type })](./kms-local.keymanagementsystem.createkey.md)           |           |             |
+| [deleteKey(args)](./kms-local.keymanagementsystem.deletekey.md)               |           |             |
+| [importKey(args)](./kms-local.keymanagementsystem.importkey.md)               |           |             |
+| [listKeys()](./kms-local.keymanagementsystem.listkeys.md)                     |           |             |
+| [sharedSecret(args)](./kms-local.keymanagementsystem.sharedsecret.md)         |           |             |
+| [sign({ keyRef, algorithm, data, })](./kms-local.keymanagementsystem.sign.md) |           |             |

@@ -12,7 +12,7 @@ hide_title: true
 
 ```typescript
 abstract sign(args: {
-        key: IKey;
+        keyRef: Pick<IKey, 'kid'>;
         algorithm?: string;
         data: Uint8Array;
         [x: string]: any;
@@ -21,9 +21,9 @@ abstract sign(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                        | Description |
-| --------- | ------------------------------------------------------------------------------------------- | ----------- |
-| args      | { key: [IKey](./core.ikey.md) ; algorithm?: string; data: Uint8Array; \[x: string\]: any; } |             |
+| Parameter | Type                                                                                                              | Description |
+| --------- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | { keyRef: Pick&lt;[IKey](./core.ikey.md) , 'kid'&gt;; algorithm?: string; data: Uint8Array; \[x: string\]: any; } |             |
 
 <b>Returns:</b>
 

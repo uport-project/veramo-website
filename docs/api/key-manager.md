@@ -12,10 +12,18 @@ Provides a [plugin](./key-manager.keymanager.md) for the [Agent](./core.agent.md
 
 ## Classes
 
-| Class                                                                       | Description                                                             |
-| --------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) |                                                                         |
-| [AbstractKeyStore](./key-manager.abstractkeystore.md)                       |                                                                         |
-| [AbstractSecretBox](./key-manager.abstractsecretbox.md)                     |                                                                         |
-| [KeyManager](./key-manager.keymanager.md)                                   | Agent plugin that provides [IKeyManager](./core.ikeymanager.md) methods |
-| [MemoryKeyStore](./key-manager.memorykeystore.md)                           |                                                                         |
+| Class                                                                       | Description                                                                                                                                                               |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) |                                                                                                                                                                           |
+| [AbstractKeyStore](./key-manager.abstractkeystore.md)                       |                                                                                                                                                                           |
+| [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)         |                                                                                                                                                                           |
+| [AbstractSecretBox](./key-manager.abstractsecretbox.md)                     |                                                                                                                                                                           |
+| [KeyManager](./key-manager.keymanager.md)                                   | Agent plugin that provides [IKeyManager](./core.ikeymanager.md) methods                                                                                                   |
+| [MemoryKeyStore](./key-manager.memorykeystore.md)                           |                                                                                                                                                                           |
+| [MemoryPrivateKeyStore](./key-manager.memoryprivatekeystore.md)             | An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that holds everything in memory. This is usable by to hold the private key data. |
+
+## Interfaces
+
+| Interface                                               | Description |
+| ------------------------------------------------------- | ----------- |
+| [ManagedPrivateKey](./key-manager.managedprivatekey.md) |             |
