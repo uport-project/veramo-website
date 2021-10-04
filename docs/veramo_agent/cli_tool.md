@@ -4,7 +4,7 @@ title: CLI Tool
 sidebar_label: CLI Tool
 ---
 
-:::important Ensure you have Node v12 or later installed. The CLI tool is currently only supported on MACOS and Linux
+:::important Ensure you have Node v14 or later installed. The CLI tool is currently only supported on MACOS and Linux
 systems. Windows support is coming soon.
 :::
 
@@ -26,7 +26,7 @@ To check the CLI has installed, run:
 veramo -v
 
 # Output
-2.x.x
+3.x.x
 ```
 
 ### Methods

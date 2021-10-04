@@ -8,7 +8,7 @@ This guide covers setting up an agent and creating identifiers in Node.
 
 ### Prerequisites
 
-You need to have Node v12 or later installed. In this example, we use yarn as the package manager, but you can also use
+You need to have Node v14 or later installed. In this example, we use yarn as the package manager, but you can also use
 npm.
 
 Start by creating a directory for our project and initializing the npm package.
@@ -74,7 +74,7 @@ import { WebDIDProvider } from '@veramo/did-provider-web'
 import { KeyManager } from '@veramo/key-manager'
 
 // Custom key management system for RN
-import { KeyManagementSystem } from '@veramo/kms-local'
+import { KeyManagementSystem, SecretBox } from '@veramo/kms-local'
 
 // Custom resolvers
 import { DIDResolverPlugin } from '@veramo/did-resolver'
@@ -83,7 +83,7 @@ import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 import { getResolver as webDidResolver } from 'web-did-resolver'
 
 // Storage plugin using TypeOrm
-import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
+import { Entities, KeyStore, DIDStore, IDataStoreORM, PrivateKeyStore, migrations } from '@veramo/data-store'
 
 // TypeORM is installed with `@veramo/data-store`
 import { createConnection } from 'typeorm'
@@ -97,6 +97,9 @@ const DATABASE_FILE = 'database.sqlite'
 
 // You will need to get a project ID from infura https://www.infura.io
 const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
+
+// This will be the secret key for the KMS 
+const KMS_SECRET_KEY = "<type any random high secure key or password here>";
 ```
 
 Initialise a database using TypeORM
@@ -105,7 +108,9 @@ Initialise a database using TypeORM
 const dbConnection = createConnection({
   type: 'sqlite',
   database: DATABASE_FILE,
-  synchronize: true,
+  synchronize: false,
+  migrations,
+  migrationsRun: true,
   logging: ['error', 'info', 'warn'],
   entities: Entities,
 })
@@ -119,7 +124,9 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     new KeyManager({
       store: new KeyStore(dbConnection),
       kms: {
-        local: new KeyManagementSystem(),
+        local: new KeyManagementSystem(
+          new PrivateKeyStore(dbConnection, new SecretBox(KMS_SECRET_KEY)),
+        ),
       },
     }),
     new DIDManager({
@@ -138,7 +145,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDResolverPlugin({
       resolver: new Resolver({
-        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID })
+        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
         ...webDidResolver(),
       }),
     }),
