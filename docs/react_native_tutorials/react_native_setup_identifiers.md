@@ -6,7 +6,7 @@ sidebar_label: Setup & Identifiers
 
 This guide will walk you through setting up Veramo on React Native. You should have a good understanding of React Native
 and have your environment set up correctly to build iOS and Android apps. Check out
-the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. Node v12 or later is required to
+the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. Node v14 or later is required to
 run Veramo.
 
 ## Introduction
