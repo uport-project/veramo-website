@@ -65,9 +65,9 @@ Import `shim.js` (created by rn-nodify),`react-native-get-random-values`, and `@
 of `index.js`.
 
 ```ts
-import './shim'
-import "react-native-get-random-values"
-import "@ethersproject/shims"
+import './shim';
+import 'react-native-get-random-values';
+import '@ethersproject/shims';
 ...
 ```
 
