@@ -61,6 +61,11 @@ Add the following snippets to your package.json file
 }
 ```
 
+After execution of the follwing command the shim.js will be present in the project.
+```bash
+yarn rn-nodeify --install assert,buffer,process,crypto,stream,vm --hack
+```
+
 Import `shim.js` (created by rn-nodify),`react-native-get-random-values`, and `@ethersproject/shims` into the top
 of `index.js`.
 
