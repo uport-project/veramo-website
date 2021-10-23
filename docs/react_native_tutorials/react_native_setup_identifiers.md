@@ -147,7 +147,8 @@ const dbConnection = createConnection({
   type: 'react-native',
   database: 'veramo.sqlite',
   location: 'default',
-  synchronize: true,
+  migrations: migrations,
+  migrationsRun:true,
   logging: ['error', 'info', 'warn'],
   entities: Entities,
 })
