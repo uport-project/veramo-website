@@ -9,6 +9,9 @@ and have your environment set up correctly to build iOS and Android apps. Check 
 the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. Node v14 or later is required to
 run Veramo.
 
+You'll be creating a React Native application that is able to create and remember Decentralized Identifiers (DIDs) along
+with some keys associated with them and display them in a list.
+
 ## Introduction
 
 Let's set up Veramo to run locally on the device and use `sqlite` to store data, identities, and keys. Our identity
@@ -94,7 +97,7 @@ next section.
 yarn add @veramo/core @veramo/did-manager @veramo/kms-local @veramo/did-provider-ethr @veramo/key-manager @veramo/did-resolver @veramo/data-store @veramo/credential-w3c ethr-did-resolver web-did-resolver
 ```
 
-Close the React native packager, clean the project, and rerun your app. If everything is okay, you should see the
+Close the React Native packager, clean the project, and rerun your app. If everything is okay, you should see the
 default React Native screen as before.
 
 ## Bootstrap Veramo
@@ -126,17 +129,21 @@ import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 import { getResolver as webDidResolver } from 'web-did-resolver'
 
 // Storage plugin using TypeOrm
-import { Entities, KeyStore, DIDStore, IDataStoreORM } from '@veramo/data-store'
+import { Entities, KeyStore, DIDStore, IDataStoreORM, migrations, PrivateKeyStore } from '@veramo/data-store'
 
 // TypeORM is installed with '@veramo/data-store'
 import { createConnection } from 'typeorm'
 ```
 
-Create an infura variable:
+Create an Infura project ID and a database encryption key:
 
 ```ts
 // You will need to get a project ID from infura https://www.infura.io
 const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
+
+// This is a raw X25519 private key, provided as an example; you will need to generate your own when going to production.
+// In a production app, this MUST not be hardcoded in your source code.
+const dbEncryptionKey = '29739248cad1bd1a0fc4d9b75cd4d2990de535baf5caadfdf8d8f86664aa830c'
 ```
 
 Next initialize our sqlite database using TypeORM:
@@ -162,7 +169,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     new KeyManager({
       store: new KeyStore(dbConnection),
       kms: {
-        local: new KeyManagementSystem(),
+        local: new KeyManagementSystem(new PrivateKeyStore(dbConnection, new SecretBox(dbEncryptionKey))),
       },
     }),
     new DIDManager({
