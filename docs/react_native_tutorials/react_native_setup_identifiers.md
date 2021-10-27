@@ -46,14 +46,14 @@ recommendation [here](https://docs.ethers.io/v5/cookbook/react-native/#cookbook-
 yarn add @ethersproject/shims react-native-get-random-values
 ```
 
-To access node methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev
+To access nodejs methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev
 dependencies.
 
 ```bash
 yarn add rn-nodeify --dev
 ```
 
-Add the following snippets to your package.json file
+Add the following snippets to the `package.json` file and then re-run `yarn install`
 
 ```json
 {
@@ -69,9 +69,9 @@ of `index.js`.
 
 ```ts
 import './shim'
-import "react-native-get-random-values"
-import "@ethersproject/shims"
-...
+import 'react-native-get-random-values'
+import '@ethersproject/shims'
+//...
 ```
 
 Open `shim.js` and uncomment `require('crypto)`
@@ -87,6 +87,8 @@ Install all the pods in your project that came with the new dependencies.
 ```bash
 npx pod-install
 ```
+
+Prerequisites are ready. We can now go on to create a Veramo agent.
 
 ### Veramo
 
@@ -141,8 +143,9 @@ Create an Infura project ID and a database encryption key:
 // You will need to get a project ID from infura https://www.infura.io
 const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 
-// This is a raw X25519 private key, provided as an example; you will need to generate your own when going to production.
-// In a production app, this MUST not be hardcoded in your source code.
+// This is a raw X25519 private key, provided as an example.
+// You can run `veramo config create-secret-key` in a terminal to generate a new key.
+// In a production app, this MUST NOT be hardcoded in your source code.
 const dbEncryptionKey = '29739248cad1bd1a0fc4d9b75cd4d2990de535baf5caadfdf8d8f86664aa830c'
 ```
 
@@ -195,7 +198,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
 })
 ```
 
-Awesome! That's the basic agent configured and ready to use. Let's try it out :rocket:
+Awesome! That's a basic agent configured and ready to use. Let's try it out :rocket:
 
 ## Basic User Interface
 
@@ -268,7 +271,7 @@ const App = () => {
 export default App
 ```
 
-Close the packager and rebuild the app. Once loaded hit the **Create identifier** button a few times and you should see
+Close the packager and rebuild the app. Once loaded hit the **Create identifier** button a few times, and you should see
 your identifiers being created!
 
 ## Building for production
