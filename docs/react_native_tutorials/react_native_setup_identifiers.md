@@ -139,7 +139,7 @@ Create an infura variable:
 const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 ```
 
-Next initilize our sqlite database using TypeORM:
+Next initialize our sqlite database using TypeORM:
 
 ```tsx
 // Create react native db connection
@@ -148,7 +148,7 @@ const dbConnection = createConnection({
   database: 'veramo.sqlite',
   location: 'default',
   migrations: migrations,
-  migrationsRun:true,
+  migrationsRun: true,
   logging: ['error', 'info', 'warn'],
   entities: Entities,
 })
@@ -263,3 +263,14 @@ export default App
 
 Close the packager and rebuild the app. Once loaded hit the **Create identifier** button a few times and you should see
 your identifiers being created!
+
+## Building for production
+
+When you use `@veramo/data-store` you will need to ensure that class names are not mangled during the minification step
+of a release build. This is because it uses `typeorm` which relies on class names to make decisions about database
+migrations.
+
+To get around this issue, you can use one of the solutions from this thread:
+
+- https://github.com/typeorm/typeorm/issues/4561#issuecomment-546010351
+- https://forums.expo.dev/t/change-minifierconfig-for-minify-uglify/36460
