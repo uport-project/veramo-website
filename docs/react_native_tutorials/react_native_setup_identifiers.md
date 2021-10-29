@@ -43,7 +43,7 @@ Next, add the shim from `@ethersproject/shims` and the polyfill for strong rando
 recommendation [here](https://docs.ethers.io/v5/cookbook/react-native/#cookbook-reactnative-security).
 
 ```bash
-yarn add @ethersproject/shims react-native-get-random-values
+yarn add @ethersproject/shims react-native-get-random-values text-encoding
 ```
 
 To access nodejs methods we need to install [rn-nodeify](https://www.npmjs.com/package/rn-nodeify) to our dev
