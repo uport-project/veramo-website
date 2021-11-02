@@ -11,7 +11,7 @@ not when it comes to how you build your application layers.
 
 ![img](../../static/img/diagrams/veramo_agent_simple.svg)
 
-Veramo Agent is responsibe for but not limited to:
+Veramo Agent is responsible for but not limited to:
 
 - Creating Identifiers
 - Resolving Identifiers
