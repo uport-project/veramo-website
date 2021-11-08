@@ -98,8 +98,9 @@ const DATABASE_FILE = 'database.sqlite'
 // You will need to get a project ID from infura https://www.infura.io
 const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 
-// This will be the secret key for the KMS 
-const KMS_SECRET_KEY = "<type any random high secure key or password here>";
+// This will be the secret key for the KMS
+const KMS_SECRET_KEY =
+  '< you can generate a key by running `npx @veramo/cli config create-secret-key` in a terminal>'
 ```
 
 Initialise a database using TypeORM
@@ -124,9 +125,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     new KeyManager({
       store: new KeyStore(dbConnection),
       kms: {
-        local: new KeyManagementSystem(
-          new PrivateKeyStore(dbConnection, new SecretBox(KMS_SECRET_KEY)),
-        ),
+        local: new KeyManagementSystem(new PrivateKeyStore(dbConnection, new SecretBox(KMS_SECRET_KEY))),
       },
     }),
     new DIDManager({
@@ -228,7 +227,6 @@ yarn id:list
 
 ```bash
 $ ts-node ./src/list-identifiers
-Please provide SecretBox to the KeyStore
 There are 0 identifiers
 ```
 
@@ -242,7 +240,6 @@ yarn id:create
 
 ```bash
 $ ts-node ./src/create-identifier
-Please provide SecretBox to the KeyStore
 New identity created
 { did:
    'did:ethr:rinkeby:0x6acf3bb1ef0ee84559de2bc2bd9d91532062a730',
