@@ -48,8 +48,13 @@ module.exports = {
         },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
+          href: 'https://discord.gg/FRRBdjemHV',
+          label: 'Discord',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/uport-project/veramo/discussions',
-          label: 'Community',
+          label: 'Discussions',
           position: 'right',
         },
         {
@@ -118,6 +123,10 @@ module.exports = {
             {
               label: 'Discussions',
               href: 'https://github.com/uport-project/veramo/discussions',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/FRRBdjemHV',
             },
           ],
         },
