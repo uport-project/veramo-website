@@ -64,13 +64,15 @@ Add the following snippets to the `package.json` file and then re-run `yarn inst
 }
 ```
 
-Import `shim.js` (created by rn-nodify),`react-native-get-random-values`, and `@ethersproject/shims` into the top
+Import `shim.js` (created by rn-nodify),`react-native-get-random-values`,`@ethersproject/shims` and `text-encoding` into the top
 of `index.js`.
 
 ```ts
 import './shim'
 import 'react-native-get-random-values'
 import '@ethersproject/shims'
+
+import 'text-encoding';
 //...
 ```
 
@@ -121,7 +123,7 @@ import { EthrDIDProvider } from '@veramo/did-provider-ethr'
 import { KeyManager } from '@veramo/key-manager'
 
 // Custom key management system for RN
-import { KeyManagementSystem } from '@veramo/kms-local'
+import { KeyManagementSystem, SecretBox } from '@veramo/kms-local'
 
 // Custom resolver
 // Custom resolvers
