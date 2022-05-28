@@ -171,13 +171,13 @@ server:
   # Array of express middleware
   use:
     # CORS
-    - - $require: 'cors?t=function'
+    - $require: 'cors?t=function'
 
     # Add agent to the request object
-    - - $require: '@veramo/remote-server?t=function#RequestWithAgentRouter'
-        $args:
-          - agent:
-              $ref: /agent
+    - $require: '@veramo/remote-server?t=function#RequestWithAgentRouter'
+      $args:
+        - agent:
+            $ref: /agent
 
   # Execute during server initialization
   init:
