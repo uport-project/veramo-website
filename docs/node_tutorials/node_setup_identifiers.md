@@ -59,7 +59,7 @@ and import the following dependencies:
 
 ```typescript
 // Core interfaces
-import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager } from '@veramo/core'
+import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager, IDataStoreORM } from '@veramo/core'
 
 // Core identity manager plugin
 import { DIDManager } from '@veramo/did-manager'
@@ -83,7 +83,7 @@ import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 import { getResolver as webDidResolver } from 'web-did-resolver'
 
 // Storage plugin using TypeOrm
-import { Entities, KeyStore, DIDStore, IDataStoreORM, PrivateKeyStore, migrations } from '@veramo/data-store'
+import { Entities, KeyStore, DIDStore, PrivateKeyStore, migrations } from '@veramo/data-store'
 
 // TypeORM is installed with `@veramo/data-store`
 import { createConnection } from 'typeorm'
