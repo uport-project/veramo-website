@@ -17,3 +17,5 @@ The input to the [DIDComm.unpackDIDCommMessage()](./did-comm.didcomm.unpackdidco
 ```typescript
 export declare type IUnpackDIDCommMessageArgs = IPackedDIDCommMessage
 ```
+
+<b>References:</b> [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)

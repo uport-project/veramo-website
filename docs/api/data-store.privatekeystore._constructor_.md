@@ -18,7 +18,7 @@ constructor(dbConnection: Promise<Connection>, secretBox?: AbstractSecretBox | u
 
 ## Parameters
 
-| Parameter    | Type                                                                     | Description |
-| ------------ | ------------------------------------------------------------------------ | ----------- |
-| dbConnection | Promise&lt;Connection&gt;                                                |             |
-| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined |             |
+| Parameter    | Type                                                                     | Description       |
+| ------------ | ------------------------------------------------------------------------ | ----------------- |
+| dbConnection | Promise&lt;Connection&gt;                                                |                   |
+| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | <i>(Optional)</i> |

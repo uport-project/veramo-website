@@ -18,3 +18,5 @@ export declare type TAgent<T extends IPluginMethodMap> = {
 } &
   IAgent
 ```
+
+<b>References:</b> [IPluginMethodMap](./core.ipluginmethodmap.md) , [RemoveContext](./core.removecontext.md), [IAgent](./core.iagent.md)

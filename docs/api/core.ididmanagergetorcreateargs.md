@@ -18,9 +18,9 @@ export interface IDIDManagerGetOrCreateArgs
 
 ## Properties
 
-| Property                                                  | Type   | Description                                                                |
-| --------------------------------------------------------- | ------ | -------------------------------------------------------------------------- |
-| [alias](./core.ididmanagergetorcreateargs.alias.md)       | string | Identifier alias. Can be used to reference an object in an external system |
-| [kms](./core.ididmanagergetorcreateargs.kms.md)           | string | Optional. Key Management System                                            |
-| [options](./core.ididmanagergetorcreateargs.options.md)   | object | Optional. Identifier provider specific options                             |
-| [provider](./core.ididmanagergetorcreateargs.provider.md) | string | Optional. Identifier provider                                              |
+| Property                                                   | Type   | Description                                                                |
+| ---------------------------------------------------------- | ------ | -------------------------------------------------------------------------- |
+| [alias](./core.ididmanagergetorcreateargs.alias.md)        | string | Identifier alias. Can be used to reference an object in an external system |
+| [kms?](./core.ididmanagergetorcreateargs.kms.md)           | string | <i>(Optional)</i> Optional. Key Management System                          |
+| [options?](./core.ididmanagergetorcreateargs.options.md)   | object | <i>(Optional)</i> Optional. Identifier provider specific options           |
+| [provider?](./core.ididmanagergetorcreateargs.provider.md) | string | <i>(Optional)</i> Optional. Identifier provider                            |

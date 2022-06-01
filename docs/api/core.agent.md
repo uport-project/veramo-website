@@ -28,10 +28,10 @@ export declare class Agent implements IAgent
 
 ## Properties
 
-| Property                           | Modifiers | Type                                           | Description                          |
-| ---------------------------------- | --------- | ---------------------------------------------- | ------------------------------------ |
-| [context](./core.agent.context.md) |           | Record&lt;string, any&gt;                      |                                      |
-| [methods](./core.agent.methods.md) |           | [IPluginMethodMap](./core.ipluginmethodmap.md) | The map of plugin + override methods |
+| Property                            | Modifiers | Type                                           | Description                          |
+| ----------------------------------- | --------- | ---------------------------------------------- | ------------------------------------ |
+| [context?](./core.agent.context.md) |           | Record&lt;string, any&gt;                      | <i>(Optional)</i>                    |
+| [methods](./core.agent.methods.md)  |           | [IPluginMethodMap](./core.ipluginmethodmap.md) | The map of plugin + override methods |
 
 ## Methods
 

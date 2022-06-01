@@ -18,9 +18,9 @@ export declare abstract class AbstractMessageHandler
 
 ## Properties
 
-| Property                                                                             | Modifiers | Type                                                                  | Description |
-| ------------------------------------------------------------------------------------ | --------- | --------------------------------------------------------------------- | ----------- |
-| [nextMessageHandler](./message-handler.abstractmessagehandler.nextmessagehandler.md) |           | [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) |             |
+| Property                                                                              | Modifiers | Type                                                                  | Description       |
+| ------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------- | ----------------- |
+| [nextMessageHandler?](./message-handler.abstractmessagehandler.nextmessagehandler.md) |           | [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) | <i>(Optional)</i> |
 
 ## Methods
 

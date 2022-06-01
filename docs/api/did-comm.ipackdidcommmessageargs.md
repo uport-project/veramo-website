@@ -20,8 +20,8 @@ export interface IPackDIDCommMessageArgs
 
 ## Properties
 
-| Property                                                 | Type                                                         | Description          |
-| -------------------------------------------------------- | ------------------------------------------------------------ | -------------------- |
-| [keyRef](./did-comm.ipackdidcommmessageargs.keyref.md)   | string                                                       | <b><i>(BETA)</i></b> |
-| [message](./did-comm.ipackdidcommmessageargs.message.md) | [IDIDCommMessage](./did-comm.ididcommmessage.md)             | <b><i>(BETA)</i></b> |
-| [packing](./did-comm.ipackdidcommmessageargs.packing.md) | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | <b><i>(BETA)</i></b> |
+| Property                                                 | Type                                                         | Description                            |
+| -------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------- |
+| [keyRef?](./did-comm.ipackdidcommmessageargs.keyref.md)  | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [message](./did-comm.ipackdidcommmessageargs.message.md) | [IDIDCommMessage](./did-comm.ididcommmessage.md)             | <b><i>(BETA)</i></b>                   |
+| [packing](./did-comm.ipackdidcommmessageargs.packing.md) | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | <b><i>(BETA)</i></b>                   |

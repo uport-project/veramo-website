@@ -16,9 +16,9 @@ export interface Where<TColumns>
 
 ## Properties
 
-| Property                               | Type                                                                                                                                                                  | Description |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [column](./data-store.where.column.md) | TColumns                                                                                                                                                              |             |
-| [not](./data-store.where.not.md)       | boolean                                                                                                                                                               |             |
-| [op](./data-store.where.op.md)         | 'LessThan' &#124; 'LessThanOrEqual' &#124; 'MoreThan' &#124; 'MoreThanOrEqual' &#124; 'Equal' &#124; 'Like' &#124; 'Between' &#124; 'In' &#124; 'Any' &#124; 'IsNull' |             |
-| [value](./data-store.where.value.md)   | string\[\]                                                                                                                                                            |             |
+| Property                               | Type                                                                                                                                                                  | Description       |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [column](./data-store.where.column.md) | TColumns                                                                                                                                                              |                   |
+| [not?](./data-store.where.not.md)      | boolean                                                                                                                                                               | <i>(Optional)</i> |
+| [op?](./data-store.where.op.md)        | 'LessThan' &#124; 'LessThanOrEqual' &#124; 'MoreThan' &#124; 'MoreThanOrEqual' &#124; 'Equal' &#124; 'Like' &#124; 'Between' &#124; 'In' &#124; 'Any' &#124; 'IsNull' | <i>(Optional)</i> |
+| [value?](./data-store.where.value.md)  | string\[\]                                                                                                                                                            | <i>(Optional)</i> |

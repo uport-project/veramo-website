@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-migrations: (typeof CreateDatabase1447159020001)[]
+migrations: (typeof CreatePrivateKeyStorage1629293428674)[]
 ```

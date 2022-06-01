@@ -14,7 +14,9 @@ Represents the minimum amount of information needed to import an [IIdentifier](.
 
 ```typescript
 export declare type MinimalImportableIdentifier = {
-  keys: MinimalImportableKey[]
-  services?: IService[]
+  keys: Array<MinimalImportableKey>
+  services?: Array<IService>
 } & Omit<IIdentifier, 'keys' | 'services'>
 ```
+
+<b>References:</b> [MinimalImportableKey](./core.minimalimportablekey.md), [IService](./core.iservice.md), [IIdentifier](./core.iidentifier.md)

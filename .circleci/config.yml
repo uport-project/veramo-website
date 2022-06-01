@@ -41,7 +41,7 @@ jobs:
   dummy-job:
     <<: *defaults
     docker:
-      - image: node:10
+      - image: node:14
     resource_class: small
     steps:
       - run:
@@ -51,7 +51,7 @@ jobs:
   verify-build:
     <<: *defaults
     docker:
-      - image: node:10
+      - image: node:14
     resource_class: medium
     steps:
       - checkout

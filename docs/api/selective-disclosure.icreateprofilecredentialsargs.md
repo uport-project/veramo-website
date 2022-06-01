@@ -20,12 +20,12 @@ export interface ICreateProfileCredentialsArgs
 
 ## Properties
 
-| Property                                                                     | Type    | Description                                 |
-| ---------------------------------------------------------------------------- | ------- | ------------------------------------------- |
-| [holder](./selective-disclosure.icreateprofilecredentialsargs.holder.md)     | string  | <b><i>(BETA)</i></b> Holder DID             |
-| [name](./selective-disclosure.icreateprofilecredentialsargs.name.md)         | string  | <b><i>(BETA)</i></b> Optional. Name         |
-| [picture](./selective-disclosure.icreateprofilecredentialsargs.picture.md)   | string  | <b><i>(BETA)</i></b> Optional. Picture URL  |
-| [save](./selective-disclosure.icreateprofilecredentialsargs.save.md)         | boolean | <b><i>(BETA)</i></b> Save presentation      |
-| [send](./selective-disclosure.icreateprofilecredentialsargs.send.md)         | boolean | <b><i>(BETA)</i></b> Send presentation      |
-| [url](./selective-disclosure.icreateprofilecredentialsargs.url.md)           | string  | <b><i>(BETA)</i></b> Optional. URL          |
-| [verifier](./selective-disclosure.icreateprofilecredentialsargs.verifier.md) | string  | <b><i>(BETA)</i></b> Optional. Verifier DID |
+| Property                                                                      | Type    | Description                                                   |
+| ----------------------------------------------------------------------------- | ------- | ------------------------------------------------------------- |
+| [holder](./selective-disclosure.icreateprofilecredentialsargs.holder.md)      | string  | <b><i>(BETA)</i></b> Holder DID                               |
+| [name?](./selective-disclosure.icreateprofilecredentialsargs.name.md)         | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. Name         |
+| [picture?](./selective-disclosure.icreateprofilecredentialsargs.picture.md)   | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. Picture URL  |
+| [save](./selective-disclosure.icreateprofilecredentialsargs.save.md)          | boolean | <b><i>(BETA)</i></b> Save presentation                        |
+| [send](./selective-disclosure.icreateprofilecredentialsargs.send.md)          | boolean | <b><i>(BETA)</i></b> Send presentation                        |
+| [url?](./selective-disclosure.icreateprofilecredentialsargs.url.md)           | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. URL          |
+| [verifier?](./selective-disclosure.icreateprofilecredentialsargs.verifier.md) | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. Verifier DID |

@@ -18,9 +18,9 @@ export interface IService
 
 ## Properties
 
-| Property                                              | Type   | Description           |
-| ----------------------------------------------------- | ------ | --------------------- |
-| [description](./core.iservice.description.md)         | string | Optional. Description |
-| [id](./core.iservice.id.md)                           | string | ID                    |
-| [serviceEndpoint](./core.iservice.serviceendpoint.md) | string | Endpoint URL          |
-| [type](./core.iservice.type.md)                       | string | Service type          |
+| Property                                              | Type   | Description                             |
+| ----------------------------------------------------- | ------ | --------------------------------------- |
+| [description?](./core.iservice.description.md)        | string | <i>(Optional)</i> Optional. Description |
+| [id](./core.iservice.id.md)                           | string | ID                                      |
+| [serviceEndpoint](./core.iservice.serviceendpoint.md) | string | Endpoint URL                            |
+| [type](./core.iservice.type.md)                       | string | Service type                            |

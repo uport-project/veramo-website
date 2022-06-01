@@ -24,22 +24,22 @@ export declare class Message implements IMessage
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                                                            | Description |
-| ----------------------------------------------------------- | --------- | --------------------------------------------------------------- | ----------- |
-| [createdAt](./message-handler.message.createdat.md)         |           | string                                                          |             |
-| [credentials](./message-handler.message.credentials.md)     |           | [VerifiableCredential](./core.verifiablecredential.md) \[\]     |             |
-| [data](./message-handler.message.data.md)                   |           | any                                                             |             |
-| [expiresAt](./message-handler.message.expiresat.md)         |           | string                                                          |             |
-| [from](./message-handler.message.from.md)                   |           | string                                                          |             |
-| [id](./message-handler.message.id.md)                       |           | string                                                          |             |
-| [metaData](./message-handler.message.metadata.md)           |           | [IMetaData](./core.imetadata.md) \[\]                           |             |
-| [presentations](./message-handler.message.presentations.md) |           | [VerifiablePresentation](./core.verifiablepresentation.md) \[\] |             |
-| [raw](./message-handler.message.raw.md)                     |           | string                                                          |             |
-| [replyTo](./message-handler.message.replyto.md)             |           | string\[\]                                                      |             |
-| [replyUrl](./message-handler.message.replyurl.md)           |           | string                                                          |             |
-| [threadId](./message-handler.message.threadid.md)           |           | string                                                          |             |
-| [to](./message-handler.message.to.md)                       |           | string                                                          |             |
-| [type](./message-handler.message.type.md)                   |           | string                                                          |             |
+| Property                                                     | Modifiers | Type                                                            | Description       |
+| ------------------------------------------------------------ | --------- | --------------------------------------------------------------- | ----------------- |
+| [createdAt?](./message-handler.message.createdat.md)         |           | string                                                          | <i>(Optional)</i> |
+| [credentials?](./message-handler.message.credentials.md)     |           | [VerifiableCredential](./core.verifiablecredential.md) \[\]     | <i>(Optional)</i> |
+| [data?](./message-handler.message.data.md)                   |           | any                                                             | <i>(Optional)</i> |
+| [expiresAt?](./message-handler.message.expiresat.md)         |           | string                                                          | <i>(Optional)</i> |
+| [from?](./message-handler.message.from.md)                   |           | string                                                          | <i>(Optional)</i> |
+| [id](./message-handler.message.id.md)                        |           | string                                                          |                   |
+| [metaData?](./message-handler.message.metadata.md)           |           | [IMetaData](./core.imetadata.md) \[\]                           | <i>(Optional)</i> |
+| [presentations?](./message-handler.message.presentations.md) |           | [VerifiablePresentation](./core.verifiablepresentation.md) \[\] | <i>(Optional)</i> |
+| [raw?](./message-handler.message.raw.md)                     |           | string                                                          | <i>(Optional)</i> |
+| [replyTo?](./message-handler.message.replyto.md)             |           | string\[\]                                                      | <i>(Optional)</i> |
+| [replyUrl?](./message-handler.message.replyurl.md)           |           | string                                                          | <i>(Optional)</i> |
+| [threadId?](./message-handler.message.threadid.md)           |           | string                                                          | <i>(Optional)</i> |
+| [to?](./message-handler.message.to.md)                       |           | string                                                          | <i>(Optional)</i> |
+| [type](./message-handler.message.type.md)                    |           | string                                                          |                   |
 
 ## Methods
 

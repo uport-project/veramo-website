@@ -18,17 +18,17 @@ export declare class Credential extends BaseEntity
 
 ## Properties
 
-| Property                                                      | Modifiers | Type                                                   | Description |
-| ------------------------------------------------------------- | --------- | ------------------------------------------------------ | ----------- |
-| [claims](./data-store.credential_2.claims.md)                 |           | [Claim](./data-store.claim.md) \[\]                    |             |
-| [context](./data-store.credential_2.context.md)               |           | string\[\]                                             |             |
-| [expirationDate](./data-store.credential_2.expirationdate.md) |           | Date                                                   |             |
-| [hash](./data-store.credential_2.hash.md)                     |           | string                                                 |             |
-| [id](./data-store.credential_2.id.md)                         |           | string                                                 |             |
-| [issuanceDate](./data-store.credential_2.issuancedate.md)     |           | Date                                                   |             |
-| [issuer](./data-store.credential_2.issuer.md)                 |           | [Identifier](./data-store.identifier.md)               |             |
-| [messages](./data-store.credential_2.messages.md)             |           | [Message](./data-store.message.md) \[\]                |             |
-| [presentations](./data-store.credential_2.presentations.md)   |           | [Presentation](./data-store.presentation.md) \[\]      |             |
-| [raw](./data-store.credential_2.raw.md)                       |           | [VerifiableCredential](./core.verifiablecredential.md) |             |
-| [subject](./data-store.credential_2.subject.md)               |           | [Identifier](./data-store.identifier.md)               |             |
-| [type](./data-store.credential_2.type.md)                     |           | string\[\]                                             |             |
+| Property                                                       | Modifiers | Type                                                   | Description       |
+| -------------------------------------------------------------- | --------- | ------------------------------------------------------ | ----------------- |
+| [claims](./data-store.credential_2.claims.md)                  |           | [Claim](./data-store.claim.md) \[\]                    |                   |
+| [context](./data-store.credential_2.context.md)                |           | string\[\]                                             |                   |
+| [expirationDate?](./data-store.credential_2.expirationdate.md) |           | Date                                                   | <i>(Optional)</i> |
+| [hash](./data-store.credential_2.hash.md)                      |           | string                                                 |                   |
+| [id?](./data-store.credential_2.id.md)                         |           | string                                                 | <i>(Optional)</i> |
+| [issuanceDate](./data-store.credential_2.issuancedate.md)      |           | Date                                                   |                   |
+| [issuer](./data-store.credential_2.issuer.md)                  |           | [Identifier](./data-store.identifier.md)               |                   |
+| [messages](./data-store.credential_2.messages.md)              |           | [Message](./data-store.message.md) \[\]                |                   |
+| [presentations](./data-store.credential_2.presentations.md)    |           | [Presentation](./data-store.presentation.md) \[\]      |                   |
+| [raw](./data-store.credential_2.raw.md)                        |           | [VerifiableCredential](./core.verifiablecredential.md) |                   |
+| [subject?](./data-store.credential_2.subject.md)               |           | [Identifier](./data-store.identifier.md)               | <i>(Optional)</i> |
+| [type](./data-store.credential_2.type.md)                      |           | string\[\]                                             |                   |
