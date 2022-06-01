@@ -18,16 +18,16 @@ export declare class Claim extends BaseEntity
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                     | Description |
-| ------------------------------------------------------ | --------- | ---------------------------------------- | ----------- |
-| [context](./data-store.claim.context.md)               |           | string\[\]                               |             |
-| [credential](./data-store.claim.credential.md)         |           | Credential                               |             |
-| [credentialType](./data-store.claim.credentialtype.md) |           | string\[\]                               |             |
-| [expirationDate](./data-store.claim.expirationdate.md) |           | Date                                     |             |
-| [hash](./data-store.claim.hash.md)                     |           | string                                   |             |
-| [isObj](./data-store.claim.isobj.md)                   |           | boolean                                  |             |
-| [issuanceDate](./data-store.claim.issuancedate.md)     |           | Date                                     |             |
-| [issuer](./data-store.claim.issuer.md)                 |           | [Identifier](./data-store.identifier.md) |             |
-| [subject](./data-store.claim.subject.md)               |           | [Identifier](./data-store.identifier.md) |             |
-| [type](./data-store.claim.type.md)                     |           | string                                   |             |
-| [value](./data-store.claim.value.md)                   |           | string &#124; null                       |             |
+| Property                                                | Modifiers | Type                                     | Description       |
+| ------------------------------------------------------- | --------- | ---------------------------------------- | ----------------- |
+| [context](./data-store.claim.context.md)                |           | string\[\]                               |                   |
+| [credential](./data-store.claim.credential.md)          |           | Credential                               |                   |
+| [credentialType](./data-store.claim.credentialtype.md)  |           | string\[\]                               |                   |
+| [expirationDate?](./data-store.claim.expirationdate.md) |           | Date                                     | <i>(Optional)</i> |
+| [hash](./data-store.claim.hash.md)                      |           | string                                   |                   |
+| [isObj](./data-store.claim.isobj.md)                    |           | boolean                                  |                   |
+| [issuanceDate](./data-store.claim.issuancedate.md)      |           | Date                                     |                   |
+| [issuer](./data-store.claim.issuer.md)                  |           | [Identifier](./data-store.identifier.md) |                   |
+| [subject?](./data-store.claim.subject.md)               |           | [Identifier](./data-store.identifier.md) | <i>(Optional)</i> |
+| [type](./data-store.claim.type.md)                      |           | string                                   |                   |
+| [value](./data-store.claim.value.md)                    |           | string &#124; null                       |                   |

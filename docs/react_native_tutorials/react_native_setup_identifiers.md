@@ -72,7 +72,7 @@ import './shim'
 import 'react-native-get-random-values'
 import '@ethersproject/shims'
 
-import 'text-encoding';
+import 'text-encoding'
 //...
 ```
 

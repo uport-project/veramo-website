@@ -8,7 +8,7 @@ hide_title: true
 
 ## W3CPresentation interface
 
-W3CPresentation [https://github.com/decentralized-identifier/did-jwt-vc](https://github.com/decentralized-identifier/did-jwt-vc)
+Represents an unsigned W3C Presentation payload. See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)
 
 <b>Signature:</b>
 
@@ -18,13 +18,13 @@ export interface W3CPresentation
 
 ## Properties
 
-| Property                                                               | Type                                                        | Description |
-| ---------------------------------------------------------------------- | ----------------------------------------------------------- | ----------- |
-| ["@context"](./core.w3cpresentation.__context_.md)                     | string\[\]                                                  |             |
-| [expirationDate](./core.w3cpresentation.expirationdate.md)             | string                                                      |             |
-| [holder](./core.w3cpresentation.holder.md)                             | string                                                      |             |
-| [id](./core.w3cpresentation.id.md)                                     | string                                                      |             |
-| [issuanceDate](./core.w3cpresentation.issuancedate.md)                 | string                                                      |             |
-| [type](./core.w3cpresentation.type.md)                                 | string\[\]                                                  |             |
-| [verifiableCredential](./core.w3cpresentation.verifiablecredential.md) | [VerifiableCredential](./core.verifiablecredential.md) \[\] |             |
-| [verifier](./core.w3cpresentation.verifier.md)                         | string\[\]                                                  |             |
+| Property                                                                | Type                                                        | Description       |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------- |
+| ["@context"](./core.w3cpresentation.__context_.md)                      | string\[\]                                                  |                   |
+| [expirationDate?](./core.w3cpresentation.expirationdate.md)             | string                                                      | <i>(Optional)</i> |
+| [holder](./core.w3cpresentation.holder.md)                              | string                                                      |                   |
+| [id?](./core.w3cpresentation.id.md)                                     | string                                                      | <i>(Optional)</i> |
+| [issuanceDate?](./core.w3cpresentation.issuancedate.md)                 | string                                                      | <i>(Optional)</i> |
+| [type](./core.w3cpresentation.type.md)                                  | string\[\]                                                  |                   |
+| [verifiableCredential?](./core.w3cpresentation.verifiablecredential.md) | [VerifiableCredential](./core.verifiablecredential.md) \[\] | <i>(Optional)</i> |
+| [verifier](./core.w3cpresentation.verifier.md)                          | string\[\]                                                  |                   |

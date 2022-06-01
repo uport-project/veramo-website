@@ -8,7 +8,7 @@ hide_title: true
 
 ## W3CCredential interface
 
-W3CCredential [https://github.com/decentralized-identifier/did-jwt-vc](https://github.com/decentralized-identifier/did-jwt-vc)
+Represents an unsigned W3C Credential payload. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)
 
 <b>Signature:</b>
 
@@ -18,13 +18,13 @@ export interface W3CCredential
 
 ## Properties
 
-| Property                                                       | Type                                 | Description |
-| -------------------------------------------------------------- | ------------------------------------ | ----------- |
-| ["@context"](./core.w3ccredential.__context_.md)               | string\[\]                           |             |
-| [credentialStatus](./core.w3ccredential.credentialstatus.md)   | { id: string; type: string; }        |             |
-| [credentialSubject](./core.w3ccredential.credentialsubject.md) | { id?: string; \[x: string\]: any; } |             |
-| [expirationDate](./core.w3ccredential.expirationdate.md)       | string                               |             |
-| [id](./core.w3ccredential.id.md)                               | string                               |             |
-| [issuanceDate](./core.w3ccredential.issuancedate.md)           | string                               |             |
-| [issuer](./core.w3ccredential.issuer.md)                       | { id: string; \[x: string\]: any; }  |             |
-| [type](./core.w3ccredential.type.md)                           | string\[\]                           |             |
+| Property                                                       | Type                                 | Description       |
+| -------------------------------------------------------------- | ------------------------------------ | ----------------- |
+| ["@context"](./core.w3ccredential.__context_.md)               | string\[\]                           |                   |
+| [credentialStatus?](./core.w3ccredential.credentialstatus.md)  | { id: string; type: string; }        | <i>(Optional)</i> |
+| [credentialSubject](./core.w3ccredential.credentialsubject.md) | { id?: string; \[x: string\]: any; } |                   |
+| [expirationDate?](./core.w3ccredential.expirationdate.md)      | string                               | <i>(Optional)</i> |
+| [id?](./core.w3ccredential.id.md)                              | string                               | <i>(Optional)</i> |
+| [issuanceDate](./core.w3ccredential.issuancedate.md)           | string                               |                   |
+| [issuer](./core.w3ccredential.issuer.md)                       | { id: string; \[x: string\]: any; }  |                   |
+| [type](./core.w3ccredential.type.md)                           | string\[\]                           |                   |

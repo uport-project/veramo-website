@@ -18,8 +18,8 @@ export interface IHandleMessageArgs
 
 ## Properties
 
-| Property                                          | Type                                  | Description                                                                                                                              |
-| ------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [metaData](./core.ihandlemessageargs.metadata.md) | [IMetaData](./core.imetadata.md) \[\] | Optional. Message meta data                                                                                                              |
-| [raw](./core.ihandlemessageargs.raw.md)           | string                                | Raw message data                                                                                                                         |
-| [save](./core.ihandlemessageargs.save.md)         | boolean                               | Optional. If set to <code>true</code>, the message will be saved using [dataStoreSaveMessage](./core.idatastore.datastoresavemessage.md) |
+| Property                                           | Type                                  | Description                                                                                                                                                |
+| -------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [metaData?](./core.ihandlemessageargs.metadata.md) | [IMetaData](./core.imetadata.md) \[\] | <i>(Optional)</i> Optional. Message meta data                                                                                                              |
+| [raw](./core.ihandlemessageargs.raw.md)            | string                                | Raw message data                                                                                                                                           |
+| [save?](./core.ihandlemessageargs.save.md)         | boolean                               | <i>(Optional)</i> Optional. If set to <code>true</code>, the message will be saved using [dataStoreSaveMessage](./core.idatastore.datastoresavemessage.md) |

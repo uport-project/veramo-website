@@ -11,7 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-get raw(): VerifiablePresentation;
-
 set raw(raw: VerifiablePresentation);
 ```

@@ -15,3 +15,5 @@ Represents information about a managed key. Private or secret key material is no
 ```typescript
 export declare type ManagedKeyInfo = Omit<IKey, 'privateKeyHex'>
 ```
+
+<b>References:</b> [IKey](./core.ikey.md)

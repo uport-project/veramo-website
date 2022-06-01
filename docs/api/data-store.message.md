@@ -18,24 +18,24 @@ export declare class Message extends BaseEntity
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                                  | Description |
-| ------------------------------------------------------ | --------- | ----------------------------------------------------- | ----------- |
-| [createdAt](./data-store.message.createdat.md)         |           | Date                                                  |             |
-| [credentials](./data-store.message.credentials.md)     |           | Credential\[\]                                        |             |
-| [data](./data-store.message.data.md)                   |           | object &#124; null                                    |             |
-| [expiresAt](./data-store.message.expiresat.md)         |           | Date                                                  |             |
-| [from](./data-store.message.from.md)                   |           | [Identifier](./data-store.identifier.md)              |             |
-| [id](./data-store.message.id.md)                       |           | string                                                |             |
-| [metaData](./data-store.message.metadata.md)           |           | [MetaData](./data-store.metadata.md) \[\] &#124; null |             |
-| [presentations](./data-store.message.presentations.md) |           | [Presentation](./data-store.presentation.md) \[\]     |             |
-| [raw](./data-store.message.raw.md)                     |           | string                                                |             |
-| [replyTo](./data-store.message.replyto.md)             |           | string\[\]                                            |             |
-| [replyUrl](./data-store.message.replyurl.md)           |           | string                                                |             |
-| [saveDate](./data-store.message.savedate.md)           |           | Date                                                  |             |
-| [threadId](./data-store.message.threadid.md)           |           | string                                                |             |
-| [to](./data-store.message.to.md)                       |           | [Identifier](./data-store.identifier.md)              |             |
-| [type](./data-store.message.type.md)                   |           | string                                                |             |
-| [updateDate](./data-store.message.updatedate.md)       |           | Date                                                  |             |
+| Property                                               | Modifiers | Type                                                  | Description       |
+| ------------------------------------------------------ | --------- | ----------------------------------------------------- | ----------------- |
+| [createdAt?](./data-store.message.createdat.md)        |           | Date                                                  | <i>(Optional)</i> |
+| [credentials](./data-store.message.credentials.md)     |           | Credential\[\]                                        |                   |
+| [data?](./data-store.message.data.md)                  |           | object &#124; null                                    | <i>(Optional)</i> |
+| [expiresAt?](./data-store.message.expiresat.md)        |           | Date                                                  | <i>(Optional)</i> |
+| [from?](./data-store.message.from.md)                  |           | [Identifier](./data-store.identifier.md)              | <i>(Optional)</i> |
+| [id](./data-store.message.id.md)                       |           | string                                                |                   |
+| [metaData?](./data-store.message.metadata.md)          |           | [MetaData](./data-store.metadata.md) \[\] &#124; null | <i>(Optional)</i> |
+| [presentations](./data-store.message.presentations.md) |           | [Presentation](./data-store.presentation.md) \[\]     |                   |
+| [raw?](./data-store.message.raw.md)                    |           | string                                                | <i>(Optional)</i> |
+| [replyTo?](./data-store.message.replyto.md)            |           | string\[\]                                            | <i>(Optional)</i> |
+| [replyUrl?](./data-store.message.replyurl.md)          |           | string                                                | <i>(Optional)</i> |
+| [saveDate](./data-store.message.savedate.md)           |           | Date                                                  |                   |
+| [threadId?](./data-store.message.threadid.md)          |           | string                                                | <i>(Optional)</i> |
+| [to?](./data-store.message.to.md)                      |           | [Identifier](./data-store.identifier.md)              | <i>(Optional)</i> |
+| [type](./data-store.message.type.md)                   |           | string                                                |                   |
+| [updateDate](./data-store.message.updatedate.md)       |           | Date                                                  |                   |
 
 ## Methods
 

@@ -20,6 +20,6 @@ constructor(id?: string);
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                            |
-| --------- | ------ | -------------------------------------------------------------------------------------- |
-| id        | string | An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md) . |
+| Parameter | Type   | Description                                                                                              |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------- |
+| id        | string | <i>(Optional)</i> An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md) . |

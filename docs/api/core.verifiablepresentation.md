@@ -8,24 +8,18 @@ hide_title: true
 
 ## VerifiablePresentation interface
 
-Verifiable Presentation [https://github.com/decentralized-identifier/did-jwt-vc](https://github.com/decentralized-identifier/did-jwt-vc)
+Represents a signed Verifiable Presentation (includes proof). See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)
 
 <b>Signature:</b>
 
 ```typescript
-export interface VerifiablePresentation
+export interface VerifiablePresentation extends W3CPresentation
 ```
+
+<b>Extends:</b> [W3CPresentation](./core.w3cpresentation.md)
 
 ## Properties
 
-| Property                                                                      | Type                                                        | Description |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------- | ----------- |
-| ["@context"](./core.verifiablepresentation.__context_.md)                     | string\[\]                                                  |             |
-| [expirationDate](./core.verifiablepresentation.expirationdate.md)             | string                                                      |             |
-| [holder](./core.verifiablepresentation.holder.md)                             | string                                                      |             |
-| [id](./core.verifiablepresentation.id.md)                                     | string                                                      |             |
-| [issuanceDate](./core.verifiablepresentation.issuancedate.md)                 | string                                                      |             |
-| [proof](./core.verifiablepresentation.proof.md)                               | { type?: string; \[x: string\]: any; }                      |             |
-| [type](./core.verifiablepresentation.type.md)                                 | string\[\]                                                  |             |
-| [verifiableCredential](./core.verifiablepresentation.verifiablecredential.md) | [VerifiableCredential](./core.verifiablecredential.md) \[\] |             |
-| [verifier](./core.verifiablepresentation.verifier.md)                         | string\[\]                                                  |             |
+| Property                                        | Type                                   | Description |
+| ----------------------------------------------- | -------------------------------------- | ----------- |
+| [proof](./core.verifiablepresentation.proof.md) | { type?: string; \[x: string\]: any; } |             |

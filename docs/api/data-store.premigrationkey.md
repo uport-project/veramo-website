@@ -18,8 +18,8 @@ export declare class PreMigrationKey extends BaseEntity
 
 ## Properties
 
-| Property                                                       | Modifiers | Type    | Description |
-| -------------------------------------------------------------- | --------- | ------- | ----------- |
-| [kid](./data-store.premigrationkey.kid.md)                     |           | string  |             |
-| [privateKeyHex](./data-store.premigrationkey.privatekeyhex.md) |           | string  |             |
-| [type](./data-store.premigrationkey.type.md)                   |           | KeyType |             |
+| Property                                                        | Modifiers | Type    | Description       |
+| --------------------------------------------------------------- | --------- | ------- | ----------------- |
+| [kid](./data-store.premigrationkey.kid.md)                      |           | string  |                   |
+| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string  | <i>(Optional)</i> |
+| [type](./data-store.premigrationkey.type.md)                    |           | KeyType |                   |

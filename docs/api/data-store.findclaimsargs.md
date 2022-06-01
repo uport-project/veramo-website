@@ -13,3 +13,5 @@ hide_title: true
 ```typescript
 export declare type FindClaimsArgs = FindArgs<TClaimsColumns>
 ```
+
+<b>References:</b> [FindArgs](./data-store.findargs.md) , [TClaimsColumns](./data-store.tclaimscolumns.md)

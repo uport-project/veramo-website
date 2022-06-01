@@ -13,3 +13,5 @@ hide_title: true
 ```typescript
 export declare type KeyType = TKeyType
 ```
+
+<b>References:</b> [TKeyType](./core.tkeytype.md)

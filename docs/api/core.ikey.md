@@ -18,11 +18,11 @@ export interface IKey
 
 ## Properties
 
-| Property                                      | Type                                             | Description                                                                              |
-| --------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| [kid](./core.ikey.kid.md)                     | string                                           | Key ID                                                                                   |
-| [kms](./core.ikey.kms.md)                     | string                                           | Key Management System                                                                    |
-| [meta](./core.ikey.meta.md)                   | [KeyMetadata](./core.keymetadata.md) &#124; null | Optional. Key metadata. This should be used to determine which algorithms are supported. |
-| [privateKeyHex](./core.ikey.privatekeyhex.md) | string                                           | Optional. Private key                                                                    |
-| [publicKeyHex](./core.ikey.publickeyhex.md)   | string                                           | Public key                                                                               |
-| [type](./core.ikey.type.md)                   | [TKeyType](./core.tkeytype.md)                   | Key type                                                                                 |
+| Property                                       | Type                                             | Description                                                                                                |
+| ---------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| [kid](./core.ikey.kid.md)                      | string                                           | Key ID                                                                                                     |
+| [kms](./core.ikey.kms.md)                      | string                                           | Key Management System                                                                                      |
+| [meta?](./core.ikey.meta.md)                   | [KeyMetadata](./core.keymetadata.md) &#124; null | <i>(Optional)</i> Optional. Key metadata. This should be used to determine which algorithms are supported. |
+| [privateKeyHex?](./core.ikey.privatekeyhex.md) | string                                           | <i>(Optional)</i> Optional. Private key                                                                    |
+| [publicKeyHex](./core.ikey.publickeyhex.md)    | string                                           | Public key                                                                                                 |
+| [type](./core.ikey.type.md)                    | [TKeyType](./core.tkeytype.md)                   | Key type                                                                                                   |

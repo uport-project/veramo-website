@@ -13,5 +13,5 @@ Creates a router that serves `did:web` DID Documents
 <b>Signature:</b>
 
 ```typescript
-WebDidDocRouter: () => Router
+WebDidDocRouter: (options: WebDidDocRouterOptions) => Router
 ```

@@ -16,7 +16,7 @@ export interface MetaData
 
 ## Properties
 
-| Property                                | Type   | Description |
-| --------------------------------------- | ------ | ----------- |
-| [type](./data-store.metadata.type.md)   | string |             |
-| [value](./data-store.metadata.value.md) | string |             |
+| Property                                 | Type   | Description       |
+| ---------------------------------------- | ------ | ----------------- |
+| [type](./data-store.metadata.type.md)    | string |                   |
+| [value?](./data-store.metadata.value.md) | string | <i>(Optional)</i> |
