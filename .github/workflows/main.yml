@@ -1,0 +1,39 @@
+name: Trigger veramo-website build
+on:
+  push:
+    branches:
+      - 'italo/fix-docs'
+jobs:
+  dispatch:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - run: yarn install --frozen-lockfile
+      - run: yarn prettier --check
+      - run: yarn build
+      - run: yarn build:veramo
+      - run: yarn docs
+      - run: |
+            git remote set-url origin https://uport-project:$GH_TOKEN@github.com/uport-project/veramo-website.git
+            git config user.name $GH_USER
+            git config user.email $GH_EMAIL            
+      - name: Push changes to repo
+        run: |
+            RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
+
+            if [ "${GITHUB_REF}" == "main" ]; then
+              git status
+
+              echo Deploying docs for version v$RELEASE_VERSION
+
+              git add .
+              git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
+              git tag -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
+              git push origin ${GITHUB_REF} --tags
+            fi
