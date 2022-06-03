@@ -5,7 +5,8 @@ on:
     branches:
       - 'italo/fix-docs'
 jobs:
-  dispatch:
+  docusaurus:
+    name: Build Veramo's Docusaurus website
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -15,10 +16,51 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.x'
+      - name: Setup docusaurus cache
+        uses: actions/cache@v3
+        with:
+          path: build
+          key: docusaurus.${{ github.sha }}
       - run: yarn install --frozen-lockfile
       - run: yarn prettier --check
       - run: yarn build
+  open-api:
+    name: Build Veramo OpenAPI Documentation
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Setup open-api cache
+        uses: actions/cache@v3
+        with:
+          path: docs/api
+          key: openapi.${{ github.sha }}
       - run: yarn build:veramo
+  merge:
+    name: Merge Docusaurus and OpenAPI documentaion
+    needs:
+      - docusaurus
+      - open-api
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Recover docusaurus cache
+        uses: actions/cache@v3
+        with:
+          path: build
+          key: docusaurus.${{ github.sha }}
+      - name: Recover open-api cache
+        uses: actions/cache@v3
+        with:
+          path: docs/api
+          key: openapi.${{ github.sha }}
       - run: |
           git remote set-url origin https://uport-project:$GH_TOKEN@github.com/uport-project/veramo-website.git
           git config user.name $GH_USER
