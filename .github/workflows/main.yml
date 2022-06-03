@@ -69,6 +69,7 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: Commit changes and tag
         run: |
+          git clone https://github.com/uport-project/veramo.git veramo
           RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
           git status
           echo Deploying docs for version v$RELEASE_VERSION
