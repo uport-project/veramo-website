@@ -6,7 +6,7 @@ on:
       - 'italo/fix-docs'
 jobs:
   docusaurus:
-    name: Build Veramo's Docusaurus website
+    name: Docusaurus build
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -25,7 +25,7 @@ jobs:
       - run: yarn prettier --check
       - run: yarn build
   open-api:
-    name: Build Veramo OpenAPI Documentation
+    name: OpenAPI build
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -40,9 +40,10 @@ jobs:
         with:
           path: docs/api
           key: openapi.${{ github.sha }}
+      - run: yarn install --frozen-lockfile
       - run: yarn build:veramo
   merge:
-    name: Merge Docusaurus and OpenAPI documentaion
+    name: Merge and push
     needs:
       - docusaurus
       - open-api
