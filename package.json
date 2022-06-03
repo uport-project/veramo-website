@@ -11,7 +11,6 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "build:veramo": "bash ./scripts/build-veramo.sh",
-    "docs:pretty": "pretty-quick",
     "prettier": "prettier --write '{src,docs, !build}/**/*'"
   },
   "dependencies": {

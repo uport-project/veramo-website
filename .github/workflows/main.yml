@@ -19,7 +19,6 @@ jobs:
       - run: yarn prettier --check
       - run: yarn build
       - run: yarn build:veramo
-      - run: yarn docs
       - run: |
           git remote set-url origin https://uport-project:$GH_TOKEN@github.com/uport-project/veramo-website.git
           git config user.name $GH_USER
