@@ -1,7 +1,5 @@
 name: Trigger veramo-website build
 on:
-  repository_dispatch:
-    types: [on-demand-build-website]
   workflow_dispatch:
   push:
     branches:
