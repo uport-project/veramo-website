@@ -1,5 +1,6 @@
 name: Trigger veramo-website build
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'italo/fix-docs'
@@ -20,20 +21,20 @@ jobs:
       - run: yarn build:veramo
       - run: yarn docs
       - run: |
-            git remote set-url origin https://uport-project:$GH_TOKEN@github.com/uport-project/veramo-website.git
-            git config user.name $GH_USER
-            git config user.email $GH_EMAIL            
+          git remote set-url origin https://uport-project:$GH_TOKEN@github.com/uport-project/veramo-website.git
+          git config user.name $GH_USER
+          git config user.email $GH_EMAIL
       - name: Push changes to repo
         run: |
-            RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
+          RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
 
-            if [ "${GITHUB_REF}" == "main" ]; then
-              git status
+          if [ "${GITHUB_REF}" == "main" ]; then
+            git status
 
-              echo Deploying docs for version v$RELEASE_VERSION
+            echo Deploying docs for version v$RELEASE_VERSION
 
-              git add .
-              git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
-              git tag -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
-              git push origin ${GITHUB_REF} --tags
-            fi
+            git add .
+            git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
+            git tag -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
+            git push origin ${GITHUB_REF} --tags
+          fi
