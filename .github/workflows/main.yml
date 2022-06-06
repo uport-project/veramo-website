@@ -40,7 +40,6 @@ jobs:
         with:
           path: docs/api
           key: openapi.${{ github.sha }}
-      - run: yarn install --frozen-lockfile
       - run: yarn build:veramo
   merge:
     name: Merge and push
@@ -62,6 +61,9 @@ jobs:
         with:
           path: docs/api
           key: openapi.${{ github.sha }}
+      - name: Loading dependencies for commit tasks
+        run: |
+          yarn
       - name: Config Git
         run: |
           git config --local user.name '[bot] veramo-website'

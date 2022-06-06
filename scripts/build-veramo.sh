@@ -8,7 +8,8 @@ rm -rf veramo
 git clone $GITREPO veramo
 cd veramo
 # git fetch --all && git checkout main
-git checkout italo/fix-docs
-yarn && yarn bootstrap && yarn build && yarn docs
+git fetch --all && git checkout italo/fix-docs
+yarn && yarn build && yarn docs
 cd ..
-cp -fR ./veramo/docs/api ./docs/
+rm -fR ./docs/api
+mv -fr ./veramo/docs/api ./docs/
