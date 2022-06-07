@@ -5,8 +5,7 @@ on:
     branches:
       - 'italo/fix-docs'
 jobs:
-  docusaurus:
-    name: Docusaurus build
+  docs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -21,51 +20,16 @@ jobs:
         with:
           path: build
           key: docusaurus.${{ github.sha }}
-      - run: rm -fR ./docs/api
-      - run: yarn install --frozen-lockfile
-      - run: yarn prettier --check
-      - run: yarn build
-  open-api:
-    name: OpenAPI build
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Use Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14.x'
-      - name: Setup open-api cache
-        uses: actions/cache@v3
-        with:
-          path: docs/api
-          key: openapi.${{ github.sha }}
-      - run: yarn build:veramo
-  merge:
-    name: Merge and push
-    needs:
-      - docusaurus
-      - open-api
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Recover docusaurus output
-        uses: actions/cache@v3
-        with:
-          path: build
-          key: docusaurus.${{ github.sha }}
-      - name: Recover open-api output
-        uses: actions/cache@v3
-        with:
-          path: docs/api
-          key: openapi.${{ github.sha }}
-      - name: Loading dependencies for commit tasks
+      - name: API docs build
         run: |
-          yarn
-      - name: Config Git
+          rm -fR ./docs/api
+          yarn install --frozen-lockfile
+          yarn build:veramo
+          yarn prettier --check
+      - name: Docusaurus build
+        run: |
+          yarn build
+      - name: Config GIT
         run: |
           git config --local user.name '[bot] veramo-website'
           git config --local user.email 'veramo-website@users.noreply.github.com'
