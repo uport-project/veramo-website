@@ -15,15 +15,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.x'
-      - name: Setup docusaurus cache
-        uses: actions/cache@v3
-        with:
-          path: build
-          key: docusaurus.${{ github.sha }}
       - name: API docs build
         run: |
-          rm -fR ./docs/api
           yarn install --frozen-lockfile
+          rm -fR ./docs/api
           yarn build:veramo
           yarn prettier --check
       - name: Docusaurus build
