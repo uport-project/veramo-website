@@ -16,4 +16,4 @@ yarn && yarn build && yarn docs
 
 cd $docsDir
 rm -fR $docsDir/docs/api
-mv -fr $revamoDir/veramo/docs/api ./docs/
+mv $revamoDir/veramo/docs/api $docsDir/docs/
