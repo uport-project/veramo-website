@@ -20,10 +20,10 @@ jobs:
           yarn install --frozen-lockfile
           rm -fR ./docs/api
           yarn build:veramo
-          yarn prettier --check
       - name: Docusaurus build
         run: |
           yarn build
+          yarn prettier --check
       - name: Config GIT
         run: |
           git config --local user.name '[bot] veramo-website'
