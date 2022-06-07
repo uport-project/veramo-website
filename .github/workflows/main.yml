@@ -33,11 +33,14 @@ jobs:
         run: |
           git clone https://github.com/uport-project/veramo.git veramo
           RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
+          if [ "${GITHUB_REF}" != "main" ]; then
+            RELEASE_VERSION="${RELEASE_VERSION}_${GITHUB_REF}"
+          fi
           git status
           echo Deploying docs for version v$RELEASE_VERSION
           git add .
           git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
-          git tag -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
+          git tag -f -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
       - name: Push to repo
         run: |
           git push origin $GITHUB_REF --tags
