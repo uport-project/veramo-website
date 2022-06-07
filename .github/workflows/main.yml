@@ -21,6 +21,7 @@ jobs:
         with:
           path: build
           key: docusaurus.${{ github.sha }}
+      - run: rm -fR ./docs/api
       - run: yarn install --frozen-lockfile
       - run: yarn prettier --check
       - run: yarn build
