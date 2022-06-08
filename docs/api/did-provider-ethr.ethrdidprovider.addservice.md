@@ -20,10 +20,10 @@ addService({ identifier, service, options }: {
 
 ## Parameters
 
-| Parameter                        | Type                                                                                                                   | Description |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, service, options } | { identifier: [IIdentifier](./core.iidentifier.md) ; service: [IService](./core.iservice.md)<!-- -->; options?: any; } |             |
-| context                          | IRequiredContext                                                                                                       |             |
+| Parameter                        | Type                                                                                                            | Description |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------- |
+| { identifier, service, options } | { identifier: [IIdentifier](./core.iidentifier.md) ; service: [IService](./core.iservice.md) ; options?: any; } |             |
+| context                          | IRequiredContext                                                                                                |             |
 
 <b>Returns:</b>
 

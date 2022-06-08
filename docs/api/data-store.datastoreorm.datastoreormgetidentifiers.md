@@ -16,10 +16,10 @@ dataStoreORMGetIdentifiers(args: FindArgs<TIdentifiersColumns>, context: IContex
 
 ## Parameters
 
-| Parameter | Type                                                                                                            | Description |
-| --------- | --------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md) &lt;[TIdentifiersColumns](./data-store.tidentifierscolumns.md)<!-- -->&gt; |             |
-| context   | IContext                                                                                                        |             |
+| Parameter | Type                                                                                                     | Description |
+| --------- | -------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./data-store.findargs.md) &lt;[TIdentifiersColumns](./data-store.tidentifierscolumns.md) &gt; |             |
+| context   | IContext                                                                                                 |             |
 
 <b>Returns:</b>
 

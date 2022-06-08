@@ -20,10 +20,10 @@ abstract addService(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                   | Description |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core.iidentifier.md) ; service: [IService](./core.iservice.md)<!-- -->; options?: any; } |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt;                          |             |
+| Parameter | Type                                                                                                            | Description |
+| --------- | --------------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | { identifier: [IIdentifier](./core.iidentifier.md) ; service: [IService](./core.iservice.md) ; options?: any; } |             |
+| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt;                          |             |
 
 <b>Returns:</b>
 

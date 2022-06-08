@@ -16,10 +16,10 @@ dataStoreORMGetMessages(args: FindArgs<TMessageColumns>, context: IContext): Pro
 
 ## Parameters
 
-| Parameter | Type                                                                                                    | Description |
-| --------- | ------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md) &lt;[TMessageColumns](./data-store.tmessagecolumns.md)<!-- -->&gt; |             |
-| context   | IContext                                                                                                |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | [FindArgs](./data-store.findargs.md) &lt;[TMessageColumns](./data-store.tmessagecolumns.md) &gt; |             |
+| context   | IContext                                                                                         |             |
 
 <b>Returns:</b>
 

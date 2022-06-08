@@ -18,10 +18,10 @@ didManagerDelete({ did }: IDIDManagerDeleteArgs, context: IAgentContext<IKeyMana
 
 ## Parameters
 
-| Parameter | Type                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| { did }   | [IDIDManagerDeleteArgs](./core.ididmanagerdeleteargs.md)                                      |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                   | Description |
+| --------- | -------------------------------------------------------------------------------------- | ----------- |
+| { did }   | [IDIDManagerDeleteArgs](./core.ididmanagerdeleteargs.md)                               |             |
+| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt; |             |
 
 <b>Returns:</b>
 

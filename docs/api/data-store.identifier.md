@@ -39,9 +39,9 @@ export declare class Identifier extends BaseEntity
 
 ## Methods
 
-| Method                                                                                     | Modifiers | Description                                                                                                          |
-| ------------------------------------------------------------------------------------------ | --------- | -------------------------------------------------------------------------------------------------------------------- |
-| [getLatestClaimValue(dbConnection, where)](./data-store.identifier.getlatestclaimvalue.md) |           | Convenience method const name = await identifier.getLatestClaimValue(<!-- -->{<!-- -->type: 'name'<!-- -->}<!-- -->) |
-| [setSaveDate()](./data-store.identifier.setsavedate.md)                                    |           |                                                                                                                      |
-| [setUpdateDate()](./data-store.identifier.setupdatedate.md)                                |           |                                                                                                                      |
-| [shortDid()](./data-store.identifier.shortdid.md)                                          |           |                                                                                                                      |
+| Method                                                                                     | Modifiers | Description                                                                              |
+| ------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------------------- |
+| [getLatestClaimValue(dbConnection, where)](./data-store.identifier.getlatestclaimvalue.md) |           | Convenience method const name = await identifier.getLatestClaimValue( { type: 'name' } ) |
+| [setSaveDate()](./data-store.identifier.setsavedate.md)                                    |           |                                                                                          |
+| [setUpdateDate()](./data-store.identifier.setupdatedate.md)                                |           |                                                                                          |
+| [shortDid()](./data-store.identifier.shortdid.md)                                          |           |                                                                                          |

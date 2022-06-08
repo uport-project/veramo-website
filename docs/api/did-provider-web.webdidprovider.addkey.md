@@ -20,10 +20,10 @@ addKey({ identifier, key, options }: {
 
 ## Parameters
 
-| Parameter                    | Type                                                                                                       | Description |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, key, options } | { identifier: [IIdentifier](./core.iidentifier.md) ; key: [IKey](./core.ikey.md)<!-- -->; options?: any; } |             |
-| context                      | IContext                                                                                                   |             |
+| Parameter                    | Type                                                                                                | Description |
+| ---------------------------- | --------------------------------------------------------------------------------------------------- | ----------- |
+| { identifier, key, options } | { identifier: [IIdentifier](./core.iidentifier.md) ; key: [IKey](./core.ikey.md) ; options?: any; } |             |
+| context                      | IContext                                                                                            |             |
 
 <b>Returns:</b>
 

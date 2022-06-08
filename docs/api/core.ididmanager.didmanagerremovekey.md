@@ -18,10 +18,10 @@ didManagerRemoveKey(args: IDIDManagerRemoveKeyArgs, context: IAgentContext<IKeyM
 
 ## Parameters
 
-| Parameter | Type                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IDIDManagerRemoveKeyArgs](./core.ididmanagerremovekeyargs.md)                                |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                   | Description |
+| --------- | -------------------------------------------------------------------------------------- | ----------- |
+| args      | [IDIDManagerRemoveKeyArgs](./core.ididmanagerremovekeyargs.md)                         |             |
+| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt; |             |
 
 <b>Returns:</b>
 

@@ -12,7 +12,7 @@ The json payload of the Presentation according to the [canonical model](https://
 
 The signer of the Presentation is chosen based on the `holder` property of the `presentation`
 
-' @<!-- -->context', 'type' and 'issuanceDate' will be added automatically if omitted
+' @ context', 'type' and 'issuanceDate' will be added automatically if omitted
 
 <b>Signature:</b>
 

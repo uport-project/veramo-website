@@ -19,9 +19,9 @@ abstract sharedSecret(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | { myKeyRef: Pick&lt;[IKey](./core.ikey.md) , 'kid'&gt;; theirKey: Pick&lt;[IKey](./core.ikey.md)<!-- -->, 'publicKeyHex' &#124; 'type'&gt;; } |             |
+| Parameter | Type                                                                                                                                   | Description |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | { myKeyRef: Pick&lt;[IKey](./core.ikey.md) , 'kid'&gt;; theirKey: Pick&lt;[IKey](./core.ikey.md) , 'publicKeyHex' &#124; 'type'&gt;; } |             |
 
 <b>Returns:</b>
 

@@ -16,10 +16,10 @@ dataStoreORMGetVerifiableCredentialsByClaims(args: FindArgs<TClaimsColumns>, con
 
 ## Parameters
 
-| Parameter | Type                                                                                                  | Description |
-| --------- | ----------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md) &lt;[TClaimsColumns](./data-store.tclaimscolumns.md)<!-- -->&gt; |             |
-| context   | IContext                                                                                              |             |
+| Parameter | Type                                                                                           | Description |
+| --------- | ---------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./data-store.findargs.md) &lt;[TClaimsColumns](./data-store.tclaimscolumns.md) &gt; |             |
+| context   | IContext                                                                                       |             |
 
 <b>Returns:</b>
 

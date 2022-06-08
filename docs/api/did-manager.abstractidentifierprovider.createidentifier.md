@@ -20,10 +20,10 @@ abstract createIdentifier(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| args      | { kms?: string; alias?: string; options?: any; }                                              |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                   | Description |
+| --------- | -------------------------------------------------------------------------------------- | ----------- |
+| args      | { kms?: string; alias?: string; options?: any; }                                       |             |
+| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt; |             |
 
 <b>Returns:</b>
 
