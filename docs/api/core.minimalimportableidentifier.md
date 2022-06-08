@@ -19,4 +19,4 @@ export declare type MinimalImportableIdentifier = {
 } & Omit<IIdentifier, 'keys' | 'services'>
 ```
 
-<b>References:</b> [MinimalImportableKey](./core.minimalimportablekey.md) , [IService](./core.iservice.md) , [IIdentifier](./core.iidentifier.md)
+<b>References:</b> [MinimalImportableKey](./core.minimalimportablekey.md), [IService](./core.iservice.md), [IIdentifier](./core.iidentifier.md)

@@ -23,4 +23,4 @@ dataStoreORMGetMessages(args: FindMessagesArgs, context: IContext): Promise<Arra
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[IMessage](./core.imessage.md) &gt;&gt;
+Promise&lt;Array&lt;[IMessage](./core.imessage.md)&gt;&gt;

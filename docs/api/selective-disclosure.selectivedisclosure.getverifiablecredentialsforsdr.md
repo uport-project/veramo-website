@@ -23,8 +23,8 @@ getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, contex
 | Parameter | Type                                                                                                 | Description                                                             |
 | --------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) | Contains the Request to be fulfilled and the DID of the subject         |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IDataStoreORM](./data-store.idatastoreorm.md) &gt;     | \*RESERVED\* This is filled by the framework when the method is called. |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./data-store.idatastoreorm.md)&gt;       | \*RESERVED\* This is filled by the framework when the method is called. |
 
 <b>Returns:</b>
 
-Promise&lt;[ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md) \[\]&gt;
+Promise&lt;[ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)\[\]&gt;

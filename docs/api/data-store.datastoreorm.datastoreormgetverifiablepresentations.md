@@ -16,11 +16,11 @@ dataStoreORMGetVerifiablePresentations(args: FindArgs<TPresentationColumns>, con
 
 ## Parameters
 
-| Parameter | Type                                                                                                       | Description |
-| --------- | ---------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md) &lt;[TPresentationColumns](./data-store.tpresentationcolumns.md) &gt; |             |
-| context   | IContext                                                                                                   |             |
+| Parameter | Type                                                                                                     | Description |
+| --------- | -------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./data-store.findargs.md)&lt;[TPresentationColumns](./data-store.tpresentationcolumns.md)&gt; |             |
+| context   | IContext                                                                                                 |             |
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[UniqueVerifiablePresentation](./data-store.uniqueverifiablepresentation.md) &gt;&gt;
+Promise&lt;Array&lt;[UniqueVerifiablePresentation](./data-store.uniqueverifiablepresentation.md)&gt;&gt;

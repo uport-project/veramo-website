@@ -20,10 +20,10 @@ removeService(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                              | Description |
-| --------- | --------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core.iidentifier.md) ; id: string; options?: any; } |             |
-| context   | IContext                                                                          |             |
+| Parameter | Type                                                                             | Description |
+| --------- | -------------------------------------------------------------------------------- | ----------- |
+| args      | { identifier: [IIdentifier](./core.iidentifier.md); id: string; options?: any; } |             |
+| context   | IContext                                                                         |             |
 
 <b>Returns:</b>
 

@@ -14,4 +14,4 @@ hide_title: true
 export declare type FindIdentifiersArgs = FindArgs<TIdentifiersColumns>
 ```
 
-<b>References:</b> [FindArgs](./data-store.findargs.md) , [TIdentifiersColumns](./data-store.tidentifierscolumns.md)
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TIdentifiersColumns](./data-store.tidentifierscolumns.md)

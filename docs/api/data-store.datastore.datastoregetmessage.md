@@ -22,4 +22,4 @@ dataStoreGetMessage(args: IDataStoreGetMessageArgs): Promise<IMessage>;
 
 <b>Returns:</b>
 
-Promise&lt;[IMessage](./core.imessage.md) &gt;
+Promise&lt;[IMessage](./core.imessage.md)&gt;

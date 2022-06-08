@@ -14,4 +14,4 @@ hide_title: true
 export declare type FindMessagesArgs = FindArgs<TMessageColumns>
 ```
 
-<b>References:</b> [FindArgs](./data-store.findargs.md) , [TMessageColumns](./data-store.tmessagecolumns.md)
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TMessageColumns](./data-store.tmessagecolumns.md)

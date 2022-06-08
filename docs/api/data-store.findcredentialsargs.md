@@ -14,4 +14,4 @@ hide_title: true
 export declare type FindCredentialsArgs = FindArgs<TCredentialColumns>
 ```
 
-<b>References:</b> [FindArgs](./data-store.findargs.md) , [TCredentialColumns](./data-store.tcredentialcolumns.md)
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TCredentialColumns](./data-store.tcredentialcolumns.md)

@@ -10,7 +10,7 @@ hide_title: true
 
 Convenience method
 
-const name = await identifier.getLatestClaimValue( { type: 'name' } )
+const name = await identifier.getLatestClaimValue({type: 'name'})
 
 <b>Signature:</b>
 

@@ -14,4 +14,4 @@ hide_title: true
 export declare type FindPresentationsArgs = FindArgs<TPresentationColumns>
 ```
 
-<b>References:</b> [FindArgs](./data-store.findargs.md) , [TPresentationColumns](./data-store.tpresentationcolumns.md)
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TPresentationColumns](./data-store.tpresentationcolumns.md)

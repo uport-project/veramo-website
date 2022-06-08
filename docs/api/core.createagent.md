@@ -30,7 +30,7 @@ export declare function createAgent<T extends IPluginMethodMap, C = Record<strin
 
 <b>Returns:</b>
 
-[TAgent](./core.tagent.md) &lt;T&gt; &amp; { context?: C; }
+[TAgent](./core.tagent.md)&lt;T&gt; &amp; { context?: C; }
 
 configured agent
 

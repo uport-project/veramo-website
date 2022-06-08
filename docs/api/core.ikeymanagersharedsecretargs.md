@@ -18,7 +18,7 @@ export interface IKeyManagerSharedSecretArgs
 
 ## Properties
 
-| Property                                                           | Type                                                              | Description                                                                                                                              |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [publicKey](./core.ikeymanagersharedsecretargs.publickey.md)       | Pick&lt;[IKey](./core.ikey.md) , 'publicKeyHex' &#124; 'type'&gt; | The public key of the other party. The <code>type</code> of key MUST be compatible with the type referenced by <code>secretKeyRef</code> |
-| [secretKeyRef](./core.ikeymanagersharedsecretargs.secretkeyref.md) | string                                                            | The secret key handle (<code>kid</code>) as returned by [keyManagerCreate](./core.ikeymanager.keymanagercreate.md)                       |
+| Property                                                           | Type                                                             | Description                                                                                                                              |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [publicKey](./core.ikeymanagersharedsecretargs.publickey.md)       | Pick&lt;[IKey](./core.ikey.md), 'publicKeyHex' &#124; 'type'&gt; | The public key of the other party. The <code>type</code> of key MUST be compatible with the type referenced by <code>secretKeyRef</code> |
+| [secretKeyRef](./core.ikeymanagersharedsecretargs.secretkeyref.md) | string                                                           | The secret key handle (<code>kid</code>) as returned by [keyManagerCreate](./core.ikeymanager.keymanagercreate.md)                       |

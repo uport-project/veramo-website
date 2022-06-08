@@ -26,4 +26,4 @@ get({ did, alias, provider, }: {
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md) &gt;
+Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;

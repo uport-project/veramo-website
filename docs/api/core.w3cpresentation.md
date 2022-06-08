@@ -18,13 +18,13 @@ export interface W3CPresentation
 
 ## Properties
 
-| Property                                                                | Type                                                        | Description       |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------- |
-| ["@context"](./core.w3cpresentation.__context_.md)                      | string\[\]                                                  |                   |
-| [expirationDate?](./core.w3cpresentation.expirationdate.md)             | string                                                      | <i>(Optional)</i> |
-| [holder](./core.w3cpresentation.holder.md)                              | string                                                      |                   |
-| [id?](./core.w3cpresentation.id.md)                                     | string                                                      | <i>(Optional)</i> |
-| [issuanceDate?](./core.w3cpresentation.issuancedate.md)                 | string                                                      | <i>(Optional)</i> |
-| [type](./core.w3cpresentation.type.md)                                  | string\[\]                                                  |                   |
-| [verifiableCredential?](./core.w3cpresentation.verifiablecredential.md) | [VerifiableCredential](./core.verifiablecredential.md) \[\] | <i>(Optional)</i> |
-| [verifier](./core.w3cpresentation.verifier.md)                          | string\[\]                                                  |                   |
+| Property                                                                | Type                                                       | Description       |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------- | ----------------- |
+| ["@context"](./core.w3cpresentation.__context_.md)                      | string\[\]                                                 |                   |
+| [expirationDate?](./core.w3cpresentation.expirationdate.md)             | string                                                     | <i>(Optional)</i> |
+| [holder](./core.w3cpresentation.holder.md)                              | string                                                     |                   |
+| [id?](./core.w3cpresentation.id.md)                                     | string                                                     | <i>(Optional)</i> |
+| [issuanceDate?](./core.w3cpresentation.issuancedate.md)                 | string                                                     | <i>(Optional)</i> |
+| [type](./core.w3cpresentation.type.md)                                  | string\[\]                                                 |                   |
+| [verifiableCredential?](./core.w3cpresentation.verifiablecredential.md) | [VerifiableCredential](./core.verifiablecredential.md)\[\] | <i>(Optional)</i> |
+| [verifier](./core.w3cpresentation.verifier.md)                          | string\[\]                                                 |                   |

@@ -22,4 +22,4 @@ abstract import(args: ImportablePrivateKey): Promise<ManagedPrivateKey>;
 
 <b>Returns:</b>
 
-Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md) &gt;
+Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;

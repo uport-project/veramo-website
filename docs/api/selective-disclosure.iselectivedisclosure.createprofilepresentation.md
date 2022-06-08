@@ -18,11 +18,11 @@ createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentCo
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                    | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                                |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[ICredentialIssuer](./credential-w3c.icredentialissuer.md) &amp; [IDIDManager](./core.ididmanager.md) &gt; |             |
+| Parameter | Type                                                                                                                                                  | Description |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                              |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[ICredentialIssuer](./credential-w3c.icredentialissuer.md) &amp; [IDIDManager](./core.ididmanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md) &gt;
+Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md)&gt;

@@ -24,4 +24,4 @@ keyManagerGet(args: IKeyManagerGetArgs): Promise<IKey>;
 
 <b>Returns:</b>
 
-Promise&lt;[IKey](./core.ikey.md) &gt;
+Promise&lt;[IKey](./core.ikey.md)&gt;

@@ -22,9 +22,9 @@ getDIDComponentById({ didDocument, didUrl, section, }: {
 
 ## Parameters
 
-| Parameter                         | Type                                                                                                         | Description |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------- |
-| { didDocument, didUrl, section, } | { didDocument: DIDDocument; didUrl: string; section?: [DIDDocumentSection](./core.diddocumentsection.md) ; } |             |
+| Parameter                         | Type                                                                                                        | Description |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
+| { didDocument, didUrl, section, } | { didDocument: DIDDocument; didUrl: string; section?: [DIDDocumentSection](./core.diddocumentsection.md); } |             |
 
 <b>Returns:</b>
 

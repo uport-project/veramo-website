@@ -27,7 +27,7 @@ export declare class Presentation extends BaseEntity
 | [holder](./data-store.presentation.holder.md)                  |           | [Identifier](./data-store.identifier.md)                   |                   |
 | [id?](./data-store.presentation.id.md)                         |           | String                                                     | <i>(Optional)</i> |
 | [issuanceDate](./data-store.presentation.issuancedate.md)      |           | Date                                                       |                   |
-| [messages](./data-store.presentation.messages.md)              |           | [Message](./data-store.message.md) \[\]                    |                   |
+| [messages](./data-store.presentation.messages.md)              |           | [Message](./data-store.message.md)\[\]                     |                   |
 | [raw](./data-store.presentation.raw.md)                        |           | [VerifiablePresentation](./core.verifiablepresentation.md) |                   |
 | [type](./data-store.presentation.type.md)                      |           | string\[\]                                                 |                   |
-| [verifier?](./data-store.presentation.verifier.md)             |           | [Identifier](./data-store.identifier.md) \[\]              | <i>(Optional)</i> |
+| [verifier?](./data-store.presentation.verifier.md)             |           | [Identifier](./data-store.identifier.md)\[\]               | <i>(Optional)</i> |

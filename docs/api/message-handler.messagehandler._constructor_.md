@@ -20,6 +20,6 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                             | Description |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
-| options   | { messageHandlers: [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) \[\]; } |             |
+| Parameter | Type                                                                                            | Description |
+| --------- | ----------------------------------------------------------------------------------------------- | ----------- |
+| options   | { messageHandlers: [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)\[\]; } |             |

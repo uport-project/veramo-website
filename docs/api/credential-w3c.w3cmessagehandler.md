@@ -8,7 +8,7 @@ hide_title: true
 
 ## W3cMessageHandler class
 
-An implementation of the [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) .
+An implementation of the [AbstractMessageHandler](./message-handler.abstractmessagehandler.md).
 
 This plugin can handle incoming W3C Verifiable Credentials and Presentations and prepare them for internal storage as [Message](./message-handler.message.md) types.
 

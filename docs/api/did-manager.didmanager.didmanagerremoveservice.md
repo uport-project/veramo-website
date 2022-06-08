@@ -18,10 +18,10 @@ didManagerRemoveService({ did, id, options }: IDIDManagerRemoveServiceArgs, cont
 
 ## Parameters
 
-| Parameter            | Type                                                                                   | Description |
-| -------------------- | -------------------------------------------------------------------------------------- | ----------- |
-| { did, id, options } | [IDIDManagerRemoveServiceArgs](./core.ididmanagerremoveserviceargs.md)                 |             |
-| context              | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt; |             |
+| Parameter            | Type                                                                                 | Description |
+| -------------------- | ------------------------------------------------------------------------------------ | ----------- |
+| { did, id, options } | [IDIDManagerRemoveServiceArgs](./core.ididmanagerremoveserviceargs.md)               |             |
+| context              | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 

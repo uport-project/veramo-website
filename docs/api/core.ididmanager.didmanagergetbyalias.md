@@ -24,7 +24,7 @@ didManagerGetByAlias(args: IDIDManagerGetByAliasArgs): Promise<IIdentifier>;
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md) &gt;
+Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
 
 ## Example
 

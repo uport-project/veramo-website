@@ -25,7 +25,7 @@ createVerifiableCredential(args: ICreateVerifiableCredentialArgs, context: ICont
 
 <b>Returns:</b>
 
-Promise&lt;[VerifiableCredential](./core.verifiablecredential.md) &gt;
+Promise&lt;[VerifiableCredential](./core.verifiablecredential.md)&gt;
 
 - a promise that resolves to the [VerifiableCredential](./core.verifiablecredential.md) that was requested or rejects with an error if there was a problem with the input or while getting the key to sign
 

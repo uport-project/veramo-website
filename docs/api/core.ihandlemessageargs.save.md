@@ -8,7 +8,7 @@ hide_title: true
 
 ## IHandleMessageArgs.save property
 
-Optional. If set to `true` , the message will be saved using [dataStoreSaveMessage](./core.idatastore.datastoresavemessage.md)
+Optional. If set to `true`, the message will be saved using [dataStoreSaveMessage](./core.idatastore.datastoresavemessage.md)
 
 <b>Signature:</b>
 

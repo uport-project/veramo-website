@@ -12,7 +12,7 @@ The json payload of the Credential according to the [canonical model](https://ww
 
 The signer of the Credential is chosen based on the `issuer.id` property of the `credential`
 
-' @ context', 'type' and 'issuanceDate' will be added automatically if omitted
+'@context', 'type' and 'issuanceDate' will be added automatically if omitted
 
 <b>Signature:</b>
 

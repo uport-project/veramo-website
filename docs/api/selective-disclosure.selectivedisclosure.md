@@ -12,7 +12,7 @@ hide_title: true
 
 This class adds support for creating [Selective Disclosure](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md) requests and interpret the responses received.
 
-This implementation of the uPort protocol uses [W3C Presentation](https://www.w3.org/TR/vc-data-model/#presentations) as the response encoding instead of a `shareReq` .
+This implementation of the uPort protocol uses [W3C Presentation](https://www.w3.org/TR/vc-data-model/#presentations) as the response encoding instead of a `shareReq`.
 
 <b>Signature:</b>
 

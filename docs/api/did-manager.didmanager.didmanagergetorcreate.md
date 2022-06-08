@@ -18,11 +18,11 @@ didManagerGetOrCreate({ provider, alias, kms, options }: IDIDManagerGetOrCreateA
 
 ## Parameters
 
-| Parameter                         | Type                                                                                   | Description |
-| --------------------------------- | -------------------------------------------------------------------------------------- | ----------- |
-| { provider, alias, kms, options } | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                     |             |
-| context                           | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt; |             |
+| Parameter                         | Type                                                                                 | Description |
+| --------------------------------- | ------------------------------------------------------------------------------------ | ----------- |
+| { provider, alias, kms, options } | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                   |             |
+| context                           | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md) &gt;
+Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;

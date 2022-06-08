@@ -16,4 +16,4 @@ Represents the properties required to import a key.
 export declare type MinimalImportableKey = RequireOnly<IKey, 'privateKeyHex' | 'type' | 'kms'>
 ```
 
-<b>References:</b> [RequireOnly](./core.requireonly.md) , [IKey](./core.ikey.md)
+<b>References:</b> [RequireOnly](./core.requireonly.md), [IKey](./core.ikey.md)

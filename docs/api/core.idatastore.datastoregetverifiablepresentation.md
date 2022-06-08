@@ -24,6 +24,6 @@ dataStoreGetVerifiablePresentation(args: IDataStoreGetVerifiablePresentationArgs
 
 <b>Returns:</b>
 
-Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md) &gt;
+Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md)&gt;
 
 a promise that resolves to the Verifiable Presentation

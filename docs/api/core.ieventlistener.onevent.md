@@ -21,10 +21,10 @@ onEvent?(event: {
 
 ## Parameters
 
-| Parameter | Type                                                | Description                                                                       |
-| --------- | --------------------------------------------------- | --------------------------------------------------------------------------------- |
-| event     | { type: string; data: any; }                        |                                                                                   |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;{}&gt; | Execution context. Requires agent with [IDataStore](./core.idatastore.md) methods |
+| Parameter | Type                                               | Description                                                                       |
+| --------- | -------------------------------------------------- | --------------------------------------------------------------------------------- |
+| event     | { type: string; data: any; }                       |                                                                                   |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;{}&gt; | Execution context. Requires agent with [IDataStore](./core.idatastore.md) methods |
 
 <b>Returns:</b>
 

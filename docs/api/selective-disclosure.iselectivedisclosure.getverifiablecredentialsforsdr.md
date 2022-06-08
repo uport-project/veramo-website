@@ -21,8 +21,8 @@ getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, contex
 | Parameter | Type                                                                                                 | Description |
 | --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
 | args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IDataStoreORM](./data-store.idatastoreorm.md) &gt;     |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./data-store.idatastoreorm.md)&gt;       |             |
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md) &gt;&gt;
+Promise&lt;Array&lt;[ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)&gt;&gt;

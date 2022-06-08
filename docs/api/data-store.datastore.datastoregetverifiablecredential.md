@@ -22,4 +22,4 @@ dataStoreGetVerifiableCredential(args: IDataStoreGetVerifiableCredentialArgs): P
 
 <b>Returns:</b>
 
-Promise&lt;[VerifiableCredential](./core.verifiablecredential.md) &gt;
+Promise&lt;[VerifiableCredential](./core.verifiablecredential.md)&gt;

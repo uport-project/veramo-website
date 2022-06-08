@@ -22,4 +22,4 @@ abstract list(args: {}): Promise<Array<ManagedPrivateKey>>;
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md) &gt;&gt;
+Promise&lt;Array&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;&gt;

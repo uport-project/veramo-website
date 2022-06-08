@@ -18,10 +18,10 @@ didManagerRemoveKey({ did, kid, options }: IDIDManagerRemoveKeyArgs, context: IA
 
 ## Parameters
 
-| Parameter             | Type                                                                                   | Description |
-| --------------------- | -------------------------------------------------------------------------------------- | ----------- |
-| { did, kid, options } | [IDIDManagerRemoveKeyArgs](./core.ididmanagerremovekeyargs.md)                         |             |
-| context               | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt; |             |
+| Parameter             | Type                                                                                 | Description |
+| --------------------- | ------------------------------------------------------------------------------------ | ----------- |
+| { did, kid, options } | [IDIDManagerRemoveKeyArgs](./core.ididmanagerremovekeyargs.md)                       |             |
+| context               | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 

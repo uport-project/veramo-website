@@ -18,11 +18,11 @@ handleMessage(args: IHandleMessageArgs, context: IAgentContext<IDataStore>): Pro
 
 ## Parameters
 
-| Parameter | Type                                                                                 | Description                                                                       |
-| --------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| args      | [IHandleMessageArgs](./core.ihandlemessageargs.md)                                   |                                                                                   |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IDataStore](./core.idatastore.md) &gt; | Execution context. Requires agent with [IDataStore](./core.idatastore.md) methods |
+| Parameter | Type                                                                               | Description                                                                       |
+| --------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| args      | [IHandleMessageArgs](./core.ihandlemessageargs.md)                                 |                                                                                   |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStore](./core.idatastore.md)&gt; | Execution context. Requires agent with [IDataStore](./core.idatastore.md) methods |
 
 <b>Returns:</b>
 
-Promise&lt;[IMessage](./core.imessage.md) &gt;
+Promise&lt;[IMessage](./core.imessage.md)&gt;

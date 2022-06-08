@@ -18,11 +18,11 @@ didManagerImport(args: MinimalImportableIdentifier, context: IAgentContext<IKeyM
 
 ## Parameters
 
-| Parameter | Type                                                                                   | Description |
-| --------- | -------------------------------------------------------------------------------------- | ----------- |
-| args      | [MinimalImportableIdentifier](./core.minimalimportableidentifier.md)                   |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md) &gt; |             |
+| Parameter | Type                                                                                 | Description |
+| --------- | ------------------------------------------------------------------------------------ | ----------- |
+| args      | [MinimalImportableIdentifier](./core.minimalimportableidentifier.md)                 |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md) &gt;
+Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;

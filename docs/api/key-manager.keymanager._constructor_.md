@@ -21,6 +21,6 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                        | Description |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | { store: [AbstractKeyStore](./key-manager.abstractkeystore.md) ; kms: Record&lt;string, [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) &gt;; } |             |
+| Parameter | Type                                                                                                                                                                      | Description |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| options   | { store: [AbstractKeyStore](./key-manager.abstractkeystore.md); kms: Record&lt;string, [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md)&gt;; } |             |
