@@ -1,9 +1,7 @@
 name: Trigger veramo-website build
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - 'italo/fix-docs'
+  repository_dispatch:
+    types: [deploy_website]
 jobs:
   docs:
     runs-on: ubuntu-18.04
