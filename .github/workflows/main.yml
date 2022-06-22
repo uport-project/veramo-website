@@ -1,44 +1,23 @@
-name: Trigger veramo-website build
+name: Build the website
 on:
-  repository_dispatch:
-    types: [deploy_website]
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: ['main']
 jobs:
   docs:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Use Node.js
-        uses: actions/setup-node@v2
+      - name: 'setup node with cache'
+        uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
-      - name: API docs build
-        run: |
-          yarn install --frozen-lockfile
-          rm -fR ./docs/api
-          yarn build:veramo
-      - name: Docusaurus build
+          node-version: 14
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - name: 'Docusaurus build'
         run: |
           yarn build
           yarn prettier --check
-      - name: Config GIT
-        run: |
-          git config --local user.name '[bot] veramo-website'
-          git config --local user.email 'veramo-website@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-      - name: Commit changes and tag
-        run: |
-          git clone https://github.com/uport-project/veramo.git veramo
-          RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
-          if [ "${GITHUB_REF}" != "main" ]; then
-            RELEASE_VERSION="${RELEASE_VERSION}_${GITHUB_REF}"
-          fi
-          git status
-          echo Deploying docs for version v$RELEASE_VERSION
-          git add .
-          git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
-          git tag -f -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
-      - name: Push to repo
-        run: |
-          git push origin $GITHUB_REF --tags

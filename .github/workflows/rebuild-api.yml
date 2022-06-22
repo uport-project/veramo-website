@@ -1,0 +1,47 @@
+name: Trigger API reference docs rebuild
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [deploy_website]
+jobs:
+  docs:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 'setup node with cache'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+      - name: 'build veramo API docs'
+        run: |
+          yarn install --frozen-lockfile
+          rm -fR ./docs/api
+          yarn build:veramo
+      - name: 'Docusaurus build'
+        run: |
+          yarn build
+          yarn prettier --check
+      - name: 'setup git coordinates'
+        run: |
+          git config --local user.name '[bot] veramo-website'
+          git config --local user.email 'veramo-website@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      - name: 'Commit changes and tag the new version'
+        run: |
+          git clone https://github.com/uport-project/veramo.git veramo
+          RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
+          if [ "${GITHUB_REF}" != "main" ]; then
+            RELEASE_VERSION="${RELEASE_VERSION}-preview-${GITHUB_SHA}"
+          fi
+          yarn version --no-git-tag-version --new-version "$RELEASE_VERSION"
+          git status
+          echo Deploying docs for version v$RELEASE_VERSION
+          git add .
+          git commit -m "chore(release): :rocket: api docs v${RELEASE_VERSION}"
+          git tag -f -a v$RELEASE_VERSION -m "v${RELEASE_VERSION}"
+      - name: 'Push the new API reference docs'
+        run: |
+          git push origin $GITHUB_REF --tags
