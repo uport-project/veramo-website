@@ -10,8 +10,7 @@ revamoDir=$(mktemp -d)
 cd $revamoDir
 git clone $GITREPO veramo
 cd veramo
-# git fetch --all && git checkout main
-git fetch --all && git checkout italo/fix-docs
+git fetch --all && git checkout main
 yarn && yarn build && yarn docs
 
 cd $docsDir
