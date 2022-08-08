@@ -147,6 +147,10 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl: 'https://github.com/uport-project/veramo-website/edit/master/website/blog/',
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Veramo`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
