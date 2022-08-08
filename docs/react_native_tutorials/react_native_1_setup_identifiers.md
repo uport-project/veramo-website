@@ -233,7 +233,7 @@ Next initialize our sqlite database using TypeORM:
 // ... imports & CONSTANTS
 
 // DB setup:
-const dbConnection = new DataSource({
+let dbConnection = new DataSource({
   type: 'expo',
   driver: require('expo-sqlite'),
   database: 'veramo.sqlite',
@@ -241,7 +241,10 @@ const dbConnection = new DataSource({
   migrationsRun: true,
   logging: ['error', 'info', 'warn'],
   entities: Entities,
-}).initialize()
+})
+
+// optionally, the connection can also be pre-initialized:
+dbConnection = dbConnection.initialize()
 ```
 
 Finally, create the agent and add plugins for Key, Identity, and Storage.
@@ -262,12 +265,16 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDManager({
       store: new DIDStore(dbConnection),
-      defaultProvider: 'did:ethr:rinkeby',
+      defaultProvider: 'did:ethr',
       providers: {
-        'did:ethr:rinkeby': new EthrDIDProvider({
+        'did:ethr': new EthrDIDProvider({
           defaultKms: 'local',
-          network: 'rinkeby',
-          rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID,
+          networks: [
+            {
+              name: 'goerli',
+              rpcUrl: 'https://goerli.infura.io/v3/' + INFURA_PROJECT_ID,
+            },
+          ],
         }),
       },
     }),
@@ -278,7 +285,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
 ### What we have so far.
 
 Let's take a moment to understand what's going on here.
-We created an `agent` object using the `createAgent` method and an array of of `plugins`.
+We created an `agent` object using the `createAgent` method and an array of `plugins`.
 These plugins provide some methods, which are then made available from the `agent` object.
 
 For example, the `DIDManager` plugin has a `didManagerCreate()` function.
@@ -331,7 +338,12 @@ const App = () => {
 
   // Add the new identifier to state
   const createIdentifier = async () => {
-    const _id = await agent.didManagerCreate()
+    const _id = await agent.didManagerCreate({
+      provider: 'did:ethr',
+      options: {
+        network: 'goerli',
+      },
+    })
     setIdentifiers((s) => s.concat([_id]))
   }
 
@@ -438,9 +450,9 @@ In this guide we:
 - created a very basic Veramo agent,
 - used that agent to create some DIDs and show them in a basic UI.
 
-These `did:ethr:rinkeby` identifiers we created
+These `did:ethr:goerli` identifiers we created
 are [Decentralized Identifiers(DIDs)](https://www.w3.org/TR/did-core/#a-simple-example) that use the `ethr` DID method
-and are anchored on the `rinkeby` network. This means that when someone wants to resolve these DIDs, the resolver uses
+and are anchored on the `goerli` network. This means that when someone wants to resolve these DIDs, the resolver uses
 that network to construct the corresponding DID documents. You may also have noticed that there was no transaction
 involved in creating these DIDs. You can read more about how this works by going through
 the [`did:ethr` spec](https://github.com/decentralized-identity/ethr-did-resolver/blob/master/doc/did-method-spec.md).
