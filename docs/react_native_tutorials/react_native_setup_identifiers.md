@@ -1,5 +1,5 @@
 ---
-id: react_native_setup_identifers
+id: react_native_setup_identifiers
 title: React Native Setup & Identifiers
 sidebar_label: Setup & Identifiers
 ---

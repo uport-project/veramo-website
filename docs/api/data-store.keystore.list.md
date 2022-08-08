@@ -16,9 +16,9 @@ list(args?: {}): Promise<ManagedKeyInfo[]>;
 
 ## Parameters
 
-| Parameter | Type | Description       |
-| --------- | ---- | ----------------- |
-| args      | {}   | <i>(Optional)</i> |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| args      | {}   |             |
 
 <b>Returns:</b>
 
