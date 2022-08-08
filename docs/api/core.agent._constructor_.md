@@ -18,6 +18,6 @@ constructor(options?: IAgentOptions);
 
 ## Parameters
 
-| Parameter | Type                                     | Description                             |
-| --------- | ---------------------------------------- | --------------------------------------- |
-| options   | [IAgentOptions](./core.iagentoptions.md) | <i>(Optional)</i> Configuration options |
+| Parameter | Type                                     | Description           |
+| --------- | ---------------------------------------- | --------------------- |
+| options   | [IAgentOptions](./core.iagentoptions.md) | Configuration options |

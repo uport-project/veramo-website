@@ -48,7 +48,7 @@ module.exports = {
     {
       type: 'category',
       label: 'React Native Tutorials',
-      items: ['react_native_tutorials/react_native_setup_identifers'],
+      items: ['react_native_tutorials/react_native_setup_identifiers'],
     },
     {
       type: 'category',
