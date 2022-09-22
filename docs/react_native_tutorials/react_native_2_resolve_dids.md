@@ -4,7 +4,7 @@ title: Resolve DIDs
 sidebar_label: Resolve DIDs
 ---
 
-Going forward, the hard part of getting started on with Veramo on react-native(expo) is done.
+Going forward, the hard part of getting started on with Veramo on react-native(expo) is already behind us.
 From now, guides should be much simpler: install plugins, use plugins.
 
 In our previous step we saw how to configure a Veramo instance to generate DIDs for us. It's very likely that this
@@ -74,14 +74,38 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
 
 ## Usage
 
+Let's add a method that will call the agent to resolve a DID and a hook that will be used to update the UI based on
+state.
+
+```ts
+// filename: App.tsx
+
+// ... imports
+import { DIDResolutionResult } from '@veramo/core'
+
+const App = () => {
+  const [resolutionResult, postResolutionResult] = useState<DIDResolutionResult | undefined>()
+
+  // Add the new identifier to state
+  const resolveDID = async (did: string) => {
+    const result = await agent.resolveDid({ didUrl: did })
+    postResolutionResult(result)
+  }
+
+  // ... the rest of the App code
+}
+```
+
+## Displaying some result
+
 ## Recap
 
 In this guide we:
 
 - installed a new Veramo plugin that can resolve DIDs,
 - installed drivers for 2 DID methods
+- used the new plugin to resolve some DIDs
 -
--
--
-- ,
--
+
+Check out the next sections to see how to create and
+verify [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) using Veramo.
