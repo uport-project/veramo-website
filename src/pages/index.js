@@ -15,7 +15,7 @@ const textContent = {
     'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust networks that accelerate decision making, efficiency and productivity',
   cleanApi: 'Clean API backed by TypeScript',
   cleanApiContent:
-    'Veramo has a simple and clean API that is easy to reason about. This example bootstraps your agent with minnimal configuration.',
+    'Veramo has a simple and clean API that is easy to reason about. This example bootstraps your agent with minimal configuration.',
   pluginsTitle: 'Plugins at the core',
   plugins:
     'Veramo is powered by a flexible plugin system. We have a growing list of core plugins and adding your own custom plugin is easy.',
