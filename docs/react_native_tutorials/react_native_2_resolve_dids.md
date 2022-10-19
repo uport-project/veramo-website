@@ -77,7 +77,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
 Let's add a method that will call the agent to resolve a DID and a hook that will be used to update the UI based on
 state.
 
-```ts
+```tsx
 // filename: App.tsx
 
 // ... imports
@@ -93,6 +93,37 @@ const App = () => {
   }
 
   // ... the rest of the App code
+
+  // Modify the return value of the `App` function to include space for the DID document like so:
+  return (
+    <SafeAreaView>
+      <ScrollView>
+        <View style={{ padding: 20 }}>
+          <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Identifiers</Text>
+          <View style={{ marginBottom: 50, marginTop: 20 }}>
+            {identifiers && identifiers.length > 0 ? (
+              identifiers.map((id: IIdentifier) => (
+                <View key={id.did} onclick={resolveDID(id.did)}>
+                  <Text>{id.did}</Text>
+                </View>
+              ))
+            ) : (
+              <Text>No identifiers created yet</Text>
+            )}
+          </View>
+          <Button onPress={() => createIdentifier()} title={'Create Identifier'} />
+          <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Resolved DID document:</Text>
+          <View style={{ marginBottom: 50, marginTop: 20 }}>
+            {resolutionResult ? (
+              <Text id="result">{JSON.stringify(resolutionResult.didDocument, null, 2)}</Text>
+            ) : (
+              <Text>tap on a DID to resolve it</Text>
+            )}
+          </View>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  )
 }
 ```
 
@@ -105,7 +136,12 @@ In this guide we:
 - installed a new Veramo plugin that can resolve DIDs,
 - installed drivers for 2 DID methods
 - used the new plugin to resolve some DIDs
--
+- displayed the resolved DID documents
 
-Check out the next sections to see how to create and
+## Notes
+
+It's unlikely that DID documents will need to be displayed like this in real-world apps, but it's worth getting an idea
+about how they look like.
+
+Check out the [next section](./react_native_3_create_credentials.md) to see how to create and
 verify [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) using Veramo.
