@@ -6,6 +6,10 @@ sidebar_label: Setup & Identifiers
 
 This guide covers setting up an agent and creating identifiers in Node.
 
+#### Note
+
+A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-nodejs-tutorial](https://github.com/veramolabs/veramo-nodejs-tutorial)
+
 ### Prerequisites
 
 You need to have Node v14 or later installed. In this example, we use yarn as the package manager, but you can also use
