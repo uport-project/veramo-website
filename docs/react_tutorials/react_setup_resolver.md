@@ -8,6 +8,10 @@ Veramo core runs natively in the browser. The plugins you use also need to be br
 a DID resolver to work in a standard [Create React App](https://create-react-app.dev/) setup. It is possible to add your
 own identity, key management, and storage plugins that are browser compatible.
 
+#### Note
+
+A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-react-app-tutorial](https://github.com/veramolabs/veramo-react-app-tutorial)
+
 ### Initialize app
 
 Initialize a new **CRA** project
