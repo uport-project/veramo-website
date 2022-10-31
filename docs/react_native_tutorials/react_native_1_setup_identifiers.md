@@ -26,7 +26,7 @@ Use the [Expo CLI](https://docs.expo.dev/workflow/expo-cli/) bootstrap a new typ
 As a prerequisite, please make sure to have `expo-cli` installed globally:
 
 ```bash
-npm install -g expo-cli`
+npm install -g expo-cli
 ```
 
 Then, we initialize a new project like so:
