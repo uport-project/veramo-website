@@ -1,6 +1,6 @@
 {
   "name": "veramo-site-docs",
-  "version": "3.0.0",
+  "version": "3.1.2",
   "private": true,
   "scripts": {
     "start": "NODE_ENV=production HTTPS=true docusaurus serve --port $PORT",
@@ -11,11 +11,6 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "build:veramo": "bash ./scripts/build-veramo.sh",
-    "docs": "yarn docs:extract && yarn docs:copy && yarn docs:build",
-    "docs:extract": "ts-node ./scripts/docs-extract.ts",
-    "docs:copy": "ts-node ./scripts/docs-copy.ts",
-    "docs:build": "ts-node ./scripts/docs-build.ts && yarn docs:pretty",
-    "docs:pretty": "pretty-quick",
     "prettier": "prettier --write '{src,docs, !build}/**/*'"
   },
   "dependencies": {
@@ -50,8 +45,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",
     "@docusaurus/types": "^2.0.0-alpha.37",
-    "@microsoft/api-documenter": "^7.9.24",
-    "@microsoft/api-extractor": "^7.12.0",
+    "@microsoft/api-documenter": "^7.17.16",
+    "@microsoft/api-extractor": "^7.24.2",
     "@tsconfig/docusaurus": "^1.0.2",
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.56",
@@ -64,7 +59,7 @@
     "pretty-quick": "^3.1.0",
     "react-github-btn": "^1.2.0",
     "readline": "^1.3.0",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.5"
+    "ts-node": "^10.8.0",
+    "typescript": "^4.6.3"
   }
 }

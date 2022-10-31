@@ -18,11 +18,11 @@ didManagerGetOrCreate(args: IDIDManagerGetOrCreateArgs, context: IAgentContext<I
 
 ## Parameters
 
-| Parameter | Type                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                            |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                 | Description |
+| --------- | ------------------------------------------------------------------------------------ | ----------- |
+| args      | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                   |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md) &gt;
+Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;

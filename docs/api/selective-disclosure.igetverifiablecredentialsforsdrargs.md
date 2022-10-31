@@ -24,7 +24,7 @@ See [Selective Disclosure Request](https://github.com/uport-project/specs/blob/d
 
 ## Properties
 
-| Property                                                                 | Type                                                                                                        | Description                                                               |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [did](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md) | string                                                                                                      | <b><i>(BETA)</i></b> The DID of the subject                               |
-| [sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md) | Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) , 'issuer'&gt; | <b><i>(BETA)</i></b> The Selective Disclosure Request (issuer is omitted) |
+| Property                                                                  | Type                                                                                                       | Description                                                               |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| [did?](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md) | string                                                                                                     | <b><i>(BETA)</i></b> <i>(Optional)</i> The DID of the subject             |
+| [sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md)  | Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md), 'issuer'&gt; | <b><i>(BETA)</i></b> The Selective Disclosure Request (issuer is omitted) |

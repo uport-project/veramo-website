@@ -48,7 +48,12 @@ module.exports = {
     {
       type: 'category',
       label: 'React Native Tutorials',
-      items: ['react_native_tutorials/react_native_setup_identifers'],
+      items: [
+        'react_native_tutorials/react_native_1_setup_identifiers',
+        'react_native_tutorials/react_native_2_resolve_dids',
+        'react_native_tutorials/react_native_3_create_credentials',
+        'react_native_tutorials/react_native_4_verify_credentials',
+      ],
     },
     {
       type: 'category',

@@ -24,4 +24,4 @@ get({ alias }: {
 
 <b>Returns:</b>
 
-Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md) &gt;
+Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;

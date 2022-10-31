@@ -23,4 +23,4 @@ dataStoreORMGetVerifiablePresentations(args: FindPresentationsArgs, context: ICo
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[UniqueVerifiablePresentation](./data-store.uniqueverifiablepresentation.md) &gt;&gt;
+Promise&lt;Array&lt;[UniqueVerifiablePresentation](./data-store.uniqueverifiablepresentation.md)&gt;&gt;

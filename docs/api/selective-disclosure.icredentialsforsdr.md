@@ -26,6 +26,6 @@ See [Selective Disclosure Request](https://github.com/uport-project/specs/blob/d
 
 ## Properties
 
-| Property                                                                | Type                                                                          | Description          |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------- |
-| [credentials](./selective-disclosure.icredentialsforsdr.credentials.md) | [UniqueVerifiableCredential](./data-store.uniqueverifiablecredential.md) \[\] | <b><i>(BETA)</i></b> |
+| Property                                                                | Type                                                                         | Description          |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------------- |
+| [credentials](./selective-disclosure.icredentialsforsdr.credentials.md) | [UniqueVerifiableCredential](./data-store.uniqueverifiablecredential.md)\[\] | <b><i>(BETA)</i></b> |

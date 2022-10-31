@@ -14,10 +14,10 @@ Provides a [plugin](./credential-w3c.w3cmessagehandler.md) for the [MessageHandl
 
 ## Classes
 
-| Class                                                      | Description                                                                                                                                                                                                                                                                                                                                      |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [CredentialIssuer](./credential-w3c.credentialissuer.md)   | A Veramo plugin that implements the [ICredentialIssuer](./credential-w3c.icredentialissuer.md) methods.                                                                                                                                                                                                                                          |
-| [W3cMessageHandler](./credential-w3c.w3cmessagehandler.md) | An implementation of the [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) .<!-- -->This plugin can handle incoming W3C Verifiable Credentials and Presentations and prepare them for internal storage as [Message](./message-handler.message.md) types.<!-- -->The current version can only handle <code>JWT</code> encoded |
+| Class                                                      | Description                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [CredentialIssuer](./credential-w3c.credentialissuer.md)   | A Veramo plugin that implements the [ICredentialIssuer](./credential-w3c.icredentialissuer.md) methods.                                                                                                                                                                                                                         |
+| [W3cMessageHandler](./credential-w3c.w3cmessagehandler.md) | An implementation of the [AbstractMessageHandler](./message-handler.abstractmessagehandler.md).This plugin can handle incoming W3C Verifiable Credentials and Presentations and prepare them for internal storage as [Message](./message-handler.message.md) types.The current version can only handle <code>JWT</code> encoded |
 
 ## Interfaces
 
@@ -35,6 +35,6 @@ Provides a [plugin](./credential-w3c.w3cmessagehandler.md) for the [MessageHandl
 
 ## Type Aliases
 
-| Type Alias                                           | Description                                                                                                                                      |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [EncodingFormat](./credential-w3c.encodingformat.md) | The type of encoding to be used for the Verifiable Credential or Presentation to be generated. Only <code>jwt</code> is supported at the moment. |
+| Type Alias                                           | Description                                                                                                                                     |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [EncodingFormat](./credential-w3c.encodingformat.md) | The type of encoding to be used for the Verifiable Credential or Presentation to be generated.Only <code>jwt</code> is supported at the moment. |

@@ -16,9 +16,9 @@ export interface FindArgs<TColumns>
 
 ## Properties
 
-| Property                                | Type                                                | Description |
-| --------------------------------------- | --------------------------------------------------- | ----------- |
-| [order](./data-store.findargs.order.md) | [Order](./data-store.order.md) &lt;TColumns&gt;\[\] |             |
-| [skip](./data-store.findargs.skip.md)   | number                                              |             |
-| [take](./data-store.findargs.take.md)   | number                                              |             |
-| [where](./data-store.findargs.where.md) | [Where](./data-store.where.md) &lt;TColumns&gt;\[\] |             |
+| Property                                 | Type                                               | Description       |
+| ---------------------------------------- | -------------------------------------------------- | ----------------- |
+| [order?](./data-store.findargs.order.md) | [Order](./data-store.order.md)&lt;TColumns&gt;\[\] | <i>(Optional)</i> |
+| [skip?](./data-store.findargs.skip.md)   | number                                             | <i>(Optional)</i> |
+| [take?](./data-store.findargs.take.md)   | number                                             | <i>(Optional)</i> |
+| [where?](./data-store.findargs.where.md) | [Where](./data-store.where.md)&lt;TColumns&gt;\[\] | <i>(Optional)</i> |

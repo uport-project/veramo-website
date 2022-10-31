@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Returns `true` if this transport is suitable for the provided DID Document service section, otherwise `false` .
+Returns `true` if this transport is suitable for the provided DID Document service section, otherwise `false`.
 
 <b>Signature:</b>
 

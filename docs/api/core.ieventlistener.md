@@ -18,12 +18,12 @@ export interface IEventListener
 
 ## Properties
 
-| Property                                          | Type       | Description                                                   |
-| ------------------------------------------------- | ---------- | ------------------------------------------------------------- |
-| [eventTypes](./core.ieventlistener.eventtypes.md) | string\[\] | Declares the event types that this listener is interested in. |
+| Property                                           | Type       | Description                                                                     |
+| -------------------------------------------------- | ---------- | ------------------------------------------------------------------------------- |
+| [eventTypes?](./core.ieventlistener.eventtypes.md) | string\[\] | <i>(Optional)</i> Declares the event types that this listener is interested in. |
 
 ## Methods
 
-| Method                                                      | Description                              |
-| ----------------------------------------------------------- | ---------------------------------------- |
-| [onEvent(event, context)](./core.ieventlistener.onevent.md) | Processes an event emitted by the agent. |
+| Method                                                       | Description                                                |
+| ------------------------------------------------------------ | ---------------------------------------------------------- |
+| [onEvent(event, context)?](./core.ieventlistener.onevent.md) | <i>(Optional)</i> Processes an event emitted by the agent. |

@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Result interface for sending DIDComm messages through [IDIDCommTransport.send()](./did-comm.ididcommtransport.send.md) .
+Result interface for sending DIDComm messages through [IDIDCommTransport.send()](./did-comm.ididcommtransport.send.md).
 
 <b>Signature:</b>
 
@@ -20,7 +20,7 @@ export interface IDIDCommTransportResult
 
 ## Properties
 
-| Property                                               | Type   | Description          |
-| ------------------------------------------------------ | ------ | -------------------- |
-| [error](./did-comm.ididcommtransportresult.error.md)   | string | <b><i>(BETA)</i></b> |
-| [result](./did-comm.ididcommtransportresult.result.md) | string | <b><i>(BETA)</i></b> |
+| Property                                                | Type   | Description                            |
+| ------------------------------------------------------- | ------ | -------------------------------------- |
+| [error?](./did-comm.ididcommtransportresult.error.md)   | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [result?](./did-comm.ididcommtransportresult.result.md) | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |

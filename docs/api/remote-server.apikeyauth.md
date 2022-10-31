@@ -11,7 +11,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare function apiKeyAuth({ apiKey }: { apiKey: string }): any
+export declare function apiKeyAuth({ apiKey }: { apiKey: string }): import('express-serve-static-core').Router
 ```
 
 ## Parameters
@@ -22,4 +22,4 @@ export declare function apiKeyAuth({ apiKey }: { apiKey: string }): any
 
 <b>Returns:</b>
 
-any
+import("express-serve-static-core").Router

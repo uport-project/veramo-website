@@ -8,7 +8,7 @@ hide_title: true
 
 ## IKeyManagerSharedSecretArgs.secretKeyRef property
 
-The secret key handle (`kid` ) as returned by [keyManagerCreate](./core.ikeymanager.keymanagercreate.md)
+The secret key handle (`kid`) as returned by [keyManagerCreate](./core.ikeymanager.keymanagercreate.md)
 
 <b>Signature:</b>
 

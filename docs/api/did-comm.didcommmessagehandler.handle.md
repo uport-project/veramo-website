@@ -27,4 +27,4 @@ handle(message: Message, context: IContext): Promise<Message>;
 
 <b>Returns:</b>
 
-Promise&lt;[Message](./message-handler.message.md) &gt;
+Promise&lt;[Message](./message-handler.message.md)&gt;

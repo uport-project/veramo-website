@@ -26,4 +26,4 @@ createIdentifier({ kms, options }: {
 
 <b>Returns:</b>
 
-Promise&lt;Omit&lt;[IIdentifier](./core.iidentifier.md) , 'provider'&gt;&gt;
+Promise&lt;Omit&lt;[IIdentifier](./core.iidentifier.md), 'provider'&gt;&gt;

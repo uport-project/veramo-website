@@ -1,10 +1,14 @@
 ---
 id: node_setup_identifiers
-title: Node Setup & Identifiers
-sidebar_label: Setup & Identifiers
+title: Node Setup, Identifiers & Credentials
+sidebar_label: Setup, Identifiers & Credentials
 ---
 
 This guide covers setting up an agent and creating identifiers in Node.
+
+#### Note
+
+A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-nodejs-tutorial](https://github.com/veramolabs/veramo-nodejs-tutorial)
 
 ### Prerequisites
 
@@ -27,7 +31,7 @@ yarn add typescript ts-node --dev
 Install Veramo core and plugins
 
 ```bash
-yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-provider-web @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver
+yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver
 ```
 
 Install `sqlite`
@@ -59,7 +63,7 @@ and import the following dependencies:
 
 ```typescript
 // Core interfaces
-import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager, IDataStoreORM } from '@veramo/core'
+import { createAgent, IDIDManager, IResolver, IDataStore, IDataStoreORM, IKeyManager, ICredentialPlugin } from '@veramo/core'
 
 // Core identity manager plugin
 import { DIDManager } from '@veramo/did-manager'
@@ -67,14 +71,14 @@ import { DIDManager } from '@veramo/did-manager'
 // Ethr did identity provider
 import { EthrDIDProvider } from '@veramo/did-provider-ethr'
 
-// Web did identity provider
-import { WebDIDProvider } from '@veramo/did-provider-web'
-
 // Core key manager plugin
 import { KeyManager } from '@veramo/key-manager'
 
 // Custom key management system for RN
 import { KeyManagementSystem, SecretBox } from '@veramo/kms-local'
+
+// W3C Verifiable Credential plugin
+import { CredentialPlugin } from '@veramo/credential-w3c'
 
 // Custom resolvers
 import { DIDResolverPlugin } from '@veramo/did-resolver'
@@ -86,7 +90,7 @@ import { getResolver as webDidResolver } from 'web-did-resolver'
 import { Entities, KeyStore, DIDStore, PrivateKeyStore, migrations } from '@veramo/data-store'
 
 // TypeORM is installed with `@veramo/data-store`
-import { createConnection } from 'typeorm'
+import { DataSource } from 'typeorm'
 ```
 
 Create some variables that we will use later
@@ -106,7 +110,7 @@ const KMS_SECRET_KEY =
 Initialise a database using TypeORM
 
 ```ts
-const dbConnection = createConnection({
+const dbConnection = new DataSource({
   type: 'sqlite',
   database: DATABASE_FILE,
   synchronize: false,
@@ -114,13 +118,13 @@ const dbConnection = createConnection({
   migrationsRun: true,
   logging: ['error', 'info', 'warn'],
   entities: Entities,
-})
+}).initialize()
 ```
 
 Create the agent by using the createAgent method from `@veramo/core`
 
 ```ts
-export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>({
+export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver & ICredentialPlugin>({
   plugins: [
     new KeyManager({
       store: new KeyStore(dbConnection),
@@ -130,15 +134,12 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDManager({
       store: new DIDStore(dbConnection),
-      defaultProvider: 'did:ethr:rinkeby',
+      defaultProvider: 'did:ethr:goerli',
       providers: {
-        'did:ethr:rinkeby': new EthrDIDProvider({
+        'did:ethr:goerli': new EthrDIDProvider({
           defaultKms: 'local',
-          network: 'rinkeby',
-          rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID,
-        }),
-        'did:web': new WebDIDProvider({
-          defaultKms: 'local',
+          network: 'goerli',
+          rpcUrl: 'https://goerli.infura.io/v3/' + INFURA_PROJECT_ID,
         }),
       },
     }),
@@ -148,6 +149,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
         ...webDidResolver(),
       }),
     }),
+    new CredentialPlugin(),
   ],
 })
 ```
@@ -158,7 +160,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
 > match the plugins that you add to the agent.
 >
 > ```typescript
-> <IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver>
+> <IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver & ICredentialPlugin>
 > ```
 >
 > These types help the typescript compiler to figure out what plugin methods get exposed by the agent and what parameters
@@ -169,7 +171,7 @@ That's one possible agent setup. Let's use it to create and list identifiers.
 
 ## App Logic
 
-Create 2 files `./src/create-identifier.ts` and `./src/list-identifiers.ts`
+Create 4 files `./src/create-identifier.ts`, `./src/list-identifiers.ts`, `./src/create-credential.ts` and `./src/verify-credential.ts`
 
 Add the following code to `./src/list-identifiers.ts`
 
@@ -198,29 +200,77 @@ Add the following code to `./src/create-identifier.ts`
 import { agent } from './veramo/setup'
 
 async function main() {
-  const identity = await agent.didManagerCreate()
-  console.log(`New identity created`)
-  console.log(identity)
+  const identifier = await agent.didManagerCreate({ alias: 'default' })
+  console.log(`New identifier created`)
+  console.log(JSON.stringify(identifier, null, 2))
 }
 
 main().catch(console.log)
 ```
 
-To run those functions add the following script commands to `package.json`
+Add the following code to `./src/create-credential.ts`
 
-```json
-{
-  "scripts": {
-    "id:list": "ts-node ./src/list-identifiers",
-    "id:create": "ts-node ./src/create-identifier"
-  }
+```ts
+import { agent } from './veramo/setup'
+
+async function main() {
+  const identifier = await agent.didManagerGetByAlias({ alias: 'default' })
+
+  const verifiableCredential = await agent.createVerifiableCredential({
+    credential: {
+      issuer: { id: identifier.did },
+      credentialSubject: {
+        id: 'did:web:example.com',
+        you: 'Rock',
+      },
+    },
+    proofFormat: 'jwt',
+  })
+  console.log(`New credential created`)
+  console.log(JSON.stringify(verifiableCredential, null, 2))
 }
+
+main().catch(console.log)
+```
+
+Add the following code to `./src/verify-credential.ts`
+
+```ts
+import { agent } from './veramo/setup'
+
+async function main() {
+  const result = await agent.verifyCredential({
+    credential: {
+      "credentialSubject": {
+        "you": "Rock",
+        "id": "did:web:example.com"
+      },
+      "issuer": {
+        "id": "did:ethr:goerli:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16"
+      },
+      "type": [
+        "VerifiableCredential"
+      ],
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "issuanceDate": "2022-10-28T11:54:22.000Z",
+      "proof": {
+        "type": "JwtProof2020",
+        "jwt": "eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7InlvdSI6IlJvY2sifX0sInN1YiI6ImRpZDp3ZWI6ZXhhbXBsZS5jb20iLCJuYmYiOjE2NjY5NTgwNjIsImlzcyI6ImRpZDpldGhyOmdvZXJsaToweDAzNTBlZWVlYTE0MTBjNWIxNTJmMWE4OGUwZmZlOGJiOGEwYmMzZGY4NjhiNzQwZWIyMzUyYjFkYmY5M2I1OWMxNiJ9.EPeuQBpkK13V9wu66SLg7u8ebY2OS8b2Biah2Vw-RI-Atui2rtujQkVc2t9m1Eqm4XQFECfysgQBdWwnSDvIjw"
+      }
+    }
+  })
+  console.log(`Credential verified`, result.verified)
+}
+
+main().catch(console.log)
 ```
 
 ### List Identifiers
 
 ```bash
-yarn id:list
+yarn ts-node ./src/list-identifiers
 ```
 
 **Expected output**
@@ -233,27 +283,84 @@ There are 0 identifiers
 ### Create Identifier
 
 ```bash
-yarn id:create
+yarn ts-node ./src/create-identifier
 ```
 
 **Expected output**
 
 ```bash
 $ ts-node ./src/create-identifier
-New identity created
-{ did:
-   'did:ethr:rinkeby:0x6acf3bb1ef0ee84559de2bc2bd9d91532062a730',
-  controllerKeyId:
-   '04f3f9457f21af89ce4209f0c8c07f04cb14b3420e5a598b96c564127f693687f6273ed52896c91d59b443f260a34e37742f8f35a1a6beafa08ccbc66df363bd44',
-  keys:
-   [ { type: 'Secp256k1',
-       kid:
-        '04f3f9457f21af89ce4209f0c8c07f04cb14b3420e5a598b96c564127f693687f6273ed52896c91d59b443f260a34e37742f8f35a1a6beafa08ccbc66df363bd44',
-       publicKeyHex:
-        '04f3f9457f21af89ce4209f0c8c07f04cb14b3420e5a598b96c564127f693687f6273ed52896c91d59b443f260a34e37742f8f35a1a6beafa08ccbc66df363bd44',
-       kms: 'local' } ],
-  services: [],
-  provider: 'did:ethr:rinkeby' }
+New identifier created
+{
+  "did": "did:ethr:goerli:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16",
+  "controllerKeyId": "0450eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c1623b138f54e600141c5119f391eea730d3b1a089ed4ad35b25c2c646dee27a7bd",
+  "keys": [
+    {
+      "type": "Secp256k1",
+      "kid": "0450eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c1623b138f54e600141c5119f391eea730d3b1a089ed4ad35b25c2c646dee27a7bd",
+      "publicKeyHex": "0450eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c1623b138f54e600141c5119f391eea730d3b1a089ed4ad35b25c2c646dee27a7bd",
+      "meta": {
+        "algorithms": [
+          "ES256K",
+          "ES256K-R",
+          "eth_signTransaction",
+          "eth_signTypedData",
+          "eth_signMessage"
+        ]
+      },
+      "kms": "local"
+    }
+  ],
+  "services": [],
+  "provider": "did:ethr:goerli",
+  "alias": "default"
+}
 ```
 
-Congrats, You have set up the agent and created identifiers!
+### Create credential
+
+```bash
+yarn ts-node ./src/create-credential
+```
+
+**Expected output**
+
+```bash
+$ ts-node ./src/create-credential
+New credential created
+{
+  "credentialSubject": {
+    "you": "Rock",
+    "id": "did:web:example.com"
+  },
+  "issuer": {
+    "id": "did:ethr:goerli:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16"
+  },
+  "type": [
+    "VerifiableCredential"
+  ],
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "issuanceDate": "2022-10-28T11:54:22.000Z",
+  "proof": {
+    "type": "JwtProof2020",
+    "jwt": "eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7InlvdSI6IlJvY2sifX0sInN1YiI6ImRpZDp3ZWI6ZXhhbXBsZS5jb20iLCJuYmYiOjE2NjY5NTgwNjIsImlzcyI6ImRpZDpldGhyOmdvZXJsaToweDAzNTBlZWVlYTE0MTBjNWIxNTJmMWE4OGUwZmZlOGJiOGEwYmMzZGY4NjhiNzQwZWIyMzUyYjFkYmY5M2I1OWMxNiJ9.EPeuQBpkK13V9wu66SLg7u8ebY2OS8b2Biah2Vw-RI-Atui2rtujQkVc2t9m1Eqm4XQFECfysgQBdWwnSDvIjw"
+  }
+}
+```
+
+### Verify credential
+
+```bash
+yarn ts-node ./src/verify-credential
+```
+
+**Expected output**
+
+```bash
+$ ts-node ./src/verify-credential
+Credential verified true
+```
+
+Congrats, You have set up the agent, created identifiers, created and verified a credential!

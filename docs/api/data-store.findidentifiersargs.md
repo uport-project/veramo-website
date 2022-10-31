@@ -13,3 +13,5 @@ hide_title: true
 ```typescript
 export declare type FindIdentifiersArgs = FindArgs<TIdentifiersColumns>
 ```
+
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TIdentifiersColumns](./data-store.tidentifierscolumns.md)

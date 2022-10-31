@@ -23,4 +23,4 @@ dataStoreORMGetVerifiableCredentials(args: FindCredentialsArgs, context: IContex
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[UniqueVerifiableCredential](./data-store.uniqueverifiablecredential.md) &gt;&gt;
+Promise&lt;Array&lt;[UniqueVerifiableCredential](./data-store.uniqueverifiablecredential.md)&gt;&gt;

@@ -13,3 +13,5 @@ hide_title: true
 ```typescript
 export declare type FindMessagesArgs = FindArgs<TMessageColumns>
 ```
+
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TMessageColumns](./data-store.tmessagecolumns.md)

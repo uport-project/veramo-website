@@ -22,9 +22,9 @@ export interface ISendMessageDIDCommAlpha1Args
 
 ## Properties
 
-| Property                                                       | Type                                                                                 | Description          |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------- |
-| [data](./did-comm.isendmessagedidcommalpha1args.data.md)       | { id?: string; from: string; to: string; type: string; body: object &#124; string; } | <b><i>(BETA)</i></b> |
-| [headers](./did-comm.isendmessagedidcommalpha1args.headers.md) | Record&lt;string, string&gt;                                                         | <b><i>(BETA)</i></b> |
-| [save](./did-comm.isendmessagedidcommalpha1args.save.md)       | boolean                                                                              | <b><i>(BETA)</i></b> |
-| [url](./did-comm.isendmessagedidcommalpha1args.url.md)         | string                                                                               | <b><i>(BETA)</i></b> |
+| Property                                                        | Type                                                                                 | Description                            |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------- |
+| [data](./did-comm.isendmessagedidcommalpha1args.data.md)        | { id?: string; from: string; to: string; type: string; body: object &#124; string; } | <b><i>(BETA)</i></b>                   |
+| [headers?](./did-comm.isendmessagedidcommalpha1args.headers.md) | Record&lt;string, string&gt;                                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [save?](./did-comm.isendmessagedidcommalpha1args.save.md)       | boolean                                                                              | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [url?](./did-comm.isendmessagedidcommalpha1args.url.md)         | string                                                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |

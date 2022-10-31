@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Abstract implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md) .
+Abstract implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md).
 
 <b>Signature:</b>
 
@@ -22,9 +22,9 @@ export declare abstract class AbstractDIDCommTransport implements IDIDCommTransp
 
 ## Constructors
 
-| Constructor                                                               | Modifiers | Description                                                                                                                                             |
-| ------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [(constructor)(id)](./did-comm.abstractdidcommtransport._constructor_.md) |           | <b><i>(BETA)</i></b> Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md) . |
+| Constructor                                                               | Modifiers | Description                                                                                                                                            |
+| ------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [(constructor)(id)](./did-comm.abstractdidcommtransport._constructor_.md) |           | <b><i>(BETA)</i></b> Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md). |
 
 ## Properties
 

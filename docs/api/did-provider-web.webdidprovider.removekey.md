@@ -20,10 +20,10 @@ removeKey(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                               | Description |
-| --------- | ---------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core.iidentifier.md) ; kid: string; options?: any; } |             |
-| context   | IContext                                                                           |             |
+| Parameter | Type                                                                              | Description |
+| --------- | --------------------------------------------------------------------------------- | ----------- |
+| args      | { identifier: [IIdentifier](./core.iidentifier.md); kid: string; options?: any; } |             |
+| context   | IContext                                                                          |             |
 
 <b>Returns:</b>
 

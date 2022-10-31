@@ -16,10 +16,10 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<IDataStor
 
 ## Parameters
 
-| Parameter | Type                                                                                                    | Description |
-| --------- | ------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | IDIDDiscoveryDiscoverDidArgs                                                                            |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IDataStoreORM](./data-store.idatastoreorm.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                           | Description |
+| --------- | ---------------------------------------------------------------------------------------------- | ----------- |
+| args      | IDIDDiscoveryDiscoverDidArgs                                                                   |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./data-store.idatastoreorm.md)&gt; |             |
 
 <b>Returns:</b>
 

@@ -1,0 +1,23 @@
+name: Build the website
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: ['main']
+jobs:
+  docs:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 'setup node with cache'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - name: 'Docusaurus build'
+        run: |
+          yarn build
+          yarn prettier --check

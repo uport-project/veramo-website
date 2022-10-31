@@ -12,7 +12,7 @@ hide_title: true
 
 The possible types of message packing.
 
-`authcrypt` , `anoncrypt`<!-- -->, `anoncrypt+authcrypt`<!-- -->, and `anoncrypt+jws` will produce `DIDCommMessageMediaType.ENCRYPTED` messages.
+`authcrypt`, `anoncrypt`, `anoncrypt+authcrypt`, and `anoncrypt+jws` will produce `DIDCommMessageMediaType.ENCRYPTED` messages.
 
 `jws` will produce `DIDCommMessageMediaType.SIGNED` messages.
 

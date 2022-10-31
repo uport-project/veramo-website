@@ -18,10 +18,10 @@ createSelectiveDisclosureRequest(args: ICreateSelectiveDisclosureRequestArgs, co
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                     | Description |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [ICreateSelectiveDisclosureRequestArgs](./selective-disclosure.icreateselectivedisclosurerequestargs.md)                                 |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IDIDManager](./core.ididmanager.md) &amp; [IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                                                            | Description |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | [ICreateSelectiveDisclosureRequestArgs](./selective-disclosure.icreateselectivedisclosurerequestargs.md)                        |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDIDManager](./core.ididmanager.md) &amp; [IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 

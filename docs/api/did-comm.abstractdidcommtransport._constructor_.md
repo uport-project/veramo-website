@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md) .
+Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md).
 
 <b>Signature:</b>
 
@@ -20,6 +20,6 @@ constructor(id?: string);
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                            |
-| --------- | ------ | -------------------------------------------------------------------------------------- |
-| id        | string | An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md) . |
+| Parameter | Type   | Description                                                                           |
+| --------- | ------ | ------------------------------------------------------------------------------------- |
+| id        | string | An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md). |

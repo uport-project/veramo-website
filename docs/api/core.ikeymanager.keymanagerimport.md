@@ -24,4 +24,4 @@ keyManagerImport(args: MinimalImportableKey): Promise<ManagedKeyInfo>;
 
 <b>Returns:</b>
 
-Promise&lt;[ManagedKeyInfo](./core.managedkeyinfo.md) &gt;
+Promise&lt;[ManagedKeyInfo](./core.managedkeyinfo.md)&gt;

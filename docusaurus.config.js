@@ -92,7 +92,7 @@ module.exports = {
             },
             {
               label: 'React Native',
-              to: 'docs/react_native_tutorials/react_native_setup_identifers',
+              to: 'docs/react_native_tutorials/react_native_1_setup_identifiers',
             },
           ],
         },
@@ -117,16 +117,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/uport-project/veramo',
-            },
-            {
-              label: 'Discussions',
-              href: 'https://github.com/uport-project/veramo/discussions',
-            },
-            {
               label: 'Discord',
               href: 'https://discord.gg/FRRBdjemHV',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/veramolabs',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/uport-project/veramo',
             },
           ],
         },
@@ -141,12 +141,16 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/uport-project/veramo-website/blob/master/',
+          editUrl: 'https://github.com/uport-project/veramo-website/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/uport-project/veramo-website/edit/master/website/blog/',
+          editUrl: 'https://github.com/uport-project/veramo-website/edit/main/',
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Veramo`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

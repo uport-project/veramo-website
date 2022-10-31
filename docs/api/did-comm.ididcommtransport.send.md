@@ -27,4 +27,4 @@ send(service: any, message: string): Promise<IDIDCommTransportResult>;
 
 <b>Returns:</b>
 
-Promise&lt;[IDIDCommTransportResult](./did-comm.ididcommtransportresult.md) &gt;
+Promise&lt;[IDIDCommTransportResult](./did-comm.ididcommtransportresult.md)&gt;

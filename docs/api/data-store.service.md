@@ -18,10 +18,10 @@ export declare class Service extends BaseEntity
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                                     | Description |
-| ---------------------------------------------------------- | --------- | ---------------------------------------- | ----------- |
-| [description](./data-store.service.description.md)         |           | string                                   |             |
-| [id](./data-store.service.id.md)                           |           | string                                   |             |
-| [identifier](./data-store.service.identifier.md)           |           | [Identifier](./data-store.identifier.md) |             |
-| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                   |             |
-| [type](./data-store.service.type.md)                       |           | string                                   |             |
+| Property                                                   | Modifiers | Type                                     | Description       |
+| ---------------------------------------------------------- | --------- | ---------------------------------------- | ----------------- |
+| [description?](./data-store.service.description.md)        |           | string                                   | <i>(Optional)</i> |
+| [id](./data-store.service.id.md)                           |           | string                                   |                   |
+| [identifier?](./data-store.service.identifier.md)          |           | [Identifier](./data-store.identifier.md) | <i>(Optional)</i> |
+| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                   |                   |
+| [type](./data-store.service.type.md)                       |           | string                                   |                   |

@@ -18,10 +18,10 @@ didManagerAddService({ did, service, options }: IDIDManagerAddServiceArgs, conte
 
 ## Parameters
 
-| Parameter                 | Type                                                                                          | Description |
-| ------------------------- | --------------------------------------------------------------------------------------------- | ----------- |
-| { did, service, options } | [IDIDManagerAddServiceArgs](./core.ididmanageraddserviceargs.md)                              |             |
-| context                   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
+| Parameter                 | Type                                                                                 | Description |
+| ------------------------- | ------------------------------------------------------------------------------------ | ----------- |
+| { did, service, options } | [IDIDManagerAddServiceArgs](./core.ididmanageraddserviceargs.md)                     |             |
+| context                   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 

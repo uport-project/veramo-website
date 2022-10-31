@@ -22,10 +22,10 @@ sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IResolv
 
 ## Parameters
 
-| Parameter | Type                                                                                      | Description                                                                                                                                                                                 |
-| --------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | ISendDIDCommMessageArgs                                                                   | An object containing the message, recipient information and optional information about the transport that should be used.                                                                   |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IResolver](./core.iresolver.md)<!-- -->&gt; | This method requires an agent that also has [IResolver](./core.iresolver.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
+| Parameter | Type                                                                             | Description                                                                                                                                                                                 |
+| --------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | ISendDIDCommMessageArgs                                                          | An object containing the message, recipient information and optional information about the transport that should be used.                                                                   |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IResolver](./core.iresolver.md)&gt; | This method requires an agent that also has [IResolver](./core.iresolver.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
 
 <b>Returns:</b>
 

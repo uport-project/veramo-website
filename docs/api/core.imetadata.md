@@ -18,7 +18,7 @@ export interface IMetaData
 
 ## Properties
 
-| Property                           | Type   | Description     |
-| ---------------------------------- | ------ | --------------- |
-| [type](./core.imetadata.type.md)   | string | Type            |
-| [value](./core.imetadata.value.md) | string | Optional. Value |
+| Property                            | Type   | Description                       |
+| ----------------------------------- | ------ | --------------------------------- |
+| [type](./core.imetadata.type.md)    | string | Type                              |
+| [value?](./core.imetadata.value.md) | string | <i>(Optional)</i> Optional. Value |

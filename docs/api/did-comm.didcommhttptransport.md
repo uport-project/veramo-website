@@ -22,9 +22,9 @@ export declare class DIDCommHttpTransport extends AbstractDIDCommTransport
 
 ## Constructors
 
-| Constructor                                                                   | Modifiers | Description                                                                                     |
-| ----------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------- |
-| [(constructor)(httpMethod)](./did-comm.didcommhttptransport._constructor_.md) |           | <b><i>(BETA)</i></b> Creates a new [DIDCommHttpTransport](./did-comm.didcommhttptransport.md) . |
+| Constructor                                                                   | Modifiers | Description                                                                                    |
+| ----------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
+| [(constructor)(httpMethod)](./did-comm.didcommhttptransport._constructor_.md) |           | <b><i>(BETA)</i></b> Creates a new [DIDCommHttpTransport](./did-comm.didcommhttptransport.md). |
 
 ## Properties
 

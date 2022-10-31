@@ -26,7 +26,7 @@ getDIDComponentById(args: GetDIDComponentArgs): Promise<DIDDocComponent>;
 
 <b>Returns:</b>
 
-Promise&lt;[DIDDocComponent](./core.diddoccomponent.md) &gt;
+Promise&lt;[DIDDocComponent](./core.diddoccomponent.md)&gt;
 
 a `Promise` containing the or
 

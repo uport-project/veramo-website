@@ -16,10 +16,10 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<IDIDManag
 
 ## Parameters
 
-| Parameter | Type                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| args      | IDIDDiscoveryDiscoverDidArgs                                                                  |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IDIDManager](./core.ididmanager.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                 | Description |
+| --------- | ------------------------------------------------------------------------------------ | ----------- |
+| args      | IDIDDiscoveryDiscoverDidArgs                                                         |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDIDManager](./core.ididmanager.md)&gt; |             |
 
 <b>Returns:</b>
 

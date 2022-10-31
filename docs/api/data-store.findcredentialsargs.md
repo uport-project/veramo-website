@@ -13,3 +13,5 @@ hide_title: true
 ```typescript
 export declare type FindCredentialsArgs = FindArgs<TCredentialColumns>
 ```
+
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TCredentialColumns](./data-store.tcredentialcolumns.md)

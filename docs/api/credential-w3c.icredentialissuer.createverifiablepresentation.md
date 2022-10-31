@@ -25,7 +25,7 @@ createVerifiablePresentation(args: ICreateVerifiablePresentationArgs, context: I
 
 <b>Returns:</b>
 
-Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md) &gt;
+Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md)&gt;
 
 - a promise that resolves to the [VerifiablePresentation](./core.verifiablepresentation.md) that was requested or rejects with an error if there was a problem with the input or while getting the key to sign
 

@@ -20,6 +20,6 @@ constructor(transports?: IDIDCommTransport[]);
 
 ## Parameters
 
-| Parameter  | Type                                                      | Description                                                             |
-| ---------- | --------------------------------------------------------- | ----------------------------------------------------------------------- |
-| transports | [IDIDCommTransport](./did-comm.ididcommtransport.md) \[\] | A list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects. |
+| Parameter  | Type                                                     | Description                                                             |
+| ---------- | -------------------------------------------------------- | ----------------------------------------------------------------------- |
+| transports | [IDIDCommTransport](./did-comm.ididcommtransport.md)\[\] | A list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects. |

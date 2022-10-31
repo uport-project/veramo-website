@@ -13,3 +13,5 @@ hide_title: true
 ```typescript
 export declare type FindPresentationsArgs = FindArgs<TPresentationColumns>
 ```
+
+<b>References:</b> [FindArgs](./data-store.findargs.md), [TPresentationColumns](./data-store.tpresentationcolumns.md)

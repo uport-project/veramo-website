@@ -24,7 +24,7 @@ didManagerFind(args: IDIDManagerFindArgs): Promise<Array<IIdentifier>>;
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[IIdentifier](./core.iidentifier.md) &gt;&gt;
+Promise&lt;Array&lt;[IIdentifier](./core.iidentifier.md)&gt;&gt;
 
 ## Example
 

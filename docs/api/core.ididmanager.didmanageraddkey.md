@@ -18,10 +18,10 @@ didManagerAddKey(args: IDIDManagerAddKeyArgs, context: IAgentContext<IKeyManager
 
 ## Parameters
 
-| Parameter | Type                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IDIDManagerAddKeyArgs](./core.ididmanageraddkeyargs.md)                                      |             |
-| context   | [IAgentContext](./core.iagentcontext.md) &lt;[IKeyManager](./core.ikeymanager.md)<!-- -->&gt; |             |
+| Parameter | Type                                                                                 | Description |
+| --------- | ------------------------------------------------------------------------------------ | ----------- |
+| args      | [IDIDManagerAddKeyArgs](./core.ididmanageraddkeyargs.md)                             |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
