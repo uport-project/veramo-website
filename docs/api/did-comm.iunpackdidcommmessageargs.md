@@ -12,6 +12,8 @@ hide_title: true
 
 The input to the [DIDComm.unpackDIDCommMessage()](./did-comm.didcomm.unpackdidcommmessage.md) method.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

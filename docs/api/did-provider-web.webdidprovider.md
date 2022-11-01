@@ -34,3 +34,4 @@ export declare class WebDIDProvider extends AbstractIdentifierProvider
 | [deleteIdentifier(identifier, context)](./did-provider-web.webdidprovider.deleteidentifier.md)              |           |             |
 | [removeKey(args, context)](./did-provider-web.webdidprovider.removekey.md)                                  |           |             |
 | [removeService(args, context)](./did-provider-web.webdidprovider.removeservice.md)                          |           |             |
+| [updateIdentifier(args, context)](./did-provider-web.webdidprovider.updateidentifier.md)                    |           |             |

@@ -12,6 +12,8 @@ hide_title: true
 
 The input to the [DIDComm.packDIDCommMessage()](./did-comm.didcomm.packdidcommmessage.md) method. When `packing` is `authcrypt` or `jws`, a `keyRef` MUST be provided.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript
@@ -20,8 +22,9 @@ export interface IPackDIDCommMessageArgs
 
 ## Properties
 
-| Property                                                 | Type                                                         | Description                            |
-| -------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------- |
-| [keyRef?](./did-comm.ipackdidcommmessageargs.keyref.md)  | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [message](./did-comm.ipackdidcommmessageargs.message.md) | [IDIDCommMessage](./did-comm.ididcommmessage.md)             | <b><i>(BETA)</i></b>                   |
-| [packing](./did-comm.ipackdidcommmessageargs.packing.md) | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | <b><i>(BETA)</i></b>                   |
+| Property                                                  | Type                                                         | Description                            |
+| --------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------- |
+| [keyRef?](./did-comm.ipackdidcommmessageargs.keyref.md)   | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [message](./did-comm.ipackdidcommmessageargs.message.md)  | [IDIDCommMessage](./did-comm.ididcommmessage.md)             | <b><i>(BETA)</i></b>                   |
+| [options?](./did-comm.ipackdidcommmessageargs.options.md) | [IDIDCommOptions](./did-comm.ididcommoptions.md)             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [packing](./did-comm.ipackdidcommmessageargs.packing.md)  | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | <b><i>(BETA)</i></b>                   |

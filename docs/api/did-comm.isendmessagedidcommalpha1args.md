@@ -13,6 +13,8 @@ hide_title: true
 > Warning: This API is now obsolete.
 >
 > Please use [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) instead. This will be removed in Veramo 4.0. Input arguments for [IDIDComm.sendMessageDIDCommAlpha1()](./did-comm.ididcomm.sendmessagedidcommalpha1.md)
+>
+> This API may change without a BREAKING CHANGE notice.
 
 <b>Signature:</b>
 

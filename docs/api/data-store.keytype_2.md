@@ -8,6 +8,12 @@ hide_title: true
 
 ## KeyType_2 type
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Mirrors [TKeyType](./core.tkeytype.md)
+
+- This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

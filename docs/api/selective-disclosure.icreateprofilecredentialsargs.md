@@ -12,6 +12,8 @@ hide_title: true
 
 Profile data
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

@@ -13,16 +13,16 @@ hide_title: true
 ```typescript
 createIdentifier({ kms, options }: {
         kms?: string;
-        options?: any;
+        options?: CreateDidEthrOptions;
     }, context: IRequiredContext): Promise<Omit<IIdentifier, 'provider'>>;
 ```
 
 ## Parameters
 
-| Parameter        | Type                             | Description |
-| ---------------- | -------------------------------- | ----------- |
-| { kms, options } | { kms?: string; options?: any; } |             |
-| context          | IRequiredContext                 |             |
+| Parameter        | Type                                              | Description |
+| ---------------- | ------------------------------------------------- | ----------- |
+| { kms, options } | { kms?: string; options?: CreateDidEthrOptions; } |             |
+| context          | IRequiredContext                                  |             |
 
 <b>Returns:</b>
 

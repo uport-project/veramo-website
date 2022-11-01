@@ -8,6 +8,8 @@ hide_title: true
 
 ## getOpenApiSchema variable
 
+This method can be used to generate an OpenAPIv3 schema to describe how the methods of a Veramo agent can be called remotely.
+
 <b>Signature:</b>
 
 ```typescript
@@ -15,7 +17,7 @@ getOpenApiSchema: (
   agent: IAgent,
   basePath: string,
   exposedMethods: Array<string>,
-  name?: string | undefined,
-  version?: string | undefined,
+  name?: string,
+  version?: string,
 ) => OpenAPIV3.Document
 ```

@@ -8,6 +8,12 @@ hide_title: true
 
 ## KeyMetadata interface
 
+This encapsulates data about a key.
+
+Implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) should populate this object, for each key, with the algorithms that can be performed using it.
+
+This can also be used to add various tags to the keys under management.
+
 <b>Signature:</b>
 
 ```typescript

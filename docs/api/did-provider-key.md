@@ -8,10 +8,16 @@ hide_title: true
 
 ## did-provider-key package
 
-Provides `did:key` for the [DIDManager](./did-manager.didmanager.md)
+Provides `did:key` [identifier provider](./did-provider-key.keydidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+## Classes
+
+| Class                                                  | Description                                                                                                                                                                  |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [KeyDIDProvider](./did-provider-key.keydidprovider.md) | <b><i>(BETA)</i></b> [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:key</code> identifiersThis API may change without a BREAKING CHANGE notice. |
 
 ## Functions
 
-| Function                                                       | Description |
-| -------------------------------------------------------------- | ----------- |
-| [getDidKeyResolver()](./did-provider-key.getdidkeyresolver.md) |             |
+| Function                                                       | Description                                           |
+| -------------------------------------------------------------- | ----------------------------------------------------- |
+| [getDidKeyResolver()](./did-provider-key.getdidkeyresolver.md) | Provides a mapping to a did:key resolver, usable by . |

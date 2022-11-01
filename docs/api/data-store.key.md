@@ -8,6 +8,10 @@ hide_title: true
 
 ## Key class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Represents some properties of a [IKey](./core.ikey.md) that are stored in a TypeORM database for the purpose of keeping track of the [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations and the keys they are able to use.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,11 +22,11 @@ export declare class Key extends BaseEntity
 
 ## Properties
 
-| Property                                         | Modifiers | Type                                             | Description       |
-| ------------------------------------------------ | --------- | ------------------------------------------------ | ----------------- |
-| [identifier?](./data-store.key.identifier.md)    |           | [Identifier](./data-store.identifier.md)         | <i>(Optional)</i> |
-| [kid](./data-store.key.kid.md)                   |           | string                                           |                   |
-| [kms](./data-store.key.kms.md)                   |           | string                                           |                   |
-| [meta?](./data-store.key.meta.md)                |           | [KeyMetadata](./core.keymetadata.md) &#124; null | <i>(Optional)</i> |
-| [publicKeyHex](./data-store.key.publickeyhex.md) |           | string                                           |                   |
-| [type](./data-store.key.type.md)                 |           | KeyType                                          |                   |
+| Property                                         | Modifiers | Type                                             | Description                            |
+| ------------------------------------------------ | --------- | ------------------------------------------------ | -------------------------------------- |
+| [identifier?](./data-store.key.identifier.md)    |           | [Identifier](./data-store.identifier.md)         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [kid](./data-store.key.kid.md)                   |           | string                                           | <b><i>(BETA)</i></b>                   |
+| [kms](./data-store.key.kms.md)                   |           | string                                           | <b><i>(BETA)</i></b>                   |
+| [meta?](./data-store.key.meta.md)                |           | [KeyMetadata](./core.keymetadata.md) &#124; null | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [publicKeyHex](./data-store.key.publickeyhex.md) |           | string                                           | <b><i>(BETA)</i></b>                   |
+| [type](./data-store.key.type.md)                 |           | KeyType                                          | <b><i>(BETA)</i></b>                   |

@@ -8,6 +8,10 @@ hide_title: true
 
 ## Claim class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Represents the properties of a claim extracted from a Verifiable Credential `credentialSubject`, and stored in a TypeORM database for querying.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,16 +22,16 @@ export declare class Claim extends BaseEntity
 
 ## Properties
 
-| Property                                                | Modifiers | Type                                     | Description       |
-| ------------------------------------------------------- | --------- | ---------------------------------------- | ----------------- |
-| [context](./data-store.claim.context.md)                |           | string\[\]                               |                   |
-| [credential](./data-store.claim.credential.md)          |           | Credential                               |                   |
-| [credentialType](./data-store.claim.credentialtype.md)  |           | string\[\]                               |                   |
-| [expirationDate?](./data-store.claim.expirationdate.md) |           | Date                                     | <i>(Optional)</i> |
-| [hash](./data-store.claim.hash.md)                      |           | string                                   |                   |
-| [isObj](./data-store.claim.isobj.md)                    |           | boolean                                  |                   |
-| [issuanceDate](./data-store.claim.issuancedate.md)      |           | Date                                     |                   |
-| [issuer](./data-store.claim.issuer.md)                  |           | [Identifier](./data-store.identifier.md) |                   |
-| [subject?](./data-store.claim.subject.md)               |           | [Identifier](./data-store.identifier.md) | <i>(Optional)</i> |
-| [type](./data-store.claim.type.md)                      |           | string                                   |                   |
-| [value](./data-store.claim.value.md)                    |           | string &#124; null                       |                   |
+| Property                                                | Modifiers | Type                                     | Description                            |
+| ------------------------------------------------------- | --------- | ---------------------------------------- | -------------------------------------- |
+| [context](./data-store.claim.context.md)                |           | string\[\]                               | <b><i>(BETA)</i></b>                   |
+| [credential](./data-store.claim.credential.md)          |           | Credential                               | <b><i>(BETA)</i></b>                   |
+| [credentialType](./data-store.claim.credentialtype.md)  |           | string\[\]                               | <b><i>(BETA)</i></b>                   |
+| [expirationDate?](./data-store.claim.expirationdate.md) |           | Date                                     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [hash](./data-store.claim.hash.md)                      |           | string                                   | <b><i>(BETA)</i></b>                   |
+| [isObj](./data-store.claim.isobj.md)                    |           | boolean                                  | <b><i>(BETA)</i></b>                   |
+| [issuanceDate](./data-store.claim.issuancedate.md)      |           | Date                                     | <b><i>(BETA)</i></b>                   |
+| [issuer](./data-store.claim.issuer.md)                  |           | [Identifier](./data-store.identifier.md) | <b><i>(BETA)</i></b>                   |
+| [subject?](./data-store.claim.subject.md)               |           | [Identifier](./data-store.identifier.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type](./data-store.claim.type.md)                      |           | string                                   | <b><i>(BETA)</i></b>                   |
+| [value](./data-store.claim.value.md)                    |           | string &#124; null                       | <b><i>(BETA)</i></b>                   |

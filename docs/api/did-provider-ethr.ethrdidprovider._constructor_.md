@@ -15,17 +15,19 @@ Constructs a new instance of the `EthrDIDProvider` class
 ```typescript
 constructor(options: {
         defaultKms: string;
-        network: string | number;
+        networks?: EthrNetworkConfiguration[];
+        ttl?: number;
+        network?: string | number;
+        name?: string;
         rpcUrl?: string;
         web3Provider?: Provider;
-        ttl?: number;
-        gas?: number;
         registry?: string;
+        gas?: number;
     });
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                            | Description |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | { defaultKms: string; network: string &#124; number; rpcUrl?: string; web3Provider?: Provider; ttl?: number; gas?: number; registry?: string; } |             |
+| Parameter | Type                                                                                                                                                                                                     | Description |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| options   | { defaultKms: string; networks?: EthrNetworkConfiguration\[\]; ttl?: number; network?: string &#124; number; name?: string; rpcUrl?: string; web3Provider?: Provider; registry?: string; gas?: number; } |             |

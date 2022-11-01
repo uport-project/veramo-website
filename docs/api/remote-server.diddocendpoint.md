@@ -8,6 +8,8 @@ hide_title: true
 
 ## didDocEndpoint variable
 
+The URL path to the DID document, used by did:web when the identifier is a hostname.
+
 <b>Signature:</b>
 
 ```typescript

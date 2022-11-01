@@ -8,7 +8,9 @@ hide_title: true
 
 ## IMessageHandler.handleMessage() method
 
-Parses and optionally saves a message
+Parses a raw message.
+
+After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core.idatastore.datastoresavemessage.md) to save it.
 
 <b>Signature:</b>
 
@@ -18,10 +20,10 @@ handleMessage(args: IHandleMessageArgs, context: IAgentContext<IDataStore>): Pro
 
 ## Parameters
 
-| Parameter | Type                                                                               | Description                                                                       |
-| --------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| args      | [IHandleMessageArgs](./core.ihandlemessageargs.md)                                 |                                                                                   |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStore](./core.idatastore.md)&gt; | Execution context. Requires agent with [IDataStore](./core.idatastore.md) methods |
+| Parameter | Type                                                                               | Description                                                                                            |
+| --------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| args      | [IHandleMessageArgs](./core.ihandlemessageargs.md)                                 | The <code>raw</code> message to be handled along with optional <code>metadata</code> about the origin. |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStore](./core.idatastore.md)&gt; | Execution context. Requires agent with [IDataStore](./core.idatastore.md) methods                      |
 
 <b>Returns:</b>
 

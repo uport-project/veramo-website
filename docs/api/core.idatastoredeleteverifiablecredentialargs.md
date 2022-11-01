@@ -8,7 +8,7 @@ hide_title: true
 
 ## IDataStoreDeleteVerifiableCredentialArgs interface
 
-Input arguments for
+Input arguments for [IDataStoreDeleteVerifiableCredentialArgs](./core.idatastoredeleteverifiablecredentialargs.md)
 
 <b>Signature:</b>
 

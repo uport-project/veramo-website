@@ -8,6 +8,10 @@ hide_title: true
 
 ## DIDResolverPlugin class
 
+A Veramo Plugin that enables users to resolve DID documents.
+
+This plugin is used automatically by plugins that create or verify Verifiable Credentials or Presentations or when working with DIDComm
+
 <b>Signature:</b>
 
 ```typescript

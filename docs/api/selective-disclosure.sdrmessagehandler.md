@@ -12,6 +12,8 @@ hide_title: true
 
 A Veramo message handler plugin that can decode an incoming Selective Disclosure Response into the internal Message representation.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

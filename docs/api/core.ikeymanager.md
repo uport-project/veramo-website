@@ -8,7 +8,13 @@ hide_title: true
 
 ## IKeyManager interface
 
-Key manager interface
+Key manager interface.
+
+This defines an interface for a plugin that orchestrates various implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md).
+
+See [KeyManager](./key-manager.keymanager.md) for a reference implementation.
+
+The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.
 
 <b>Signature:</b>
 
@@ -23,9 +29,9 @@ export interface IKeyManager extends IPluginMethodMap
 | Method                                                                                         | Description                                                                                                                                                                                                            |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [keyManagerCreate(args)](./core.ikeymanager.keymanagercreate.md)                               | Creates and returns a new key                                                                                                                                                                                          |
-| [keyManagerDecryptJWE(args)](./core.ikeymanager.keymanagerdecryptjwe.md)                       | <b><i>(BETA)</i></b> Decrypts data                                                                                                                                                                                     |
+| [keyManagerDecryptJWE(args)](./core.ikeymanager.keymanagerdecryptjwe.md)                       | <b><i>(BETA)</i></b> Decrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                               |
 | [keyManagerDelete(args)](./core.ikeymanager.keymanagerdelete.md)                               | Deletes a key                                                                                                                                                                                                          |
-| [keyManagerEncryptJWE(args)](./core.ikeymanager.keymanagerencryptjwe.md)                       | <b><i>(BETA)</i></b> Encrypts data                                                                                                                                                                                     |
+| [keyManagerEncryptJWE(args)](./core.ikeymanager.keymanagerencryptjwe.md)                       | <b><i>(BETA)</i></b> Encrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                               |
 | [keyManagerGet(args)](./core.ikeymanager.keymanagerget.md)                                     | Returns an existing key                                                                                                                                                                                                |
 | [keyManagerGetKeyManagementSystems()](./core.ikeymanager.keymanagergetkeymanagementsystems.md) | Lists available key management systems                                                                                                                                                                                 |
 | [keyManagerImport(args)](./core.ikeymanager.keymanagerimport.md)                               | Imports a created key                                                                                                                                                                                                  |

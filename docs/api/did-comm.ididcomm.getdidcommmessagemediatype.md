@@ -33,3 +33,5 @@ the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md) if it was s
 ## Exceptions
 
 if the message cannot be parsed as DIDComm v2
+
+This API may change without a BREAKING CHANGE notice.

@@ -8,6 +8,12 @@ hide_title: true
 
 ## PreMigrationKey class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+This represents the private key data of keys that were stored by [KeyStore](./data-store.keystore.md) before Veramo 3.0. During database migration this key material is moved to a different table and accessible by [PrivateKeyStore](./data-store.privatekeystore.md).
+
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,8 +24,8 @@ export declare class PreMigrationKey extends BaseEntity
 
 ## Properties
 
-| Property                                                        | Modifiers | Type    | Description       |
-| --------------------------------------------------------------- | --------- | ------- | ----------------- |
-| [kid](./data-store.premigrationkey.kid.md)                      |           | string  |                   |
-| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string  | <i>(Optional)</i> |
-| [type](./data-store.premigrationkey.type.md)                    |           | KeyType |                   |
+| Property                                                        | Modifiers | Type    | Description                            |
+| --------------------------------------------------------------- | --------- | ------- | -------------------------------------- |
+| [kid](./data-store.premigrationkey.kid.md)                      |           | string  | <b><i>(BETA)</i></b>                   |
+| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type](./data-store.premigrationkey.type.md)                    |           | KeyType | <b><i>(BETA)</i></b>                   |

@@ -8,6 +8,10 @@ hide_title: true
 
 ## Message class
 
+A class implementing [IMessage](./core.imessage.md).
+
+This is used by [MessageHandler](./message-handler.messagehandler.md).
+
 <b>Signature:</b>
 
 ```typescript

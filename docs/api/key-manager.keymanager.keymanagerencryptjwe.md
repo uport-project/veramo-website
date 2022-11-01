@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManager.keyManagerEncryptJWE() method
 
-Encrypts data
+Encrypts data This API may change without a BREAKING CHANGE notice.
 
 <b>Signature:</b>
 

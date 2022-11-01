@@ -8,18 +8,20 @@ hide_title: true
 
 ## DataStoreORM.dataStoreORMGetVerifiablePresentationsCount() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
 <b>Signature:</b>
 
 ```typescript
-dataStoreORMGetVerifiablePresentationsCount(args: FindArgs<TPresentationColumns>, context: IContext): Promise<number>;
+dataStoreORMGetVerifiablePresentationsCount(args: FindArgs<TPresentationColumns>, context: AuthorizedDIDContext): Promise<number>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                     | Description |
-| --------- | -------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md)&lt;[TPresentationColumns](./data-store.tpresentationcolumns.md)&gt; |             |
-| context   | IContext                                                                                                 |             |
+| Parameter | Type                                                                                         | Description |
+| --------- | -------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core.findargs.md)&lt;[TPresentationColumns](./core.tpresentationcolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                       |             |
 
 <b>Returns:</b>
 

@@ -35,3 +35,4 @@ export interface IDIDManager extends IPluginMethodMap
 | [didManagerRemoveKey(args, context)](./core.ididmanager.didmanagerremovekey.md)         | Removes a key from a DID Document                                        |
 | [didManagerRemoveService(args, context)](./core.ididmanager.didmanagerremoveservice.md) | Removes a service from a DID Document                                    |
 | [didManagerSetAlias(args, context)](./core.ididmanager.didmanagersetalias.md)           | Sets identifier alias                                                    |
+| [didManagerUpdate(args, context)](./core.ididmanager.didmanagerupdate.md)               | Updates the DID document of a managed [DID](./core.iidentifier.md).      |

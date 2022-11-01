@@ -8,6 +8,12 @@ hide_title: true
 
 ## KeyStore class
 
+An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that uses a TypeORM database to store the relationships between keys, their IDs, aliases and [KMS implementations](./key-manager.abstractkeymanagementsystem.md), as they are known and managed by a Veramo agent.
+
+An instance of this class can be used by [KeyManager](./key-manager.keymanager.md) as the data storage layer.
+
+To make full use of this class, it should use the same database as the one used by [DIDStore](./data-store.didstore.md).
+
 <b>Signature:</b>
 
 ```typescript

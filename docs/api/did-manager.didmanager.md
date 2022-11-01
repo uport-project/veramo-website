@@ -48,3 +48,4 @@ export declare class DIDManager implements IAgentPlugin
 | [didManagerRemoveKey({ did, kid, options }, context)](./did-manager.didmanager.didmanagerremovekey.md)                 |           | Removes a key from a DID Document                                        |
 | [didManagerRemoveService({ did, id, options }, context)](./did-manager.didmanager.didmanagerremoveservice.md)          |           | Removes a service from a DID Document                                    |
 | [didManagerSetAlias({ did, alias }, context)](./did-manager.didmanager.didmanagersetalias.md)                          |           | Sets identifier alias                                                    |
+| [didManagerUpdate({ did, document, options }, context)](./did-manager.didmanager.didmanagerupdate.md)                  |           | Updates the DID document of a managed [DID](./core.iidentifier.md).      |

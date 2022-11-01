@@ -12,12 +12,12 @@ Provides a [plugin](./remote-client.agentrestclient.md) for the [Agent](./core.a
 
 ## Classes
 
-| Class                                                 | Description |
-| ----------------------------------------------------- | ----------- |
-| [AgentRestClient](./remote-client.agentrestclient.md) |             |
+| Class                                                 | Description                                                                                                                                                                                                                                                                                                                                           |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [AgentRestClient](./remote-client.agentrestclient.md) | This plugin can be used to access the methods of a remote Veramo agent as if they were implemented locally.The remote agent should be provided by [AgentRouter](./remote-server.agentrouter.md), or a similar implementation of this API.The schema of the remote agent is usually provided by [ApiSchemaRouter](./remote-server.apischemarouter.md). |
 
 ## Variables
 
-| Variable                                                | Description |
-| ------------------------------------------------------- | ----------- |
-| [getOpenApiSchema](./remote-client.getopenapischema.md) |             |
+| Variable                                                | Description                                                                                                                   |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [getOpenApiSchema](./remote-client.getopenapischema.md) | This method can be used to generate an OpenAPIv3 schema to describe how the methods of a Veramo agent can be called remotely. |

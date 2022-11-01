@@ -18,6 +18,8 @@ The possible types of message packing.
 
 `none` will produce `DIDCommMessageMediaType.PLAIN` messages.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

@@ -8,6 +8,12 @@ hide_title: true
 
 ## MemoryDIDStore class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that stores everything in memory.
+
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,9 +24,9 @@ export declare class MemoryDIDStore extends AbstractDIDStore
 
 ## Methods
 
-| Method                                                                | Modifiers | Description |
-| --------------------------------------------------------------------- | --------- | ----------- |
-| [delete({ did })](./did-manager.memorydidstore.delete.md)             |           |             |
-| [get({ did, alias, provider, })](./did-manager.memorydidstore.get.md) |           |             |
-| [import(args)](./did-manager.memorydidstore.import.md)                |           |             |
-| [list(args)](./did-manager.memorydidstore.list.md)                    |           |             |
+| Method                                                                | Modifiers | Description          |
+| --------------------------------------------------------------------- | --------- | -------------------- |
+| [delete({ did })](./did-manager.memorydidstore.delete.md)             |           | <b><i>(BETA)</i></b> |
+| [get({ did, alias, provider, })](./did-manager.memorydidstore.get.md) |           | <b><i>(BETA)</i></b> |
+| [import(args)](./did-manager.memorydidstore.import.md)                |           | <b><i>(BETA)</i></b> |
+| [list(args)](./did-manager.memorydidstore.list.md)                    |           | <b><i>(BETA)</i></b> |

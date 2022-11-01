@@ -8,18 +8,20 @@ hide_title: true
 
 ## DataStoreORM.dataStoreORMGetMessagesCount() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
 <b>Signature:</b>
 
 ```typescript
-dataStoreORMGetMessagesCount(args: FindArgs<TMessageColumns>, context: IContext): Promise<number>;
+dataStoreORMGetMessagesCount(args: FindArgs<TMessageColumns>, context: AuthorizedDIDContext): Promise<number>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                           | Description |
-| --------- | ---------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md)&lt;[TMessageColumns](./data-store.tmessagecolumns.md)&gt; |             |
-| context   | IContext                                                                                       |             |
+| Parameter | Type                                                                               | Description |
+| --------- | ---------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core.findargs.md)&lt;[TMessageColumns](./core.tmessagecolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                             |             |
 
 <b>Returns:</b>
 

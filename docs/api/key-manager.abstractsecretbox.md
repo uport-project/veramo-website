@@ -8,6 +8,8 @@ hide_title: true
 
 ## AbstractSecretBox class
 
+This simple abstract class can be extended by different implementations to provide encryption at rest for some implementations of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md).
+
 <b>Signature:</b>
 
 ```typescript

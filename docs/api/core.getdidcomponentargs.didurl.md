@@ -10,7 +10,9 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-The DID URI that refers to the subsection by \#fragment. Example: did:example:identifier\#controller
+The DID URI that needs to be dereferenced. This should refer to the subsection by \#fragment.
+
+Example: did:example:identifier\#controller
 
 <b>Signature:</b>
 

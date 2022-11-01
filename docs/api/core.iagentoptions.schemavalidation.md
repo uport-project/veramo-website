@@ -10,7 +10,7 @@ hide_title: true
 
 Flag that enables schema validation for plugin methods.
 
-false
+Defaults to `false`.
 
 <b>Signature:</b>
 

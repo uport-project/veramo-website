@@ -12,6 +12,8 @@ hide_title: true
 
 Result interface for sending DIDComm messages through [IDIDCommTransport.send()](./did-comm.ididcommtransport.send.md).
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

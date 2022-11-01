@@ -8,7 +8,11 @@ hide_title: true
 
 ## KeyManager class
 
-Agent plugin that provides [IKeyManager](./core.ikeymanager.md) methods
+Agent plugin that implements [IKeyManager](./core.ikeymanager.md) methods.
+
+This plugin orchestrates various implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md), using a KeyStore to remember the link between a key reference, its metadata, and the respective key management system that provides the actual cryptographic capabilities.
+
+The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.
 
 <b>Signature:</b>
 
@@ -33,17 +37,17 @@ export declare class KeyManager implements IAgentPlugin
 
 ## Methods
 
-| Method                                                                                               | Modifiers | Description                                                 |
-| ---------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------- |
-| [createX25519ECDH(secretKeyRef)](./key-manager.keymanager.createx25519ecdh.md)                       |           |                                                             |
-| [keyManagerCreate(args)](./key-manager.keymanager.keymanagercreate.md)                               |           | Creates and returns a new key                               |
-| [keyManagerDecryptJWE({ kid, data })](./key-manager.keymanager.keymanagerdecryptjwe.md)              |           | Decrypts data                                               |
-| [keyManagerDelete({ kid })](./key-manager.keymanager.keymanagerdelete.md)                            |           | Deletes a key                                               |
-| [keyManagerEncryptJWE({ kid, to, data })](./key-manager.keymanager.keymanagerencryptjwe.md)          |           | Encrypts data                                               |
-| [keyManagerGet({ kid })](./key-manager.keymanager.keymanagerget.md)                                  |           | Returns an existing key                                     |
-| [keyManagerGetKeyManagementSystems()](./key-manager.keymanager.keymanagergetkeymanagementsystems.md) |           | Lists available key management systems                      |
-| [keyManagerImport(key)](./key-manager.keymanager.keymanagerimport.md)                                |           | Imports a created key                                       |
-| [keyManagerSharedSecret(args)](./key-manager.keymanager.keymanagersharedsecret.md)                   |           |                                                             |
-| [keyManagerSign(args)](./key-manager.keymanager.keymanagersign.md)                                   |           | Generates a signature according to the algorithm specified. |
-| [keyManagerSignEthTX({ kid, transaction })](./key-manager.keymanager.keymanagersignethtx.md)         |           | Signs Ethereum transaction                                  |
-| [keyManagerSignJWT({ kid, data })](./key-manager.keymanager.keymanagersignjwt.md)                    |           | Signs JWT                                                   |
+| Method                                                                                               | Modifiers | Description                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [createX25519ECDH(secretKeyRef)](./key-manager.keymanager.createx25519ecdh.md)                       |           |                                                                                                                                                                                                                        |
+| [keyManagerCreate(args)](./key-manager.keymanager.keymanagercreate.md)                               |           | Creates and returns a new key                                                                                                                                                                                          |
+| [keyManagerDecryptJWE({ kid, data })](./key-manager.keymanager.keymanagerdecryptjwe.md)              |           | Decrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                    |
+| [keyManagerDelete({ kid })](./key-manager.keymanager.keymanagerdelete.md)                            |           | Deletes a key                                                                                                                                                                                                          |
+| [keyManagerEncryptJWE({ kid, to, data })](./key-manager.keymanager.keymanagerencryptjwe.md)          |           | Encrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                    |
+| [keyManagerGet({ kid })](./key-manager.keymanager.keymanagerget.md)                                  |           | Returns an existing key                                                                                                                                                                                                |
+| [keyManagerGetKeyManagementSystems()](./key-manager.keymanager.keymanagergetkeymanagementsystems.md) |           | Lists available key management systems                                                                                                                                                                                 |
+| [keyManagerImport(key)](./key-manager.keymanager.keymanagerimport.md)                                |           | Imports a created key                                                                                                                                                                                                  |
+| [keyManagerSharedSecret(args)](./key-manager.keymanager.keymanagersharedsecret.md)                   |           | Compute a shared secret with the public key of another party.This computes the raw shared secret (the result of a Diffie-Hellman computation) To use this for symmetric encryption you MUST apply a KDF on the result. |
+| [keyManagerSign(args)](./key-manager.keymanager.keymanagersign.md)                                   |           | Generates a signature according to the algorithm specified.                                                                                                                                                            |
+| [keyManagerSignEthTX({ kid, transaction })](./key-manager.keymanager.keymanagersignethtx.md)         |           | Signs Ethereum transaction                                                                                                                                                                                             |
+| [keyManagerSignJWT({ kid, data })](./key-manager.keymanager.keymanagersignjwt.md)                    |           | Signs JWT                                                                                                                                                                                                              |

@@ -8,7 +8,11 @@ hide_title: true
 
 ## IHandleMessageArgs.save property
 
-Optional. If set to `true`, the message will be saved using [dataStoreSaveMessage](./core.idatastore.datastoresavemessage.md)
+> Warning: This API is now obsolete.
+>
+> Please call [dataStoreSaveMessage()](./core.idatastore.datastoresavemessage.md) after handling the message and determining that it must be saved.
+
+Optional. If set to `true`, the message will be saved using [dataStoreSaveMessage](./core.idatastore.datastoresavemessage.md) <p/><p/>
 
 <b>Signature:</b>
 

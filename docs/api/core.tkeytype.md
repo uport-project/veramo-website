@@ -8,10 +8,10 @@ hide_title: true
 
 ## TKeyType type
 
-Cryptographic key type
+Cryptographic key type.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type TKeyType = 'Ed25519' | 'Secp256k1' | 'X25519'
+export declare type TKeyType = 'Ed25519' | 'Secp256k1' | 'Secp256r1' | 'X25519' | 'Bls12381G1' | 'Bls12381G2'
 ```

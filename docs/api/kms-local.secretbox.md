@@ -8,6 +8,10 @@ hide_title: true
 
 ## SecretBox class
 
+This is an implementation of [AbstractSecretBox](./key-manager.abstractsecretbox.md) that uses a JavaScript [nacl secretBox](https://nacl.cr.yp.to/secretbox.html) implementation for encryption.
+
+See [PrivateKeyStore](./data-store.privatekeystore.md) See [PrivateKeyStoreJson](./data-store-json.privatekeystorejson.md) See [AbstractSecretBox](./key-manager.abstractsecretbox.md)
+
 <b>Signature:</b>
 
 ```typescript

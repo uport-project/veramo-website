@@ -8,6 +8,12 @@ hide_title: true
 
 ## DIDStore class
 
+An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that uses a TypeORM database to store the relationships between DIDs, their providers and controllers and their keys and services as they are known and managed by a Veramo agent.
+
+An instance of this class can be used by [DIDManager](./did-manager.didmanager.md) as the data storage layer.
+
+To make full use of this class, it should use the same database as the one used by [KeyStore](./data-store.keystore.md).
+
 <b>Signature:</b>
 
 ```typescript

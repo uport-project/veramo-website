@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Gathers the required credentials necessary to fulfill a Selective Disclosure Request. It uses the [IDataStoreORM](./data-store.idatastoreorm.md) plugin to query the local database for the required credentials.
+Gathers the required credentials necessary to fulfill a Selective Disclosure Request. It uses a [IDataStoreORM](./core.idatastoreorm.md) plugin implementation to query the local database for the required credentials.
 
 <b>Signature:</b>
 
@@ -20,10 +20,10 @@ getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, contex
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description                                                             |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) | Contains the Request to be fulfilled and the DID of the subject         |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./data-store.idatastoreorm.md)&gt;       | \*RESERVED\* This is filled by the framework when the method is called. |
+| Parameter | Type                                                                                                 | Description                                                                                                                  |
+| --------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) | Contains the Request to be fulfilled and the DID of the subject                                                              |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./core.idatastoreorm.md)&gt;             | \*RESERVED\* This is filled by the framework when the method is called.This API may change without a BREAKING CHANGE notice. |
 
 <b>Returns:</b>
 

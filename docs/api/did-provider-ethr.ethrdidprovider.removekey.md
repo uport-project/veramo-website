@@ -14,16 +14,16 @@ hide_title: true
 removeKey(args: {
         identifier: IIdentifier;
         kid: string;
-        options?: any;
+        options?: TransactionOptions;
     }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                              | Description |
-| --------- | --------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core.iidentifier.md); kid: string; options?: any; } |             |
-| context   | IRequiredContext                                                                  |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | { identifier: [IIdentifier](./core.iidentifier.md); kid: string; options?: TransactionOptions; } |             |
+| context   | IRequiredContext                                                                                 |             |
 
 <b>Returns:</b>
 

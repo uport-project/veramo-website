@@ -12,6 +12,8 @@ hide_title: true
 
 Creates profile credentials
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript
@@ -20,10 +22,10 @@ createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentCo
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                  | Description |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                              |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[ICredentialIssuer](./credential-w3c.icredentialissuer.md) &amp; [IDIDManager](./core.ididmanager.md)&gt; |             |
+| Parameter | Type                                                                                                                                        | Description |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                    |             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[ICredentialIssuer](./core.icredentialissuer.md) &amp; [IDIDManager](./core.ididmanager.md)&gt; |             |
 
 <b>Returns:</b>
 

@@ -12,6 +12,8 @@ hide_title: true
 
 Implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md) to provide a simple transport based on HTTP(S) requests.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

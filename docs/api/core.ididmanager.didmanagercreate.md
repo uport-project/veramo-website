@@ -18,10 +18,10 @@ didManagerCreate(args: IDIDManagerCreateArgs, context: IAgentContext<IKeyManager
 
 ## Parameters
 
-| Parameter | Type                                                                                 | Description                                                                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [IDIDManagerCreateArgs](./core.ididmanagercreateargs.md)                             | Required. Arguments to create the identifier                                                                                                                    |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; | <a href="/docs/agent/plugins#executing-plugin-methods">Execution context</a>. Requires <code>agent</code> that has [IKeyManager](./core.ikeymanager.md) methods |
+| Parameter | Type                                                                                 | Description                                                                                                                                                                                                                                              |
+| --------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | [IDIDManagerCreateArgs](./core.ididmanagercreateargs.md)                             | Required. Arguments to create the identifier                                                                                                                                                                                                             |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core.ikeymanager.md) methods. |
 
 <b>Returns:</b>
 
@@ -32,7 +32,7 @@ Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
 ```typescript
 const identifier = await agent.didManagerCreate({
   alias: 'charlie',
-  provider: 'did:ethr:rinkeby',
+  provider: 'did:ethr:goerli',
   kms: 'local',
 })
 ```

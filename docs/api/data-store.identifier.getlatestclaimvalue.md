@@ -8,24 +8,29 @@ hide_title: true
 
 ## Identifier.getLatestClaimValue() method
 
-Convenience method
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-const name = await identifier.getLatestClaimValue({type: 'name'})
+Convenience method to get the most recent information about a subject DID as described by Verifiable Credential claims.
+
+Example:
+
+```typescript
+// get the latest claim value for credentials containing `credentialSubject.name` and this Identifier as subject.
+const name = await identifier.getLatestClaimValue({ type: 'name' })
+```
 
 <b>Signature:</b>
 
 ```typescript
-getLatestClaimValue(dbConnection: Promise<Connection>, where: {
-        type: string;
-    }): Promise<string | null | undefined>;
+getLatestClaimValue(dbConnection: Promise<Connection>, where: any): Promise<string | null | undefined>;
 ```
 
 ## Parameters
 
-| Parameter    | Type                      | Description |
-| ------------ | ------------------------- | ----------- |
-| dbConnection | Promise&lt;Connection&gt; |             |
-| where        | { type: string; }         |             |
+| Parameter    | Type                      | Description                                   |
+| ------------ | ------------------------- | --------------------------------------------- |
+| dbConnection | Promise&lt;Connection&gt; |                                               |
+| where        | any                       | The TypeORM <code>where</code> filter to use. |
 
 <b>Returns:</b>
 

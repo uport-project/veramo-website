@@ -13,5 +13,5 @@ Endpoint URL
 <b>Signature:</b>
 
 ```typescript
-serviceEndpoint: string
+serviceEndpoint: IServiceEndpoint | IServiceEndpoint[];
 ```

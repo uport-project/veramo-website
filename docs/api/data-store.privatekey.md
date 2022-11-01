@@ -8,6 +8,10 @@ hide_title: true
 
 ## PrivateKey class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Represents some properties of a [ManagedPrivateKey](./key-manager.managedprivatekey.md) that are stored in a TypeORM database when using a [PrivateKeyStore](./data-store.privatekeystore.md) to store private key data.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,8 +22,8 @@ export declare class PrivateKey extends BaseEntity
 
 ## Properties
 
-| Property                                                  | Modifiers | Type    | Description |
-| --------------------------------------------------------- | --------- | ------- | ----------- |
-| [alias](./data-store.privatekey.alias.md)                 |           | string  |             |
-| [privateKeyHex](./data-store.privatekey.privatekeyhex.md) |           | string  |             |
-| [type](./data-store.privatekey.type.md)                   |           | KeyType |             |
+| Property                                                  | Modifiers | Type    | Description          |
+| --------------------------------------------------------- | --------- | ------- | -------------------- |
+| [alias](./data-store.privatekey.alias.md)                 |           | string  | <b><i>(BETA)</i></b> |
+| [privateKeyHex](./data-store.privatekey.privatekeyhex.md) |           | string  | <b><i>(BETA)</i></b> |
+| [type](./data-store.privatekey.type.md)                   |           | KeyType | <b><i>(BETA)</i></b> |

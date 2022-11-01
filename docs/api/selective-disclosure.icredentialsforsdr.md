@@ -24,8 +24,10 @@ export interface ICredentialsForSdr extends ICredentialRequestInput
 
 See [Selective Disclosure Request](https://github.com/uport-project/specs/blob/develop/messages/sharereq.md)
 
+This API may change without a BREAKING CHANGE notice.
+
 ## Properties
 
-| Property                                                                | Type                                                                         | Description          |
-| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------------- |
-| [credentials](./selective-disclosure.icredentialsforsdr.credentials.md) | [UniqueVerifiableCredential](./data-store.uniqueverifiablecredential.md)\[\] | <b><i>(BETA)</i></b> |
+| Property                                                                | Type                                                                   | Description          |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------- |
+| [credentials](./selective-disclosure.icredentialsforsdr.credentials.md) | [UniqueVerifiableCredential](./core.uniqueverifiablecredential.md)\[\] | <b><i>(BETA)</i></b> |

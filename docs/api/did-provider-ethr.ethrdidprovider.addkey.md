@@ -14,16 +14,16 @@ hide_title: true
 addKey({ identifier, key, options }: {
         identifier: IIdentifier;
         key: IKey;
-        options?: any;
+        options?: TransactionOptions;
     }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
 
-| Parameter                    | Type                                                                                              | Description |
-| ---------------------------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, key, options } | { identifier: [IIdentifier](./core.iidentifier.md); key: [IKey](./core.ikey.md); options?: any; } |             |
-| context                      | IRequiredContext                                                                                  |             |
+| Parameter                    | Type                                                                                                             | Description |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| { identifier, key, options } | { identifier: [IIdentifier](./core.iidentifier.md); key: [IKey](./core.ikey.md); options?: TransactionOptions; } |             |
+| context                      | IRequiredContext                                                                                                 |             |
 
 <b>Returns:</b>
 

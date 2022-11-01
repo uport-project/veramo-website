@@ -8,22 +8,28 @@ hide_title: true
 
 ## AliasDiscoveryProvider class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+A DID discovery provider that can filter DIDs by the `alias` used internally in [DIDManager](./did-manager.didmanager.md)
+
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript
 export declare class AliasDiscoveryProvider implements AbstractDidDiscoveryProvider
 ```
 
-<b>Implements:</b> AbstractDidDiscoveryProvider
+<b>Implements:</b> [AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)
 
 ## Properties
 
-| Property                                             | Modifiers | Type           | Description |
-| ---------------------------------------------------- | --------- | -------------- | ----------- |
-| [name](./did-manager.aliasdiscoveryprovider.name.md) |           | (not declared) |             |
+| Property                                             | Modifiers | Type           | Description          |
+| ---------------------------------------------------- | --------- | -------------- | -------------------- |
+| [name](./did-manager.aliasdiscoveryprovider.name.md) |           | (not declared) | <b><i>(BETA)</i></b> |
 
 ## Methods
 
-| Method                                                                            | Modifiers | Description |
-| --------------------------------------------------------------------------------- | --------- | ----------- |
-| [discoverDid(args, context)](./did-manager.aliasdiscoveryprovider.discoverdid.md) |           |             |
+| Method                                                                            | Modifiers | Description          |
+| --------------------------------------------------------------------------------- | --------- | -------------------- |
+| [discoverDid(args, context)](./did-manager.aliasdiscoveryprovider.discoverdid.md) |           | <b><i>(BETA)</i></b> |

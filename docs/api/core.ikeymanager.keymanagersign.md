@@ -18,9 +18,9 @@ keyManagerSign(args: IKeyManagerSignArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                                                 | Description |
-| --------- | ---------------------------------------------------- | ----------- |
-| args      | [IKeyManagerSignArgs](./core.ikeymanagersignargs.md) |             |
+| Parameter | Type                                                 | Description                                                                                       |
+| --------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| args      | [IKeyManagerSignArgs](./core.ikeymanagersignargs.md) | The input to the signing method, including data to be signed, key reference and algorithm to use. |
 
 <b>Returns:</b>
 

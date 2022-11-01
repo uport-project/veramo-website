@@ -8,6 +8,10 @@ hide_title: true
 
 ## createDefaultDid() function
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+This can be used to automatically create a did:web with signing and encryption keys and listing messaging and DIDComm service endpoints.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,9 +20,9 @@ export declare function createDefaultDid(options: CreateDefaultDidOptions): Prom
 
 ## Parameters
 
-| Parameter | Type                    | Description |
-| --------- | ----------------------- | ----------- |
-| options   | CreateDefaultDidOptions |             |
+| Parameter | Type                    | Description                                                                                              |
+| --------- | ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| options   | CreateDefaultDidOptions | The options guiding the creation of the default DIDThis API may change without a BREAKING CHANGE notice. |
 
 <b>Returns:</b>
 

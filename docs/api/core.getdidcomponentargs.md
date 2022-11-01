@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Input arguments for [getDIDComponentById](./core.iresolver.getdidcomponentbyid.md)
+Input arguments for [getDIDComponentById](./core.iresolver.getdidcomponentbyid.md) This API may change without a BREAKING CHANGE notice.
 
 <b>Signature:</b>
 
@@ -20,8 +20,8 @@ export interface GetDIDComponentArgs
 
 ## Properties
 
-| Property                                                 | Type                                               | Description                                                                                                                                                                     |
-| -------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [didDocument](./core.getdidcomponentargs.diddocument.md) | DIDDocument                                        | <b><i>(BETA)</i></b> the DID document from which to extract the fragment. This MUST be the document resolved by                                                                 |
-| [didUrl](./core.getdidcomponentargs.didurl.md)           | string                                             | <b><i>(BETA)</i></b> The DID URI that refers to the subsection by \#fragment. Example: did:example:identifier\#controller                                                       |
-| [section?](./core.getdidcomponentargs.section.md)        | [DIDDocumentSection](./core.diddocumentsection.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> The section of the DID document where to search for the fragment. Example 'keyAgreement', or 'assertionMethod', or 'authentication', etc |
+| Property                                                 | Type                                               | Description                                                                                                                                                                               |
+| -------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [didDocument](./core.getdidcomponentargs.diddocument.md) | DIDDocument                                        | <b><i>(BETA)</i></b> the DID document from which to extract the fragment. This MUST be the document resolved by [IResolver.resolveDid()](./core.iresolver.resolvedid.md)                  |
+| [didUrl](./core.getdidcomponentargs.didurl.md)           | string                                             | <b><i>(BETA)</i></b> The DID URI that needs to be dereferenced. This should refer to the subsection by \#fragment.Example: did:example:identifier\#controller                             |
+| [section?](./core.getdidcomponentargs.section.md)        | [DIDDocumentSection](./core.diddocumentsection.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. The section of the DID document where to search for the fragment. Example 'keyAgreement', or 'assertionMethod', or 'authentication', etc |

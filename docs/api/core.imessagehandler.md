@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageHandler interface
 
-Message handler interface
+Message handler plugin interface.
 
 <b>Signature:</b>
 
@@ -20,6 +20,6 @@ export interface IMessageHandler extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                  | Description                           |
-| ----------------------------------------------------------------------- | ------------------------------------- |
-| [handleMessage(args, context)](./core.imessagehandler.handlemessage.md) | Parses and optionally saves a message |
+| Method                                                                  | Description                                                                                                                                                                                    |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [handleMessage(args, context)](./core.imessagehandler.handlemessage.md) | Parses a raw message.After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core.idatastore.datastoresavemessage.md) to save it. |

@@ -8,7 +8,9 @@ hide_title: true
 
 ## RequestWithAgentRouter variable
 
-Creates a router that adds veramo agent to the request object
+Creates an expressjs router that adds a Veramo agent to the request object.
+
+This is needed by all other routers provided by this package to be able to perform their functions.
 
 <b>Signature:</b>
 

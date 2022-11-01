@@ -8,6 +8,14 @@ hide_title: true
 
 ## MetaData interface
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Represents message metadata as it is stored by [DataStore](./data-store.datastore.md).
+
+This metadata is most often used by [MessageHandler](./message-handler.messagehandler.md) and [IMessageHandler](./core.imessagehandler.md) implementations to decorate messages that are interpreted and decoded, but not returned as final, as they pass through the message handler chain.
+
+- This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,7 +24,7 @@ export interface MetaData
 
 ## Properties
 
-| Property                                 | Type   | Description       |
-| ---------------------------------------- | ------ | ----------------- |
-| [type](./data-store.metadata.type.md)    | string |                   |
-| [value?](./data-store.metadata.value.md) | string | <i>(Optional)</i> |
+| Property                                 | Type   | Description                            |
+| ---------------------------------------- | ------ | -------------------------------------- |
+| [type](./data-store.metadata.type.md)    | string | <b><i>(BETA)</i></b>                   |
+| [value?](./data-store.metadata.value.md) | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |

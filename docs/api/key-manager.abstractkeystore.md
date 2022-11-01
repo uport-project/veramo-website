@@ -8,6 +8,10 @@ hide_title: true
 
 ## AbstractKeyStore class
 
+This base abstract class should be extended to provide platform specific implementations that are usable by [KeyManager](./key-manager.keymanager.md).
+
+Implementations of this class are used to store mappings between key IDs and their respective [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations.
+
 <b>Signature:</b>
 
 ```typescript

@@ -12,6 +12,8 @@ hide_title: true
 
 The result of packing a DIDComm v2 message. The message is always serialized as string.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

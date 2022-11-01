@@ -8,6 +8,12 @@ hide_title: true
 
 ## Service class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Represents some properties of a as it is stored in a TypeORM database. This is used by [DIDStore](./data-store.didstore.md) to provide information to [DIDManager](./did-manager.didmanager.md) when DID management information is stored in a local TypeORM database.
+
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,10 +24,10 @@ export declare class Service extends BaseEntity
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                                     | Description       |
-| ---------------------------------------------------------- | --------- | ---------------------------------------- | ----------------- |
-| [description?](./data-store.service.description.md)        |           | string                                   | <i>(Optional)</i> |
-| [id](./data-store.service.id.md)                           |           | string                                   |                   |
-| [identifier?](./data-store.service.identifier.md)          |           | [Identifier](./data-store.identifier.md) | <i>(Optional)</i> |
-| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                   |                   |
-| [type](./data-store.service.type.md)                       |           | string                                   |                   |
+| Property                                                   | Modifiers | Type                                     | Description                            |
+| ---------------------------------------------------------- | --------- | ---------------------------------------- | -------------------------------------- |
+| [description?](./data-store.service.description.md)        |           | string                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [id](./data-store.service.id.md)                           |           | string                                   | <b><i>(BETA)</i></b>                   |
+| [identifier?](./data-store.service.identifier.md)          |           | [Identifier](./data-store.identifier.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                   | <b><i>(BETA)</i></b>                   |
+| [type](./data-store.service.type.md)                       |           | string                                   | <b><i>(BETA)</i></b>                   |

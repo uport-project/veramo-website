@@ -8,6 +8,10 @@ hide_title: true
 
 ## MemoryKeyStore class
 
+An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that holds everything in memory.
+
+This is usable by [KeyManager](./key-manager.keymanager.md) to hold the key metadata and relationship to the KMS implementation.
+
 <b>Signature:</b>
 
 ```typescript

@@ -8,7 +8,7 @@ hide_title: true
 
 ## ManagedKeyInfo type
 
-Represents information about a managed key. Private or secret key material is not present.
+Represents information about a managed key. Private or secret key material is NOT present.
 
 <b>Signature:</b>
 

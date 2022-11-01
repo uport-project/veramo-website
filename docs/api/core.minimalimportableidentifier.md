@@ -8,7 +8,7 @@ hide_title: true
 
 ## MinimalImportableIdentifier type
 
-Represents the minimum amount of information needed to import an [IIdentifier](./core.iidentifier.md)
+Represents the minimum amount of information needed to import an [IIdentifier](./core.iidentifier.md).
 
 <b>Signature:</b>
 

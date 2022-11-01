@@ -8,6 +8,12 @@ hide_title: true
 
 ## schema variable
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+The parameter and return types schemas for the [SelectiveDisclosure](./selective-disclosure.selectivedisclosure.md) plugin methods.
+
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

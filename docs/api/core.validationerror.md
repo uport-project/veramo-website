@@ -8,6 +8,10 @@ hide_title: true
 
 ## ValidationError class
 
+Represents a Schema validation error.
+
+This can occur when a method of the agent is invoked with certain parameters or the returned value doesn't match the declared plugin schema.
+
 <b>Signature:</b>
 
 ```typescript

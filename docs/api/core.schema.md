@@ -8,6 +8,8 @@ hide_title: true
 
 ## schema variable
 
+This represents the collection of schemas for the core plugins. Implementations of these schemas can be provided by other packages.
+
 <b>Signature:</b>
 
 ```typescript

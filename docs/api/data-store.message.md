@@ -8,6 +8,10 @@ hide_title: true
 
 ## Message class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Represents some common properties of an [IMessage](./core.imessage.md) that are stored in a TypeORM database for querying.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,29 +22,29 @@ export declare class Message extends BaseEntity
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                                 | Description       |
-| ------------------------------------------------------ | --------- | ---------------------------------------------------- | ----------------- |
-| [createdAt?](./data-store.message.createdat.md)        |           | Date                                                 | <i>(Optional)</i> |
-| [credentials](./data-store.message.credentials.md)     |           | Credential\[\]                                       |                   |
-| [data?](./data-store.message.data.md)                  |           | object &#124; null                                   | <i>(Optional)</i> |
-| [expiresAt?](./data-store.message.expiresat.md)        |           | Date                                                 | <i>(Optional)</i> |
-| [from?](./data-store.message.from.md)                  |           | [Identifier](./data-store.identifier.md)             | <i>(Optional)</i> |
-| [id](./data-store.message.id.md)                       |           | string                                               |                   |
-| [metaData?](./data-store.message.metadata.md)          |           | [MetaData](./data-store.metadata.md)\[\] &#124; null | <i>(Optional)</i> |
-| [presentations](./data-store.message.presentations.md) |           | [Presentation](./data-store.presentation.md)\[\]     |                   |
-| [raw?](./data-store.message.raw.md)                    |           | string                                               | <i>(Optional)</i> |
-| [replyTo?](./data-store.message.replyto.md)            |           | string\[\]                                           | <i>(Optional)</i> |
-| [replyUrl?](./data-store.message.replyurl.md)          |           | string                                               | <i>(Optional)</i> |
-| [saveDate](./data-store.message.savedate.md)           |           | Date                                                 |                   |
-| [threadId?](./data-store.message.threadid.md)          |           | string                                               | <i>(Optional)</i> |
-| [to?](./data-store.message.to.md)                      |           | [Identifier](./data-store.identifier.md)             | <i>(Optional)</i> |
-| [type](./data-store.message.type.md)                   |           | string                                               |                   |
-| [updateDate](./data-store.message.updatedate.md)       |           | Date                                                 |                   |
+| Property                                               | Modifiers | Type                                                 | Description                            |
+| ------------------------------------------------------ | --------- | ---------------------------------------------------- | -------------------------------------- |
+| [createdAt?](./data-store.message.createdat.md)        |           | Date                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [credentials](./data-store.message.credentials.md)     |           | Credential\[\]                                       | <b><i>(BETA)</i></b>                   |
+| [data?](./data-store.message.data.md)                  |           | object &#124; null                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [expiresAt?](./data-store.message.expiresat.md)        |           | Date                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [from?](./data-store.message.from.md)                  |           | [Identifier](./data-store.identifier.md)             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [id](./data-store.message.id.md)                       |           | string                                               | <b><i>(BETA)</i></b>                   |
+| [metaData?](./data-store.message.metadata.md)          |           | [MetaData](./data-store.metadata.md)\[\] &#124; null | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [presentations](./data-store.message.presentations.md) |           | [Presentation](./data-store.presentation.md)\[\]     | <b><i>(BETA)</i></b>                   |
+| [raw?](./data-store.message.raw.md)                    |           | string                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [replyTo?](./data-store.message.replyto.md)            |           | string\[\]                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [replyUrl?](./data-store.message.replyurl.md)          |           | string                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [saveDate](./data-store.message.savedate.md)           |           | Date                                                 | <b><i>(BETA)</i></b>                   |
+| [threadId?](./data-store.message.threadid.md)          |           | string                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [to?](./data-store.message.to.md)                      |           | [Identifier](./data-store.identifier.md)             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type](./data-store.message.type.md)                   |           | string                                               | <b><i>(BETA)</i></b>                   |
+| [updateDate](./data-store.message.updatedate.md)       |           | Date                                                 | <b><i>(BETA)</i></b>                   |
 
 ## Methods
 
-| Method                                                   | Modifiers | Description |
-| -------------------------------------------------------- | --------- | ----------- |
-| [setId()](./data-store.message.setid.md)                 |           |             |
-| [setSaveDate()](./data-store.message.setsavedate.md)     |           |             |
-| [setUpdateDate()](./data-store.message.setupdatedate.md) |           |             |
+| Method                                                   | Modifiers | Description          |
+| -------------------------------------------------------- | --------- | -------------------- |
+| [setId()](./data-store.message.setid.md)                 |           | <b><i>(BETA)</i></b> |
+| [setSaveDate()](./data-store.message.setsavedate.md)     |           | <b><i>(BETA)</i></b> |
+| [setUpdateDate()](./data-store.message.setupdatedate.md) |           | <b><i>(BETA)</i></b> |

@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManager.keyManagerDecryptJWE() method
 
-Decrypts data
+Decrypts data This API may change without a BREAKING CHANGE notice.
 
 <b>Signature:</b>
 

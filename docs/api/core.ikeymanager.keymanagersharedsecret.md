@@ -20,9 +20,9 @@ keyManagerSharedSecret(args: IKeyManagerSharedSecretArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                                                                 | Description |
-| --------- | -------------------------------------------------------------------- | ----------- |
-| args      | [IKeyManagerSharedSecretArgs](./core.ikeymanagersharedsecretargs.md) |             |
+| Parameter | Type                                                                 | Description                                                                                       |
+| --------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| args      | [IKeyManagerSharedSecretArgs](./core.ikeymanagersharedsecretargs.md) | The input to compute the shared secret, including the local key reference and remote key details. |
 
 <b>Returns:</b>
 

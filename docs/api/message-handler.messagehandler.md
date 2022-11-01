@@ -8,7 +8,13 @@ hide_title: true
 
 ## MessageHandler class
 
-Agent plugin that provides [IMessageHandler](./core.imessagehandler.md) methods
+A Veramo agent plugin that implements [IMessageHandler](./core.imessagehandler.md) methods.
+
+This plugin is meant to chain together multiple other [IMessageHandler](./core.imessagehandler.md) implementations.
+
+When handling a message, the message is passed from one handler to the next, and each handler in the chain can decide if it is able to interpret the message.
+
+If the message can be processed by a handler it is returned as an [IMessage](./core.imessage.md). If the message cannot be processed by any of the handlers, an error is thrown.
 
 <b>Signature:</b>
 
@@ -33,6 +39,6 @@ export declare class MessageHandler implements IAgentPlugin
 
 ## Methods
 
-| Method                                                                            | Modifiers | Description                           |
-| --------------------------------------------------------------------------------- | --------- | ------------------------------------- |
-| [handleMessage(args, context)](./message-handler.messagehandler.handlemessage.md) |           | Parses and optionally saves a message |
+| Method                                                                            | Modifiers | Description                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [handleMessage(args, context)](./message-handler.messagehandler.handlemessage.md) |           | Parses a raw message.After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core.idatastore.datastoresavemessage.md) to save it. |

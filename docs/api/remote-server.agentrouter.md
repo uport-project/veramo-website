@@ -8,7 +8,9 @@ hide_title: true
 
 ## AgentRouter variable
 
-Creates a router that exposes [Agent](./core.agent.md) methods
+Creates a router that exposes [Agent](./core.agent.md) methods remotely.
+
+This can be used by [AgentRestClient](./remote-client.agentrestclient.md) to instantiate the methods of this agent on the client.
 
 <b>Signature:</b>
 

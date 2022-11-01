@@ -8,6 +8,8 @@ hide_title: true
 
 ## AliasDiscoveryProvider.discoverDid() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,9 +20,9 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<IDIDManag
 
 | Parameter | Type                                                                                 | Description |
 | --------- | ------------------------------------------------------------------------------------ | ----------- |
-| args      | IDIDDiscoveryDiscoverDidArgs                                                         |             |
+| args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md)      |             |
 | context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDIDManager](./core.ididmanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;IDIDDiscoveryProviderResult&gt;
+Promise&lt;[IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)&gt;

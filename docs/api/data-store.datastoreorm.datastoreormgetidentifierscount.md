@@ -8,18 +8,20 @@ hide_title: true
 
 ## DataStoreORM.dataStoreORMGetIdentifiersCount() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
 <b>Signature:</b>
 
 ```typescript
-dataStoreORMGetIdentifiersCount(args: FindArgs<TIdentifiersColumns>, context: IContext): Promise<number>;
+dataStoreORMGetIdentifiersCount(args: FindArgs<TIdentifiersColumns>, context: AuthorizedDIDContext): Promise<number>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                   | Description |
-| --------- | ------------------------------------------------------------------------------------------------------ | ----------- |
-| args      | [FindArgs](./data-store.findargs.md)&lt;[TIdentifiersColumns](./data-store.tidentifierscolumns.md)&gt; |             |
-| context   | IContext                                                                                               |             |
+| Parameter | Type                                                                                       | Description |
+| --------- | ------------------------------------------------------------------------------------------ | ----------- |
+| args      | [FindArgs](./core.findargs.md)&lt;[TIdentifiersColumns](./core.tidentifierscolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                     |             |
 
 <b>Returns:</b>
 

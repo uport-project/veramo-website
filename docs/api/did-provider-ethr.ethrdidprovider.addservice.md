@@ -11,19 +11,19 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-addService({ identifier, service, options }: {
+addService({ identifier, service, options, }: {
         identifier: IIdentifier;
         service: IService;
-        options?: any;
+        options?: TransactionOptions;
     }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
 
-| Parameter                        | Type                                                                                                          | Description |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, service, options } | { identifier: [IIdentifier](./core.iidentifier.md); service: [IService](./core.iservice.md); options?: any; } |             |
-| context                          | IRequiredContext                                                                                              |             |
+| Parameter                         | Type                                                                                                                         | Description |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| { identifier, service, options, } | { identifier: [IIdentifier](./core.iidentifier.md); service: [IService](./core.iservice.md); options?: TransactionOptions; } |             |
+| context                           | IRequiredContext                                                                                                             |             |
 
 <b>Returns:</b>
 

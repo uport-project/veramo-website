@@ -8,6 +8,10 @@ hide_title: true
 
 ## KeyManagementSystem class
 
+This is an implementation of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) that uses a local [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) to hold private key material.
+
+The key material is used to provide local implementations of various cryptographic algorithms.
+
 <b>Signature:</b>
 
 ```typescript

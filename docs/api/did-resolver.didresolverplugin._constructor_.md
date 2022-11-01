@@ -13,11 +13,15 @@ Constructs a new instance of the `DIDResolverPlugin` class
 <b>Signature:</b>
 
 ```typescript
-constructor(options: Options);
+constructor(options: {
+        resolver?: Resolvable;
+    } | {
+        [didMethod: string]: DIDResolver;
+    });
 ```
 
 ## Parameters
 
-| Parameter | Type    | Description |
-| --------- | ------- | ----------- |
-| options   | Options |             |
+| Parameter | Type                                                                      | Description |
+| --------- | ------------------------------------------------------------------------- | ----------- |
+| options   | { resolver?: Resolvable; } &#124; { \[didMethod: string\]: DIDResolver; } |             |

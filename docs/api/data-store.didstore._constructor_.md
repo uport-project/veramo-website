@@ -13,11 +13,11 @@ Constructs a new instance of the `DIDStore` class
 <b>Signature:</b>
 
 ```typescript
-constructor(dbConnection: Promise<Connection>);
+constructor(dbConnection: OrPromise<DataSource>);
 ```
 
 ## Parameters
 
-| Parameter    | Type                      | Description |
-| ------------ | ------------------------- | ----------- |
-| dbConnection | Promise&lt;Connection&gt; |             |
+| Parameter    | Type                        | Description |
+| ------------ | --------------------------- | ----------- |
+| dbConnection | OrPromise&lt;DataSource&gt; |             |

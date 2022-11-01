@@ -30,23 +30,20 @@ Promise&lt;DIDResolutionResult&gt;
 
 ```typescript
 const doc = await agent.resolveDid({
-  didUrl: 'did:ethr:rinkeby:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
+  didUrl: 'did:ethr:goerli:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
 })
 expect(doc.didDocument).toEqual({
-  '@context': [
-    'https://www.w3.org/ns/did/v1',
-    'https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld',
-  ],
-  id: 'did:ethr:rinkeby:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
+  '@context': ['https://www.w3.org/ns/did/v1', 'https://w3id.org/security/suites/secp256k1recovery-2020/v2'],
+  id: 'did:ethr:goerli:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
   verificationMethod: [
     {
-      id: 'did:ethr:rinkeby:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller',
+      id: 'did:ethr:goerli:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller',
       type: 'EcdsaSecp256k1RecoveryMethod2020',
-      controller: 'did:ethr:rinkeby:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
-      blockchainAccountId: '0xb09B66026bA5909A7CFE99b76875431D2b8D5190@eip155:4',
+      controller: 'did:ethr:goerli:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
+      blockchainAccountId: 'eip155:5:0xb09B66026bA5909A7CFE99b76875431D2b8D5190',
     },
   ],
-  authentication: ['did:ethr:rinkeby:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller'],
-  assertionMethod: ['did:ethr:rinkeby:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller'],
+  authentication: ['did:ethr:goerli:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller'],
+  assertionMethod: ['did:ethr:goerli:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller'],
 })
 ```

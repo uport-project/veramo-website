@@ -26,6 +26,8 @@ export declare class DIDComm implements IAgentPlugin
 
 Be advised that this spec is still not final and that this protocol may need to change.
 
+This API may change without a BREAKING CHANGE notice.
+
 ## Constructors
 
 | Constructor                                                      | Modifiers | Description                                                                                                         |

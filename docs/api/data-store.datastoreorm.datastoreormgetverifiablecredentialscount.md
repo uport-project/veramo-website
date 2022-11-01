@@ -8,18 +8,20 @@ hide_title: true
 
 ## DataStoreORM.dataStoreORMGetVerifiableCredentialsCount() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
 <b>Signature:</b>
 
 ```typescript
-dataStoreORMGetVerifiableCredentialsCount(args: FindArgs<TCredentialColumns>, context: IContext): Promise<number>;
+dataStoreORMGetVerifiableCredentialsCount(args: FindArgs<TCredentialColumns>, context: AuthorizedDIDContext): Promise<number>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md)&lt;[TCredentialColumns](./data-store.tcredentialcolumns.md)&gt; |             |
-| context   | IContext                                                                                             |             |
+| Parameter | Type                                                                                     | Description |
+| --------- | ---------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core.findargs.md)&lt;[TCredentialColumns](./core.tcredentialcolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                   |             |
 
 <b>Returns:</b>
 

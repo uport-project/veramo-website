@@ -8,6 +8,10 @@ hide_title: true
 
 ## DIDDocumentSection type
 
+Refers to a section of a DID document. Either the list of verification methods or services or one of the verification relationships.
+
+See [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)
+
 <b>Signature:</b>
 
 ```typescript

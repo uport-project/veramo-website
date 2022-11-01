@@ -12,6 +12,8 @@ hide_title: true
 
 DID Comm plugin interface for [Agent](./core.agent.md)
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

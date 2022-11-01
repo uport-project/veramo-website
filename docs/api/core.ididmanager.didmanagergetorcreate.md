@@ -18,10 +18,10 @@ didManagerGetOrCreate(args: IDIDManagerGetOrCreateArgs, context: IAgentContext<I
 
 ## Parameters
 
-| Parameter | Type                                                                                 | Description |
-| --------- | ------------------------------------------------------------------------------------ | ----------- |
-| args      | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                   |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter | Type                                                                                 | Description                                                                                                                                                                                                                                              |
+| --------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                   | The alias used for the search and the provider/kms/options used to create the DID when none is found.                                                                                                                                                    |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core.ikeymanager.md) methods. |
 
 <b>Returns:</b>
 

@@ -12,7 +12,7 @@ Provides a [libsodium](https://github.com/jedisct1/libsodium.js) backed [key man
 
 ## Classes
 
-| Class                                                     | Description |
-| --------------------------------------------------------- | ----------- |
-| [KeyManagementSystem](./kms-local.keymanagementsystem.md) |             |
-| [SecretBox](./kms-local.secretbox.md)                     |             |
+| Class                                                     | Description                                                                                                                                                                                                                                                                                                                                                                             |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [KeyManagementSystem](./kms-local.keymanagementsystem.md) | This is an implementation of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) that uses a local [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) to hold private key material.The key material is used to provide local implementations of various cryptographic algorithms.                                                              |
+| [SecretBox](./kms-local.secretbox.md)                     | This is an implementation of [AbstractSecretBox](./key-manager.abstractsecretbox.md) that uses a JavaScript [nacl secretBox](https://nacl.cr.yp.to/secretbox.html) implementation for encryption.See [PrivateKeyStore](./data-store.privatekeystore.md) See [PrivateKeyStoreJson](./data-store-json.privatekeystorejson.md) See [AbstractSecretBox](./key-manager.abstractsecretbox.md) |

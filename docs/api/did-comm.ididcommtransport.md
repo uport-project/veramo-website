@@ -12,6 +12,8 @@ hide_title: true
 
 Common interface for transports that can be used in the [DIDComm](./did-comm.didcomm.md) module.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

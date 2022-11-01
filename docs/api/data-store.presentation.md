@@ -8,6 +8,10 @@ hide_title: true
 
 ## Presentation class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+Represents some common properties of a Verifiable Presentation that are stored in a TypeORM database for querying.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,16 +22,16 @@ export declare class Presentation extends BaseEntity
 
 ## Properties
 
-| Property                                                       | Modifiers | Type                                                       | Description       |
-| -------------------------------------------------------------- | --------- | ---------------------------------------------------------- | ----------------- |
-| [context](./data-store.presentation.context.md)                |           | string\[\]                                                 |                   |
-| [credentials](./data-store.presentation.credentials.md)        |           | Credential\[\]                                             |                   |
-| [expirationDate?](./data-store.presentation.expirationdate.md) |           | Date                                                       | <i>(Optional)</i> |
-| [hash](./data-store.presentation.hash.md)                      |           | string                                                     |                   |
-| [holder](./data-store.presentation.holder.md)                  |           | [Identifier](./data-store.identifier.md)                   |                   |
-| [id?](./data-store.presentation.id.md)                         |           | String                                                     | <i>(Optional)</i> |
-| [issuanceDate](./data-store.presentation.issuancedate.md)      |           | Date                                                       |                   |
-| [messages](./data-store.presentation.messages.md)              |           | [Message](./data-store.message.md)\[\]                     |                   |
-| [raw](./data-store.presentation.raw.md)                        |           | [VerifiablePresentation](./core.verifiablepresentation.md) |                   |
-| [type](./data-store.presentation.type.md)                      |           | string\[\]                                                 |                   |
-| [verifier?](./data-store.presentation.verifier.md)             |           | [Identifier](./data-store.identifier.md)\[\]               | <i>(Optional)</i> |
+| Property                                                       | Modifiers | Type                                                       | Description                            |
+| -------------------------------------------------------------- | --------- | ---------------------------------------------------------- | -------------------------------------- |
+| [context](./data-store.presentation.context.md)                |           | string\[\]                                                 | <b><i>(BETA)</i></b>                   |
+| [credentials](./data-store.presentation.credentials.md)        |           | Credential\[\]                                             | <b><i>(BETA)</i></b>                   |
+| [expirationDate?](./data-store.presentation.expirationdate.md) |           | Date                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [hash](./data-store.presentation.hash.md)                      |           | string                                                     | <b><i>(BETA)</i></b>                   |
+| [holder](./data-store.presentation.holder.md)                  |           | [Identifier](./data-store.identifier.md)                   | <b><i>(BETA)</i></b>                   |
+| [id?](./data-store.presentation.id.md)                         |           | String                                                     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuanceDate](./data-store.presentation.issuancedate.md)      |           | Date                                                       | <b><i>(BETA)</i></b>                   |
+| [messages](./data-store.presentation.messages.md)              |           | [Message](./data-store.message.md)\[\]                     | <b><i>(BETA)</i></b>                   |
+| [raw](./data-store.presentation.raw.md)                        |           | [VerifiablePresentation](./core.verifiablepresentation.md) | <b><i>(BETA)</i></b>                   |
+| [type](./data-store.presentation.type.md)                      |           | string\[\]                                                 | <b><i>(BETA)</i></b>                   |
+| [verifier?](./data-store.presentation.verifier.md)             |           | [Identifier](./data-store.identifier.md)\[\]               | <b><i>(BETA)</i></b> <i>(Optional)</i> |

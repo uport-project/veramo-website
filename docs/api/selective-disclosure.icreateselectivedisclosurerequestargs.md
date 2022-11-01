@@ -22,6 +22,8 @@ export interface ICreateSelectiveDisclosureRequestArgs
 
 See [Selective Disclosure Request](https://github.com/uport-project/specs/blob/develop/messages/sharereq.md) specs
 
+This API may change without a BREAKING CHANGE notice.
+
 ## Properties
 
 | Property                                                                     | Type                                                                                 | Description          |

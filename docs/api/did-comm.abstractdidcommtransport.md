@@ -12,6 +12,8 @@ hide_title: true
 
 Abstract implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md).
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

@@ -18,10 +18,10 @@ didManagerGetOrCreate({ provider, alias, kms, options }: IDIDManagerGetOrCreateA
 
 ## Parameters
 
-| Parameter                         | Type                                                                                 | Description |
-| --------------------------------- | ------------------------------------------------------------------------------------ | ----------- |
-| { provider, alias, kms, options } | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                   |             |
-| context                           | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter                         | Type                                                                                 | Description                                                                                                                                                                                                                                              |
+| --------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| { provider, alias, kms, options } | [IDIDManagerGetOrCreateArgs](./core.ididmanagergetorcreateargs.md)                   |                                                                                                                                                                                                                                                          |
+| context                           | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core.ikeymanager.md) methods. |
 
 <b>Returns:</b>
 

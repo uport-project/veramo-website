@@ -8,6 +8,10 @@ hide_title: true
 
 ## Entities variable
 
+The TypeORM entities used by this package.
+
+This array SHOULD be used when creating a TypeORM connection.
+
 <b>Signature:</b>
 
 ```typescript

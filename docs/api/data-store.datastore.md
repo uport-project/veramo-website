@@ -8,6 +8,14 @@ hide_title: true
 
 ## DataStore class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+This class implements the [IDataStore](./core.idatastore.md) interface using a TypeORM compatible database.
+
+This allows you to store and retrieve Verifiable Credentials, Presentations and Messages by their IDs.
+
+For more complex queries you should use [DataStoreORM](./data-store.datastoreorm.md) which is the default way to query the stored data by some common properties. These two classes MUST also share the same database connection.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,25 +26,25 @@ export declare class DataStore implements IAgentPlugin
 
 ## Constructors
 
-| Constructor                                                            | Modifiers | Description                                                   |
-| ---------------------------------------------------------------------- | --------- | ------------------------------------------------------------- |
-| [(constructor)(dbConnection)](./data-store.datastore._constructor_.md) |           | Constructs a new instance of the <code>DataStore</code> class |
+| Constructor                                                            | Modifiers | Description                                                                        |
+| ---------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------- |
+| [(constructor)(dbConnection)](./data-store.datastore._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>DataStore</code> class |
 
 ## Properties
 
-| Property                                     | Modifiers | Type                               | Description |
-| -------------------------------------------- | --------- | ---------------------------------- | ----------- |
-| [methods](./data-store.datastore.methods.md) |           | [IDataStore](./core.idatastore.md) |             |
-| [schema](./data-store.datastore.schema.md)   |           | any                                |             |
+| Property                                     | Modifiers | Type                               | Description          |
+| -------------------------------------------- | --------- | ---------------------------------- | -------------------- |
+| [methods](./data-store.datastore.methods.md) |           | [IDataStore](./core.idatastore.md) | <b><i>(BETA)</i></b> |
+| [schema](./data-store.datastore.schema.md)   |           | any                                | <b><i>(BETA)</i></b> |
 
 ## Methods
 
-| Method                                                                                                     | Modifiers | Description |
-| ---------------------------------------------------------------------------------------------------------- | --------- | ----------- |
-| [dataStoreDeleteVerifiableCredential(args)](./data-store.datastore.datastoredeleteverifiablecredential.md) |           |             |
-| [dataStoreGetMessage(args)](./data-store.datastore.datastoregetmessage.md)                                 |           |             |
-| [dataStoreGetVerifiableCredential(args)](./data-store.datastore.datastoregetverifiablecredential.md)       |           |             |
-| [dataStoreGetVerifiablePresentation(args)](./data-store.datastore.datastoregetverifiablepresentation.md)   |           |             |
-| [dataStoreSaveMessage(args)](./data-store.datastore.datastoresavemessage.md)                               |           |             |
-| [dataStoreSaveVerifiableCredential(args)](./data-store.datastore.datastoresaveverifiablecredential.md)     |           |             |
-| [dataStoreSaveVerifiablePresentation(args)](./data-store.datastore.datastoresaveverifiablepresentation.md) |           |             |
+| Method                                                                                                     | Modifiers | Description          |
+| ---------------------------------------------------------------------------------------------------------- | --------- | -------------------- |
+| [dataStoreDeleteVerifiableCredential(args)](./data-store.datastore.datastoredeleteverifiablecredential.md) |           | <b><i>(BETA)</i></b> |
+| [dataStoreGetMessage(args)](./data-store.datastore.datastoregetmessage.md)                                 |           | <b><i>(BETA)</i></b> |
+| [dataStoreGetVerifiableCredential(args)](./data-store.datastore.datastoregetverifiablecredential.md)       |           | <b><i>(BETA)</i></b> |
+| [dataStoreGetVerifiablePresentation(args)](./data-store.datastore.datastoregetverifiablepresentation.md)   |           | <b><i>(BETA)</i></b> |
+| [dataStoreSaveMessage(args)](./data-store.datastore.datastoresavemessage.md)                               |           | <b><i>(BETA)</i></b> |
+| [dataStoreSaveVerifiableCredential(args)](./data-store.datastore.datastoresaveverifiablecredential.md)     |           | <b><i>(BETA)</i></b> |
+| [dataStoreSaveVerifiablePresentation(args)](./data-store.datastore.datastoresaveverifiablepresentation.md) |           | <b><i>(BETA)</i></b> |

@@ -8,6 +8,14 @@ hide_title: true
 
 ## DataStoreORM class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+This class implements the [IDataStoreORM](./core.idatastoreorm.md) query interface using a TypeORM compatible database.
+
+This allows you to filter Verifiable Credentials, Presentations and Messages by some common properties that are parsed and stored in database tables.
+
+This class is designed to work with [DataStore](./data-store.datastore.md) which is the default way to populate the database with Credentials, Presentations and Messages in such a way that they can be queried by this class. These two classes MUST also share the same database connection.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,28 +26,28 @@ export declare class DataStoreORM implements IAgentPlugin
 
 ## Constructors
 
-| Constructor                                                               | Modifiers | Description                                                      |
-| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- |
-| [(constructor)(dbConnection)](./data-store.datastoreorm._constructor_.md) |           | Constructs a new instance of the <code>DataStoreORM</code> class |
+| Constructor                                                               | Modifiers | Description                                                                           |
+| ------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------- |
+| [(constructor)(dbConnection)](./data-store.datastoreorm._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>DataStoreORM</code> class |
 
 ## Properties
 
-| Property                                        | Modifiers | Type                                           | Description |
-| ----------------------------------------------- | --------- | ---------------------------------------------- | ----------- |
-| [methods](./data-store.datastoreorm.methods.md) |           | [IDataStoreORM](./data-store.idatastoreorm.md) |             |
-| [schema](./data-store.datastoreorm.schema.md)   |           | any                                            |             |
+| Property                                        | Modifiers | Type                                     | Description          |
+| ----------------------------------------------- | --------- | ---------------------------------------- | -------------------- |
+| [methods](./data-store.datastoreorm.methods.md) |           | [IDataStoreORM](./core.idatastoreorm.md) | <b><i>(BETA)</i></b> |
+| [schema](./data-store.datastoreorm.schema.md)   |           | any                                      | <b><i>(BETA)</i></b> |
 
 ## Methods
 
-| Method                                                                                                                                             | Modifiers | Description |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------- |
-| [dataStoreORMGetIdentifiers(args, context)](./data-store.datastoreorm.datastoreormgetidentifiers.md)                                               |           |             |
-| [dataStoreORMGetIdentifiersCount(args, context)](./data-store.datastoreorm.datastoreormgetidentifierscount.md)                                     |           |             |
-| [dataStoreORMGetMessages(args, context)](./data-store.datastoreorm.datastoreormgetmessages.md)                                                     |           |             |
-| [dataStoreORMGetMessagesCount(args, context)](./data-store.datastoreorm.datastoreormgetmessagescount.md)                                           |           |             |
-| [dataStoreORMGetVerifiableCredentials(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentials.md)                           |           |             |
-| [dataStoreORMGetVerifiableCredentialsByClaims(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentialsbyclaims.md)           |           |             |
-| [dataStoreORMGetVerifiableCredentialsByClaimsCount(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentialsbyclaimscount.md) |           |             |
-| [dataStoreORMGetVerifiableCredentialsCount(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentialscount.md)                 |           |             |
-| [dataStoreORMGetVerifiablePresentations(args, context)](./data-store.datastoreorm.datastoreormgetverifiablepresentations.md)                       |           |             |
-| [dataStoreORMGetVerifiablePresentationsCount(args, context)](./data-store.datastoreorm.datastoreormgetverifiablepresentationscount.md)             |           |             |
+| Method                                                                                                                                             | Modifiers | Description          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------- |
+| [dataStoreORMGetIdentifiers(args, context)](./data-store.datastoreorm.datastoreormgetidentifiers.md)                                               |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetIdentifiersCount(args, context)](./data-store.datastoreorm.datastoreormgetidentifierscount.md)                                     |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetMessages(args, context)](./data-store.datastoreorm.datastoreormgetmessages.md)                                                     |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetMessagesCount(args, context)](./data-store.datastoreorm.datastoreormgetmessagescount.md)                                           |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetVerifiableCredentials(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentials.md)                           |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetVerifiableCredentialsByClaims(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentialsbyclaims.md)           |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetVerifiableCredentialsByClaimsCount(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentialsbyclaimscount.md) |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetVerifiableCredentialsCount(args, context)](./data-store.datastoreorm.datastoreormgetverifiablecredentialscount.md)                 |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetVerifiablePresentations(args, context)](./data-store.datastoreorm.datastoreormgetverifiablepresentations.md)                       |           | <b><i>(BETA)</i></b> |
+| [dataStoreORMGetVerifiablePresentationsCount(args, context)](./data-store.datastoreorm.datastoreormgetverifiablepresentationscount.md)             |           | <b><i>(BETA)</i></b> |

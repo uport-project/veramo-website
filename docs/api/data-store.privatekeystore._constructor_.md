@@ -13,12 +13,12 @@ Constructs a new instance of the `PrivateKeyStore` class
 <b>Signature:</b>
 
 ```typescript
-constructor(dbConnection: Promise<Connection>, secretBox?: AbstractSecretBox | undefined);
+constructor(dbConnection: OrPromise<DataSource>, secretBox?: AbstractSecretBox | undefined);
 ```
 
 ## Parameters
 
-| Parameter    | Type                                                                     | Description |
-| ------------ | ------------------------------------------------------------------------ | ----------- |
-| dbConnection | Promise&lt;Connection&gt;                                                |             |
-| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined |             |
+| Parameter    | Type                                                                     | Description       |
+| ------------ | ------------------------------------------------------------------------ | ----------------- |
+| dbConnection | OrPromise&lt;DataSource&gt;                                              |                   |
+| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | <i>(Optional)</i> |

@@ -8,6 +8,10 @@ hide_title: true
 
 ## AbstractPrivateKeyStore class
 
+This base abstract class should be extended to provide platform specific implementations that are usable by [kms-local](./kms-local.keymanagementsystem.md).
+
+Implementations of this class are used to store mappings between key aliases and key material.
+
 <b>Signature:</b>
 
 ```typescript

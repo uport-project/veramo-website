@@ -8,6 +8,8 @@ hide_title: true
 
 ## AbstractKeyManagementSystem class
 
+This base abstract class should be extended to provide cryptographic functions to other Veramo plugins.
+
 <b>Signature:</b>
 
 ```typescript

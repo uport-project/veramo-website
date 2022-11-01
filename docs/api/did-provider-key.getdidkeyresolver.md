@@ -8,6 +8,8 @@ hide_title: true
 
 ## getDidKeyResolver() function
 
+Provides a mapping to a did:key resolver, usable by .
+
 <b>Signature:</b>
 
 ```typescript

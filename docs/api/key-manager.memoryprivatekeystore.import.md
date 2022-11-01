@@ -16,9 +16,9 @@ import(args: ImportablePrivateKey): Promise<ManagedPrivateKey>;
 
 ## Parameters
 
-| Parameter | Type                 | Description |
-| --------- | -------------------- | ----------- |
-| args      | ImportablePrivateKey |             |
+| Parameter | Type                                                          | Description |
+| --------- | ------------------------------------------------------------- | ----------- |
+| args      | [ImportablePrivateKey](./key-manager.importableprivatekey.md) |             |
 
 <b>Returns:</b>
 

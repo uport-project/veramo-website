@@ -32,3 +32,5 @@ sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IResolv
 Promise&lt;string&gt;
 
 The transport id that was used to send the message. It throws an error in case something went wrong.
+
+This API may change without a BREAKING CHANGE notice.

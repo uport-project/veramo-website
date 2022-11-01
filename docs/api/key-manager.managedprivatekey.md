@@ -8,6 +8,12 @@ hide_title: true
 
 ## ManagedPrivateKey interface
 
+Represents a private key.
+
+The `alias` is used to refer to the key material which is stored as the hex encoding of the raw byte array (`privateKeyHex`).
+
+The `type` refers to the type of key that is represented.
+
 <b>Signature:</b>
 
 ```typescript

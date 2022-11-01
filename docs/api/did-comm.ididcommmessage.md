@@ -12,6 +12,8 @@ hide_title: true
 
 The DIDComm message structure. See https://identity.foundation/didcomm-messaging/spec/\#plaintext-message-structure
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

@@ -8,6 +8,8 @@ hide_title: true
 
 ## UrlMessageHandler class
 
+An implementation of [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) that can extract a message from a URL.
+
 <b>Signature:</b>
 
 ```typescript

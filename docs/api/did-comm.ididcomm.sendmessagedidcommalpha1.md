@@ -12,7 +12,7 @@ hide_title: true
 
 > Warning: This API is now obsolete.
 >
-> Please use instead. This will be removed in Veramo 4.0
+> Please use [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) instead. This will be removed in Veramo 4.0
 >
 > This is used to create a message according to the initial [DIDComm-js](https://github.com/decentralized-identifier/DIDComm-js) implementation.
 
@@ -24,10 +24,10 @@ sendMessageDIDCommAlpha1(args: ISendMessageDIDCommAlpha1Args, context: IAgentCon
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                                      | Description                                                                                  |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| args      | [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md)                                                                                                                                              | Arguments necessary for sending a DIDComm message                                            |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDIDManager](./core.ididmanager.md) &amp; [IKeyManager](./core.ikeymanager.md) &amp; [IResolver](./core.iresolver.md) &amp; [IMessageHandler](./core.imessagehandler.md)&gt; | This reserved param is automatically added and handled by the framework, \*do not override\* |
+| Parameter | Type                                                                                                                                                                                                                      | Description                                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md)                                                                                                                                              | Arguments necessary for sending a DIDComm message                                                                                                 |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDIDManager](./core.ididmanager.md) &amp; [IKeyManager](./core.ikeymanager.md) &amp; [IResolver](./core.iresolver.md) &amp; [IMessageHandler](./core.imessagehandler.md)&gt; | This reserved param is automatically added and handled by the framework, \*do not override\*This API may change without a BREAKING CHANGE notice. |
 
 <b>Returns:</b>
 

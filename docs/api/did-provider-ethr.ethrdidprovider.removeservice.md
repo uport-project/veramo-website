@@ -14,16 +14,16 @@ hide_title: true
 removeService(args: {
         identifier: IIdentifier;
         id: string;
-        options?: any;
+        options?: TransactionOptions;
     }, context: IRequiredContext): Promise<any>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                             | Description |
-| --------- | -------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core.iidentifier.md); id: string; options?: any; } |             |
-| context   | IRequiredContext                                                                 |             |
+| Parameter | Type                                                                                            | Description |
+| --------- | ----------------------------------------------------------------------------------------------- | ----------- |
+| args      | { identifier: [IIdentifier](./core.iidentifier.md); id: string; options?: TransactionOptions; } |             |
+| context   | IRequiredContext                                                                                |             |
 
 <b>Returns:</b>
 

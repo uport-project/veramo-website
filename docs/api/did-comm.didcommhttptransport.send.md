@@ -23,7 +23,7 @@ send(service: any, message: string): Promise<IDIDCommTransportResult>;
 | Parameter | Type   | Description                                                                          |
 | --------- | ------ | ------------------------------------------------------------------------------------ |
 | service   | any    | The DID Document service section that contains a <code>serviceEndpoint</code> entry. |
-| message   | string | The message to be sent.                                                              |
+| message   | string | The message to be sent.This API may change without a BREAKING CHANGE notice.         |
 
 <b>Returns:</b>
 

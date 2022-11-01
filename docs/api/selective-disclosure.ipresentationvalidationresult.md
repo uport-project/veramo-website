@@ -12,6 +12,8 @@ hide_title: true
 
 The result of a selective disclosure response validation.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

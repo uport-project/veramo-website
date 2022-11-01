@@ -8,6 +8,12 @@ hide_title: true
 
 ## AgentRestClient class
 
+This plugin can be used to access the methods of a remote Veramo agent as if they were implemented locally.
+
+The remote agent should be provided by [AgentRouter](./remote-server.agentrouter.md), or a similar implementation of this API.
+
+The schema of the remote agent is usually provided by [ApiSchemaRouter](./remote-server.apischemarouter.md).
+
 <b>Signature:</b>
 
 ```typescript

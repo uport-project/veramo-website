@@ -22,4 +22,4 @@ MessageTypes: {
 
 ## Remarks
 
-See [Selective Disclosure Request](https://github.com/uport-project/specs/blob/develop/messages/sharereq.md)
+See [Selective Disclosure Request](https://github.com/uport-project/specs/blob/develop/messages/sharereq.md) This API may change without a BREAKING CHANGE notice.

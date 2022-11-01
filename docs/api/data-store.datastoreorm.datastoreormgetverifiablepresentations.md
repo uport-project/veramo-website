@@ -8,19 +8,21 @@ hide_title: true
 
 ## DataStoreORM.dataStoreORMGetVerifiablePresentations() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
 <b>Signature:</b>
 
 ```typescript
-dataStoreORMGetVerifiablePresentations(args: FindArgs<TPresentationColumns>, context: IContext): Promise<Array<UniqueVerifiablePresentation>>;
+dataStoreORMGetVerifiablePresentations(args: FindArgs<TPresentationColumns>, context: AuthorizedDIDContext): Promise<Array<UniqueVerifiablePresentation>>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                     | Description |
-| --------- | -------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md)&lt;[TPresentationColumns](./data-store.tpresentationcolumns.md)&gt; |             |
-| context   | IContext                                                                                                 |             |
+| Parameter | Type                                                                                         | Description |
+| --------- | -------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core.findargs.md)&lt;[TPresentationColumns](./core.tpresentationcolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                       |             |
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[UniqueVerifiablePresentation](./data-store.uniqueverifiablepresentation.md)&gt;&gt;
+Promise&lt;Array&lt;[UniqueVerifiablePresentation](./core.uniqueverifiablepresentation.md)&gt;&gt;

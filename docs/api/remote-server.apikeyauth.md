@@ -8,6 +8,8 @@ hide_title: true
 
 ## apiKeyAuth() function
 
+This provides a simple authorization mechanism based on a single pre-shared API key.
+
 <b>Signature:</b>
 
 ```typescript

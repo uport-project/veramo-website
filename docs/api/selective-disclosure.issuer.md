@@ -12,6 +12,8 @@ hide_title: true
 
 Used for requesting Credentials using Selective Disclosure. Represents an accepted issuer of a credential.
 
+This API may change without a BREAKING CHANGE notice.
+
 <b>Signature:</b>
 
 ```typescript

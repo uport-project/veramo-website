@@ -8,19 +8,21 @@ hide_title: true
 
 ## DataStoreORM.dataStoreORMGetVerifiableCredentials() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
 <b>Signature:</b>
 
 ```typescript
-dataStoreORMGetVerifiableCredentials(args: FindArgs<TCredentialColumns>, context: IContext): Promise<Array<UniqueVerifiableCredential>>;
+dataStoreORMGetVerifiableCredentials(args: FindArgs<TCredentialColumns>, context: AuthorizedDIDContext): Promise<Array<UniqueVerifiableCredential>>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./data-store.findargs.md)&lt;[TCredentialColumns](./data-store.tcredentialcolumns.md)&gt; |             |
-| context   | IContext                                                                                             |             |
+| Parameter | Type                                                                                     | Description |
+| --------- | ---------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core.findargs.md)&lt;[TCredentialColumns](./core.tcredentialcolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                   |             |
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;[UniqueVerifiableCredential](./data-store.uniqueverifiablecredential.md)&gt;&gt;
+Promise&lt;Array&lt;[UniqueVerifiableCredential](./core.uniqueverifiablecredential.md)&gt;&gt;
