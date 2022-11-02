@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          token: ${{secrets.GH_TOKEN}}
       - name: 'setup node with cache'
         uses: actions/setup-node@v3
         with:
@@ -26,9 +27,9 @@ jobs:
           yarn prettier --check
       - name: 'setup git coordinates'
         run: |
-          git config --local user.name '[bot] veramo-website'
-          git config --local user.email 'veramo-website@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git config --local user.name ${{ secrets.GH_USER }}
+          git config --local user.email ${{ secrets.GH_EMAIL }}
+          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: 'Commit changes and tag the new version'
         run: |
           git clone https://github.com/uport-project/veramo.git veramo
