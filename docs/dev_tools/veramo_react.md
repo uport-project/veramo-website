@@ -33,7 +33,6 @@ import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { VeramoProvider } from '@veramo-community/veramo-react'
 import { QueryClientProvider, QueryClient } from 'react-query'
-import { PageModuleProvider } from '../context/WidgetProvider'
 import App from '../App'
 
 const queryClient = new QueryClient()
@@ -92,23 +91,23 @@ import {agent} from '../veramo'
 ## `useVeramo hook`
 
 The primary hook that provides the following API to your app. The below syntax uses React Query to fetch the data and
-uses the cache key of `credentials + agentID` to identify the data to your app.
+uses the cache key of `resolutionResult + agentID` to identify the data to your app.
 
 ```tsx
 import { useVeramo } from '@veramo-community/veramo-react'
 import { useQuery } from 'react-query'
 
 export default = () => {
-    const { agent } = useVeramo()
+    const { agent } = useVeramo<IResolver>()
     const { data } = useQuery(
-        ['credentials', { agentId: agent?.context.id }],
-        () => agent?.dataStoreORMGetVerifiableCredentials())
+        ['resolutionResult', { agentId: agent?.context.id }],
+        () => agent?.resolveDid({ didUrl: 'did:web:community.veramo.io' })())
 
     return (
         <div>
             {
-                data.map((credential) => (
-                    <div>{credential.issuer.id}</div>
+                data?.didDocument?.verificationMethod.map((key) => (
+                    <div>{JSON.stringify(key)}</div>
                 )
             }
         <div>
@@ -116,7 +115,7 @@ export default = () => {
 }
 ```
 
-If you are not using React Query you can just call `agent?.dataStoreORMGetVerifiableCredentials()` and manage the data
+If you are not using React Query you can just call `agent?.resolveDid()` and manage the data
 like any async data source.
 
 ## API
@@ -151,7 +150,7 @@ import { useVeramo } from '@veramo-community/veramo-react'
 
 // Inside a function component
 
-const { addAgentConfig } = useVeramo()
+const { addAgent } = useVeramo()
 
 const addLocalAgent = () => {
   addAgent(agent)
