@@ -5,7 +5,7 @@ on:
     types: [deploy_website]
 jobs:
   docs:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
         with:
@@ -33,7 +33,7 @@ jobs:
         run: |
           git clone https://github.com/uport-project/veramo.git veramo
           RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
-          if [ "${GITHUB_REF}" != "main" ]; then
+          if [ "${GITHUB_REF}" != "refs/heads/main" ]; then
             RELEASE_VERSION="${RELEASE_VERSION}-preview-${GITHUB_SHA}"
           fi
           yarn version --no-git-tag-version --new-version "$RELEASE_VERSION"
