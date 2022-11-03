@@ -23,16 +23,11 @@ Right now we just want to create an [identifier](../basics/identifiers.md).
 ## Bootstrap React Native
 
 Use the [Expo CLI](https://docs.expo.dev/workflow/expo-cli/) bootstrap a new typescript project.
-As a prerequisite, please make sure to have `expo-cli` installed globally:
-
-```bash
-npm install -g expo-cli
-```
 
 Then, we initialize a new project like so:
 
 ```bash
-expo init VeramoMobile -t expo-template-blank-typescript
+npx create-expo-app VeramoMobile --template expo-template-blank-typescript
 cd VeramoMobile
 ```
 
@@ -54,7 +49,7 @@ we have to configure these too.
 
 #### `cjs` extension
 
-Please adjust your `metro.config.js` file to look like this:
+Create `metro.config.js` file and make sure it looks like this:
 
 ```js
 // filename: metro.config.js
@@ -72,34 +67,8 @@ exports.resolver = {
 Next, we start setting up the shims that will be required by our libraries.
 
 ```bash
-npm i @sinonjs/text-encoding react-native-get-random-values @ethersproject/shims
-npm i -D rn-nodeify babel-plugin-rewrite-require
-```
-
-Next, edit your `package.json` file and add a `postinstall` script:
-
-```json5
-// filename: package.json
-{
-  //...
-  scripts: {
-    // ...
-    postinstall: 'rn-nodeify --install crypto,stream,process --hack',
-  },
-}
-```
-
-Run a `npm install` to trigger all the required to be installed and adjusted and to generate a `./shim.js` file.
-Open `shim.js` and uncomment the last line that says `require('crypto)`.
-
-```js
-// filename: shim.js
-
-// ...
-
-// If using the crypto shim, uncomment the following line to ensure
-// crypto is loaded first, so it can populate global.crypto
-require('crypto')
+npm i @sinonjs/text-encoding react-native-get-random-values @ethersproject/shims crypto-browserify stream-browserify cross-fetch
+npm i -D babel-plugin-rewrite-require
 ```
 
 Now edit your `babel.config.js` file at your project root and add the `babel-plugin-rewrite-require` to it, like so:
@@ -134,14 +103,7 @@ about [strong random values here](https://docs.ethers.io/v5/cookbook/react-nativ
 /// shims
 import '@sinonjs/text-encoding'
 import 'react-native-get-random-values'
-import './shim.js'
 import '@ethersproject/shims'
-```
-
-Now, install all the pods in your project that came with the new dependencies.
-
-```bash
-npx pod-install
 ```
 
 Prerequisites are ready. We can now go on to create a Veramo agent.
@@ -170,14 +132,14 @@ npm install \
 
 ## Bootstrap Veramo
 
-Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+Create a setup file in `setup.ts` and import the following dependencies:
 
 ```ts
-// filename: src/veramo/setup.ts
+// filename: setup.ts
 
 // imports:
 // Core interfaces
-import { createAgent, IDIDManager, IKeyManager } from '@veramo/core'
+import { createAgent, IDataStore, IDataStoreORM, IDIDManager, IKeyManager, IResolver } from '@veramo/core'
 
 // Core identity manager plugin. This allows you to create and manage DIDs by orchestrating different DID provider packages.
 // This implements `IDIDManager`
@@ -203,7 +165,7 @@ import { DataSource } from 'typeorm'
 Create an Infura project ID and a database encryption key:
 
 ```ts
-// filename: src/veramo/setup.ts
+// filename: setup.ts
 
 // ... imports
 
@@ -228,7 +190,7 @@ npm i expo-sqlite
 Next initialize our sqlite database using TypeORM:
 
 ```ts
-// filename: src/veramo/setup.ts
+// filename: setup.ts
 
 // ... imports & CONSTANTS
 
@@ -241,13 +203,10 @@ let dbConnection = new DataSource({
   migrationsRun: true,
   logging: ['error', 'info', 'warn'],
   entities: Entities,
-})
-
-// optionally, the connection can also be pre-initialized:
-dbConnection = dbConnection.initialize()
+}).initialize()
 ```
 
-Finally, create the agent and add plugins for Key, Identity, and Storage.
+Finally, create the agent and add plugins for Key, Identifiers, Resolution, Credentials and Storage.
 
 ```ts
 // filename: src/veramo/setup.ts
@@ -265,16 +224,15 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDManager({
       store: new DIDStore(dbConnection),
-      defaultProvider: 'did:ethr',
+      defaultProvider: 'did:ethr:goerli',
       providers: {
-        'did:ethr': new EthrDIDProvider({
+        'did:ethr:goerli': new EthrDIDProvider({
           defaultKms: 'local',
-          networks: [
-            {
-              name: 'goerli',
-              rpcUrl: 'https://goerli.infura.io/v3/' + INFURA_PROJECT_ID,
-            },
-          ],
+          network: 'goerli',
+          name: 'goerli',
+          rpcUrl: 'https://goerli.infura.io/v3/' + INFURA_PROJECT_ID,
+          gas: 1000001,
+          ttl: 31104001,
         }),
       },
     }),
@@ -329,7 +287,7 @@ import React, { useEffect, useState } from 'react'
 import { SafeAreaView, ScrollView, View, Text, Button } from 'react-native'
 
 // Import the agent from our earlier setup
-import { agent } from './src/veramo/setup'
+import { agent } from './setup'
 // import some data types:
 import { IIdentifier } from '@veramo/core'
 
@@ -339,10 +297,7 @@ const App = () => {
   // Add the new identifier to state
   const createIdentifier = async () => {
     const _id = await agent.didManagerCreate({
-      provider: 'did:ethr',
-      options: {
-        network: 'goerli',
-      },
+      provider: 'did:ethr:goerli',
     })
     setIdentifiers((s) => s.concat([_id]))
   }
@@ -365,6 +320,7 @@ const App = () => {
       <ScrollView>
         <View style={{ padding: 20 }}>
           <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Identifiers</Text>
+          <Button onPress={() => createIdentifier()} title={'Create Identifier'} />
           <View style={{ marginBottom: 50, marginTop: 20 }}>
             {identifiers && identifiers.length > 0 ? (
               identifiers.map((id: IIdentifier) => (
@@ -376,7 +332,6 @@ const App = () => {
               <Text>No identifiers created yet</Text>
             )}
           </View>
-          <Button onPress={() => createIdentifier()} title={'Create Identifier'} />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -389,9 +344,7 @@ export default App
 Now, we can finally run the app to see some identifiers being created!
 
 ```bash
-npm run android
-# or
-npm run ios
+npm start
 ```
 
 Once loaded hit the **Create identifier** button a few times, and you should see your identifiers being created!

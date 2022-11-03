@@ -27,14 +27,14 @@ The veramo list of "core" packages contains a DID resolver plugin. This plugin i
 drivers. Let's install that plugin as well as a DID resolver for `did:ethr`. And to see how multiple DID methods can be
 supported, let's also add support for resolving `did:web`.
 
-`npm install @veramo/did-resolver ethr-did-resolver web-did-resolver`
+`npm install @veramo/did-resolver ethr-did-resolver web-did-resolver cross-fetch`
 
 ## Setup
 
 Next, let's install these in our Veramo setup. First, we'll add these imports:
 
 ```ts
-// filename: src/veramo/setup.ts
+// filename: setup.ts
 
 // imports:
 // Core interfaces
@@ -53,7 +53,7 @@ import { getResolver as webDidResolver } from 'web-did-resolver'
 Then, let's add this plugin to the list of plugins given to `createAgent`:
 
 ```ts
-// filename: src/veramo/setup.ts
+// filename: setup.ts
 
 // ... imports & CONSTANTS & DB setup
 
@@ -74,8 +74,15 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
 
 ## Usage
 
-Let's add a method that will call the agent to resolve a DID and a hook that will be used to update the UI based on
-state.
+First we need to add a polyfill that enables `fetch()` in our app:
+
+```ts
+// filename: App.tsx
+// shims
+import 'cross-fetch/polyfill'
+```
+
+Let's add a method that will call the agent to resolve a DID.
 
 ```tsx
 // filename: App.tsx
@@ -84,12 +91,13 @@ state.
 import { DIDResolutionResult } from '@veramo/core'
 
 const App = () => {
-  const [resolutionResult, postResolutionResult] = useState<DIDResolutionResult | undefined>()
+  const [resolutionResult, setResolutionResult] = useState<DIDResolutionResult | undefined>()
 
-  // Add the new identifier to state
+  // Resolve a DID
   const resolveDID = async (did: string) => {
     const result = await agent.resolveDid({ didUrl: did })
-    postResolutionResult(result)
+    console.log(JSON.stringify(result, null, 2))
+    setResolutionResult(result)
   }
 
   // ... the rest of the App code
@@ -100,22 +108,20 @@ const App = () => {
       <ScrollView>
         <View style={{ padding: 20 }}>
           <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Identifiers</Text>
+          <Button onPress={() => createIdentifier()} title={'Create Identifier'} />
           <View style={{ marginBottom: 50, marginTop: 20 }}>
             {identifiers && identifiers.length > 0 ? (
               identifiers.map((id: IIdentifier) => (
-                <View key={id.did} onclick={resolveDID(id.did)}>
-                  <Text>{id.did}</Text>
-                </View>
+                <Button onPress={() => resolveDID(id.did)} title={id.did} />
               ))
             ) : (
               <Text>No identifiers created yet</Text>
             )}
           </View>
-          <Button onPress={() => createIdentifier()} title={'Create Identifier'} />
           <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Resolved DID document:</Text>
           <View style={{ marginBottom: 50, marginTop: 20 }}>
             {resolutionResult ? (
-              <Text id="result">{JSON.stringify(resolutionResult.didDocument, null, 2)}</Text>
+              <Text>{JSON.stringify(resolutionResult.didDocument, null, 2)}</Text>
             ) : (
               <Text>tap on a DID to resolve it</Text>
             )}
@@ -126,8 +132,6 @@ const App = () => {
   )
 }
 ```
-
-## Displaying some result
 
 ## Recap
 
