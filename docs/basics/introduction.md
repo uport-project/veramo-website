@@ -7,7 +7,7 @@ sidebar_label: Introduction
 :::info
 
 Veramo is in a public beta. There will be some breaking changes in the coming months, and we endeavor to communicate
-these in advance via our blog. However, we expect the core APIs to remain relatively stable. You can keep up to date
+these in advance via our [blog](https://veramo.io/blog). However, we expect the core APIs to remain relatively stable. You can keep up to date
 here and get involved in our growing community. We are excited to see what you build with Veramo!
 
 :::
