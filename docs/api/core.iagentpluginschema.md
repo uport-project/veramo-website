@@ -18,6 +18,6 @@ export interface IAgentPluginSchema
 
 ## Properties
 
-| Property                                              | Type                            | Description |
-| ----------------------------------------------------- | ------------------------------- | ----------- |
-| [components](./core.iagentpluginschema.components.md) | { schemas: any; methods: any; } |             |
+| Property                                              | Modifiers | Type                            | Description |
+| ----------------------------------------------------- | --------- | ------------------------------- | ----------- |
+| [components](./core.iagentpluginschema.components.md) |           | { schemas: any; methods: any; } |             |

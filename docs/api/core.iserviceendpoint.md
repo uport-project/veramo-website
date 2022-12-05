@@ -13,5 +13,5 @@ Represents a service endpoint URL or a map of URLs
 <b>Signature:</b>
 
 ```typescript
-export declare type IServiceEndpoint = string | Record<string, any>
+export type IServiceEndpoint = string | Record<string, any>
 ```

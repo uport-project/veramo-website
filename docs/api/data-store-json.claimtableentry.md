@@ -22,15 +22,15 @@ export interface ClaimTableEntry
 
 ## Properties
 
-| Property                                                               | Type       | Description                            |
-| ---------------------------------------------------------------------- | ---------- | -------------------------------------- |
-| [context](./data-store-json.claimtableentry.context.md)                | string\[\] | <b><i>(BETA)</i></b>                   |
-| [credentialHash](./data-store-json.claimtableentry.credentialhash.md)  | string     | <b><i>(BETA)</i></b>                   |
-| [credentialType](./data-store-json.claimtableentry.credentialtype.md)  | string\[\] | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./data-store-json.claimtableentry.expirationdate.md) | Date       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash](./data-store-json.claimtableentry.hash.md)                      | string     | <b><i>(BETA)</i></b>                   |
-| [issuanceDate?](./data-store-json.claimtableentry.issuancedate.md)     | Date       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuer](./data-store-json.claimtableentry.issuer.md)                  | string     | <b><i>(BETA)</i></b>                   |
-| [subject?](./data-store-json.claimtableentry.subject.md)               | string     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store-json.claimtableentry.type.md)                      | string     | <b><i>(BETA)</i></b>                   |
-| [value](./data-store-json.claimtableentry.value.md)                    | any        | <b><i>(BETA)</i></b>                   |
+| Property                                                               | Modifiers | Type       | Description                            |
+| ---------------------------------------------------------------------- | --------- | ---------- | -------------------------------------- |
+| [context](./data-store-json.claimtableentry.context.md)                |           | string\[\] | <b><i>(BETA)</i></b>                   |
+| [credentialHash](./data-store-json.claimtableentry.credentialhash.md)  |           | string     | <b><i>(BETA)</i></b>                   |
+| [credentialType](./data-store-json.claimtableentry.credentialtype.md)  |           | string\[\] | <b><i>(BETA)</i></b>                   |
+| [expirationDate?](./data-store-json.claimtableentry.expirationdate.md) |           | Date       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [hash](./data-store-json.claimtableentry.hash.md)                      |           | string     | <b><i>(BETA)</i></b>                   |
+| [issuanceDate?](./data-store-json.claimtableentry.issuancedate.md)     |           | Date       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuer](./data-store-json.claimtableentry.issuer.md)                  |           | string     | <b><i>(BETA)</i></b>                   |
+| [subject?](./data-store-json.claimtableentry.subject.md)               |           | string     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type](./data-store-json.claimtableentry.type.md)                      |           | string     | <b><i>(BETA)</i></b>                   |
+| [value](./data-store-json.claimtableentry.value.md)                    |           | any        | <b><i>(BETA)</i></b>                   |

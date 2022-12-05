@@ -22,9 +22,9 @@ export interface Where<TColumns>
 
 ## Properties
 
-| Property                         | Type                                                                                                                                                                  | Description                            |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| [column](./core.where.column.md) | TColumns                                                                                                                                                              | <b><i>(BETA)</i></b>                   |
-| [not?](./core.where.not.md)      | boolean                                                                                                                                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [op?](./core.where.op.md)        | 'LessThan' &#124; 'LessThanOrEqual' &#124; 'MoreThan' &#124; 'MoreThanOrEqual' &#124; 'Equal' &#124; 'Like' &#124; 'Between' &#124; 'In' &#124; 'Any' &#124; 'IsNull' | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [value?](./core.where.value.md)  | string\[\]                                                                                                                                                            | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                         | Modifiers | Type                                                                                                                                                                  | Description                            |
+| -------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| [column](./core.where.column.md) |           | TColumns                                                                                                                                                              | <b><i>(BETA)</i></b>                   |
+| [not?](./core.where.not.md)      |           | boolean                                                                                                                                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [op?](./core.where.op.md)        |           | 'LessThan' &#124; 'LessThanOrEqual' &#124; 'MoreThan' &#124; 'MoreThanOrEqual' &#124; 'Equal' &#124; 'Like' &#124; 'Between' &#124; 'In' &#124; 'Any' &#124; 'IsNull' | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [value?](./core.where.value.md)  |           | string\[\]                                                                                                                                                            | <b><i>(BETA)</i></b> <i>(Optional)</i> |

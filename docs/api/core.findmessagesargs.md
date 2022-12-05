@@ -17,7 +17,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type FindMessagesArgs = FindArgs<TMessageColumns>
+export type FindMessagesArgs = FindArgs<TMessageColumns>
 ```
 
 <b>References:</b> [FindArgs](./core.findargs.md), [TMessageColumns](./core.tmessagecolumns.md)

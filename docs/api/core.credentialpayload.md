@@ -22,13 +22,13 @@ export interface CredentialPayload
 
 ## Properties
 
-| Property                                                            | Type                                                             | Description                            |
-| ------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------- |
-| ["@context"?](./core.credentialpayload.__context_.md)               | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentialStatus?](./core.credentialpayload.credentialstatus.md)   | [CredentialStatusReference](./core.credentialstatusreference.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentialSubject?](./core.credentialpayload.credentialsubject.md) | [CredentialSubject](./core.credentialsubject.md)                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [expirationDate?](./core.credentialpayload.expirationdate.md)       | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id?](./core.credentialpayload.id.md)                               | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate?](./core.credentialpayload.issuancedate.md)           | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuer](./core.credentialpayload.issuer.md)                        | [IssuerType](./core.issuertype.md)                               | <b><i>(BETA)</i></b>                   |
-| [type?](./core.credentialpayload.type.md)                           | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                            | Modifiers | Type                                                             | Description                            |
+| ------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------------------------- |
+| ["@context"?](./core.credentialpayload.__context_.md)               |           | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [credentialStatus?](./core.credentialpayload.credentialstatus.md)   |           | [CredentialStatusReference](./core.credentialstatusreference.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [credentialSubject?](./core.credentialpayload.credentialsubject.md) |           | [CredentialSubject](./core.credentialsubject.md)                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [expirationDate?](./core.credentialpayload.expirationdate.md)       |           | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [id?](./core.credentialpayload.id.md)                               |           | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuanceDate?](./core.credentialpayload.issuancedate.md)           |           | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuer](./core.credentialpayload.issuer.md)                        |           | [IssuerType](./core.issuertype.md)                               | <b><i>(BETA)</i></b>                   |
+| [type?](./core.credentialpayload.type.md)                           |           | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |

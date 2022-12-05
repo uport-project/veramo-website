@@ -30,7 +30,7 @@ export declare class AgentRestClient implements IAgentPlugin
 
 ## Properties
 
-| Property                                              | Modifiers | Type                                               | Description       |
-| ----------------------------------------------------- | --------- | -------------------------------------------------- | ----------------- |
-| [methods](./remote-client.agentrestclient.methods.md) |           | [IPluginMethodMap](./core.ipluginmethodmap.md)     |                   |
-| [schema?](./remote-client.agentrestclient.schema.md)  |           | [IAgentPluginSchema](./core.iagentpluginschema.md) | <i>(Optional)</i> |
+| Property                                              | Modifiers             | Type                                               | Description       |
+| ----------------------------------------------------- | --------------------- | -------------------------------------------------- | ----------------- |
+| [methods](./remote-client.agentrestclient.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core.ipluginmethodmap.md)     |                   |
+| [schema?](./remote-client.agentrestclient.schema.md)  | <code>readonly</code> | [IAgentPluginSchema](./core.iagentpluginschema.md) | <i>(Optional)</i> |

@@ -22,9 +22,9 @@ export interface FindArgs<TColumns>
 
 ## Properties
 
-| Property                           | Type                                         | Description                                                                                                                            |
-| ---------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| [order?](./core.findargs.order.md) | [Order](./core.order.md)&lt;TColumns&gt;\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> Sorts the results according to the given array of column priorities.                            |
-| [skip?](./core.findargs.skip.md)   | number                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> Ignores the first number of entries in a [IDataStoreORM](./core.idatastoreorm.md) query result. |
-| [take?](./core.findargs.take.md)   | number                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> Returns at most this number of results from a [IDataStoreORM](./core.idatastoreorm.md) query.   |
-| [where?](./core.findargs.where.md) | [Where](./core.where.md)&lt;TColumns&gt;\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> Imposes constraints on the values of the given columns. WHERE clauses are combined using AND.   |
+| Property                           | Modifiers | Type                                         | Description                                                                                                                            |
+| ---------------------------------- | --------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [order?](./core.findargs.order.md) |           | [Order](./core.order.md)&lt;TColumns&gt;\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> Sorts the results according to the given array of column priorities.                            |
+| [skip?](./core.findargs.skip.md)   |           | number                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> Ignores the first number of entries in a [IDataStoreORM](./core.idatastoreorm.md) query result. |
+| [take?](./core.findargs.take.md)   |           | number                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> Returns at most this number of results from a [IDataStoreORM](./core.idatastoreorm.md) query.   |
+| [where?](./core.findargs.where.md) |           | [Where](./core.where.md)&lt;TColumns&gt;\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> Imposes constraints on the values of the given columns. WHERE clauses are combined using AND.   |

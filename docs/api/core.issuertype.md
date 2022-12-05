@@ -21,7 +21,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type IssuerType =
+export type IssuerType =
   | {
       id: string
       [x: string]: any

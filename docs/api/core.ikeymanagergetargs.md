@@ -18,6 +18,6 @@ export interface IKeyManagerGetArgs
 
 ## Properties
 
-| Property                                | Type   | Description |
-| --------------------------------------- | ------ | ----------- |
-| [kid](./core.ikeymanagergetargs.kid.md) | string | Key ID      |
+| Property                                | Modifiers | Type   | Description |
+| --------------------------------------- | --------- | ------ | ----------- |
+| [kid](./core.ikeymanagergetargs.kid.md) |           | string | Key ID      |

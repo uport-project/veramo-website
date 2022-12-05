@@ -22,13 +22,13 @@ export interface PresentationPayload
 
 ## Properties
 
-| Property                                                                    | Type                                                             | Description                            |
-| --------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------- |
-| ["@context"?](./core.presentationpayload.__context_.md)                     | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [expirationDate?](./core.presentationpayload.expirationdate.md)             | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [holder](./core.presentationpayload.holder.md)                              | string                                                           | <b><i>(BETA)</i></b>                   |
-| [id?](./core.presentationpayload.id.md)                                     | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate?](./core.presentationpayload.issuancedate.md)                 | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type?](./core.presentationpayload.type.md)                                 | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [verifiableCredential?](./core.presentationpayload.verifiablecredential.md) | [W3CVerifiableCredential](./core.w3cverifiablecredential.md)\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [verifier?](./core.presentationpayload.verifier.md)                         | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                                    | Modifiers | Type                                                             | Description                            |
+| --------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------------------------- |
+| ["@context"?](./core.presentationpayload.__context_.md)                     |           | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [expirationDate?](./core.presentationpayload.expirationdate.md)             |           | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [holder](./core.presentationpayload.holder.md)                              |           | string                                                           | <b><i>(BETA)</i></b>                   |
+| [id?](./core.presentationpayload.id.md)                                     |           | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuanceDate?](./core.presentationpayload.issuancedate.md)                 |           | [DateType](./core.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type?](./core.presentationpayload.type.md)                                 |           | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [verifiableCredential?](./core.presentationpayload.verifiablecredential.md) |           | [W3CVerifiableCredential](./core.w3cverifiablecredential.md)\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [verifier?](./core.presentationpayload.verifier.md)                         |           | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |

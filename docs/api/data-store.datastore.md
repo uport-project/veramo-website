@@ -32,10 +32,10 @@ export declare class DataStore implements IAgentPlugin
 
 ## Properties
 
-| Property                                     | Modifiers | Type                               | Description          |
-| -------------------------------------------- | --------- | ---------------------------------- | -------------------- |
-| [methods](./data-store.datastore.methods.md) |           | [IDataStore](./core.idatastore.md) | <b><i>(BETA)</i></b> |
-| [schema](./data-store.datastore.schema.md)   |           | any                                | <b><i>(BETA)</i></b> |
+| Property                                     | Modifiers             | Type                               | Description          |
+| -------------------------------------------- | --------------------- | ---------------------------------- | -------------------- |
+| [methods](./data-store.datastore.methods.md) | <code>readonly</code> | [IDataStore](./core.idatastore.md) | <b><i>(BETA)</i></b> |
+| [schema](./data-store.datastore.schema.md)   | <code>readonly</code> | any                                | <b><i>(BETA)</i></b> |
 
 ## Methods
 

@@ -22,7 +22,7 @@ export interface Issuer
 
 ## Properties
 
-| Property                                    | Type   | Description                                                                 |
-| ------------------------------------------- | ------ | --------------------------------------------------------------------------- |
-| [did](./selective-disclosure.issuer.did.md) | string | <b><i>(BETA)</i></b> The DID of the issuer of a requested credential.       |
-| [url](./selective-disclosure.issuer.url.md) | string | <b><i>(BETA)</i></b> A URL where a credential of that type can be obtained. |
+| Property                                    | Modifiers | Type   | Description                                                                 |
+| ------------------------------------------- | --------- | ------ | --------------------------------------------------------------------------- |
+| [did](./selective-disclosure.issuer.did.md) |           | string | <b><i>(BETA)</i></b> The DID of the issuer of a requested credential.       |
+| [url](./selective-disclosure.issuer.url.md) |           | string | <b><i>(BETA)</i></b> A URL where a credential of that type can be obtained. |

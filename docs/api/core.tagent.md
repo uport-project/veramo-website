@@ -13,7 +13,7 @@ Utility type for constructing agent type that has a list of available methods
 <b>Signature:</b>
 
 ```typescript
-export declare type TAgent<T extends IPluginMethodMap> = {
+export type TAgent<T extends IPluginMethodMap> = {
   [P in keyof T]: RemoveContext<T[P]>
 } &
   IAgent

@@ -22,9 +22,9 @@ export interface IDIDCommTransport
 
 ## Properties
 
-| Property                                 | Type   | Description                                                                                                                              |
-| ---------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](./did-comm.ididcommtransport.id.md) | string | <b><i>(BETA)</i></b> Identifier of this transport that can be used in case the message thread supports reusing the transport connection. |
+| Property                                 | Modifiers | Type   | Description                                                                                                                              |
+| ---------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](./did-comm.ididcommtransport.id.md) |           | string | <b><i>(BETA)</i></b> Identifier of this transport that can be used in case the message thread supports reusing the transport connection. |
 
 ## Methods
 

@@ -23,7 +23,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type DIDCommMessagePacking =
+export type DIDCommMessagePacking =
   | 'authcrypt'
   | 'anoncrypt'
   | 'jws'

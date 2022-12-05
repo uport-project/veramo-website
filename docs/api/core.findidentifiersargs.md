@@ -17,7 +17,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type FindIdentifiersArgs = FindArgs<TIdentifiersColumns>
+export type FindIdentifiersArgs = FindArgs<TIdentifiersColumns>
 ```
 
 <b>References:</b> [FindArgs](./core.findargs.md), [TIdentifiersColumns](./core.tidentifierscolumns.md)

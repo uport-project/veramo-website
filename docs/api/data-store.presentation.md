@@ -25,7 +25,7 @@ export declare class Presentation extends BaseEntity
 | Property                                                       | Modifiers | Type                                                       | Description                            |
 | -------------------------------------------------------------- | --------- | ---------------------------------------------------------- | -------------------------------------- |
 | [context](./data-store.presentation.context.md)                |           | string\[\]                                                 | <b><i>(BETA)</i></b>                   |
-| [credentials](./data-store.presentation.credentials.md)        |           | Credential\[\]                                             | <b><i>(BETA)</i></b>                   |
+| [credentials](./data-store.presentation.credentials.md)        |           | [Credential](./data-store.credential_2.md)\[\]             | <b><i>(BETA)</i></b>                   |
 | [expirationDate?](./data-store.presentation.expirationdate.md) |           | Date                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [hash](./data-store.presentation.hash.md)                      |           | string                                                     | <b><i>(BETA)</i></b>                   |
 | [holder](./data-store.presentation.holder.md)                  |           | [Identifier](./data-store.identifier.md)                   | <b><i>(BETA)</i></b>                   |

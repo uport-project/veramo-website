@@ -17,5 +17,5 @@ This API may change without prior notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type DateType = string | Date
+export type DateType = string | Date
 ```

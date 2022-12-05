@@ -19,5 +19,5 @@ The columns that can be queried for an [IIdentifier](./core.iidentifier.md)
 <b>Signature:</b>
 
 ```typescript
-export declare type TIdentifiersColumns = 'did' | 'alias' | 'provider'
+export type TIdentifiersColumns = 'did' | 'alias' | 'provider'
 ```

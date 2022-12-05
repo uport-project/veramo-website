@@ -20,7 +20,7 @@ export interface IKeyManagerDecryptJWEArgs
 
 ## Properties
 
-| Property                                         | Type   | Description                         |
-| ------------------------------------------------ | ------ | ----------------------------------- |
-| [data](./core.ikeymanagerdecryptjweargs.data.md) | string | <b><i>(BETA)</i></b> Encrypted data |
-| [kid](./core.ikeymanagerdecryptjweargs.kid.md)   | string | <b><i>(BETA)</i></b> Key ID         |
+| Property                                         | Modifiers | Type   | Description                         |
+| ------------------------------------------------ | --------- | ------ | ----------------------------------- |
+| [data](./core.ikeymanagerdecryptjweargs.data.md) |           | string | <b><i>(BETA)</i></b> Encrypted data |
+| [kid](./core.ikeymanagerdecryptjweargs.kid.md)   |           | string | <b><i>(BETA)</i></b> Key ID         |

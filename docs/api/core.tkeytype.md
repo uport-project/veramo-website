@@ -13,5 +13,5 @@ Cryptographic key type.
 <b>Signature:</b>
 
 ```typescript
-export declare type TKeyType = 'Ed25519' | 'Secp256k1' | 'Secp256r1' | 'X25519' | 'Bls12381G1' | 'Bls12381G2'
+export type TKeyType = 'Ed25519' | 'Secp256k1' | 'Secp256r1' | 'X25519' | 'Bls12381G1' | 'Bls12381G2'
 ```

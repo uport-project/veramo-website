@@ -18,8 +18,8 @@ export interface IDIDManagerAddServiceArgs
 
 ## Properties
 
-| Property                                                | Type                           | Description                                                      |
-| ------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------- |
-| [did](./core.ididmanageraddserviceargs.did.md)          | string                         | DID                                                              |
-| [options?](./core.ididmanageraddserviceargs.options.md) | object                         | <i>(Optional)</i> Optional. Identifier provider specific options |
-| [service](./core.ididmanageraddserviceargs.service.md)  | [IService](./core.iservice.md) | Service object                                                   |
+| Property                                                | Modifiers | Type                           | Description                                                      |
+| ------------------------------------------------------- | --------- | ------------------------------ | ---------------------------------------------------------------- |
+| [did](./core.ididmanageraddserviceargs.did.md)          |           | string                         | DID                                                              |
+| [options?](./core.ididmanageraddserviceargs.options.md) |           | object                         | <i>(Optional)</i> Optional. Identifier provider specific options |
+| [service](./core.ididmanageraddserviceargs.service.md)  |           | [IService](./core.iservice.md) | Service object                                                   |

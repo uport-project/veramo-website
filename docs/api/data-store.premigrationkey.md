@@ -24,8 +24,8 @@ export declare class PreMigrationKey extends BaseEntity
 
 ## Properties
 
-| Property                                                        | Modifiers | Type    | Description                            |
-| --------------------------------------------------------------- | --------- | ------- | -------------------------------------- |
-| [kid](./data-store.premigrationkey.kid.md)                      |           | string  | <b><i>(BETA)</i></b>                   |
-| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store.premigrationkey.type.md)                    |           | KeyType | <b><i>(BETA)</i></b>                   |
+| Property                                                        | Modifiers | Type                                 | Description                            |
+| --------------------------------------------------------------- | --------- | ------------------------------------ | -------------------------------------- |
+| [kid](./data-store.premigrationkey.kid.md)                      |           | string                               | <b><i>(BETA)</i></b>                   |
+| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type](./data-store.premigrationkey.type.md)                    |           | [KeyType](./data-store.keytype_2.md) | <b><i>(BETA)</i></b>                   |

@@ -23,7 +23,7 @@ createSelectiveDisclosureRequest(args: ICreateSelectiveDisclosureRequestArgs, co
 | Parameter | Type                                                                                                                            | Description                                                                                                                                                    |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | args      | [ICreateSelectiveDisclosureRequestArgs](./selective-disclosure.icreateselectivedisclosurerequestargs.md)                        | The param object with the properties necessary to create the request. See [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDIDManager](./core.ididmanager.md) &amp; [IKeyManager](./core.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called.This API may change without a BREAKING CHANGE notice.                                   |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDIDManager](./core.ididmanager.md) &amp; [IKeyManager](./core.ikeymanager.md)&gt; | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p>                     |
 
 <b>Returns:</b>
 

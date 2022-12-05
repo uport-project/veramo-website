@@ -20,8 +20,8 @@ export interface IKeyManagerEncryptJWEArgs
 
 ## Properties
 
-| Property                                         | Type                                      | Description                                       |
-| ------------------------------------------------ | ----------------------------------------- | ------------------------------------------------- |
-| [data](./core.ikeymanagerencryptjweargs.data.md) | string                                    | <b><i>(BETA)</i></b> Data to encrypt              |
-| [kid](./core.ikeymanagerencryptjweargs.kid.md)   | string                                    | <b><i>(BETA)</i></b> Key ID to use for encryption |
-| [to](./core.ikeymanagerencryptjweargs.to.md)     | Omit&lt;[IKey](./core.ikey.md), 'kms'&gt; | <b><i>(BETA)</i></b> Recipient key object         |
+| Property                                         | Modifiers | Type                                      | Description                                       |
+| ------------------------------------------------ | --------- | ----------------------------------------- | ------------------------------------------------- |
+| [data](./core.ikeymanagerencryptjweargs.data.md) |           | string                                    | <b><i>(BETA)</i></b> Data to encrypt              |
+| [kid](./core.ikeymanagerencryptjweargs.kid.md)   |           | string                                    | <b><i>(BETA)</i></b> Key ID to use for encryption |
+| [to](./core.ikeymanagerencryptjweargs.to.md)     |           | Omit&lt;[IKey](./core.ikey.md), 'kms'&gt; | <b><i>(BETA)</i></b> Recipient key object         |

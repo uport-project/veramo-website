@@ -13,7 +13,7 @@ Represents a signed Verifiable Presentation (includes proof), using a JSON repre
 <b>Signature:</b>
 
 ```typescript
-export declare type VerifiablePresentation = UnsignedPresentation & {
+export type VerifiablePresentation = UnsignedPresentation & {
   proof: ProofType
 }
 ```

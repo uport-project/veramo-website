@@ -12,9 +12,9 @@ Provides a [plugin](./did-resolver.didresolverplugin.md) for the [Agent](./core.
 
 ## Classes
 
-| Class                                                    | Description                                                                                                                                                                                         |
-| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [DIDResolverPlugin](./did-resolver.didresolverplugin.md) | A Veramo Plugin that enables users to resolve DID documents.This plugin is used automatically by plugins that create or verify Verifiable Credentials or Presentations or when working with DIDComm |
+| Class                                                    | Description                                                                                                                                                                                                       |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [DIDResolverPlugin](./did-resolver.didresolverplugin.md) | <p>A Veramo Plugin that enables users to resolve DID documents.</p><p>This plugin is used automatically by plugins that create or verify Verifiable Credentials or Presentations or when working with DIDComm</p> |
 
 ## Functions
 

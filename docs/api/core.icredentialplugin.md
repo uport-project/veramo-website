@@ -13,7 +13,7 @@ The interface definition for a plugin that can generate and verify Verifiable Cr
 <b>Signature:</b>
 
 ```typescript
-export declare type ICredentialPlugin = ICredentialIssuer & ICredentialVerifier
+export type ICredentialPlugin = ICredentialIssuer & ICredentialVerifier
 ```
 
 <b>References:</b> [ICredentialIssuer](./core.icredentialissuer.md), [ICredentialVerifier](./core.icredentialverifier.md)

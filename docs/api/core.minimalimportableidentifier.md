@@ -13,7 +13,7 @@ Represents the minimum amount of information needed to import an [IIdentifier](.
 <b>Signature:</b>
 
 ```typescript
-export declare type MinimalImportableIdentifier = {
+export type MinimalImportableIdentifier = {
   keys: Array<MinimalImportableKey>
   services?: Array<IService>
 } & Omit<IIdentifier, 'keys' | 'services'>

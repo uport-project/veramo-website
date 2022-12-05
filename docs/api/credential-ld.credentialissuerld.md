@@ -26,10 +26,10 @@ export declare class CredentialIssuerLD implements IAgentPlugin
 
 ## Properties
 
-| Property                                                 | Modifiers | Type                                                          | Description |
-| -------------------------------------------------------- | --------- | ------------------------------------------------------------- | ----------- |
-| [methods](./credential-ld.credentialissuerld.methods.md) |           | [ICredentialIssuerLD](./credential-ld.icredentialissuerld.md) |             |
-| [schema](./credential-ld.credentialissuerld.schema.md)   |           | any                                                           |             |
+| Property                                                 | Modifiers             | Type                                                          | Description |
+| -------------------------------------------------------- | --------------------- | ------------------------------------------------------------- | ----------- |
+| [methods](./credential-ld.credentialissuerld.methods.md) | <code>readonly</code> | [ICredentialIssuerLD](./credential-ld.icredentialissuerld.md) |             |
+| [schema](./credential-ld.credentialissuerld.schema.md)   | <code>readonly</code> | any                                                           |             |
 
 ## Methods
 

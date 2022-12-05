@@ -18,9 +18,9 @@ export interface IEventListener
 
 ## Properties
 
-| Property                                           | Type       | Description                                                                     |
-| -------------------------------------------------- | ---------- | ------------------------------------------------------------------------------- |
-| [eventTypes?](./core.ieventlistener.eventtypes.md) | string\[\] | <i>(Optional)</i> Declares the event types that this listener is interested in. |
+| Property                                           | Modifiers             | Type       | Description                                                                     |
+| -------------------------------------------------- | --------------------- | ---------- | ------------------------------------------------------------------------------- |
+| [eventTypes?](./core.ieventlistener.eventtypes.md) | <code>readonly</code> | string\[\] | <i>(Optional)</i> Declares the event types that this listener is interested in. |
 
 ## Methods
 

@@ -18,6 +18,6 @@ export interface IKeyManagerDeleteArgs
 
 ## Properties
 
-| Property                                   | Type   | Description |
-| ------------------------------------------ | ------ | ----------- |
-| [kid](./core.ikeymanagerdeleteargs.kid.md) | string | Key ID      |
+| Property                                   | Modifiers | Type   | Description |
+| ------------------------------------------ | --------- | ------ | ----------- |
+| [kid](./core.ikeymanagerdeleteargs.kid.md) |           | string | Key ID      |

@@ -32,13 +32,13 @@ export declare class MessageHandler implements IAgentPlugin
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                         | Description    |
-| ------------------------------------------------------ | --------- | -------------------------------------------- | -------------- |
-| [methods](./message-handler.messagehandler.methods.md) |           | [IMessageHandler](./core.imessagehandler.md) | Plugin methods |
-| [schema](./message-handler.messagehandler.schema.md)   |           | any                                          |                |
+| Property                                               | Modifiers             | Type                                         | Description    |
+| ------------------------------------------------------ | --------------------- | -------------------------------------------- | -------------- |
+| [methods](./message-handler.messagehandler.methods.md) | <code>readonly</code> | [IMessageHandler](./core.imessagehandler.md) | Plugin methods |
+| [schema](./message-handler.messagehandler.schema.md)   | <code>readonly</code> | any                                          |                |
 
 ## Methods
 
-| Method                                                                            | Modifiers | Description                                                                                                                                                                                    |
-| --------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [handleMessage(args, context)](./message-handler.messagehandler.handlemessage.md) |           | Parses a raw message.After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core.idatastore.datastoresavemessage.md) to save it. |
+| Method                                                                            | Modifiers | Description                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [handleMessage(args, context)](./message-handler.messagehandler.handlemessage.md) |           | <p>Parses a raw message.</p><p>After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core.idatastore.datastoresavemessage.md) to save it.</p> |

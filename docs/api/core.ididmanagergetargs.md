@@ -18,6 +18,6 @@ export interface IDIDManagerGetArgs
 
 ## Properties
 
-| Property                                | Type   | Description |
-| --------------------------------------- | ------ | ----------- |
-| [did](./core.ididmanagergetargs.did.md) | string | DID         |
+| Property                                | Modifiers | Type   | Description |
+| --------------------------------------- | --------- | ------ | ----------- |
+| [did](./core.ididmanagergetargs.did.md) |           | string | DID         |

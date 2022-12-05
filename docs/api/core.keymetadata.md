@@ -22,6 +22,6 @@ export interface KeyMetadata
 
 ## Properties
 
-| Property                                        | Type       | Description       |
-| ----------------------------------------------- | ---------- | ----------------- |
-| [algorithms?](./core.keymetadata.algorithms.md) | string\[\] | <i>(Optional)</i> |
+| Property                                        | Modifiers | Type       | Description       |
+| ----------------------------------------------- | --------- | ---------- | ----------------- |
+| [algorithms?](./core.keymetadata.algorithms.md) |           | string\[\] | <i>(Optional)</i> |

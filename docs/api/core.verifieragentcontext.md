@@ -17,7 +17,7 @@ This interface can be used for static type checks, to make sure your application
 <b>Signature:</b>
 
 ```typescript
-export declare type VerifierAgentContext = IAgentContext<
+export type VerifierAgentContext = IAgentContext<
   IResolver & Pick<IDIDManager, 'didManagerGet' | 'didManagerFind'>
 >
 ```

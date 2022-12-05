@@ -13,7 +13,7 @@ Represents the properties required to import a key.
 <b>Signature:</b>
 
 ```typescript
-export declare type MinimalImportableKey = RequireOnly<IKey, 'privateKeyHex' | 'type' | 'kms'>
+export type MinimalImportableKey = RequireOnly<IKey, 'privateKeyHex' | 'type' | 'kms'>
 ```
 
 <b>References:</b> [RequireOnly](./core.requireonly.md), [IKey](./core.ikey.md)

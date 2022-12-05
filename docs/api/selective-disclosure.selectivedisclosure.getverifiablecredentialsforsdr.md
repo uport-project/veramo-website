@@ -20,10 +20,10 @@ getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, contex
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description                                                                                                                  |
-| --------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) | Contains the Request to be fulfilled and the DID of the subject                                                              |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./core.idatastoreorm.md)&gt;             | \*RESERVED\* This is filled by the framework when the method is called.This API may change without a BREAKING CHANGE notice. |
+| Parameter | Type                                                                                                 | Description                                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) | Contains the Request to be fulfilled and the DID of the subject                                                                            |
+| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./core.idatastoreorm.md)&gt;             | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

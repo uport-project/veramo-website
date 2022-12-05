@@ -20,9 +20,9 @@ isServiceSupported(service: any): boolean;
 
 ## Parameters
 
-| Parameter | Type | Description                                                                           |
-| --------- | ---- | ------------------------------------------------------------------------------------- |
-| service   | any  | The DID Document service sectionThis API may change without a BREAKING CHANGE notice. |
+| Parameter | Type | Description                                                                                         |
+| --------- | ---- | --------------------------------------------------------------------------------------------------- |
+| service   | any  | <p>The DID Document service section</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

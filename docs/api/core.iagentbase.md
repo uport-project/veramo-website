@@ -18,7 +18,7 @@ export interface IAgentBase
 
 ## Properties
 
-| Property                                                  | Type                                                        | Description |
-| --------------------------------------------------------- | ----------------------------------------------------------- | ----------- |
-| [availableMethods](./core.iagentbase.availablemethods.md) | () =&gt; string\[\]                                         |             |
-| [getSchema](./core.iagentbase.getschema.md)               | () =&gt; [IAgentPluginSchema](./core.iagentpluginschema.md) |             |
+| Property                                                  | Modifiers | Type                                                        | Description |
+| --------------------------------------------------------- | --------- | ----------------------------------------------------------- | ----------- |
+| [availableMethods](./core.iagentbase.availablemethods.md) |           | () =&gt; string\[\]                                         |             |
+| [getSchema](./core.iagentbase.getschema.md)               |           | () =&gt; [IAgentPluginSchema](./core.iagentpluginschema.md) |             |

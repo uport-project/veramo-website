@@ -22,8 +22,8 @@ export interface ManagedPrivateKey
 
 ## Properties
 
-| Property                                                          | Type                           | Description |
-| ----------------------------------------------------------------- | ------------------------------ | ----------- |
-| [alias](./key-manager.managedprivatekey.alias.md)                 | string                         |             |
-| [privateKeyHex](./key-manager.managedprivatekey.privatekeyhex.md) | string                         |             |
-| [type](./key-manager.managedprivatekey.type.md)                   | [TKeyType](./core.tkeytype.md) |             |
+| Property                                                          | Modifiers | Type                           | Description |
+| ----------------------------------------------------------------- | --------- | ------------------------------ | ----------- |
+| [alias](./key-manager.managedprivatekey.alias.md)                 |           | string                         |             |
+| [privateKeyHex](./key-manager.managedprivatekey.privatekeyhex.md) |           | string                         |             |
+| [type](./key-manager.managedprivatekey.type.md)                   |           | [TKeyType](./core.tkeytype.md) |             |

@@ -18,7 +18,7 @@ export interface IDIDManagerSetAliasArgs
 
 ## Properties
 
-| Property                                         | Type   | Description                |
-| ------------------------------------------------ | ------ | -------------------------- |
-| [alias](./core.ididmanagersetaliasargs.alias.md) | string | Required. Identifier alias |
-| [did](./core.ididmanagersetaliasargs.did.md)     | string | Required. DID              |
+| Property                                         | Modifiers | Type   | Description                |
+| ------------------------------------------------ | --------- | ------ | -------------------------- |
+| [alias](./core.ididmanagersetaliasargs.alias.md) |           | string | Required. Identifier alias |
+| [did](./core.ididmanagersetaliasargs.did.md)     |           | string | Required. DID              |

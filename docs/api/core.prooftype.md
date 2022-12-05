@@ -22,6 +22,6 @@ export interface ProofType
 
 ## Properties
 
-| Property                          | Type   | Description                            |
-| --------------------------------- | ------ | -------------------------------------- |
-| [type?](./core.prooftype.type.md) | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                          | Modifiers | Type   | Description                            |
+| --------------------------------- | --------- | ------ | -------------------------------------- |
+| [type?](./core.prooftype.type.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |

@@ -20,9 +20,9 @@ export declare function isIterable<T>(obj: any): obj is Iterable<T>
 
 ## Parameters
 
-| Parameter | Type | Description                                                                     |
-| --------- | ---- | ------------------------------------------------------------------------------- |
-| obj       | any  | the variable to be checkedThis API may change without a BREAKING CHANGE notice. |
+| Parameter | Type | Description                                                                                   |
+| --------- | ---- | --------------------------------------------------------------------------------------------- |
+| obj       | any  | <p>the variable to be checked</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

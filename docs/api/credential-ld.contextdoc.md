@@ -17,7 +17,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextDoc = {
+export type ContextDoc = {
   '@context': Record<string, any>
 }
 ```

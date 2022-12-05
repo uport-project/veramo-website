@@ -15,7 +15,7 @@ The payload that is sent to be signed according to EIP712
 <b>Signature:</b>
 
 ```typescript
-export declare type Eip712Payload = {
+export type Eip712Payload = {
   domain: TypedDataDomain
   types: Record<string, TypedDataField[]>
   primaryType: string

@@ -18,6 +18,6 @@ export interface IDataStoreGetVerifiableCredentialArgs
 
 ## Properties
 
-| Property                                                     | Type   | Description                         |
-| ------------------------------------------------------------ | ------ | ----------------------------------- |
-| [hash](./core.idatastoregetverifiablecredentialargs.hash.md) | string | Required. VerifiableCredential hash |
+| Property                                                     | Modifiers | Type   | Description                         |
+| ------------------------------------------------------------ | --------- | ------ | ----------------------------------- |
+| [hash](./core.idatastoregetverifiablecredentialargs.hash.md) |           | string | Required. VerifiableCredential hash |

@@ -20,7 +20,7 @@ export interface IAgentPlugin extends IEventListener
 
 ## Properties
 
-| Property                                   | Type                                               | Description       |
-| ------------------------------------------ | -------------------------------------------------- | ----------------- |
-| [methods?](./core.iagentplugin.methods.md) | [IPluginMethodMap](./core.ipluginmethodmap.md)     | <i>(Optional)</i> |
-| [schema?](./core.iagentplugin.schema.md)   | [IAgentPluginSchema](./core.iagentpluginschema.md) | <i>(Optional)</i> |
+| Property                                   | Modifiers             | Type                                               | Description       |
+| ------------------------------------------ | --------------------- | -------------------------------------------------- | ----------------- |
+| [methods?](./core.iagentplugin.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core.ipluginmethodmap.md)     | <i>(Optional)</i> |
+| [schema?](./core.iagentplugin.schema.md)   | <code>readonly</code> | [IAgentPluginSchema](./core.iagentpluginschema.md) | <i>(Optional)</i> |

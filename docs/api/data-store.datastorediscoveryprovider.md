@@ -26,9 +26,9 @@ export declare class DataStoreDiscoveryProvider implements AbstractDidDiscoveryP
 
 ## Properties
 
-| Property                                                | Modifiers | Type           | Description          |
-| ------------------------------------------------------- | --------- | -------------- | -------------------- |
-| [name](./data-store.datastorediscoveryprovider.name.md) |           | (not declared) | <b><i>(BETA)</i></b> |
+| Property                                                | Modifiers             | Type           | Description          |
+| ------------------------------------------------------- | --------------------- | -------------- | -------------------- |
+| [name](./data-store.datastorediscoveryprovider.name.md) | <code>readonly</code> | (not declared) | <b><i>(BETA)</i></b> |
 
 ## Methods
 

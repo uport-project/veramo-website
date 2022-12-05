@@ -17,7 +17,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type PartialIdentifier = Partial<IIdentifier>
+export type PartialIdentifier = Partial<IIdentifier>
 ```
 
 <b>References:</b> [IIdentifier](./core.iidentifier.md)

@@ -32,10 +32,10 @@ export declare class DataStoreORM implements IAgentPlugin
 
 ## Properties
 
-| Property                                        | Modifiers | Type                                     | Description          |
-| ----------------------------------------------- | --------- | ---------------------------------------- | -------------------- |
-| [methods](./data-store.datastoreorm.methods.md) |           | [IDataStoreORM](./core.idatastoreorm.md) | <b><i>(BETA)</i></b> |
-| [schema](./data-store.datastoreorm.schema.md)   |           | any                                      | <b><i>(BETA)</i></b> |
+| Property                                        | Modifiers             | Type                                     | Description          |
+| ----------------------------------------------- | --------------------- | ---------------------------------------- | -------------------- |
+| [methods](./data-store.datastoreorm.methods.md) | <code>readonly</code> | [IDataStoreORM](./core.idatastoreorm.md) | <b><i>(BETA)</i></b> |
+| [schema](./data-store.datastoreorm.schema.md)   | <code>readonly</code> | any                                      | <b><i>(BETA)</i></b> |
 
 ## Methods
 

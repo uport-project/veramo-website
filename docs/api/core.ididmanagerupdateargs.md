@@ -20,8 +20,8 @@ export interface IDIDManagerUpdateArgs
 
 ## Properties
 
-| Property                                             | Type                       | Description                                                                  |
-| ---------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------- |
-| [did](./core.ididmanagerupdateargs.did.md)           | string                     | <b><i>(BETA)</i></b> Required. DID                                           |
-| [document](./core.ididmanagerupdateargs.document.md) | Partial&lt;DIDDocument&gt; | <b><i>(BETA)</i></b> Required                                                |
-| [options?](./core.ididmanagerupdateargs.options.md)  | { \[x: string\]: any; }    | <b><i>(BETA)</i></b> <i>(Optional)</i> Identifier provider specific options. |
+| Property                                             | Modifiers | Type                       | Description                                                                  |
+| ---------------------------------------------------- | --------- | -------------------------- | ---------------------------------------------------------------------------- |
+| [did](./core.ididmanagerupdateargs.did.md)           |           | string                     | <b><i>(BETA)</i></b> Required. DID                                           |
+| [document](./core.ididmanagerupdateargs.document.md) |           | Partial&lt;DIDDocument&gt; | <b><i>(BETA)</i></b> Required                                                |
+| [options?](./core.ididmanagerupdateargs.options.md)  |           | { \[x: string\]: any; }    | <b><i>(BETA)</i></b> <i>(Optional)</i> Identifier provider specific options. |

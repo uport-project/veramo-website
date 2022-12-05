@@ -18,13 +18,13 @@ export interface UnsignedPresentation
 
 ## Properties
 
-| Property                                                                     | Type                                                             | Description       |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------- |
-| ["@context"](./core.unsignedpresentation.__context_.md)                      | string\[\] &#124; string                                         |                   |
-| [expirationDate?](./core.unsignedpresentation.expirationdate.md)             | string                                                           | <i>(Optional)</i> |
-| [holder](./core.unsignedpresentation.holder.md)                              | string                                                           |                   |
-| [id?](./core.unsignedpresentation.id.md)                                     | string                                                           | <i>(Optional)</i> |
-| [issuanceDate?](./core.unsignedpresentation.issuancedate.md)                 | string                                                           | <i>(Optional)</i> |
-| [type?](./core.unsignedpresentation.type.md)                                 | string\[\] &#124; string                                         | <i>(Optional)</i> |
-| [verifiableCredential?](./core.unsignedpresentation.verifiablecredential.md) | [W3CVerifiableCredential](./core.w3cverifiablecredential.md)\[\] | <i>(Optional)</i> |
-| [verifier?](./core.unsignedpresentation.verifier.md)                         | string\[\]                                                       | <i>(Optional)</i> |
+| Property                                                                     | Modifiers | Type                                                             | Description       |
+| ---------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ----------------- |
+| ["@context"](./core.unsignedpresentation.__context_.md)                      |           | string\[\] &#124; string                                         |                   |
+| [expirationDate?](./core.unsignedpresentation.expirationdate.md)             |           | string                                                           | <i>(Optional)</i> |
+| [holder](./core.unsignedpresentation.holder.md)                              |           | string                                                           |                   |
+| [id?](./core.unsignedpresentation.id.md)                                     |           | string                                                           | <i>(Optional)</i> |
+| [issuanceDate?](./core.unsignedpresentation.issuancedate.md)                 |           | string                                                           | <i>(Optional)</i> |
+| [type?](./core.unsignedpresentation.type.md)                                 |           | string\[\] &#124; string                                         | <i>(Optional)</i> |
+| [verifiableCredential?](./core.unsignedpresentation.verifiablecredential.md) |           | [W3CVerifiableCredential](./core.w3cverifiablecredential.md)\[\] | <i>(Optional)</i> |
+| [verifier?](./core.unsignedpresentation.verifier.md)                         |           | string\[\]                                                       | <i>(Optional)</i> |

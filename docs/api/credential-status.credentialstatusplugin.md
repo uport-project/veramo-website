@@ -34,6 +34,6 @@ export declare class CredentialStatusPlugin implements IAgentPlugin
 
 ## Properties
 
-| Property                                                         | Modifiers | Type                                                             | Description          |
-| ---------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------- |
-| [methods](./credential-status.credentialstatusplugin.methods.md) |           | [ICredentialStatusVerifier](./core.icredentialstatusverifier.md) | <b><i>(BETA)</i></b> |
+| Property                                                         | Modifiers             | Type                                                             | Description          |
+| ---------------------------------------------------------------- | --------------------- | ---------------------------------------------------------------- | -------------------- |
+| [methods](./credential-status.credentialstatusplugin.methods.md) | <code>readonly</code> | [ICredentialStatusVerifier](./core.icredentialstatusverifier.md) | <b><i>(BETA)</i></b> |

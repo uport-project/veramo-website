@@ -18,6 +18,6 @@ export interface IDataStoreDeleteVerifiableCredentialArgs
 
 ## Properties
 
-| Property                                                        | Type   | Description                         |
-| --------------------------------------------------------------- | ------ | ----------------------------------- |
-| [hash](./core.idatastoredeleteverifiablecredentialargs.hash.md) | string | Required. VerifiableCredential hash |
+| Property                                                        | Modifiers | Type   | Description                         |
+| --------------------------------------------------------------- | --------- | ------ | ----------------------------------- |
+| [hash](./core.idatastoredeleteverifiablecredentialargs.hash.md) |           | string | Required. VerifiableCredential hash |

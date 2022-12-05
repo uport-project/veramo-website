@@ -20,9 +20,9 @@ export declare function asArray<T>(arg?: T | T[] | null): T[]
 
 ## Parameters
 
-| Parameter | Type                       | Description                                                                                                           |
-| --------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| arg       | T &#124; T\[\] &#124; null | <i>(Optional)</i> a variable that needs to be converted to arrayThis API may change without a BREAKING CHANGE notice. |
+| Parameter | Type                       | Description                                                                                                                         |
+| --------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| arg       | T &#124; T\[\] &#124; null | <p><i>(Optional)</i> a variable that needs to be converted to array</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

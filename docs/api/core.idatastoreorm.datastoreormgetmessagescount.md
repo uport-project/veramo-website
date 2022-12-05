@@ -20,10 +20,10 @@ dataStoreORMGetMessagesCount(args: FindMessagesArgs, context: AuthorizedDIDConte
 
 ## Parameters
 
-| Parameter | Type                                                   | Description                                                                                                                                                                                                                            |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [FindMessagesArgs](./core.findmessagesargs.md)         | The filter to apply when querying.                                                                                                                                                                                                     |
-| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md) | Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.This API may change without a BREAKING CHANGE notice. |
+| Parameter | Type                                                   | Description                                                                                                                                                                                                                                          |
+| --------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | [FindMessagesArgs](./core.findmessagesargs.md)         | The filter to apply when querying.                                                                                                                                                                                                                   |
+| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md) | <p>Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

@@ -17,7 +17,7 @@ Implementations MUST populate the `revoked` boolean property, but they can retur
 <b>Signature:</b>
 
 ```typescript
-export declare type CredentialStatus = {
+export type CredentialStatus = {
   revoked: boolean
   [x: string]: any
 }

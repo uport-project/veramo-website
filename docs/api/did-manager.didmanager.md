@@ -26,10 +26,10 @@ export declare class DIDManager implements IAgentPlugin
 
 ## Properties
 
-| Property                                       | Modifiers | Type                                 | Description    |
-| ---------------------------------------------- | --------- | ------------------------------------ | -------------- |
-| [methods](./did-manager.didmanager.methods.md) |           | [IDIDManager](./core.ididmanager.md) | Plugin methods |
-| [schema](./did-manager.didmanager.schema.md)   |           | any                                  |                |
+| Property                                       | Modifiers             | Type                                 | Description    |
+| ---------------------------------------------- | --------------------- | ------------------------------------ | -------------- |
+| [methods](./did-manager.didmanager.methods.md) | <code>readonly</code> | [IDIDManager](./core.ididmanager.md) | Plugin methods |
+| [schema](./did-manager.didmanager.schema.md)   | <code>readonly</code> | any                                  |                |
 
 ## Methods
 

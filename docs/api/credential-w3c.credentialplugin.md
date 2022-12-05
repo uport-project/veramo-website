@@ -26,10 +26,10 @@ export declare class CredentialPlugin implements IAgentPlugin
 
 ## Properties
 
-| Property                                                | Modifiers | Type                                             | Description |
-| ------------------------------------------------------- | --------- | ------------------------------------------------ | ----------- |
-| [methods](./credential-w3c.credentialplugin.methods.md) |           | [ICredentialPlugin](./core.icredentialplugin.md) |             |
-| [schema](./credential-w3c.credentialplugin.schema.md)   |           | { components: { schemas: any; methods: any; }; } |             |
+| Property                                                | Modifiers             | Type                                             | Description |
+| ------------------------------------------------------- | --------------------- | ------------------------------------------------ | ----------- |
+| [methods](./credential-w3c.credentialplugin.methods.md) | <code>readonly</code> | [ICredentialPlugin](./core.icredentialplugin.md) |             |
+| [schema](./credential-w3c.credentialplugin.schema.md)   | <code>readonly</code> | { components: { schemas: any; methods: any; }; } |             |
 
 ## Methods
 

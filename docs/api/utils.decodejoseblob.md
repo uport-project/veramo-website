@@ -20,9 +20,9 @@ export declare function decodeJoseBlob(blob: string): any
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                               |
-| --------- | ------ | --------------------------------------------------------------------------------------------------------- |
-| blob      | string | The base64url encoded stringified JSON to be decodedThis API may change without a BREAKING CHANGE notice. |
+| Parameter | Type   | Description                                                                                                             |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------- |
+| blob      | string | <p>The base64url encoded stringified JSON to be decoded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

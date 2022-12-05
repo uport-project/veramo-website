@@ -18,7 +18,7 @@ export interface IKeyManagerSignJWTArgs
 
 ## Properties
 
-| Property                                      | Type                     | Description  |
-| --------------------------------------------- | ------------------------ | ------------ |
-| [data](./core.ikeymanagersignjwtargs.data.md) | string &#124; Uint8Array | Data to sign |
-| [kid](./core.ikeymanagersignjwtargs.kid.md)   | string                   | Key ID       |
+| Property                                      | Modifiers | Type                     | Description  |
+| --------------------------------------------- | --------- | ------------------------ | ------------ |
+| [data](./core.ikeymanagersignjwtargs.data.md) |           | string &#124; Uint8Array | Data to sign |
+| [kid](./core.ikeymanagersignjwtargs.kid.md)   |           | string                   | Key ID       |

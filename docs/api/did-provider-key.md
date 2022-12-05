@@ -12,9 +12,9 @@ Provides `did:key` [identifier provider](./did-provider-key.keydidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                                                                                                  |
-| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [KeyDIDProvider](./did-provider-key.keydidprovider.md) | <b><i>(BETA)</i></b> [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:key</code> identifiersThis API may change without a BREAKING CHANGE notice. |
+| Class                                                  | Description                                                                                                                                                                                |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [KeyDIDProvider](./did-provider-key.keydidprovider.md) | <p><b><i>(BETA)</i></b> [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:key</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 ## Functions
 

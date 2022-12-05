@@ -17,7 +17,7 @@ See [IDataStoreORM.dataStoreORMGetMessagesCount()](./core.idatastoreorm.datastor
 <b>Signature:</b>
 
 ```typescript
-export declare type TMessageColumns =
+export type TMessageColumns =
   | 'from'
   | 'to'
   | 'id'

@@ -17,7 +17,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type IUnpackDIDCommMessageArgs = IPackedDIDCommMessage
+export type IUnpackDIDCommMessageArgs = IPackedDIDCommMessage
 ```
 
 <b>References:</b> [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)

@@ -15,5 +15,5 @@ Return type of [getDIDComponentById](./core.iresolver.getdidcomponentbyid.md) re
 <b>Signature:</b>
 
 ```typescript
-export declare type DIDDocComponent = VerificationMethod | ServiceEndpoint
+export type DIDDocComponent = VerificationMethod | ServiceEndpoint
 ```

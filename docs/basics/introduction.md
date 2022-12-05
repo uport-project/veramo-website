@@ -59,12 +59,9 @@ compatibility across many projects and initiatives in the space.
 Using Veramo, you can design your agent how you want it by using the [core plugins](../veramo_agent/plugins.md). We have
 plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentication, and many more.
 
-
 ### Join the community
 
-* Join the [Discord](http://discord.gg/sYBUXpACh4) to discuss Veramo and SSI.
-* Follow us on [Twitter](https://twitter.com/veramolabs) for updates.
-* Read the [blog](https://medium.com/veramo) for news, announcements, and tutorials.
-* Watch the [Youtube channel](https://www.youtube.com/@veramolabs) for videos and presentations.
-
-
+- Join the [Discord](http://discord.gg/sYBUXpACh4) to discuss Veramo and SSI.
+- Follow us on [Twitter](https://twitter.com/veramolabs) for updates.
+- Read the [blog](https://medium.com/veramo) for news, announcements, and tutorials.
+- Watch the [Youtube channel](https://www.youtube.com/@veramolabs) for videos and presentations.

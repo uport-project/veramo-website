@@ -19,7 +19,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type IRequiredContext = IAgentContext<
+export type IRequiredContext = IAgentContext<
   IResolver & Pick<IDIDManager, 'didManagerGet'> & Pick<IKeyManager, 'keyManagerGet' | 'keyManagerSign'>
 >
 ```

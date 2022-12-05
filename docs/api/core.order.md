@@ -22,7 +22,7 @@ export interface Order<TColumns>
 
 ## Properties
 
-| Property                               | Type                | Description          |
-| -------------------------------------- | ------------------- | -------------------- |
-| [column](./core.order.column.md)       | TColumns            | <b><i>(BETA)</i></b> |
-| [direction](./core.order.direction.md) | 'ASC' &#124; 'DESC' | <b><i>(BETA)</i></b> |
+| Property                               | Modifiers | Type                | Description          |
+| -------------------------------------- | --------- | ------------------- | -------------------- |
+| [column](./core.order.column.md)       |           | TColumns            | <b><i>(BETA)</i></b> |
+| [direction](./core.order.direction.md) |           | 'ASC' &#124; 'DESC' | <b><i>(BETA)</i></b> |

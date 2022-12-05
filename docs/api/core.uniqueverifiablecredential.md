@@ -24,7 +24,7 @@ export interface UniqueVerifiableCredential
 
 ## Properties
 
-| Property                                                                          | Type                                                   | Description          |
-| --------------------------------------------------------------------------------- | ------------------------------------------------------ | -------------------- |
-| [hash](./core.uniqueverifiablecredential.hash.md)                                 | string                                                 | <b><i>(BETA)</i></b> |
-| [verifiableCredential](./core.uniqueverifiablecredential.verifiablecredential.md) | [VerifiableCredential](./core.verifiablecredential.md) | <b><i>(BETA)</i></b> |
+| Property                                                                          | Modifiers | Type                                                   | Description          |
+| --------------------------------------------------------------------------------- | --------- | ------------------------------------------------------ | -------------------- |
+| [hash](./core.uniqueverifiablecredential.hash.md)                                 |           | string                                                 | <b><i>(BETA)</i></b> |
+| [verifiableCredential](./core.uniqueverifiablecredential.verifiablecredential.md) |           | [VerifiableCredential](./core.verifiablecredential.md) | <b><i>(BETA)</i></b> |

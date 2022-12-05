@@ -30,11 +30,11 @@ export declare class DIDDiscovery implements IAgentPlugin
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                                                                         | Description          |
-| ------------------------------------------------------ | --------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| [methods](./did-discovery.diddiscovery.methods.md)     |           | [IDIDDiscovery](./did-discovery.ididdiscovery.md)                                            | <b><i>(BETA)</i></b> |
-| [providers](./did-discovery.diddiscovery.providers.md) |           | Array&lt;[AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)&gt; | <b><i>(BETA)</i></b> |
-| [schema](./did-discovery.diddiscovery.schema.md)       |           | any                                                                                          | <b><i>(BETA)</i></b> |
+| Property                                               | Modifiers             | Type                                                                                         | Description          |
+| ------------------------------------------------------ | --------------------- | -------------------------------------------------------------------------------------------- | -------------------- |
+| [methods](./did-discovery.diddiscovery.methods.md)     | <code>readonly</code> | [IDIDDiscovery](./did-discovery.ididdiscovery.md)                                            | <b><i>(BETA)</i></b> |
+| [providers](./did-discovery.diddiscovery.providers.md) | <code>readonly</code> | Array&lt;[AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)&gt; | <b><i>(BETA)</i></b> |
+| [schema](./did-discovery.diddiscovery.schema.md)       | <code>readonly</code> | any                                                                                          | <b><i>(BETA)</i></b> |
 
 ## Methods
 

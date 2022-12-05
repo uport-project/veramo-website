@@ -22,7 +22,7 @@ export interface IDIDDiscoveryProviderResult
 
 ## Properties
 
-| Property                                                            | Type                                                          | Description                                    |
-| ------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------- |
-| [matches](./did-discovery.ididdiscoveryproviderresult.matches.md)   | [IDIDDiscoverMatch](./did-discovery.ididdiscovermatch.md)\[\] | <b><i>(BETA)</i></b> List of discovery matches |
-| [provider](./did-discovery.ididdiscoveryproviderresult.provider.md) | string                                                        | <b><i>(BETA)</i></b> Provider name             |
+| Property                                                            | Modifiers | Type                                                          | Description                                    |
+| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------- | ---------------------------------------------- |
+| [matches](./did-discovery.ididdiscoveryproviderresult.matches.md)   |           | [IDIDDiscoverMatch](./did-discovery.ididdiscovermatch.md)\[\] | <b><i>(BETA)</i></b> List of discovery matches |
+| [provider](./did-discovery.ididdiscoveryproviderresult.provider.md) |           | string                                                        | <b><i>(BETA)</i></b> Provider name             |

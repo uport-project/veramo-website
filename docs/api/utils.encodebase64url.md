@@ -20,9 +20,9 @@ export declare function encodeBase64url(s: string): string
 
 ## Parameters
 
-| Parameter | Type   | Description                                                              |
-| --------- | ------ | ------------------------------------------------------------------------ |
-| s         | string | the original stringThis API may change without a BREAKING CHANGE notice. |
+| Parameter | Type   | Description                                                                            |
+| --------- | ------ | -------------------------------------------------------------------------------------- |
+| s         | string | <p>the original string</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

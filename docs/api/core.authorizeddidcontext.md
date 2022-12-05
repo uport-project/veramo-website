@@ -22,10 +22,10 @@ This API may change without a BREAKING CHANGE notice.
 export interface AuthorizedDIDContext extends IAgentContext<{}>
 ```
 
-<b>Extends:</b> [IAgentContext](./core.iagentcontext.md)
+<b>Extends:</b> [IAgentContext](./core.iagentcontext.md)&lt;{}&gt;
 
 ## Properties
 
-| Property                                                       | Type   | Description                            |
-| -------------------------------------------------------------- | ------ | -------------------------------------- |
-| [authorizedDID?](./core.authorizeddidcontext.authorizeddid.md) | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                       | Modifiers | Type   | Description                            |
+| -------------------------------------------------------------- | --------- | ------ | -------------------------------------- |
+| [authorizedDID?](./core.authorizeddidcontext.authorizeddid.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |

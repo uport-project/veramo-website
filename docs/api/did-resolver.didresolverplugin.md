@@ -28,10 +28,10 @@ export declare class DIDResolverPlugin implements IAgentPlugin
 
 ## Properties
 
-| Property                                               | Modifiers | Type                             | Description |
-| ------------------------------------------------------ | --------- | -------------------------------- | ----------- |
-| [methods](./did-resolver.didresolverplugin.methods.md) |           | [IResolver](./core.iresolver.md) |             |
-| [schema](./did-resolver.didresolverplugin.schema.md)   |           | any                              |             |
+| Property                                               | Modifiers             | Type                             | Description |
+| ------------------------------------------------------ | --------------------- | -------------------------------- | ----------- |
+| [methods](./did-resolver.didresolverplugin.methods.md) | <code>readonly</code> | [IResolver](./core.iresolver.md) |             |
+| [schema](./did-resolver.didresolverplugin.schema.md)   | <code>readonly</code> | any                              |             |
 
 ## Methods
 

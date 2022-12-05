@@ -20,9 +20,9 @@ export declare function encodeJoseBlob(payload: {}): string
 
 ## Parameters
 
-| Parameter | Type | Description                                                                   |
-| --------- | ---- | ----------------------------------------------------------------------------- |
-| payload   | {}   | the object to be encodedThis API may change without a BREAKING CHANGE notice. |
+| Parameter | Type | Description                                                                                 |
+| --------- | ---- | ------------------------------------------------------------------------------------------- |
+| payload   | {}   | <p>the object to be encoded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

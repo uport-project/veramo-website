@@ -24,9 +24,9 @@ export declare class AliasDiscoveryProvider implements AbstractDidDiscoveryProvi
 
 ## Properties
 
-| Property                                             | Modifiers | Type           | Description          |
-| ---------------------------------------------------- | --------- | -------------- | -------------------- |
-| [name](./did-manager.aliasdiscoveryprovider.name.md) |           | (not declared) | <b><i>(BETA)</i></b> |
+| Property                                             | Modifiers             | Type           | Description          |
+| ---------------------------------------------------- | --------------------- | -------------- | -------------------- |
+| [name](./did-manager.aliasdiscoveryprovider.name.md) | <code>readonly</code> | (not declared) | <b><i>(BETA)</i></b> |
 
 ## Methods
 

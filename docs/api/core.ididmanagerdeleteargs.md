@@ -18,6 +18,6 @@ export interface IDIDManagerDeleteArgs
 
 ## Properties
 
-| Property                                   | Type   | Description |
-| ------------------------------------------ | ------ | ----------- |
-| [did](./core.ididmanagerdeleteargs.did.md) | string | DID         |
+| Property                                   | Modifiers | Type   | Description |
+| ------------------------------------------ | --------- | ------ | ----------- |
+| [did](./core.ididmanagerdeleteargs.did.md) |           | string | DID         |

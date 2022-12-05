@@ -18,8 +18,8 @@ export interface IDIDManagerRemoveServiceArgs
 
 ## Properties
 
-| Property                                                   | Type   | Description                                                      |
-| ---------------------------------------------------------- | ------ | ---------------------------------------------------------------- |
-| [did](./core.ididmanagerremoveserviceargs.did.md)          | string | DID                                                              |
-| [id](./core.ididmanagerremoveserviceargs.id.md)            | string | Service ID                                                       |
-| [options?](./core.ididmanagerremoveserviceargs.options.md) | object | <i>(Optional)</i> Optional. Identifier provider specific options |
+| Property                                                   | Modifiers | Type   | Description                                                      |
+| ---------------------------------------------------------- | --------- | ------ | ---------------------------------------------------------------- |
+| [did](./core.ididmanagerremoveserviceargs.did.md)          |           | string | DID                                                              |
+| [id](./core.ididmanagerremoveserviceargs.id.md)            |           | string | Service ID                                                       |
+| [options?](./core.ididmanagerremoveserviceargs.options.md) |           | object | <i>(Optional)</i> Optional. Identifier provider specific options |

@@ -15,7 +15,7 @@ The `alias` of the resulting [ManagedPrivateKey](./key-manager.managedprivatekey
 <b>Signature:</b>
 
 ```typescript
-export declare type ImportablePrivateKey = RequireOnly<ManagedPrivateKey, 'privateKeyHex' | 'type'>
+export type ImportablePrivateKey = RequireOnly<ManagedPrivateKey, 'privateKeyHex' | 'type'>
 ```
 
 <b>References:</b> [RequireOnly](./core.requireonly.md), [ManagedPrivateKey](./key-manager.managedprivatekey.md)

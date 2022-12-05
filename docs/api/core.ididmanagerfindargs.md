@@ -18,7 +18,7 @@ export interface IDIDManagerFindArgs
 
 ## Properties
 
-| Property                                            | Type   | Description                          |
-| --------------------------------------------------- | ------ | ------------------------------------ |
-| [alias?](./core.ididmanagerfindargs.alias.md)       | string | <i>(Optional)</i> Optional. Alias    |
-| [provider?](./core.ididmanagerfindargs.provider.md) | string | <i>(Optional)</i> Optional. Provider |
+| Property                                            | Modifiers | Type   | Description                          |
+| --------------------------------------------------- | --------- | ------ | ------------------------------------ |
+| [alias?](./core.ididmanagerfindargs.alias.md)       |           | string | <i>(Optional)</i> Optional. Alias    |
+| [provider?](./core.ididmanagerfindargs.provider.md) |           | string | <i>(Optional)</i> Optional. Provider |

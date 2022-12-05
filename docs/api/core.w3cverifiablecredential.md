@@ -17,7 +17,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type W3CVerifiableCredential = VerifiableCredential | CompactJWT
+export type W3CVerifiableCredential = VerifiableCredential | CompactJWT
 ```
 
 <b>References:</b> [VerifiableCredential](./core.verifiablecredential.md), [CompactJWT](./core.compactjwt.md)

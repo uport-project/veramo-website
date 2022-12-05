@@ -16,10 +16,10 @@ export interface ApiSchemaRouterOptions
 
 ## Properties
 
-| Property                                                                    | Type                | Description                                      |
-| --------------------------------------------------------------------------- | ------------------- | ------------------------------------------------ |
-| [apiName?](./remote-server.apischemarouteroptions.apiname.md)               | string              | <i>(Optional)</i> Name used in OpenAPI schema    |
-| [apiVersion?](./remote-server.apischemarouteroptions.apiversion.md)         | string              | <i>(Optional)</i> Version used in OpenAPI schema |
-| [basePath](./remote-server.apischemarouteroptions.basepath.md)              | string              | Base path                                        |
-| [exposedMethods?](./remote-server.apischemarouteroptions.exposedmethods.md) | Array&lt;string&gt; | <i>(Optional)</i> List of exposed methods        |
-| [securityScheme?](./remote-server.apischemarouteroptions.securityscheme.md) | string              | <i>(Optional)</i> Security scheme                |
+| Property                                                                    | Modifiers | Type                | Description                                      |
+| --------------------------------------------------------------------------- | --------- | ------------------- | ------------------------------------------------ |
+| [apiName?](./remote-server.apischemarouteroptions.apiname.md)               |           | string              | <i>(Optional)</i> Name used in OpenAPI schema    |
+| [apiVersion?](./remote-server.apischemarouteroptions.apiversion.md)         |           | string              | <i>(Optional)</i> Version used in OpenAPI schema |
+| [basePath](./remote-server.apischemarouteroptions.basepath.md)              |           | string              | Base path                                        |
+| [exposedMethods?](./remote-server.apischemarouteroptions.exposedmethods.md) |           | Array&lt;string&gt; | <i>(Optional)</i> List of exposed methods        |
+| [securityScheme?](./remote-server.apischemarouteroptions.securityscheme.md) |           | string              | <i>(Optional)</i> Security scheme                |

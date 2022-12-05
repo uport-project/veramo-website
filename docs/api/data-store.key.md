@@ -29,4 +29,4 @@ export declare class Key extends BaseEntity
 | [kms](./data-store.key.kms.md)                   |           | string                                           | <b><i>(BETA)</i></b>                   |
 | [meta?](./data-store.key.meta.md)                |           | [KeyMetadata](./core.keymetadata.md) &#124; null | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [publicKeyHex](./data-store.key.publickeyhex.md) |           | string                                           | <b><i>(BETA)</i></b>                   |
-| [type](./data-store.key.type.md)                 |           | KeyType                                          | <b><i>(BETA)</i></b>                   |
+| [type](./data-store.key.type.md)                 |           | [KeyType](./data-store.keytype_2.md)             | <b><i>(BETA)</i></b>                   |

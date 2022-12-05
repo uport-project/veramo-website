@@ -15,7 +15,7 @@ A callback method that is called when the data stored in a [VeramoJsonCache](./d
 <b>Signature:</b>
 
 ```typescript
-export declare type DiffCallback = (
+export type DiffCallback = (
   oldState: Partial<VeramoJsonCache>,
   newState: Partial<VeramoJsonCache>,
 ) => Promise<void>

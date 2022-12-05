@@ -22,13 +22,13 @@ export interface UnsignedCredential
 
 ## Properties
 
-| Property                                                            | Type                                                             | Description                            |
-| ------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------- |
-| ["@context"](./core.unsignedcredential.__context_.md)               | string\[\] &#124; string                                         | <b><i>(BETA)</i></b>                   |
-| [credentialStatus?](./core.unsignedcredential.credentialstatus.md)  | [CredentialStatusReference](./core.credentialstatusreference.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentialSubject](./core.unsignedcredential.credentialsubject.md) | [CredentialSubject](./core.credentialsubject.md)                 | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./core.unsignedcredential.expirationdate.md)      | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id?](./core.unsignedcredential.id.md)                              | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate](./core.unsignedcredential.issuancedate.md)           | string                                                           | <b><i>(BETA)</i></b>                   |
-| [issuer](./core.unsignedcredential.issuer.md)                       | [IssuerType](./core.issuertype.md)                               | <b><i>(BETA)</i></b>                   |
-| [type?](./core.unsignedcredential.type.md)                          | string\[\] &#124; string                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                            | Modifiers | Type                                                             | Description                            |
+| ------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------------------------- |
+| ["@context"](./core.unsignedcredential.__context_.md)               |           | string\[\] &#124; string                                         | <b><i>(BETA)</i></b>                   |
+| [credentialStatus?](./core.unsignedcredential.credentialstatus.md)  |           | [CredentialStatusReference](./core.credentialstatusreference.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [credentialSubject](./core.unsignedcredential.credentialsubject.md) |           | [CredentialSubject](./core.credentialsubject.md)                 | <b><i>(BETA)</i></b>                   |
+| [expirationDate?](./core.unsignedcredential.expirationdate.md)      |           | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [id?](./core.unsignedcredential.id.md)                              |           | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuanceDate](./core.unsignedcredential.issuancedate.md)           |           | string                                                           | <b><i>(BETA)</i></b>                   |
+| [issuer](./core.unsignedcredential.issuer.md)                       |           | [IssuerType](./core.issuertype.md)                               | <b><i>(BETA)</i></b>                   |
+| [type?](./core.unsignedcredential.type.md)                          |           | string\[\] &#124; string                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |

@@ -20,7 +20,7 @@ export interface CredentialStatusUpdateArgs
 
 ## Properties
 
-| Property                                                 | Type                                                   | Description                                                                                                            |
-| -------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| [options?](./core.credentialstatusupdateargs.options.md) | CredentialStatusUpdateOptions                          | <b><i>(BETA)</i></b> <i>(Optional)</i> Options that will be forwarded to the credentialStatus method specific manager. |
-| [vc](./core.credentialstatusupdateargs.vc.md)            | [VerifiableCredential](./core.verifiablecredential.md) | <b><i>(BETA)</i></b> The verifiable credential whose status will be updated.                                           |
+| Property                                                 | Modifiers | Type                                                   | Description                                                                                                            |
+| -------------------------------------------------------- | --------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| [options?](./core.credentialstatusupdateargs.options.md) |           | CredentialStatusUpdateOptions                          | <b><i>(BETA)</i></b> <i>(Optional)</i> Options that will be forwarded to the credentialStatus method specific manager. |
+| [vc](./core.credentialstatusupdateargs.vc.md)            |           | [VerifiableCredential](./core.verifiablecredential.md) | <b><i>(BETA)</i></b> The verifiable credential whose status will be updated.                                           |

@@ -32,16 +32,16 @@ export declare class SelectiveDisclosure implements IAgentPlugin
 
 ## Properties
 
-| Property                                                         | Modifiers | Type                                                                   | Description          |
-| ---------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | -------------------- |
-| [methods](./selective-disclosure.selectivedisclosure.methods.md) |           | [ISelectiveDisclosure](./selective-disclosure.iselectivedisclosure.md) | <b><i>(BETA)</i></b> |
-| [schema](./selective-disclosure.selectivedisclosure.schema.md)   |           | any                                                                    | <b><i>(BETA)</i></b> |
+| Property                                                         | Modifiers             | Type                                                                   | Description          |
+| ---------------------------------------------------------------- | --------------------- | ---------------------------------------------------------------------- | -------------------- |
+| [methods](./selective-disclosure.selectivedisclosure.methods.md) | <code>readonly</code> | [ISelectiveDisclosure](./selective-disclosure.iselectivedisclosure.md) | <b><i>(BETA)</i></b> |
+| [schema](./selective-disclosure.selectivedisclosure.schema.md)   | <code>readonly</code> | any                                                                    | <b><i>(BETA)</i></b> |
 
 ## Methods
 
 | Method                                                                                                                            | Modifiers | Description                                                                                                                                                                                                                                   |
 | --------------------------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [createProfilePresentation(args, context)](./selective-disclosure.selectivedisclosure.createprofilepresentation.md)               |           | <b><i>(BETA)</i></b> Creates profile credentialsThis API may change without a BREAKING CHANGE notice.                                                                                                                                         |
+| [createProfilePresentation(args, context)](./selective-disclosure.selectivedisclosure.createprofilepresentation.md)               |           | <p><b><i>(BETA)</i></b> Creates profile credentials</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                           |
 | [createSelectiveDisclosureRequest(args, context)](./selective-disclosure.selectivedisclosure.createselectivedisclosurerequest.md) |           | <b><i>(BETA)</i></b> Creates a Selective disclosure request, encoded as a JWT.                                                                                                                                                                |
 | [getVerifiableCredentialsForSdr(args, context)](./selective-disclosure.selectivedisclosure.getverifiablecredentialsforsdr.md)     |           | <b><i>(BETA)</i></b> Gathers the required credentials necessary to fulfill a Selective Disclosure Request. It uses a [IDataStoreORM](./core.idatastoreorm.md) plugin implementation to query the local database for the required credentials. |
 | [validatePresentationAgainstSdr(args, context)](./selective-disclosure.selectivedisclosure.validatepresentationagainstsdr.md)     |           | <b><i>(BETA)</i></b> Validates a [Selective Disclosure response](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md) encoded as a <code>Presentation</code>                                                     |

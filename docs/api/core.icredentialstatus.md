@@ -15,7 +15,7 @@ Veramo plugin interface for plugins implementing both the [manager](./core.icred
 <b>Signature:</b>
 
 ```typescript
-export declare type ICredentialStatus = ICredentialStatusVerifier & ICredentialStatusManager
+export type ICredentialStatus = ICredentialStatusVerifier & ICredentialStatusManager
 ```
 
 <b>References:</b> [ICredentialStatusVerifier](./core.icredentialstatusverifier.md), [ICredentialStatusManager](./core.icredentialstatusmanager.md)

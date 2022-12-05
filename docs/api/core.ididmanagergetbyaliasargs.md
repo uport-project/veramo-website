@@ -18,7 +18,7 @@ export interface IDIDManagerGetByAliasArgs
 
 ## Properties
 
-| Property                                                  | Type   | Description                         |
-| --------------------------------------------------------- | ------ | ----------------------------------- |
-| [alias](./core.ididmanagergetbyaliasargs.alias.md)        | string | Alias                               |
-| [provider?](./core.ididmanagergetbyaliasargs.provider.md) | string | <i>(Optional)</i> Optional provider |
+| Property                                                  | Modifiers | Type   | Description                         |
+| --------------------------------------------------------- | --------- | ------ | ----------------------------------- |
+| [alias](./core.ididmanagergetbyaliasargs.alias.md)        |           | string | Alias                               |
+| [provider?](./core.ididmanagergetbyaliasargs.provider.md) |           | string | <i>(Optional)</i> Optional provider |

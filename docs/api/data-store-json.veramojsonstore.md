@@ -24,6 +24,6 @@ export interface VeramoJsonStore extends VeramoJsonCache
 
 ## Properties
 
-| Property                                                          | Type                                              | Description          |
-| ----------------------------------------------------------------- | ------------------------------------------------- | -------------------- |
-| [notifyUpdate](./data-store-json.veramojsonstore.notifyupdate.md) | [DiffCallback](./data-store-json.diffcallback.md) | <b><i>(BETA)</i></b> |
+| Property                                                          | Modifiers | Type                                              | Description          |
+| ----------------------------------------------------------------- | --------- | ------------------------------------------------- | -------------------- |
+| [notifyUpdate](./data-store-json.veramojsonstore.notifyupdate.md) |           | [DiffCallback](./data-store-json.diffcallback.md) | <b><i>(BETA)</i></b> |

@@ -16,6 +16,6 @@ export interface AgentRouterOptions
 
 ## Properties
 
-| Property                                                               | Type                | Description             |
-| ---------------------------------------------------------------------- | ------------------- | ----------------------- |
-| [exposedMethods](./remote-server.agentrouteroptions.exposedmethods.md) | Array&lt;string&gt; | List of exposed methods |
+| Property                                                               | Modifiers | Type                | Description             |
+| ---------------------------------------------------------------------- | --------- | ------------------- | ----------------------- |
+| [exposedMethods](./remote-server.agentrouteroptions.exposedmethods.md) |           | Array&lt;string&gt; | List of exposed methods |

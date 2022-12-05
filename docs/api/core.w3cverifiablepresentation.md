@@ -13,7 +13,7 @@ Represents a signed Verifiable Presentation (includes proof) in either JSON or c
 <b>Signature:</b>
 
 ```typescript
-export declare type W3CVerifiablePresentation = VerifiablePresentation | CompactJWT
+export type W3CVerifiablePresentation = VerifiablePresentation | CompactJWT
 ```
 
 <b>References:</b> [VerifiablePresentation](./core.verifiablepresentation.md), [CompactJWT](./core.compactjwt.md)

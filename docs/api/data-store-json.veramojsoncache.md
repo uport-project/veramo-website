@@ -22,12 +22,12 @@ export interface VeramoJsonCache
 
 ## Properties
 
-| Property                                                             | Type                                                                                        | Description                            |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------- |
-| [claims?](./data-store-json.veramojsoncache.claims.md)               | Record&lt;string, [ClaimTableEntry](./data-store-json.claimtableentry.md)&gt;               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentials?](./data-store-json.veramojsoncache.credentials.md)     | Record&lt;string, [CredentialTableEntry](./data-store-json.credentialtableentry.md)&gt;     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [dids?](./data-store-json.veramojsoncache.dids.md)                   | Record&lt;string, [IIdentifier](./core.iidentifier.md)&gt;                                  | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [keys?](./data-store-json.veramojsoncache.keys.md)                   | Record&lt;string, [ManagedKeyInfo](./core.managedkeyinfo.md)&gt;                            | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [messages?](./data-store-json.veramojsoncache.messages.md)           | Record&lt;string, [IMessage](./core.imessage.md)&gt;                                        | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [presentations?](./data-store-json.veramojsoncache.presentations.md) | Record&lt;string, [PresentationTableEntry](./data-store-json.presentationtableentry.md)&gt; | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [privateKeys?](./data-store-json.veramojsoncache.privatekeys.md)     | Record&lt;string, [ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                             | Modifiers | Type                                                                                        | Description                            |
+| -------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------- | -------------------------------------- |
+| [claims?](./data-store-json.veramojsoncache.claims.md)               |           | Record&lt;string, [ClaimTableEntry](./data-store-json.claimtableentry.md)&gt;               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [credentials?](./data-store-json.veramojsoncache.credentials.md)     |           | Record&lt;string, [CredentialTableEntry](./data-store-json.credentialtableentry.md)&gt;     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [dids?](./data-store-json.veramojsoncache.dids.md)                   |           | Record&lt;string, [IIdentifier](./core.iidentifier.md)&gt;                                  | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [keys?](./data-store-json.veramojsoncache.keys.md)                   |           | Record&lt;string, [ManagedKeyInfo](./core.managedkeyinfo.md)&gt;                            | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [messages?](./data-store-json.veramojsoncache.messages.md)           |           | Record&lt;string, [IMessage](./core.imessage.md)&gt;                                        | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [presentations?](./data-store-json.veramojsoncache.presentations.md) |           | Record&lt;string, [PresentationTableEntry](./data-store-json.presentationtableentry.md)&gt; | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [privateKeys?](./data-store-json.veramojsoncache.privatekeys.md)     |           | Record&lt;string, [ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;               | <b><i>(BETA)</i></b> <i>(Optional)</i> |

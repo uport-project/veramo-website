@@ -25,7 +25,7 @@ export declare class Message extends BaseEntity
 | Property                                               | Modifiers | Type                                                 | Description                            |
 | ------------------------------------------------------ | --------- | ---------------------------------------------------- | -------------------------------------- |
 | [createdAt?](./data-store.message.createdat.md)        |           | Date                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentials](./data-store.message.credentials.md)     |           | Credential\[\]                                       | <b><i>(BETA)</i></b>                   |
+| [credentials](./data-store.message.credentials.md)     |           | [Credential](./data-store.credential_2.md)\[\]       | <b><i>(BETA)</i></b>                   |
 | [data?](./data-store.message.data.md)                  |           | object &#124; null                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [expiresAt?](./data-store.message.expiresat.md)        |           | Date                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [from?](./data-store.message.from.md)                  |           | [Identifier](./data-store.identifier.md)             | <b><i>(BETA)</i></b> <i>(Optional)</i> |

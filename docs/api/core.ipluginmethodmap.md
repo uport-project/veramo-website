@@ -16,4 +16,4 @@ Plugin method map interface
 export interface IPluginMethodMap extends Record<string, IPluginMethod>
 ```
 
-<b>Extends:</b> Record&lt;string, [IPluginMethod](./core.ipluginmethod.md)
+<b>Extends:</b> Record&lt;string, [IPluginMethod](./core.ipluginmethod.md)&gt;

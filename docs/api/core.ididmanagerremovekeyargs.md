@@ -18,8 +18,8 @@ export interface IDIDManagerRemoveKeyArgs
 
 ## Properties
 
-| Property                                               | Type   | Description                                                      |
-| ------------------------------------------------------ | ------ | ---------------------------------------------------------------- |
-| [did](./core.ididmanagerremovekeyargs.did.md)          | string | DID                                                              |
-| [kid](./core.ididmanagerremovekeyargs.kid.md)          | string | Key ID                                                           |
-| [options?](./core.ididmanagerremovekeyargs.options.md) | object | <i>(Optional)</i> Optional. Identifier provider specific options |
+| Property                                               | Modifiers | Type   | Description                                                      |
+| ------------------------------------------------------ | --------- | ------ | ---------------------------------------------------------------- |
+| [did](./core.ididmanagerremovekeyargs.did.md)          |           | string | DID                                                              |
+| [kid](./core.ididmanagerremovekeyargs.kid.md)          |           | string | Key ID                                                           |
+| [options?](./core.ididmanagerremovekeyargs.options.md) |           | object | <i>(Optional)</i> Optional. Identifier provider specific options |

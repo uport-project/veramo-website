@@ -13,5 +13,5 @@ Represents an object type where a subset of keys are required and everything els
 <b>Signature:</b>
 
 ```typescript
-export declare type RequireOnly<T, K extends keyof T> = Required<Pick<T, K>> & Partial<T>
+export type RequireOnly<T, K extends keyof T> = Required<Pick<T, K>> & Partial<T>
 ```

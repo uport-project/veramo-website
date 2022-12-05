@@ -15,5 +15,5 @@ Only `jwt` and `lds` is supported at the moment.
 <b>Signature:</b>
 
 ```typescript
-export declare type ProofFormat = 'jwt' | 'lds' | 'EthereumEip712Signature2021'
+export type ProofFormat = 'jwt' | 'lds' | 'EthereumEip712Signature2021'
 ```

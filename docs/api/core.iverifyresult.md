@@ -20,7 +20,7 @@ export interface IVerifyResult
 
 ## Properties
 
-| Property                                     | Type                       | Description                                                                                                                                                             |
-| -------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [error?](./core.iverifyresult.error.md)      | [IError](./core.ierror.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional Error object for the but currently the machine readable errors are not expored from DID-JWT package to be imported here |
-| [verified](./core.iverifyresult.verified.md) | boolean                    | <b><i>(BETA)</i></b> This value is used to transmit the result of verification.                                                                                         |
+| Property                                     | Modifiers | Type                       | Description                                                                                                                                                             |
+| -------------------------------------------- | --------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [error?](./core.iverifyresult.error.md)      |           | [IError](./core.ierror.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional Error object for the but currently the machine readable errors are not expored from DID-JWT package to be imported here |
+| [verified](./core.iverifyresult.verified.md) |           | boolean                    | <b><i>(BETA)</i></b> This value is used to transmit the result of verification.                                                                                         |

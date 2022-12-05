@@ -28,12 +28,12 @@ export declare class Identifier extends BaseEntity
 | [controllerKeyId?](./data-store.identifier.controllerkeyid.md)            |           | string                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [did](./data-store.identifier.did.md)                                     |           | string                                           | <b><i>(BETA)</i></b>                   |
 | [issuedClaims](./data-store.identifier.issuedclaims.md)                   |           | [Claim](./data-store.claim.md)\[\]               | <b><i>(BETA)</i></b>                   |
-| [issuedCredentials](./data-store.identifier.issuedcredentials.md)         |           | Credential\[\]                                   | <b><i>(BETA)</i></b>                   |
+| [issuedCredentials](./data-store.identifier.issuedcredentials.md)         |           | [Credential](./data-store.credential_2.md)\[\]   | <b><i>(BETA)</i></b>                   |
 | [issuedPresentations](./data-store.identifier.issuedpresentations.md)     |           | [Presentation](./data-store.presentation.md)\[\] | <b><i>(BETA)</i></b>                   |
 | [keys](./data-store.identifier.keys.md)                                   |           | [Key](./data-store.key.md)\[\]                   | <b><i>(BETA)</i></b>                   |
 | [provider?](./data-store.identifier.provider.md)                          |           | string                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [receivedClaims](./data-store.identifier.receivedclaims.md)               |           | [Claim](./data-store.claim.md)\[\]               | <b><i>(BETA)</i></b>                   |
-| [receivedCredentials](./data-store.identifier.receivedcredentials.md)     |           | Credential\[\]                                   | <b><i>(BETA)</i></b>                   |
+| [receivedCredentials](./data-store.identifier.receivedcredentials.md)     |           | [Credential](./data-store.credential_2.md)\[\]   | <b><i>(BETA)</i></b>                   |
 | [receivedMessages](./data-store.identifier.receivedmessages.md)           |           | [Message](./data-store.message.md)\[\]           | <b><i>(BETA)</i></b>                   |
 | [receivedPresentations](./data-store.identifier.receivedpresentations.md) |           | [Presentation](./data-store.presentation.md)\[\] | <b><i>(BETA)</i></b>                   |
 | [saveDate](./data-store.identifier.savedate.md)                           |           | Date                                             | <b><i>(BETA)</i></b>                   |
@@ -43,9 +43,9 @@ export declare class Identifier extends BaseEntity
 
 ## Methods
 
-| Method                                                                                     | Modifiers | Description                                                                                                                                          |
-| ------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [getLatestClaimValue(dbConnection, where)](./data-store.identifier.getlatestclaimvalue.md) |           | <b><i>(BETA)</i></b> Convenience method to get the most recent information about a subject DID as described by Verifiable Credential claims.Example: |
+| Method                                                                                     | Modifiers | Description                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [getLatestClaimValue(dbConnection, where)](./data-store.identifier.getlatestclaimvalue.md) |           | <p><b><i>(BETA)</i></b> Convenience method to get the most recent information about a subject DID as described by Verifiable Credential claims.</p><p>Example:</p> |
 
 ```typescript
 // get the latest claim value for credentials containing `credentialSubject.name` and this Identifier as subject.

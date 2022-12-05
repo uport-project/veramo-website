@@ -19,7 +19,7 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare type CredentialSubject = {
+export type CredentialSubject = {
   id?: string
   [x: string]: any
 }

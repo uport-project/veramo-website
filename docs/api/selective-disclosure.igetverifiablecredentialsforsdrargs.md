@@ -26,7 +26,7 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                  | Type                                                                                                       | Description                                                               |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [did?](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md) | string                                                                                                     | <b><i>(BETA)</i></b> <i>(Optional)</i> The DID of the subject             |
-| [sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md)  | Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md), 'issuer'&gt; | <b><i>(BETA)</i></b> The Selective Disclosure Request (issuer is omitted) |
+| Property                                                                  | Modifiers | Type                                                                                                       | Description                                                               |
+| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| [did?](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md) |           | string                                                                                                     | <b><i>(BETA)</i></b> <i>(Optional)</i> The DID of the subject             |
+| [sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md)  |           | Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md), 'issuer'&gt; | <b><i>(BETA)</i></b> The Selective Disclosure Request (issuer is omitted) |

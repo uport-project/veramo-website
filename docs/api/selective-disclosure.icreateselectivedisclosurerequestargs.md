@@ -26,6 +26,6 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                     | Type                                                                                 | Description          |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------- |
-| [data](./selective-disclosure.icreateselectivedisclosurerequestargs.data.md) | [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) | <b><i>(BETA)</i></b> |
+| Property                                                                     | Modifiers | Type                                                                                 | Description          |
+| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | -------------------- |
+| [data](./selective-disclosure.icreateselectivedisclosurerequestargs.data.md) |           | [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) | <b><i>(BETA)</i></b> |

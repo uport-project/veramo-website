@@ -22,15 +22,15 @@ export interface CredentialTableEntry
 
 ## Properties
 
-| Property                                                                             | Type                                                         | Description                            |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------- |
-| [canonicalCredential](./data-store-json.credentialtableentry.canonicalcredential.md) | [W3CVerifiableCredential](./core.w3cverifiablecredential.md) | <b><i>(BETA)</i></b>                   |
-| [context](./data-store-json.credentialtableentry.context.md)                         | string\[\]                                                   | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./data-store-json.credentialtableentry.expirationdate.md)          | Date                                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash](./data-store-json.credentialtableentry.hash.md)                               | string                                                       | <b><i>(BETA)</i></b>                   |
-| [id?](./data-store-json.credentialtableentry.id.md)                                  | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate?](./data-store-json.credentialtableentry.issuancedate.md)              | Date                                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuer](./data-store-json.credentialtableentry.issuer.md)                           | string                                                       | <b><i>(BETA)</i></b>                   |
-| [parsedCredential](./data-store-json.credentialtableentry.parsedcredential.md)       | [VerifiableCredential](./core.verifiablecredential.md)       | <b><i>(BETA)</i></b>                   |
-| [subject?](./data-store-json.credentialtableentry.subject.md)                        | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store-json.credentialtableentry.type.md)                               | string\[\]                                                   | <b><i>(BETA)</i></b>                   |
+| Property                                                                             | Modifiers | Type                                                         | Description                            |
+| ------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------ | -------------------------------------- |
+| [canonicalCredential](./data-store-json.credentialtableentry.canonicalcredential.md) |           | [W3CVerifiableCredential](./core.w3cverifiablecredential.md) | <b><i>(BETA)</i></b>                   |
+| [context](./data-store-json.credentialtableentry.context.md)                         |           | string\[\]                                                   | <b><i>(BETA)</i></b>                   |
+| [expirationDate?](./data-store-json.credentialtableentry.expirationdate.md)          |           | Date                                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [hash](./data-store-json.credentialtableentry.hash.md)                               |           | string                                                       | <b><i>(BETA)</i></b>                   |
+| [id?](./data-store-json.credentialtableentry.id.md)                                  |           | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuanceDate?](./data-store-json.credentialtableentry.issuancedate.md)              |           | Date                                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [issuer](./data-store-json.credentialtableentry.issuer.md)                           |           | string                                                       | <b><i>(BETA)</i></b>                   |
+| [parsedCredential](./data-store-json.credentialtableentry.parsedcredential.md)       |           | [VerifiableCredential](./core.verifiablecredential.md)       | <b><i>(BETA)</i></b>                   |
+| [subject?](./data-store-json.credentialtableentry.subject.md)                        |           | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type](./data-store-json.credentialtableentry.type.md)                               |           | string\[\]                                                   | <b><i>(BETA)</i></b>                   |

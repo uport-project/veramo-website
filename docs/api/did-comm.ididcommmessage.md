@@ -22,16 +22,16 @@ export interface IDIDCommMessage
 
 ## Properties
 
-| Property                                                    | Type   | Description                            |
-| ----------------------------------------------------------- | ------ | -------------------------------------- |
-| [body](./did-comm.ididcommmessage.body.md)                  | any    | <b><i>(BETA)</i></b>                   |
-| [created_time?](./did-comm.ididcommmessage.created_time.md) | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [expires_time?](./did-comm.ididcommmessage.expires_time.md) | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [from_prior?](./did-comm.ididcommmessage.from_prior.md)     | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [from?](./did-comm.ididcommmessage.from.md)                 | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id](./did-comm.ididcommmessage.id.md)                      | string | <b><i>(BETA)</i></b>                   |
-| [next?](./did-comm.ididcommmessage.next.md)                 | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [pthid?](./did-comm.ididcommmessage.pthid.md)               | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [thid?](./did-comm.ididcommmessage.thid.md)                 | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [to](./did-comm.ididcommmessage.to.md)                      | string | <b><i>(BETA)</i></b>                   |
-| [type](./did-comm.ididcommmessage.type.md)                  | string | <b><i>(BETA)</i></b>                   |
+| Property                                                    | Modifiers | Type   | Description                            |
+| ----------------------------------------------------------- | --------- | ------ | -------------------------------------- |
+| [body](./did-comm.ididcommmessage.body.md)                  |           | any    | <b><i>(BETA)</i></b>                   |
+| [created_time?](./did-comm.ididcommmessage.created_time.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [expires_time?](./did-comm.ididcommmessage.expires_time.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [from_prior?](./did-comm.ididcommmessage.from_prior.md)     |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [from?](./did-comm.ididcommmessage.from.md)                 |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [id](./did-comm.ididcommmessage.id.md)                      |           | string | <b><i>(BETA)</i></b>                   |
+| [next?](./did-comm.ididcommmessage.next.md)                 |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [pthid?](./did-comm.ididcommmessage.pthid.md)               |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [thid?](./did-comm.ididcommmessage.thid.md)                 |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [to](./did-comm.ididcommmessage.to.md)                      |           | string | <b><i>(BETA)</i></b>                   |
+| [type](./did-comm.ididcommmessage.type.md)                  |           | string | <b><i>(BETA)</i></b>                   |

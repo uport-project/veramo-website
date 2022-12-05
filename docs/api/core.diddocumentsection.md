@@ -15,7 +15,7 @@ See [verification relationships](https://www.w3.org/TR/did-core/#verification-re
 <b>Signature:</b>
 
 ```typescript
-export declare type DIDDocumentSection =
+export type DIDDocumentSection =
   | 'verificationMethod'
   | 'publicKey'
   | 'service'

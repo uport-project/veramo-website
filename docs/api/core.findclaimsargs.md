@@ -17,7 +17,7 @@ See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core.idatas
 <b>Signature:</b>
 
 ```typescript
-export declare type FindClaimsArgs = FindArgs<TClaimsColumns>
+export type FindClaimsArgs = FindArgs<TClaimsColumns>
 ```
 
 <b>References:</b> [FindArgs](./core.findargs.md), [TClaimsColumns](./core.tclaimscolumns.md)

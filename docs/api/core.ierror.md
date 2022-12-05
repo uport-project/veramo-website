@@ -20,7 +20,7 @@ export interface IError
 
 ## Properties
 
-| Property                                 | Type   | Description                                                                              |
-| ---------------------------------------- | ------ | ---------------------------------------------------------------------------------------- |
-| [errorCode?](./core.ierror.errorcode.md) | string | <b><i>(BETA)</i></b> <i>(Optional)</i> The code for the error being throw                |
-| [message?](./core.ierror.message.md)     | string | <b><i>(BETA)</i></b> <i>(Optional)</i> The details of the error being throw or forwarded |
+| Property                                 | Modifiers | Type   | Description                                                                              |
+| ---------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------------------- |
+| [errorCode?](./core.ierror.errorcode.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> The code for the error being throw                |
+| [message?](./core.ierror.message.md)     |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> The details of the error being throw or forwarded |

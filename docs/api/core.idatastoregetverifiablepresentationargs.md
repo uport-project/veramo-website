@@ -18,6 +18,6 @@ export interface IDataStoreGetVerifiablePresentationArgs
 
 ## Properties
 
-| Property                                                       | Type   | Description                           |
-| -------------------------------------------------------------- | ------ | ------------------------------------- |
-| [hash](./core.idatastoregetverifiablepresentationargs.hash.md) | string | Required. VerifiablePresentation hash |
+| Property                                                       | Modifiers | Type   | Description                           |
+| -------------------------------------------------------------- | --------- | ------ | ------------------------------------- |
+| [hash](./core.idatastoregetverifiablepresentationargs.hash.md) |           | string | Required. VerifiablePresentation hash |

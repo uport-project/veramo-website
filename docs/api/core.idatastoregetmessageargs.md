@@ -18,6 +18,6 @@ export interface IDataStoreGetMessageArgs
 
 ## Properties
 
-| Property                                    | Type   | Description          |
-| ------------------------------------------- | ------ | -------------------- |
-| [id](./core.idatastoregetmessageargs.id.md) | string | Required. Message ID |
+| Property                                    | Modifiers | Type   | Description          |
+| ------------------------------------------- | --------- | ------ | -------------------- |
+| [id](./core.idatastoregetmessageargs.id.md) |           | string | Required. Message ID |

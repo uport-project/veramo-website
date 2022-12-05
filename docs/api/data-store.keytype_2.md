@@ -17,7 +17,7 @@ Mirrors [TKeyType](./core.tkeytype.md)
 <b>Signature:</b>
 
 ```typescript
-export declare type KeyType = TKeyType
+export type KeyType = TKeyType
 ```
 
 <b>References:</b> [TKeyType](./core.tkeytype.md)
