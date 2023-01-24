@@ -12,6 +12,11 @@ to run Veramo.
 You'll be creating a React Native application that is able to create and remember Decentralized Identifiers (DIDs) along
 with some keys associated with them and display them in a list.
 
+
+#### Note
+
+A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-react-native-tutorial](https://github.com/veramolabs/veramo-react-native-tutorial)
+
 ## Introduction
 
 Let's set up Veramo to run locally on the device and use `expo-sqlite` to store data, identities, and keys. Our
