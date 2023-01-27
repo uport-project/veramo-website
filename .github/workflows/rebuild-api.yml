@@ -11,20 +11,23 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{secrets.GH_TOKEN}}
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
       - name: 'setup node with cache'
         uses: actions/setup-node@v3
         with:
-          node-version: 14
-          cache: 'yarn'
+          node-version: 18
+          cache: 'pnpm'
       - name: 'build veramo API docs'
         run: |
-          yarn install --frozen-lockfile
+          pnpm install
           rm -fR ./docs/api
-          yarn build:veramo
+          pnpm run build:veramo
       - name: 'Docusaurus build'
         run: |
-          yarn build
-          yarn prettier --check
+          pnpm run build
+          pnpm run format --check
       - name: 'setup git coordinates'
         run: |
           git config --local user.name ${{ secrets.GH_USER }}
