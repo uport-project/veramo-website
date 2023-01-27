@@ -15,8 +15,7 @@ Utility type for constructing agent type that has a list of available methods
 ```typescript
 export type TAgent<T extends IPluginMethodMap> = {
   [P in keyof T]: RemoveContext<T[P]>
-} &
-  IAgent
+} & IAgent
 ```
 
 <b>References:</b> [IPluginMethodMap](./core.ipluginmethodmap.md), [RemoveContext](./core.removecontext.md), [IAgent](./core.iagent.md)

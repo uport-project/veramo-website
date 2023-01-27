@@ -1,5 +1,8 @@
 const version = require('./package.json').version
 
+// @ts-check
+
+/** @type {import('@docusaurus/types').Config} */
 module.exports = {
   title: 'Performant and modular APIs for Verifiable Data and SSI',
   tagline:
@@ -8,8 +11,9 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
-  organizationName: 'uport-project', // Usually your GitHub org/user name.
+  organizationName: 'uport-project', // Usually your GitHub org/username.
   projectName: 'veramo', // Usually your repo name.
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
     prism: {
       defaultLanguage: 'javascript',
@@ -137,6 +141,7 @@ module.exports = {
   presets: [
     [
       '@docusaurus/preset-classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),

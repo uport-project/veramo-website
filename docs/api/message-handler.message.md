@@ -30,6 +30,7 @@ export declare class Message implements IMessage
 
 | Property                                                     | Modifiers | Type                                                           | Description       |
 | ------------------------------------------------------------ | --------- | -------------------------------------------------------------- | ----------------- |
+| [attachments?](./message-handler.message.attachments.md)     |           | [IMessageAttachment](./core.imessageattachment.md)\[\]         | <i>(Optional)</i> |
 | [createdAt?](./message-handler.message.createdat.md)         |           | string                                                         | <i>(Optional)</i> |
 | [credentials?](./message-handler.message.credentials.md)     |           | [VerifiableCredential](./core.verifiablecredential.md)\[\]     | <i>(Optional)</i> |
 | [data?](./message-handler.message.data.md)                   |           | any                                                            | <i>(Optional)</i> |

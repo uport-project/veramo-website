@@ -13,5 +13,5 @@ Configured agent
 <b>Signature:</b>
 
 ```typescript
-agent: TAgent<T>;
+agent: TAgent<T>
 ```

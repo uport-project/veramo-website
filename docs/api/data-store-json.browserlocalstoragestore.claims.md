@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-claims: Record<string, ClaimTableEntry>;
+claims: Record<string, ClaimTableEntry>
 ```

@@ -15,5 +15,5 @@ Recipient key object
 <b>Signature:</b>
 
 ```typescript
-to: Omit<IKey, 'kms'>;
+to: Omit<IKey, 'kms'>
 ```

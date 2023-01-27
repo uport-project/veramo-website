@@ -15,5 +15,5 @@ Required
 <b>Signature:</b>
 
 ```typescript
-document: Partial<DIDDocument>;
+document: Partial<DIDDocument>
 ```

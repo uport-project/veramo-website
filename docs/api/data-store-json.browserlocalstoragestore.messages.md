@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-messages: Record<string, IMessage>;
+messages: Record<string, IMessage>
 ```

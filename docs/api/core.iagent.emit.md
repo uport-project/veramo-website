@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-emit: (eventType: string, data: any) => Promise<void>;
+emit: (eventType: string, data: any) => Promise<void>
 ```

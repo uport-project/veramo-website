@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-credentials: Record<string, CredentialTableEntry>;
+credentials: Record<string, CredentialTableEntry>
 ```

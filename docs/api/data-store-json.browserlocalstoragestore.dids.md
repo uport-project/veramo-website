@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-dids: Record<string, IIdentifier>;
+dids: Record<string, IIdentifier>
 ```
