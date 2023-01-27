@@ -13,5 +13,5 @@ The public key of the other party. The `type` of key MUST be compatible with the
 <b>Signature:</b>
 
 ```typescript
-publicKey: Pick<IKey, 'publicKeyHex' | 'type'>;
+publicKey: Pick<IKey, 'publicKeyHex' | 'type'>
 ```

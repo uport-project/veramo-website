@@ -15,5 +15,5 @@ Provider specific related metadata about the match
 <b>Signature:</b>
 
 ```typescript
-metaData: Record<string, any>;
+metaData: Record<string, any>
 ```

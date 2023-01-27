@@ -13,7 +13,7 @@ This provides a simple authorization mechanism based on a single pre-shared API 
 <b>Signature:</b>
 
 ```typescript
-export declare function apiKeyAuth({ apiKey }: { apiKey: string }): import('express-serve-static-core').Router
+export declare function apiKeyAuth({ apiKey }: { apiKey: string }): Router
 ```
 
 ## Parameters
@@ -24,4 +24,4 @@ export declare function apiKeyAuth({ apiKey }: { apiKey: string }): import('expr
 
 <b>Returns:</b>
 
-import("express-serve-static-core").Router
+Router

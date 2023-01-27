@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-privateKeys: Record<string, ManagedPrivateKey>;
+privateKeys: Record<string, ManagedPrivateKey>
 ```

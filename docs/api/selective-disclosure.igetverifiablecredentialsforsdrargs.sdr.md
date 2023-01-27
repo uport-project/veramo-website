@@ -15,5 +15,5 @@ The Selective Disclosure Request (issuer is omitted)
 <b>Signature:</b>
 
 ```typescript
-sdr: Omit<ISelectiveDisclosureRequest, 'issuer'>;
+sdr: Omit<ISelectiveDisclosureRequest, 'issuer'>
 ```

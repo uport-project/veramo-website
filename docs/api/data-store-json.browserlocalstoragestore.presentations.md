@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-presentations: Record<string, PresentationTableEntry>;
+presentations: Record<string, PresentationTableEntry>
 ```

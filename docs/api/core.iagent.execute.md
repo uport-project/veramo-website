@@ -11,5 +11,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-execute: <A = any, R = any>(method: string, args: A) => Promise<R>;
+execute: <A = any, R = any>(method: string, args: A) => Promise<R>
 ```

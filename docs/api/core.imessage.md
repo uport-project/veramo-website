@@ -20,6 +20,7 @@ export interface IMessage
 
 | Property                                           | Modifiers | Type                                                           | Description                                                            |
 | -------------------------------------------------- | --------- | -------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [attachments?](./core.imessage.attachments.md)     |           | [IMessageAttachment](./core.imessageattachment.md)\[\]         | <i>(Optional)</i> Optional. Array of generic attachments               |
 | [createdAt?](./core.imessage.createdat.md)         |           | string                                                         | <i>(Optional)</i> Optional. Creation date (ISO 8601)                   |
 | [credentials?](./core.imessage.credentials.md)     |           | [VerifiableCredential](./core.verifiablecredential.md)\[\]     | <i>(Optional)</i> Optional. Array of attached verifiable credentials   |
 | [data?](./core.imessage.data.md)                   |           | object &#124; null                                             | <i>(Optional)</i> Optional. Parsed data                                |
