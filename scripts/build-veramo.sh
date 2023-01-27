@@ -11,7 +11,7 @@ cd $revamoDir
 git clone $GITREPO veramo
 cd veramo
 git fetch --all && git checkout main
-yarn && yarn build && yarn docs
+pnpm install && pnpm run build && pnpm run docs
 
 cd $docsDir
 rm -fR $docsDir/docs/api
