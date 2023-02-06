@@ -10,6 +10,8 @@ This guide covers setting up an agent and creating identifiers in Node.
 
 A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-nodejs-tutorial](https://github.com/veramolabs/veramo-nodejs-tutorial)
 
+This tutorial has been updated to reflect the switch to ESM. Please take care to ensure you use proper ESM syntax in imports and commands. Also please carefully note `package.json` and `ts.config.json`.
+
 ### Prerequisites
 
 You need to have Node v14 or later installed. In this example, we use yarn as the package manager, but you can also use
@@ -20,6 +22,13 @@ Start by creating a directory for our project and initializing the npm package.
 ```bash
 mkdir veramo-agent && cd veramo-agent
 yarn init -y
+```
+
+Set project to use ESM
+
+in `package.json`
+```
+"type": "module"
 ```
 
 Install dev dependencies
@@ -47,7 +56,8 @@ Add a tsconfig.json to your project
   "compilerOptions": {
     "preserveConstEnums": true,
     "strict": true,
-    "target": "es6",
+    "target": "esnext",
+    "module": "esnext",
     "rootDir": "./",
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -186,7 +196,7 @@ Create 4 files `./src/create-identifier.ts`, `./src/list-identifiers.ts`, `./src
 Add the following code to `./src/list-identifiers.ts`
 
 ```ts
-import { agent } from './veramo/setup'
+import { agent } from './veramo/setup.js'
 
 async function main() {
   const identifiers = await agent.didManagerFind()
@@ -207,7 +217,7 @@ main().catch(console.log)
 Add the following code to `./src/create-identifier.ts`
 
 ```ts
-import { agent } from './veramo/setup'
+import { agent } from './veramo/setup.js'
 
 async function main() {
   const identifier = await agent.didManagerCreate({ alias: 'default' })
@@ -221,7 +231,7 @@ main().catch(console.log)
 Add the following code to `./src/create-credential.ts`
 
 ```ts
-import { agent } from './veramo/setup'
+import { agent } from './veramo/setup.js'
 
 async function main() {
   const identifier = await agent.didManagerGetByAlias({ alias: 'default' })
@@ -246,7 +256,7 @@ main().catch(console.log)
 Add the following code to `./src/verify-credential.ts`
 
 ```ts
-import { agent } from './veramo/setup'
+import { agent } from './veramo/setup.js'
 
 async function main() {
   const result = await agent.verifyCredential({
@@ -276,7 +286,7 @@ main().catch(console.log)
 ### List Identifiers
 
 ```bash
-yarn ts-node ./src/list-identifiers
+yarn ts-node --esm ./src/list-identifiers.ts
 ```
 
 **Expected output**
@@ -289,13 +299,13 @@ There are 0 identifiers
 ### Create Identifier
 
 ```bash
-yarn ts-node ./src/create-identifier
+yarn ts-node --esm ./src/create-identifier.ts
 ```
 
 **Expected output**
 
 ```bash
-$ ts-node ./src/create-identifier
+$ ts-node --esm ./src/create-identifier.ts
 New identifier created
 {
   "did": "did:ethr:goerli:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16",
@@ -326,13 +336,13 @@ New identifier created
 ### Create credential
 
 ```bash
-yarn ts-node ./src/create-credential
+yarn ts-node --esm ./src/create-credential.ts
 ```
 
 **Expected output**
 
 ```bash
-$ ts-node ./src/create-credential
+$ ts-node --esm ./src/create-credential.ts
 New credential created
 {
   "credentialSubject": {
@@ -359,13 +369,13 @@ New credential created
 ### Verify credential
 
 ```bash
-yarn ts-node ./src/verify-credential
+yarn ts-node --esm ./src/verify-credential.ts
 ```
 
 **Expected output**
 
 ```bash
-$ ts-node ./src/verify-credential
+$ ts-node --esm ./src/verify-credential.ts
 Credential verified true
 ```
 

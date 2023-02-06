@@ -4,9 +4,10 @@ title: React Setup & Resolver
 sidebar_label: Setup & Resolver
 ---
 
-Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up
-a DID resolver to work in a standard [Create React App](https://create-react-app.dev/) setup. It is possible to add your
-own identity, key management, and storage plugins that are browser compatible.
+Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up 
+a DID resolver to work in an application created with [Create React App](https://create-react-app.dev/) but uses [CRACO](https://craco.js.org/) 
+to allow use of babel config required for ESM.
+It is possible to add your own identity, key management, and storage plugins that are browser compatible.
 
 #### Note
 
@@ -19,6 +20,36 @@ Initialize a new **CRA** project
 ```bash
 npx create-react-app veramo-react-app --template typescript
 cd veramo-react-app
+```
+
+Install and use CRACO
+
+```
+yarn add @craco/craco
+```
+
+Update `scripts` within `package.json`
+
+```
+  "start": "craco start",
+  "build": "craco build",
+  "test": "craco test",
+```
+
+Create file `craco.config.js`
+
+```
+module.exports = {
+  babel: {
+    plugins: ['@babel/plugin-syntax-import-assertions']
+  }
+}
+```
+
+Install required Babel plugin
+
+```bash
+yarn add @babel/plugin-syntax-import-assertions
 ```
 
 Install veramo core, DIDResolver plugin and dependencies
