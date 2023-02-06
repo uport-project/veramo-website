@@ -10,7 +10,7 @@ This guide covers setting up an agent and creating identifiers in Node.
 
 A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-nodejs-tutorial](https://github.com/veramolabs/veramo-nodejs-tutorial)
 
-This tutorial has been updated to reflect the switch to ESM. Please take care to ensure you use proper ESM syntax in imports and commands. Also please carefully note `package.json` and `ts.config.json`.
+This tutorial has been updated to reflect the switch to ESM. Please take care to ensure you use proper ESM syntax in imports and commands. Also please carefully note `package.json` and `tsconfig.json`.
 
 ### Prerequisites
 
