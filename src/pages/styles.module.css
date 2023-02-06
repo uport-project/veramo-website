@@ -50,11 +50,17 @@
 
 .npmInstall {
   display: none;
+  text-align: left;
+  width: fit-content;
+  padding: 0 10px;
 }
 
 .infoSection {
-  text-align: center;
   width: 100%;
+}
+
+.infoSectionCenter {
+  text-align: center;
 }
 
 .infoSectionPadding {
