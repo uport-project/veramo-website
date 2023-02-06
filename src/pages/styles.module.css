@@ -53,8 +53,11 @@
 }
 
 .infoSection {
-  text-align: center;
   width: 100%;
+}
+
+.infoSectionCenter {
+  text-align: center;
 }
 
 .infoSectionPadding {

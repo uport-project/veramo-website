@@ -89,7 +89,7 @@ function VerifiableData() {
   return (
     <section>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionCenter)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.verifiableDataTitle}</h1>
           <p className={styles.promoText} style={{ fontSize: 18 }}>
             {textContent.verifiableDataContent}
@@ -109,7 +109,7 @@ function CleanAPI() {
   return (
     <section className={'oddRow'}>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted)}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted, styles.infoSectionCenter)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.cleanApi}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.cleanApiContent}
@@ -140,7 +140,7 @@ function AwesomeCli() {
   return (
     <section className={'oddRow'}>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted)}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted, styles.infoSectionCenter)}>
           <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.awesomeCLI}
@@ -186,7 +186,7 @@ function Plugins() {
   return (
     <section>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionCenter)}>
           <h1 style={{ fontSize: '3rem' }}>Plugins</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.plugins}

@@ -75,7 +75,7 @@ function Tools() {
   return (
     <section>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionCenter)}>
           <h1 style={{ fontSize: '3rem' }}>Developer Tools</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             The core developer tools are specific libraries that use Veramo and make using Veramo easier.
@@ -95,7 +95,7 @@ function Kits() {
   return (
     <section className={'oddRow'}>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding)}>
+        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionCenter)}>
           <h1 style={{ fontSize: '3rem' }}>Developer Toolkits</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             These kits consist of recommended plugins, agent configurations, architecture and step-by-step
