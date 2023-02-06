@@ -109,7 +109,14 @@ function CleanAPI() {
   return (
     <section className={'oddRow'}>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted, styles.infoSectionCenter)}>
+        <div
+          className={clsx(
+            styles.infoSection,
+            styles.infoSectionPadding,
+            styles.infoSectionLifted,
+            styles.infoSectionCenter,
+          )}
+        >
           <h1 style={{ fontSize: '3rem' }}>{textContent.cleanApi}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.cleanApiContent}
@@ -140,11 +147,21 @@ function AwesomeCli() {
   return (
     <section className={'oddRow'}>
       <div className={styles.container}>
-        <div className={clsx(styles.infoSection, styles.infoSectionPadding, styles.infoSectionLifted, styles.infoSectionCenter)}>
+        <div
+          className={clsx(
+            styles.infoSection,
+            styles.infoSectionPadding,
+            styles.infoSectionLifted,
+            styles.infoSectionCenter,
+          )}
+        >
           <h1 style={{ fontSize: '3rem' }}>{textContent.awesomeCLITitle}</h1>
           <p className={'promoText'} style={{ fontSize: 18 }}>
             {textContent.awesomeCLI}
           </p>
+          <CodeBlock className={styles.npmInstall} language={'bash'}>
+            npm i @veramo/cli -g
+          </CodeBlock>
         </div>
       </div>
     </section>
@@ -248,15 +265,6 @@ function Home() {
             >
               Get Started
             </Link>
-            <Link
-              className={clsx('button button--secondary button--no-border', styles.learnMore)}
-              to={useBaseUrl('docs/basics/introduction')}
-            >
-              Learn more
-            </Link>
-            <div className={styles.npmInstall}>
-              <CodeBlock language={'bash'}>npm i @veramo/cli -g</CodeBlock>
-            </div>
           </div>
         </div>
       </header>

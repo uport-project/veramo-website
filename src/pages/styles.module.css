@@ -50,6 +50,9 @@
 
 .npmInstall {
   display: none;
+  text-align: left;
+  width: fit-content;
+  padding: 0 10px;
 }
 
 .infoSection {
