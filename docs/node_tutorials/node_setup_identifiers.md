@@ -12,6 +12,11 @@ A finished example of this tutorial can be found on github at [https://github.co
 
 This tutorial has been updated to reflect the switch to ESM. Please take care to ensure you use proper ESM syntax in imports and commands. Also please carefully note `package.json` and `tsconfig.json`.
 
+Additional info regarding ESM can be found at the following links:
+[https://www.typescriptlang.org/docs/handbook/esm-node.html](https://www.typescriptlang.org/docs/handbook/esm-node.html)
+[https://nodejs.org/api/esm.html](https://nodejs.org/api/esm.html)
+[https://caniuse.com/?search=modules](https://caniuse.com/?search=modules)
+
 ### Prerequisites
 
 You need to have Node v14 or later installed. In this example, we use yarn as the package manager, but you can also use
