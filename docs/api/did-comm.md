@@ -43,12 +43,6 @@ Provides a [plugin](./did-comm.didcomm.md) for the [Agent](./core.agent.md) that
 | [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md) | <b><i>(BETA)</i></b>                                                                                                                                                                                                                                                                                       |
 | [IUnpackedDIDCommMessage](./did-comm.iunpackeddidcommmessage.md)             | <p><b><i>(BETA)</i></b> The result of unpacking a DIDComm v2 message.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                      |
 
-## Variables
-
-| Variable                       | Description                                                                |
-| ------------------------------ | -------------------------------------------------------------------------- |
-| [schema](./did-comm.schema.md) | <b><i>(BETA)</i></b> This API may change without a BREAKING CHANGE notice. |
-
 ## Type Aliases
 
 | Type Alias                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |

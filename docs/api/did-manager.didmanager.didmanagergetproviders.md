@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerGetProviders() method
 
-Returns a list of available identifier providers
-
 <b>Signature:</b>
 
 ```typescript

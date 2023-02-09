@@ -18,7 +18,7 @@ The interface definition for a plugin that can issue and verify Verifiable Crede
 export interface ICredentialIssuerLD extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core.ipluginmethodmap.md)
+<b>Extends:</b> IPluginMethodMap
 
 ## Remarks
 

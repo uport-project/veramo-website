@@ -18,9 +18,9 @@ dataStoreDeleteVerifiableCredential(args: IDataStoreDeleteVerifiableCredentialAr
 
 ## Parameters
 
-| Parameter | Type                                                                                           | Description |
-| --------- | ---------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IDataStoreDeleteVerifiableCredentialArgs](./core.idatastoredeleteverifiablecredentialargs.md) |             |
+| Parameter | Type                                     | Description |
+| --------- | ---------------------------------------- | ----------- |
+| args      | IDataStoreDeleteVerifiableCredentialArgs |             |
 
 <b>Returns:</b>
 

@@ -11,5 +11,391 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-readonly schema: any;
+readonly schema: {
+        components: {
+            schemas: {
+                ICreateVerifiableCredentialLDArgs: {
+                    type: string;
+                    properties: {
+                        credential: {
+                            $ref: string;
+                            description: string;
+                        };
+                        keyRef: {
+                            type: string;
+                            description: string;
+                        };
+                        fetchRemoteContexts: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    additionalProperties: {
+                        description: string;
+                    };
+                    description: string;
+                };
+                CredentialPayload: {
+                    type: string;
+                    properties: {
+                        issuer: {
+                            $ref: string;
+                        };
+                        credentialSubject: {
+                            $ref: string;
+                        };
+                        type: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        "@context": {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        issuanceDate: {
+                            $ref: string;
+                        };
+                        expirationDate: {
+                            $ref: string;
+                        };
+                        credentialStatus: {
+                            $ref: string;
+                        };
+                        id: {
+                            type: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IssuerType: {
+                    anyOf: ({
+                        type: string;
+                        properties: {
+                            id: {
+                                type: string;
+                            };
+                        };
+                        required: string[];
+                    } | {
+                        type: string;
+                        properties?: undefined;
+                        required?: undefined;
+                    })[];
+                    description: string;
+                };
+                CredentialSubject: {
+                    type: string;
+                    properties: {
+                        id: {
+                            type: string;
+                        };
+                    };
+                    description: string;
+                };
+                DateType: {
+                    type: string; /** {@inheritdoc ICredentialIssuerLD.createVerifiableCredentialLD} */
+                    description: string;
+                };
+                CredentialStatusReference: {
+                    type: string;
+                    properties: {
+                        id: {
+                            type: string;
+                        };
+                        type: {
+                            type: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                VerifiableCredential: {
+                    type: string;
+                    properties: {
+                        proof: {
+                            $ref: string;
+                        };
+                        issuer: {
+                            $ref: string;
+                        };
+                        credentialSubject: {
+                            $ref: string;
+                        };
+                        type: {
+                            anyOf: ({
+                                type: string;
+                                items: {
+                                    type: string;
+                                };
+                            } | {
+                                type: string;
+                                items?: undefined;
+                            })[];
+                        };
+                        "@context": {
+                            anyOf: ({
+                                type: string;
+                                items: {
+                                    type: string;
+                                };
+                            } | {
+                                type: string;
+                                items?: undefined;
+                            })[];
+                        };
+                        issuanceDate: {
+                            type: string;
+                        };
+                        expirationDate: {
+                            type: string;
+                        };
+                        credentialStatus: {
+                            $ref: string;
+                        };
+                        id: {
+                            type: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                ProofType: {
+                    type: string;
+                    properties: {
+                        type: {
+                            type: string;
+                        };
+                    };
+                    description: string;
+                };
+                ICreateVerifiablePresentationLDArgs: {
+                    type: string;
+                    properties: {
+                        presentation: {
+                            $ref: string;
+                            description: string;
+                        };
+                        challenge: {
+                            type: string;
+                            description: string;
+                        };
+                        domain: {
+                            type: string;
+                            description: string;
+                        };
+                        keyRef: {
+                            type: string;
+                            description: string;
+                        };
+                        fetchRemoteContexts: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    additionalProperties: {
+                        description: string;
+                    };
+                    description: string;
+                };
+                PresentationPayload: {
+                    type: string;
+                    properties: {
+                        holder: {
+                            type: string;
+                        };
+                        verifiableCredential: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                        };
+                        type: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        "@context": {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        verifier: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        issuanceDate: {
+                            $ref: string;
+                        };
+                        expirationDate: {
+                            $ref: string;
+                        };
+                        id: {
+                            type: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                W3CVerifiableCredential: {
+                    anyOf: {
+                        $ref: string;
+                    }[];
+                    description: string;
+                };
+                CompactJWT: {
+                    type: string;
+                    description: string;
+                };
+                VerifiablePresentation: {
+                    type: string;
+                    properties: {
+                        proof: {
+                            $ref: string;
+                        };
+                        holder: {
+                            type: string;
+                        };
+                        verifiableCredential: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                        };
+                        type: {
+                            anyOf: ({
+                                type: string;
+                                items: {
+                                    type: string;
+                                };
+                            } | {
+                                type: string;
+                                items?: undefined;
+                            })[];
+                        };
+                        "@context": {
+                            anyOf: ({
+                                type: string;
+                                items: {
+                                    type: string;
+                                };
+                            } | {
+                                type: string;
+                                items?: undefined;
+                            })[];
+                        };
+                        verifier: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        issuanceDate: {
+                            type: string;
+                        };
+                        expirationDate: {
+                            type: string;
+                        };
+                        id: {
+                            type: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IVerifyCredentialLDArgs: {
+                    type: string;
+                    properties: {
+                        credential: {
+                            $ref: string;
+                            description: string;
+                        };
+                        fetchRemoteContexts: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    additionalProperties: {
+                        description: string;
+                    };
+                    description: string;
+                };
+                IVerifyPresentationLDArgs: {
+                    type: string;
+                    properties: {
+                        presentation: {
+                            $ref: string;
+                            description: string;
+                        };
+                        challenge: {
+                            type: string;
+                            description: string;
+                        };
+                        domain: {
+                            type: string;
+                            description: string;
+                        };
+                        fetchRemoteContexts: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    additionalProperties: {
+                        description: string;
+                    };
+                    description: string;
+                };
+            };
+            methods: {
+                createVerifiableCredentialLD: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        $ref: string;
+                    };
+                };
+                createVerifiablePresentationLD: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        $ref: string;
+                    };
+                };
+                verifyCredentialLD: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+                verifyPresentationLD: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+            };
+        };
+    };
 ```

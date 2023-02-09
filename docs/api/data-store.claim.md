@@ -22,16 +22,16 @@ export declare class Claim extends BaseEntity
 
 ## Properties
 
-| Property                                                | Modifiers | Type                                       | Description                            |
-| ------------------------------------------------------- | --------- | ------------------------------------------ | -------------------------------------- |
-| [context](./data-store.claim.context.md)                |           | string\[\]                                 | <b><i>(BETA)</i></b>                   |
-| [credential](./data-store.claim.credential.md)          |           | [Credential](./data-store.credential_2.md) | <b><i>(BETA)</i></b>                   |
-| [credentialType](./data-store.claim.credentialtype.md)  |           | string\[\]                                 | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./data-store.claim.expirationdate.md) |           | Date                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash](./data-store.claim.hash.md)                      |           | string                                     | <b><i>(BETA)</i></b>                   |
-| [isObj](./data-store.claim.isobj.md)                    |           | boolean                                    | <b><i>(BETA)</i></b>                   |
-| [issuanceDate](./data-store.claim.issuancedate.md)      |           | Date                                       | <b><i>(BETA)</i></b>                   |
-| [issuer](./data-store.claim.issuer.md)                  |           | [Identifier](./data-store.identifier.md)   | <b><i>(BETA)</i></b>                   |
-| [subject?](./data-store.claim.subject.md)               |           | [Identifier](./data-store.identifier.md)   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store.claim.type.md)                      |           | string                                     | <b><i>(BETA)</i></b>                   |
-| [value](./data-store.claim.value.md)                    |           | string &#124; null                         | <b><i>(BETA)</i></b>                   |
+| Property                                                | Modifiers | Type                                                       | Description                            |
+| ------------------------------------------------------- | --------- | ---------------------------------------------------------- | -------------------------------------- |
+| [context](./data-store.claim.context.md)                |           | string\[\]                                                 | <b><i>(BETA)</i></b>                   |
+| [credential](./data-store.claim.credential.md)          |           | Relation&lt;[Credential](./data-store.credential_2.md)&gt; | <b><i>(BETA)</i></b>                   |
+| [credentialType](./data-store.claim.credentialtype.md)  |           | string\[\]                                                 | <b><i>(BETA)</i></b>                   |
+| [expirationDate?](./data-store.claim.expirationdate.md) |           | Date                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [hash](./data-store.claim.hash.md)                      |           | string                                                     | <b><i>(BETA)</i></b>                   |
+| [isObj](./data-store.claim.isobj.md)                    |           | boolean                                                    | <b><i>(BETA)</i></b>                   |
+| [issuanceDate](./data-store.claim.issuancedate.md)      |           | Date                                                       | <b><i>(BETA)</i></b>                   |
+| [issuer](./data-store.claim.issuer.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;   | <b><i>(BETA)</i></b>                   |
+| [subject?](./data-store.claim.subject.md)               |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [type](./data-store.claim.type.md)                      |           | string                                                     | <b><i>(BETA)</i></b>                   |
+| [value](./data-store.claim.value.md)                    |           | string &#124; null                                         | <b><i>(BETA)</i></b>                   |

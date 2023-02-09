@@ -26,9 +26,3 @@ Provides a [plugin](./did-discovery.ididdiscovery.md) for the [Agent](./core.age
 | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md)     | <p><b><i>(BETA)</i></b> Contains the parameters of a DID Discovery Request.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 | [IDIDDiscoveryDiscoverDidResult](./did-discovery.ididdiscoverydiscoverdidresult.md) | <p><b><i>(BETA)</i></b> DID Discovery results.</p><p>This API may change without a BREAKING CHANGE notice.</p>                              |
 | [IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)       | <p><b><i>(BETA)</i></b> Discovery results from one provider.</p><p>This API may change without a BREAKING CHANGE notice.</p>                |
-
-## Variables
-
-| Variable                            | Description                                                                                                                                                                                                  |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [schema](./did-discovery.schema.md) | <p><b><i>(BETA)</i></b> The parameter and return type schemas for the methods of the [DIDDiscovery](./did-discovery.diddiscovery.md) plugin.</p><p>This API may change without a BREAKING CHANGE notice.</p> |

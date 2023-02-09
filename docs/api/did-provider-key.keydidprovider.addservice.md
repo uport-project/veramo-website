@@ -22,10 +22,10 @@ addService({ identifier, service, options }: {
 
 ## Parameters
 
-| Parameter                        | Type                                                                                                          | Description |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, service, options } | { identifier: [IIdentifier](./core.iidentifier.md); service: [IService](./core.iservice.md); options?: any; } |             |
-| context                          | IContext                                                                                                      |             |
+| Parameter                        | Type                                                           | Description |
+| -------------------------------- | -------------------------------------------------------------- | ----------- |
+| { identifier, service, options } | { identifier: IIdentifier; service: IService; options?: any; } |             |
+| context                          | IContext                                                       |             |
 
 <b>Returns:</b>
 

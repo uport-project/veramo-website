@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerRemoveService() method
 
-Removes a service from a DID Document
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,13 +16,11 @@ didManagerRemoveService({ did, id, options }: IDIDManagerRemoveServiceArgs, cont
 
 ## Parameters
 
-| Parameter            | Type                                                                                 | Description |
-| -------------------- | ------------------------------------------------------------------------------------ | ----------- |
-| { did, id, options } | [IDIDManagerRemoveServiceArgs](./core.ididmanagerremoveserviceargs.md)               |             |
-| context              | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter            | Type                             | Description |
+| -------------------- | -------------------------------- | ----------- |
+| { did, id, options } | IDIDManagerRemoveServiceArgs     |             |
+| context              | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 
 Promise&lt;any&gt;
-
-identifier provider specific response. Can be txHash, etc,

@@ -31,9 +31,9 @@ const plugin = new DataStoreJson(dataStore)
 | ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------- | ----------- |
 | [claims](./data-store-json.browserlocalstoragestore.claims.md)               |           | Record&lt;string, [ClaimTableEntry](./data-store-json.claimtableentry.md)&gt;               |             |
 | [credentials](./data-store-json.browserlocalstoragestore.credentials.md)     |           | Record&lt;string, [CredentialTableEntry](./data-store-json.credentialtableentry.md)&gt;     |             |
-| [dids](./data-store-json.browserlocalstoragestore.dids.md)                   |           | Record&lt;string, [IIdentifier](./core.iidentifier.md)&gt;                                  |             |
-| [keys](./data-store-json.browserlocalstoragestore.keys.md)                   |           | Record&lt;string, [ManagedKeyInfo](./core.managedkeyinfo.md)&gt;                            |             |
-| [messages](./data-store-json.browserlocalstoragestore.messages.md)           |           | Record&lt;string, [IMessage](./core.imessage.md)&gt;                                        |             |
+| [dids](./data-store-json.browserlocalstoragestore.dids.md)                   |           | Record&lt;string, IIdentifier&gt;                                                           |             |
+| [keys](./data-store-json.browserlocalstoragestore.keys.md)                   |           | Record&lt;string, ManagedKeyInfo&gt;                                                        |             |
+| [messages](./data-store-json.browserlocalstoragestore.messages.md)           |           | Record&lt;string, IMessage&gt;                                                              |             |
 | [notifyUpdate](./data-store-json.browserlocalstoragestore.notifyupdate.md)   |           | [DiffCallback](./data-store-json.diffcallback.md)                                           |             |
 | [presentations](./data-store-json.browserlocalstoragestore.presentations.md) |           | Record&lt;string, [PresentationTableEntry](./data-store-json.presentationtableentry.md)&gt; |             |
 | [privateKeys](./data-store-json.browserlocalstoragestore.privatekeys.md)     |           | Record&lt;string, [ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;               |             |

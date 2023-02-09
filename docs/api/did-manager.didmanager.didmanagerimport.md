@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerImport() method
 
-Imports identifier
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,11 +16,11 @@ didManagerImport(identifier: MinimalImportableIdentifier, context: IAgentContext
 
 ## Parameters
 
-| Parameter  | Type                                                                                 | Description |
-| ---------- | ------------------------------------------------------------------------------------ | ----------- |
-| identifier | [MinimalImportableIdentifier](./core.minimalimportableidentifier.md)                 |             |
-| context    | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter  | Type                             | Description |
+| ---------- | -------------------------------- | ----------- |
+| identifier | MinimalImportableIdentifier      |             |
+| context    | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
+Promise&lt;IIdentifier&gt;

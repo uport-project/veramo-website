@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerGet() method
 
-Returns a specific identifier
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,10 +16,10 @@ didManagerGet({ did }: IDIDManagerGetArgs): Promise<IIdentifier>;
 
 ## Parameters
 
-| Parameter | Type                                               | Description |
-| --------- | -------------------------------------------------- | ----------- |
-| { did }   | [IDIDManagerGetArgs](./core.ididmanagergetargs.md) |             |
+| Parameter | Type               | Description |
+| --------- | ------------------ | ----------- |
+| { did }   | IDIDManagerGetArgs |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
+Promise&lt;IIdentifier&gt;

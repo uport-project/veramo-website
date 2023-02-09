@@ -8,8 +8,6 @@ hide_title: true
 
 ## KeyManager.keyManagerDecryptJWE() method
 
-Decrypts data This API may change without a BREAKING CHANGE notice.
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,9 +16,9 @@ keyManagerDecryptJWE({ kid, data }: IKeyManagerDecryptJWEArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter     | Type                                                             | Description |
-| ------------- | ---------------------------------------------------------------- | ----------- |
-| { kid, data } | [IKeyManagerDecryptJWEArgs](./core.ikeymanagerdecryptjweargs.md) |             |
+| Parameter     | Type                      | Description |
+| ------------- | ------------------------- | ----------- |
+| { kid, data } | IKeyManagerDecryptJWEArgs |             |
 
 <b>Returns:</b>
 

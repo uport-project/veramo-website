@@ -34,9 +34,9 @@ export declare class PrivateKeyStoreJson extends AbstractPrivateKeyStore
 
 ## Methods
 
-| Method                                                               | Modifiers | Description          |
-| -------------------------------------------------------------------- | --------- | -------------------- |
-| [delete({ alias })](./data-store-json.privatekeystorejson.delete.md) |           | <b><i>(BETA)</i></b> |
-| [get({ alias })](./data-store-json.privatekeystorejson.get.md)       |           | <b><i>(BETA)</i></b> |
-| [import(args)](./data-store-json.privatekeystorejson.import.md)      |           | <b><i>(BETA)</i></b> |
-| [list()](./data-store-json.privatekeystorejson.list.md)              |           | <b><i>(BETA)</i></b> |
+| Method                                                                     | Modifiers | Description          |
+| -------------------------------------------------------------------------- | --------- | -------------------- |
+| [deleteKey({ alias })](./data-store-json.privatekeystorejson.deletekey.md) |           | <b><i>(BETA)</i></b> |
+| [getKey({ alias })](./data-store-json.privatekeystorejson.getkey.md)       |           | <b><i>(BETA)</i></b> |
+| [importKey(args)](./data-store-json.privatekeystorejson.importkey.md)      |           | <b><i>(BETA)</i></b> |
+| [listKeys()](./data-store-json.privatekeystorejson.listkeys.md)            |           | <b><i>(BETA)</i></b> |

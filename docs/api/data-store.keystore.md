@@ -30,9 +30,9 @@ export declare class KeyStore extends AbstractKeyStore
 
 ## Methods
 
-| Method                                             | Modifiers | Description |
-| -------------------------------------------------- | --------- | ----------- |
-| [delete({ kid })](./data-store.keystore.delete.md) |           |             |
-| [get({ kid })](./data-store.keystore.get.md)       |           |             |
-| [import(args)](./data-store.keystore.import.md)    |           |             |
-| [list(args)](./data-store.keystore.list.md)        |           |             |
+| Method                                                   | Modifiers | Description |
+| -------------------------------------------------------- | --------- | ----------- |
+| [deleteKey({ kid })](./data-store.keystore.deletekey.md) |           |             |
+| [getKey({ kid })](./data-store.keystore.getkey.md)       |           |             |
+| [importKey(args)](./data-store.keystore.importkey.md)    |           |             |
+| [listKeys(args)](./data-store.keystore.listkeys.md)      |           |             |

@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Gathers the required credentials necessary to fulfill a Selective Disclosure Request. It uses a [IDataStoreORM](./core.idatastoreorm.md) plugin implementation to query the local database for the required credentials.
+Gathers the required credentials necessary to fulfill a Selective Disclosure Request. It uses a plugin implementation to query the local database for the required credentials.
 
 <b>Signature:</b>
 
@@ -23,7 +23,7 @@ getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, contex
 | Parameter | Type                                                                                                 | Description                                                                                                                                |
 | --------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) | Contains the Request to be fulfilled and the DID of the subject                                                                            |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IDataStoreORM](./core.idatastoreorm.md)&gt;             | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| context   | IAgentContext&lt;IDataStoreORM&gt;                                                                   | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

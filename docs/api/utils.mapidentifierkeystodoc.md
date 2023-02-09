@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Maps the keys of a locally managed [IIdentifier](./core.iidentifier.md) to the corresponding entries from the DID document.
+Maps the keys of a locally managed to the corresponding entries from the DID document.
 
 <b>Signature:</b>
 
@@ -24,11 +24,11 @@ export declare function mapIdentifierKeysToDoc(
 
 ## Parameters
 
-| Parameter  | Type                                                                             | Description                                                                                                                                                                                                       |
-| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| identifier | [IIdentifier](./core.iidentifier.md)                                             | the identifier to be mapped                                                                                                                                                                                       |
-| section    | [DIDDocumentSection](./core.diddocumentsection.md) &#124; undefined              | the section of the DID document to be mapped (see [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)), but can also be <code>verificationMethod</code> to map all the keys. |
-| context    | [IAgentContext](./core.iagentcontext.md)&lt;[IResolver](./core.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core.iresolver.md) implementation that can resolve the DID document of the identifier.                                                               |
+| Parameter  | Type                                | Description                                                                                                                                                                                                       |
+| ---------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| identifier | IIdentifier                         | the identifier to be mapped                                                                                                                                                                                       |
+| section    | DIDDocumentSection &#124; undefined | the section of the DID document to be mapped (see [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)), but can also be <code>verificationMethod</code> to map all the keys. |
+| context    | IAgentContext&lt;IResolver&gt;      | the veramo agent context, which must contain a implementation that can resolve the DID document of the identifier.                                                                                                |
 
 <b>Returns:</b>
 

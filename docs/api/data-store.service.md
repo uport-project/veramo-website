@@ -24,10 +24,10 @@ export declare class Service extends BaseEntity
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                                     | Description                            |
-| ---------------------------------------------------------- | --------- | ---------------------------------------- | -------------------------------------- |
-| [description?](./data-store.service.description.md)        |           | string                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id](./data-store.service.id.md)                           |           | string                                   | <b><i>(BETA)</i></b>                   |
-| [identifier?](./data-store.service.identifier.md)          |           | [Identifier](./data-store.identifier.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                   | <b><i>(BETA)</i></b>                   |
-| [type](./data-store.service.type.md)                       |           | string                                   | <b><i>(BETA)</i></b>                   |
+| Property                                                   | Modifiers | Type                                                     | Description                            |
+| ---------------------------------------------------------- | --------- | -------------------------------------------------------- | -------------------------------------- |
+| [description?](./data-store.service.description.md)        |           | string                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [id](./data-store.service.id.md)                           |           | string                                                   | <b><i>(BETA)</i></b>                   |
+| [identifier?](./data-store.service.identifier.md)          |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt; | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                                   | <b><i>(BETA)</i></b>                   |
+| [type](./data-store.service.type.md)                       |           | string                                                   | <b><i>(BETA)</i></b>                   |

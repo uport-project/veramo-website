@@ -23,7 +23,7 @@ validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, contex
 | Parameter | Type                                                                                                 | Description                                                                                                                                |
 | --------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | args      | [IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md) | Contains the request and the response <code>Presentation</code> that needs to be checked.                                                  |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;{}&gt;                                                   | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| context   | IAgentContext&lt;{}&gt;                                                                              | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

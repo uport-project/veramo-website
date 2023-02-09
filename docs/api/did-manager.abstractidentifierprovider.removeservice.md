@@ -20,10 +20,10 @@ abstract removeService(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                 | Description |
-| --------- | ------------------------------------------------------------------------------------ | ----------- |
-| args      | { identifier: [IIdentifier](./core.iidentifier.md); id: string; options?: any; }     |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter | Type                                                    | Description |
+| --------- | ------------------------------------------------------- | ----------- |
+| args      | { identifier: IIdentifier; id: string; options?: any; } |             |
+| context   | IAgentContext&lt;IKeyManager&gt;                        |             |
 
 <b>Returns:</b>
 

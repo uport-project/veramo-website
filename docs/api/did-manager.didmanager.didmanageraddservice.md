@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerAddService() method
 
-Adds a service to a DID Document
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,13 +16,11 @@ didManagerAddService({ did, service, options }: IDIDManagerAddServiceArgs, conte
 
 ## Parameters
 
-| Parameter                 | Type                                                                                 | Description |
-| ------------------------- | ------------------------------------------------------------------------------------ | ----------- |
-| { did, service, options } | [IDIDManagerAddServiceArgs](./core.ididmanageraddserviceargs.md)                     |             |
-| context                   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter                 | Type                             | Description |
+| ------------------------- | -------------------------------- | ----------- |
+| { did, service, options } | IDIDManagerAddServiceArgs        |             |
+| context                   | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 
 Promise&lt;any&gt;
-
-identifier provider specific response. Can be txHash, etc,

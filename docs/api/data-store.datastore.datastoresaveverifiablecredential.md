@@ -18,9 +18,9 @@ dataStoreSaveVerifiableCredential(args: IDataStoreSaveVerifiableCredentialArgs):
 
 ## Parameters
 
-| Parameter | Type                                                                                       | Description |
-| --------- | ------------------------------------------------------------------------------------------ | ----------- |
-| args      | [IDataStoreSaveVerifiableCredentialArgs](./core.idatastoresaveverifiablecredentialargs.md) |             |
+| Parameter | Type                                   | Description |
+| --------- | -------------------------------------- | ----------- |
+| args      | IDataStoreSaveVerifiableCredentialArgs |             |
 
 <b>Returns:</b>
 

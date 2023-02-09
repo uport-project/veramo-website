@@ -30,9 +30,9 @@ export declare class DIDStore extends AbstractDIDStore
 
 ## Methods
 
-| Method                                                         | Modifiers | Description |
-| -------------------------------------------------------------- | --------- | ----------- |
-| [delete({ did })](./data-store.didstore.delete.md)             |           |             |
-| [get({ did, alias, provider, })](./data-store.didstore.get.md) |           |             |
-| [import(args)](./data-store.didstore.import.md)                |           |             |
-| [list(args)](./data-store.didstore.list.md)                    |           |             |
+| Method                                                               | Modifiers | Description |
+| -------------------------------------------------------------------- | --------- | ----------- |
+| [deleteDID({ did })](./data-store.didstore.deletedid.md)             |           |             |
+| [getDID({ did, alias, provider, })](./data-store.didstore.getdid.md) |           |             |
+| [importDID(args)](./data-store.didstore.importdid.md)                |           |             |
+| [listDIDs(args)](./data-store.didstore.listdids.md)                  |           |             |

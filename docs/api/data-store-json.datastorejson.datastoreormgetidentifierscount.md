@@ -18,10 +18,10 @@ dataStoreORMGetIdentifiersCount(args: FindArgs<TIdentifiersColumns>, context: Au
 
 ## Parameters
 
-| Parameter | Type                                                                                       | Description |
-| --------- | ------------------------------------------------------------------------------------------ | ----------- |
-| args      | [FindArgs](./core.findargs.md)&lt;[TIdentifiersColumns](./core.tidentifierscolumns.md)&gt; |             |
-| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                     |             |
+| Parameter | Type                                | Description |
+| --------- | ----------------------------------- | ----------- |
+| args      | FindArgs&lt;TIdentifiersColumns&gt; |             |
+| context   | AuthorizedDIDContext                |             |
 
 <b>Returns:</b>
 

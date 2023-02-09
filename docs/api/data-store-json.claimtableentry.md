@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent the claims contained in a Verifiable Credential in a way that facilitates querying using the [IDataStoreORM](./core.idatastoreorm.md) interface.
+This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent the claims contained in a Verifiable Credential in a way that facilitates querying using the interface.
 
 This API may change in future versions without a BREAKING CHANGE notice.
 

@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDResolverPlugin.getDIDComponentById() method
 
-Dereferences a DID URL fragment and returns the corresponding DID document entry.
-
 <b>Signature:</b>
 
 ```typescript
@@ -22,12 +20,10 @@ getDIDComponentById({ didDocument, didUrl, section, }: {
 
 ## Parameters
 
-| Parameter                         | Type                                                                                                        | Description |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
-| { didDocument, didUrl, section, } | { didDocument: DIDDocument; didUrl: string; section?: [DIDDocumentSection](./core.diddocumentsection.md); } |             |
+| Parameter                         | Type                                                                        | Description |
+| --------------------------------- | --------------------------------------------------------------------------- | ----------- |
+| { didDocument, didUrl, section, } | { didDocument: DIDDocument; didUrl: string; section?: DIDDocumentSection; } |             |
 
 <b>Returns:</b>
 
 Promise&lt;VerificationMethod \| ServiceEndpoint&gt;
-
-a `Promise` containing the or

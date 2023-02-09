@@ -8,8 +8,6 @@ hide_title: true
 
 ## KeyManager.keyManagerEncryptJWE() method
 
-Encrypts data This API may change without a BREAKING CHANGE notice.
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,9 +16,9 @@ keyManagerEncryptJWE({ kid, to, data }: IKeyManagerEncryptJWEArgs): Promise<stri
 
 ## Parameters
 
-| Parameter         | Type                                                             | Description |
-| ----------------- | ---------------------------------------------------------------- | ----------- |
-| { kid, to, data } | [IKeyManagerEncryptJWEArgs](./core.ikeymanagerencryptjweargs.md) |             |
+| Parameter         | Type                      | Description |
+| ----------------- | ------------------------- | ----------- |
+| { kid, to, data } | IKeyManagerEncryptJWEArgs |             |
 
 <b>Returns:</b>
 

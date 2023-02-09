@@ -21,9 +21,9 @@ sharedSecret(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                 | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| args      | { myKeyRef: Pick&lt;[IKey](./core.ikey.md), 'kid'&gt;; theirKey: Pick&lt;[IKey](./core.ikey.md), 'type' &#124; 'publicKeyHex'&gt;; } |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | { myKeyRef: Pick&lt;IKey, 'kid'&gt;; theirKey: Pick&lt;IKey, 'type' &#124; 'publicKeyHex'&gt;; } |             |
 
 <b>Returns:</b>
 

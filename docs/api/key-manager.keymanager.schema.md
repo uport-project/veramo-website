@@ -11,5 +11,465 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-readonly schema: any;
+readonly schema: {
+        components: {
+            schemas: {
+                IKeyManagerCreateArgs: {
+                    type: string;
+                    properties: {
+                        type: {
+                            $ref: string;
+                            description: string;
+                        };
+                        kms: {
+                            type: string;
+                            description: string;
+                        };
+                        meta: {
+                            $ref: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                TKeyType: {
+                    type: string;
+                    enum: string[];
+                    description: string;
+                };
+                KeyMetadata: {
+                    type: string;
+                    properties: {
+                        algorithms: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                    };
+                    description: string;
+                };
+                ManagedKeyInfo: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        kms: {
+                            type: string;
+                            description: string;
+                        };
+                        type: {
+                            $ref: string;
+                            description: string;
+                        };
+                        publicKeyHex: {
+                            type: string;
+                            description: string;
+                        };
+                        meta: {
+                            anyOf: ({
+                                $ref: string;
+                                type?: undefined;
+                            } | {
+                                type: string;
+                                $ref?: undefined;
+                            })[];
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKeyManagerDecryptJWEArgs: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        data: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKeyManagerDeleteArgs: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKeyManagerEncryptJWEArgs: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        to: {
+                            type: string;
+                            properties: {
+                                kid: {
+                                    type: string;
+                                    description: string;
+                                };
+                                type: {
+                                    $ref: string;
+                                    description: string;
+                                };
+                                publicKeyHex: {
+                                    type: string;
+                                    description: string;
+                                };
+                                privateKeyHex: {
+                                    type: string;
+                                    description: string;
+                                };
+                                meta: {
+                                    anyOf: ({
+                                        $ref: string;
+                                        type?: undefined;
+                                    } | {
+                                        type: string;
+                                        $ref?: undefined;
+                                    })[];
+                                    description: string;
+                                };
+                            };
+                            required: string[];
+                            description: string;
+                        };
+                        data: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKeyManagerGetArgs: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKey: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        kms: {
+                            type: string;
+                            description: string;
+                        };
+                        type: {
+                            $ref: string;
+                            description: string;
+                        };
+                        publicKeyHex: {
+                            type: string;
+                            description: string;
+                        };
+                        privateKeyHex: {
+                            type: string;
+                            description: string;
+                        };
+                        meta: {
+                            anyOf: ({
+                                $ref: string;
+                                type?: undefined;
+                            } | {
+                                type: string;
+                                $ref?: undefined;
+                            })[];
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                MinimalImportableKey: {
+                    $ref: string;
+                    description: string;
+                };
+                "RequireOnly<IKey,(\"privateKeyHex\"|\"type\"|\"kms\")>": {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        kms: {
+                            type: string;
+                            description: string;
+                        };
+                        type: {
+                            $ref: string;
+                            description: string;
+                        };
+                        publicKeyHex: {
+                            type: string;
+                            description: string;
+                        };
+                        privateKeyHex: {
+                            type: string;
+                            description: string;
+                        };
+                        meta: {
+                            anyOf: ({
+                                $ref: string;
+                                type?: undefined;
+                            } | {
+                                type: string;
+                                $ref?: undefined;
+                            })[];
+                            description: string;
+                        };
+                    };
+                    description: string;
+                };
+                IKeyManagerSharedSecretArgs: {
+                    type: string;
+                    properties: {
+                        secretKeyRef: {
+                            type: string;
+                            description: string;
+                        };
+                        publicKey: {
+                            type: string;
+                            properties: {
+                                publicKeyHex: {
+                                    type: string;
+                                    description: string;
+                                };
+                                type: {
+                                    $ref: string;
+                                    description: string;
+                                };
+                            };
+                            required: string[];
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKeyManagerSignArgs: {
+                    type: string;
+                    properties: {
+                        keyRef: {
+                            type: string;
+                            description: string;
+                        };
+                        algorithm: {
+                            type: string;
+                            description: string;
+                        };
+                        data: {
+                            type: string;
+                            description: string;
+                        };
+                        encoding: {
+                            type: string;
+                            enum: string[];
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKeyManagerSignEthTXArgs: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        transaction: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKeyManagerSignJWTArgs: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        data: {
+                            anyOf: ({
+                                type: string;
+                                properties?: undefined;
+                                required?: undefined;
+                                additionalProperties?: undefined;
+                            } | {
+                                type: string;
+                                properties: {
+                                    BYTES_PER_ELEMENT: {
+                                        type: string;
+                                    };
+                                    buffer: {
+                                        anyOf: ({
+                                            type: string;
+                                            properties: {
+                                                byteLength: {
+                                                    type: string;
+                                                };
+                                            };
+                                            required: string[];
+                                        } | {
+                                            type?: undefined;
+                                            properties?: undefined;
+                                            required?: undefined;
+                                        })[];
+                                    };
+                                    byteLength: {
+                                        type: string;
+                                    };
+                                    byteOffset: {
+                                        type: string;
+                                    };
+                                    length: {
+                                        type: string;
+                                    };
+                                };
+                                required: string[];
+                                additionalProperties: {
+                                    type: string;
+                                };
+                            })[];
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+            };
+            methods: {
+                keyManagerCreate: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        $ref: string;
+                    };
+                };
+                keyManagerDecryptJWE: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+                keyManagerDelete: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+                keyManagerEncryptJWE: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+                keyManagerGet: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        $ref: string;
+                    };
+                };
+                keyManagerGetKeyManagementSystems: {
+                    description: string;
+                    arguments: {
+                        type: string;
+                    };
+                    returnType: {
+                        type: string;
+                        items: {
+                            type: string;
+                        };
+                    };
+                };
+                keyManagerImport: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        $ref: string;
+                    };
+                };
+                keyManagerSharedSecret: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+                keyManagerSign: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+                keyManagerSignEthTX: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+                keyManagerSignJWT: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                    };
+                };
+            };
+        };
+    };
 ```

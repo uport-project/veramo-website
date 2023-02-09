@@ -18,11 +18,11 @@ dataStoreORMGetMessages(args: FindArgs<TMessageColumns>, context: AuthorizedDIDC
 
 ## Parameters
 
-| Parameter | Type                                                                               | Description |
-| --------- | ---------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./core.findargs.md)&lt;[TMessageColumns](./core.tmessagecolumns.md)&gt; |             |
-| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                             |             |
+| Parameter | Type                            | Description |
+| --------- | ------------------------------- | ----------- |
+| args      | FindArgs&lt;TMessageColumns&gt; |             |
+| context   | AuthorizedDIDContext            |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IMessage](./core.imessage.md)\[\]&gt;
+Promise&lt;IMessage\[\]&gt;

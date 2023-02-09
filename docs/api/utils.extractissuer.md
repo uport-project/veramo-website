@@ -27,9 +27,9 @@ export declare function extractIssuer(
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                                                                                 | Description                                                                                                                                                    |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| input     | [W3CVerifiableCredential](./core.w3cverifiablecredential.md) &#124; [W3CVerifiablePresentation](./core.w3cverifiablepresentation.md) &#124; [CredentialPayload](./core.credentialpayload.md) &#124; [PresentationPayload](./core.presentationpayload.md) &#124; null | <p><i>(Optional)</i> the credential or presentation whose issuer/holder needs to be extracted.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Parameter | Type                                                                                                                     | Description                                                                                                                                                    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| input     | W3CVerifiableCredential &#124; W3CVerifiablePresentation &#124; CredentialPayload &#124; PresentationPayload &#124; null | <p><i>(Optional)</i> the credential or presentation whose issuer/holder needs to be extracted.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

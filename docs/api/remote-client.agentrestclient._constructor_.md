@@ -23,6 +23,6 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                              | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | { url: string; enabledMethods: string\[\]; schema?: [IAgentPluginSchema](./core.iagentpluginschema.md); headers?: Record&lt;string, string&gt;; } |             |
+| Parameter | Type                                                                                                              | Description |
+| --------- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
+| options   | { url: string; enabledMethods: string\[\]; schema?: IAgentPluginSchema; headers?: Record&lt;string, string&gt;; } |             |

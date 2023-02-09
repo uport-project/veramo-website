@@ -18,7 +18,7 @@ This is the main entry point into the API of the DID Agent Framework. When plugi
 export declare class Agent implements IAgent
 ```
 
-<b>Implements:</b> [IAgent](./core.iagent.md)
+<b>Implements:</b> IAgent
 
 ## Constructors
 
@@ -28,10 +28,10 @@ export declare class Agent implements IAgent
 
 ## Properties
 
-| Property                            | Modifiers             | Type                                           | Description                          |
-| ----------------------------------- | --------------------- | ---------------------------------------------- | ------------------------------------ |
-| [context?](./core.agent.context.md) | <code>readonly</code> | Record&lt;string, any&gt;                      | <i>(Optional)</i>                    |
-| [methods](./core.agent.methods.md)  | <code>readonly</code> | [IPluginMethodMap](./core.ipluginmethodmap.md) | The map of plugin + override methods |
+| Property                            | Modifiers             | Type                      | Description                          |
+| ----------------------------------- | --------------------- | ------------------------- | ------------------------------------ |
+| [context?](./core.agent.context.md) | <code>readonly</code> | Record&lt;string, any&gt; | <i>(Optional)</i>                    |
+| [methods](./core.agent.methods.md)  | <code>readonly</code> | IPluginMethodMap          | The map of plugin + override methods |
 
 ## Methods
 

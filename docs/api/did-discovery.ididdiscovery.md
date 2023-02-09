@@ -20,7 +20,7 @@ This API may change without a BREAKING CHANGE notice.
 export interface IDIDDiscovery extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core.ipluginmethodmap.md)
+<b>Extends:</b> IPluginMethodMap
 
 ## Methods
 

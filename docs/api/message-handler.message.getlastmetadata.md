@@ -16,4 +16,4 @@ getLastMetaData(): IMetaData | null;
 
 <b>Returns:</b>
 
-[IMetaData](./core.imetadata.md) \| null
+IMetaData \| null

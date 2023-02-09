@@ -16,9 +16,9 @@ addMetaData(meta: IMetaData): void;
 
 ## Parameters
 
-| Parameter | Type                             | Description |
-| --------- | -------------------------------- | ----------- |
-| meta      | [IMetaData](./core.imetadata.md) |             |
+| Parameter | Type      | Description |
+| --------- | --------- | ----------- |
+| meta      | IMetaData |             |
 
 <b>Returns:</b>
 

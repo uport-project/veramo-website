@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Converts any Secp256k1 public keys of an [IIdentifier](./core.iidentifier.md) to their compressed form.
+Converts any Secp256k1 public keys of an to their compressed form.
 
 <b>Signature:</b>
 
@@ -20,13 +20,13 @@ export declare function compressIdentifierSecp256k1Keys(identifier: IIdentifier)
 
 ## Parameters
 
-| Parameter  | Type                                 | Description              |
-| ---------- | ------------------------------------ | ------------------------ |
-| identifier | [IIdentifier](./core.iidentifier.md) | the identifier with keys |
+| Parameter  | Type        | Description              |
+| ---------- | ----------- | ------------------------ |
+| identifier | IIdentifier | the identifier with keys |
 
 <b>Returns:</b>
 
-[IKey](./core.ikey.md)\[\]
+IKey\[\]
 
 the array of keys where the Secp256k1 entries are compressed.
 

@@ -34,9 +34,9 @@ export declare class KeyStoreJson extends AbstractKeyStore
 
 ## Methods
 
-| Method                                                      | Modifiers | Description          |
-| ----------------------------------------------------------- | --------- | -------------------- |
-| [delete({ kid })](./data-store-json.keystorejson.delete.md) |           | <b><i>(BETA)</i></b> |
-| [get({ kid })](./data-store-json.keystorejson.get.md)       |           | <b><i>(BETA)</i></b> |
-| [import(args)](./data-store-json.keystorejson.import.md)    |           | <b><i>(BETA)</i></b> |
-| [list(args)](./data-store-json.keystorejson.list.md)        |           | <b><i>(BETA)</i></b> |
+| Method                                                            | Modifiers | Description          |
+| ----------------------------------------------------------------- | --------- | -------------------- |
+| [deleteKey({ kid })](./data-store-json.keystorejson.deletekey.md) |           | <b><i>(BETA)</i></b> |
+| [getKey({ kid })](./data-store-json.keystorejson.getkey.md)       |           | <b><i>(BETA)</i></b> |
+| [importKey(args)](./data-store-json.keystorejson.importkey.md)    |           | <b><i>(BETA)</i></b> |
+| [listKeys(args)](./data-store-json.keystorejson.listkeys.md)      |           | <b><i>(BETA)</i></b> |

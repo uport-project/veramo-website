@@ -18,10 +18,10 @@ createKey({ type }: {
 
 ## Parameters
 
-| Parameter | Type                                      | Description |
-| --------- | ----------------------------------------- | ----------- |
-| { type }  | { type: [TKeyType](./core.tkeytype.md); } |             |
+| Parameter | Type                | Description |
+| --------- | ------------------- | ----------- |
+| { type }  | { type: TKeyType; } |             |
 
 <b>Returns:</b>
 
-Promise&lt;[ManagedKeyInfo](./core.managedkeyinfo.md)&gt;
+Promise&lt;ManagedKeyInfo&gt;

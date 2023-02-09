@@ -20,9 +20,9 @@ export declare abstract class AbstractKeyStore
 
 ## Methods
 
-| Method                                                   | Modifiers | Description |
-| -------------------------------------------------------- | --------- | ----------- |
-| [delete(args)](./key-manager.abstractkeystore.delete.md) |           |             |
-| [get(args)](./key-manager.abstractkeystore.get.md)       |           |             |
-| [import(args)](./key-manager.abstractkeystore.import.md) |           |             |
-| [list(args)](./key-manager.abstractkeystore.list.md)     |           |             |
+| Method                                                         | Modifiers | Description |
+| -------------------------------------------------------------- | --------- | ----------- |
+| [deleteKey(args)](./key-manager.abstractkeystore.deletekey.md) |           |             |
+| [getKey(args)](./key-manager.abstractkeystore.getkey.md)       |           |             |
+| [importKey(args)](./key-manager.abstractkeystore.importkey.md) |           |             |
+| [listKeys(args)](./key-manager.abstractkeystore.listkeys.md)   |           |             |

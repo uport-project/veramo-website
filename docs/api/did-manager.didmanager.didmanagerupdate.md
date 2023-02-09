@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerUpdate() method
 
-Updates the DID document of a managed [DID](./core.iidentifier.md).
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,11 +16,11 @@ didManagerUpdate({ did, document, options }: IDIDManagerUpdateArgs, context: IAg
 
 ## Parameters
 
-| Parameter                  | Type                                                                                 | Description                                                                                                                                                                                                                                              |
-| -------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| { did, document, options } | [IDIDManagerUpdateArgs](./core.ididmanagerupdateargs.md)                             |                                                                                                                                                                                                                                                          |
-| context                    | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core.ikeymanager.md) methods. |
+| Parameter                  | Type                             | Description |
+| -------------------------- | -------------------------------- | ----------- |
+| { did, document, options } | IDIDManagerUpdateArgs            |             |
+| context                    | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
+Promise&lt;IIdentifier&gt;

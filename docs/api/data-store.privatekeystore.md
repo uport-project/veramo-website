@@ -8,7 +8,7 @@ hide_title: true
 
 ## PrivateKeyStore class
 
-An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that uses a TypeORM database connection to store private key material.
+An implementation of that uses a TypeORM database connection to store private key material.
 
 The keys can be encrypted while at rest if this class is initialized with an [AbstractSecretBox](./key-manager.abstractsecretbox.md) implementation.
 
@@ -28,9 +28,9 @@ export declare class PrivateKeyStore extends AbstractPrivateKeyStore
 
 ## Methods
 
-| Method                                                      | Modifiers | Description |
-| ----------------------------------------------------------- | --------- | ----------- |
-| [delete({ alias })](./data-store.privatekeystore.delete.md) |           |             |
-| [get({ alias })](./data-store.privatekeystore.get.md)       |           |             |
-| [import(args)](./data-store.privatekeystore.import.md)      |           |             |
-| [list()](./data-store.privatekeystore.list.md)              |           |             |
+| Method                                                            | Modifiers | Description |
+| ----------------------------------------------------------------- | --------- | ----------- |
+| [deleteKey({ alias })](./data-store.privatekeystore.deletekey.md) |           |             |
+| [getKey({ alias })](./data-store.privatekeystore.getkey.md)       |           |             |
+| [importKey(args)](./data-store.privatekeystore.importkey.md)      |           |             |
+| [listKeys()](./data-store.privatekeystore.listkeys.md)            |           |             |

@@ -18,10 +18,10 @@ dataStoreORMGetVerifiablePresentationsCount(args: FindArgs<TPresentationColumns>
 
 ## Parameters
 
-| Parameter | Type                                                                                         | Description |
-| --------- | -------------------------------------------------------------------------------------------- | ----------- |
-| args      | [FindArgs](./core.findargs.md)&lt;[TPresentationColumns](./core.tpresentationcolumns.md)&gt; |             |
-| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                       |             |
+| Parameter | Type                                 | Description |
+| --------- | ------------------------------------ | ----------- |
+| args      | FindArgs&lt;TPresentationColumns&gt; |             |
+| context   | AuthorizedDIDContext                 |             |
 
 <b>Returns:</b>
 

@@ -18,7 +18,7 @@ Describes the interface of a Selective Disclosure plugin.
 export interface ISelectiveDisclosure extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core.ipluginmethodmap.md)
+<b>Extends:</b> IPluginMethodMap
 
 ## Remarks
 

@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerFind() method
 
-Returns a list of managed identifiers
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,10 +16,10 @@ didManagerFind(args: IDIDManagerFindArgs): Promise<IIdentifier[]>;
 
 ## Parameters
 
-| Parameter | Type                                                 | Description                                        |
-| --------- | ---------------------------------------------------- | -------------------------------------------------- |
-| args      | [IDIDManagerFindArgs](./core.ididmanagerfindargs.md) | Required. Arguments to get the list of identifiers |
+| Parameter | Type                | Description |
+| --------- | ------------------- | ----------- |
+| args      | IDIDManagerFindArgs |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)\[\]&gt;
+Promise&lt;IIdentifier\[\]&gt;

@@ -13,5 +13,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-messages: Message[];
+messages: Relation<Message[]>
 ```

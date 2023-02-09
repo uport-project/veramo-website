@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerSetAlias() method
 
-Sets identifier alias
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,10 +16,10 @@ didManagerSetAlias({ did, alias }: IDIDManagerSetAliasArgs, context: IAgentConte
 
 ## Parameters
 
-| Parameter      | Type                                                                                 | Description                                                                                                                                                     |
-| -------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| { did, alias } | [IDIDManagerSetAliasArgs](./core.ididmanagersetaliasargs.md)                         |                                                                                                                                                                 |
-| context        | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; | <a href="/docs/agent/plugins#executing-plugin-methods">Execution context</a>. Requires <code>agent</code> that has [IKeyManager](./core.ikeymanager.md) methods |
+| Parameter      | Type                             | Description |
+| -------------- | -------------------------------- | ----------- |
+| { did, alias } | IDIDManagerSetAliasArgs          |             |
+| context        | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 

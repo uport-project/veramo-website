@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerRemoveKey() method
 
-Removes a key from a DID Document
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,13 +16,11 @@ didManagerRemoveKey({ did, kid, options }: IDIDManagerRemoveKeyArgs, context: IA
 
 ## Parameters
 
-| Parameter             | Type                                                                                 | Description |
-| --------------------- | ------------------------------------------------------------------------------------ | ----------- |
-| { did, kid, options } | [IDIDManagerRemoveKeyArgs](./core.ididmanagerremovekeyargs.md)                       |             |
-| context               | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter             | Type                             | Description |
+| --------------------- | -------------------------------- | ----------- |
+| { did, kid, options } | IDIDManagerRemoveKeyArgs         |             |
+| context               | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 
 Promise&lt;any&gt;
-
-identifier provider specific response. Can be txHash, etc,

@@ -25,8 +25,8 @@ abstract updateIdentifier?(args: {
 | Parameter | Type                                                                                      | Description |
 | --------- | ----------------------------------------------------------------------------------------- | ----------- |
 | args      | { did: string; document: Partial&lt;DIDDocument&gt;; options?: { \[x: string\]: any; }; } |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt;      |             |
+| context   | IAgentContext&lt;IKeyManager&gt;                                                          |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
+Promise&lt;IIdentifier&gt;

@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDResolverPlugin.resolveDid() method
 
-Resolves DID and returns DID Resolution Result
-
 <b>Signature:</b>
 
 ```typescript

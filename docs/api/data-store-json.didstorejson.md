@@ -34,9 +34,9 @@ export declare class DIDStoreJson extends AbstractDIDStore
 
 ## Methods
 
-| Method                                                                  | Modifiers | Description          |
-| ----------------------------------------------------------------------- | --------- | -------------------- |
-| [delete({ did })](./data-store-json.didstorejson.delete.md)             |           | <b><i>(BETA)</i></b> |
-| [get({ did, alias, provider, })](./data-store-json.didstorejson.get.md) |           | <b><i>(BETA)</i></b> |
-| [import(args)](./data-store-json.didstorejson.import.md)                |           | <b><i>(BETA)</i></b> |
-| [list(args)](./data-store-json.didstorejson.list.md)                    |           | <b><i>(BETA)</i></b> |
+| Method                                                                        | Modifiers | Description          |
+| ----------------------------------------------------------------------------- | --------- | -------------------- |
+| [deleteDID({ did })](./data-store-json.didstorejson.deletedid.md)             |           | <b><i>(BETA)</i></b> |
+| [getDID({ did, alias, provider, })](./data-store-json.didstorejson.getdid.md) |           | <b><i>(BETA)</i></b> |
+| [importDID(args)](./data-store-json.didstorejson.importdid.md)                |           | <b><i>(BETA)</i></b> |
+| [listDIDs(args)](./data-store-json.didstorejson.listdids.md)                  |           | <b><i>(BETA)</i></b> |

@@ -18,10 +18,10 @@ export declare abstract class AbstractDIDStore
 
 ## Methods
 
-| Method                                                   | Modifiers | Description |
-| -------------------------------------------------------- | --------- | ----------- |
-| [delete(args)](./did-manager.abstractdidstore.delete.md) |           |             |
-| [get(args)](./did-manager.abstractdidstore.get.md)       |           |             |
-| [get(args)](./did-manager.abstractdidstore.get_1.md)     |           |             |
-| [import(args)](./did-manager.abstractdidstore.import.md) |           |             |
-| [list(args)](./did-manager.abstractdidstore.list.md)     |           |             |
+| Method                                                         | Modifiers | Description |
+| -------------------------------------------------------------- | --------- | ----------- |
+| [deleteDID(args)](./did-manager.abstractdidstore.deletedid.md) |           |             |
+| [getDID(args)](./did-manager.abstractdidstore.getdid.md)       |           |             |
+| [getDID(args)](./did-manager.abstractdidstore.getdid_1.md)     |           |             |
+| [importDID(args)](./did-manager.abstractdidstore.importdid.md) |           |             |
+| [listDIDs(args)](./did-manager.abstractdidstore.listdids.md)   |           |             |

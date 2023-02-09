@@ -22,11 +22,11 @@ createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentCo
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                        | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                    |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[ICredentialIssuer](./core.icredentialissuer.md) &amp; [IDIDManager](./core.ididmanager.md)&gt; |             |
+| Parameter | Type                                                                                     | Description |
+| --------- | ---------------------------------------------------------------------------------------- | ----------- |
+| args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md) |             |
+| context   | IAgentContext&lt;ICredentialIssuer &amp; IDIDManager&gt;                                 |             |
 
 <b>Returns:</b>
 
-Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md)&gt;
+Promise&lt;VerifiablePresentation&gt;

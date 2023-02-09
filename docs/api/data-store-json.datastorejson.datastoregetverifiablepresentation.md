@@ -18,10 +18,10 @@ dataStoreGetVerifiablePresentation(args: IDataStoreGetVerifiablePresentationArgs
 
 ## Parameters
 
-| Parameter | Type                                                                                         | Description |
-| --------- | -------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IDataStoreGetVerifiablePresentationArgs](./core.idatastoregetverifiablepresentationargs.md) |             |
+| Parameter | Type                                    | Description |
+| --------- | --------------------------------------- | ----------- |
+| args      | IDataStoreGetVerifiablePresentationArgs |             |
 
 <b>Returns:</b>
 
-Promise&lt;[VerifiablePresentation](./core.verifiablepresentation.md)&gt;
+Promise&lt;VerifiablePresentation&gt;

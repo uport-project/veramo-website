@@ -23,7 +23,7 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Pr
 | Parameter | Type                                                                            | Description                                                             |
 | --------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md) | The param object with the properties necessary to discover DID          |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;any&gt;                             | \*RESERVED\* This is filled by the framework when the method is called. |
+| context   | IAgentContext&lt;any&gt;                                                        | \*RESERVED\* This is filled by the framework when the method is called. |
 
 <b>Returns:</b>
 

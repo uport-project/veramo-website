@@ -19,7 +19,7 @@ abstract discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<
 | Parameter | Type                                                                            | Description |
 | --------- | ------------------------------------------------------------------------------- | ----------- |
 | args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md) |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;any&gt;                             |             |
+| context   | IAgentContext&lt;any&gt;                                                        |             |
 
 <b>Returns:</b>
 

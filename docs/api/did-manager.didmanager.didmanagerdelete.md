@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerDelete() method
 
-Deletes identifier
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,10 +16,10 @@ didManagerDelete({ did }: IDIDManagerDeleteArgs, context: IAgentContext<IKeyMana
 
 ## Parameters
 
-| Parameter | Type                                                                                 | Description |
-| --------- | ------------------------------------------------------------------------------------ | ----------- |
-| { did }   | [IDIDManagerDeleteArgs](./core.ididmanagerdeleteargs.md)                             |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; |             |
+| Parameter | Type                             | Description |
+| --------- | -------------------------------- | ----------- |
+| { did }   | IDIDManagerDeleteArgs            |             |
+| context   | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 

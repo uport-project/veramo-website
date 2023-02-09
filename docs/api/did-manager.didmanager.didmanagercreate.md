@@ -8,8 +8,6 @@ hide_title: true
 
 ## DIDManager.didManagerCreate() method
 
-Creates and returns a new identifier
-
 <b>Signature:</b>
 
 ```typescript
@@ -18,11 +16,11 @@ didManagerCreate(args: IDIDManagerCreateArgs, context: IAgentContext<IKeyManager
 
 ## Parameters
 
-| Parameter | Type                                                                                 | Description                                                                                                                                                                                                                                              |
-| --------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [IDIDManagerCreateArgs](./core.ididmanagercreateargs.md)                             | Required. Arguments to create the identifier                                                                                                                                                                                                             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core.ikeymanager.md) methods. |
+| Parameter | Type                             | Description |
+| --------- | -------------------------------- | ----------- |
+| args      | IDIDManagerCreateArgs            |             |
+| context   | IAgentContext&lt;IKeyManager&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
+Promise&lt;IIdentifier&gt;

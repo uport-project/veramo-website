@@ -24,19 +24,19 @@ export declare function createAgent<T extends IPluginMethodMap, C = Record<strin
 
 ## Parameters
 
-| Parameter | Type                                                            | Description                 |
-| --------- | --------------------------------------------------------------- | --------------------------- |
-| options   | [IAgentOptions](./core.iagentoptions.md) &amp; { context?: C; } | Agent configuration options |
+| Parameter | Type                                 | Description                 |
+| --------- | ------------------------------------ | --------------------------- |
+| options   | IAgentOptions &amp; { context?: C; } | Agent configuration options |
 
 <b>Returns:</b>
 
-[TAgent](./core.tagent.md)&lt;T&gt; &amp; { context?: C; }
+TAgent&lt;T&gt; &amp; { context?: C; }
 
 configured agent
 
 ## Remarks
 
-Use [TAgent](./core.tagent.md) to configure agent type (list of available methods) for autocomplete in IDE
+Use to configure agent type (list of available methods) for autocomplete in IDE
 
 ## Example
 

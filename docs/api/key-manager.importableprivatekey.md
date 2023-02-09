@@ -18,4 +18,4 @@ The `alias` of the resulting [ManagedPrivateKey](./key-manager.managedprivatekey
 export type ImportablePrivateKey = RequireOnly<ManagedPrivateKey, 'privateKeyHex' | 'type'>
 ```
 
-<b>References:</b> [RequireOnly](./core.requireonly.md), [ManagedPrivateKey](./key-manager.managedprivatekey.md)
+<b>References:</b> [ManagedPrivateKey](./key-manager.managedprivatekey.md)

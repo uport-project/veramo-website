@@ -20,10 +20,10 @@ abstract addKey(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                              | Description |
-| --------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core.iidentifier.md); key: [IKey](./core.ikey.md); options?: any; } |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt;              |             |
+| Parameter | Type                                                   | Description |
+| --------- | ------------------------------------------------------ | ----------- |
+| args      | { identifier: IIdentifier; key: IKey; options?: any; } |             |
+| context   | IAgentContext&lt;IKeyManager&gt;                       |             |
 
 <b>Returns:</b>
 

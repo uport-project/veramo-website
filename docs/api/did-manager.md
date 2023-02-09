@@ -8,7 +8,7 @@ hide_title: true
 
 ## did-manager package
 
-Provides a [plugin](./did-manager.didmanager.md) for the [Agent](./core.agent.md) that implements [IDIDManager](./core.ididmanager.md) interface.
+Provides a [plugin](./did-manager.didmanager.md) for the [Agent](./core.agent.md) that implements interface.
 
 ## Classes
 
@@ -17,5 +17,5 @@ Provides a [plugin](./did-manager.didmanager.md) for the [Agent](./core.agent.md
 | [AbstractDIDStore](./did-manager.abstractdidstore.md)                     | An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier store                                                                                                                                         |
 | [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md) | An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier providers                                                                                                                                     |
 | [AliasDiscoveryProvider](./did-manager.aliasdiscoveryprovider.md)         | <p><b><i>(BETA)</i></b> A DID discovery provider that can filter DIDs by the <code>alias</code> used internally in [DIDManager](./did-manager.didmanager.md)</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [DIDManager](./did-manager.didmanager.md)                                 | Agent plugin that implements [IDIDManager](./core.ididmanager.md) interface                                                                                                                                                  |
+| [DIDManager](./did-manager.didmanager.md)                                 | Agent plugin that implements interface                                                                                                                                                                                       |
 | [MemoryDIDStore](./did-manager.memorydidstore.md)                         | <p><b><i>(BETA)</i></b> An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that stores everything in memory.</p><p>This API may change without a BREAKING CHANGE notice.</p>                         |

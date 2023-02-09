@@ -20,7 +20,7 @@ The schema of the remote agent is usually provided by [ApiSchemaRouter](./remote
 export declare class AgentRestClient implements IAgentPlugin
 ```
 
-<b>Implements:</b> [IAgentPlugin](./core.iagentplugin.md)
+<b>Implements:</b> IAgentPlugin
 
 ## Constructors
 
@@ -30,7 +30,7 @@ export declare class AgentRestClient implements IAgentPlugin
 
 ## Properties
 
-| Property                                              | Modifiers             | Type                                               | Description       |
-| ----------------------------------------------------- | --------------------- | -------------------------------------------------- | ----------------- |
-| [methods](./remote-client.agentrestclient.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core.ipluginmethodmap.md)     |                   |
-| [schema?](./remote-client.agentrestclient.schema.md)  | <code>readonly</code> | [IAgentPluginSchema](./core.iagentpluginschema.md) | <i>(Optional)</i> |
+| Property                                              | Modifiers             | Type               | Description       |
+| ----------------------------------------------------- | --------------------- | ------------------ | ----------------- |
+| [methods](./remote-client.agentrestclient.methods.md) | <code>readonly</code> | IPluginMethodMap   |                   |
+| [schema?](./remote-client.agentrestclient.schema.md)  | <code>readonly</code> | IAgentPluginSchema | <i>(Optional)</i> |

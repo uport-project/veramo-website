@@ -18,9 +18,9 @@ dataStoreSaveVerifiablePresentation(args: IDataStoreSaveVerifiablePresentationAr
 
 ## Parameters
 
-| Parameter | Type                                                                                           | Description |
-| --------- | ---------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IDataStoreSaveVerifiablePresentationArgs](./core.idatastoresaveverifiablepresentationargs.md) |             |
+| Parameter | Type                                     | Description |
+| --------- | ---------------------------------------- | ----------- |
+| args      | IDataStoreSaveVerifiablePresentationArgs |             |
 
 <b>Returns:</b>
 

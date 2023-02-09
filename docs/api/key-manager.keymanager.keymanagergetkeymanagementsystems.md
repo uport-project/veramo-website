@@ -8,8 +8,6 @@ hide_title: true
 
 ## KeyManager.keyManagerGetKeyManagementSystems() method
 
-Lists available key management systems
-
 <b>Signature:</b>
 
 ```typescript

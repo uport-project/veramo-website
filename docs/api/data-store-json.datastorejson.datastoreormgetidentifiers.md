@@ -18,11 +18,11 @@ dataStoreORMGetIdentifiers(args: FindArgs<TIdentifiersColumns>, context: Authori
 
 ## Parameters
 
-| Parameter | Type                                                                                       | Description |
-| --------- | ------------------------------------------------------------------------------------------ | ----------- |
-| args      | [FindArgs](./core.findargs.md)&lt;[TIdentifiersColumns](./core.tidentifierscolumns.md)&gt; |             |
-| context   | [AuthorizedDIDContext](./core.authorizeddidcontext.md)                                     |             |
+| Parameter | Type                                | Description |
+| --------- | ----------------------------------- | ----------- |
+| args      | FindArgs&lt;TIdentifiersColumns&gt; |             |
+| context   | AuthorizedDIDContext                |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)\[\]&gt;
+Promise&lt;IIdentifier\[\]&gt;

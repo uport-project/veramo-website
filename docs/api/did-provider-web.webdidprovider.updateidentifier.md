@@ -24,8 +24,8 @@ updateIdentifier(args: {
 | Parameter | Type                                                                                            | Description |
 | --------- | ----------------------------------------------------------------------------------------------- | ----------- |
 | args      | { did: string; kms?: string &#124; undefined; alias?: string &#124; undefined; options?: any; } |             |
-| context   | [IAgentContext](./core.iagentcontext.md)&lt;[IKeyManager](./core.ikeymanager.md)&gt;            |             |
+| context   | IAgentContext&lt;IKeyManager&gt;                                                                |             |
 
 <b>Returns:</b>
 
-Promise&lt;[IIdentifier](./core.iidentifier.md)&gt;
+Promise&lt;IIdentifier&gt;

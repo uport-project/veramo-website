@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-This implementation of [AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md) helps you discover DIDs based on data that is stored by a local plugin that implements [IDataStoreORM](./core.idatastoreorm.md).
+This implementation of [AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md) helps you discover DIDs based on data that is stored by a local plugin that implements .
 
 DIDs can be discovered by partial matches of `name` from `Profile` credentials, by partial matches of `alias` of managed DIDs as well as partial matches of DIDs that are issuer or subject of credentials.
 

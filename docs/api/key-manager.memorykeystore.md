@@ -22,9 +22,9 @@ export declare class MemoryKeyStore extends AbstractKeyStore
 
 ## Methods
 
-| Method                                                    | Modifiers | Description |
-| --------------------------------------------------------- | --------- | ----------- |
-| [delete({ kid })](./key-manager.memorykeystore.delete.md) |           |             |
-| [get({ kid })](./key-manager.memorykeystore.get.md)       |           |             |
-| [import(args)](./key-manager.memorykeystore.import.md)    |           |             |
-| [list(args)](./key-manager.memorykeystore.list.md)        |           |             |
+| Method                                                          | Modifiers | Description |
+| --------------------------------------------------------------- | --------- | ----------- |
+| [deleteKey({ kid })](./key-manager.memorykeystore.deletekey.md) |           |             |
+| [getKey({ kid })](./key-manager.memorykeystore.getkey.md)       |           |             |
+| [importKey(args)](./key-manager.memorykeystore.importkey.md)    |           |             |
+| [listKeys(args)](./key-manager.memorykeystore.listkeys.md)      |           |             |

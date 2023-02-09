@@ -20,10 +20,10 @@ addKey({ identifier, key, options }: {
 
 ## Parameters
 
-| Parameter                    | Type                                                                                                             | Description |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, key, options } | { identifier: [IIdentifier](./core.iidentifier.md); key: [IKey](./core.ikey.md); options?: TransactionOptions; } |             |
-| context                      | IRequiredContext                                                                                                 |             |
+| Parameter                    | Type                                                                  | Description |
+| ---------------------------- | --------------------------------------------------------------------- | ----------- |
+| { identifier, key, options } | { identifier: IIdentifier; key: IKey; options?: TransactionOptions; } |             |
+| context                      | IRequiredContext                                                      |             |
 
 <b>Returns:</b>
 

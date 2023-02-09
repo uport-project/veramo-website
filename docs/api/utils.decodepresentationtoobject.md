@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Parses a [W3CVerifiablePresentation](./core.w3cverifiablepresentation.md) and converts it to a [VerifiablePresentation](./core.verifiablepresentation.md) so it is easier to use programmatically.
+Parses a and converts it to a so it is easier to use programmatically.
 
 <b>Signature:</b>
 
@@ -20,10 +20,10 @@ export declare function decodePresentationToObject(input: W3CVerifiablePresentat
 
 ## Parameters
 
-| Parameter | Type                                                             | Description                                                                                                |
-| --------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| input     | [W3CVerifiablePresentation](./core.w3cverifiablepresentation.md) | <p>the raw presentation to be transformed.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Parameter | Type                      | Description                                                                                                |
+| --------- | ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| input     | W3CVerifiablePresentation | <p>the raw presentation to be transformed.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 
-[VerifiablePresentation](./core.verifiablepresentation.md)
+VerifiablePresentation

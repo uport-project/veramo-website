@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Mirrors [TKeyType](./core.tkeytype.md)
+Mirrors
 
 - This API may change without a BREAKING CHANGE notice.
 
@@ -19,5 +19,3 @@ Mirrors [TKeyType](./core.tkeytype.md)
 ```typescript
 export type KeyType = TKeyType
 ```
-
-<b>References:</b> [TKeyType](./core.tkeytype.md)

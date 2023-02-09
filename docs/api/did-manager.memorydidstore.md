@@ -24,9 +24,9 @@ export declare class MemoryDIDStore extends AbstractDIDStore
 
 ## Methods
 
-| Method                                                                | Modifiers | Description          |
-| --------------------------------------------------------------------- | --------- | -------------------- |
-| [delete({ did })](./did-manager.memorydidstore.delete.md)             |           | <b><i>(BETA)</i></b> |
-| [get({ did, alias, provider, })](./did-manager.memorydidstore.get.md) |           | <b><i>(BETA)</i></b> |
-| [import(args)](./did-manager.memorydidstore.import.md)                |           | <b><i>(BETA)</i></b> |
-| [list(args)](./did-manager.memorydidstore.list.md)                    |           | <b><i>(BETA)</i></b> |
+| Method                                                                      | Modifiers | Description          |
+| --------------------------------------------------------------------------- | --------- | -------------------- |
+| [deleteDID({ did })](./did-manager.memorydidstore.deletedid.md)             |           | <b><i>(BETA)</i></b> |
+| [getDID({ did, alias, provider, })](./did-manager.memorydidstore.getdid.md) |           | <b><i>(BETA)</i></b> |
+| [importDID(args)](./did-manager.memorydidstore.importdid.md)                |           | <b><i>(BETA)</i></b> |
+| [listDIDs(args)](./did-manager.memorydidstore.listdids.md)                  |           | <b><i>(BETA)</i></b> |

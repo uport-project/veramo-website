@@ -13,5 +13,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-to?: Identifier;
+to?: Relation<Identifier>;
 ```
