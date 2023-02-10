@@ -32,6 +32,7 @@ yarn init -y
 Set project to use ESM
 
 in `package.json`
+
 ```
 "type": "module"
 ```

@@ -4,8 +4,8 @@ title: React Setup & Resolver
 sidebar_label: Setup & Resolver
 ---
 
-Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up 
-a DID resolver to work in an application created with [Create React App](https://create-react-app.dev/) but uses [CRACO](https://craco.js.org/) 
+Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up
+a DID resolver to work in an application created with [Create React App](https://create-react-app.dev/) but uses [CRACO](https://craco.js.org/)
 to allow use of babel config required for ESM.
 It is possible to add your own identity, key management, and storage plugins that are browser compatible.
 
