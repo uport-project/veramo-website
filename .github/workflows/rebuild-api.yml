@@ -35,7 +35,7 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: 'Commit changes and tag the new version'
         run: |
-          git clone https://github.com/uport-project/veramo.git veramo
+          git clone -b main https://github.com/uport-project/veramo.git veramo
           RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
           if [ "${GITHUB_REF}" != "refs/heads/main" ]; then
             RELEASE_VERSION="${RELEASE_VERSION}-preview-${GITHUB_SHA}"
