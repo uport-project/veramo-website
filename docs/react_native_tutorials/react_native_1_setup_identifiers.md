@@ -73,6 +73,7 @@ Next, we start setting up the shims that will be required by our libraries.
 ```bash
 npm i @sinonjs/text-encoding react-native-get-random-values @ethersproject/shims crypto-browserify stream-browserify cross-fetch
 npm i -D babel-plugin-rewrite-require
+npm i -D @babel/plugin-syntax-import-assertions
 ```
 
 Now edit your `babel.config.js` file at your project root and add the `babel-plugin-rewrite-require` to it, like so:
@@ -84,6 +85,7 @@ module.exports = function (api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
+      '@babel/plugin-syntax-import-assertions',
       [
         'babel-plugin-rewrite-require',
         {
