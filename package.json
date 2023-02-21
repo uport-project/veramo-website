@@ -23,12 +23,6 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -42,8 +36,6 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
     "@docusaurus/module-type-aliases": "^2.2.0",
     "@docusaurus/types": "^2.2.0",
     "@microsoft/api-documenter": "^7.20.1",
@@ -54,10 +46,8 @@
     "@types/react-helmet": "^6.1.0",
     "@types/react-router-dom": "^5.1.6",
     "fs-extra": "^11.1.0",
-    "husky": "^4.3.0",
     "path": "^0.12.7",
     "prettier": "^2.8.3",
-    "pretty-quick": "^3.1.3",
     "react-github-btn": "^1.4.0",
     "readline": "^1.3.0",
     "ts-node": "^10.9.1",

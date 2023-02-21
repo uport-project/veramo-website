@@ -42,7 +42,7 @@ import { IResolver } from '@veramo/core'
 
 // Core DID resolver plugin. This plugin orchestrates different DID resolver drivers to resolve the corresponding DID Documents for the given DIDs.
 // This plugin implements `IResolver`
-import { DIDResolver } from '@veramo/did-resolver'
+import { DIDResolverPlugin } from '@veramo/did-resolver'
 
 // the did:ethr resolver package
 import { getResolver as ethrDidResolver } from 'ethr-did-resolver'

@@ -52,10 +52,10 @@ Install required Babel plugin
 yarn add @babel/plugin-syntax-import-assertions
 ```
 
-Install veramo core, DIDResolver plugin and dependencies
+Install veramo core, DIDResolverPlugin and some specific DID resolver implementations:
 
 ```bash
-yarn add @veramo/core @veramo/did-resolver ethr-did-resolver web-did-resolver did-resolver
+yarn add @veramo/core @veramo/did-resolver ethr-did-resolver web-did-resolver
 ```
 
 Create a setup file in `src/veramo/setup.ts` and add the following code, replacing the `INFURA_PROJECT_ID` with your
@@ -65,7 +65,6 @@ own.
 import { createAgent, IResolver } from '@veramo/core'
 
 import { DIDResolverPlugin } from '@veramo/did-resolver'
-import { Resolver } from 'did-resolver'
 import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 import { getResolver as webDidResolver } from 'web-did-resolver'
 
@@ -75,10 +74,8 @@ const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 export const agent = createAgent<IResolver>({
   plugins: [
     new DIDResolverPlugin({
-      resolver: new Resolver({
-        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
-        ...webDidResolver(),
-      }),
+      ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+      ...webDidResolver(),
     }),
   ],
 })
