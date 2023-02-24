@@ -8,6 +8,8 @@ hide_title: true
 
 ## KeyManager.keyManagerSignJWT() method
 
+Signs JWT
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,9 +18,9 @@ keyManagerSignJWT({ kid, data }: IKeyManagerSignJWTArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter     | Type                   | Description |
-| ------------- | ---------------------- | ----------- |
-| { kid, data } | IKeyManagerSignJWTArgs |             |
+| Parameter     | Type                                                             | Description |
+| ------------- | ---------------------------------------------------------------- | ----------- |
+| { kid, data } | [IKeyManagerSignJWTArgs](./core-types.ikeymanagersignjwtargs.md) |             |
 
 <b>Returns:</b>
 

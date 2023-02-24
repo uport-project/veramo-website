@@ -78,15 +78,7 @@ readonly schema: {
                             })[];
                         };
                         "@context": {
-                            anyOf: ({
-                                type: string;
-                                items: {
-                                    type: string;
-                                };
-                            } | {
-                                type: string;
-                                items?: undefined;
-                            })[];
+                            $ref: string;
                         };
                         verifier: {
                             type: string;
@@ -146,15 +138,7 @@ readonly schema: {
                             })[];
                         };
                         "@context": {
-                            anyOf: ({
-                                type: string;
-                                items: {
-                                    type: string;
-                                };
-                            } | {
-                                type: string;
-                                items?: undefined;
-                            })[];
+                            $ref: string;
                         };
                         issuanceDate: {
                             type: string;
@@ -195,6 +179,20 @@ readonly schema: {
                             type: string;
                         };
                     };
+                    description: string;
+                };
+                ContextType: {
+                    anyOf: ({
+                        type: string;
+                        items?: undefined;
+                    } | {
+                        type: string;
+                        items: {
+                            anyOf: {
+                                type: string;
+                            }[];
+                        };
+                    })[];
                     description: string;
                 };
                 CredentialStatusReference: {

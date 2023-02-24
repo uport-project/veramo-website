@@ -26,4 +26,4 @@ getKey({ kid }: {
 
 <b>Returns:</b>
 
-Promise&lt;IKey&gt;
+Promise&lt;[IKey](./core-types.ikey.md)&gt;

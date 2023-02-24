@@ -18,10 +18,10 @@ dataStoreGetMessage(args: IDataStoreGetMessageArgs): Promise<IMessage>;
 
 ## Parameters
 
-| Parameter | Type                     | Description |
-| --------- | ------------------------ | ----------- |
-| args      | IDataStoreGetMessageArgs |             |
+| Parameter | Type                                                                 | Description |
+| --------- | -------------------------------------------------------------------- | ----------- |
+| args      | [IDataStoreGetMessageArgs](./core-types.idatastoregetmessageargs.md) |             |
 
 <b>Returns:</b>
 
-Promise&lt;IMessage&gt;
+Promise&lt;[IMessage](./core-types.imessage.md)&gt;

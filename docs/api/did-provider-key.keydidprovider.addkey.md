@@ -22,10 +22,10 @@ addKey({ identifier, key, options }: {
 
 ## Parameters
 
-| Parameter                    | Type                                                   | Description |
-| ---------------------------- | ------------------------------------------------------ | ----------- |
-| { identifier, key, options } | { identifier: IIdentifier; key: IKey; options?: any; } |             |
-| context                      | IContext                                               |             |
+| Parameter                    | Type                                                                                                          | Description |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------- |
+| { identifier, key, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); key: [IKey](./core-types.ikey.md); options?: any; } |             |
+| context                      | IContext                                                                                                      |             |
 
 <b>Returns:</b>
 

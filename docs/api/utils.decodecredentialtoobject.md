@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Parses a and converts it to a so it is easier to use programmatically.
+Parses a [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) and converts it to a [VerifiableCredential](./core-types.verifiablecredential.md) so it is easier to use programmatically.
 
 <b>Signature:</b>
 
@@ -20,10 +20,10 @@ export declare function decodeCredentialToObject(input: W3CVerifiableCredential)
 
 ## Parameters
 
-| Parameter | Type                    | Description                                                                                |
-| --------- | ----------------------- | ------------------------------------------------------------------------------------------ |
-| input     | W3CVerifiableCredential | the raw credential to be transformed This API may change without a BREAKING CHANGE notice. |
+| Parameter | Type                                                               | Description                                                                                |
+| --------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) | the raw credential to be transformed This API may change without a BREAKING CHANGE notice. |
 
 <b>Returns:</b>
 
-VerifiableCredential
+[VerifiableCredential](./core-types.verifiablecredential.md)

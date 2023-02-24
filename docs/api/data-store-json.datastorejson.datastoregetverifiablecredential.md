@@ -18,10 +18,10 @@ dataStoreGetVerifiableCredential(args: IDataStoreGetVerifiableCredentialArgs): P
 
 ## Parameters
 
-| Parameter | Type                                  | Description |
-| --------- | ------------------------------------- | ----------- |
-| args      | IDataStoreGetVerifiableCredentialArgs |             |
+| Parameter | Type                                                                                           | Description |
+| --------- | ---------------------------------------------------------------------------------------------- | ----------- |
+| args      | [IDataStoreGetVerifiableCredentialArgs](./core-types.idatastoregetverifiablecredentialargs.md) |             |
 
 <b>Returns:</b>
 
-Promise&lt;VerifiableCredential&gt;
+Promise&lt;[VerifiableCredential](./core-types.verifiablecredential.md)&gt;

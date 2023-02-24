@@ -52,10 +52,7 @@ readonly schema: {
                             };
                         };
                         "@context": {
-                            type: string;
-                            items: {
-                                type: string;
-                            };
+                            $ref: string;
                         };
                         issuanceDate: {
                             $ref: string;
@@ -98,8 +95,22 @@ readonly schema: {
                     };
                     description: string;
                 };
+                ContextType: {
+                    anyOf: ({
+                        type: string; /** {@inheritdoc ICredentialIssuerLD.createVerifiableCredentialLD} */
+                        items?: undefined;
+                    } | {
+                        type: string;
+                        items: {
+                            anyOf: {
+                                type: string;
+                            }[];
+                        };
+                    })[];
+                    description: string;
+                };
                 DateType: {
-                    type: string; /** {@inheritdoc ICredentialIssuerLD.createVerifiableCredentialLD} */
+                    type: string;
                     description: string;
                 };
                 CredentialStatusReference: {
@@ -139,15 +150,7 @@ readonly schema: {
                             })[];
                         };
                         "@context": {
-                            anyOf: ({
-                                type: string;
-                                items: {
-                                    type: string;
-                                };
-                            } | {
-                                type: string;
-                                items?: undefined;
-                            })[];
+                            $ref: string;
                         };
                         issuanceDate: {
                             type: string;
@@ -223,10 +226,7 @@ readonly schema: {
                             };
                         };
                         "@context": {
-                            type: string;
-                            items: {
-                                type: string;
-                            };
+                            $ref: string;
                         };
                         verifier: {
                             type: string;
@@ -284,15 +284,7 @@ readonly schema: {
                             })[];
                         };
                         "@context": {
-                            anyOf: ({
-                                type: string;
-                                items: {
-                                    type: string;
-                                };
-                            } | {
-                                type: string;
-                                items?: undefined;
-                            })[];
+                            $ref: string;
                         };
                         verifier: {
                             type: string;

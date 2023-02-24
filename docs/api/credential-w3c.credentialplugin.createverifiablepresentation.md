@@ -8,6 +8,8 @@ hide_title: true
 
 ## CredentialPlugin.createVerifiablePresentation() method
 
+Creates a Verifiable Presentation. The payload, signer and format are chosen based on the `args` parameter.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,11 +18,17 @@ createVerifiablePresentation(args: ICreateVerifiablePresentationArgs, context: I
 
 ## Parameters
 
-| Parameter | Type                              | Description |
-| --------- | --------------------------------- | ----------- |
-| args      | ICreateVerifiablePresentationArgs |             |
-| context   | IssuerAgentContext                |             |
+| Parameter | Type                                                                                   | Description                                                                                  |
+| --------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| args      | [ICreateVerifiablePresentationArgs](./core-types.icreateverifiablepresentationargs.md) | Arguments necessary to create the Presentation.                                              |
+| context   | [IssuerAgentContext](./core-types.issueragentcontext.md)                               | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
 <b>Returns:</b>
 
-Promise&lt;VerifiablePresentation&gt;
+Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;
+
+- a promise that resolves to the [VerifiablePresentation](./core-types.verifiablepresentation.md) that was requested or rejects with an error if there was a problem with the input or while getting the key to sign
+
+## Remarks
+
+Please see [Verifiable Presentation data model](https://www.w3.org/TR/vc-data-model/#presentations)

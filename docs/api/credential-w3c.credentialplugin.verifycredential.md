@@ -8,6 +8,8 @@ hide_title: true
 
 ## CredentialPlugin.verifyCredential() method
 
+Verifies a Verifiable Credential JWT, LDS Format or EIP712.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,11 +18,17 @@ verifyCredential(args: IVerifyCredentialArgs, context: VerifierAgentContext): Pr
 
 ## Parameters
 
-| Parameter | Type                  | Description |
-| --------- | --------------------- | ----------- |
-| args      | IVerifyCredentialArgs |             |
-| context   | VerifierAgentContext  |             |
+| Parameter | Type                                                           | Description                                                                                  |
+| --------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| args      | [IVerifyCredentialArgs](./core-types.iverifycredentialargs.md) | Arguments necessary to verify a VerifiableCredential                                         |
+| context   | [VerifierAgentContext](./core-types.verifieragentcontext.md)   | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
 <b>Returns:</b>
 
-Promise&lt;IVerifyResult&gt;
+Promise&lt;[IVerifyResult](./core-types.iverifyresult.md)&gt;
+
+- a promise that resolves to an object containing a `verified` boolean property and an optional `error` for details
+
+## Remarks
+
+Please see [Verifiable Credential data model](https://www.w3.org/TR/vc-data-model/#credentials)

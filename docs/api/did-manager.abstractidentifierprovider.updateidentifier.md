@@ -22,11 +22,11 @@ abstract updateIdentifier?(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                      | Description |
-| --------- | ----------------------------------------------------------------------------------------- | ----------- |
-| args      | { did: string; document: Partial&lt;DIDDocument&gt;; options?: { \[x: string\]: any; }; } |             |
-| context   | IAgentContext&lt;IKeyManager&gt;                                                          |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | { did: string; document: Partial&lt;DIDDocument&gt;; options?: { \[x: string\]: any; }; }        |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;IIdentifier&gt;
+Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

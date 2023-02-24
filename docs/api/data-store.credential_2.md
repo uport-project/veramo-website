@@ -33,6 +33,6 @@ export declare class Credential extends BaseEntity
 | [issuer](./data-store.credential_2.issuer.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | <b><i>(BETA)</i></b>                   |
 | [messages](./data-store.credential_2.messages.md)              |           | Relation&lt;[Message](./data-store.message.md)\[\]&gt;           | <b><i>(BETA)</i></b>                   |
 | [presentations](./data-store.credential_2.presentations.md)    |           | Relation&lt;[Presentation](./data-store.presentation.md)\[\]&gt; | <b><i>(BETA)</i></b>                   |
-| [raw](./data-store.credential_2.raw.md)                        |           | VerifiableCredential                                             | <b><i>(BETA)</i></b>                   |
+| [raw](./data-store.credential_2.raw.md)                        |           | [VerifiableCredential](./core-types.verifiablecredential.md)     | <b><i>(BETA)</i></b>                   |
 | [subject?](./data-store.credential_2.subject.md)               |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [type](./data-store.credential_2.type.md)                      |           | string\[\]                                                       | <b><i>(BETA)</i></b>                   |

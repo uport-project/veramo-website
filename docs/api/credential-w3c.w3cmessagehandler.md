@@ -24,6 +24,8 @@ export declare class W3cMessageHandler extends AbstractMessageHandler
 
 ## Remarks
 
+[IDataStore](./core-types.idatastore.md)
+
 ## Methods
 
 | Method                                                                   | Modifiers | Description |

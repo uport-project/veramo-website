@@ -16,10 +16,10 @@ abstract deleteIdentifier(args: IIdentifier, context: IAgentContext<IKeyManager>
 
 ## Parameters
 
-| Parameter | Type                             | Description |
-| --------- | -------------------------------- | ----------- |
-| args      | IIdentifier                      |             |
-| context   | IAgentContext&lt;IKeyManager&gt; |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | [IIdentifier](./core-types.iidentifier.md)                                                       |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 

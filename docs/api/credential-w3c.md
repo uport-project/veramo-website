@@ -8,7 +8,7 @@ hide_title: true
 
 ## credential-w3c package
 
-Provides a [plugin](./credential-w3c.credentialplugin.md) for the [Agent](./core.agent.md) that implements interface.
+Provides a [plugin](./credential-w3c.credentialplugin.md) for the [Agent](./core.agent.md) that implements [ICredentialIssuer](./core-types.icredentialissuer.md) interface.
 
 Provides a [plugin](./credential-w3c.w3cmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that verifies Credentials and Presentations in a message.
 
@@ -16,7 +16,7 @@ Provides a [plugin](./credential-w3c.w3cmessagehandler.md) for the [MessageHandl
 
 | Class                                                      | Description                                                                                                                                                                                                                                                                                                                                          |
 | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CredentialPlugin](./credential-w3c.credentialplugin.md)   | A Veramo plugin that implements the methods.                                                                                                                                                                                                                                                                                                         |
+| [CredentialPlugin](./credential-w3c.credentialplugin.md)   | A Veramo plugin that implements the [ICredentialPlugin](./core-types.icredentialplugin.md) methods.                                                                                                                                                                                                                                                  |
 | [W3cMessageHandler](./credential-w3c.w3cmessagehandler.md) | <p>An implementation of the [AbstractMessageHandler](./message-handler.abstractmessagehandler.md).</p><p>This plugin can handle incoming W3C Verifiable Credentials and Presentations and prepare them for internal storage as [Message](./message-handler.message.md) types.</p><p>The current version can only handle <code>JWT</code> encoded</p> |
 
 ## Variables

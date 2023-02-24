@@ -18,10 +18,10 @@ dataStoreORMGetMessagesCount(args: FindArgs<TMessageColumns>, context: Authorize
 
 ## Parameters
 
-| Parameter | Type                            | Description |
-| --------- | ------------------------------- | ----------- |
-| args      | FindArgs&lt;TMessageColumns&gt; |             |
-| context   | AuthorizedDIDContext            |             |
+| Parameter | Type                                                                                           | Description |
+| --------- | ---------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core-types.findargs.md)&lt;[TMessageColumns](./core-types.tmessagecolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)                                   |             |
 
 <b>Returns:</b>
 

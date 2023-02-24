@@ -8,6 +8,10 @@ hide_title: true
 
 ## KeyManager.keyManagerSharedSecret() method
 
+Compute a shared secret with the public key of another party.
+
+This computes the raw shared secret (the result of a Diffie-Hellman computation) To use this for symmetric encryption you MUST apply a KDF on the result.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,10 +20,12 @@ keyManagerSharedSecret(args: IKeyManagerSharedSecretArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                        | Description |
-| --------- | --------------------------- | ----------- |
-| args      | IKeyManagerSharedSecretArgs |             |
+| Parameter | Type                                                                       | Description                                                                                       |
+| --------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| args      | [IKeyManagerSharedSecretArgs](./core-types.ikeymanagersharedsecretargs.md) | The input to compute the shared secret, including the local key reference and remote key details. |
 
 <b>Returns:</b>
 
 Promise&lt;string&gt;
+
+a `Promise` that resolves to a hex encoded shared secret

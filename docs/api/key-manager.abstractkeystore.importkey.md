@@ -16,9 +16,9 @@ abstract importKey(args: Partial<IKey>): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type                | Description |
-| --------- | ------------------- | ----------- |
-| args      | Partial&lt;IKey&gt; |             |
+| Parameter | Type                                        | Description |
+| --------- | ------------------------------------------- | ----------- |
+| args      | Partial&lt;[IKey](./core-types.ikey.md)&gt; |             |
 
 <b>Returns:</b>
 

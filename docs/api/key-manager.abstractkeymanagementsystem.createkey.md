@@ -19,10 +19,10 @@ abstract createKey(args: {
 
 ## Parameters
 
-| Parameter | Type                            | Description |
-| --------- | ------------------------------- | ----------- |
-| args      | { type: TKeyType; meta?: any; } |             |
+| Parameter | Type                                                        | Description |
+| --------- | ----------------------------------------------------------- | ----------- |
+| args      | { type: [TKeyType](./core-types.tkeytype.md); meta?: any; } |             |
 
 <b>Returns:</b>
 
-Promise&lt;ManagedKeyInfo&gt;
+Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

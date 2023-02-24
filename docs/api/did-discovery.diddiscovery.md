@@ -20,7 +20,7 @@ This API may change without a BREAKING CHANGE notice.
 export declare class DIDDiscovery implements IAgentPlugin
 ```
 
-<b>Implements:</b> IAgentPlugin
+<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 

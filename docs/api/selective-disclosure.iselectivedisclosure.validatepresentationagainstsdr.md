@@ -21,7 +21,7 @@ validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, contex
 | Parameter | Type                                                                                                 | Description |
 | --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
 | args      | [IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md) |             |
-| context   | IAgentContext&lt;{}&gt;                                                                              |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;                                             |             |
 
 <b>Returns:</b>
 

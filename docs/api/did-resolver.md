@@ -8,7 +8,7 @@ hide_title: true
 
 ## did-resolver package
 
-Provides a [plugin](./did-resolver.didresolverplugin.md) for the [Agent](./core.agent.md) that implements interface.
+Provides a [plugin](./did-resolver.didresolverplugin.md) for the [Agent](./core.agent.md) that implements [IResolver](./core-types.iresolver.md) interface.
 
 ## Classes
 

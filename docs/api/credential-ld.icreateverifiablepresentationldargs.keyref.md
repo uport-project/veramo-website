@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Optional. The key handle () from the internal database.
+Optional. The key handle ([IKey.kid](./core-types.ikey.kid.md)) from the internal database.
 
 <b>Signature:</b>
 

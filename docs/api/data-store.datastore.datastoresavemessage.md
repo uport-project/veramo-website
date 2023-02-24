@@ -18,9 +18,9 @@ dataStoreSaveMessage(args: IDataStoreSaveMessageArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                      | Description |
-| --------- | ------------------------- | ----------- |
-| args      | IDataStoreSaveMessageArgs |             |
+| Parameter | Type                                                                   | Description |
+| --------- | ---------------------------------------------------------------------- | ----------- |
+| args      | [IDataStoreSaveMessageArgs](./core-types.idatastoresavemessageargs.md) |             |
 
 <b>Returns:</b>
 

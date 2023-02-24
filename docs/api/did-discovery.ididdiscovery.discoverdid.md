@@ -21,7 +21,7 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Pr
 | Parameter | Type                                                                            | Description |
 | --------- | ------------------------------------------------------------------------------- | ----------- |
 | args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md) |             |
-| context   | IAgentContext&lt;any&gt;                                                        |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;any&gt;                       |             |
 
 <b>Returns:</b>
 

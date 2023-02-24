@@ -16,9 +16,9 @@ importKey(args: IKey): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| args      | IKey |             |
+| Parameter | Type                         | Description |
+| --------- | ---------------------------- | ----------- |
+| args      | [IKey](./core-types.ikey.md) |             |
 
 <b>Returns:</b>
 

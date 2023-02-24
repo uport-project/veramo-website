@@ -8,6 +8,8 @@ hide_title: true
 
 ## KeyManager.keyManagerDelete() method
 
+Deletes a key
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,9 +18,9 @@ keyManagerDelete({ kid }: IKeyManagerDeleteArgs): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type                  | Description |
-| --------- | --------------------- | ----------- |
-| { kid }   | IKeyManagerDeleteArgs |             |
+| Parameter | Type                                                           | Description |
+| --------- | -------------------------------------------------------------- | ----------- |
+| { kid }   | [IKeyManagerDeleteArgs](./core-types.ikeymanagerdeleteargs.md) |             |
 
 <b>Returns:</b>
 

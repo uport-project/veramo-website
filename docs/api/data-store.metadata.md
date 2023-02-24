@@ -12,7 +12,7 @@ hide_title: true
 
 Represents message metadata as it is stored by [DataStore](./data-store.datastore.md).
 
-This metadata is most often used by [MessageHandler](./message-handler.messagehandler.md) and implementations to decorate messages that are interpreted and decoded, but not returned as final, as they pass through the message handler chain.
+This metadata is most often used by [MessageHandler](./message-handler.messagehandler.md) and [IMessageHandler](./core-types.imessagehandler.md) implementations to decorate messages that are interpreted and decoded, but not returned as final, as they pass through the message handler chain.
 
 - This API may change without a BREAKING CHANGE notice.
 

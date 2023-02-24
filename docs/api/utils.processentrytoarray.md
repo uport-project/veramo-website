@@ -16,17 +16,17 @@ Processes an entry or an array of entries into an array of entries. If a `startW
 
 ```typescript
 export declare function processEntryToArray(
-  inputEntryOrArray?: string | string[] | null,
+  inputEntryOrArray?: string | string[] | any,
   startWithEntry?: string,
 ): string[]
 ```
 
 ## Parameters
 
-| Parameter         | Type                                 | Description                                                                                                                                                      |
-| ----------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| inputEntryOrArray | string &#124; string\[\] &#124; null | <i>(Optional)</i> The input that needs to be transformed to an array.                                                                                            |
-| startWithEntry    | string                               | <p><i>(Optional)</i> If this is provided, this element will be the first in the resulting array.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Parameter         | Type                                | Description                                                                                                                                                      |
+| ----------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| inputEntryOrArray | string &#124; string\[\] &#124; any | <i>(Optional)</i> The input that needs to be transformed to an array.                                                                                            |
+| startWithEntry    | string                              | <p><i>(Optional)</i> If this is provided, this element will be the first in the resulting array.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 

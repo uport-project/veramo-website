@@ -16,10 +16,10 @@ handle(message: Message, context: IAgentContext<{}>): Promise<Message>;
 
 ## Parameters
 
-| Parameter | Type                                    | Description |
-| --------- | --------------------------------------- | ----------- |
-| message   | [Message](./message-handler.message.md) |             |
-| context   | IAgentContext&lt;{}&gt;                 |             |
+| Parameter | Type                                                     | Description |
+| --------- | -------------------------------------------------------- | ----------- |
+| message   | [Message](./message-handler.message.md)                  |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt; |             |
 
 <b>Returns:</b>
 

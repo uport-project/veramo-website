@@ -90,6 +90,9 @@ readonly schema: {
                                 $ref: string;
                             };
                         };
+                        return_route: {
+                            type: string;
+                        };
                     };
                     required: string[];
                     description: string;
@@ -119,7 +122,7 @@ readonly schema: {
                             type: string;
                         };
                         data: {
-                            $ref: string; /** Plugin methods */
+                            $ref: string;
                         };
                     };
                     required: string[];
@@ -154,6 +157,13 @@ readonly schema: {
                     type: string;
                     properties: {
                         bcc: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                            description: string;
+                        };
+                        recipientKids: {
                             type: string;
                             items: {
                                 type: string;
@@ -309,6 +319,10 @@ readonly schema: {
                             };
                             description: string;
                         };
+                        returnRoute: {
+                            type: string;
+                            description: string;
+                        };
                     };
                     required: string[];
                     description: string;
@@ -352,15 +366,7 @@ readonly schema: {
                             })[];
                         };
                         "@context": {
-                            anyOf: ({
-                                type: string;
-                                items: {
-                                    type: string;
-                                };
-                            } | {
-                                type: string;
-                                items?: undefined;
-                            })[];
+                            $ref: string;
                         };
                         issuanceDate: {
                             type: string;
@@ -412,6 +418,20 @@ readonly schema: {
                     };
                     description: string;
                 };
+                ContextType: {
+                    anyOf: ({
+                        type: string;
+                        items?: undefined;
+                    } | {
+                        type: string;
+                        items: {
+                            anyOf: {
+                                type: string;
+                            }[];
+                        };
+                    })[];
+                    description: string;
+                };
                 CredentialStatusReference: {
                     type: string;
                     properties: {
@@ -452,15 +472,7 @@ readonly schema: {
                             })[];
                         };
                         "@context": {
-                            anyOf: ({
-                                type: string;
-                                items: {
-                                    type: string;
-                                };
-                            } | {
-                                type: string;
-                                items?: undefined;
-                            })[];
+                            $ref: string;
                         };
                         verifier: {
                             type: string;

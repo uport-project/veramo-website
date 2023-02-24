@@ -27,9 +27,9 @@ createVerifiablePresentationLD(args: ICreateVerifiablePresentationLDArgs, contex
 
 <b>Returns:</b>
 
-Promise&lt;VerifiablePresentation&gt;
+Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;
 
-- a promise that resolves to the that was requested or rejects with an error if there was a problem with the input or while getting the key to sign
+- a promise that resolves to the [VerifiablePresentation](./core-types.verifiablepresentation.md) that was requested or rejects with an error if there was a problem with the input or while getting the key to sign
 
 ## Remarks
 

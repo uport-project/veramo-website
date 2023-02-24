@@ -22,4 +22,4 @@ abstract listKeys(args: {}): Promise<Array<ManagedKeyInfo>>;
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;ManagedKeyInfo&gt;&gt;
+Promise&lt;Array&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;&gt;

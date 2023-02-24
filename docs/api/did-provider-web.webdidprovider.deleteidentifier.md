@@ -16,10 +16,10 @@ deleteIdentifier(identifier: IIdentifier, context: IContext): Promise<boolean>;
 
 ## Parameters
 
-| Parameter  | Type        | Description |
-| ---------- | ----------- | ----------- |
-| identifier | IIdentifier |             |
-| context    | IContext    |             |
+| Parameter  | Type                                       | Description |
+| ---------- | ------------------------------------------ | ----------- |
+| identifier | [IIdentifier](./core-types.iidentifier.md) |             |
+| context    | IContext                                   |             |
 
 <b>Returns:</b>
 

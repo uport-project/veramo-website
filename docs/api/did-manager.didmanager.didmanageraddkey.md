@@ -8,6 +8,8 @@ hide_title: true
 
 ## DIDManager.didManagerAddKey() method
 
+Adds a key to a DID Document
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,11 +18,13 @@ didManagerAddKey({ did, key, options }: IDIDManagerAddKeyArgs, context: IAgentCo
 
 ## Parameters
 
-| Parameter             | Type                             | Description |
-| --------------------- | -------------------------------- | ----------- |
-| { did, key, options } | IDIDManagerAddKeyArgs            |             |
-| context               | IAgentContext&lt;IKeyManager&gt; |             |
+| Parameter             | Type                                                                                             | Description |
+| --------------------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| { did, key, options } | [IDIDManagerAddKeyArgs](./core-types.ididmanageraddkeyargs.md)                                   |             |
+| context               | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
 Promise&lt;any&gt;
+
+identifier provider specific response. Can be txHash, etc,

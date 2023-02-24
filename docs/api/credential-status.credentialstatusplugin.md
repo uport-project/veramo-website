@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-This plugin implements the interface.
+This plugin implements the [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md) interface.
 
 This aggregates some to provide a second layer of validation when verifying Verifiable Credentials.
 
@@ -24,7 +24,7 @@ The results provided by this plugin depend on whether the required by the creden
 export declare class CredentialStatusPlugin implements IAgentPlugin
 ```
 
-<b>Implements:</b> IAgentPlugin
+<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 
@@ -34,6 +34,6 @@ export declare class CredentialStatusPlugin implements IAgentPlugin
 
 ## Properties
 
-| Property                                                         | Modifiers             | Type                      | Description          |
-| ---------------------------------------------------------------- | --------------------- | ------------------------- | -------------------- |
-| [methods](./credential-status.credentialstatusplugin.methods.md) | <code>readonly</code> | ICredentialStatusVerifier | <b><i>(BETA)</i></b> |
+| Property                                                         | Modifiers             | Type                                                                   | Description          |
+| ---------------------------------------------------------------- | --------------------- | ---------------------------------------------------------------------- | -------------------- |
+| [methods](./credential-status.credentialstatusplugin.methods.md) | <code>readonly</code> | [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md) | <b><i>(BETA)</i></b> |

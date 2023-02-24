@@ -8,6 +8,8 @@ hide_title: true
 
 ## DIDManager.didManagerGetOrCreate() method
 
+Returns an existing identifier or creates a new one for a specific alias
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,11 +18,11 @@ didManagerGetOrCreate({ provider, alias, kms, options }: IDIDManagerGetOrCreateA
 
 ## Parameters
 
-| Parameter                         | Type                             | Description |
-| --------------------------------- | -------------------------------- | ----------- |
-| { provider, alias, kms, options } | IDIDManagerGetOrCreateArgs       |             |
-| context                           | IAgentContext&lt;IKeyManager&gt; |             |
+| Parameter                         | Type                                                                                             | Description                                                                                                                                                                                                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| { provider, alias, kms, options } | [IDIDManagerGetOrCreateArgs](./core-types.ididmanagergetorcreateargs.md)                         |                                                                                                                                                                                                                                                                |
+| context                           | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods. |
 
 <b>Returns:</b>
 
-Promise&lt;IIdentifier&gt;
+Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

@@ -26,4 +26,4 @@ getDID({ did, alias, provider, }: {
 
 <b>Returns:</b>
 
-Promise&lt;IIdentifier&gt;
+Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

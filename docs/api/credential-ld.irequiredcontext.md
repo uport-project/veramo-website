@@ -23,3 +23,5 @@ export type IRequiredContext = IAgentContext<
   IResolver & Pick<IDIDManager, 'didManagerGet'> & Pick<IKeyManager, 'keyManagerGet' | 'keyManagerSign'>
 >
 ```
+
+<b>References:</b> [IAgentContext](./core-types.iagentcontext.md), [IResolver](./core-types.iresolver.md), [IDIDManager](./core-types.ididmanager.md), [IKeyManager](./core-types.ikeymanager.md)

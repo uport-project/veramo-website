@@ -18,11 +18,11 @@ dataStoreORMGetVerifiableCredentials(args: FindArgs<TCredentialColumns>, context
 
 ## Parameters
 
-| Parameter | Type                               | Description |
-| --------- | ---------------------------------- | ----------- |
-| args      | FindArgs&lt;TCredentialColumns&gt; |             |
-| context   | AuthorizedDIDContext               |             |
+| Parameter | Type                                                                                                 | Description |
+| --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core-types.findargs.md)&lt;[TCredentialColumns](./core-types.tcredentialcolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)                                         |             |
 
 <b>Returns:</b>
 
-Promise&lt;Array&lt;UniqueVerifiableCredential&gt;&gt;
+Promise&lt;Array&lt;[UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)&gt;&gt;

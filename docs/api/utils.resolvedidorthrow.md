@@ -23,10 +23,10 @@ export declare function resolveDidOrThrow(
 
 ## Parameters
 
-| Parameter | Type                           | Description                                                                                                                 |
-| --------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| didUrl    | string                         | the DID to be resolved                                                                                                      |
-| context   | IAgentContext&lt;IResolver&gt; | the veramo agent context, which must contain a implementation that can resolve the DID document of the <code>didUrl</code>. |
+| Parameter | Type                                                                                         | Description                                                                                                                                                        |
+| --------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| didUrl    | string                                                                                       | the DID to be resolved                                                                                                                                             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the <code>didUrl</code>. |
 
 <b>Returns:</b>
 

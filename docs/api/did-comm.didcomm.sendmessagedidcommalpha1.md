@@ -18,14 +18,14 @@ sendMessageDIDCommAlpha1(args: ISendMessageDIDCommAlpha1Args, context: IAgentCon
 
 ## Parameters
 
-| Parameter | Type                                                                                     | Description                                                                                                                                                     |
-| --------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md)             | Arguments necessary for sending a DIDComm message                                                                                                               |
-| context   | IAgentContext&lt;IDIDManager &amp; IKeyManager &amp; IResolver &amp; IMessageHandler&gt; | <p>This reserved param is automatically added and handled by the framework, \*do not override\*</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Parameter | Type                                                                                                                                                                                                                                                    | Description                                                                                                                                                     |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md)                                                                                                                                                                            | Arguments necessary for sending a DIDComm message                                                                                                               |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md) &amp; [IMessageHandler](./core-types.imessagehandler.md)&gt; | <p>This reserved param is automatically added and handled by the framework, \*do not override\*</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 <b>Returns:</b>
 
-Promise&lt;IMessage&gt;
+Promise&lt;[IMessage](./core-types.imessage.md)&gt;
 
 ## Remarks
 

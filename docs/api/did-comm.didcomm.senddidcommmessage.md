@@ -17,15 +17,15 @@ Emits an eventType 'DIDCommV2Message-sent' that contains the message id of packe
 <b>Signature:</b>
 
 ```typescript
-sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IResolver>): Promise<string>;
+sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IDIDManager & IKeyManager & IResolver>): Promise<string>;
 ```
 
 ## Parameters
 
-| Parameter | Type                           | Description                                                                                                                                                |
-| --------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | ISendDIDCommMessageArgs        | An object containing the message, recipient information and optional information about the transport that should be used.                                  |
-| context   | IAgentContext&lt;IResolver&gt; | This method requires an agent that also has plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
+| Parameter | Type                                                                                                                                                                                           | Description                                                                                                                                                                                       |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | ISendDIDCommMessageArgs                                                                                                                                                                        | An object containing the message, recipient information and optional information about the transport that should be used.                                                                         |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md)&gt; | This method requires an agent that also has [IResolver](./core-types.iresolver.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
 
 <b>Returns:</b>
 

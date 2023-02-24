@@ -21,7 +21,7 @@ getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, contex
 | Parameter | Type                                                                                                 | Description |
 | --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
 | args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) |             |
-| context   | IAgentContext&lt;IDataStoreORM&gt;                                                                   |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDataStoreORM](./core-types.idatastoreorm.md)&gt; |             |
 
 <b>Returns:</b>
 

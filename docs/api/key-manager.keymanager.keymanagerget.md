@@ -8,6 +8,8 @@ hide_title: true
 
 ## KeyManager.keyManagerGet() method
 
+Returns an existing key
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,10 +18,10 @@ keyManagerGet({ kid }: IKeyManagerGetArgs): Promise<IKey>;
 
 ## Parameters
 
-| Parameter | Type               | Description |
-| --------- | ------------------ | ----------- |
-| { kid }   | IKeyManagerGetArgs |             |
+| Parameter | Type                                                     | Description |
+| --------- | -------------------------------------------------------- | ----------- |
+| { kid }   | [IKeyManagerGetArgs](./core-types.ikeymanagergetargs.md) |             |
 
 <b>Returns:</b>
 
-Promise&lt;IKey&gt;
+Promise&lt;[IKey](./core-types.ikey.md)&gt;

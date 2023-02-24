@@ -8,6 +8,8 @@ hide_title: true
 
 ## KeyManager.keyManagerImport() method
 
+Imports a created key
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,10 +18,10 @@ keyManagerImport(key: MinimalImportableKey): Promise<ManagedKeyInfo>;
 
 ## Parameters
 
-| Parameter | Type                 | Description |
-| --------- | -------------------- | ----------- |
-| key       | MinimalImportableKey |             |
+| Parameter | Type                                                         | Description |
+| --------- | ------------------------------------------------------------ | ----------- |
+| key       | [MinimalImportableKey](./core-types.minimalimportablekey.md) |             |
 
 <b>Returns:</b>
 
-Promise&lt;ManagedKeyInfo&gt;
+Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

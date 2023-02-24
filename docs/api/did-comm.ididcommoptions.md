@@ -22,6 +22,7 @@ export interface IDIDCommOptions
 
 ## Properties
 
-| Property                                  | Modifiers | Type       | Description                                                                         |
-| ----------------------------------------- | --------- | ---------- | ----------------------------------------------------------------------------------- |
-| [bcc?](./did-comm.ididcommoptions.bcc.md) |           | string\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> Add extra recipients for the packed message. |
+| Property                                                      | Modifiers | Type       | Description                                                                         |
+| ------------------------------------------------------------- | --------- | ---------- | ----------------------------------------------------------------------------------- |
+| [bcc?](./did-comm.ididcommoptions.bcc.md)                     |           | string\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> Add extra recipients for the packed message. |
+| [recipientKids?](./did-comm.ididcommoptions.recipientkids.md) |           | string\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> Restrict to a set of kids for recipient      |

@@ -21,11 +21,11 @@ updateIdentifier(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                            | Description |
-| --------- | ----------------------------------------------------------------------------------------------- | ----------- |
-| args      | { did: string; kms?: string &#124; undefined; alias?: string &#124; undefined; options?: any; } |             |
-| context   | IAgentContext&lt;IKeyManager&gt;                                                                |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | { did: string; kms?: string &#124; undefined; alias?: string &#124; undefined; options?: any; }  |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;IIdentifier&gt;
+Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

@@ -36,6 +36,6 @@ Provides a [plugin](./selective-disclosure.sdrmessagehandler.md) for the [Messag
 
 ## Variables
 
-| Variable                                               | Description                                                                      |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| [MessageTypes](./selective-disclosure.messagetypes.md) | <b><i>(BETA)</i></b> Identifies a that represents a Selective Disclosure Request |
+| Variable                                               | Description                                                                                                           |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| [MessageTypes](./selective-disclosure.messagetypes.md) | <b><i>(BETA)</i></b> Identifies a [IMessage](./core-types.imessage.md) that represents a Selective Disclosure Request |

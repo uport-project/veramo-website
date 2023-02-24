@@ -23,9 +23,9 @@ signEthTX({ key, transaction }: {
 
 ## Parameters
 
-| Parameter            | Type                                                   | Description |
-| -------------------- | ------------------------------------------------------ | ----------- |
-| { key, transaction } | { key: Pick&lt;IKey, 'kid'&gt;; transaction: object; } |             |
+| Parameter            | Type                                                                           | Description |
+| -------------------- | ------------------------------------------------------------------------------ | ----------- |
+| { key, transaction } | { key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; transaction: object; } |             |
 
 <b>Returns:</b>
 

@@ -16,4 +16,4 @@ listKeys(): Promise<ManagedKeyInfo[]>;
 
 <b>Returns:</b>
 
-Promise&lt;ManagedKeyInfo\[\]&gt;
+Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)\[\]&gt;

@@ -20,10 +20,10 @@ abstract removeKey(args: {
 
 ## Parameters
 
-| Parameter | Type                                                     | Description |
-| --------- | -------------------------------------------------------- | ----------- |
-| args      | { identifier: IIdentifier; kid: string; options?: any; } |             |
-| context   | IAgentContext&lt;IKeyManager&gt;                         |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | { identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: any; }          |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 

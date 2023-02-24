@@ -26,11 +26,11 @@ export declare function dereferenceDidKeys(
 
 ## Parameters
 
-| Parameter   | Type                                | Description |
-| ----------- | ----------------------------------- | ----------- |
-| didDocument | DIDDocument                         |             |
-| section     | DIDDocumentSection &#124; undefined |             |
-| context     | IAgentContext&lt;IResolver&gt;      |             |
+| Parameter   | Type                                                                                         | Description |
+| ----------- | -------------------------------------------------------------------------------------------- | ----------- |
+| didDocument | DIDDocument                                                                                  |             |
+| section     | [DIDDocumentSection](./core-types.diddocumentsection.md) &#124; undefined                    |             |
+| context     | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; |             |
 
 <b>Returns:</b>
 

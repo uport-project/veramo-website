@@ -8,6 +8,8 @@ hide_title: true
 
 ## KeyManager.keyManagerCreate() method
 
+Creates and returns a new key
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,10 +18,10 @@ keyManagerCreate(args: IKeyManagerCreateArgs): Promise<ManagedKeyInfo>;
 
 ## Parameters
 
-| Parameter | Type                  | Description |
-| --------- | --------------------- | ----------- |
-| args      | IKeyManagerCreateArgs |             |
+| Parameter | Type                                                           | Description |
+| --------- | -------------------------------------------------------------- | ----------- |
+| args      | [IKeyManagerCreateArgs](./core-types.ikeymanagercreateargs.md) |             |
 
 <b>Returns:</b>
 
-Promise&lt;ManagedKeyInfo&gt;
+Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

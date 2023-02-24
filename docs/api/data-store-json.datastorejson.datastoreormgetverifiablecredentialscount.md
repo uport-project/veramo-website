@@ -18,10 +18,10 @@ dataStoreORMGetVerifiableCredentialsCount(args: FindArgs<TCredentialColumns>, co
 
 ## Parameters
 
-| Parameter | Type                               | Description |
-| --------- | ---------------------------------- | ----------- |
-| args      | FindArgs&lt;TCredentialColumns&gt; |             |
-| context   | AuthorizedDIDContext               |             |
+| Parameter | Type                                                                                                 | Description |
+| --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
+| args      | [FindArgs](./core-types.findargs.md)&lt;[TCredentialColumns](./core-types.tcredentialcolumns.md)&gt; |             |
+| context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)                                         |             |
 
 <b>Returns:</b>
 

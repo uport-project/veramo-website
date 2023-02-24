@@ -8,6 +8,8 @@ hide_title: true
 
 ## KeyManager.keyManagerSignEthTX() method
 
+Signs Ethereum transaction
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,9 +18,9 @@ keyManagerSignEthTX({ kid, transaction }: IKeyManagerSignEthTXArgs): Promise<str
 
 ## Parameters
 
-| Parameter            | Type                     | Description |
-| -------------------- | ------------------------ | ----------- |
-| { kid, transaction } | IKeyManagerSignEthTXArgs |             |
+| Parameter            | Type                                                                 | Description |
+| -------------------- | -------------------------------------------------------------------- | ----------- |
+| { kid, transaction } | [IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md) |             |
 
 <b>Returns:</b>
 

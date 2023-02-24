@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Represents some common properties of an that are stored in a TypeORM database for querying.
+Represents some common properties of an [IMessage](./core-types.imessage.md) that are stored in a TypeORM database for querying.
 
 <b>Signature:</b>
 

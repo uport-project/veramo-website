@@ -16,9 +16,9 @@ abstract importDID(args: IIdentifier): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type        | Description |
-| --------- | ----------- | ----------- |
-| args      | IIdentifier |             |
+| Parameter | Type                                       | Description |
+| --------- | ------------------------------------------ | ----------- |
+| args      | [IIdentifier](./core-types.iidentifier.md) |             |
 
 <b>Returns:</b>
 

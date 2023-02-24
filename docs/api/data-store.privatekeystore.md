@@ -8,7 +8,7 @@ hide_title: true
 
 ## PrivateKeyStore class
 
-An implementation of that uses a TypeORM database connection to store private key material.
+An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that uses a TypeORM database connection to store private key material.
 
 The keys can be encrypted while at rest if this class is initialized with an [AbstractSecretBox](./key-manager.abstractsecretbox.md) implementation.
 

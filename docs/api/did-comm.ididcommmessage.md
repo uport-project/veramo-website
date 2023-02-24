@@ -33,6 +33,7 @@ export interface IDIDCommMessage
 | [id](./did-comm.ididcommmessage.id.md)                      |           | string                                                                   | <b><i>(BETA)</i></b>                   |
 | [next?](./did-comm.ididcommmessage.next.md)                 |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [pthid?](./did-comm.ididcommmessage.pthid.md)               |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [return_route?](./did-comm.ididcommmessage.return_route.md) |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [thid?](./did-comm.ididcommmessage.thid.md)                 |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
 | [to](./did-comm.ididcommmessage.to.md)                      |           | string                                                                   | <b><i>(BETA)</i></b>                   |
 | [type](./did-comm.ididcommmessage.type.md)                  |           | string                                                                   | <b><i>(BETA)</i></b>                   |

@@ -8,6 +8,8 @@ hide_title: true
 
 ## DIDManager.didManagerCreate() method
 
+Creates and returns a new identifier
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,11 +18,11 @@ didManagerCreate(args: IDIDManagerCreateArgs, context: IAgentContext<IKeyManager
 
 ## Parameters
 
-| Parameter | Type                             | Description |
-| --------- | -------------------------------- | ----------- |
-| args      | IDIDManagerCreateArgs            |             |
-| context   | IAgentContext&lt;IKeyManager&gt; |             |
+| Parameter | Type                                                                                             | Description                                                                                                                                                                                                                                                    |
+| --------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | [IDIDManagerCreateArgs](./core-types.ididmanagercreateargs.md)                                   | Required. Arguments to create the identifier                                                                                                                                                                                                                   |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods. |
 
 <b>Returns:</b>
 
-Promise&lt;IIdentifier&gt;
+Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

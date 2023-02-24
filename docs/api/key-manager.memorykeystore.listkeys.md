@@ -22,4 +22,4 @@ listKeys(args: {}): Promise<Exclude<IKey, 'privateKeyHex'>[]>;
 
 <b>Returns:</b>
 
-Promise&lt;Exclude&lt;IKey, 'privateKeyHex'&gt;\[\]&gt;
+Promise&lt;Exclude&lt;[IKey](./core-types.ikey.md), 'privateKeyHex'&gt;\[\]&gt;

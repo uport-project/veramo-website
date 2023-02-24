@@ -18,6 +18,6 @@ getSchema(): IAgentPluginSchema;
 
 <b>Returns:</b>
 
-IAgentPluginSchema
+[IAgentPluginSchema](./core-types.iagentpluginschema.md)
 
 agent plugin schema

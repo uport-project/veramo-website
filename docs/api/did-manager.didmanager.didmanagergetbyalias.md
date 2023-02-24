@@ -8,6 +8,8 @@ hide_title: true
 
 ## DIDManager.didManagerGetByAlias() method
 
+Returns a specific identifier by alias
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,10 +18,10 @@ didManagerGetByAlias({ alias, provider }: IDIDManagerGetByAliasArgs): Promise<II
 
 ## Parameters
 
-| Parameter           | Type                      | Description |
-| ------------------- | ------------------------- | ----------- |
-| { alias, provider } | IDIDManagerGetByAliasArgs |             |
+| Parameter           | Type                                                                   | Description |
+| ------------------- | ---------------------------------------------------------------------- | ----------- |
+| { alias, provider } | [IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md) |             |
 
 <b>Returns:</b>
 
-Promise&lt;IIdentifier&gt;
+Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

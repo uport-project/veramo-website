@@ -23,9 +23,9 @@ signJWT({ key, data }: {
 
 ## Parameters
 
-| Parameter     | Type                                                              | Description |
-| ------------- | ----------------------------------------------------------------- | ----------- |
-| { key, data } | { key: Pick&lt;IKey, 'kid'&gt;; data: string &#124; Uint8Array; } |             |
+| Parameter     | Type                                                                                      | Description |
+| ------------- | ----------------------------------------------------------------------------------------- | ----------- |
+| { key, data } | { key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; data: string &#124; Uint8Array; } |             |
 
 <b>Returns:</b>
 

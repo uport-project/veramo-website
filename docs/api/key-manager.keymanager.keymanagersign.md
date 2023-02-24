@@ -8,6 +8,8 @@ hide_title: true
 
 ## KeyManager.keyManagerSign() method
 
+Generates a signature according to the algorithm specified.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,9 +18,9 @@ keyManagerSign(args: IKeyManagerSignArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                | Description |
-| --------- | ------------------- | ----------- |
-| args      | IKeyManagerSignArgs |             |
+| Parameter | Type                                                       | Description                                                                                       |
+| --------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| args      | [IKeyManagerSignArgs](./core-types.ikeymanagersignargs.md) | The input to the signing method, including data to be signed, key reference and algorithm to use. |
 
 <b>Returns:</b>
 

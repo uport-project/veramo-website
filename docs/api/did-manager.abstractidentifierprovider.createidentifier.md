@@ -20,11 +20,11 @@ abstract createIdentifier(args: {
 
 ## Parameters
 
-| Parameter | Type                                             | Description |
-| --------- | ------------------------------------------------ | ----------- |
-| args      | { kms?: string; alias?: string; options?: any; } |             |
-| context   | IAgentContext&lt;IKeyManager&gt;                 |             |
+| Parameter | Type                                                                                             | Description |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
+| args      | { kms?: string; alias?: string; options?: any; }                                                 |             |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
 <b>Returns:</b>
 
-Promise&lt;Omit&lt;IIdentifier, 'provider'&gt;&gt;
+Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;
