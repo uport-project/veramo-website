@@ -106,7 +106,7 @@ img[alt='veramo-devtool'] {
 }
 
 button.clean-btn {
-    color: var(--ifm-navbar-toggle-color);
+  color: var(--ifm-navbar-toggle-color);
 }
 
 /* .navbar .navbar__inner {
