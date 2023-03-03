@@ -104,6 +104,11 @@ img[alt='veramo-devtool'] {
 .navbar {
   background-color: var(--ifm-navbar-background-color);
 }
+
+button.clean-btn {
+    color: var(--ifm-navbar-toggle-color);
+}
+
 /* .navbar .navbar__inner {
   max-width: 1400px;
   margin: 0 auto;

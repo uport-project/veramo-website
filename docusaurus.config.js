@@ -38,12 +38,12 @@ module.exports = {
         //   label: 'Tools',
         //   position: 'right',
         // },
-        {
-          to: 'docs/veramo_agent/plugins',
-          activeBasePath: 'docs',
-          label: 'Plugins',
-          position: 'right',
-        },
+        // {
+        //   to: 'docs/veramo_agent/plugins',
+        //   activeBasePath: 'docs',
+        //   label: 'Plugins',
+        //   position: 'right',
+        // },
         {
           to: 'docs/api',
           activeBasePath: 'docs',
