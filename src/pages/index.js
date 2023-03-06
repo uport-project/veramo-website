@@ -193,7 +193,7 @@ function Plugin({ imageUrl, title, description }) {
           </div>
         )}
         <h3 className={styles.pluginsHeader}>{title}</h3>
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{__html: description}}></p>
       </div>
     </div>
   )
@@ -209,21 +209,29 @@ function Plugins() {
             {textContent.plugins}
           </p>
           <div className={clsx(styles.plugins, 'row')} style={{ paddingTop: 50 }}>
-            <Plugin title="id-manager" description="Create a custom DID method" />
-            <Plugin title="did-provider-ethr" description="Support Ethr-DID method" />
-            <Plugin title="did-provider-web" description="Support Web-DID method" />
-            <Plugin title="did-provider-key" description="Support Key-DID method" />
-            <Plugin title="key-manager" description="Create a custom kms" />
-            <Plugin title="kms-local" description="Support local kms" />
-            <Plugin title="kms-local-react-native" description="Support local kms for React Native" />
-            <Plugin title="message-handler" description="Create a custom message parser" />
-            <Plugin title="did-comm" description="Support DIDcomm messaging" />
-            <Plugin title="selective-disclosure" description="Support request messages" />
-            <Plugin title="credential-w3c" description="Support W3C Verifiable Credential standard" />
-            <Plugin title="did-jwt" description="Support DIDJwt" />
-            <Plugin title="remote-server" description="Serve agent methods over REST" />
-            <Plugin title="data-store" description="Suport local data storage" />
-            <Plugin title="remote-client" description="Expose methods from a remote agent locally" />
+            <Plugin title="key-manager" description="Manage keys and their metadata.<br/>Is used by other plugins for cryptographic operations." />
+            <Plugin title="did-manager" description="Create and manage DIDs.<br/>Uses <code>did-provider-*</code> implementations." />
+            <Plugin title="credential-w3c" description="Issue and verify W3C Verifiable Credentials and Presentations." />
+            <Plugin title="message-handler" description="Decrypt or decode messages and trigger actions." />
+            <Plugin title="data-store" description="Store and query Verifiable Credentials and Presentations using SQL-like databases." />
+            <Plugin title="data-store-json" description="Store and query Verifiable Credentials and Presentations using a JSON object" />
+            <Plugin title="did-comm" description="Pack, send, decrypt, and decode DIDComm messages." />
+
+            <Plugin title="kms-local" description="Key Management System that stores keys locally or in memory.<br/>This is used by <code>key-manager</code>" />
+            <Plugin title="kms-web3" description="Key Management System that delegates operations to a web3 wallet.<br/>This is used by <code>key-manager</code>" />
+
+            <Plugin title="remote-server" description="Create an OpenAPI interface for plugins, serve <code>did:web</code> documents, ingress for <code>message-handler</code>." />
+            <Plugin title="remote-client" description="Connect to a <code>remote-server</code> and provide those plugin methods locally" />
+
+            <Plugin title="did-provider-ethr" description="Create and manage <code>did:ethr</code> identifiers" />
+            <Plugin title="did-provider-web" description="Create and manage <code>did:web</code> identifiers" />
+            <Plugin title="did-provider-key" description="Create <code>did:key</code> identifiers" />
+            <Plugin title="did-provider-ion" description="Create and manage <code>did:ion</code> identifiers" />
+            <Plugin title="did-provider-pkh" description="Create <code>did:pkh</code> identifiers" />
+            <Plugin title="did-provider-jwk" description="Create <code>did:jwk</code> identifiers" />
+
+            <Plugin title="did-jwt" description="Decode and verify JWT messages. This is used with <code>message-handler</code>" />
+            <Plugin title="selective-disclosure" description="Create and handle requests for selective disclosure of Verifiable Credentials." />
           </div>
         </div>
       </div>
