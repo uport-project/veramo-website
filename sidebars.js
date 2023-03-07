@@ -76,8 +76,8 @@ module.exports = {
     {
       type: 'category',
       label: 'Contributing',
-      items: 'contributing/index'
-    }
+      items: ['contributing/index'],
+    },
     // {
     //   type: 'category',
     //   label: 'Resources',
