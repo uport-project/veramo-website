@@ -73,6 +73,11 @@ module.exports = {
         // 'deployment_tutorials/deployment_azure',
       ],
     },
+    {
+      type: 'category',
+      label: 'Contributing',
+      items: 'contributing/index'
+    }
     // {
     //   type: 'category',
     //   label: 'Resources',
