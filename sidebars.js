@@ -75,8 +75,11 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Contributing',
-      items: ['contributing/index'],
+      label: 'Community',
+      items: [
+        'community/contributing',
+        'community/open_source_community',
+      ],
     },
     // {
     //   type: 'category',
