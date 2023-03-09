@@ -77,8 +77,8 @@ module.exports = {
       type: 'category',
       label: 'Community',
       items: [
-        'community/contributing',
         'community/open_source_community',
+        'community/contributing',
       ],
     },
     // {
