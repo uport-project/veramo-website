@@ -12,7 +12,7 @@ The Ethereum DID workgroup is currently working on the did:ethr method, discussi
 
 ## Meetings and Programs
 ### Community Call
-We hold monthly meetings and programs to discuss new features, bug fixes, and other important topics. These meetings are open to anyone interested in contributing to our product.
+We hold monthly meetings to discuss new features, bug fixes, and other important topics. These meetings are open to anyone interested in contributing to our project, and are a great opportunity for people to showcase their own products and how they fit in the Veramo or verifiable-data ecosystem.
 
 ### Community Events
 We organize and participate in various community events throughout the year, including virtual and physical. These events are a great way to meet other members of the community and have more people learn about our Veramo.
@@ -20,14 +20,14 @@ We organize and participate in various community events throughout the year, inc
 ## Communication
 We use various communication channels to stay connected and collaborate on our product. Our main communication channels include:
 * [GitHub discussions](https://github.com/uport-project/veramo/discussions)
-* [Discord](http://discord.gg/sYBUXpACh4)
+* [Discord](http://discord.gg/rhmDv85axQ)
 * [Community Email](mailto:hello@veramo.io)
 * [LinkedIn](https://www.linkedin.com/company/veramo) / [Twitter](https://twitter.com/veramolabs)
 * [Youtube](https://www.youtube.com/@veramolabs)
 
 
 ## Contributing
-We welcome contributions of all kinds, from code changes to documentation improvements. If you're interested in contributing, check out our [contributing guide](https://veramo.io/docs/community/contribute) for more information.
+We welcome contributions of all kinds, from code changes to documentation improvements. If you're interested in contributing, check out our [contributing guide](./contribute) for more information.
 
 ## Code of Conduct
 Our community is committed to providing a welcoming and inclusive environment for all contributors. We expect all members of our community to adhere to our [code of conduct](https://github.com/uport-project/veramo/blob/next/CODE_OF_CONDUCT.md).
