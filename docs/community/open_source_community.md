@@ -27,7 +27,7 @@ We use various communication channels to stay connected and collaborate on our p
 
 
 ## Contributing
-We welcome contributions of all kinds, from code changes to documentation improvements. If you're interested in contributing, check out our [contributing guide](./contribute) for more information.
+We welcome contributions of all kinds, from code changes to documentation improvements. If you're interested in contributing, check out our [contributing guide](./contributing) for more information.
 
 ## Code of Conduct
 Our community is committed to providing a welcoming and inclusive environment for all contributors. We expect all members of our community to adhere to our [code of conduct](https://github.com/uport-project/veramo/blob/next/CODE_OF_CONDUCT.md).
