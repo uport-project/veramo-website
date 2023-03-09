@@ -66,5 +66,4 @@ Any contributions you make will be under the Apache-2.0 Licenss
 
 Thank you for your contribution!
 
-
-Here's our [Code of Conduct](https://github.com/uport-project/veramo/blob/next/CODE_OF_CONDUCT.md).  
+ 
