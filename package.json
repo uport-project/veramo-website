@@ -1,6 +1,6 @@
 {
   "name": "veramo-site-docs",
-  "version": "5.1.1",
+  "version": "5.1.3",
   "private": true,
   "scripts": {
     "start": "NODE_ENV=production HTTPS=true docusaurus serve --port $PORT",
