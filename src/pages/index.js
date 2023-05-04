@@ -265,6 +265,12 @@ function Home() {
             >
               Get Started
             </Link>
+            <Link
+              className={clsx('button button--primary button--square watchDemo', styles.watchDemo)}
+              to={'https://youtu.be/U6va97LOZ0M'}
+            >
+              ▶ Watch a demo
+            </Link>
           </div>
         </div>
       </header>
