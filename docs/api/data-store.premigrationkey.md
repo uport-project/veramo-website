@@ -17,15 +17,14 @@ This API may change without a BREAKING CHANGE notice.
 <b>Signature:</b>
 
 ```typescript
-export declare class PreMigrationKey extends BaseEntity
+export declare class PreMigrationKey extends Key
 ```
 
-<b>Extends:</b> BaseEntity
+<b>Extends:</b> [Key](./data-store.key.md)
 
 ## Properties
 
-| Property                                                        | Modifiers | Type                                 | Description                            |
-| --------------------------------------------------------------- | --------- | ------------------------------------ | -------------------------------------- |
-| [kid](./data-store.premigrationkey.kid.md)                      |           | string                               | <b><i>(BETA)</i></b>                   |
-| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store.premigrationkey.type.md)                    |           | [KeyType](./data-store.keytype_2.md) | <b><i>(BETA)</i></b>                   |
+| Property                                                        | Modifiers | Type   | Description                            |
+| --------------------------------------------------------------- | --------- | ------ | -------------------------------------- |
+| [kid](./data-store.premigrationkey.kid.md)                      |           | string | <b><i>(BETA)</i></b>                   |
+| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |

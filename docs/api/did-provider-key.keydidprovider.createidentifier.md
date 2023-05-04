@@ -15,16 +15,16 @@ hide_title: true
 ```typescript
 createIdentifier({ kms, options }: {
         kms?: string;
-        options?: any;
+        options?: CreateKeyDidOptions;
     }, context: IContext): Promise<Omit<IIdentifier, 'provider'>>;
 ```
 
 ## Parameters
 
-| Parameter        | Type                             | Description |
-| ---------------- | -------------------------------- | ----------- |
-| { kms, options } | { kms?: string; options?: any; } |             |
-| context          | IContext                         |             |
+| Parameter        | Type                                             | Description |
+| ---------------- | ------------------------------------------------ | ----------- |
+| { kms, options } | { kms?: string; options?: CreateKeyDidOptions; } |             |
+| context          | IContext                                         |             |
 
 <b>Returns:</b>
 

@@ -97,7 +97,7 @@ readonly schema: {
                 };
                 ContextType: {
                     anyOf: ({
-                        type: string; /** {@inheritdoc ICredentialIssuerLD.createVerifiableCredentialLD} */
+                        type: string;
                         items?: undefined;
                     } | {
                         type: string;
