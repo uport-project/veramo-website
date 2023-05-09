@@ -50,7 +50,11 @@ module.exports = {
           label: 'API',
           position: 'right',
         },
-        { to: 'blog', label: 'Blog', position: 'right' },
+        {
+          href: 'https://medium.com/veramo',
+          label: 'Blog',
+          position: 'right',
+        },
         {
           href: 'https://discord.gg/FRRBdjemHV',
           label: 'Discord',
@@ -178,15 +182,15 @@ module.exports = {
           // Please change this to your repo.
           editUrl: 'https://github.com/uport-project/veramo-website/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/uport-project/veramo-website/edit/main/',
-          feedOptions: {
-            type: 'all',
-            copyright: `Copyright © ${new Date().getFullYear()} Veramo`,
-          },
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl: 'https://github.com/uport-project/veramo-website/edit/main/',
+        //   feedOptions: {
+        //     type: 'all',
+        //     copyright: `Copyright © ${new Date().getFullYear()} Veramo`,
+        //   },
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
