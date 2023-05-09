@@ -51,7 +51,7 @@
 .npmInstall {
   display: none;
   text-align: left;
-  width: fit-content;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -139,12 +139,12 @@
   margin-right: 10px;
 }
 
-.learnMore {
-  border: none;
+.watchDemo {
+  border-radius: 5px;
   padding: 15px 30px;
   font-weight: 500;
   font-size: 1.3rem;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 500px) {
