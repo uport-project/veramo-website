@@ -33,6 +33,7 @@
   --ifm-hero-subtitle-color: #cfcfcf;
   --ifm-hero-alt-txt-color: #121415;
   --ifm-hero-alt-bg-color: white;
+  --ifm-hero-alt-bg-color-hover: #cfcfcf;
 
   --brand: #25c2a0;
   --body-text-primary: #4e4e4e;
@@ -69,7 +70,8 @@ html[data-theme='dark'] {
   --ifm-hero-title-color: #25c2a0;
   --ifm-hero-txt-color: white;
   --ifm-hero-alt-txt-color: #121415;
-  --ifm-hero-alt-bg-color: white;
+  --ifm-hero-alt-bg-color-hover: #9f9f9f;
+  --ifm-hero-alt-bg-color: whitesmoke;
   --ifm-hero-subtitle-color: #cfcfcf;
 
   --body-text-primary: #999999;
@@ -167,6 +169,11 @@ section.oddRow {
 .watchDemo {
   color: var(--ifm-hero-alt-txt-color);
   background: var(--ifm-hero-alt-bg-color);
+}
+
+.watchDemo:hover {
+  color: var(--ifm-hero-alt-txt-color);
+  background: var(--ifm-hero-alt-bg-color-hover);
 }
 
 .video-container {
