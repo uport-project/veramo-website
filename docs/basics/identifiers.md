@@ -4,18 +4,18 @@ title: Identifiers
 ---
 
 `Decentralized Identifier` or `DID` is a critical component of verifiable data. A `DID` is a new type of unique
-identifier which can be created independent of a central authority and that is designed to prove control over the DID
-using cryptographic proofs. In a verifiable data context, a DID can be used to verify the provenance and ownership of
-attested data by verifying the proof that is attached to the assertion.
+identifier which can be created independent of a central authority. The subject that the `DID` refers to can prove
+control over the `DID` using cryptographic proofs. In a verifiable data context, a `DID` can be used to verify the
+provenance and ownership of the data by linking to the verification method for the attached proof.
 
 ## Decentralized Identifier
 
-Different flavors of `DIDs` exist today. The flavor of a `DID` or more accurately the `DID Method` defines how CRUD
-operations for a DID of that `DID Method` are executed. Each `DID Method` has different tradeoffs in specific use cases.
-For example, a web DID can be created without a Blockchain but `DID Methods` exist that have a dependency on a
-Blockchain. All of them are valid `DIDs` but have different guaranteees.
+Different flavors of `DIDs` exist today. The flavor of a `DID` or more accurately the `DID Method` defines how C.R.U.D.
+operations for that `DID` type are executed. Each `DID Method` has different tradeoffs in specific use cases.
+For example, a `did:web` can be created without a Blockchain but `DID Methods` exist that have a dependency on a
+Blockchain. All of them are valid `DIDs` but have different guarantees.
 
-The example below shows how a web DID for veramo.dev might look like.
+The example below shows how a `did:web` for [veramo.dev](https://veramo.dev) might look like.
 
 ```
 did:web:veramo.dev
