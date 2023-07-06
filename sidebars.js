@@ -62,6 +62,7 @@ module.exports = {
       label: 'CLI Tutorials',
       items: [
         'cli_tutorials/cli_create_vc',
+        'cli_tutorials/cli_manage_gh_pages_did_web',
         // 'cli_tutorials/cli_selective_disclosure'
       ],
     },
