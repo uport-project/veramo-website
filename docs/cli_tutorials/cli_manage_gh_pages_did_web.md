@@ -62,7 +62,7 @@ To start the server run:
 
 ```bash
 veramo server
-````
+```
 
 You should see something like this printed:
 
