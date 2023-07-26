@@ -10,13 +10,13 @@ hide_title: true
 
 The interface definition for a plugin that can generate and verify Verifiable Credentials and Presentations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ICredentialPlugin = ICredentialIssuer & ICredentialVerifier
 ```
 
-<b>References:</b> [ICredentialIssuer](./core-types.icredentialissuer.md), [ICredentialVerifier](./core-types.icredentialverifier.md)
+**References:** [ICredentialIssuer](./core-types.icredentialissuer.md), [ICredentialVerifier](./core-types.icredentialverifier.md)
 
 ## Remarks
 

@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [keyManagerSharedSecret](./core-types.ikeymanager.keymanagersharedsecret.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManagerSharedSecretArgs

@@ -8,7 +8,7 @@ hide_title: true
 
 ## EthrDIDProvider.updateIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateIdentifier(args: {
@@ -26,6 +26,6 @@ updateIdentifier(args: {
 | args      | { did: string; kms?: string &#124; undefined; alias?: string &#124; undefined; options?: any; }  |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

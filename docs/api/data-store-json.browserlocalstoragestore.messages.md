@@ -8,7 +8,7 @@ hide_title: true
 
 ## BrowserLocalStorageStore.messages property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 messages: Record<string, IMessage>

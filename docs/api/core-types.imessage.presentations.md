@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Array of attached verifiable presentations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 presentations?: VerifiablePresentation[];

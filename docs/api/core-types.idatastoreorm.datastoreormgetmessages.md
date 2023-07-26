@@ -12,7 +12,7 @@ hide_title: true
 
 Returns a list of [IMessage](./core-types.imessage.md)s that match the given filter. These are messages that were stored using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetMessages(args: FindMessagesArgs, context: AuthorizedDIDContext): Promise<Array<IMessage>>;
@@ -25,6 +25,6 @@ dataStoreORMGetMessages(args: FindMessagesArgs, context: AuthorizedDIDContext): 
 | args      | [FindMessagesArgs](./core-types.findmessagesargs.md)         | The filter to apply when querying                                                                                                                                                                                                                    |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md) | <p>Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[IMessage](./core-types.imessage.md)&gt;&gt;

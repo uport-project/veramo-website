@@ -10,7 +10,7 @@ hide_title: true
 
 Signs JWT
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerSignJWT({ kid, data }: IKeyManagerSignJWTArgs): Promise<string>;
@@ -22,6 +22,6 @@ keyManagerSignJWT({ kid, data }: IKeyManagerSignJWTArgs): Promise<string>;
 | ------------- | ---------------------------------------------------------------- | ----------- |
 | { kid, data } | [IKeyManagerSignJWTArgs](./core-types.ikeymanagersignjwtargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

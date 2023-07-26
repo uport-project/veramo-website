@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [resolveDid](./core-types.iresolver.resolvedid.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ResolveDidArgs
@@ -18,7 +18,7 @@ export interface ResolveDidArgs
 
 ## Properties
 
-| Property                                           | Modifiers | Type                 | Description                                                                                                                                                                                                                               |
-| -------------------------------------------------- | --------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [didUrl](./core-types.resolvedidargs.didurl.md)    |           | string               | DID URL                                                                                                                                                                                                                                   |
-| [options?](./core-types.resolvedidargs.options.md) |           | DIDResolutionOptions | <i>(Optional)</i> DID resolution options that will be passed to the method specific resolver. See: https://w3c.github.io/did-spec-registries/\#did-resolution-input-metadata See: https://www.w3.org/TR/did-core/\#did-resolution-options |
+| Property                                           | Modifiers | Type                 | Description                                                                                                                                                                                                                          |
+| -------------------------------------------------- | --------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [didUrl](./core-types.resolvedidargs.didurl.md)    |           | string               | DID URL                                                                                                                                                                                                                              |
+| [options?](./core-types.resolvedidargs.options.md) |           | DIDResolutionOptions | _(Optional)_ DID resolution options that will be passed to the method specific resolver. See: https://w3c.github.io/did-spec-registries/\#did-resolution-input-metadata See: https://www.w3.org/TR/did-core/\#did-resolution-options |

@@ -10,7 +10,7 @@ hide_title: true
 
 Public key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 publicKeyHex: string

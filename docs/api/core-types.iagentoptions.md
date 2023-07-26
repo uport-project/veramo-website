@@ -14,7 +14,7 @@ This interface is used to describe the constellation of plugins that this agent 
 
 You will use this to attach plugins, to setup overrides for their methods and to explicitly set the methods that this agent instance is allowed to call. This permissioning method is also used for internal calls made by plugin code.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAgentOptions
@@ -22,10 +22,10 @@ export interface IAgentOptions
 
 ## Properties
 
-| Property                                                              | Modifiers | Type                                                 | Description                                                                                                                                             |
-| --------------------------------------------------------------------- | --------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [authorizedMethods?](./core-types.iagentoptions.authorizedmethods.md) |           | string\[\]                                           | <i>(Optional)</i> The array of method names that will be exposed by the agent                                                                           |
-| [context?](./core-types.iagentoptions.context.md)                     |           | Record&lt;string, any&gt;                            | <i>(Optional)</i> The context object that will be available to the plugin methods                                                                       |
-| [overrides?](./core-types.iagentoptions.overrides.md)                 |           | [IPluginMethodMap](./core-types.ipluginmethodmap.md) | <i>(Optional)</i> The map of plugin methods. Can be used to override methods provided by plugins, or to add additional methods without writing a plugin |
-| [plugins?](./core-types.iagentoptions.plugins.md)                     |           | [IAgentPlugin](./core-types.iagentplugin.md)\[\]     | <i>(Optional)</i> The array of agent plugins                                                                                                            |
-| [schemaValidation?](./core-types.iagentoptions.schemavalidation.md)   |           | boolean                                              | <p><i>(Optional)</i> Flag that enables schema validation for plugin methods.</p><p>Defaults to <code>false</code>.</p>                                  |
+| Property                                                              | Modifiers | Type                                                 | Description                                                                                                                                        |
+| --------------------------------------------------------------------- | --------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [authorizedMethods?](./core-types.iagentoptions.authorizedmethods.md) |           | string\[\]                                           | _(Optional)_ The array of method names that will be exposed by the agent                                                                           |
+| [context?](./core-types.iagentoptions.context.md)                     |           | Record&lt;string, any&gt;                            | _(Optional)_ The context object that will be available to the plugin methods                                                                       |
+| [overrides?](./core-types.iagentoptions.overrides.md)                 |           | [IPluginMethodMap](./core-types.ipluginmethodmap.md) | _(Optional)_ The map of plugin methods. Can be used to override methods provided by plugins, or to add additional methods without writing a plugin |
+| [plugins?](./core-types.iagentoptions.plugins.md)                     |           | [IAgentPlugin](./core-types.iagentplugin.md)\[\]     | _(Optional)_ The array of agent plugins                                                                                                            |
+| [schemaValidation?](./core-types.iagentoptions.schemavalidation.md)   |           | boolean                                              | <p>_(Optional)_ Flag that enables schema validation for plugin methods.</p><p>Defaults to <code>false</code>.</p>                                  |

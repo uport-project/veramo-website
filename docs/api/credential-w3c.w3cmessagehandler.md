@@ -14,13 +14,13 @@ This plugin can handle incoming W3C Verifiable Credentials and Presentations and
 
 The current version can only handle `JWT` encoded
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class W3cMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Remarks
 

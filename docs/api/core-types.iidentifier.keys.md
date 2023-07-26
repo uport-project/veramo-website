@@ -10,7 +10,7 @@ hide_title: true
 
 Array of managed keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keys: IKey[];

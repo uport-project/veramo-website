@@ -8,7 +8,7 @@ hide_title: true
 
 ## EthrDIDProvider.createIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createIdentifier({ kms, options }: {
@@ -24,6 +24,6 @@ createIdentifier({ kms, options }: {
 | { kms, options } | { kms?: string; options?: CreateDidEthrOptions; } |             |
 | context          | IRequiredContext                                  |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

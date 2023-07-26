@@ -12,7 +12,7 @@ hide_title: true
 
 Return type of [getDIDComponentById](./core-types.iresolver.getdidcomponentbyid.md) represents a `VerificationMethod` or a `ServiceEndpoint` entry from a This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DIDDocComponent = VerificationMethod | ServiceEndpoint

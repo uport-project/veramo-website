@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDataStoreDeleteVerifiableCredentialArgs

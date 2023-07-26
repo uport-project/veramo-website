@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyStore.listKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 listKeys(args?: {}): Promise<ManagedKeyInfo[]>;
@@ -16,10 +16,10 @@ listKeys(args?: {}): Promise<ManagedKeyInfo[]>;
 
 ## Parameters
 
-| Parameter | Type | Description       |
-| --------- | ---- | ----------------- |
-| args      | {}   | <i>(Optional)</i> |
+| Parameter | Type | Description  |
+| --------- | ---- | ------------ |
+| args      | {}   | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)\[\]&gt;

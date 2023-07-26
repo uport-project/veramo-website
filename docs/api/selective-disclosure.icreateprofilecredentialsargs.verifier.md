@@ -12,7 +12,7 @@ hide_title: true
 
 Optional. Verifier DID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifier?: string;

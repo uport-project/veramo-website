@@ -10,7 +10,7 @@ hide_title: true
 
 Provides a mapping to a did:jwk resolver, usable by .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getDidJwkResolver(): {
@@ -18,6 +18,6 @@ export declare function getDidJwkResolver(): {
 }
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 { jwk: DIDResolver; }

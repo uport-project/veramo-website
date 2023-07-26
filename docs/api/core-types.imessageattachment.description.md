@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageAttachment.description property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 description?: string;

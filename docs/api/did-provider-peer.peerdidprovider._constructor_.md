@@ -12,7 +12,7 @@ hide_title: true
 
 Constructs a new instance of the `PeerDIDProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: {

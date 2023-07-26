@@ -14,10 +14,10 @@ Mirrors [TKeyType](./core-types.tkeytype.md)
 
 - This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type KeyType = TKeyType
 ```
 
-<b>References:</b> [TKeyType](./core-types.tkeytype.md)
+**References:** [TKeyType](./core-types.tkeytype.md)

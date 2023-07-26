@@ -10,7 +10,7 @@ hide_title: true
 
 Represents a signed Verifiable Presentation (includes proof), using a JSON representation. See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type VerifiablePresentation = UnsignedPresentation & {
@@ -18,4 +18,4 @@ export type VerifiablePresentation = UnsignedPresentation & {
 }
 ```
 
-<b>References:</b> [UnsignedPresentation](./core-types.unsignedpresentation.md), [ProofType](./core-types.prooftype.md)
+**References:** [UnsignedPresentation](./core-types.unsignedpresentation.md), [ProofType](./core-types.prooftype.md)

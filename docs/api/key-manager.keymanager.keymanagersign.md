@@ -10,7 +10,7 @@ hide_title: true
 
 Generates a signature according to the algorithm specified.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerSign(args: IKeyManagerSignArgs): Promise<string>;
@@ -22,6 +22,6 @@ keyManagerSign(args: IKeyManagerSignArgs): Promise<string>;
 | --------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | args      | [IKeyManagerSignArgs](./core-types.ikeymanagersignargs.md) | The input to the signing method, including data to be signed, key reference and algorithm to use. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

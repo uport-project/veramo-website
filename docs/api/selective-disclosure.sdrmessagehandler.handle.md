@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(message: Message, context: IAgentContext<IMessageHandler>): Promise<Message>;
@@ -23,6 +23,6 @@ handle(message: Message, context: IAgentContext<IMessageHandler>): Promise<Messa
 | message   | [Message](./message-handler.message.md)                                                                  |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IMessageHandler](./core-types.imessagehandler.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Message](./message-handler.message.md)&gt;

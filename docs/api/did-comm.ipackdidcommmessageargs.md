@@ -14,7 +14,7 @@ The input to the [DIDComm.packDIDCommMessage()](./did-comm.didcomm.packdidcommme
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPackDIDCommMessageArgs
@@ -22,9 +22,9 @@ export interface IPackDIDCommMessageArgs
 
 ## Properties
 
-| Property                                                  | Modifiers | Type                                                         | Description                            |
-| --------------------------------------------------------- | --------- | ------------------------------------------------------------ | -------------------------------------- |
-| [keyRef?](./did-comm.ipackdidcommmessageargs.keyref.md)   |           | string                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [message](./did-comm.ipackdidcommmessageargs.message.md)  |           | [IDIDCommMessage](./did-comm.ididcommmessage.md)             | <b><i>(BETA)</i></b>                   |
-| [options?](./did-comm.ipackdidcommmessageargs.options.md) |           | [IDIDCommOptions](./did-comm.ididcommoptions.md)             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [packing](./did-comm.ipackdidcommmessageargs.packing.md)  |           | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | <b><i>(BETA)</i></b>                   |
+| Property                                                  | Modifiers | Type                                                         | Description               |
+| --------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------------------- |
+| [keyRef?](./did-comm.ipackdidcommmessageargs.keyref.md)   |           | string                                                       | **_(BETA)_** _(Optional)_ |
+| [message](./did-comm.ipackdidcommmessageargs.message.md)  |           | [IDIDCommMessage](./did-comm.ididcommmessage.md)             | **_(BETA)_**              |
+| [options?](./did-comm.ipackdidcommmessageargs.options.md) |           | [IDIDCommOptions](./did-comm.ididcommoptions.md)             | **_(BETA)_** _(Optional)_ |
+| [packing](./did-comm.ipackdidcommmessageargs.packing.md)  |           | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | **_(BETA)_**              |

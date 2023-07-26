@@ -10,7 +10,7 @@ hide_title: true
 
 Represents an unsigned W3C Presentation payload. See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UnsignedPresentation
@@ -18,13 +18,13 @@ export interface UnsignedPresentation
 
 ## Properties
 
-| Property                                                                           | Modifiers | Type                                                                   | Description       |
-| ---------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ----------------- |
-| ["@context"](./core-types.unsignedpresentation.__context_.md)                      |           | [ContextType](./core-types.contexttype.md)                             |                   |
-| [expirationDate?](./core-types.unsignedpresentation.expirationdate.md)             |           | string                                                                 | <i>(Optional)</i> |
-| [holder](./core-types.unsignedpresentation.holder.md)                              |           | string                                                                 |                   |
-| [id?](./core-types.unsignedpresentation.id.md)                                     |           | string                                                                 | <i>(Optional)</i> |
-| [issuanceDate?](./core-types.unsignedpresentation.issuancedate.md)                 |           | string                                                                 | <i>(Optional)</i> |
-| [type?](./core-types.unsignedpresentation.type.md)                                 |           | string\[\] &#124; string                                               | <i>(Optional)</i> |
-| [verifiableCredential?](./core-types.unsignedpresentation.verifiablecredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\] | <i>(Optional)</i> |
-| [verifier?](./core-types.unsignedpresentation.verifier.md)                         |           | string\[\]                                                             | <i>(Optional)</i> |
+| Property                                                                           | Modifiers | Type                                                                   | Description  |
+| ---------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------ |
+| ["@context"](./core-types.unsignedpresentation.__context_.md)                      |           | [ContextType](./core-types.contexttype.md)                             |              |
+| [expirationDate?](./core-types.unsignedpresentation.expirationdate.md)             |           | string                                                                 | _(Optional)_ |
+| [holder](./core-types.unsignedpresentation.holder.md)                              |           | string                                                                 |              |
+| [id?](./core-types.unsignedpresentation.id.md)                                     |           | string                                                                 | _(Optional)_ |
+| [issuanceDate?](./core-types.unsignedpresentation.issuancedate.md)                 |           | string                                                                 | _(Optional)_ |
+| [type?](./core-types.unsignedpresentation.type.md)                                 |           | string\[\] &#124; string                                               | _(Optional)_ |
+| [verifiableCredential?](./core-types.unsignedpresentation.verifiablecredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\] | _(Optional)_ |
+| [verifier?](./core-types.unsignedpresentation.verifier.md)                         |           | string\[\]                                                             | _(Optional)_ |

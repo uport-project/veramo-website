@@ -12,7 +12,7 @@ hide_title: true
 
 Contains the parameters of a Selective Disclosure Request.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICreateSelectiveDisclosureRequestArgs
@@ -26,6 +26,6 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                     | Modifiers | Type                                                                                 | Description          |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | -------------------- |
-| [data](./selective-disclosure.icreateselectivedisclosurerequestargs.data.md) |           | [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) | <b><i>(BETA)</i></b> |
+| Property                                                                     | Modifiers | Type                                                                                 | Description  |
+| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | ------------ |
+| [data](./selective-disclosure.icreateselectivedisclosurerequestargs.data.md) |           | [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) | **_(BETA)_** |

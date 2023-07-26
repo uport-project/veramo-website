@@ -10,7 +10,7 @@ hide_title: true
 
 Adds a service to a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerAddService(args: IDIDManagerAddServiceArgs, context: IAgentContext<IKeyManager>): Promise<any>;
@@ -23,7 +23,7 @@ didManagerAddService(args: IDIDManagerAddServiceArgs, context: IAgentContext<IKe
 | args      | [IDIDManagerAddServiceArgs](./core-types.ididmanageraddserviceargs.md)                           |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

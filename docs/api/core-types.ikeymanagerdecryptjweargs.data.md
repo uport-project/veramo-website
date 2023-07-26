@@ -12,7 +12,7 @@ hide_title: true
 
 Encrypted data
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 data: string

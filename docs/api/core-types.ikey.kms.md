@@ -10,7 +10,7 @@ hide_title: true
 
 Key Management System
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 kms: string

@@ -14,7 +14,7 @@ The json payload of the Credential according to the [canonical model](https://ww
 
 The signer of the Credential is chosen based on the `issuer.id` property of the `credential`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credential: VerifiableCredential

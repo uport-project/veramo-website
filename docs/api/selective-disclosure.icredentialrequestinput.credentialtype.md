@@ -12,7 +12,7 @@ hide_title: true
 
 The credential type. See [W3C Credential Types](https://www.w3.org/TR/vc-data-model/#types)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentialType?: string;

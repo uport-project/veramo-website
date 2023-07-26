@@ -10,7 +10,7 @@ hide_title: true
 
 Represents a service endpoint URL or a map of URLs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type IServiceEndpoint = string | Record<string, any>

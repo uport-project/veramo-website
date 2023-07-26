@@ -8,7 +8,7 @@ hide_title: true
 
 ## ValidationError.code property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code: string

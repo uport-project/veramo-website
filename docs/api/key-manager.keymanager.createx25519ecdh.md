@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManager.createX25519ECDH() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createX25519ECDH(secretKeyRef: string): ECDH;
@@ -20,6 +20,6 @@ createX25519ECDH(secretKeyRef: string): ECDH;
 | ------------ | ------ | ----------- |
 | secretKeyRef | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 ECDH

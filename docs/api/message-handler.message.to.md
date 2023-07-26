@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.to property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 to?: string;

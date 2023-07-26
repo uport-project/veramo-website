@@ -10,7 +10,7 @@ hide_title: true
 
 This provides a simple authorization mechanism based on a single pre-shared API key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function apiKeyAuth({ apiKey }: { apiKey: string }): Router
@@ -22,6 +22,6 @@ export declare function apiKeyAuth({ apiKey }: { apiKey: string }): Router
 | ---------- | ------------------- | ----------- |
 | { apiKey } | { apiKey: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Router

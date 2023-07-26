@@ -10,7 +10,7 @@ hide_title: true
 
 Deletes identifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerDelete(args: IDIDManagerDeleteArgs, context: IAgentContext<IKeyManager>): Promise<boolean>;
@@ -23,6 +23,6 @@ didManagerDelete(args: IDIDManagerDeleteArgs, context: IAgentContext<IKeyManager
 | args      | [IDIDManagerDeleteArgs](./core-types.ididmanagerdeleteargs.md)                                   |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

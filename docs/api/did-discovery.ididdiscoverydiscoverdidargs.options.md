@@ -12,7 +12,7 @@ hide_title: true
 
 Provider specific options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 options?: Record<string, any>;

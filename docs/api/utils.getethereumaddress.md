@@ -12,7 +12,7 @@ hide_title: true
 
 Extracts an ethereum address from a supporting legacy representations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getEthereumAddress(verificationMethod: VerificationMethod): string | undefined
@@ -24,7 +24,7 @@ export declare function getEthereumAddress(verificationMethod: VerificationMetho
 | ------------------ | ------------------ | --------------------------------------------------- |
 | verificationMethod | VerificationMethod | the VerificationMethod object (from a DID document) |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

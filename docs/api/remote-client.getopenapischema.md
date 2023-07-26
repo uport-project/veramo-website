@@ -10,7 +10,7 @@ hide_title: true
 
 This method can be used to generate an OpenAPIv3 schema to describe how the methods of a Veramo agent can be called remotely.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getOpenApiSchema: (

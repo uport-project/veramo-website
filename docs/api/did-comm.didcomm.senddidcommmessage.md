@@ -14,7 +14,7 @@ Sends the given message to the recipient. If a return transport is provided it w
 
 Emits an eventType 'DIDCommV2Message-sent' that contains the message id of packed DIDComm message [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) after the message was sent.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IDIDManager & IKeyManager & IResolver>): Promise<string>;
@@ -27,7 +27,7 @@ sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IDIDMan
 | args      | ISendDIDCommMessageArgs                                                                                                                                                                        | An object containing the message, recipient information and optional information about the transport that should be used.                                                                         |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md)&gt; | This method requires an agent that also has [IResolver](./core-types.iresolver.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

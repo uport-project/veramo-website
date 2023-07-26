@@ -10,7 +10,7 @@ hide_title: true
 
 Resolves DID and returns DID Resolution Result
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolveDid({ didUrl, options, }: {
@@ -25,6 +25,6 @@ resolveDid({ didUrl, options, }: {
 | -------------------- | --------------------------------------------------- | ----------- |
 | { didUrl, options, } | { didUrl: string; options?: DIDResolutionOptions; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;DIDResolutionResult&gt;

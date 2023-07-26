@@ -18,7 +18,7 @@ See [Credential Status](https://www.w3.org/TR/vc-data-model/#status)
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICheckCredentialStatusArgs
@@ -26,7 +26,7 @@ export interface ICheckCredentialStatusArgs
 
 ## Properties
 
-| Property                                                                               | Modifiers | Type                                                         | Description                                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [credential](./core-types.icheckcredentialstatusargs.credential.md)                    |           | [VerifiableCredential](./core-types.verifiablecredential.md) | <b><i>(BETA)</i></b> The credential whose status needs to be checked                                                                                                                             |
-| [didDocumentOverride?](./core-types.icheckcredentialstatusargs.diddocumentoverride.md) |           | DIDDocument                                                  | <b><i>(BETA)</i></b> <i>(Optional)</i> The DID document of the issuer. This can be used in case the DID Document is already resolver, to avoid a potentially expensive DID resolution operation. |
+| Property                                                                               | Modifiers | Type                                                         | Description                                                                                                                                                                         |
+| -------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [credential](./core-types.icheckcredentialstatusargs.credential.md)                    |           | [VerifiableCredential](./core-types.verifiablecredential.md) | **_(BETA)_** The credential whose status needs to be checked                                                                                                                        |
+| [didDocumentOverride?](./core-types.icheckcredentialstatusargs.diddocumentoverride.md) |           | DIDDocument                                                  | **_(BETA)_** _(Optional)_ The DID document of the issuer. This can be used in case the DID Document is already resolver, to avoid a potentially expensive DID resolution operation. |

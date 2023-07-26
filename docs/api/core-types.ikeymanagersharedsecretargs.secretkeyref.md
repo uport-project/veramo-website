@@ -10,7 +10,7 @@ hide_title: true
 
 The secret key handle (`kid`) as returned by [keyManagerCreate](./core-types.ikeymanager.keymanagercreate.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 secretKeyRef: string

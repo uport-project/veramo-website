@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sharedSecret(args: {
@@ -25,6 +25,6 @@ sharedSecret(args: {
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
 | args      | { myKeyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; theirKey: Pick&lt;[IKey](./core-types.ikey.md), 'type' &#124; 'publicKeyHex'&gt;; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

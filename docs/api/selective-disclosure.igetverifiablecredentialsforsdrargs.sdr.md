@@ -12,7 +12,7 @@ hide_title: true
 
 The Selective Disclosure Request (issuer is omitted)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sdr: Omit<ISelectiveDisclosureRequest, 'issuer'>

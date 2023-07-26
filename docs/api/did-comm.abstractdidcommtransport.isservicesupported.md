@@ -12,7 +12,7 @@ hide_title: true
 
 Returns `true` if this transport is suitable for the provided DID Document service section, otherwise `false`.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract isServiceSupported(service: any): boolean;
@@ -24,6 +24,6 @@ abstract isServiceSupported(service: any): boolean;
 | --------- | ---- | --------------------------------------------------------------------------------------------------- |
 | service   | any  | <p>The DID Document service section</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

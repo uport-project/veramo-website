@@ -8,12 +8,12 @@ hide_title: true
 
 ## AbstractKeyManagementSystem.listKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract listKeys(): Promise<Array<ManagedKeyInfo>>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;&gt;

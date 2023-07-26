@@ -12,10 +12,10 @@ Represents private key data that can be imported. This is a subset of [ManagedPr
 
 The `alias` of the resulting [ManagedPrivateKey](./key-manager.managedprivatekey.md) can be generated automatically if none is provided.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ImportablePrivateKey = RequireOnly<ManagedPrivateKey, 'privateKeyHex' | 'type'>
 ```
 
-<b>References:</b> [RequireOnly](./core-types.requireonly.md), [ManagedPrivateKey](./key-manager.managedprivatekey.md)
+**References:** [RequireOnly](./core-types.requireonly.md), [ManagedPrivateKey](./key-manager.managedprivatekey.md)

@@ -10,7 +10,7 @@ hide_title: true
 
 Overrides specific aspects of credential verification, where possible.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 policies?: VerificationPolicies;

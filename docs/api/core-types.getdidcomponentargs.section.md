@@ -12,7 +12,7 @@ hide_title: true
 
 Optional. The section of the DID document where to search for the fragment. Example 'keyAgreement', or 'assertionMethod', or 'authentication', etc
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 section?: DIDDocumentSection;

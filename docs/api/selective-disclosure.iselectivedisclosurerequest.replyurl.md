@@ -12,7 +12,7 @@ hide_title: true
 
 The URL where the response should be sent back
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 replyUrl?: string;

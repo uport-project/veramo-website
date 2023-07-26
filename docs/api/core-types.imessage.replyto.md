@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. List of DIDs to reply to
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 replyTo?: string[];

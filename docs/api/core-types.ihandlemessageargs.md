@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [handleMessage](./core-types.imessagehandler.handlemessage.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IHandleMessageArgs
@@ -18,8 +18,8 @@ export interface IHandleMessageArgs
 
 ## Properties
 
-| Property                                                 | Modifiers | Type                                       | Description                                                                                                                                                               |
-| -------------------------------------------------------- | --------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [metaData?](./core-types.ihandlemessageargs.metadata.md) |           | [IMetaData](./core-types.imetadata.md)\[\] | <i>(Optional)</i> Optional. Message meta data                                                                                                                             |
-| [raw](./core-types.ihandlemessageargs.raw.md)            |           | string                                     | Raw message data                                                                                                                                                          |
-| [save?](./core-types.ihandlemessageargs.save.md)         |           | boolean                                    | <i>(Optional)</i> Optional. If set to <code>true</code>, the message will be saved using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md) <p/><p/> |
+| Property                                                 | Modifiers | Type                                       | Description                                                                                                                                                          |
+| -------------------------------------------------------- | --------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [metaData?](./core-types.ihandlemessageargs.metadata.md) |           | [IMetaData](./core-types.imetadata.md)\[\] | _(Optional)_ Optional. Message meta data                                                                                                                             |
+| [raw](./core-types.ihandlemessageargs.raw.md)            |           | string                                     | Raw message data                                                                                                                                                     |
+| [save?](./core-types.ihandlemessageargs.save.md)         |           | boolean                                    | _(Optional)_ Optional. If set to <code>true</code>, the message will be saved using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md) <p/><p/> |

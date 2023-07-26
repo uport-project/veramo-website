@@ -10,7 +10,7 @@ hide_title: true
 
 Service ID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 id: string

@@ -14,7 +14,7 @@ The DIDComm message structure for data in an attachment. See https://identity.fo
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDCommMessageAttachmentData
@@ -22,10 +22,10 @@ export interface IDIDCommMessageAttachmentData
 
 ## Properties
 
-| Property                                                      | Modifiers | Type       | Description                            |
-| ------------------------------------------------------------- | --------- | ---------- | -------------------------------------- |
-| [base64?](./did-comm.ididcommmessageattachmentdata.base64.md) |           | string     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash?](./did-comm.ididcommmessageattachmentdata.hash.md)     |           | string     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [json?](./did-comm.ididcommmessageattachmentdata.json.md)     |           | any        | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [jws?](./did-comm.ididcommmessageattachmentdata.jws.md)       |           | any        | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [links?](./did-comm.ididcommmessageattachmentdata.links.md)   |           | string\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                      | Modifiers | Type       | Description               |
+| ------------------------------------------------------------- | --------- | ---------- | ------------------------- |
+| [base64?](./did-comm.ididcommmessageattachmentdata.base64.md) |           | string     | **_(BETA)_** _(Optional)_ |
+| [hash?](./did-comm.ididcommmessageattachmentdata.hash.md)     |           | string     | **_(BETA)_** _(Optional)_ |
+| [json?](./did-comm.ididcommmessageattachmentdata.json.md)     |           | any        | **_(BETA)_** _(Optional)_ |
+| [jws?](./did-comm.ididcommmessageattachmentdata.jws.md)       |           | any        | **_(BETA)_** _(Optional)_ |
+| [links?](./did-comm.ididcommmessageattachmentdata.links.md)   |           | string\[\] | **_(BETA)_** _(Optional)_ |

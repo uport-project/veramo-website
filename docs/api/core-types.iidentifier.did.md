@@ -10,7 +10,7 @@ hide_title: true
 
 Decentralized identifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 did: string

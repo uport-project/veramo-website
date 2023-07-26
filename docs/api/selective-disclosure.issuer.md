@@ -14,7 +14,7 @@ Used for requesting Credentials using Selective Disclosure. Represents an accept
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Issuer
@@ -22,7 +22,7 @@ export interface Issuer
 
 ## Properties
 
-| Property                                    | Modifiers | Type   | Description                                                                 |
-| ------------------------------------------- | --------- | ------ | --------------------------------------------------------------------------- |
-| [did](./selective-disclosure.issuer.did.md) |           | string | <b><i>(BETA)</i></b> The DID of the issuer of a requested credential.       |
-| [url](./selective-disclosure.issuer.url.md) |           | string | <b><i>(BETA)</i></b> A URL where a credential of that type can be obtained. |
+| Property                                    | Modifiers | Type   | Description                                                         |
+| ------------------------------------------- | --------- | ------ | ------------------------------------------------------------------- |
+| [did](./selective-disclosure.issuer.did.md) |           | string | **_(BETA)_** The DID of the issuer of a requested credential.       |
+| [url](./selective-disclosure.issuer.url.md) |           | string | **_(BETA)_** A URL where a credential of that type can be obtained. |

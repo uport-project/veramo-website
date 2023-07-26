@@ -10,7 +10,7 @@ hide_title: true
 
 Alias
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 alias: string

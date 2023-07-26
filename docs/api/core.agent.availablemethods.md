@@ -10,13 +10,13 @@ hide_title: true
 
 Lists available agent method names
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 availableMethods(): string[];
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string\[\]
 

@@ -10,7 +10,7 @@ hide_title: true
 
 Gets verifiable presentation from the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreGetVerifiablePresentation(args: IDataStoreGetVerifiablePresentationArgs): Promise<VerifiablePresentation>;
@@ -22,7 +22,7 @@ dataStoreGetVerifiablePresentation(args: IDataStoreGetVerifiablePresentationArgs
 | --------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | args      | [IDataStoreGetVerifiablePresentationArgs](./core-types.idatastoregetverifiablepresentationargs.md) | arguments for getting Verifiable Presentation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;
 

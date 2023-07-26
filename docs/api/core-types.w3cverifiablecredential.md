@@ -14,10 +14,10 @@ Represents a signed Verifiable Credential (includes proof), in either JSON or co
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type W3CVerifiableCredential = VerifiableCredential | CompactJWT
 ```
 
-<b>References:</b> [VerifiableCredential](./core-types.verifiablecredential.md), [CompactJWT](./core-types.compactjwt.md)
+**References:** [VerifiableCredential](./core-types.verifiablecredential.md), [CompactJWT](./core-types.compactjwt.md)

@@ -10,7 +10,7 @@ hide_title: true
 
 Declares the event types that this listener is interested in.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly eventTypes?: string[];

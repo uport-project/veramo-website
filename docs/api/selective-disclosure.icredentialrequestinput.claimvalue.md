@@ -12,7 +12,7 @@ hide_title: true
 
 The value of the claim that the credential should express.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 claimValue?: string;

@@ -12,7 +12,7 @@ hide_title: true
 
 Search string
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 query: string

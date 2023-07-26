@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.raw property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 raw?: string;

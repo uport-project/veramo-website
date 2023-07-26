@@ -10,7 +10,7 @@ hide_title: true
 
 Helper function to create a new instance of the [Agent](./core.agent.md) class with correct type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createAgent<T extends IPluginMethodMap, C = Record<string, any>>(
@@ -28,7 +28,7 @@ export declare function createAgent<T extends IPluginMethodMap, C = Record<strin
 | --------- | --------------------------------------------------------------------- | --------------------------- |
 | options   | [IAgentOptions](./core-types.iagentoptions.md) &amp; { context?: C; } | Agent configuration options |
 
-<b>Returns:</b>
+**Returns:**
 
 [TAgent](./core-types.tagent.md)&lt;T&gt; &amp; { context?: C; }
 

@@ -10,7 +10,7 @@ hide_title: true
 
 Name used in OpenAPI schema
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apiName?: string;

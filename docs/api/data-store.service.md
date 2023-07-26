@@ -14,20 +14,20 @@ Represents some properties of a as it is stored in a TypeORM database. This is u
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Service extends BaseEntity
 ```
 
-<b>Extends:</b> BaseEntity
+**Extends:** BaseEntity
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                                                     | Description                            |
-| ---------------------------------------------------------- | --------- | -------------------------------------------------------- | -------------------------------------- |
-| [description?](./data-store.service.description.md)        |           | string                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id](./data-store.service.id.md)                           |           | string                                                   | <b><i>(BETA)</i></b>                   |
-| [identifier?](./data-store.service.identifier.md)          |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt; | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                                   | <b><i>(BETA)</i></b>                   |
-| [type](./data-store.service.type.md)                       |           | string                                                   | <b><i>(BETA)</i></b>                   |
+| Property                                                   | Modifiers | Type                                                     | Description               |
+| ---------------------------------------------------------- | --------- | -------------------------------------------------------- | ------------------------- |
+| [description?](./data-store.service.description.md)        |           | string                                                   | **_(BETA)_** _(Optional)_ |
+| [id](./data-store.service.id.md)                           |           | string                                                   | **_(BETA)_**              |
+| [identifier?](./data-store.service.identifier.md)          |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt; | **_(BETA)_** _(Optional)_ |
+| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                                   | **_(BETA)_**              |
+| [type](./data-store.service.type.md)                       |           | string                                                   | **_(BETA)_**              |

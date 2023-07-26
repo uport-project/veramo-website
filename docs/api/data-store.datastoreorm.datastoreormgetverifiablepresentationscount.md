@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetVerifiablePresentationsCount(args: FindArgs<TPresentationColumns>, context: AuthorizedDIDContext): Promise<number>;
@@ -23,6 +23,6 @@ dataStoreORMGetVerifiablePresentationsCount(args: FindArgs<TPresentationColumns>
 | args      | [FindArgs](./core-types.findargs.md)&lt;[TPresentationColumns](./core-types.tpresentationcolumns.md)&gt; |             |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)                                             |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;number&gt;

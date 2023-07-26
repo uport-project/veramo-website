@@ -12,13 +12,13 @@ An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that 
 
 This is usable by [KeyManager](./key-manager.keymanager.md) to hold the key metadata and relationship to the KMS implementation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MemoryKeyStore extends AbstractKeyStore
 ```
 
-<b>Extends:</b> [AbstractKeyStore](./key-manager.abstractkeystore.md)
+**Extends:** [AbstractKeyStore](./key-manager.abstractkeystore.md)
 
 ## Methods
 

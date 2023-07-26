@@ -12,13 +12,13 @@ A class implementing [IMessage](./core-types.imessage.md).
 
 This is used by [MessageHandler](./message-handler.messagehandler.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Message implements IMessage
 ```
 
-<b>Implements:</b> [IMessage](./core-types.imessage.md)
+**Implements:** [IMessage](./core-types.imessage.md)
 
 ## Constructors
 
@@ -28,24 +28,24 @@ export declare class Message implements IMessage
 
 ## Properties
 
-| Property                                                     | Modifiers | Type                                                                 | Description       |
-| ------------------------------------------------------------ | --------- | -------------------------------------------------------------------- | ----------------- |
-| [attachments?](./message-handler.message.attachments.md)     |           | [IMessageAttachment](./core-types.imessageattachment.md)\[\]         | <i>(Optional)</i> |
-| [createdAt?](./message-handler.message.createdat.md)         |           | string                                                               | <i>(Optional)</i> |
-| [credentials?](./message-handler.message.credentials.md)     |           | [VerifiableCredential](./core-types.verifiablecredential.md)\[\]     | <i>(Optional)</i> |
-| [data?](./message-handler.message.data.md)                   |           | any                                                                  | <i>(Optional)</i> |
-| [expiresAt?](./message-handler.message.expiresat.md)         |           | string                                                               | <i>(Optional)</i> |
-| [from?](./message-handler.message.from.md)                   |           | string                                                               | <i>(Optional)</i> |
-| [id](./message-handler.message.id.md)                        |           | string                                                               |                   |
-| [metaData?](./message-handler.message.metadata.md)           |           | [IMetaData](./core-types.imetadata.md)\[\]                           | <i>(Optional)</i> |
-| [presentations?](./message-handler.message.presentations.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)\[\] | <i>(Optional)</i> |
-| [raw?](./message-handler.message.raw.md)                     |           | string                                                               | <i>(Optional)</i> |
-| [replyTo?](./message-handler.message.replyto.md)             |           | string\[\]                                                           | <i>(Optional)</i> |
-| [replyUrl?](./message-handler.message.replyurl.md)           |           | string                                                               | <i>(Optional)</i> |
-| [returnRoute?](./message-handler.message.returnroute.md)     |           | string                                                               | <i>(Optional)</i> |
-| [threadId?](./message-handler.message.threadid.md)           |           | string                                                               | <i>(Optional)</i> |
-| [to?](./message-handler.message.to.md)                       |           | string                                                               | <i>(Optional)</i> |
-| [type](./message-handler.message.type.md)                    |           | string                                                               |                   |
+| Property                                                     | Modifiers | Type                                                                 | Description  |
+| ------------------------------------------------------------ | --------- | -------------------------------------------------------------------- | ------------ |
+| [attachments?](./message-handler.message.attachments.md)     |           | [IMessageAttachment](./core-types.imessageattachment.md)\[\]         | _(Optional)_ |
+| [createdAt?](./message-handler.message.createdat.md)         |           | string                                                               | _(Optional)_ |
+| [credentials?](./message-handler.message.credentials.md)     |           | [VerifiableCredential](./core-types.verifiablecredential.md)\[\]     | _(Optional)_ |
+| [data?](./message-handler.message.data.md)                   |           | any                                                                  | _(Optional)_ |
+| [expiresAt?](./message-handler.message.expiresat.md)         |           | string                                                               | _(Optional)_ |
+| [from?](./message-handler.message.from.md)                   |           | string                                                               | _(Optional)_ |
+| [id](./message-handler.message.id.md)                        |           | string                                                               |              |
+| [metaData?](./message-handler.message.metadata.md)           |           | [IMetaData](./core-types.imetadata.md)\[\]                           | _(Optional)_ |
+| [presentations?](./message-handler.message.presentations.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)\[\] | _(Optional)_ |
+| [raw?](./message-handler.message.raw.md)                     |           | string                                                               | _(Optional)_ |
+| [replyTo?](./message-handler.message.replyto.md)             |           | string\[\]                                                           | _(Optional)_ |
+| [replyUrl?](./message-handler.message.replyurl.md)           |           | string                                                               | _(Optional)_ |
+| [returnRoute?](./message-handler.message.returnroute.md)     |           | string                                                               | _(Optional)_ |
+| [threadId?](./message-handler.message.threadid.md)           |           | string                                                               | _(Optional)_ |
+| [to?](./message-handler.message.to.md)                       |           | string                                                               | _(Optional)_ |
+| [type](./message-handler.message.type.md)                    |           | string                                                               |              |
 
 ## Methods
 

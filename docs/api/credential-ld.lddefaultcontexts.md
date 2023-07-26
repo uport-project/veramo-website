@@ -16,7 +16,7 @@ You can use this to bootstrap the `@context` definitions used by [CredentialIssu
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LdDefaultContexts: Map<

@@ -12,7 +12,7 @@ hide_title: true
 
 The credential whose status needs to be checked
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credential: VerifiableCredential

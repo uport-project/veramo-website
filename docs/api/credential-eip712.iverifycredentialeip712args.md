@@ -14,7 +14,7 @@ Encapsulates the parameters required to verify a [W3C Verifiable Credential](htt
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IVerifyCredentialEIP712Args
@@ -22,6 +22,6 @@ export interface IVerifyCredentialEIP712Args
 
 ## Properties
 
-| Property                                                                    | Modifiers | Type                                                         | Description                                                                                                                                                                                                                                                                  |
-| --------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [credential](./credential-eip712.iverifycredentialeip712args.credential.md) |           | [VerifiableCredential](./core-types.verifiablecredential.md) | <p><b><i>(BETA)</i></b> The json payload of the Credential according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>The signer of the Credential is chosen based on the <code>issuer.id</code> property of the <code>credential</code></p> |
+| Property                                                                    | Modifiers | Type                                                         | Description                                                                                                                                                                                                                                                          |
+| --------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [credential](./credential-eip712.iverifycredentialeip712args.credential.md) |           | [VerifiableCredential](./core-types.verifiablecredential.md) | <p>**_(BETA)_** The json payload of the Credential according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>The signer of the Credential is chosen based on the <code>issuer.id</code> property of the <code>credential</code></p> |

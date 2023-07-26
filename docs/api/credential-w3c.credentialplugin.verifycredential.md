@@ -10,7 +10,7 @@ hide_title: true
 
 Verifies a Verifiable Credential JWT, LDS Format or EIP712.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyCredential(args: IVerifyCredentialArgs, context: VerifierAgentContext): Promise<IVerifyResult>;
@@ -23,7 +23,7 @@ verifyCredential(args: IVerifyCredentialArgs, context: VerifierAgentContext): Pr
 | args      | [IVerifyCredentialArgs](./core-types.iverifycredentialargs.md) | Arguments necessary to verify a VerifiableCredential                                         |
 | context   | [VerifierAgentContext](./core-types.verifieragentcontext.md)   | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IVerifyResult](./core-types.iverifyresult.md)&gt;
 

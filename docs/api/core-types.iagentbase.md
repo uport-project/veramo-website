@@ -10,7 +10,7 @@ hide_title: true
 
 Agent base interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAgentBase

@@ -14,16 +14,16 @@ Describes the interface of DID discovery plugin.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDDiscovery extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Methods
 
-| Method                                                                     | Description          |
-| -------------------------------------------------------------------------- | -------------------- |
-| [discoverDid(args, context)](./did-discovery.ididdiscovery.discoverdid.md) | <b><i>(BETA)</i></b> |
+| Method                                                                     | Description  |
+| -------------------------------------------------------------------------- | ------------ |
+| [discoverDid(args, context)](./did-discovery.ididdiscovery.discoverdid.md) | **_(BETA)_** |

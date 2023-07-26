@@ -10,7 +10,7 @@ hide_title: true
 
 Identifier alias. Can be used to reference an object in an external system
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 alias: string

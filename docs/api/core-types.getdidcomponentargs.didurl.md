@@ -14,7 +14,7 @@ The DID URI that needs to be dereferenced. This should refer to the subsection b
 
 Example: did:example:identifier\#controller
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didUrl: string

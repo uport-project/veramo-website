@@ -14,7 +14,7 @@ Represents a WHERE predicate for a [FindArgs](./core-types.findargs.md) query. I
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Where<TColumns>
@@ -22,9 +22,9 @@ export interface Where<TColumns>
 
 ## Properties
 
-| Property                               | Modifiers | Type                                                                                                                                                                  | Description                            |
-| -------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| [column](./core-types.where.column.md) |           | TColumns                                                                                                                                                              | <b><i>(BETA)</i></b>                   |
-| [not?](./core-types.where.not.md)      |           | boolean                                                                                                                                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [op?](./core-types.where.op.md)        |           | 'LessThan' &#124; 'LessThanOrEqual' &#124; 'MoreThan' &#124; 'MoreThanOrEqual' &#124; 'Equal' &#124; 'Like' &#124; 'Between' &#124; 'In' &#124; 'Any' &#124; 'IsNull' | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [value?](./core-types.where.value.md)  |           | string\[\]                                                                                                                                                            | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                               | Modifiers | Type                                                                                                                                                                  | Description               |
+| -------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [column](./core-types.where.column.md) |           | TColumns                                                                                                                                                              | **_(BETA)_**              |
+| [not?](./core-types.where.not.md)      |           | boolean                                                                                                                                                               | **_(BETA)_** _(Optional)_ |
+| [op?](./core-types.where.op.md)        |           | 'LessThan' &#124; 'LessThanOrEqual' &#124; 'MoreThan' &#124; 'MoreThanOrEqual' &#124; 'Equal' &#124; 'Like' &#124; 'Between' &#124; 'In' &#124; 'Any' &#124; 'IsNull' | **_(BETA)_** _(Optional)_ |
+| [value?](./core-types.where.value.md)  |           | string\[\]                                                                                                                                                            | **_(BETA)_** _(Optional)_ |

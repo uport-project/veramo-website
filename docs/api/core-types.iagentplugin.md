@@ -10,17 +10,17 @@ hide_title: true
 
 Agent plugin interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAgentPlugin extends IEventListener
 ```
 
-<b>Extends:</b> [IEventListener](./core-types.ieventlistener.md)
+**Extends:** [IEventListener](./core-types.ieventlistener.md)
 
 ## Properties
 
-| Property                                         | Modifiers             | Type                                                     | Description       |
-| ------------------------------------------------ | --------------------- | -------------------------------------------------------- | ----------------- |
-| [methods?](./core-types.iagentplugin.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core-types.ipluginmethodmap.md)     | <i>(Optional)</i> |
-| [schema?](./core-types.iagentplugin.schema.md)   | <code>readonly</code> | [IAgentPluginSchema](./core-types.iagentpluginschema.md) | <i>(Optional)</i> |
+| Property                                         | Modifiers             | Type                                                     | Description  |
+| ------------------------------------------------ | --------------------- | -------------------------------------------------------- | ------------ |
+| [methods?](./core-types.iagentplugin.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core-types.ipluginmethodmap.md)     | _(Optional)_ |
+| [schema?](./core-types.iagentplugin.schema.md)   | <code>readonly</code> | [IAgentPluginSchema](./core-types.iagentpluginschema.md) | _(Optional)_ |

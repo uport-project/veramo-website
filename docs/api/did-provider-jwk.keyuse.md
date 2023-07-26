@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyUse type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type KeyUse = 'sig' | 'enc'

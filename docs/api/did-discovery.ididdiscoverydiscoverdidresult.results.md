@@ -12,7 +12,7 @@ hide_title: true
 
 List of discovery results from different providers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 results: IDIDDiscoveryProviderResult[];

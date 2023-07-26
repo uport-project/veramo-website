@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractIdentifierProvider.updateIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract updateIdentifier?(args: {
@@ -27,6 +27,6 @@ abstract updateIdentifier?(args: {
 | args      | { did: string; document: Partial&lt;DIDDocument&gt;; options?: { \[x: string\]: any; }; }        |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

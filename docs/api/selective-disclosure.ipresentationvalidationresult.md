@@ -14,7 +14,7 @@ The result of a selective disclosure response validation.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPresentationValidationResult
@@ -22,7 +22,7 @@ export interface IPresentationValidationResult
 
 ## Properties
 
-| Property                                                                 | Modifiers | Type                                                                   | Description          |
-| ------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------- | -------------------- |
-| [claims](./selective-disclosure.ipresentationvalidationresult.claims.md) |           | [ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)\[\] | <b><i>(BETA)</i></b> |
-| [valid](./selective-disclosure.ipresentationvalidationresult.valid.md)   |           | boolean                                                                | <b><i>(BETA)</i></b> |
+| Property                                                                 | Modifiers | Type                                                                   | Description  |
+| ------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------- | ------------ |
+| [claims](./selective-disclosure.ipresentationvalidationresult.claims.md) |           | [ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)\[\] | **_(BETA)_** |
+| [valid](./selective-disclosure.ipresentationvalidationresult.valid.md)   |           | boolean                                                                | **_(BETA)_** |

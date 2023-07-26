@@ -12,7 +12,7 @@ hide_title: true
 
 Dereferences a DID URL fragment and returns the corresponding DID document entry.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDIDComponentById(args: GetDIDComponentArgs): Promise<DIDDocComponent>;
@@ -24,7 +24,7 @@ getDIDComponentById(args: GetDIDComponentArgs): Promise<DIDDocComponent>;
 | --------- | ---------------------------------------------------------- | ------------------------------------------ |
 | args      | [GetDIDComponentArgs](./core-types.getdidcomponentargs.md) | The description of the component you want. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[DIDDocComponent](./core-types.diddoccomponent.md)&gt;
 

@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, context: IAgentContext<IDataStoreORM>): Promise<Array<ICredentialsForSdr>>;
@@ -23,6 +23,6 @@ getVerifiableCredentialsForSdr(args: IGetVerifiableCredentialsForSdrArgs, contex
 | args      | [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md) |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDataStoreORM](./core-types.idatastoreorm.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)&gt;&gt;

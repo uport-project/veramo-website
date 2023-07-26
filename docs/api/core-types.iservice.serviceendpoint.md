@@ -10,7 +10,7 @@ hide_title: true
 
 Endpoint URL
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serviceEndpoint: IServiceEndpoint | IServiceEndpoint[];

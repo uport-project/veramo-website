@@ -14,7 +14,7 @@ Encapsulates the parameters required to verify a [W3C Verifiable Credential](htt
 
 This API may change without a BREAKING CHANGE notice
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IVerifyCredentialLDArgs
@@ -22,7 +22,7 @@ export interface IVerifyCredentialLDArgs
 
 ## Properties
 
-| Property                                                                               | Modifiers | Type                                                         | Description                                                                                                                                                                                                                                                                  |
-| -------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [credential](./credential-ld.iverifycredentialldargs.credential.md)                    |           | [VerifiableCredential](./core-types.verifiablecredential.md) | <p><b><i>(BETA)</i></b> The json payload of the Credential according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>The signer of the Credential is chosen based on the <code>issuer.id</code> property of the <code>credential</code></p> |
-| [fetchRemoteContexts?](./credential-ld.iverifycredentialldargs.fetchremotecontexts.md) |           | boolean                                                      | <p><b><i>(BETA)</i></b> <i>(Optional)</i> Set this to true if you want the <code>@context</code> URLs to be fetched in case they are not preloaded.</p><p>Defaults to <code>false</code></p>                                                                                 |
+| Property                                                                               | Modifiers | Type                                                         | Description                                                                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [credential](./credential-ld.iverifycredentialldargs.credential.md)                    |           | [VerifiableCredential](./core-types.verifiablecredential.md) | <p>**_(BETA)_** The json payload of the Credential according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>The signer of the Credential is chosen based on the <code>issuer.id</code> property of the <code>credential</code></p> |
+| [fetchRemoteContexts?](./credential-ld.iverifycredentialldargs.fetchremotecontexts.md) |           | boolean                                                      | <p>**_(BETA)_** _(Optional)_ Set this to true if you want the <code>@context</code> URLs to be fetched in case they are not preloaded.</p><p>Defaults to <code>false</code></p>                                                                                      |

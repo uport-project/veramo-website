@@ -12,7 +12,7 @@ hide_title: true
 
 The name of the claim property that the credential should express.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 claimType: string

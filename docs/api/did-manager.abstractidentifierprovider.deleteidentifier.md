@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractIdentifierProvider.deleteIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract deleteIdentifier(args: IIdentifier, context: IAgentContext<IKeyManager>): Promise<boolean>;
@@ -21,6 +21,6 @@ abstract deleteIdentifier(args: IIdentifier, context: IAgentContext<IKeyManager>
 | args      | [IIdentifier](./core-types.iidentifier.md)                                                       |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

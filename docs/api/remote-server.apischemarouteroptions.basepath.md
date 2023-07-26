@@ -10,7 +10,7 @@ hide_title: true
 
 Base path
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 basePath: string

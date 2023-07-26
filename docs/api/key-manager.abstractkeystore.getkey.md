@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractKeyStore.getKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract getKey(args: {
@@ -22,6 +22,6 @@ abstract getKey(args: {
 | --------- | ---------------- | ----------- |
 | args      | { kid: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IKey](./core-types.ikey.md)&gt;

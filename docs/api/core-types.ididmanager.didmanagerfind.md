@@ -10,7 +10,7 @@ hide_title: true
 
 Returns a list of managed identifiers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerFind(args: IDIDManagerFindArgs): Promise<Array<IIdentifier>>;
@@ -22,7 +22,7 @@ didManagerFind(args: IDIDManagerFindArgs): Promise<Array<IIdentifier>>;
 | --------- | ---------------------------------------------------------- | -------------------------------------------------- |
 | args      | [IDIDManagerFindArgs](./core-types.ididmanagerfindargs.md) | Required. Arguments to get the list of identifiers |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[IIdentifier](./core-types.iidentifier.md)&gt;&gt;
 

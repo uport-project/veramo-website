@@ -14,29 +14,29 @@ Abstract implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md).
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractDIDCommTransport implements IDIDCommTransport
 ```
 
-<b>Implements:</b> [IDIDCommTransport](./did-comm.ididcommtransport.md)
+**Implements:** [IDIDCommTransport](./did-comm.ididcommtransport.md)
 
 ## Constructors
 
-| Constructor                                                               | Modifiers | Description                                                                                                                                            |
-| ------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [(constructor)(id)](./did-comm.abstractdidcommtransport._constructor_.md) |           | <b><i>(BETA)</i></b> Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md). |
+| Constructor                                                               | Modifiers | Description                                                                                                                                    |
+| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [(constructor)(id)](./did-comm.abstractdidcommtransport._constructor_.md) |           | **_(BETA)_** Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md). |
 
 ## Properties
 
-| Property                                        | Modifiers | Type   | Description          |
-| ----------------------------------------------- | --------- | ------ | -------------------- |
-| [id](./did-comm.abstractdidcommtransport.id.md) |           | string | <b><i>(BETA)</i></b> |
+| Property                                        | Modifiers | Type   | Description  |
+| ----------------------------------------------- | --------- | ------ | ------------ |
+| [id](./did-comm.abstractdidcommtransport.id.md) |           | string | **_(BETA)_** |
 
 ## Methods
 
-| Method                                                                                   | Modifiers | Description                                                                                                                                                    |
-| ---------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [isServiceSupported(service)](./did-comm.abstractdidcommtransport.isservicesupported.md) |           | <b><i>(BETA)</i></b> Returns <code>true</code> if this transport is suitable for the provided DID Document service section, otherwise <code>false</code>.      |
-| [send(service, message)](./did-comm.abstractdidcommtransport.send.md)                    |           | <b><i>(BETA)</i></b> Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section. |
+| Method                                                                                   | Modifiers             | Description                                                                                                                                            |
+| ---------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [isServiceSupported(service)](./did-comm.abstractdidcommtransport.isservicesupported.md) | <code>abstract</code> | **_(BETA)_** Returns <code>true</code> if this transport is suitable for the provided DID Document service section, otherwise <code>false</code>.      |
+| [send(service, message)](./did-comm.abstractdidcommtransport.send.md)                    | <code>abstract</code> | **_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section. |

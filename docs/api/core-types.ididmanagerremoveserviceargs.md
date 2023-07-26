@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerRemoveService](./core-types.ididmanager.didmanagerremoveservice.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerRemoveServiceArgs
@@ -18,8 +18,8 @@ export interface IDIDManagerRemoveServiceArgs
 
 ## Properties
 
-| Property                                                         | Modifiers | Type   | Description                                                      |
-| ---------------------------------------------------------------- | --------- | ------ | ---------------------------------------------------------------- |
-| [did](./core-types.ididmanagerremoveserviceargs.did.md)          |           | string | DID                                                              |
-| [id](./core-types.ididmanagerremoveserviceargs.id.md)            |           | string | Service ID                                                       |
-| [options?](./core-types.ididmanagerremoveserviceargs.options.md) |           | object | <i>(Optional)</i> Optional. Identifier provider specific options |
+| Property                                                         | Modifiers | Type   | Description                                                 |
+| ---------------------------------------------------------------- | --------- | ------ | ----------------------------------------------------------- |
+| [did](./core-types.ididmanagerremoveserviceargs.did.md)          |           | string | DID                                                         |
+| [id](./core-types.ididmanagerremoveserviceargs.id.md)            |           | string | Service ID                                                  |
+| [options?](./core-types.ididmanagerremoveserviceargs.options.md) |           | object | _(Optional)_ Optional. Identifier provider specific options |

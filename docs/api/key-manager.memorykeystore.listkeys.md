@@ -8,7 +8,7 @@ hide_title: true
 
 ## MemoryKeyStore.listKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 listKeys(args: {}): Promise<Exclude<IKey, 'privateKeyHex'>[]>;
@@ -20,6 +20,6 @@ listKeys(args: {}): Promise<Exclude<IKey, 'privateKeyHex'>[]>;
 | --------- | ---- | ----------- |
 | args      | {}   |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Exclude&lt;[IKey](./core-types.ikey.md), 'privateKeyHex'&gt;\[\]&gt;

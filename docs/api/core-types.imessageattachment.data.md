@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageAttachment.data property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 data: IMessageAttachmentData

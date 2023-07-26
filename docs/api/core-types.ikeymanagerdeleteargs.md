@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [keyManagerDelete](./core-types.ikeymanager.keymanagerdelete.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManagerDeleteArgs

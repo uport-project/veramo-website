@@ -10,7 +10,7 @@ hide_title: true
 
 Creates and returns a new identifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createIdentifier({ kms, options, alias }: {
@@ -27,6 +27,6 @@ createIdentifier({ kms, options, alias }: {
 | { kms, options, alias } | { kms?: string; alias?: string; options?: ICreateIdentifierOpts; }                               |                                                                                                                                                                                                                                                                |
 | context                 | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

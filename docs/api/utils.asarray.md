@@ -12,7 +12,7 @@ hide_title: true
 
 Ensures that a given input is an array. If the input is a single item, it is converted to an array with a single entry.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asArray<T>(arg?: T | T[] | any): (T | any)[]
@@ -20,10 +20,10 @@ export declare function asArray<T>(arg?: T | T[] | any): (T | any)[]
 
 ## Parameters
 
-| Parameter | Type                      | Description                                                                                                                         |
-| --------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| arg       | T &#124; T\[\] &#124; any | <p><i>(Optional)</i> a variable that needs to be converted to array</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Parameter | Type                      | Description                                                                                                                    |
+| --------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| arg       | T &#124; T\[\] &#124; any | <p>_(Optional)_ a variable that needs to be converted to array</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 (T \| any)\[\]

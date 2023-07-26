@@ -12,7 +12,7 @@ hide_title: true
 
 Sorts the results according to the given array of column priorities.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 order?: Order<TColumns>[];

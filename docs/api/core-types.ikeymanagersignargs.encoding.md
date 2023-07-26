@@ -10,7 +10,7 @@ hide_title: true
 
 If the data is a "string" then you can specify which encoding is used. Default is "utf-8"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 encoding?: 'utf-8' | 'base16' | 'base64' | 'hex';

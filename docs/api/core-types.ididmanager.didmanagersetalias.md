@@ -10,7 +10,7 @@ hide_title: true
 
 Sets identifier alias
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerSetAlias(args: IDIDManagerSetAliasArgs, context: IAgentContext<IKeyManager>): Promise<boolean>;
@@ -23,7 +23,7 @@ didManagerSetAlias(args: IDIDManagerSetAliasArgs, context: IAgentContext<IKeyMan
 | args      | [IDIDManagerSetAliasArgs](./core-types.ididmanagersetaliasargs.md)                               | Required. Arguments to set identifier alias                                                                                                                           |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | <a href="/docs/agent/plugins#executing-plugin-methods">Execution context</a>. Requires <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

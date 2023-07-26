@@ -8,7 +8,7 @@ hide_title: true
 
 ## UnsignedPresentation.verifier property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifier?: string[];

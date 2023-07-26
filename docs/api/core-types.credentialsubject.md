@@ -16,7 +16,7 @@ See [Credential Subject](https://www.w3.org/TR/vc-data-model/#credential-subject
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type CredentialSubject = {

@@ -14,7 +14,7 @@ Generates a `credentialStatus` property for a future credential, not yet signed.
 
 This method is used during the creation of a [VerifiableCredential](./core-types.verifiablecredential.md) in order to make it capable of having its status updated later (to be revoked).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentialStatusGenerate(args: CredentialStatusGenerateArgs): Promise<CredentialStatusReference>;
@@ -26,6 +26,6 @@ credentialStatusGenerate(args: CredentialStatusGenerateArgs): Promise<Credential
 | --------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | args      | [CredentialStatusGenerateArgs](./core-types.credentialstatusgenerateargs.md) | Input arguments for generating the <code>credentialStatus</code> field of a new credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[CredentialStatusReference](./core-types.credentialstatusreference.md)&gt;

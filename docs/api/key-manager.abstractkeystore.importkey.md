@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractKeyStore.importKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract importKey(args: Partial<IKey>): Promise<boolean>;
@@ -20,6 +20,6 @@ abstract importKey(args: Partial<IKey>): Promise<boolean>;
 | --------- | ------------------------------------------- | ----------- |
 | args      | Partial&lt;[IKey](./core-types.ikey.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

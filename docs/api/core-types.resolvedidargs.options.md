@@ -10,7 +10,7 @@ hide_title: true
 
 DID resolution options that will be passed to the method specific resolver. See: https://w3c.github.io/did-spec-registries/\#did-resolution-input-metadata See: https://www.w3.org/TR/did-core/\#did-resolution-options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 options?: DIDResolutionOptions;

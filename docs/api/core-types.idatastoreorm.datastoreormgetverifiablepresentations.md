@@ -14,7 +14,7 @@ Returns a list of [UniqueVerifiablePresentation](./core-types.uniqueverifiablepr
 
 These are [VerifiablePresentation](./core-types.verifiablepresentation.md)s that were stored using [dataStoreSaveVerifiablePresentation](./core-types.idatastore.datastoresaveverifiablepresentation.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetVerifiablePresentations(args: FindPresentationsArgs, context: AuthorizedDIDContext): Promise<Array<UniqueVerifiablePresentation>>;
@@ -27,6 +27,6 @@ dataStoreORMGetVerifiablePresentations(args: FindPresentationsArgs, context: Aut
 | args      | [FindPresentationsArgs](./core-types.findpresentationsargs.md) | The filter to apply when querying                                                                                                                                                                                                                    |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)   | <p>Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)&gt;&gt;

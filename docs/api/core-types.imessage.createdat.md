@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Creation date (ISO 8601)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createdAt?: string;

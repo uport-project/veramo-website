@@ -8,7 +8,7 @@ hide_title: true
 
 ## MemoryPrivateKeyStore.getKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getKey({ alias }: {
@@ -22,6 +22,6 @@ getKey({ alias }: {
 | --------- | ------------------ | ----------- |
 | { alias } | { alias: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;

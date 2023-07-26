@@ -12,7 +12,7 @@ hide_title: true
 
 An error object, which can contain a code.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IError
@@ -20,7 +20,7 @@ export interface IError
 
 ## Properties
 
-| Property                                       | Modifiers | Type   | Description                                                                              |
-| ---------------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------------------- |
-| [errorCode?](./core-types.ierror.errorcode.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> The code for the error being throw                |
-| [message?](./core-types.ierror.message.md)     |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> The details of the error being throw or forwarded |
+| Property                                       | Modifiers | Type   | Description                                                                 |
+| ---------------------------------------------- | --------- | ------ | --------------------------------------------------------------------------- |
+| [errorCode?](./core-types.ierror.errorcode.md) |           | string | **_(BETA)_** _(Optional)_ The code for the error being throw                |
+| [message?](./core-types.ierror.message.md)     |           | string | **_(BETA)_** _(Optional)_ The details of the error being throw or forwarded |

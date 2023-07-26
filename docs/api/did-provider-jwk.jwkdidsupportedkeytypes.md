@@ -8,7 +8,7 @@ hide_title: true
 
 ## JwkDidSupportedKeyTypes type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type JwkDidSupportedKeyTypes = 'Secp256r1' | 'Secp256k1' | 'Ed25519' | 'X25519'

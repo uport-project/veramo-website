@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, context: IAgentContext<{}>): Promise<IPresentationValidationResult>;
@@ -23,6 +23,6 @@ validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, contex
 | args      | [IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md) |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;                                             |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IPresentationValidationResult](./selective-disclosure.ipresentationvalidationresult.md)&gt;

@@ -10,7 +10,7 @@ hide_title: true
 
 The desired format for the VerifiablePresentation to be created.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 proofFormat: ProofFormat

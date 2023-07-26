@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.attachments property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 attachments?: IMessageAttachment[];

@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractIdentifierProvider.addKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract addKey(args: {
@@ -25,6 +25,6 @@ abstract addKey(args: {
 | args      | { identifier: [IIdentifier](./core-types.iidentifier.md); key: [IKey](./core-types.ikey.md); options?: any; } |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;              |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

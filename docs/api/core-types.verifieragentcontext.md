@@ -14,7 +14,7 @@ Represents the requirements that this plugin has. The agent that is using this p
 
 This interface can be used for static type checks, to make sure your application is properly initialized.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type VerifierAgentContext = IAgentContext<
@@ -22,4 +22,4 @@ export type VerifierAgentContext = IAgentContext<
 >
 ```
 
-<b>References:</b> [IAgentContext](./core-types.iagentcontext.md), [IResolver](./core-types.iresolver.md), [IDIDManager](./core-types.ididmanager.md)
+**References:** [IAgentContext](./core-types.iagentcontext.md), [IResolver](./core-types.iresolver.md), [IDIDManager](./core-types.ididmanager.md)

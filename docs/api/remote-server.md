@@ -46,10 +46,10 @@ app.listen(3002)
 
 ## Functions
 
-| Function                                                         | Description                                                                                                                                                   |
-| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [apiKeyAuth({ apiKey })](./remote-server.apikeyauth.md)          | This provides a simple authorization mechanism based on a single pre-shared API key.                                                                          |
-| [createDefaultDid(options)](./remote-server.createdefaultdid.md) | <b><i>(BETA)</i></b> This can be used to automatically create a did:web with signing and encryption keys and listing messaging and DIDComm service endpoints. |
+| Function                                                         | Description                                                                                                                                           |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [apiKeyAuth({ apiKey })](./remote-server.apikeyauth.md)          | This provides a simple authorization mechanism based on a single pre-shared API key.                                                                  |
+| [createDefaultDid(options)](./remote-server.createdefaultdid.md) | **_(BETA)_** This can be used to automatically create a did:web with signing and encryption keys and listing messaging and DIDComm service endpoints. |
 
 ## Interfaces
 

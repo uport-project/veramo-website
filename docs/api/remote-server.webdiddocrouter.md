@@ -10,7 +10,7 @@ hide_title: true
 
 Creates a router that serves `did:web` DID Documents
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 WebDidDocRouter: (options: WebDidDocRouterOptions) => Router

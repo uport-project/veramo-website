@@ -8,7 +8,7 @@ hide_title: true
 
 ## EthrDIDProvider.removeService() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 removeService(args: {
@@ -25,6 +25,6 @@ removeService(args: {
 | args      | { identifier: [IIdentifier](./core-types.iidentifier.md); id: string; options?: TransactionOptions; } |             |
 | context   | IRequiredContext                                                                                      |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

@@ -8,7 +8,7 @@ hide_title: true
 
 ## BrowserLocalStorageStore.notifyUpdate property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 notifyUpdate: DiffCallback

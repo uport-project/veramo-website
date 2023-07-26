@@ -10,7 +10,7 @@ hide_title: true
 
 Encrypts data This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerEncryptJWE({ kid, to, data }: IKeyManagerEncryptJWEArgs): Promise<string>;
@@ -22,6 +22,6 @@ keyManagerEncryptJWE({ kid, to, data }: IKeyManagerEncryptJWEArgs): Promise<stri
 | ----------------- | ---------------------------------------------------------------------- | ----------- |
 | { kid, to, data } | [IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

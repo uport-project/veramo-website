@@ -8,7 +8,7 @@ hide_title: true
 
 ## EthrDIDProvider.removeKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 removeKey(args: {
@@ -25,6 +25,6 @@ removeKey(args: {
 | args      | { identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: TransactionOptions; } |             |
 | context   | IRequiredContext                                                                                       |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

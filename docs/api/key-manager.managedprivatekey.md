@@ -14,7 +14,7 @@ The `alias` is used to refer to the key material which is stored as the hex enco
 
 The `type` refers to the type of key that is represented.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ManagedPrivateKey

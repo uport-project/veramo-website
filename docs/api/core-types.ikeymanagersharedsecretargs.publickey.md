@@ -10,7 +10,7 @@ hide_title: true
 
 The public key of the other party. The `type` of key MUST be compatible with the type referenced by `secretKeyRef`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 publicKey: Pick<IKey, 'publicKeyHex' | 'type'>

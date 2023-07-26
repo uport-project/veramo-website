@@ -10,7 +10,7 @@ hide_title: true
 
 This simple abstract class can be extended by different implementations to provide encryption at rest for some implementations of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractSecretBox
@@ -18,7 +18,7 @@ export declare abstract class AbstractSecretBox
 
 ## Methods
 
-| Method                                                                     | Modifiers | Description |
-| -------------------------------------------------------------------------- | --------- | ----------- |
-| [decrypt(encryptedMessageHex)](./key-manager.abstractsecretbox.decrypt.md) |           |             |
-| [encrypt(message)](./key-manager.abstractsecretbox.encrypt.md)             |           |             |
+| Method                                                                     | Modifiers             | Description |
+| -------------------------------------------------------------------------- | --------------------- | ----------- |
+| [decrypt(encryptedMessageHex)](./key-manager.abstractsecretbox.decrypt.md) | <code>abstract</code> |             |
+| [encrypt(message)](./key-manager.abstractsecretbox.encrypt.md)             | <code>abstract</code> |             |

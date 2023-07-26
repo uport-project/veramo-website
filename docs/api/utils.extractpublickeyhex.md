@@ -12,7 +12,7 @@ hide_title: true
 
 Converts the publicKey of a VerificationMethod to hex encoding (publicKeyHex)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function extractPublicKeyHex(pk: _ExtendedVerificationMethod, convert?: boolean): string
@@ -20,12 +20,12 @@ export declare function extractPublicKeyHex(pk: _ExtendedVerificationMethod, con
 
 ## Parameters
 
-| Parameter | Type                         | Description                                                                                       |
-| --------- | ---------------------------- | ------------------------------------------------------------------------------------------------- |
-| pk        | \_ExtendedVerificationMethod | the VerificationMethod to be converted                                                            |
-| convert   | boolean                      | <i>(Optional)</i> when this flag is set to true, Ed25519 keys are converted to their X25519 pairs |
+| Parameter | Type                         | Description                                                                                  |
+| --------- | ---------------------------- | -------------------------------------------------------------------------------------------- |
+| pk        | \_ExtendedVerificationMethod | the VerificationMethod to be converted                                                       |
+| convert   | boolean                      | _(Optional)_ when this flag is set to true, Ed25519 keys are converted to their X25519 pairs |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

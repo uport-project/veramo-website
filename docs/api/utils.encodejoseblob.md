@@ -12,7 +12,7 @@ hide_title: true
 
 Stringifies a JSON object and encodes the bytes of the resulting string to a base64url representation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function encodeJoseBlob(payload: {}): string
@@ -24,6 +24,6 @@ export declare function encodeJoseBlob(payload: {}): string
 | --------- | ---- | ------------------------------------------------------------------------------------------- |
 | payload   | {}   | <p>the object to be encoded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

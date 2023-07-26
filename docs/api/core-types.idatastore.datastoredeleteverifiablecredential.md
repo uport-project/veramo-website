@@ -10,7 +10,7 @@ hide_title: true
 
 Deletes verifiable credential from the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreDeleteVerifiableCredential(args: IDataStoreDeleteVerifiableCredentialArgs): Promise<boolean>;
@@ -22,7 +22,7 @@ dataStoreDeleteVerifiableCredential(args: IDataStoreDeleteVerifiableCredentialAr
 | --------- | ---------------------------------------------------------------------------------------------------- | --------------------- |
 | args      | [IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md) | verifiable credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

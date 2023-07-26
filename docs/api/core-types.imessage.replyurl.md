@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. URL to post a reply message to
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 replyUrl?: string;

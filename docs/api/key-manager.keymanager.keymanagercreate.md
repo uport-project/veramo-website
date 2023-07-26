@@ -10,7 +10,7 @@ hide_title: true
 
 Creates and returns a new key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerCreate(args: IKeyManagerCreateArgs): Promise<ManagedKeyInfo>;
@@ -22,6 +22,6 @@ keyManagerCreate(args: IKeyManagerCreateArgs): Promise<ManagedKeyInfo>;
 | --------- | -------------------------------------------------------------- | ----------- |
 | args      | [IKeyManagerCreateArgs](./core-types.ikeymanagercreateargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

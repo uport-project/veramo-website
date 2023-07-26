@@ -10,7 +10,7 @@ hide_title: true
 
 Represents an object type where a subset of keys are required and everything else is optional.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RequireOnly<T, K extends keyof T> = Required<Pick<T, K>> & Partial<T>

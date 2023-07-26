@@ -12,7 +12,7 @@ hide_title: true
 
 Holder DID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 holder: string

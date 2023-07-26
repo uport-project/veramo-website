@@ -8,7 +8,7 @@ hide_title: true
 
 ## ManagedPrivateKey.alias property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 alias: string

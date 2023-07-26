@@ -12,7 +12,7 @@ hide_title: true
 
 Queries data providers and returns DIDs with metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Promise<IDIDDiscoveryDiscoverDidResult>;
@@ -25,6 +25,6 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Pr
 | args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md) | The param object with the properties necessary to discover DID          |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;any&gt;                       | \*RESERVED\* This is filled by the framework when the method is called. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IDIDDiscoveryDiscoverDidResult](./did-discovery.ididdiscoverydiscoverdidresult.md)&gt;

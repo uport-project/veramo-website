@@ -10,7 +10,7 @@ hide_title: true
 
 Identifier service
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IService
@@ -18,9 +18,9 @@ export interface IService
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                                                                                                                 | Description                             |
-| ----------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| [description?](./core-types.iservice.description.md)        |           | string                                                                                                               | <i>(Optional)</i> Optional. Description |
-| [id](./core-types.iservice.id.md)                           |           | string                                                                                                               | ID                                      |
-| [serviceEndpoint](./core-types.iservice.serviceendpoint.md) |           | [IServiceEndpoint](./core-types.iserviceendpoint.md) &#124; [IServiceEndpoint](./core-types.iserviceendpoint.md)\[\] | Endpoint URL                            |
-| [type](./core-types.iservice.type.md)                       |           | string                                                                                                               | Service type                            |
+| Property                                                    | Modifiers | Type                                                                                                                 | Description                        |
+| ----------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| [description?](./core-types.iservice.description.md)        |           | string                                                                                                               | _(Optional)_ Optional. Description |
+| [id](./core-types.iservice.id.md)                           |           | string                                                                                                               | ID                                 |
+| [serviceEndpoint](./core-types.iservice.serviceendpoint.md) |           | [IServiceEndpoint](./core-types.iserviceendpoint.md) &#124; [IServiceEndpoint](./core-types.iserviceendpoint.md)\[\] | Endpoint URL                       |
+| [type](./core-types.iservice.type.md)                       |           | string                                                                                                               | Service type                       |

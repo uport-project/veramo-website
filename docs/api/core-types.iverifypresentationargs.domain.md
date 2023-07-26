@@ -10,7 +10,7 @@ hide_title: true
 
 Optional (only for JWT) string domain parameter to verify the verifiable presentation against
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 domain?: string;

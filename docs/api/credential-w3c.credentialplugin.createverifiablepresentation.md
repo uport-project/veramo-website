@@ -10,7 +10,7 @@ hide_title: true
 
 Creates a Verifiable Presentation. The payload, signer and format are chosen based on the `args` parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createVerifiablePresentation(args: ICreateVerifiablePresentationArgs, context: IssuerAgentContext): Promise<VerifiablePresentation>;
@@ -23,7 +23,7 @@ createVerifiablePresentation(args: ICreateVerifiablePresentationArgs, context: I
 | args      | [ICreateVerifiablePresentationArgs](./core-types.icreateverifiablepresentationargs.md) | Arguments necessary to create the Presentation.                                              |
 | context   | [IssuerAgentContext](./core-types.issueragentcontext.md)                               | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;
 

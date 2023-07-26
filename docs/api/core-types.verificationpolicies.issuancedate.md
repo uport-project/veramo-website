@@ -12,7 +12,7 @@ hide_title: true
 
 policy to skip the issuanceDate (nbf) timestamp check when set to `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 issuanceDate?: boolean;

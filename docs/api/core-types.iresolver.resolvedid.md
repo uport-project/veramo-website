@@ -10,7 +10,7 @@ hide_title: true
 
 Resolves DID and returns DID Resolution Result
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolveDid(args: ResolveDidArgs): Promise<DIDResolutionResult>;
@@ -22,7 +22,7 @@ resolveDid(args: ResolveDidArgs): Promise<DIDResolutionResult>;
 | --------- | ------------------------------------------------ | ----------------------------------- |
 | args      | [ResolveDidArgs](./core-types.resolvedidargs.md) | Input arguments for resolving a DID |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;DIDResolutionResult&gt;
 

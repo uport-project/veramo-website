@@ -8,7 +8,7 @@ hide_title: true
 
 ## IAgentBase.availableMethods property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 availableMethods: () => string[];

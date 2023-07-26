@@ -10,13 +10,13 @@ hide_title: true
 
 Implementation of [VeramoJsonStore](./data-store-json.veramojsonstore.md) that uses browser localStorage to store data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BrowserLocalStorageStore implements VeramoJsonStore
 ```
 
-<b>Implements:</b> [VeramoJsonStore](./data-store-json.veramojsonstore.md)
+**Implements:** [VeramoJsonStore](./data-store-json.veramojsonstore.md)
 
 ## Example
 

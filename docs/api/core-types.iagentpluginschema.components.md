@@ -8,7 +8,7 @@ hide_title: true
 
 ## IAgentPluginSchema.components property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 components: {

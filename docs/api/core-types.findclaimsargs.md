@@ -14,10 +14,10 @@ The filter that can be used to find [VerifiableCredential](./core-types.verifiab
 
 See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md) This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type FindClaimsArgs = FindArgs<TClaimsColumns>
 ```
 
-<b>References:</b> [FindArgs](./core-types.findargs.md), [TClaimsColumns](./core-types.tclaimscolumns.md)
+**References:** [FindArgs](./core-types.findargs.md), [TClaimsColumns](./core-types.tclaimscolumns.md)

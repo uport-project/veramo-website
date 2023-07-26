@@ -12,7 +12,7 @@ hide_title: true
 
 Handles forward messages for Routing protocol https://didcomm.org/routing/2.0/
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(message: Message, context: IContext): Promise<Message>;
@@ -25,6 +25,6 @@ handle(message: Message, context: IContext): Promise<Message>;
 | message   | [Message](./message-handler.message.md) |             |
 | context   | IContext                                |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Message](./message-handler.message.md)&gt;

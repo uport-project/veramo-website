@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.expiresAt property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expiresAt?: string;

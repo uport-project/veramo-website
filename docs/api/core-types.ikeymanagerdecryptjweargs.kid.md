@@ -12,7 +12,7 @@ hide_title: true
 
 Key ID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 kid: string

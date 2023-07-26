@@ -14,7 +14,7 @@ Contains the parameters of a DID Discovery Request.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDDiscoveryDiscoverDidArgs
@@ -22,7 +22,7 @@ export interface IDIDDiscoveryDiscoverDidArgs
 
 ## Properties
 
-| Property                                                            | Modifiers | Type                      | Description                                                      |
-| ------------------------------------------------------------------- | --------- | ------------------------- | ---------------------------------------------------------------- |
-| [options?](./did-discovery.ididdiscoverydiscoverdidargs.options.md) |           | Record&lt;string, any&gt; | <b><i>(BETA)</i></b> <i>(Optional)</i> Provider specific options |
-| [query](./did-discovery.ididdiscoverydiscoverdidargs.query.md)      |           | string                    | <b><i>(BETA)</i></b> Search string                               |
+| Property                                                            | Modifiers | Type                      | Description                                         |
+| ------------------------------------------------------------------- | --------- | ------------------------- | --------------------------------------------------- |
+| [options?](./did-discovery.ididdiscoverydiscoverdidargs.options.md) |           | Record&lt;string, any&gt; | **_(BETA)_** _(Optional)_ Provider specific options |
+| [query](./did-discovery.ididdiscoverydiscoverdidargs.query.md)      |           | string                    | **_(BETA)_** Search string                          |

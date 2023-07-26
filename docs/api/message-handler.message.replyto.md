@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.replyTo property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 replyTo?: string[];

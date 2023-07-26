@@ -12,7 +12,7 @@ hide_title: true
 
 Validates a [Selective Disclosure response](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md) encoded as a `Presentation`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, context: IAgentContext<{}>): Promise<IPresentationValidationResult>;
@@ -25,6 +25,6 @@ validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, contex
 | args      | [IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md) | Contains the request and the response <code>Presentation</code> that needs to be checked.                                                  |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;                                             | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IPresentationValidationResult](./selective-disclosure.ipresentationvalidationresult.md)&gt;

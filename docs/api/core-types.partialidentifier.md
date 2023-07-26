@@ -14,10 +14,10 @@ The result of a [IDataStoreORM.dataStoreORMGetIdentifiers()](./core-types.idatas
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PartialIdentifier = Partial<IIdentifier>
 ```
 
-<b>References:</b> [IIdentifier](./core-types.iidentifier.md)
+**References:** [IIdentifier](./core-types.iidentifier.md)

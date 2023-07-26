@@ -8,7 +8,7 @@ hide_title: true
 
 ## MemoryKeyStore.importKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 importKey(args: IKey): Promise<boolean>;
@@ -20,6 +20,6 @@ importKey(args: IKey): Promise<boolean>;
 | --------- | ---------------------------- | ----------- |
 | args      | [IKey](./core-types.ikey.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

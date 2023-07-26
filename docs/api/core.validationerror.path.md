@@ -8,7 +8,7 @@ hide_title: true
 
 ## ValidationError.path property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 path: string

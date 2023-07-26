@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDResolverPlugin.schema property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly schema: {
@@ -189,6 +189,54 @@ readonly schema: {
                         ethereumAddress: {
                             type: string;
                         };
+                        conditionOr: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                        };
+                        conditionAnd: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                        };
+                        threshold: {
+                            type: string;
+                        };
+                        conditionThreshold: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                        };
+                        conditionWeightedThreshold: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                        };
+                        conditionDelegated: {
+                            type: string;
+                        };
+                        relationshipParent: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        relationshipChild: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
+                        relationshipSibling: {
+                            type: string;
+                            items: {
+                                type: string;
+                            };
+                        };
                     };
                     required: string[];
                     description: string;
@@ -235,6 +283,18 @@ readonly schema: {
                     };
                     required: string[];
                     description: string;
+                };
+                ConditionWeightedThreshold: {
+                    type: string;
+                    properties: {
+                        condition: {
+                            $ref: string;
+                        };
+                        weight: {
+                            type: string;
+                        };
+                    };
+                    required: string[];
                 };
                 Service: {
                     type: string;

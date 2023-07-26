@@ -12,7 +12,7 @@ Parses a raw message.
 
 After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core-types.idatastore.datastoresavemessage.md) to save it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handleMessage(args: IHandleMessageArgs, context: IAgentContext<IDataStore>): Promise<IMessage>;
@@ -25,6 +25,6 @@ handleMessage(args: IHandleMessageArgs, context: IAgentContext<IDataStore>): Pro
 | args      | [IHandleMessageArgs](./core-types.ihandlemessageargs.md)                                       | The <code>raw</code> message to be handled along with optional <code>metadata</code> about the origin. |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDataStore](./core-types.idatastore.md)&gt; | Execution context. Requires agent with [IDataStore](./core-types.idatastore.md) methods                |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IMessage](./core-types.imessage.md)&gt;

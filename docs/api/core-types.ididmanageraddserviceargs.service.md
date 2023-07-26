@@ -10,7 +10,7 @@ hide_title: true
 
 Service object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 service: IService

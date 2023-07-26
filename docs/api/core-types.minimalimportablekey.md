@@ -10,10 +10,10 @@ hide_title: true
 
 Represents the properties required to import a key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type MinimalImportableKey = RequireOnly<IKey, 'privateKeyHex' | 'type' | 'kms'>
 ```
 
-<b>References:</b> [RequireOnly](./core-types.requireonly.md), [IKey](./core-types.ikey.md)
+**References:** [RequireOnly](./core-types.requireonly.md), [IKey](./core-types.ikey.md)

@@ -10,7 +10,7 @@ hide_title: true
 
 Adds a key to a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addKey({ identifier, key, options }: {
@@ -27,7 +27,7 @@ addKey({ identifier, key, options }: {
 | { identifier, key, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); key: [IKey](./core-types.ikey.md); options?: IAddKeyOpts; } |             |
 | context                      | IContext                                                                                                              |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

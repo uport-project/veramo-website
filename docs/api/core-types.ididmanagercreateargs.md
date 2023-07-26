@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerCreate](./core-types.ididmanager.didmanagercreate.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerCreateArgs
@@ -18,9 +18,9 @@ export interface IDIDManagerCreateArgs
 
 ## Properties
 
-| Property                                                    | Modifiers | Type   | Description                                                                                            |
-| ----------------------------------------------------------- | --------- | ------ | ------------------------------------------------------------------------------------------------------ |
-| [alias?](./core-types.ididmanagercreateargs.alias.md)       |           | string | <i>(Optional)</i> Optional. Identifier alias. Can be used to reference an object in an external system |
-| [kms?](./core-types.ididmanagercreateargs.kms.md)           |           | string | <i>(Optional)</i> Optional. Key Management System                                                      |
-| [options?](./core-types.ididmanagercreateargs.options.md)   |           | object | <i>(Optional)</i> Optional. Identifier provider specific options                                       |
-| [provider?](./core-types.ididmanagercreateargs.provider.md) |           | string | <i>(Optional)</i> Optional. Identifier provider                                                        |
+| Property                                                    | Modifiers | Type   | Description                                                                                       |
+| ----------------------------------------------------------- | --------- | ------ | ------------------------------------------------------------------------------------------------- |
+| [alias?](./core-types.ididmanagercreateargs.alias.md)       |           | string | _(Optional)_ Optional. Identifier alias. Can be used to reference an object in an external system |
+| [kms?](./core-types.ididmanagercreateargs.kms.md)           |           | string | _(Optional)_ Optional. Key Management System                                                      |
+| [options?](./core-types.ididmanagercreateargs.options.md)   |           | object | _(Optional)_ Optional. Identifier provider specific options                                       |
+| [provider?](./core-types.ididmanagercreateargs.provider.md) |           | string | _(Optional)_ Optional. Identifier provider                                                        |

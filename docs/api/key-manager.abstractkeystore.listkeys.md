@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractKeyStore.listKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract listKeys(args: {}): Promise<Array<ManagedKeyInfo>>;
@@ -20,6 +20,6 @@ abstract listKeys(args: {}): Promise<Array<ManagedKeyInfo>>;
 | --------- | ---- | ----------- |
 | args      | {}   |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;&gt;

@@ -14,17 +14,17 @@ This represents the private key data of keys that were stored by [KeyStore](./da
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PreMigrationKey extends Key
 ```
 
-<b>Extends:</b> [Key](./data-store.key.md)
+**Extends:** [Key](./data-store.key.md)
 
 ## Properties
 
-| Property                                                        | Modifiers | Type   | Description                            |
-| --------------------------------------------------------------- | --------- | ------ | -------------------------------------- |
-| [kid](./data-store.premigrationkey.kid.md)                      |           | string | <b><i>(BETA)</i></b>                   |
-| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                        | Modifiers | Type   | Description               |
+| --------------------------------------------------------------- | --------- | ------ | ------------------------- |
+| [kid](./data-store.premigrationkey.kid.md)                      |           | string | **_(BETA)_**              |
+| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string | **_(BETA)_** _(Optional)_ |

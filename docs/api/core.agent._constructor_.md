@@ -10,7 +10,7 @@ hide_title: true
 
 Constructs a new instance of the `Agent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options?: IAgentOptions);
@@ -18,6 +18,6 @@ constructor(options?: IAgentOptions);
 
 ## Parameters
 
-| Parameter | Type                                           | Description                             |
-| --------- | ---------------------------------------------- | --------------------------------------- |
-| options   | [IAgentOptions](./core-types.iagentoptions.md) | <i>(Optional)</i> Configuration options |
+| Parameter | Type                                           | Description                        |
+| --------- | ---------------------------------------------- | ---------------------------------- |
+| options   | [IAgentOptions](./core-types.iagentoptions.md) | _(Optional)_ Configuration options |

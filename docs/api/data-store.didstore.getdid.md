@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDStore.getDID() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDID({ did, alias, provider, }: {
@@ -24,6 +24,6 @@ getDID({ did, alias, provider, }: {
 | ------------------------- | ------------------------------------------------- | ----------- |
 | { did, alias, provider, } | { did: string; alias: string; provider: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

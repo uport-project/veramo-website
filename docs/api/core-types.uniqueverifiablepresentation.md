@@ -16,7 +16,7 @@ See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatas
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UniqueVerifiablePresentation
@@ -24,7 +24,7 @@ export interface UniqueVerifiablePresentation
 
 ## Properties
 
-| Property                                                                                      | Modifiers | Type                                                             | Description          |
-| --------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------- |
-| [hash](./core-types.uniqueverifiablepresentation.hash.md)                                     |           | string                                                           | <b><i>(BETA)</i></b> |
-| [verifiablePresentation](./core-types.uniqueverifiablepresentation.verifiablepresentation.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md) | <b><i>(BETA)</i></b> |
+| Property                                                                                      | Modifiers | Type                                                             | Description  |
+| --------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ------------ |
+| [hash](./core-types.uniqueverifiablepresentation.hash.md)                                     |           | string                                                           | **_(BETA)_** |
+| [verifiablePresentation](./core-types.uniqueverifiablepresentation.verifiablepresentation.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md) | **_(BETA)_** |

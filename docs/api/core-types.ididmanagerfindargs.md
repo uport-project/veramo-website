@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerFind](./core-types.ididmanager.didmanagerfind.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerFindArgs
@@ -18,7 +18,7 @@ export interface IDIDManagerFindArgs
 
 ## Properties
 
-| Property                                                  | Modifiers | Type   | Description                          |
-| --------------------------------------------------------- | --------- | ------ | ------------------------------------ |
-| [alias?](./core-types.ididmanagerfindargs.alias.md)       |           | string | <i>(Optional)</i> Optional. Alias    |
-| [provider?](./core-types.ididmanagerfindargs.provider.md) |           | string | <i>(Optional)</i> Optional. Provider |
+| Property                                                  | Modifiers | Type   | Description                     |
+| --------------------------------------------------------- | --------- | ------ | ------------------------------- |
+| [alias?](./core-types.ididmanagerfindargs.alias.md)       |           | string | _(Optional)_ Optional. Alias    |
+| [provider?](./core-types.ididmanagerfindargs.provider.md) |           | string | _(Optional)_ Optional. Provider |

@@ -12,7 +12,7 @@ hide_title: true
 
 Converts a Uint8Array input to a hex string
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function bytesToHex(byteArray: Uint8Array, prefix?: boolean): string
@@ -20,12 +20,12 @@ export declare function bytesToHex(byteArray: Uint8Array, prefix?: boolean): str
 
 ## Parameters
 
-| Parameter | Type       | Description                                                                                 |
-| --------- | ---------- | ------------------------------------------------------------------------------------------- |
-| byteArray | Uint8Array | The array to be converted                                                                   |
-| prefix    | boolean    | <i>(Optional)</i> If this is set to true, the resulting hex string will be prefixed with 0x |
+| Parameter | Type       | Description                                                                            |
+| --------- | ---------- | -------------------------------------------------------------------------------------- |
+| byteArray | Uint8Array | The array to be converted                                                              |
+| prefix    | boolean    | _(Optional)_ If this is set to true, the resulting hex string will be prefixed with 0x |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

@@ -10,7 +10,7 @@ hide_title: true
 
 Ethereum transaction object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 transaction: object

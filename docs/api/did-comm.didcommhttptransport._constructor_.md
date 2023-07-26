@@ -12,7 +12,7 @@ hide_title: true
 
 Creates a new [DIDCommHttpTransport](./did-comm.didcommhttptransport.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(httpMethod?: 'post' | 'get');
@@ -20,6 +20,6 @@ constructor(httpMethod?: 'post' | 'get');
 
 ## Parameters
 
-| Parameter  | Type                | Description                                                                    |
-| ---------- | ------------------- | ------------------------------------------------------------------------------ |
-| httpMethod | 'post' &#124; 'get' | <i>(Optional)</i> Default HTTP method if not specified in the service section. |
+| Parameter  | Type                | Description                                                               |
+| ---------- | ------------------- | ------------------------------------------------------------------------- |
+| httpMethod | 'post' &#124; 'get' | _(Optional)_ Default HTTP method if not specified in the service section. |

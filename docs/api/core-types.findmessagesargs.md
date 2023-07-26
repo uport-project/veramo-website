@@ -14,10 +14,10 @@ The filter that can be used to find [IMessage](./core-types.imessage.md)s in the
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type FindMessagesArgs = FindArgs<TMessageColumns>
 ```
 
-<b>References:</b> [FindArgs](./core-types.findargs.md), [TMessageColumns](./core-types.tmessagecolumns.md)
+**References:** [FindArgs](./core-types.findargs.md), [TMessageColumns](./core-types.tmessagecolumns.md)

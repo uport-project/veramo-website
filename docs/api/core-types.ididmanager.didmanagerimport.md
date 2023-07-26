@@ -10,7 +10,7 @@ hide_title: true
 
 Imports identifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerImport(args: MinimalImportableIdentifier, context: IAgentContext<IKeyManager>): Promise<IIdentifier>;
@@ -23,6 +23,6 @@ didManagerImport(args: MinimalImportableIdentifier, context: IAgentContext<IKeyM
 | args      | [MinimalImportableIdentifier](./core-types.minimalimportableidentifier.md)                       |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

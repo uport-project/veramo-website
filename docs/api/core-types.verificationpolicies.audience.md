@@ -12,7 +12,7 @@ hide_title: true
 
 policy to skip the audience check when set to `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 audience?: boolean;

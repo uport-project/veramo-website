@@ -12,7 +12,7 @@ hide_title: true
 
 The issuer of the request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 issuer: string

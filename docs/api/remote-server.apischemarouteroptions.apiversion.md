@@ -10,7 +10,7 @@ hide_title: true
 
 Version used in OpenAPI schema
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apiVersion?: string;

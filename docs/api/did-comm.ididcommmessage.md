@@ -14,7 +14,7 @@ The DIDComm message structure. See https://identity.foundation/didcomm-messaging
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDCommMessage
@@ -22,18 +22,18 @@ export interface IDIDCommMessage
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                                                                     | Description                            |
-| ----------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | -------------------------------------- |
-| [attachments?](./did-comm.ididcommmessage.attachments.md)   |           | [IDIDCommMessageAttachment](./did-comm.ididcommmessageattachment.md)\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [body](./did-comm.ididcommmessage.body.md)                  |           | any                                                                      | <b><i>(BETA)</i></b>                   |
-| [created_time?](./did-comm.ididcommmessage.created_time.md) |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [expires_time?](./did-comm.ididcommmessage.expires_time.md) |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [from_prior?](./did-comm.ididcommmessage.from_prior.md)     |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [from?](./did-comm.ididcommmessage.from.md)                 |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id](./did-comm.ididcommmessage.id.md)                      |           | string                                                                   | <b><i>(BETA)</i></b>                   |
-| [next?](./did-comm.ididcommmessage.next.md)                 |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [pthid?](./did-comm.ididcommmessage.pthid.md)               |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [return_route?](./did-comm.ididcommmessage.return_route.md) |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [thid?](./did-comm.ididcommmessage.thid.md)                 |           | string                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [to](./did-comm.ididcommmessage.to.md)                      |           | string                                                                   | <b><i>(BETA)</i></b>                   |
-| [type](./did-comm.ididcommmessage.type.md)                  |           | string                                                                   | <b><i>(BETA)</i></b>                   |
+| Property                                                    | Modifiers | Type                                                                     | Description               |
+| ----------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ------------------------- |
+| [attachments?](./did-comm.ididcommmessage.attachments.md)   |           | [IDIDCommMessageAttachment](./did-comm.ididcommmessageattachment.md)\[\] | **_(BETA)_** _(Optional)_ |
+| [body](./did-comm.ididcommmessage.body.md)                  |           | any                                                                      | **_(BETA)_**              |
+| [created_time?](./did-comm.ididcommmessage.created_time.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [expires_time?](./did-comm.ididcommmessage.expires_time.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [from_prior?](./did-comm.ididcommmessage.from_prior.md)     |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [from?](./did-comm.ididcommmessage.from.md)                 |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [id](./did-comm.ididcommmessage.id.md)                      |           | string                                                                   | **_(BETA)_**              |
+| [next?](./did-comm.ididcommmessage.next.md)                 |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [pthid?](./did-comm.ididcommmessage.pthid.md)               |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [return_route?](./did-comm.ididcommmessage.return_route.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [thid?](./did-comm.ididcommmessage.thid.md)                 |           | string                                                                   | **_(BETA)_** _(Optional)_ |
+| [to](./did-comm.ididcommmessage.to.md)                      |           | string                                                                   | **_(BETA)_**              |
+| [type](./did-comm.ididcommmessage.type.md)                  |           | string                                                                   | **_(BETA)_**              |

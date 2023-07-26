@@ -12,7 +12,7 @@ hide_title: true
 
 Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 send(service: any, message: string): Promise<IDIDCommTransportResult>;
@@ -25,6 +25,6 @@ send(service: any, message: string): Promise<IDIDCommTransportResult>;
 | service   | any    | The DID Document service section that contains a <code>serviceEndpoint</code> entry.       |
 | message   | string | <p>The message to be sent.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IDIDCommTransportResult](./did-comm.ididcommtransportresult.md)&gt;

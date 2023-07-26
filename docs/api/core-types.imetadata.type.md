@@ -10,7 +10,7 @@ hide_title: true
 
 Type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string

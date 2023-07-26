@@ -14,13 +14,13 @@ An instance of this class can be used by [KeyManager](./key-manager.keymanager.m
 
 To make full use of this class, it should use the same database as the one used by [DIDStore](./data-store.didstore.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class KeyStore extends AbstractKeyStore
 ```
 
-<b>Extends:</b> [AbstractKeyStore](./key-manager.abstractkeystore.md)
+**Extends:** [AbstractKeyStore](./key-manager.abstractkeystore.md)
 
 ## Constructors
 

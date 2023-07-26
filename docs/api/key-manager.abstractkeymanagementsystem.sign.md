@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractKeyManagementSystem.sign() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract sign(args: {
@@ -25,6 +25,6 @@ abstract sign(args: {
 | --------- | ---------------------------------------------------------------------------------------------------------------------- | ----------- |
 | args      | { keyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; algorithm?: string; data: Uint8Array; \[x: string\]: any; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

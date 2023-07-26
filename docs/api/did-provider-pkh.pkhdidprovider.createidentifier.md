@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createIdentifier({ kms, options }: {
@@ -26,6 +26,6 @@ createIdentifier({ kms, options }: {
 | { kms, options } | { kms?: string; options?: CreateDidPkhOptions; } |             |
 | context          | IContext                                         |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

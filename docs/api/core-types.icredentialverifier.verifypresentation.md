@@ -10,7 +10,7 @@ hide_title: true
 
 Verifies a Verifiable Presentation JWT or LDS Format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyPresentation(args: IVerifyPresentationArgs, context: VerifierAgentContext): Promise<IVerifyResult>;
@@ -23,7 +23,7 @@ verifyPresentation(args: IVerifyPresentationArgs, context: VerifierAgentContext)
 | args      | [IVerifyPresentationArgs](./core-types.iverifypresentationargs.md) | Arguments necessary to verify a VerifiableCredential                                         |
 | context   | [VerifierAgentContext](./core-types.verifieragentcontext.md)       | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IVerifyResult](./core-types.iverifyresult.md)&gt;
 

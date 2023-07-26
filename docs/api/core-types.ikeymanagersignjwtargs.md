@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [keyManagerSignJWT](./core-types.ikeymanager.keymanagersignjwt.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManagerSignJWTArgs

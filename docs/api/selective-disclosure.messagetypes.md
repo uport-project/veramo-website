@@ -12,7 +12,7 @@ hide_title: true
 
 Identifies a [IMessage](./core-types.imessage.md) that represents a Selective Disclosure Request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MessageTypes: {

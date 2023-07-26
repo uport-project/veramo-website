@@ -12,7 +12,7 @@ The Verifiable Presentation object according to the [canonical model](https://ww
 
 The signer of the Presentation is verified based on the `holder` property of the `presentation` or the `iss` property of the JWT payload respectively
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 presentation: W3CVerifiablePresentation

@@ -14,7 +14,7 @@ Represents the sort order of results from a [FindArgs](./core-types.findargs.md)
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Order<TColumns>
@@ -22,7 +22,7 @@ export interface Order<TColumns>
 
 ## Properties
 
-| Property                                     | Modifiers | Type                | Description          |
-| -------------------------------------------- | --------- | ------------------- | -------------------- |
-| [column](./core-types.order.column.md)       |           | TColumns            | <b><i>(BETA)</i></b> |
-| [direction](./core-types.order.direction.md) |           | 'ASC' &#124; 'DESC' | <b><i>(BETA)</i></b> |
+| Property                                     | Modifiers | Type                | Description  |
+| -------------------------------------------- | --------- | ------------------- | ------------ |
+| [column](./core-types.order.column.md)       |           | TColumns            | **_(BETA)_** |
+| [direction](./core-types.order.direction.md) |           | 'ASC' &#124; 'DESC' | **_(BETA)_** |

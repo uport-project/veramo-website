@@ -10,7 +10,7 @@ hide_title: true
 
 Array of services
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 services: IService[];

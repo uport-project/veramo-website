@@ -10,7 +10,7 @@ hide_title: true
 
 An abstract class for creating [MessageHandler](./message-handler.messagehandler.md) plugins
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractMessageHandler
@@ -18,9 +18,9 @@ export declare abstract class AbstractMessageHandler
 
 ## Properties
 
-| Property                                                                              | Modifiers | Type                                                                  | Description       |
-| ------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------- | ----------------- |
-| [nextMessageHandler?](./message-handler.abstractmessagehandler.nextmessagehandler.md) |           | [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) | <i>(Optional)</i> |
+| Property                                                                              | Modifiers | Type                                                                  | Description  |
+| ------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------- | ------------ |
+| [nextMessageHandler?](./message-handler.abstractmessagehandler.nextmessagehandler.md) |           | [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) | _(Optional)_ |
 
 ## Methods
 

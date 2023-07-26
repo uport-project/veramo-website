@@ -12,7 +12,7 @@ hide_title: true
 
 Input arguments for [keyManagerEncryptJWE](./core-types.ikeymanager.keymanagerencryptjwe.md) This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManagerEncryptJWEArgs
@@ -20,8 +20,8 @@ export interface IKeyManagerEncryptJWEArgs
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                            | Description                                       |
-| ------------------------------------------------------ | --------- | ----------------------------------------------- | ------------------------------------------------- |
-| [data](./core-types.ikeymanagerencryptjweargs.data.md) |           | string                                          | <b><i>(BETA)</i></b> Data to encrypt              |
-| [kid](./core-types.ikeymanagerencryptjweargs.kid.md)   |           | string                                          | <b><i>(BETA)</i></b> Key ID to use for encryption |
-| [to](./core-types.ikeymanagerencryptjweargs.to.md)     |           | Omit&lt;[IKey](./core-types.ikey.md), 'kms'&gt; | <b><i>(BETA)</i></b> Recipient key object         |
+| Property                                               | Modifiers | Type                                            | Description                               |
+| ------------------------------------------------------ | --------- | ----------------------------------------------- | ----------------------------------------- |
+| [data](./core-types.ikeymanagerencryptjweargs.data.md) |           | string                                          | **_(BETA)_** Data to encrypt              |
+| [kid](./core-types.ikeymanagerencryptjweargs.kid.md)   |           | string                                          | **_(BETA)_** Key ID to use for encryption |
+| [to](./core-types.ikeymanagerencryptjweargs.to.md)     |           | Omit&lt;[IKey](./core-types.ikey.md), 'kms'&gt; | **_(BETA)_** Recipient key object         |

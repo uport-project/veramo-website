@@ -12,9 +12,9 @@ Provides `did:jwk` [identifier provider](./did-provider-jwk.jwkdidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                                                                                                                |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [JwkDIDProvider](./did-provider-jwk.jwkdidprovider.md) | <p><b><i>(BETA)</i></b> [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:jwk</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Class                                                  | Description                                                                                                                                                                        |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [JwkDIDProvider](./did-provider-jwk.jwkdidprovider.md) | <p>**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:jwk</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 ## Enumerations
 

@@ -12,21 +12,21 @@ hide_title: true
 
 Represents some properties of a [IKey](./core-types.ikey.md) that are stored in a TypeORM database for the purpose of keeping track of the [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations and the keys they are able to use.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Key extends BaseEntity
 ```
 
-<b>Extends:</b> BaseEntity
+**Extends:** BaseEntity
 
 ## Properties
 
-| Property                                         | Modifiers | Type                                                     | Description                            |
-| ------------------------------------------------ | --------- | -------------------------------------------------------- | -------------------------------------- |
-| [identifier?](./data-store.key.identifier.md)    |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt; | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [kid](./data-store.key.kid.md)                   |           | string                                                   | <b><i>(BETA)</i></b>                   |
-| [kms](./data-store.key.kms.md)                   |           | string                                                   | <b><i>(BETA)</i></b>                   |
-| [meta?](./data-store.key.meta.md)                |           | [KeyMetadata](./core-types.keymetadata.md) &#124; null   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [publicKeyHex](./data-store.key.publickeyhex.md) |           | string                                                   | <b><i>(BETA)</i></b>                   |
-| [type](./data-store.key.type.md)                 |           | [KeyType](./data-store.keytype_2.md)                     | <b><i>(BETA)</i></b>                   |
+| Property                                         | Modifiers | Type                                                     | Description               |
+| ------------------------------------------------ | --------- | -------------------------------------------------------- | ------------------------- |
+| [identifier?](./data-store.key.identifier.md)    |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt; | **_(BETA)_** _(Optional)_ |
+| [kid](./data-store.key.kid.md)                   |           | string                                                   | **_(BETA)_**              |
+| [kms](./data-store.key.kms.md)                   |           | string                                                   | **_(BETA)_**              |
+| [meta?](./data-store.key.meta.md)                |           | [KeyMetadata](./core-types.keymetadata.md) &#124; null   | **_(BETA)_** _(Optional)_ |
+| [publicKeyHex](./data-store.key.publickeyhex.md) |           | string                                                   | **_(BETA)_**              |
+| [type](./data-store.key.type.md)                 |           | [KeyType](./data-store.keytype_2.md)                     | **_(BETA)_**              |

@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.returnRoute property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 returnRoute?: string;

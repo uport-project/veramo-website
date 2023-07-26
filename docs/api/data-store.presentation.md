@@ -12,26 +12,26 @@ hide_title: true
 
 Represents some common properties of a Verifiable Presentation that are stored in a TypeORM database for querying.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Presentation extends BaseEntity
 ```
 
-<b>Extends:</b> BaseEntity
+**Extends:** BaseEntity
 
 ## Properties
 
-| Property                                                       | Modifiers | Type                                                             | Description                            |
-| -------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------------------------- |
-| [context](./data-store.presentation.context.md)                |           | string\[\]                                                       | <b><i>(BETA)</i></b>                   |
-| [credentials](./data-store.presentation.credentials.md)        |           | Relation&lt;[Credential](./data-store.credential_2.md)\[\]&gt;   | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./data-store.presentation.expirationdate.md) |           | Date                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash](./data-store.presentation.hash.md)                      |           | string                                                           | <b><i>(BETA)</i></b>                   |
-| [holder](./data-store.presentation.holder.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | <b><i>(BETA)</i></b>                   |
-| [id?](./data-store.presentation.id.md)                         |           | String                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate](./data-store.presentation.issuancedate.md)      |           | Date                                                             | <b><i>(BETA)</i></b>                   |
-| [messages](./data-store.presentation.messages.md)              |           | Relation&lt;[Message](./data-store.message.md)\[\]&gt;           | <b><i>(BETA)</i></b>                   |
-| [raw](./data-store.presentation.raw.md)                        |           | [VerifiablePresentation](./core-types.verifiablepresentation.md) | <b><i>(BETA)</i></b>                   |
-| [type](./data-store.presentation.type.md)                      |           | string\[\]                                                       | <b><i>(BETA)</i></b>                   |
-| [verifier?](./data-store.presentation.verifier.md)             |           | Relation&lt;[Identifier](./data-store.identifier.md)\[\]&gt;     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                       | Modifiers | Type                                                             | Description               |
+| -------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ------------------------- |
+| [context](./data-store.presentation.context.md)                |           | string\[\]                                                       | **_(BETA)_**              |
+| [credentials](./data-store.presentation.credentials.md)        |           | Relation&lt;[Credential](./data-store.credential_2.md)\[\]&gt;   | **_(BETA)_**              |
+| [expirationDate?](./data-store.presentation.expirationdate.md) |           | Date                                                             | **_(BETA)_** _(Optional)_ |
+| [hash](./data-store.presentation.hash.md)                      |           | string                                                           | **_(BETA)_**              |
+| [holder](./data-store.presentation.holder.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | **_(BETA)_**              |
+| [id?](./data-store.presentation.id.md)                         |           | String                                                           | **_(BETA)_** _(Optional)_ |
+| [issuanceDate](./data-store.presentation.issuancedate.md)      |           | Date                                                             | **_(BETA)_**              |
+| [messages](./data-store.presentation.messages.md)              |           | Relation&lt;[Message](./data-store.message.md)\[\]&gt;           | **_(BETA)_**              |
+| [raw](./data-store.presentation.raw.md)                        |           | [VerifiablePresentation](./core-types.verifiablepresentation.md) | **_(BETA)_**              |
+| [type](./data-store.presentation.type.md)                      |           | string\[\]                                                       | **_(BETA)_**              |
+| [verifier?](./data-store.presentation.verifier.md)             |           | Relation&lt;[Identifier](./data-store.identifier.md)\[\]&gt;     | **_(BETA)_** _(Optional)_ |

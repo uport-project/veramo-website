@@ -16,16 +16,16 @@ This is used for the discovery of information about the current status of a veri
 
 The result provided by implementations of this plugin depend on whether the implementation of the StatusMethod is available.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICredentialStatusVerifier extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Methods
 
-| Method                                                                                                  | Description                                                                                                |
-| ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [checkCredentialStatus(args, context)](./core-types.icredentialstatusverifier.checkcredentialstatus.md) | <b><i>(BETA)</i></b> Checks the status of a [Verifiable Credential](./core-types.verifiablecredential.md). |
+| Method                                                                                                  | Description                                                                                        |
+| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [checkCredentialStatus(args, context)](./core-types.icredentialstatusverifier.checkcredentialstatus.md) | **_(BETA)_** Checks the status of a [Verifiable Credential](./core-types.verifiablecredential.md). |

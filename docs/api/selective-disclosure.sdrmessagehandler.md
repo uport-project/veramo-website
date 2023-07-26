@@ -14,16 +14,16 @@ A Veramo message handler plugin that can decode an incoming Selective Disclosure
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SdrMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Methods
 
-| Method                                                                         | Modifiers | Description          |
-| ------------------------------------------------------------------------------ | --------- | -------------------- |
-| [handle(message, context)](./selective-disclosure.sdrmessagehandler.handle.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                                         | Modifiers | Description  |
+| ------------------------------------------------------------------------------ | --------- | ------------ |
+| [handle(message, context)](./selective-disclosure.sdrmessagehandler.handle.md) |           | **_(BETA)_** |

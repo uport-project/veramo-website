@@ -14,7 +14,7 @@ Used as input when creating Verifiable Credentials
 
 This API may change without prior notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CredentialPayload
@@ -22,13 +22,13 @@ export interface CredentialPayload
 
 ## Properties
 
-| Property                                                                  | Modifiers | Type                                                                   | Description                            |
-| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | -------------------------------------- |
-| ["@context"?](./core-types.credentialpayload.__context_.md)               |           | [ContextType](./core-types.contexttype.md)                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentialStatus?](./core-types.credentialpayload.credentialstatus.md)   |           | [CredentialStatusReference](./core-types.credentialstatusreference.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentialSubject?](./core-types.credentialpayload.credentialsubject.md) |           | [CredentialSubject](./core-types.credentialsubject.md)                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [expirationDate?](./core-types.credentialpayload.expirationdate.md)       |           | [DateType](./core-types.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id?](./core-types.credentialpayload.id.md)                               |           | string                                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate?](./core-types.credentialpayload.issuancedate.md)           |           | [DateType](./core-types.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuer](./core-types.credentialpayload.issuer.md)                        |           | [IssuerType](./core-types.issuertype.md)                               | <b><i>(BETA)</i></b>                   |
-| [type?](./core-types.credentialpayload.type.md)                           |           | string\[\]                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                                  | Modifiers | Type                                                                   | Description               |
+| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------------------- |
+| ["@context"?](./core-types.credentialpayload.__context_.md)               |           | [ContextType](./core-types.contexttype.md)                             | **_(BETA)_** _(Optional)_ |
+| [credentialStatus?](./core-types.credentialpayload.credentialstatus.md)   |           | [CredentialStatusReference](./core-types.credentialstatusreference.md) | **_(BETA)_** _(Optional)_ |
+| [credentialSubject?](./core-types.credentialpayload.credentialsubject.md) |           | [CredentialSubject](./core-types.credentialsubject.md)                 | **_(BETA)_** _(Optional)_ |
+| [expirationDate?](./core-types.credentialpayload.expirationdate.md)       |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
+| [id?](./core-types.credentialpayload.id.md)                               |           | string                                                                 | **_(BETA)_** _(Optional)_ |
+| [issuanceDate?](./core-types.credentialpayload.issuancedate.md)           |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
+| [issuer](./core-types.credentialpayload.issuer.md)                        |           | [IssuerType](./core-types.issuertype.md)                               | **_(BETA)_**              |
+| [type?](./core-types.credentialpayload.type.md)                           |           | string\[\]                                                             | **_(BETA)_** _(Optional)_ |

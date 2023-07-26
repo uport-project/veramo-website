@@ -12,7 +12,7 @@ hide_title: true
 
 Constructs a new instance of the `CredentialIssuerEIP712` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor()

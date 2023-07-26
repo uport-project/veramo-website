@@ -10,7 +10,7 @@ hide_title: true
 
 Processes an event emitted by the agent.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onEvent?(event: {
@@ -26,6 +26,6 @@ onEvent?(event: {
 | event     | { type: string; data: any; }                             |                                                                                         |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt; | Execution context. Requires agent with [IDataStore](./core-types.idatastore.md) methods |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

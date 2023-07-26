@@ -10,7 +10,7 @@ hide_title: true
 
 Returns a specific identifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerGet({ did }: IDIDManagerGetArgs): Promise<IIdentifier>;
@@ -22,6 +22,6 @@ didManagerGet({ did }: IDIDManagerGetArgs): Promise<IIdentifier>;
 | --------- | -------------------------------------------------------- | ----------- |
 | { did }   | [IDIDManagerGetArgs](./core-types.ididmanagergetargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

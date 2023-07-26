@@ -10,7 +10,7 @@ hide_title: true
 
 Required. VerifiableCredential hash
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hash: string

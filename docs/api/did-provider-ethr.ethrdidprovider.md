@@ -10,13 +10,13 @@ hide_title: true
 
 [DIDManager](./did-manager.didmanager.md) identifier provider for `did:ethr` identifiers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class EthrDIDProvider extends AbstractIdentifierProvider
 ```
 
-<b>Extends:</b> [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)
+**Extends:** [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)
 
 ## Constructors
 

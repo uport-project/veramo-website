@@ -10,7 +10,7 @@ hide_title: true
 
 Deletes a key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerDelete(args: IKeyManagerDeleteArgs): Promise<boolean>;
@@ -22,6 +22,6 @@ keyManagerDelete(args: IKeyManagerDeleteArgs): Promise<boolean>;
 | --------- | -------------------------------------------------------------- | ----------- |
 | args      | [IKeyManagerDeleteArgs](./core-types.ikeymanagerdeleteargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

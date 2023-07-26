@@ -12,7 +12,7 @@ hide_title: true
 >
 > please use `sign({key, data})` instead, with `Uint8Array` data
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 signJWT({ key, data }: {
@@ -27,6 +27,6 @@ signJWT({ key, data }: {
 | ------------- | ----------------------------------------------------------------------------------------- | ----------- |
 | { key, data } | { key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; data: string &#124; Uint8Array; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

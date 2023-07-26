@@ -10,13 +10,13 @@ hide_title: true
 
 A Veramo plugin that implements the [ICredentialIssuerLD](./credential-ld.icredentialissuerld.md) methods.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CredentialIssuerLD implements IAgentPlugin
 ```
 
-<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
+**Implements:** [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 

@@ -10,7 +10,7 @@ hide_title: true
 
 Creates a router that exposes [Agent](./core.agent.md) OpenAPI schema
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ApiSchemaRouter: (options: ApiSchemaRouterOptions) => Router

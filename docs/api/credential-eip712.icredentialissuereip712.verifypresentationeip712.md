@@ -12,7 +12,7 @@ hide_title: true
 
 Verifies a Verifiable Presentation EIP712 Format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyPresentationEIP712(args: IVerifyPresentationEIP712Args, context: IRequiredContext): Promise<boolean>;
@@ -25,7 +25,7 @@ verifyPresentationEIP712(args: IVerifyPresentationEIP712Args, context: IRequired
 | args      | [IVerifyPresentationEIP712Args](./credential-eip712.iverifypresentationeip712args.md) | Arguments necessary to verify the Presentation                                               |
 | context   | [IRequiredContext](./credential-eip712.irequiredcontext.md)                           | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

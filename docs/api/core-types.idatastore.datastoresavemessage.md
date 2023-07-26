@@ -10,7 +10,7 @@ hide_title: true
 
 Saves message to the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreSaveMessage(args: IDataStoreSaveMessageArgs): Promise<string>;
@@ -22,7 +22,7 @@ dataStoreSaveMessage(args: IDataStoreSaveMessageArgs): Promise<string>;
 | --------- | ---------------------------------------------------------------------- | ----------- |
 | args      | [IDataStoreSaveMessageArgs](./core-types.idatastoresavemessageargs.md) | message     |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

@@ -12,13 +12,13 @@ An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeys
 
 This is usable by [KeyManagementSystem](./kms-local.keymanagementsystem.md) to hold the private key data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MemoryPrivateKeyStore extends AbstractPrivateKeyStore
 ```
 
-<b>Extends:</b> [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
+**Extends:** [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
 
 ## Methods
 

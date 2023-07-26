@@ -12,7 +12,7 @@ hide_title: true
 
 The DID document of the issuer. This can be used in case the DID Document is already resolver, to avoid a potentially expensive DID resolution operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didDocumentOverride?: DIDDocument;

@@ -14,7 +14,7 @@ A tuple used to verify a Selective Disclosure Response. Encapsulates the respons
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IValidatePresentationAgainstSdrArgs
@@ -22,7 +22,7 @@ export interface IValidatePresentationAgainstSdrArgs
 
 ## Properties
 
-| Property                                                                                   | Modifiers | Type                                                                                 | Description          |
-| ------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------ | -------------------- |
-| [presentation](./selective-disclosure.ivalidatepresentationagainstsdrargs.presentation.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)                     | <b><i>(BETA)</i></b> |
-| [sdr](./selective-disclosure.ivalidatepresentationagainstsdrargs.sdr.md)                   |           | [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) | <b><i>(BETA)</i></b> |
+| Property                                                                                   | Modifiers | Type                                                                                 | Description  |
+| ------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------ | ------------ |
+| [presentation](./selective-disclosure.ivalidatepresentationagainstsdrargs.presentation.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)                     | **_(BETA)_** |
+| [sdr](./selective-disclosure.ivalidatepresentationagainstsdrargs.sdr.md)                   |           | [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) | **_(BETA)_** |

@@ -8,7 +8,7 @@ hide_title: true
 
 ## BrowserLocalStorageStore.fromLocalStorage() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static fromLocalStorage(localStorageKey: string): BrowserLocalStorageStore;
@@ -20,6 +20,6 @@ static fromLocalStorage(localStorageKey: string): BrowserLocalStorageStore;
 | --------------- | ------ | ----------- |
 | localStorageKey | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [BrowserLocalStorageStore](./data-store-json.browserlocalstoragestore.md)

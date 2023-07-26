@@ -10,7 +10,7 @@ hide_title: true
 
 Required. Message
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 message: IMessage

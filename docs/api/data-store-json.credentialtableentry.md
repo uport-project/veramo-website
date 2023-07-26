@@ -14,7 +14,7 @@ This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) t
 
 This API may change in future versions without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CredentialTableEntry
@@ -22,15 +22,15 @@ export interface CredentialTableEntry
 
 ## Properties
 
-| Property                                                                             | Modifiers | Type                                                               | Description                            |
-| ------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------ | -------------------------------------- |
-| [canonicalCredential](./data-store-json.credentialtableentry.canonicalcredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) | <b><i>(BETA)</i></b>                   |
-| [context](./data-store-json.credentialtableentry.context.md)                         |           | string\[\]                                                         | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./data-store-json.credentialtableentry.expirationdate.md)          |           | Date                                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash](./data-store-json.credentialtableentry.hash.md)                               |           | string                                                             | <b><i>(BETA)</i></b>                   |
-| [id?](./data-store-json.credentialtableentry.id.md)                                  |           | string                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate?](./data-store-json.credentialtableentry.issuancedate.md)              |           | Date                                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuer](./data-store-json.credentialtableentry.issuer.md)                           |           | string                                                             | <b><i>(BETA)</i></b>                   |
-| [parsedCredential](./data-store-json.credentialtableentry.parsedcredential.md)       |           | [VerifiableCredential](./core-types.verifiablecredential.md)       | <b><i>(BETA)</i></b>                   |
-| [subject?](./data-store-json.credentialtableentry.subject.md)                        |           | string                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store-json.credentialtableentry.type.md)                               |           | string\[\]                                                         | <b><i>(BETA)</i></b>                   |
+| Property                                                                             | Modifiers | Type                                                               | Description               |
+| ------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------ | ------------------------- |
+| [canonicalCredential](./data-store-json.credentialtableentry.canonicalcredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) | **_(BETA)_**              |
+| [context](./data-store-json.credentialtableentry.context.md)                         |           | string\[\]                                                         | **_(BETA)_**              |
+| [expirationDate?](./data-store-json.credentialtableentry.expirationdate.md)          |           | Date                                                               | **_(BETA)_** _(Optional)_ |
+| [hash](./data-store-json.credentialtableentry.hash.md)                               |           | string                                                             | **_(BETA)_**              |
+| [id?](./data-store-json.credentialtableentry.id.md)                                  |           | string                                                             | **_(BETA)_** _(Optional)_ |
+| [issuanceDate?](./data-store-json.credentialtableentry.issuancedate.md)              |           | Date                                                               | **_(BETA)_** _(Optional)_ |
+| [issuer](./data-store-json.credentialtableentry.issuer.md)                           |           | string                                                             | **_(BETA)_**              |
+| [parsedCredential](./data-store-json.credentialtableentry.parsedcredential.md)       |           | [VerifiableCredential](./core-types.verifiablecredential.md)       | **_(BETA)_**              |
+| [subject?](./data-store-json.credentialtableentry.subject.md)                        |           | string                                                             | **_(BETA)_** _(Optional)_ |
+| [type](./data-store-json.credentialtableentry.type.md)                               |           | string\[\]                                                         | **_(BETA)_**              |

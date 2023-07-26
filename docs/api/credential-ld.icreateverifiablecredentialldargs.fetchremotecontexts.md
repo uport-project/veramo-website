@@ -14,7 +14,7 @@ Set this to true if you want the `@context` URLs to be fetched in case they are 
 
 Defaults to `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fetchRemoteContexts?: boolean;

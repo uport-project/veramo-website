@@ -12,7 +12,7 @@ hide_title: true
 
 Options that will be forwarded to the credentialStatus method specific manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 options?: CredentialStatusUpdateOptions;

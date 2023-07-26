@@ -12,22 +12,22 @@ hide_title: true
 
 A plugin for the [MessageHandler](./message-handler.messagehandler.md) that decrypts DIDComm messages. This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DIDCommMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Constructors
 
-| Constructor                                                          | Modifiers | Description                                                                                    |
-| -------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
-| [(constructor)()](./did-comm.didcommmessagehandler._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>DIDCommMessageHandler</code> class |
+| Constructor                                                          | Modifiers | Description                                                                            |
+| -------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------- |
+| [(constructor)()](./did-comm.didcommmessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>DIDCommMessageHandler</code> class |
 
 ## Methods
 
-| Method                                                                 | Modifiers | Description                                                                                                                                                                                                    |
-| ---------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [handle(message, context)](./did-comm.didcommmessagehandler.handle.md) |           | <b><i>(BETA)</i></b> Handles a new packed DIDCommV2 Message (also Alpha support but soon deprecated). - Tests whether raw message is a DIDCommV2 message - Unpacks raw message (JWM/JWE/JWS, or plain JSON). - |
+| Method                                                                 | Modifiers | Description                                                                                                                                                                                            |
+| ---------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [handle(message, context)](./did-comm.didcommmessagehandler.handle.md) |           | **_(BETA)_** Handles a new packed DIDCommV2 Message (also Alpha support but soon deprecated). - Tests whether raw message is a DIDCommV2 message - Unpacks raw message (JWM/JWE/JWS, or plain JSON). - |

@@ -18,7 +18,7 @@ Tries to obtain a list of [IIdentifiers](./core-types.iidentifier.md) that match
 
 If the same database is used for implementations of [AbstractDIDStore](./did-manager.abstractdidstore.md), then these identifiers can also come from [didManagerCreate](./core-types.ididmanager.didmanagercreate.md) or [didManagerImport](./core-types.ididmanager.didmanagerimport.md) operations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetIdentifiers(args: FindIdentifiersArgs, context: AuthorizedDIDContext): Promise<Array<PartialIdentifier>>;
@@ -31,6 +31,6 @@ dataStoreORMGetIdentifiers(args: FindIdentifiersArgs, context: AuthorizedDIDCont
 | args      | [FindIdentifiersArgs](./core-types.findidentifiersargs.md)   | The filter to apply when querying                                                                                                                                                 |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md) | Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[PartialIdentifier](./core-types.partialidentifier.md)&gt;&gt;

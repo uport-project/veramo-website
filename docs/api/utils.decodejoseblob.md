@@ -12,7 +12,7 @@ hide_title: true
 
 Decodes a base64url string representing stringified JSON to a JSON object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function decodeJoseBlob(blob: string): any
@@ -24,6 +24,6 @@ export declare function decodeJoseBlob(blob: string): any
 | --------- | ------ | ----------------------------------------------------------------------------------------------------------------------- |
 | blob      | string | <p>The base64url encoded stringified JSON to be decoded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 any

@@ -12,7 +12,7 @@ hide_title: true
 
 Plugin methods
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly methods: IDIDComm;

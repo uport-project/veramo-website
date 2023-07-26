@@ -14,7 +14,7 @@ Represents the result of a status check.
 
 Implementations MUST populate the `revoked` boolean property, but they can return additional metadata that is method specific.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type CredentialStatus = {

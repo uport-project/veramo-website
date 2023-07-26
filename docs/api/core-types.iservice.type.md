@@ -10,7 +10,7 @@ hide_title: true
 
 Service type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string

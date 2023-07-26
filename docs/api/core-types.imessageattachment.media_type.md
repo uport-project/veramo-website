@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageAttachment.media_type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 media_type?: string;

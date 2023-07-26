@@ -10,7 +10,7 @@ hide_title: true
 
 Constructs a new instance of the `KeyStore` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(dbConnection: OrPromise<DataSource>);

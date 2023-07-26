@@ -12,7 +12,7 @@ Tries to determine if this DID provider can manage DIDs with the given prefix.
 
 If this provider was configured for a particular network and that network name or hexChainId is used in the prefix it will return true.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 matchPrefix(prefix: string): boolean;
@@ -24,6 +24,6 @@ matchPrefix(prefix: string): boolean;
 | --------- | ------ | ------------------------------- |
 | prefix    | string | The DID prefix to match against |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

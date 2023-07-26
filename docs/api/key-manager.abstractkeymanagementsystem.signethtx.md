@@ -12,7 +12,7 @@ hide_title: true
 >
 > please use `sign({key, alg: 'eth_signTransaction', data: arrayify(serialize(transaction))})` instead
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 signEthTX({ key, transaction }: {
@@ -27,6 +27,6 @@ signEthTX({ key, transaction }: {
 | -------------------- | ------------------------------------------------------------------------------ | ----------- |
 | { key, transaction } | { key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; transaction: object; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

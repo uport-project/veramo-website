@@ -12,7 +12,7 @@ hide_title: true
 
 Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(id?: string);
@@ -20,6 +20,6 @@ constructor(id?: string);
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                                                                                                |
-| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id        | string | <p><i>(Optional)</i> An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md).</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Parameter | Type   | Description                                                                                                                                                           |
+| --------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id        | string | <p>_(Optional)_ An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md).</p><p>This API may change without a BREAKING CHANGE notice.</p> |

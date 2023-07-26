@@ -12,7 +12,7 @@ hide_title: true
 
 Input arguments for [credentialStatusUpdate](./core-types.icredentialstatusmanager.credentialstatusupdate.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CredentialStatusUpdateArgs
@@ -20,7 +20,7 @@ export interface CredentialStatusUpdateArgs
 
 ## Properties
 
-| Property                                                       | Modifiers | Type                                                         | Description                                                                                                            |
-| -------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| [options?](./core-types.credentialstatusupdateargs.options.md) |           | CredentialStatusUpdateOptions                                | <b><i>(BETA)</i></b> <i>(Optional)</i> Options that will be forwarded to the credentialStatus method specific manager. |
-| [vc](./core-types.credentialstatusupdateargs.vc.md)            |           | [VerifiableCredential](./core-types.verifiablecredential.md) | <b><i>(BETA)</i></b> The verifiable credential whose status will be updated.                                           |
+| Property                                                       | Modifiers | Type                                                         | Description                                                                                               |
+| -------------------------------------------------------------- | --------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| [options?](./core-types.credentialstatusupdateargs.options.md) |           | CredentialStatusUpdateOptions                                | **_(BETA)_** _(Optional)_ Options that will be forwarded to the credentialStatus method specific manager. |
+| [vc](./core-types.credentialstatusupdateargs.vc.md)            |           | [VerifiableCredential](./core-types.verifiablecredential.md) | **_(BETA)_** The verifiable credential whose status will be updated.                                      |

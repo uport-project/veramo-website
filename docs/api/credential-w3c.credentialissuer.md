@@ -12,7 +12,7 @@ hide_title: true
 >
 > please use [CredentialPlugin](./credential-w3c.credentialplugin.md) instead
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CredentialIssuer: typeof CredentialPlugin

@@ -10,17 +10,17 @@ hide_title: true
 
 DID Resolver interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IResolver extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Methods
 
-| Method                                                                     | Description                                                                                            |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [getDIDComponentById(args)](./core-types.iresolver.getdidcomponentbyid.md) | <b><i>(BETA)</i></b> Dereferences a DID URL fragment and returns the corresponding DID document entry. |
-| [resolveDid(args)](./core-types.iresolver.resolvedid.md)                   | Resolves DID and returns DID Resolution Result                                                         |
+| Method                                                                     | Description                                                                                    |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [getDIDComponentById(args)](./core-types.iresolver.getdidcomponentbyid.md) | **_(BETA)_** Dereferences a DID URL fragment and returns the corresponding DID document entry. |
+| [resolveDid(args)](./core-types.iresolver.resolvedid.md)                   | Resolves DID and returns DID Resolution Result                                                 |

@@ -8,7 +8,7 @@ hide_title: true
 
 ## MemoryKeyStore.deleteKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteKey({ kid }: {
@@ -22,6 +22,6 @@ deleteKey({ kid }: {
 | --------- | ---------------- | ----------- |
 | { kid }   | { kid: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

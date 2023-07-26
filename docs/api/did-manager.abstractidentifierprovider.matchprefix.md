@@ -10,7 +10,7 @@ hide_title: true
 
 Subclasses can override this to signal that they can work with a given DID prefix
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 matchPrefix?(prefix: string): boolean;
@@ -22,6 +22,6 @@ matchPrefix?(prefix: string): boolean;
 | --------- | ------ | -------------------------------------------------------------------------------------------------------------- |
 | prefix    | string | a DID URL prefix, Example: 'did:key:z6Mk', or <code>did:ethr</code>, or <code>did:ethr:arbitrum:testnet</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

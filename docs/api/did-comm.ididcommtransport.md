@@ -14,7 +14,7 @@ Common interface for transports that can be used in the [DIDComm](./did-comm.did
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDCommTransport
@@ -22,13 +22,13 @@ export interface IDIDCommTransport
 
 ## Properties
 
-| Property                                 | Modifiers | Type   | Description                                                                                                                              |
-| ---------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](./did-comm.ididcommtransport.id.md) |           | string | <b><i>(BETA)</i></b> Identifier of this transport that can be used in case the message thread supports reusing the transport connection. |
+| Property                                 | Modifiers | Type   | Description                                                                                                                      |
+| ---------------------------------------- | --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| [id](./did-comm.ididcommtransport.id.md) |           | string | **_(BETA)_** Identifier of this transport that can be used in case the message thread supports reusing the transport connection. |
 
 ## Methods
 
-| Method                                                                            | Description                                                                                                                                                    |
-| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [isServiceSupported(service)](./did-comm.ididcommtransport.isservicesupported.md) | <b><i>(BETA)</i></b> Returns <code>true</code> if this transport is suitable for the provided DID Document service section, otherwise <code>false</code>.      |
-| [send(service, message)](./did-comm.ididcommtransport.send.md)                    | <b><i>(BETA)</i></b> Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section. |
+| Method                                                                            | Description                                                                                                                                            |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [isServiceSupported(service)](./did-comm.ididcommtransport.isservicesupported.md) | **_(BETA)_** Returns <code>true</code> if this transport is suitable for the provided DID Document service section, otherwise <code>false</code>.      |
+| [send(service, message)](./did-comm.ididcommtransport.send.md)                    | **_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section. |

@@ -10,7 +10,7 @@ hide_title: true
 
 List of exposed methods
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exposedMethods?: Array<string>;

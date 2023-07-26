@@ -12,7 +12,7 @@ hide_title: true
 
 List of discovery matches
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 matches: IDIDDiscoverMatch[];

@@ -12,7 +12,7 @@ hide_title: true
 
 policy to skip the expirationDate (exp) timestamp check when set to `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expirationDate?: boolean;

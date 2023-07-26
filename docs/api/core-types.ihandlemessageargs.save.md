@@ -14,7 +14,7 @@ hide_title: true
 
 Optional. If set to `true`, the message will be saved using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md) <p/><p/>
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 save?: boolean;

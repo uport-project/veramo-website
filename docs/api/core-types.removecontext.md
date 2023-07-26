@@ -10,7 +10,7 @@ hide_title: true
 
 Removes context parameter from plugin method interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RemoveContext<T extends IPluginMethod>

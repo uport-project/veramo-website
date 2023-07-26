@@ -10,7 +10,7 @@ hide_title: true
 
 Converts a base58 string to the Uint8Array it represents.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function base58ToBytes(s: string): Uint8Array
@@ -22,7 +22,7 @@ export declare function base58ToBytes(s: string): Uint8Array
 | --------- | ------ | -------------------------- |
 | s         | string | the string to be converted |
 
-<b>Returns:</b>
+**Returns:**
 
 Uint8Array
 

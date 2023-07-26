@@ -10,7 +10,7 @@ hide_title: true
 
 Required. VerifiableCredential
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifiableCredential: VerifiableCredential

@@ -12,7 +12,7 @@ hide_title: true
 
 Constructs a new instance of the `PrivateKeyStoreJson` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(jsonStore: VeramoJsonStore, secretBox?: AbstractSecretBox | undefined);
@@ -23,4 +23,4 @@ constructor(jsonStore: VeramoJsonStore, secretBox?: AbstractSecretBox | undefine
 | Parameter | Type                                                                     | Description                                                                                                                                                                                                                                                             |
 | --------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | jsonStore | [VeramoJsonStore](./data-store-json.veramojsonstore.md)                  | This serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. The JSON object does not have to be shared with other users of [VeramoJsonStore](./data-store-json.veramojsonstore.md), but it can be. |
-| secretBox | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | <i>(Optional)</i> If this is used, then key material is encrypted, even in memory.                                                                                                                                                                                      |
+| secretBox | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | _(Optional)_ If this is used, then key material is encrypted, even in memory.                                                                                                                                                                                           |

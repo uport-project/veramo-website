@@ -14,10 +14,10 @@ The filter that can be used to find [IIdentifier](./core-types.iidentifier.md)s 
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type FindIdentifiersArgs = FindArgs<TIdentifiersColumns>
 ```
 
-<b>References:</b> [FindArgs](./core-types.findargs.md), [TIdentifiersColumns](./core-types.tidentifierscolumns.md)
+**References:** [FindArgs](./core-types.findargs.md), [TIdentifiersColumns](./core-types.tidentifierscolumns.md)

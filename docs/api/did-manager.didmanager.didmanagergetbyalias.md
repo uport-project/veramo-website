@@ -10,7 +10,7 @@ hide_title: true
 
 Returns a specific identifier by alias
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerGetByAlias({ alias, provider }: IDIDManagerGetByAliasArgs): Promise<IIdentifier>;
@@ -22,6 +22,6 @@ didManagerGetByAlias({ alias, provider }: IDIDManagerGetByAliasArgs): Promise<II
 | ------------------- | ---------------------------------------------------------------------- | ----------- |
 | { alias, provider } | [IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

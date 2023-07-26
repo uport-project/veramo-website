@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDStore.listDIDs() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 listDIDs(args: {
@@ -23,6 +23,6 @@ listDIDs(args: {
 | --------- | -------------------------------------- | ----------- |
 | args      | { alias?: string; provider?: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)\[\]&gt;

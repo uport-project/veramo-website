@@ -14,16 +14,16 @@ An extension to [VeramoJsonCache](./data-store-json.veramojsoncache.md) that bun
 
 This API may change in future versions without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface VeramoJsonStore extends VeramoJsonCache
 ```
 
-<b>Extends:</b> [VeramoJsonCache](./data-store-json.veramojsoncache.md)
+**Extends:** [VeramoJsonCache](./data-store-json.veramojsoncache.md)
 
 ## Properties
 
-| Property                                                          | Modifiers | Type                                              | Description          |
-| ----------------------------------------------------------------- | --------- | ------------------------------------------------- | -------------------- |
-| [notifyUpdate](./data-store-json.veramojsonstore.notifyupdate.md) |           | [DiffCallback](./data-store-json.diffcallback.md) | <b><i>(BETA)</i></b> |
+| Property                                                          | Modifiers | Type                                              | Description  |
+| ----------------------------------------------------------------- | --------- | ------------------------------------------------- | ------------ |
+| [notifyUpdate](./data-store-json.veramojsonstore.notifyupdate.md) |           | [DiffCallback](./data-store-json.diffcallback.md) | **_(BETA)_** |

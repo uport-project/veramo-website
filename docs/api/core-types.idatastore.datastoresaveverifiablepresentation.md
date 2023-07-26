@@ -10,7 +10,7 @@ hide_title: true
 
 Saves verifiable presentation to the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreSaveVerifiablePresentation(args: IDataStoreSaveVerifiablePresentationArgs): Promise<string>;
@@ -22,7 +22,7 @@ dataStoreSaveVerifiablePresentation(args: IDataStoreSaveVerifiablePresentationAr
 | --------- | ---------------------------------------------------------------------------------------------------- | ----------------------- |
 | args      | [IDataStoreSaveVerifiablePresentationArgs](./core-types.idatastoresaveverifiablepresentationargs.md) | verifiable presentation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

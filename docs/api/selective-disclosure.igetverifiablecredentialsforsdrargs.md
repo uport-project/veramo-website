@@ -12,7 +12,7 @@ hide_title: true
 
 Encapsulates the params needed to gather credentials to fulfill a Selective disclosure request.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IGetVerifiableCredentialsForSdrArgs
@@ -26,7 +26,7 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                  | Modifiers | Type                                                                                                       | Description                                                               |
-| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [did?](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md) |           | string                                                                                                     | <b><i>(BETA)</i></b> <i>(Optional)</i> The DID of the subject             |
-| [sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md)  |           | Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md), 'issuer'&gt; | <b><i>(BETA)</i></b> The Selective Disclosure Request (issuer is omitted) |
+| Property                                                                  | Modifiers | Type                                                                                                       | Description                                                       |
+| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [did?](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md) |           | string                                                                                                     | **_(BETA)_** _(Optional)_ The DID of the subject                  |
+| [sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md)  |           | Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md), 'issuer'&gt; | **_(BETA)_** The Selective Disclosure Request (issuer is omitted) |

@@ -12,7 +12,7 @@ hide_title: true
 
 Required
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 document: Partial<DIDDocument>

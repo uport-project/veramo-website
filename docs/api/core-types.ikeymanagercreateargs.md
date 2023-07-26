@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [keyManagerCreate](./core-types.ikeymanager.keymanagercreate.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManagerCreateArgs
@@ -18,8 +18,8 @@ export interface IKeyManagerCreateArgs
 
 ## Properties
 
-| Property                                            | Modifiers | Type                                       | Description                               |
-| --------------------------------------------------- | --------- | ------------------------------------------ | ----------------------------------------- |
-| [kms](./core-types.ikeymanagercreateargs.kms.md)    |           | string                                     | Key Management System                     |
-| [meta?](./core-types.ikeymanagercreateargs.meta.md) |           | [KeyMetadata](./core-types.keymetadata.md) | <i>(Optional)</i> Optional. Key meta data |
-| [type](./core-types.ikeymanagercreateargs.type.md)  |           | [TKeyType](./core-types.tkeytype.md)       | Key type                                  |
+| Property                                            | Modifiers | Type                                       | Description                          |
+| --------------------------------------------------- | --------- | ------------------------------------------ | ------------------------------------ |
+| [kms](./core-types.ikeymanagercreateargs.kms.md)    |           | string                                     | Key Management System                |
+| [meta?](./core-types.ikeymanagercreateargs.meta.md) |           | [KeyMetadata](./core-types.keymetadata.md) | _(Optional)_ Optional. Key meta data |
+| [type](./core-types.ikeymanagercreateargs.type.md)  |           | [TKeyType](./core-types.tkeytype.md)       | Key type                             |

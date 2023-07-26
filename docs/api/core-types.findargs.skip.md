@@ -12,7 +12,7 @@ hide_title: true
 
 Ignores the first number of entries in a [IDataStoreORM](./core-types.idatastoreorm.md) query result.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skip?: number;

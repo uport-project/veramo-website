@@ -10,7 +10,7 @@ hide_title: true
 
 Identifier interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IIdentifier
@@ -18,11 +18,11 @@ export interface IIdentifier
 
 ## Properties
 
-| Property                                                        | Modifiers | Type                                     | Description                                                                                            |
-| --------------------------------------------------------------- | --------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [alias?](./core-types.iidentifier.alias.md)                     |           | string                                   | <i>(Optional)</i> Optional. Identifier alias. Can be used to reference an object in an external system |
-| [controllerKeyId?](./core-types.iidentifier.controllerkeyid.md) |           | string                                   | <i>(Optional)</i> Controller key id                                                                    |
-| [did](./core-types.iidentifier.did.md)                          |           | string                                   | Decentralized identifier                                                                               |
-| [keys](./core-types.iidentifier.keys.md)                        |           | [IKey](./core-types.ikey.md)\[\]         | Array of managed keys                                                                                  |
-| [provider](./core-types.iidentifier.provider.md)                |           | string                                   | Identifier provider name                                                                               |
-| [services](./core-types.iidentifier.services.md)                |           | [IService](./core-types.iservice.md)\[\] | Array of services                                                                                      |
+| Property                                                        | Modifiers | Type                                     | Description                                                                                       |
+| --------------------------------------------------------------- | --------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [alias?](./core-types.iidentifier.alias.md)                     |           | string                                   | _(Optional)_ Optional. Identifier alias. Can be used to reference an object in an external system |
+| [controllerKeyId?](./core-types.iidentifier.controllerkeyid.md) |           | string                                   | _(Optional)_ Controller key id                                                                    |
+| [did](./core-types.iidentifier.did.md)                          |           | string                                   | Decentralized identifier                                                                          |
+| [keys](./core-types.iidentifier.keys.md)                        |           | [IKey](./core-types.ikey.md)\[\]         | Array of managed keys                                                                             |
+| [provider](./core-types.iidentifier.provider.md)                |           | string                                   | Identifier provider name                                                                          |
+| [services](./core-types.iidentifier.services.md)                |           | [IService](./core-types.iservice.md)\[\] | Array of services                                                                                 |

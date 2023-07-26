@@ -16,7 +16,7 @@ See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatas
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TPresentationColumns =

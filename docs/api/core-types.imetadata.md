@@ -10,7 +10,7 @@ hide_title: true
 
 Message meta data
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IMetaData
@@ -18,7 +18,7 @@ export interface IMetaData
 
 ## Properties
 
-| Property                                  | Modifiers | Type   | Description                       |
-| ----------------------------------------- | --------- | ------ | --------------------------------- |
-| [type](./core-types.imetadata.type.md)    |           | string | Type                              |
-| [value?](./core-types.imetadata.value.md) |           | string | <i>(Optional)</i> Optional. Value |
+| Property                                  | Modifiers | Type   | Description                  |
+| ----------------------------------------- | --------- | ------ | ---------------------------- |
+| [type](./core-types.imetadata.type.md)    |           | string | Type                         |
+| [value?](./core-types.imetadata.value.md) |           | string | _(Optional)_ Optional. Value |

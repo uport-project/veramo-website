@@ -8,7 +8,7 @@ hide_title: true
 
 ## SecretBox.encrypt() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 encrypt(message: string): Promise<string>;
@@ -20,6 +20,6 @@ encrypt(message: string): Promise<string>;
 | --------- | ------ | ----------- |
 | message   | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

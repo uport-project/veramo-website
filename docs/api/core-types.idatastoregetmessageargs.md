@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [dataStoreGetMessage](./core-types.idatastore.datastoregetmessage.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDataStoreGetMessageArgs

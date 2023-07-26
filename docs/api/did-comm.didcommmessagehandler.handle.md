@@ -12,7 +12,7 @@ hide_title: true
 
 Handles a new packed DIDCommV2 Message (also Alpha support but soon deprecated). - Tests whether raw message is a DIDCommV2 message - Unpacks raw message (JWM/JWE/JWS, or plain JSON). -
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(message: Message, context: IContext): Promise<Message>;
@@ -25,6 +25,6 @@ handle(message: Message, context: IContext): Promise<Message>;
 | message   | [Message](./message-handler.message.md) |             |
 | context   | IContext                                |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Message](./message-handler.message.md)&gt;

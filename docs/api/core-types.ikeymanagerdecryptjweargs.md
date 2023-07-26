@@ -12,7 +12,7 @@ hide_title: true
 
 Input arguments for [keyManagerDecryptJWE](./core-types.ikeymanager.keymanagerdecryptjwe.md) This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManagerDecryptJWEArgs
@@ -20,7 +20,7 @@ export interface IKeyManagerDecryptJWEArgs
 
 ## Properties
 
-| Property                                               | Modifiers | Type   | Description                         |
-| ------------------------------------------------------ | --------- | ------ | ----------------------------------- |
-| [data](./core-types.ikeymanagerdecryptjweargs.data.md) |           | string | <b><i>(BETA)</i></b> Encrypted data |
-| [kid](./core-types.ikeymanagerdecryptjweargs.kid.md)   |           | string | <b><i>(BETA)</i></b> Key ID         |
+| Property                                               | Modifiers | Type   | Description                 |
+| ------------------------------------------------------ | --------- | ------ | --------------------------- |
+| [data](./core-types.ikeymanagerdecryptjweargs.data.md) |           | string | **_(BETA)_** Encrypted data |
+| [kid](./core-types.ikeymanagerdecryptjweargs.kid.md)   |           | string | **_(BETA)_** Key ID         |

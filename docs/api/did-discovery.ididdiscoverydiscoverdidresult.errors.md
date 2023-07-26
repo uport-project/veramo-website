@@ -12,7 +12,7 @@ hide_title: true
 
 A record of encountered errors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 errors?: Record<string, string>;

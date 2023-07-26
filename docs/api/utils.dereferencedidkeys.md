@@ -14,7 +14,7 @@ Dereferences keys from DID document and normalizes them for easy comparison.
 
 When dereferencing keyAgreement keys, only Ed25519 and X25519 curves are supported. Other key types are omitted from the result and Ed25519 keys are converted to X25519
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function dereferenceDidKeys(
@@ -32,7 +32,7 @@ export declare function dereferenceDidKeys(
 | section     | [DIDDocumentSection](./core-types.diddocumentsection.md) &#124; undefined                    |             |
 | context     | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;\_NormalizedVerificationMethod\[\]&gt;
 

@@ -12,7 +12,7 @@ hide_title: true
 
 Arguments for generating a `credentialStatus` property for a [VerifiableCredential](./core-types.verifiablecredential.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CredentialStatusGenerateArgs
@@ -20,6 +20,6 @@ export interface CredentialStatusGenerateArgs
 
 ## Properties
 
-| Property                                                  | Modifiers | Type   | Description                                                                                                                                |
-| --------------------------------------------------------- | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [type](./core-types.credentialstatusgenerateargs.type.md) |           | string | <b><i>(BETA)</i></b> The credential status type (aka credential status method) to be used in the <code>credentialStatus</code> generation. |
+| Property                                                  | Modifiers | Type   | Description                                                                                                                        |
+| --------------------------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [type](./core-types.credentialstatusgenerateargs.type.md) |           | string | **_(BETA)_** The credential status type (aka credential status method) to be used in the <code>credentialStatus</code> generation. |

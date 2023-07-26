@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManagementSystem.importKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 importKey(args: Omit<MinimalImportableKey, 'kms'>): Promise<ManagedKeyInfo>;
@@ -20,6 +20,6 @@ importKey(args: Omit<MinimalImportableKey, 'kms'>): Promise<ManagedKeyInfo>;
 | --------- | ------------------------------------------------------------------------------- | ----------- |
 | args      | Omit&lt;[MinimalImportableKey](./core-types.minimalimportablekey.md), 'kms'&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

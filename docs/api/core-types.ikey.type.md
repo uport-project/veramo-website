@@ -10,7 +10,7 @@ hide_title: true
 
 Key type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: TKeyType

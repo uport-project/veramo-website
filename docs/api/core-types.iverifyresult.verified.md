@@ -12,7 +12,7 @@ hide_title: true
 
 This value is used to transmit the result of verification.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verified: boolean

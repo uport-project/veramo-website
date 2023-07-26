@@ -12,9 +12,9 @@ Provides `did:pkh` [identifier provider](./did-provider-pkh.pkhdidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                                                                                                                |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [PkhDIDProvider](./did-provider-pkh.pkhdidprovider.md) | <p><b><i>(BETA)</i></b> [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:pkh</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Class                                                  | Description                                                                                                                                                                        |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [PkhDIDProvider](./did-provider-pkh.pkhdidprovider.md) | <p>**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:pkh</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
 ## Functions
 

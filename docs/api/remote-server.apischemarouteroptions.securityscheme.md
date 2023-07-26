@@ -10,7 +10,7 @@ hide_title: true
 
 Security scheme
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 securityScheme?: string;

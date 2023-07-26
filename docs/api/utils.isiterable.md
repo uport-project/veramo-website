@@ -12,7 +12,7 @@ hide_title: true
 
 Checks if an object is iterable (can be used for `for..of`)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isIterable<T>(obj: any): obj is Iterable<T>
@@ -24,6 +24,6 @@ export declare function isIterable<T>(obj: any): obj is Iterable<T>
 | --------- | ---- | --------------------------------------------------------------------------------------------- |
 | obj       | any  | <p>the variable to be checked</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 obj is Iterable&lt;T&gt;

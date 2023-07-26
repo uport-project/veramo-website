@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageAttachment.format property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 format?: string;

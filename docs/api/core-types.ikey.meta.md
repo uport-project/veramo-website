@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Key metadata. This should be used to determine which algorithms are supported.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 meta?: KeyMetadata | null;

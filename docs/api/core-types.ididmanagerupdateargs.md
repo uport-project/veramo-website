@@ -12,7 +12,7 @@ hide_title: true
 
 The arguments necessary to perform a full DID document update for a DID.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerUpdateArgs
@@ -20,8 +20,8 @@ export interface IDIDManagerUpdateArgs
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                       | Description                                                                  |
-| ---------------------------------------------------------- | --------- | -------------------------- | ---------------------------------------------------------------------------- |
-| [did](./core-types.ididmanagerupdateargs.did.md)           |           | string                     | <b><i>(BETA)</i></b> Required. DID                                           |
-| [document](./core-types.ididmanagerupdateargs.document.md) |           | Partial&lt;DIDDocument&gt; | <b><i>(BETA)</i></b> Required                                                |
-| [options?](./core-types.ididmanagerupdateargs.options.md)  |           | { \[x: string\]: any; }    | <b><i>(BETA)</i></b> <i>(Optional)</i> Identifier provider specific options. |
+| Property                                                   | Modifiers | Type                       | Description                                                     |
+| ---------------------------------------------------------- | --------- | -------------------------- | --------------------------------------------------------------- |
+| [did](./core-types.ididmanagerupdateargs.did.md)           |           | string                     | **_(BETA)_** Required. DID                                      |
+| [document](./core-types.ididmanagerupdateargs.document.md) |           | Partial&lt;DIDDocument&gt; | **_(BETA)_** Required                                           |
+| [options?](./core-types.ididmanagerupdateargs.options.md)  |           | { \[x: string\]: any; }    | **_(BETA)_** _(Optional)_ Identifier provider specific options. |

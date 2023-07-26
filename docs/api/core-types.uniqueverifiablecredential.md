@@ -16,7 +16,7 @@ See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatasto
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UniqueVerifiableCredential
@@ -24,7 +24,7 @@ export interface UniqueVerifiableCredential
 
 ## Properties
 
-| Property                                                                                | Modifiers | Type                                                         | Description          |
-| --------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | -------------------- |
-| [hash](./core-types.uniqueverifiablecredential.hash.md)                                 |           | string                                                       | <b><i>(BETA)</i></b> |
-| [verifiableCredential](./core-types.uniqueverifiablecredential.verifiablecredential.md) |           | [VerifiableCredential](./core-types.verifiablecredential.md) | <b><i>(BETA)</i></b> |
+| Property                                                                                | Modifiers | Type                                                         | Description  |
+| --------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------ |
+| [hash](./core-types.uniqueverifiablecredential.hash.md)                                 |           | string                                                       | **_(BETA)_** |
+| [verifiableCredential](./core-types.uniqueverifiablecredential.verifiablecredential.md) |           | [VerifiableCredential](./core-types.verifiablecredential.md) | **_(BETA)_** |

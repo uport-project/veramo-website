@@ -14,7 +14,7 @@ The DIDComm message structure for data in an attachment. See https://identity.fo
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IMessageAttachmentData
@@ -22,10 +22,10 @@ export interface IMessageAttachmentData
 
 ## Properties
 
-| Property                                                 | Modifiers | Type       | Description                            |
-| -------------------------------------------------------- | --------- | ---------- | -------------------------------------- |
-| [base64?](./core-types.imessageattachmentdata.base64.md) |           | string     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash?](./core-types.imessageattachmentdata.hash.md)     |           | string     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [json?](./core-types.imessageattachmentdata.json.md)     |           | any        | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [jws?](./core-types.imessageattachmentdata.jws.md)       |           | any        | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [links?](./core-types.imessageattachmentdata.links.md)   |           | string\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                 | Modifiers | Type       | Description               |
+| -------------------------------------------------------- | --------- | ---------- | ------------------------- |
+| [base64?](./core-types.imessageattachmentdata.base64.md) |           | string     | **_(BETA)_** _(Optional)_ |
+| [hash?](./core-types.imessageattachmentdata.hash.md)     |           | string     | **_(BETA)_** _(Optional)_ |
+| [json?](./core-types.imessageattachmentdata.json.md)     |           | any        | **_(BETA)_** _(Optional)_ |
+| [jws?](./core-types.imessageattachmentdata.jws.md)       |           | any        | **_(BETA)_** _(Optional)_ |
+| [links?](./core-types.imessageattachmentdata.links.md)   |           | string\[\] | **_(BETA)_** _(Optional)_ |

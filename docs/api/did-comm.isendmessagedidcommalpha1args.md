@@ -16,7 +16,7 @@ hide_title: true
 >
 > This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ISendMessageDIDCommAlpha1Args
@@ -24,9 +24,9 @@ export interface ISendMessageDIDCommAlpha1Args
 
 ## Properties
 
-| Property                                                        | Modifiers | Type                                                                                 | Description                            |
-| --------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | -------------------------------------- |
-| [data](./did-comm.isendmessagedidcommalpha1args.data.md)        |           | { id?: string; from: string; to: string; type: string; body: object &#124; string; } | <b><i>(BETA)</i></b>                   |
-| [headers?](./did-comm.isendmessagedidcommalpha1args.headers.md) |           | Record&lt;string, string&gt;                                                         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [save?](./did-comm.isendmessagedidcommalpha1args.save.md)       |           | boolean                                                                              | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [url?](./did-comm.isendmessagedidcommalpha1args.url.md)         |           | string                                                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                        | Modifiers | Type                                                                                 | Description               |
+| --------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | ------------------------- |
+| [data](./did-comm.isendmessagedidcommalpha1args.data.md)        |           | { id?: string; from: string; to: string; type: string; body: object &#124; string; } | **_(BETA)_**              |
+| [headers?](./did-comm.isendmessagedidcommalpha1args.headers.md) |           | Record&lt;string, string&gt;                                                         | **_(BETA)_** _(Optional)_ |
+| [save?](./did-comm.isendmessagedidcommalpha1args.save.md)       |           | boolean                                                                              | **_(BETA)_** _(Optional)_ |
+| [url?](./did-comm.isendmessagedidcommalpha1args.url.md)         |           | string                                                                               | **_(BETA)_** _(Optional)_ |

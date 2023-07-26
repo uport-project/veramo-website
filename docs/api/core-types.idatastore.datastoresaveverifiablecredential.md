@@ -10,7 +10,7 @@ hide_title: true
 
 Saves verifiable credential to the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreSaveVerifiableCredential(args: IDataStoreSaveVerifiableCredentialArgs): Promise<string>;
@@ -22,7 +22,7 @@ dataStoreSaveVerifiableCredential(args: IDataStoreSaveVerifiableCredentialArgs):
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------- |
 | args      | [IDataStoreSaveVerifiableCredentialArgs](./core-types.idatastoresaveverifiablecredentialargs.md) | verifiable credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

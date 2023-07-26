@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDStore.importDID() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 importDID(args: IIdentifier): Promise<boolean>;
@@ -20,6 +20,6 @@ importDID(args: IIdentifier): Promise<boolean>;
 | --------- | ------------------------------------------ | ----------- |
 | args      | [IIdentifier](./core-types.iidentifier.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

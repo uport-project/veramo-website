@@ -10,7 +10,7 @@ hide_title: true
 
 Agent plugin method interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPluginMethod

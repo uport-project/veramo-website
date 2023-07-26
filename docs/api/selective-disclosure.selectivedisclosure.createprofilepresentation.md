@@ -14,7 +14,7 @@ Creates profile credentials
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentContext<ICredentialIssuer & IDIDManager>): Promise<VerifiablePresentation>;
@@ -27,6 +27,6 @@ createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentCo
 | args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                                      |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[ICredentialIssuer](./core-types.icredentialissuer.md) &amp; [IDIDManager](./core-types.ididmanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;

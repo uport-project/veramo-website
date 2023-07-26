@@ -12,7 +12,7 @@ hide_title: true
 
 A callback method that is called when the data stored in a [VeramoJsonCache](./data-store-json.veramojsoncache.md) is updated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DiffCallback = (
@@ -21,4 +21,4 @@ export type DiffCallback = (
 ) => Promise<void>
 ```
 
-<b>References:</b> [VeramoJsonCache](./data-store-json.veramojsoncache.md)
+**References:** [VeramoJsonCache](./data-store-json.veramojsoncache.md)

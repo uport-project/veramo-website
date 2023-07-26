@@ -12,7 +12,7 @@ This base abstract class should be extended to provide platform specific impleme
 
 Implementations of this class are used to store mappings between key IDs and their respective [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractKeyStore
@@ -20,9 +20,9 @@ export declare abstract class AbstractKeyStore
 
 ## Methods
 
-| Method                                                         | Modifiers | Description |
-| -------------------------------------------------------------- | --------- | ----------- |
-| [deleteKey(args)](./key-manager.abstractkeystore.deletekey.md) |           |             |
-| [getKey(args)](./key-manager.abstractkeystore.getkey.md)       |           |             |
-| [importKey(args)](./key-manager.abstractkeystore.importkey.md) |           |             |
-| [listKeys(args)](./key-manager.abstractkeystore.listkeys.md)   |           |             |
+| Method                                                         | Modifiers             | Description |
+| -------------------------------------------------------------- | --------------------- | ----------- |
+| [deleteKey(args)](./key-manager.abstractkeystore.deletekey.md) | <code>abstract</code> |             |
+| [getKey(args)](./key-manager.abstractkeystore.getkey.md)       | <code>abstract</code> |             |
+| [importKey(args)](./key-manager.abstractkeystore.importkey.md) | <code>abstract</code> |             |
+| [listKeys(args)](./key-manager.abstractkeystore.listkeys.md)   | <code>abstract</code> |             |

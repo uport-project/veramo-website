@@ -14,7 +14,7 @@ The data type for `@context` properties of credentials, presentations, etc.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextType = string | Record<string, any> | (string | Record<string, any>)[]

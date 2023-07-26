@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [dataStoreDeleteMessage](./core-types.idatastore.datastoredeletemessage.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDataStoreDeleteMessageArgs

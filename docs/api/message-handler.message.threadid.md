@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.threadId property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 threadId?: string;

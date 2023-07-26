@@ -8,7 +8,7 @@ hide_title: true
 
 ## AgentRouterOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AgentRouterOptions

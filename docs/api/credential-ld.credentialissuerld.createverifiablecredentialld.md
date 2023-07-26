@@ -10,7 +10,7 @@ hide_title: true
 
 Creates a Verifiable Credential. The payload, signer and format are chosen based on the `args` parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createVerifiableCredentialLD(args: ICreateVerifiableCredentialLDArgs, context: IRequiredContext): Promise<VerifiableCredential>;
@@ -23,7 +23,7 @@ createVerifiableCredentialLD(args: ICreateVerifiableCredentialLDArgs, context: I
 | args      | [ICreateVerifiableCredentialLDArgs](./credential-ld.icreateverifiablecredentialldargs.md) | Arguments necessary to create the Presentation.                                              |
 | context   | [IRequiredContext](./credential-ld.irequiredcontext.md)                                   | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiableCredential](./core-types.verifiablecredential.md)&gt;
 

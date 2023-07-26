@@ -10,7 +10,7 @@ hide_title: true
 
 Constructs a new instance of the `PrivateKeyStore` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(dbConnection: OrPromise<DataSource>, secretBox?: AbstractSecretBox | undefined);
@@ -18,7 +18,7 @@ constructor(dbConnection: OrPromise<DataSource>, secretBox?: AbstractSecretBox |
 
 ## Parameters
 
-| Parameter    | Type                                                                     | Description       |
-| ------------ | ------------------------------------------------------------------------ | ----------------- |
-| dbConnection | OrPromise&lt;DataSource&gt;                                              |                   |
-| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | <i>(Optional)</i> |
+| Parameter    | Type                                                                     | Description  |
+| ------------ | ------------------------------------------------------------------------ | ------------ |
+| dbConnection | OrPromise&lt;DataSource&gt;                                              |              |
+| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | _(Optional)_ |

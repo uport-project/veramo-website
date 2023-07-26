@@ -14,7 +14,7 @@ The columns that can be queried for an [IMessage](./core-types.imessage.md)
 
 See [IDataStoreORM.dataStoreORMGetMessagesCount()](./core-types.idatastoreorm.datastoreormgetmessagescount.md) This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TMessageColumns =

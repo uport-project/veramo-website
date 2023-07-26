@@ -14,28 +14,28 @@ hide_title: true
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class KeyDIDProvider extends AbstractIdentifierProvider
 ```
 
-<b>Extends:</b> [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)
+**Extends:** [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)
 
 ## Constructors
 
-| Constructor                                                                  | Modifiers | Description                                                                             |
-| ---------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------- |
-| [(constructor)(options)](./did-provider-key.keydidprovider._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>KeyDIDProvider</code> class |
+| Constructor                                                                  | Modifiers | Description                                                                     |
+| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------- |
+| [(constructor)(options)](./did-provider-key.keydidprovider._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>KeyDIDProvider</code> class |
 
 ## Methods
 
-| Method                                                                                                   | Modifiers | Description          |
-| -------------------------------------------------------------------------------------------------------- | --------- | -------------------- |
-| [addKey({ identifier, key, options }, context)](./did-provider-key.keydidprovider.addkey.md)             |           | <b><i>(BETA)</i></b> |
-| [addService({ identifier, service, options }, context)](./did-provider-key.keydidprovider.addservice.md) |           | <b><i>(BETA)</i></b> |
-| [createIdentifier({ kms, options }, context)](./did-provider-key.keydidprovider.createidentifier.md)     |           | <b><i>(BETA)</i></b> |
-| [deleteIdentifier(identifier, context)](./did-provider-key.keydidprovider.deleteidentifier.md)           |           | <b><i>(BETA)</i></b> |
-| [removeKey(args, context)](./did-provider-key.keydidprovider.removekey.md)                               |           | <b><i>(BETA)</i></b> |
-| [removeService(args, context)](./did-provider-key.keydidprovider.removeservice.md)                       |           | <b><i>(BETA)</i></b> |
-| [updateIdentifier(args, context)](./did-provider-key.keydidprovider.updateidentifier.md)                 |           | <b><i>(BETA)</i></b> |
+| Method                                                                                                   | Modifiers | Description  |
+| -------------------------------------------------------------------------------------------------------- | --------- | ------------ |
+| [addKey({ identifier, key, options }, context)](./did-provider-key.keydidprovider.addkey.md)             |           | **_(BETA)_** |
+| [addService({ identifier, service, options }, context)](./did-provider-key.keydidprovider.addservice.md) |           | **_(BETA)_** |
+| [createIdentifier({ kms, options }, context)](./did-provider-key.keydidprovider.createidentifier.md)     |           | **_(BETA)_** |
+| [deleteIdentifier(identifier, context)](./did-provider-key.keydidprovider.deleteidentifier.md)           |           | **_(BETA)_** |
+| [removeKey(args, context)](./did-provider-key.keydidprovider.removekey.md)                               |           | **_(BETA)_** |
+| [removeService(args, context)](./did-provider-key.keydidprovider.removeservice.md)                       |           | **_(BETA)_** |
+| [updateIdentifier(args, context)](./did-provider-key.keydidprovider.updateidentifier.md)                 |           | **_(BETA)_** |

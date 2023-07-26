@@ -8,7 +8,7 @@ hide_title: true
 
 ## UnsignedPresentation."@context" property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 '@context': ContextType;

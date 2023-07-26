@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDataStoreSaveVerifiableCredentialArgs

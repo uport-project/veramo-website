@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerGetByAlias](./core-types.ididmanager.didmanagergetbyalias.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerGetByAliasArgs
@@ -18,7 +18,7 @@ export interface IDIDManagerGetByAliasArgs
 
 ## Properties
 
-| Property                                                        | Modifiers | Type   | Description                         |
-| --------------------------------------------------------------- | --------- | ------ | ----------------------------------- |
-| [alias](./core-types.ididmanagergetbyaliasargs.alias.md)        |           | string | Alias                               |
-| [provider?](./core-types.ididmanagergetbyaliasargs.provider.md) |           | string | <i>(Optional)</i> Optional provider |
+| Property                                                        | Modifiers | Type   | Description                    |
+| --------------------------------------------------------------- | --------- | ------ | ------------------------------ |
+| [alias](./core-types.ididmanagergetbyaliasargs.alias.md)        |           | string | Alias                          |
+| [provider?](./core-types.ididmanagergetbyaliasargs.provider.md) |           | string | _(Optional)_ Optional provider |

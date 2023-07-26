@@ -14,10 +14,10 @@ The filter that can be used to find [VerifiableCredential](./core-types.verifiab
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type FindCredentialsArgs = FindArgs<TCredentialColumns>
 ```
 
-<b>References:</b> [FindArgs](./core-types.findargs.md), [TCredentialColumns](./core-types.tcredentialcolumns.md)
+**References:** [FindArgs](./core-types.findargs.md), [TCredentialColumns](./core-types.tcredentialcolumns.md)

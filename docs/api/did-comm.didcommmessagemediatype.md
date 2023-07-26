@@ -14,7 +14,7 @@ Represents different DIDComm v2 message encapsulation.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum DIDCommMessageMediaType
@@ -22,8 +22,8 @@ export declare enum DIDCommMessageMediaType
 
 ## Enumeration Members
 
-| Member    | Value                                                       | Description                                          |
-| --------- | ----------------------------------------------------------- | ---------------------------------------------------- |
-| ENCRYPTED | <code>&quot;application/didcomm-encrypted+json&quot;</code> | <b><i>(BETA)</i></b> A JWE encrypted DIDComm message |
-| PLAIN     | <code>&quot;application/didcomm-plain+json&quot;</code>     | <b><i>(BETA)</i></b> A plain JSON DIDComm message    |
-| SIGNED    | <code>&quot;application/didcomm-signed+json&quot;</code>    | <b><i>(BETA)</i></b> A JWS signed DIDComm message    |
+| Member    | Value                                                       | Description                                  |
+| --------- | ----------------------------------------------------------- | -------------------------------------------- |
+| ENCRYPTED | <code>&quot;application/didcomm-encrypted+json&quot;</code> | **_(BETA)_** A JWE encrypted DIDComm message |
+| PLAIN     | <code>&quot;application/didcomm-plain+json&quot;</code>     | **_(BETA)_** A plain JSON DIDComm message    |
+| SIGNED    | <code>&quot;application/didcomm-signed+json&quot;</code>    | **_(BETA)_** A JWS signed DIDComm message    |

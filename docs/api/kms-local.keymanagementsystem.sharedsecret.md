@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManagementSystem.sharedSecret() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sharedSecret(args: {
@@ -23,6 +23,6 @@ sharedSecret(args: {
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
 | args      | { myKeyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; theirKey: Pick&lt;[IKey](./core-types.ikey.md), 'type' &#124; 'publicKeyHex'&gt;; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

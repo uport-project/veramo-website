@@ -8,12 +8,12 @@ hide_title: true
 
 ## getResolver() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getResolver(): Record<string, DIDResolver>
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Record&lt;string, DIDResolver&gt;

@@ -16,7 +16,7 @@ See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TClaimsColumns =

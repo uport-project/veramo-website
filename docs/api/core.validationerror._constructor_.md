@@ -10,7 +10,7 @@ hide_title: true
 
 Constructs a new instance of the `ValidationError` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(message: string, method: string, code: string, path: string, description: string);

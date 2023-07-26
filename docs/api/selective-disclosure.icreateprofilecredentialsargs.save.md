@@ -12,7 +12,7 @@ hide_title: true
 
 Save presentation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 save: boolean

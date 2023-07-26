@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractDIDStore.importDID() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract importDID(args: IIdentifier): Promise<boolean>;
@@ -20,6 +20,6 @@ abstract importDID(args: IIdentifier): Promise<boolean>;
 | --------- | ------------------------------------------ | ----------- |
 | args      | [IIdentifier](./core-types.iidentifier.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

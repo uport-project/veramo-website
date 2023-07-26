@@ -12,7 +12,7 @@ hide_title: true
 
 The verifiable credential whose status will be updated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 vc: VerifiableCredential

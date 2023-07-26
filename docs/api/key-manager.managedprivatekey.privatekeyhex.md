@@ -8,7 +8,7 @@ hide_title: true
 
 ## ManagedPrivateKey.privateKeyHex property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 privateKeyHex: string

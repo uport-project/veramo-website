@@ -12,7 +12,7 @@ hide_title: true
 
 Provider name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 provider: string

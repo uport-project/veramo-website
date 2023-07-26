@@ -10,7 +10,7 @@ hide_title: true
 
 The map of plugin methods. Can be used to override methods provided by plugins, or to add additional methods without writing a plugin
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 overrides?: IPluginMethodMap;

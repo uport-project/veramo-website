@@ -8,7 +8,7 @@ hide_title: true
 
 ## UnsignedPresentation.issuanceDate property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 issuanceDate?: string;

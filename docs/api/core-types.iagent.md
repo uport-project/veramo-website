@@ -10,13 +10,13 @@ hide_title: true
 
 Agent that can execute methods
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAgent extends IAgentBase
 ```
 
-<b>Extends:</b> [IAgentBase](./core-types.iagentbase.md)
+**Extends:** [IAgentBase](./core-types.iagentbase.md)
 
 ## Properties
 

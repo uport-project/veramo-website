@@ -12,7 +12,7 @@ hide_title: true
 
 Verifies a Verifiable Presentation JWT or LDS Format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyPresentationLD(args: IVerifyPresentationLDArgs, context: IRequiredContext): Promise<boolean>;
@@ -25,7 +25,7 @@ verifyPresentationLD(args: IVerifyPresentationLDArgs, context: IRequiredContext)
 | args      | [IVerifyPresentationLDArgs](./credential-ld.iverifypresentationldargs.md) | Arguments necessary to verify a VerifiableCredential                                         |
 | context   | [IRequiredContext](./credential-ld.irequiredcontext.md)                   | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

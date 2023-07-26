@@ -10,7 +10,7 @@ hide_title: true
 
 Agent plugin schema
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAgentPluginSchema

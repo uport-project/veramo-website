@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerAddService](./core-types.ididmanager.didmanageraddservice.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerAddServiceArgs
@@ -18,8 +18,8 @@ export interface IDIDManagerAddServiceArgs
 
 ## Properties
 
-| Property                                                      | Modifiers | Type                                 | Description                                                      |
-| ------------------------------------------------------------- | --------- | ------------------------------------ | ---------------------------------------------------------------- |
-| [did](./core-types.ididmanageraddserviceargs.did.md)          |           | string                               | DID                                                              |
-| [options?](./core-types.ididmanageraddserviceargs.options.md) |           | object                               | <i>(Optional)</i> Optional. Identifier provider specific options |
-| [service](./core-types.ididmanageraddserviceargs.service.md)  |           | [IService](./core-types.iservice.md) | Service object                                                   |
+| Property                                                      | Modifiers | Type                                 | Description                                                 |
+| ------------------------------------------------------------- | --------- | ------------------------------------ | ----------------------------------------------------------- |
+| [did](./core-types.ididmanageraddserviceargs.did.md)          |           | string                               | DID                                                         |
+| [options?](./core-types.ididmanageraddserviceargs.options.md) |           | object                               | _(Optional)_ Optional. Identifier provider specific options |
+| [service](./core-types.ididmanageraddserviceargs.service.md)  |           | [IService](./core-types.iservice.md) | Service object                                              |

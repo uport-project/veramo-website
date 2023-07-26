@@ -10,7 +10,7 @@ hide_title: true
 
 Signs Ethereum transaction
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerSignEthTX(args: IKeyManagerSignEthTXArgs): Promise<string>;
@@ -22,6 +22,6 @@ keyManagerSignEthTX(args: IKeyManagerSignEthTXArgs): Promise<string>;
 | --------- | -------------------------------------------------------------------- | ----------- |
 | args      | [IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

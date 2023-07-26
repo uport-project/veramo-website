@@ -12,7 +12,7 @@ hide_title: true
 
 Converts a hex string (with or without prefix) to a byte array (Uint8Array)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function hexToBytes(hexString: string): Uint8Array
@@ -24,7 +24,7 @@ export declare function hexToBytes(hexString: string): Uint8Array
 | --------- | ------ | ------------------------------------ |
 | hexString | string | The string representing the encoding |
 
-<b>Returns:</b>
+**Returns:**
 
 Uint8Array
 

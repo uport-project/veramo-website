@@ -8,7 +8,7 @@ hide_title: true
 
 ## IAgentPlugin.schema property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly schema?: IAgentPluginSchema;

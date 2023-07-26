@@ -16,22 +16,22 @@ DIDs can be discovered by partial matches of `name` from `Profile` credentials, 
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DataStoreDiscoveryProvider implements AbstractDidDiscoveryProvider
 ```
 
-<b>Implements:</b> [AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)
+**Implements:** [AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)
 
 ## Properties
 
-| Property                                                | Modifiers             | Type           | Description          |
-| ------------------------------------------------------- | --------------------- | -------------- | -------------------- |
-| [name](./data-store.datastorediscoveryprovider.name.md) | <code>readonly</code> | (not declared) | <b><i>(BETA)</i></b> |
+| Property                                                | Modifiers             | Type           | Description  |
+| ------------------------------------------------------- | --------------------- | -------------- | ------------ |
+| [name](./data-store.datastorediscoveryprovider.name.md) | <code>readonly</code> | (not declared) | **_(BETA)_** |
 
 ## Methods
 
-| Method                                                                               | Modifiers | Description          |
-| ------------------------------------------------------------------------------------ | --------- | -------------------- |
-| [discoverDid(args, context)](./data-store.datastorediscoveryprovider.discoverdid.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                                               | Modifiers | Description  |
+| ------------------------------------------------------------------------------------ | --------- | ------------ |
+| [discoverDid(args, context)](./data-store.datastorediscoveryprovider.discoverdid.md) |           | **_(BETA)_** |

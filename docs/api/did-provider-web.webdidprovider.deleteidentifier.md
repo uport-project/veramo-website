@@ -8,7 +8,7 @@ hide_title: true
 
 ## WebDIDProvider.deleteIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteIdentifier(identifier: IIdentifier, context: IContext): Promise<boolean>;
@@ -21,6 +21,6 @@ deleteIdentifier(identifier: IIdentifier, context: IContext): Promise<boolean>;
 | identifier | [IIdentifier](./core-types.iidentifier.md) |             |
 | context    | IContext                                   |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

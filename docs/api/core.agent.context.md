@@ -8,7 +8,7 @@ hide_title: true
 
 ## Agent.context property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly context?: Record<string, any>;

@@ -12,7 +12,7 @@ hide_title: true
 
 A list of claims that are being requested
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 claims: ICredentialRequestInput[];

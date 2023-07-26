@@ -14,10 +14,10 @@ The input to the [DIDComm.unpackDIDCommMessage()](./did-comm.didcomm.unpackdidco
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type IUnpackDIDCommMessageArgs = IPackedDIDCommMessage
 ```
 
-<b>References:</b> [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)
+**References:** [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)

@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Key meta data
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 meta?: KeyMetadata;

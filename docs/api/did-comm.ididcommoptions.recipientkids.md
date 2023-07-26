@@ -12,7 +12,7 @@ hide_title: true
 
 Restrict to a set of kids for recipient
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 recipientKids?: string[];

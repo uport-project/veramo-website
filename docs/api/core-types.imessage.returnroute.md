@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Signal how to reuse transport for return messages
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 returnRoute?: string;

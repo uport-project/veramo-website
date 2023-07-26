@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractDIDStore.deleteDID() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract deleteDID(args: {
@@ -22,6 +22,6 @@ abstract deleteDID(args: {
 | --------- | ---------------- | ----------- |
 | args      | { did: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

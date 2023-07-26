@@ -8,7 +8,7 @@ hide_title: true
 
 ## EthrDIDProvider.addKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addKey({ identifier, key, options }: {
@@ -25,6 +25,6 @@ addKey({ identifier, key, options }: {
 | { identifier, key, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); key: [IKey](./core-types.ikey.md); options?: TransactionOptions; } |             |
 | context                      | IRequiredContext                                                                                                             |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

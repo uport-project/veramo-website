@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDID({ did, alias, provider, }: {
@@ -26,6 +26,6 @@ getDID({ did, alias, provider, }: {
 | ------------------------- | ---------------------------------------------------- | ----------- |
 | { did, alias, provider, } | { did?: string; alias?: string; provider?: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

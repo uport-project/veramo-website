@@ -12,7 +12,7 @@ hide_title: true
 
 Optional. Picture URL
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 picture?: string;

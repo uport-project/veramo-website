@@ -12,7 +12,7 @@ hide_title: true
 
 Partially decodes a possible DIDComm message string to determine the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDidCommMessageMediaType({ message }: IPackedDIDCommMessage): Promise<DIDCommMessageMediaType>;
@@ -24,7 +24,7 @@ getDidCommMessageMediaType({ message }: IPackedDIDCommMessage): Promise<DIDCommM
 | ----------- | ------------------------------------------------------------ | ----------- |
 | { message } | [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)&gt;
 

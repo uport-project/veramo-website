@@ -12,7 +12,7 @@ hide_title: true
 
 Handles messages for Pickup protocol and recipient role https://didcomm.org/pickup/3.0/
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(message: Message, context: IContext): Promise<Message>;
@@ -25,6 +25,6 @@ handle(message: Message, context: IContext): Promise<Message>;
 | message   | [Message](./message-handler.message.md) |             |
 | context   | IContext                                |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Message](./message-handler.message.md)&gt;

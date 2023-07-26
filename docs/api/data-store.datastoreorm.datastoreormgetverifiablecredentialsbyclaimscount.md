@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetVerifiableCredentialsByClaimsCount(args: FindArgs<TClaimsColumns>, context: AuthorizedDIDContext): Promise<number>;
@@ -23,6 +23,6 @@ dataStoreORMGetVerifiableCredentialsByClaimsCount(args: FindArgs<TClaimsColumns>
 | args      | [FindArgs](./core-types.findargs.md)&lt;[TClaimsColumns](./core-types.tclaimscolumns.md)&gt; |             |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)                                 |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;number&gt;

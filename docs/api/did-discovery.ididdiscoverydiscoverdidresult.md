@@ -14,17 +14,17 @@ DID Discovery results.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDDiscoveryDiscoverDidResult extends Partial<IDIDDiscoveryDiscoverDidArgs>
 ```
 
-<b>Extends:</b> Partial&lt;[IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md)&gt;
+**Extends:** Partial&lt;[IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md)&gt;
 
 ## Properties
 
-| Property                                                             | Modifiers | Type                                                                              | Description                                                             |
-| -------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| [errors?](./did-discovery.ididdiscoverydiscoverdidresult.errors.md)  |           | Record&lt;string, string&gt;                                                      | <b><i>(BETA)</i></b> <i>(Optional)</i> A record of encountered errors   |
-| [results](./did-discovery.ididdiscoverydiscoverdidresult.results.md) |           | [IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)\[\] | <b><i>(BETA)</i></b> List of discovery results from different providers |
+| Property                                                             | Modifiers | Type                                                                              | Description                                                     |
+| -------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [errors?](./did-discovery.ididdiscoverydiscoverdidresult.errors.md)  |           | Record&lt;string, string&gt;                                                      | **_(BETA)_** _(Optional)_ A record of encountered errors        |
+| [results](./did-discovery.ididdiscoverydiscoverdidresult.results.md) |           | [IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)\[\] | **_(BETA)_** List of discovery results from different providers |

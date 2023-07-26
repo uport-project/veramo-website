@@ -16,16 +16,16 @@ This does not constitute an authorization mechanism, but relies on an authorizat
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AuthorizedDIDContext extends IAgentContext<{}>
 ```
 
-<b>Extends:</b> [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;
+**Extends:** [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;
 
 ## Properties
 
-| Property                                                             | Modifiers | Type   | Description                            |
-| -------------------------------------------------------------------- | --------- | ------ | -------------------------------------- |
-| [authorizedDID?](./core-types.authorizeddidcontext.authorizeddid.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                             | Modifiers | Type   | Description               |
+| -------------------------------------------------------------------- | --------- | ------ | ------------------------- |
+| [authorizedDID?](./core-types.authorizeddidcontext.authorizeddid.md) |           | string | **_(BETA)_** _(Optional)_ |

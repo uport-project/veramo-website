@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.from property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 from?: string;

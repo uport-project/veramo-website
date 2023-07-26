@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerGetOrCreate](./core-types.ididmanager.didmanagergetorcreate.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerGetOrCreateArgs
@@ -21,6 +21,6 @@ export interface IDIDManagerGetOrCreateArgs
 | Property                                                         | Modifiers | Type   | Description                                                                |
 | ---------------------------------------------------------------- | --------- | ------ | -------------------------------------------------------------------------- |
 | [alias](./core-types.ididmanagergetorcreateargs.alias.md)        |           | string | Identifier alias. Can be used to reference an object in an external system |
-| [kms?](./core-types.ididmanagergetorcreateargs.kms.md)           |           | string | <i>(Optional)</i> Optional. Key Management System                          |
-| [options?](./core-types.ididmanagergetorcreateargs.options.md)   |           | object | <i>(Optional)</i> Optional. Identifier provider specific options           |
-| [provider?](./core-types.ididmanagergetorcreateargs.provider.md) |           | string | <i>(Optional)</i> Optional. Identifier provider                            |
+| [kms?](./core-types.ididmanagergetorcreateargs.kms.md)           |           | string | _(Optional)_ Optional. Key Management System                               |
+| [options?](./core-types.ididmanagergetorcreateargs.options.md)   |           | object | _(Optional)_ Optional. Identifier provider specific options                |
+| [provider?](./core-types.ididmanagergetorcreateargs.provider.md) |           | string | _(Optional)_ Optional. Identifier provider                                 |

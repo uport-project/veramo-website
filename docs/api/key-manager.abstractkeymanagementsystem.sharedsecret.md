@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractKeyManagementSystem.sharedSecret() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract sharedSecret(args: {
@@ -23,6 +23,6 @@ abstract sharedSecret(args: {
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
 | args      | { myKeyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; theirKey: Pick&lt;[IKey](./core-types.ikey.md), 'publicKeyHex' &#124; 'type'&gt;; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

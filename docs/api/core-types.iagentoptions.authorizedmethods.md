@@ -10,7 +10,7 @@ hide_title: true
 
 The array of method names that will be exposed by the agent
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 authorizedMethods?: string[];

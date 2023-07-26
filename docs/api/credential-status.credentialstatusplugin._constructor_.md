@@ -12,7 +12,7 @@ hide_title: true
 
 Constructs a new instance of the `CredentialStatusPlugin` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(registry?: Record<string, StatusMethod>);
@@ -20,6 +20,6 @@ constructor(registry?: Record<string, StatusMethod>);
 
 ## Parameters
 
-| Parameter | Type                               | Description       |
-| --------- | ---------------------------------- | ----------------- |
-| registry  | Record&lt;string, StatusMethod&gt; | <i>(Optional)</i> |
+| Parameter | Type                               | Description  |
+| --------- | ---------------------------------- | ------------ |
+| registry  | Record&lt;string, StatusMethod&gt; | _(Optional)_ |

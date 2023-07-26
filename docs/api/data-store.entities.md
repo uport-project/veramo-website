@@ -12,7 +12,7 @@ The TypeORM entities used by this package.
 
 This array SHOULD be used when creating a TypeORM connection.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 Entities: (typeof Key | typeof Identifier | typeof Service | typeof Claim | typeof Credential | typeof Presentation | typeof Message | typeof PrivateKey)[]

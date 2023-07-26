@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Message meta data
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metaData?: IMetaData[];

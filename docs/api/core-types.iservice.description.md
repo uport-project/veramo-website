@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Description
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 description?: string;

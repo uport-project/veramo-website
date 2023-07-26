@@ -8,7 +8,7 @@ hide_title: true
 
 ## UnsignedPresentation.expirationDate property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expirationDate?: string;

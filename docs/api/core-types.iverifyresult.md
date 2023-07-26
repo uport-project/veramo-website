@@ -12,7 +12,7 @@ hide_title: true
 
 Encapsulates the response object to verifyPresentation method after verifying a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IVerifyResult
@@ -20,7 +20,7 @@ export interface IVerifyResult
 
 ## Properties
 
-| Property                                           | Modifiers | Type                             | Description                                                                                                                                                             |
-| -------------------------------------------------- | --------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [error?](./core-types.iverifyresult.error.md)      |           | [IError](./core-types.ierror.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional Error object for the but currently the machine readable errors are not expored from DID-JWT package to be imported here |
-| [verified](./core-types.iverifyresult.verified.md) |           | boolean                          | <b><i>(BETA)</i></b> This value is used to transmit the result of verification.                                                                                         |
+| Property                                           | Modifiers | Type                             | Description                                                                                                                                                |
+| -------------------------------------------------- | --------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [error?](./core-types.iverifyresult.error.md)      |           | [IError](./core-types.ierror.md) | **_(BETA)_** _(Optional)_ Optional Error object for the but currently the machine readable errors are not expored from DID-JWT package to be imported here |
+| [verified](./core-types.iverifyresult.verified.md) |           | boolean                          | **_(BETA)_** This value is used to transmit the result of verification.                                                                                    |

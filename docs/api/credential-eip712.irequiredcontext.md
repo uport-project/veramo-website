@@ -16,10 +16,10 @@ This interface can be used for static type checks, to make sure your application
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type IRequiredContext = IAgentContext<IResolver & IKeyManager & IDIDManager>
 ```
 
-<b>References:</b> [IAgentContext](./core-types.iagentcontext.md), [IResolver](./core-types.iresolver.md), [IKeyManager](./core-types.ikeymanager.md), [IDIDManager](./core-types.ididmanager.md)
+**References:** [IAgentContext](./core-types.iagentcontext.md), [IResolver](./core-types.iresolver.md), [IKeyManager](./core-types.ikeymanager.md), [IDIDManager](./core-types.ididmanager.md)

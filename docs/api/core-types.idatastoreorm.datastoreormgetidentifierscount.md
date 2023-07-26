@@ -18,7 +18,7 @@ Tries to obtain a count of [IIdentifiers](./core-types.iidentifier.md) that matc
 
 If the same database is used for implementations of [AbstractDIDStore](./did-manager.abstractdidstore.md), then these identifiers can also come from [didManagerCreate](./core-types.ididmanager.didmanagercreate.md) or [didManagerImport](./core-types.ididmanager.didmanagerimport.md) operations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetIdentifiersCount(args: FindIdentifiersArgs, context: AuthorizedDIDContext): Promise<number>;
@@ -31,6 +31,6 @@ dataStoreORMGetIdentifiersCount(args: FindIdentifiersArgs, context: AuthorizedDI
 | args      | [FindIdentifiersArgs](./core-types.findidentifiersargs.md)   | The filter to apply when querying                                                                                                                                                 |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md) | Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;number&gt;

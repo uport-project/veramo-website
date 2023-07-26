@@ -10,13 +10,13 @@ hide_title: true
 
 A plugin for [MessageHandler](./message-handler.messagehandler.md) that finds and verifies a JWT in a message.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class JwtMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Methods
 

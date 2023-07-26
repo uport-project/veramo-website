@@ -12,7 +12,7 @@ hide_title: true
 
 The target of the request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 subject?: string;

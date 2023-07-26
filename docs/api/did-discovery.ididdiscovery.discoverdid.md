@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Promise<IDIDDiscoveryDiscoverDidResult>;
@@ -23,6 +23,6 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Pr
 | args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md) |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;any&gt;                       |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IDIDDiscoveryDiscoverDidResult](./did-discovery.ididdiscoverydiscoverdidresult.md)&gt;

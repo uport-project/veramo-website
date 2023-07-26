@@ -12,7 +12,7 @@ hide_title: true
 
 Encodes the bytes of an input string to base64url
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function encodeBase64url(s: string): string
@@ -24,6 +24,6 @@ export declare function encodeBase64url(s: string): string
 | --------- | ------ | -------------------------------------------------------------------------------------- |
 | s         | string | <p>the original string</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

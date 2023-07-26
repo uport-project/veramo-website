@@ -8,7 +8,7 @@ hide_title: true
 
 ## IAgent.execute property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute: <A = any, R = any>(method: string, args: A) => Promise<R>

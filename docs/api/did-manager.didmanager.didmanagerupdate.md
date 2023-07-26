@@ -10,7 +10,7 @@ hide_title: true
 
 Updates the DID document of a managed [DID](./core-types.iidentifier.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerUpdate({ did, document, options }: IDIDManagerUpdateArgs, context: IAgentContext<IKeyManager>): Promise<IIdentifier>;
@@ -23,6 +23,6 @@ didManagerUpdate({ did, document, options }: IDIDManagerUpdateArgs, context: IAg
 | { did, document, options } | [IDIDManagerUpdateArgs](./core-types.ididmanagerupdateargs.md)                                   |                                                                                                                                                                                                                                                                |
 | context                    | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

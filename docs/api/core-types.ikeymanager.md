@@ -16,22 +16,22 @@ See [KeyManager](./key-manager.keymanager.md) for a reference implementation.
 
 The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManager extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Methods
 
 | Method                                                                                               | Description                                                                                                                                                                                                                          |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [keyManagerCreate(args)](./core-types.ikeymanager.keymanagercreate.md)                               | Creates and returns a new key                                                                                                                                                                                                        |
-| [keyManagerDecryptJWE(args)](./core-types.ikeymanager.keymanagerdecryptjwe.md)                       | <b><i>(BETA)</i></b> Decrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                             |
+| [keyManagerDecryptJWE(args)](./core-types.ikeymanager.keymanagerdecryptjwe.md)                       | **_(BETA)_** Decrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                     |
 | [keyManagerDelete(args)](./core-types.ikeymanager.keymanagerdelete.md)                               | Deletes a key                                                                                                                                                                                                                        |
-| [keyManagerEncryptJWE(args)](./core-types.ikeymanager.keymanagerencryptjwe.md)                       | <b><i>(BETA)</i></b> Encrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                             |
+| [keyManagerEncryptJWE(args)](./core-types.ikeymanager.keymanagerencryptjwe.md)                       | **_(BETA)_** Encrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                     |
 | [keyManagerGet(args)](./core-types.ikeymanager.keymanagerget.md)                                     | Returns an existing key                                                                                                                                                                                                              |
 | [keyManagerGetKeyManagementSystems()](./core-types.ikeymanager.keymanagergetkeymanagementsystems.md) | Lists available key management systems                                                                                                                                                                                               |
 | [keyManagerImport(args)](./core-types.ikeymanager.keymanagerimport.md)                               | Imports a created key                                                                                                                                                                                                                |

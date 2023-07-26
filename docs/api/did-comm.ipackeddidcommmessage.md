@@ -14,7 +14,7 @@ The result of packing a DIDComm v2 message. The message is always serialized as 
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPackedDIDCommMessage
@@ -22,6 +22,6 @@ export interface IPackedDIDCommMessage
 
 ## Properties
 
-| Property                                               | Modifiers | Type   | Description          |
-| ------------------------------------------------------ | --------- | ------ | -------------------- |
-| [message](./did-comm.ipackeddidcommmessage.message.md) |           | string | <b><i>(BETA)</i></b> |
+| Property                                               | Modifiers | Type   | Description  |
+| ------------------------------------------------------ | --------- | ------ | ------------ |
+| [message](./did-comm.ipackeddidcommmessage.message.md) |           | string | **_(BETA)_** |

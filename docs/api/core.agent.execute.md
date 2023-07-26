@@ -12,7 +12,7 @@ Executes a plugin method.
 
 Normally, the `execute()` method need not be called. The agent will expose the plugin methods directly on the agent instance but this can be used when dynamically deciding which methods to call.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute<P = any, R = any>(method: string, args: P): Promise<R>;
@@ -25,7 +25,7 @@ execute<P = any, R = any>(method: string, args: P): Promise<R>;
 | method    | string | method name      |
 | args      | P      | arguments object |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;R&gt;
 

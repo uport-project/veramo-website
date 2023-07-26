@@ -8,7 +8,7 @@ hide_title: true
 
 ## UnsignedPresentation.verifiableCredential property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifiableCredential?: W3CVerifiableCredential[];

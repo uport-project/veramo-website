@@ -10,13 +10,13 @@ hide_title: true
 
 Basic data store interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDataStore extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Methods
 

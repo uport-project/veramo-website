@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractMessageHandler.handle() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(message: Message, context: IAgentContext<{}>): Promise<Message>;
@@ -21,6 +21,6 @@ handle(message: Message, context: IAgentContext<{}>): Promise<Message>;
 | message   | [Message](./message-handler.message.md)                  |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Message](./message-handler.message.md)&gt;

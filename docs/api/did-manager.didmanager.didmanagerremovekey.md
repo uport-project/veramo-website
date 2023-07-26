@@ -10,7 +10,7 @@ hide_title: true
 
 Removes a key from a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerRemoveKey({ did, kid, options }: IDIDManagerRemoveKeyArgs, context: IAgentContext<IKeyManager>): Promise<any>;
@@ -23,7 +23,7 @@ didManagerRemoveKey({ did, kid, options }: IDIDManagerRemoveKeyArgs, context: IA
 | { did, kid, options } | [IDIDManagerRemoveKeyArgs](./core-types.ididmanagerremovekeyargs.md)                             |             |
 | context               | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

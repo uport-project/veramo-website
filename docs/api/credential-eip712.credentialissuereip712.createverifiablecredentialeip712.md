@@ -12,7 +12,7 @@ hide_title: true
 
 Creates a Verifiable Credential. The payload, signer and format are chosen based on the `args` parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createVerifiableCredentialEIP712(args: ICreateVerifiableCredentialEIP712Args, context: IRequiredContext): Promise<VerifiableCredential>;
@@ -25,7 +25,7 @@ createVerifiableCredentialEIP712(args: ICreateVerifiableCredentialEIP712Args, co
 | args      | [ICreateVerifiableCredentialEIP712Args](./credential-eip712.icreateverifiablecredentialeip712args.md) | Arguments necessary to create the Credential.                                                |
 | context   | [IRequiredContext](./credential-eip712.irequiredcontext.md)                                           | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiableCredential](./core-types.verifiablecredential.md)&gt;
 

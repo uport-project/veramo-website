@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractPrivateKeyStore.listKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract listKeys(args: {}): Promise<Array<ManagedPrivateKey>>;
@@ -20,6 +20,6 @@ abstract listKeys(args: {}): Promise<Array<ManagedPrivateKey>>;
 | --------- | ---- | ----------- |
 | args      | {}   |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;&gt;

@@ -14,7 +14,7 @@ Discovery results from one provider.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDDiscoveryProviderResult
@@ -22,7 +22,7 @@ export interface IDIDDiscoveryProviderResult
 
 ## Properties
 
-| Property                                                            | Modifiers | Type                                                          | Description                                    |
-| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------- | ---------------------------------------------- |
-| [matches](./did-discovery.ididdiscoveryproviderresult.matches.md)   |           | [IDIDDiscoverMatch](./did-discovery.ididdiscovermatch.md)\[\] | <b><i>(BETA)</i></b> List of discovery matches |
-| [provider](./did-discovery.ididdiscoveryproviderresult.provider.md) |           | string                                                        | <b><i>(BETA)</i></b> Provider name             |
+| Property                                                            | Modifiers | Type                                                          | Description                            |
+| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------- | -------------------------------------- |
+| [matches](./did-discovery.ididdiscoveryproviderresult.matches.md)   |           | [IDIDDiscoverMatch](./did-discovery.ididdiscovermatch.md)\[\] | **_(BETA)_** List of discovery matches |
+| [provider](./did-discovery.ididdiscoveryproviderresult.provider.md) |           | string                                                        | **_(BETA)_** Provider name             |

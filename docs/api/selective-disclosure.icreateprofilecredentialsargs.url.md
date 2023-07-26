@@ -12,7 +12,7 @@ hide_title: true
 
 Optional. URL
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 url?: string;

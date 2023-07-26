@@ -8,7 +8,7 @@ hide_title: true
 
 ## JwkCreateIdentifierOptions type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type JwkCreateIdentifierOptions = {
@@ -18,4 +18,4 @@ export type JwkCreateIdentifierOptions = {
 }
 ```
 
-<b>References:</b> [JwkDidSupportedKeyTypes](./did-provider-jwk.jwkdidsupportedkeytypes.md), [KeyUse](./did-provider-jwk.keyuse.md)
+**References:** [JwkDidSupportedKeyTypes](./did-provider-jwk.jwkdidsupportedkeytypes.md), [KeyUse](./did-provider-jwk.keyuse.md)

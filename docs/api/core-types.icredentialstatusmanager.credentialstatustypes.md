@@ -12,12 +12,12 @@ hide_title: true
 
 List all the credential status types (methods) available in the current agent instance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentialStatusTypes(): Promise<Array<string>>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;string&gt;&gt;

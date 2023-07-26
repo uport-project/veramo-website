@@ -12,7 +12,7 @@ hide_title: true
 
 The DID of the issuer of a requested credential.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 did: string

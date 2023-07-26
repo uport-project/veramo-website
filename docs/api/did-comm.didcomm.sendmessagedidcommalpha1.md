@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sendMessageDIDCommAlpha1(args: ISendMessageDIDCommAlpha1Args, context: IAgentContext<IDIDManager & IKeyManager & IResolver & IMessageHandler>): Promise<IMessage>;
@@ -23,7 +23,7 @@ sendMessageDIDCommAlpha1(args: ISendMessageDIDCommAlpha1Args, context: IAgentCon
 | args      | [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md)                                                                                                                                                                            | Arguments necessary for sending a DIDComm message                                                                                                               |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md) &amp; [IMessageHandler](./core-types.imessagehandler.md)&gt; | <p>This reserved param is automatically added and handled by the framework, \*do not override\*</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IMessage](./core-types.imessage.md)&gt;
 

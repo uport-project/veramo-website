@@ -10,7 +10,7 @@ hide_title: true
 
 Cryptographic key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKey
@@ -18,11 +18,11 @@ export interface IKey
 
 ## Properties
 
-| Property                                             | Modifiers | Type                                                   | Description                                                                                                |
-| ---------------------------------------------------- | --------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| [kid](./core-types.ikey.kid.md)                      |           | string                                                 | Key ID                                                                                                     |
-| [kms](./core-types.ikey.kms.md)                      |           | string                                                 | Key Management System                                                                                      |
-| [meta?](./core-types.ikey.meta.md)                   |           | [KeyMetadata](./core-types.keymetadata.md) &#124; null | <i>(Optional)</i> Optional. Key metadata. This should be used to determine which algorithms are supported. |
-| [privateKeyHex?](./core-types.ikey.privatekeyhex.md) |           | string                                                 | <i>(Optional)</i> Optional. Private key                                                                    |
-| [publicKeyHex](./core-types.ikey.publickeyhex.md)    |           | string                                                 | Public key                                                                                                 |
-| [type](./core-types.ikey.type.md)                    |           | [TKeyType](./core-types.tkeytype.md)                   | Key type                                                                                                   |
+| Property                                             | Modifiers | Type                                                   | Description                                                                                           |
+| ---------------------------------------------------- | --------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| [kid](./core-types.ikey.kid.md)                      |           | string                                                 | Key ID                                                                                                |
+| [kms](./core-types.ikey.kms.md)                      |           | string                                                 | Key Management System                                                                                 |
+| [meta?](./core-types.ikey.meta.md)                   |           | [KeyMetadata](./core-types.keymetadata.md) &#124; null | _(Optional)_ Optional. Key metadata. This should be used to determine which algorithms are supported. |
+| [privateKeyHex?](./core-types.ikey.privatekeyhex.md) |           | string                                                 | _(Optional)_ Optional. Private key                                                                    |
+| [publicKeyHex](./core-types.ikey.publickeyhex.md)    |           | string                                                 | Public key                                                                                            |
+| [type](./core-types.ikey.type.md)                    |           | [TKeyType](./core-types.tkeytype.md)                   | Key type                                                                                              |

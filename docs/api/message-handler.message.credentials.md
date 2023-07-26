@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.credentials property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentials?: VerifiableCredential[];

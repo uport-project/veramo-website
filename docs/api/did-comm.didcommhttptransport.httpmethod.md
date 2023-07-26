@@ -12,7 +12,7 @@ hide_title: true
 
 Defines the default HTTP method to use if not specified in the DID Document service entry of the recipient.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 httpMethod: 'post' | 'get'

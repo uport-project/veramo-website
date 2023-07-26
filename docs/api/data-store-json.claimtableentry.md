@@ -14,7 +14,7 @@ This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) t
 
 This API may change in future versions without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ClaimTableEntry
@@ -22,15 +22,15 @@ export interface ClaimTableEntry
 
 ## Properties
 
-| Property                                                               | Modifiers | Type       | Description                            |
-| ---------------------------------------------------------------------- | --------- | ---------- | -------------------------------------- |
-| [context](./data-store-json.claimtableentry.context.md)                |           | string\[\] | <b><i>(BETA)</i></b>                   |
-| [credentialHash](./data-store-json.claimtableentry.credentialhash.md)  |           | string     | <b><i>(BETA)</i></b>                   |
-| [credentialType](./data-store-json.claimtableentry.credentialtype.md)  |           | string\[\] | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./data-store-json.claimtableentry.expirationdate.md) |           | Date       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash](./data-store-json.claimtableentry.hash.md)                      |           | string     | <b><i>(BETA)</i></b>                   |
-| [issuanceDate?](./data-store-json.claimtableentry.issuancedate.md)     |           | Date       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuer](./data-store-json.claimtableentry.issuer.md)                  |           | string     | <b><i>(BETA)</i></b>                   |
-| [subject?](./data-store-json.claimtableentry.subject.md)               |           | string     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store-json.claimtableentry.type.md)                      |           | string     | <b><i>(BETA)</i></b>                   |
-| [value](./data-store-json.claimtableentry.value.md)                    |           | any        | <b><i>(BETA)</i></b>                   |
+| Property                                                               | Modifiers | Type       | Description               |
+| ---------------------------------------------------------------------- | --------- | ---------- | ------------------------- |
+| [context](./data-store-json.claimtableentry.context.md)                |           | string\[\] | **_(BETA)_**              |
+| [credentialHash](./data-store-json.claimtableentry.credentialhash.md)  |           | string     | **_(BETA)_**              |
+| [credentialType](./data-store-json.claimtableentry.credentialtype.md)  |           | string\[\] | **_(BETA)_**              |
+| [expirationDate?](./data-store-json.claimtableentry.expirationdate.md) |           | Date       | **_(BETA)_** _(Optional)_ |
+| [hash](./data-store-json.claimtableentry.hash.md)                      |           | string     | **_(BETA)_**              |
+| [issuanceDate?](./data-store-json.claimtableentry.issuancedate.md)     |           | Date       | **_(BETA)_** _(Optional)_ |
+| [issuer](./data-store-json.claimtableentry.issuer.md)                  |           | string     | **_(BETA)_**              |
+| [subject?](./data-store-json.claimtableentry.subject.md)               |           | string     | **_(BETA)_** _(Optional)_ |
+| [type](./data-store-json.claimtableentry.type.md)                      |           | string     | **_(BETA)_**              |
+| [value](./data-store-json.claimtableentry.value.md)                    |           | any        | **_(BETA)_**              |

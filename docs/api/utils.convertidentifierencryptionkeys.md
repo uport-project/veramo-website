@@ -12,7 +12,7 @@ hide_title: true
 
 Converts any Ed25519 keys of an [IIdentifier](./core-types.iidentifier.md) to X25519 to be usable for encryption.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function convertIdentifierEncryptionKeys(identifier: IIdentifier): IKey[]
@@ -24,7 +24,7 @@ export declare function convertIdentifierEncryptionKeys(identifier: IIdentifier)
 | ---------- | ------------------------------------------ | ------------------------ |
 | identifier | [IIdentifier](./core-types.iidentifier.md) | the identifier with keys |
 
-<b>Returns:</b>
+**Returns:**
 
 [IKey](./core-types.ikey.md)\[\]
 

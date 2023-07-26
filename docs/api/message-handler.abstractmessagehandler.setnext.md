@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractMessageHandler.setNext() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setNext(messageHandler: AbstractMessageHandler): AbstractMessageHandler;
@@ -20,6 +20,6 @@ setNext(messageHandler: AbstractMessageHandler): AbstractMessageHandler;
 | -------------- | --------------------------------------------------------------------- | ----------- |
 | messageHandler | [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)

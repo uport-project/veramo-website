@@ -12,7 +12,7 @@ Refers to a section of a DID document. Either the list of verification methods o
 
 See [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DIDDocumentSection =

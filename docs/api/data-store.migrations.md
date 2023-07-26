@@ -12,7 +12,7 @@ The migrations array that SHOULD be used when initializing a TypeORM database co
 
 These ensure the correct creation of tables and the proper migrations of data when tables change between versions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 migrations: (typeof CreateDatabase1447159020001)[]

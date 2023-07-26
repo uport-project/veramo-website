@@ -12,7 +12,7 @@ hide_title: true
 
 Specific key to use for signing
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyRef?: string;

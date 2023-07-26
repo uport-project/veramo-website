@@ -10,7 +10,7 @@ hide_title: true
 
 The map of plugin + override methods
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly methods: IPluginMethodMap;

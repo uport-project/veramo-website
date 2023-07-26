@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentContext<ICredentialIssuer & IDIDManager>): Promise<VerifiablePresentation>;
@@ -23,6 +23,6 @@ createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentCo
 | args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                                      |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[ICredentialIssuer](./core-types.icredentialissuer.md) &amp; [IDIDManager](./core-types.ididmanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;

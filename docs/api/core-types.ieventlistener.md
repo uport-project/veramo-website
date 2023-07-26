@@ -10,7 +10,7 @@ hide_title: true
 
 Describes a listener interface that needs to be implemented by components interested in listening to events emitted by an agent.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IEventListener
@@ -18,12 +18,12 @@ export interface IEventListener
 
 ## Properties
 
-| Property                                                 | Modifiers             | Type       | Description                                                                     |
-| -------------------------------------------------------- | --------------------- | ---------- | ------------------------------------------------------------------------------- |
-| [eventTypes?](./core-types.ieventlistener.eventtypes.md) | <code>readonly</code> | string\[\] | <i>(Optional)</i> Declares the event types that this listener is interested in. |
+| Property                                                 | Modifiers             | Type       | Description                                                                |
+| -------------------------------------------------------- | --------------------- | ---------- | -------------------------------------------------------------------------- |
+| [eventTypes?](./core-types.ieventlistener.eventtypes.md) | <code>readonly</code> | string\[\] | _(Optional)_ Declares the event types that this listener is interested in. |
 
 ## Methods
 
-| Method                                                             | Description                                                |
-| ------------------------------------------------------------------ | ---------------------------------------------------------- |
-| [onEvent(event, context)?](./core-types.ieventlistener.onevent.md) | <i>(Optional)</i> Processes an event emitted by the agent. |
+| Method                                                             | Description                                           |
+| ------------------------------------------------------------------ | ----------------------------------------------------- |
+| [onEvent(event, context)?](./core-types.ieventlistener.onevent.md) | _(Optional)_ Processes an event emitted by the agent. |

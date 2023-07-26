@@ -12,22 +12,22 @@ hide_title: true
 
 A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Pickup messages for the mediator role. This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PickupRecipientMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Constructors
 
-| Constructor                                                                  | Modifiers | Description                                                                                            |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------ |
-| [(constructor)()](./did-comm.pickuprecipientmessagehandler._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>PickupRecipientMessageHandler</code> class |
+| Constructor                                                                  | Modifiers | Description                                                                                    |
+| ---------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
+| [(constructor)()](./did-comm.pickuprecipientmessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>PickupRecipientMessageHandler</code> class |
 
 ## Methods
 
-| Method                                                                         | Modifiers | Description                                                                                                  |
-| ------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------ |
-| [handle(message, context)](./did-comm.pickuprecipientmessagehandler.handle.md) |           | <b><i>(BETA)</i></b> Handles messages for Pickup protocol and recipient role https://didcomm.org/pickup/3.0/ |
+| Method                                                                         | Modifiers | Description                                                                                          |
+| ------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------------------------------- |
+| [handle(message, context)](./did-comm.pickuprecipientmessagehandler.handle.md) |           | **_(BETA)_** Handles messages for Pickup protocol and recipient role https://didcomm.org/pickup/3.0/ |

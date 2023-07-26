@@ -14,7 +14,7 @@ A mapping of string to another type. Both Map and Record are accepted.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RecordLike<T> = Map<string, T> | Record<string, T>

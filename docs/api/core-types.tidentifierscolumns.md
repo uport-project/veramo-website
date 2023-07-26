@@ -16,7 +16,7 @@ hide_title: true
 
 The columns that can be queried for an [IIdentifier](./core-types.iidentifier.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TIdentifiersColumns = 'did' | 'alias' | 'provider'

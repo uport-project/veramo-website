@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerRemoveKey](./core-types.ididmanager.didmanagerremovekey.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerRemoveKeyArgs
@@ -18,8 +18,8 @@ export interface IDIDManagerRemoveKeyArgs
 
 ## Properties
 
-| Property                                                     | Modifiers | Type   | Description                                                      |
-| ------------------------------------------------------------ | --------- | ------ | ---------------------------------------------------------------- |
-| [did](./core-types.ididmanagerremovekeyargs.did.md)          |           | string | DID                                                              |
-| [kid](./core-types.ididmanagerremovekeyargs.kid.md)          |           | string | Key ID                                                           |
-| [options?](./core-types.ididmanagerremovekeyargs.options.md) |           | object | <i>(Optional)</i> Optional. Identifier provider specific options |
+| Property                                                     | Modifiers | Type   | Description                                                 |
+| ------------------------------------------------------------ | --------- | ------ | ----------------------------------------------------------- |
+| [did](./core-types.ididmanagerremovekeyargs.did.md)          |           | string | DID                                                         |
+| [kid](./core-types.ididmanagerremovekeyargs.kid.md)          |           | string | Key ID                                                      |
+| [options?](./core-types.ididmanagerremovekeyargs.options.md) |           | object | _(Optional)_ Optional. Identifier provider specific options |

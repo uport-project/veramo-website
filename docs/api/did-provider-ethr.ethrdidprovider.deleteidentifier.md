@@ -8,7 +8,7 @@ hide_title: true
 
 ## EthrDIDProvider.deleteIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteIdentifier(identifier: IIdentifier, context: IRequiredContext): Promise<boolean>;
@@ -21,6 +21,6 @@ deleteIdentifier(identifier: IIdentifier, context: IRequiredContext): Promise<bo
 | identifier | [IIdentifier](./core-types.iidentifier.md) |             |
 | context    | IRequiredContext                           |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

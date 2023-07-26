@@ -12,7 +12,7 @@ hide_title: true
 
 Checks the status of a [Verifiable Credential](./core-types.verifiablecredential.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 checkCredentialStatus(args: ICheckCredentialStatusArgs, context: IAgentContext<IResolver>): Promise<CredentialStatus>;
@@ -25,6 +25,6 @@ checkCredentialStatus(args: ICheckCredentialStatusArgs, context: IAgentContext<I
 | args      | [ICheckCredentialStatusArgs](./core-types.icheckcredentialstatusargs.md)                     | The credential to be checked, along with the DID document of the issuer. |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called.  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[CredentialStatus](./core-types.credentialstatus.md)&gt;

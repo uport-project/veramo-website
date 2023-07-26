@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractMessageHandler.nextMessageHandler property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 nextMessageHandler?: AbstractMessageHandler;

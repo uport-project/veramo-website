@@ -12,7 +12,7 @@ hide_title: true
 
 the DID document from which to extract the fragment. This MUST be the document resolved by [IResolver.resolveDid()](./core-types.iresolver.resolvedid.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didDocument: DIDDocument

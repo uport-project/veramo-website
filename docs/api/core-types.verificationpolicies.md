@@ -12,7 +12,7 @@ hide_title: true
 
 These optional settings can be used to override some default checks that are performed on Presentations during verification.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface VerificationPolicies
@@ -20,10 +20,10 @@ export interface VerificationPolicies
 
 ## Properties
 
-| Property                                                                   | Modifiers | Type    | Description                                                                                                                       |
-| -------------------------------------------------------------------------- | --------- | ------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| [audience?](./core-types.verificationpolicies.audience.md)                 |           | boolean | <b><i>(BETA)</i></b> <i>(Optional)</i> policy to skip the audience check when set to <code>false</code>                           |
-| [credentialStatus?](./core-types.verificationpolicies.credentialstatus.md) |           | boolean | <b><i>(BETA)</i></b> <i>(Optional)</i> policy to skip the revocation check (credentialStatus) when set to <code>false</code>      |
-| [expirationDate?](./core-types.verificationpolicies.expirationdate.md)     |           | boolean | <b><i>(BETA)</i></b> <i>(Optional)</i> policy to skip the expirationDate (exp) timestamp check when set to <code>false</code>     |
-| [issuanceDate?](./core-types.verificationpolicies.issuancedate.md)         |           | boolean | <b><i>(BETA)</i></b> <i>(Optional)</i> policy to skip the issuanceDate (nbf) timestamp check when set to <code>false</code>       |
-| [now?](./core-types.verificationpolicies.now.md)                           |           | number  | <b><i>(BETA)</i></b> <i>(Optional)</i> policy to over the now (current time) during the verification check (UNIX time in seconds) |
+| Property                                                                   | Modifiers | Type    | Description                                                                                                          |
+| -------------------------------------------------------------------------- | --------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
+| [audience?](./core-types.verificationpolicies.audience.md)                 |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the audience check when set to <code>false</code>                           |
+| [credentialStatus?](./core-types.verificationpolicies.credentialstatus.md) |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the revocation check (credentialStatus) when set to <code>false</code>      |
+| [expirationDate?](./core-types.verificationpolicies.expirationdate.md)     |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the expirationDate (exp) timestamp check when set to <code>false</code>     |
+| [issuanceDate?](./core-types.verificationpolicies.issuancedate.md)         |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the issuanceDate (nbf) timestamp check when set to <code>false</code>       |
+| [now?](./core-types.verificationpolicies.now.md)                           |           | number  | **_(BETA)_** _(Optional)_ policy to over the now (current time) during the verification check (UNIX time in seconds) |

@@ -10,7 +10,7 @@ hide_title: true
 
 An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractDIDStore
@@ -18,10 +18,10 @@ export declare abstract class AbstractDIDStore
 
 ## Methods
 
-| Method                                                         | Modifiers | Description |
-| -------------------------------------------------------------- | --------- | ----------- |
-| [deleteDID(args)](./did-manager.abstractdidstore.deletedid.md) |           |             |
-| [getDID(args)](./did-manager.abstractdidstore.getdid.md)       |           |             |
-| [getDID(args)](./did-manager.abstractdidstore.getdid_1.md)     |           |             |
-| [importDID(args)](./did-manager.abstractdidstore.importdid.md) |           |             |
-| [listDIDs(args)](./did-manager.abstractdidstore.listdids.md)   |           |             |
+| Method                                                         | Modifiers             | Description |
+| -------------------------------------------------------------- | --------------------- | ----------- |
+| [deleteDID(args)](./did-manager.abstractdidstore.deletedid.md) | <code>abstract</code> |             |
+| [getDID(args)](./did-manager.abstractdidstore.getdid.md)       | <code>abstract</code> |             |
+| [getDID(args)](./did-manager.abstractdidstore.getdid_1.md)     | <code>abstract</code> |             |
+| [importDID(args)](./did-manager.abstractdidstore.importdid.md) | <code>abstract</code> |             |
+| [listDIDs(args)](./did-manager.abstractdidstore.listdids.md)   | <code>abstract</code> |             |

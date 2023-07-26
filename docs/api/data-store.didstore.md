@@ -14,13 +14,13 @@ An instance of this class can be used by [DIDManager](./did-manager.didmanager.m
 
 To make full use of this class, it should use the same database as the one used by [KeyStore](./data-store.keystore.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DIDStore extends AbstractDIDStore
 ```
 
-<b>Extends:</b> [AbstractDIDStore](./did-manager.abstractdidstore.md)
+**Extends:** [AbstractDIDStore](./did-manager.abstractdidstore.md)
 
 ## Constructors
 

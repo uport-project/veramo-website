@@ -10,13 +10,13 @@ hide_title: true
 
 A Veramo plugin that implements the [ICredentialPlugin](./core-types.icredentialplugin.md) methods.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CredentialPlugin implements IAgentPlugin
 ```
 
-<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
+**Implements:** [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 

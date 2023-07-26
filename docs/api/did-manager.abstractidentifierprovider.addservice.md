@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractIdentifierProvider.addService() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract addService(args: {
@@ -25,6 +25,6 @@ abstract addService(args: {
 | args      | { identifier: [IIdentifier](./core-types.iidentifier.md); service: [IService](./core-types.iservice.md); options?: any; } |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;                          |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

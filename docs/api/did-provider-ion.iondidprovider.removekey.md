@@ -10,7 +10,7 @@ hide_title: true
 
 Removes a key from a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 removeKey({ identifier, kid, options }: {
@@ -27,7 +27,7 @@ removeKey({ identifier, kid, options }: {
 | { identifier, kid, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: IUpdateOpts; } |             |
 | context                      | IContext                                                                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

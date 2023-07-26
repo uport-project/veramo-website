@@ -8,7 +8,7 @@ hide_title: true
 
 ## BrowserLocalStorageStore.keys property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keys: Record<string, ManagedKeyInfo>

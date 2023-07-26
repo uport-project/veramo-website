@@ -12,7 +12,7 @@ hide_title: true
 
 The details of the error being throw or forwarded
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 message?: string;

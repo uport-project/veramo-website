@@ -10,7 +10,7 @@ hide_title: true
 
 Data to sign
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 data: string

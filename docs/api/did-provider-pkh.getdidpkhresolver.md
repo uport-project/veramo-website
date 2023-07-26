@@ -8,12 +8,12 @@ hide_title: true
 
 ## getDidPkhResolver() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getResolver(): ResolverRegistry
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 ResolverRegistry

@@ -12,7 +12,7 @@ Flag that enables schema validation for plugin methods.
 
 Defaults to `false`.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 schemaValidation?: boolean;

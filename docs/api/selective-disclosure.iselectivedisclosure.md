@@ -12,13 +12,13 @@ hide_title: true
 
 Describes the interface of a Selective Disclosure plugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ISelectiveDisclosure extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Remarks
 
@@ -28,9 +28,9 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Methods
 
-| Method                                                                                                                             | Description          |
-| ---------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [createProfilePresentation(args, context)](./selective-disclosure.iselectivedisclosure.createprofilepresentation.md)               | <b><i>(BETA)</i></b> |
-| [createSelectiveDisclosureRequest(args, context)](./selective-disclosure.iselectivedisclosure.createselectivedisclosurerequest.md) | <b><i>(BETA)</i></b> |
-| [getVerifiableCredentialsForSdr(args, context)](./selective-disclosure.iselectivedisclosure.getverifiablecredentialsforsdr.md)     | <b><i>(BETA)</i></b> |
-| [validatePresentationAgainstSdr(args, context)](./selective-disclosure.iselectivedisclosure.validatepresentationagainstsdr.md)     | <b><i>(BETA)</i></b> |
+| Method                                                                                                                             | Description  |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| [createProfilePresentation(args, context)](./selective-disclosure.iselectivedisclosure.createprofilepresentation.md)               | **_(BETA)_** |
+| [createSelectiveDisclosureRequest(args, context)](./selective-disclosure.iselectivedisclosure.createselectivedisclosurerequest.md) | **_(BETA)_** |
+| [getVerifiableCredentialsForSdr(args, context)](./selective-disclosure.iselectivedisclosure.getverifiablecredentialsforsdr.md)     | **_(BETA)_** |
+| [validatePresentationAgainstSdr(args, context)](./selective-disclosure.iselectivedisclosure.validatepresentationagainstsdr.md)     | **_(BETA)_** |

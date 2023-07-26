@@ -14,7 +14,7 @@ Result interface for sending DIDComm messages through [IDIDCommTransport.send()]
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDCommTransportResult
@@ -22,8 +22,8 @@ export interface IDIDCommTransportResult
 
 ## Properties
 
-| Property                                                              | Modifiers | Type   | Description                            |
-| --------------------------------------------------------------------- | --------- | ------ | -------------------------------------- |
-| [error?](./did-comm.ididcommtransportresult.error.md)                 |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [result?](./did-comm.ididcommtransportresult.result.md)               |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [returnMessage?](./did-comm.ididcommtransportresult.returnmessage.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                              | Modifiers | Type   | Description               |
+| --------------------------------------------------------------------- | --------- | ------ | ------------------------- |
+| [error?](./did-comm.ididcommtransportresult.error.md)                 |           | string | **_(BETA)_** _(Optional)_ |
+| [result?](./did-comm.ididcommtransportresult.result.md)               |           | string | **_(BETA)_** _(Optional)_ |
+| [returnMessage?](./did-comm.ididcommtransportresult.returnmessage.md) |           | string | **_(BETA)_** _(Optional)_ |

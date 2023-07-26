@@ -10,7 +10,7 @@ hide_title: true
 
 Utility type for constructing agent type that has a list of available methods
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TAgent<T extends IPluginMethodMap> = {
@@ -18,4 +18,4 @@ export type TAgent<T extends IPluginMethodMap> = {
 } & IAgent
 ```
 
-<b>References:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md), [RemoveContext](./core-types.removecontext.md), [IAgent](./core-types.iagent.md)
+**References:** [IPluginMethodMap](./core-types.ipluginmethodmap.md), [RemoveContext](./core-types.removecontext.md), [IAgent](./core-types.iagent.md)

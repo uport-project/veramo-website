@@ -12,13 +12,13 @@ An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeys
 
 The keys can be encrypted while at rest if this class is initialized with an [AbstractSecretBox](./key-manager.abstractsecretbox.md) implementation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PrivateKeyStore extends AbstractPrivateKeyStore
 ```
 
-<b>Extends:</b> [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
+**Extends:** [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
 
 ## Constructors
 

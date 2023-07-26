@@ -12,7 +12,7 @@ hide_title: true
 
 If it is essential. A response that does not include this credential is not sufficient.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 essential?: boolean;

@@ -12,7 +12,7 @@ hide_title: true
 
 Constructs a new instance of the `PickupMediatorMessageHandler` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor()

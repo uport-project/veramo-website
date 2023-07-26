@@ -10,7 +10,7 @@ hide_title: true
 
 The array of agent plugins
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 plugins?: IAgentPlugin[];

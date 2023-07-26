@@ -16,7 +16,7 @@ The signer of the Presentation is chosen based on the `holder` property of the `
 
 `@context`, `type` and `issuanceDate` will be added automatically if omitted
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 presentation: PresentationPayload

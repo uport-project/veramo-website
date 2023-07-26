@@ -10,7 +10,7 @@ hide_title: true
 
 Gets verifiable credential from the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreGetVerifiableCredential(args: IDataStoreGetVerifiableCredentialArgs): Promise<VerifiableCredential>;
@@ -22,7 +22,7 @@ dataStoreGetVerifiableCredential(args: IDataStoreGetVerifiableCredentialArgs): P
 | --------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | args      | [IDataStoreGetVerifiableCredentialArgs](./core-types.idatastoregetverifiablecredentialargs.md) | arguments for getting verifiable credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiableCredential](./core-types.verifiablecredential.md)&gt;
 

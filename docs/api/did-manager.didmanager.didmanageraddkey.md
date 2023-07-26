@@ -10,7 +10,7 @@ hide_title: true
 
 Adds a key to a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerAddKey({ did, key, options }: IDIDManagerAddKeyArgs, context: IAgentContext<IKeyManager>): Promise<any>;
@@ -23,7 +23,7 @@ didManagerAddKey({ did, key, options }: IDIDManagerAddKeyArgs, context: IAgentCo
 | { did, key, options } | [IDIDManagerAddKeyArgs](./core-types.ididmanageraddkeyargs.md)                                   |             |
 | context               | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

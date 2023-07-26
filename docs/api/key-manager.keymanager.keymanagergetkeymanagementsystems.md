@@ -10,12 +10,12 @@ hide_title: true
 
 Lists available key management systems
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerGetKeyManagementSystems(): Promise<Array<string>>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;string&gt;&gt;

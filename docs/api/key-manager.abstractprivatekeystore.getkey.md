@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractPrivateKeyStore.getKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract getKey(args: {
@@ -22,6 +22,6 @@ abstract getKey(args: {
 | --------- | ------------------ | ----------- |
 | args      | { alias: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;

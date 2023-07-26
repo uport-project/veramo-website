@@ -12,7 +12,7 @@ hide_title: true
 
 Creates a Verifiable Presentation. The payload, signer and format are chosen based on the `args` parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createVerifiablePresentationLD(args: ICreateVerifiablePresentationLDArgs, context: IRequiredContext): Promise<VerifiablePresentation>;
@@ -25,7 +25,7 @@ createVerifiablePresentationLD(args: ICreateVerifiablePresentationLDArgs, contex
 | args      | [ICreateVerifiablePresentationLDArgs](./credential-ld.icreateverifiablepresentationldargs.md) | Arguments necessary to create the Presentation.                                              |
 | context   | [IRequiredContext](./credential-ld.irequiredcontext.md)                                       | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;
 

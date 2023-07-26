@@ -12,13 +12,13 @@ hide_title: true
 
 The interface definition for a plugin that can issue and verify Verifiable Credentials and Presentations that use JSON-LD format (also called Data Integrity Proofs).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICredentialIssuerLD extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Remarks
 
@@ -26,9 +26,9 @@ Please see [W3C Verifiable Credentials data model](https://www.w3.org/TR/vc-data
 
 ## Methods
 
-| Method                                                                                                                 | Description                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [createVerifiableCredentialLD(args, context)](./credential-ld.icredentialissuerld.createverifiablecredentialld.md)     | <b><i>(BETA)</i></b> Creates a Verifiable Credential. The payload, signer and format are chosen based on the <code>args</code> parameter.   |
-| [createVerifiablePresentationLD(args, context)](./credential-ld.icredentialissuerld.createverifiablepresentationld.md) | <b><i>(BETA)</i></b> Creates a Verifiable Presentation. The payload, signer and format are chosen based on the <code>args</code> parameter. |
-| [verifyCredentialLD(args, context)](./credential-ld.icredentialissuerld.verifycredentialld.md)                         | <b><i>(BETA)</i></b> Verifies a Verifiable Credential JWT or LDS Format.                                                                    |
-| [verifyPresentationLD(args, context)](./credential-ld.icredentialissuerld.verifypresentationld.md)                     | <b><i>(BETA)</i></b> Verifies a Verifiable Presentation JWT or LDS Format.                                                                  |
+| Method                                                                                                                 | Description                                                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| [createVerifiableCredentialLD(args, context)](./credential-ld.icredentialissuerld.createverifiablecredentialld.md)     | **_(BETA)_** Creates a Verifiable Credential. The payload, signer and format are chosen based on the <code>args</code> parameter.   |
+| [createVerifiablePresentationLD(args, context)](./credential-ld.icredentialissuerld.createverifiablepresentationld.md) | **_(BETA)_** Creates a Verifiable Presentation. The payload, signer and format are chosen based on the <code>args</code> parameter. |
+| [verifyCredentialLD(args, context)](./credential-ld.icredentialissuerld.verifycredentialld.md)                         | **_(BETA)_** Verifies a Verifiable Credential JWT or LDS Format.                                                                    |
+| [verifyPresentationLD(args, context)](./credential-ld.icredentialissuerld.verifypresentationld.md)                     | **_(BETA)_** Verifies a Verifiable Presentation JWT or LDS Format.                                                                  |

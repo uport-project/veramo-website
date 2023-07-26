@@ -8,12 +8,12 @@ hide_title: true
 
 ## KeyManagementSystem.listKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 listKeys(): Promise<ManagedKeyInfo[]>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)\[\]&gt;

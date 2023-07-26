@@ -12,7 +12,7 @@ hide_title: true
 
 Provider specific related metadata about the match
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metaData: Record<string, any>

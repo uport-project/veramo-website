@@ -12,7 +12,7 @@ hide_title: true
 
 Changes the status of an existing [VerifiableCredential](./core-types.verifiablecredential.md). Commonly used to revoke an existing credential.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentialStatusUpdate(args: CredentialStatusUpdateArgs): Promise<any>;
@@ -24,6 +24,6 @@ credentialStatusUpdate(args: CredentialStatusUpdateArgs): Promise<any>;
 | --------- | ------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | args      | [CredentialStatusUpdateArgs](./core-types.credentialstatusupdateargs.md) | Input arguments for updating the status(revoking) a credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

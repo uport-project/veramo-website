@@ -12,7 +12,7 @@ hide_title: true
 
 The credential status type (aka credential status method) to be used in the `credentialStatus` generation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string

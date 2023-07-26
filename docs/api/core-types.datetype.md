@@ -14,7 +14,7 @@ Represents an issuance or expiration date for Credentials / Presentations. This 
 
 This API may change without prior notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DateType = string | Date

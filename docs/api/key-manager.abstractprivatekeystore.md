@@ -12,7 +12,7 @@ This base abstract class should be extended to provide platform specific impleme
 
 Implementations of this class are used to store mappings between key aliases and key material.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractPrivateKeyStore
@@ -20,9 +20,9 @@ export declare abstract class AbstractPrivateKeyStore
 
 ## Methods
 
-| Method                                                                | Modifiers | Description |
-| --------------------------------------------------------------------- | --------- | ----------- |
-| [deleteKey(args)](./key-manager.abstractprivatekeystore.deletekey.md) |           |             |
-| [getKey(args)](./key-manager.abstractprivatekeystore.getkey.md)       |           |             |
-| [importKey(args)](./key-manager.abstractprivatekeystore.importkey.md) |           |             |
-| [listKeys(args)](./key-manager.abstractprivatekeystore.listkeys.md)   |           |             |
+| Method                                                                | Modifiers             | Description |
+| --------------------------------------------------------------------- | --------------------- | ----------- |
+| [deleteKey(args)](./key-manager.abstractprivatekeystore.deletekey.md) | <code>abstract</code> |             |
+| [getKey(args)](./key-manager.abstractprivatekeystore.getkey.md)       | <code>abstract</code> |             |
+| [importKey(args)](./key-manager.abstractprivatekeystore.importkey.md) | <code>abstract</code> |             |
+| [listKeys(args)](./key-manager.abstractprivatekeystore.listkeys.md)   | <code>abstract</code> |             |

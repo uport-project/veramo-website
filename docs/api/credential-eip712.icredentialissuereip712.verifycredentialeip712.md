@@ -12,7 +12,7 @@ hide_title: true
 
 Verifies a Verifiable Credential in EIP712 Format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyCredentialEIP712(args: IVerifyCredentialEIP712Args, context: IRequiredContext): Promise<boolean>;
@@ -25,7 +25,7 @@ verifyCredentialEIP712(args: IVerifyCredentialEIP712Args, context: IRequiredCont
 | args      | [IVerifyCredentialEIP712Args](./credential-eip712.iverifycredentialeip712args.md) | Arguments necessary to verify a VerifiableCredential                                         |
 | context   | [IRequiredContext](./credential-eip712.irequiredcontext.md)                       | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

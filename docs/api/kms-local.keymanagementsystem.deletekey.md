@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManagementSystem.deleteKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteKey(args: {
@@ -22,6 +22,6 @@ deleteKey(args: {
 | --------- | ---------------- | ----------- |
 | args      | { kid: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

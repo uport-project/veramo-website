@@ -12,7 +12,7 @@ hide_title: true
 
 Add extra recipients for the packed message.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bcc?: string[];

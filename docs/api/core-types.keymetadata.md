@@ -14,7 +14,7 @@ Implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanage
 
 This can also be used to add various tags to the keys under management.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface KeyMetadata
@@ -22,6 +22,6 @@ export interface KeyMetadata
 
 ## Properties
 
-| Property                                              | Modifiers | Type       | Description       |
-| ----------------------------------------------------- | --------- | ---------- | ----------------- |
-| [algorithms?](./core-types.keymetadata.algorithms.md) |           | string\[\] | <i>(Optional)</i> |
+| Property                                              | Modifiers | Type       | Description  |
+| ----------------------------------------------------- | --------- | ---------- | ------------ |
+| [algorithms?](./core-types.keymetadata.algorithms.md) |           | string\[\] | _(Optional)_ |

@@ -18,25 +18,25 @@ This class must be initialized with a [VeramoJsonStore](./data-store-json.veramo
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class KeyStoreJson extends AbstractKeyStore
 ```
 
-<b>Extends:</b> [AbstractKeyStore](./key-manager.abstractkeystore.md)
+**Extends:** [AbstractKeyStore](./key-manager.abstractkeystore.md)
 
 ## Constructors
 
-| Constructor                                                                 | Modifiers | Description                                                                           |
-| --------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------- |
-| [(constructor)(jsonStore)](./data-store-json.keystorejson._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>KeyStoreJson</code> class |
+| Constructor                                                                 | Modifiers | Description                                                                   |
+| --------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------- |
+| [(constructor)(jsonStore)](./data-store-json.keystorejson._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>KeyStoreJson</code> class |
 
 ## Methods
 
-| Method                                                            | Modifiers | Description          |
-| ----------------------------------------------------------------- | --------- | -------------------- |
-| [deleteKey({ kid })](./data-store-json.keystorejson.deletekey.md) |           | <b><i>(BETA)</i></b> |
-| [getKey({ kid })](./data-store-json.keystorejson.getkey.md)       |           | <b><i>(BETA)</i></b> |
-| [importKey(args)](./data-store-json.keystorejson.importkey.md)    |           | <b><i>(BETA)</i></b> |
-| [listKeys(args)](./data-store-json.keystorejson.listkeys.md)      |           | <b><i>(BETA)</i></b> |
+| Method                                                            | Modifiers | Description  |
+| ----------------------------------------------------------------- | --------- | ------------ |
+| [deleteKey({ kid })](./data-store-json.keystorejson.deletekey.md) |           | **_(BETA)_** |
+| [getKey({ kid })](./data-store-json.keystorejson.getkey.md)       |           | **_(BETA)_** |
+| [importKey(args)](./data-store-json.keystorejson.importkey.md)    |           | **_(BETA)_** |
+| [listKeys(args)](./data-store-json.keystorejson.listkeys.md)      |           | **_(BETA)_** |

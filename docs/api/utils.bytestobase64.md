@@ -10,7 +10,7 @@ hide_title: true
 
 Encodes a Uint8Array to a base64 string representation with padding.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function bytesToBase64(b: Uint8Array): string
@@ -22,6 +22,6 @@ export declare function bytesToBase64(b: Uint8Array): string
 | --------- | ---------- | ------------------------- |
 | b         | Uint8Array | the byte array to convert |
 
-<b>Returns:</b>
+**Returns:**
 
 string

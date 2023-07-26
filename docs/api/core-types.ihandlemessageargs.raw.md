@@ -10,7 +10,7 @@ hide_title: true
 
 Raw message data
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 raw: string

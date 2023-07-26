@@ -10,7 +10,7 @@ hide_title: true
 
 Remove payload members during JWT-JSON transformation. Defaults to `true`. See https://www.w3.org/TR/vc-data-model/\#jwt-encoding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 removeOriginalFields?: boolean;

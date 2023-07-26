@@ -10,7 +10,7 @@ hide_title: true
 
 Constructs a new instance of the `Message` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(data?: {
@@ -21,6 +21,6 @@ constructor(data?: {
 
 ## Parameters
 
-| Parameter | Type                                                                    | Description       |
-| --------- | ----------------------------------------------------------------------- | ----------------- |
-| data      | { raw: string; metaData?: [IMetaData](./core-types.imetadata.md)\[\]; } | <i>(Optional)</i> |
+| Parameter | Type                                                                    | Description  |
+| --------- | ----------------------------------------------------------------------- | ------------ |
+| data      | { raw: string; metaData?: [IMetaData](./core-types.imetadata.md)\[\]; } | _(Optional)_ |

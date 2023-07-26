@@ -10,13 +10,13 @@ hide_title: true
 
 An implementation of [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) that can extract a message from a URL.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class UrlMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Methods
 

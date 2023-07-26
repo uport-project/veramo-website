@@ -10,7 +10,7 @@ hide_title: true
 
 Controller key id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 controllerKeyId?: string;

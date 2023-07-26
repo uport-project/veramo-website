@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractPrivateKeyStore.importKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract importKey(args: ImportablePrivateKey): Promise<ManagedPrivateKey>;
@@ -20,6 +20,6 @@ abstract importKey(args: ImportablePrivateKey): Promise<ManagedPrivateKey>;
 | --------- | ------------------------------------------------------------- | ----------- |
 | args      | [ImportablePrivateKey](./key-manager.importableprivatekey.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;

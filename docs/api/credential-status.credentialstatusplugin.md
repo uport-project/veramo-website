@@ -18,22 +18,22 @@ This is used for the discovery of information about the current status of a veri
 
 The results provided by this plugin depend on whether the required by the credential is installed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CredentialStatusPlugin implements IAgentPlugin
 ```
 
-<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
+**Implements:** [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 
-| Constructor                                                                            | Modifiers | Description                                                                                     |
-| -------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------- |
-| [(constructor)(registry)](./credential-status.credentialstatusplugin._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>CredentialStatusPlugin</code> class |
+| Constructor                                                                            | Modifiers | Description                                                                             |
+| -------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------- |
+| [(constructor)(registry)](./credential-status.credentialstatusplugin._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>CredentialStatusPlugin</code> class |
 
 ## Properties
 
-| Property                                                         | Modifiers             | Type                                                                   | Description          |
-| ---------------------------------------------------------------- | --------------------- | ---------------------------------------------------------------------- | -------------------- |
-| [methods](./credential-status.credentialstatusplugin.methods.md) | <code>readonly</code> | [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md) | <b><i>(BETA)</i></b> |
+| Property                                                         | Modifiers             | Type                                                                   | Description  |
+| ---------------------------------------------------------------- | --------------------- | ---------------------------------------------------------------------- | ------------ |
+| [methods](./credential-status.credentialstatusplugin.methods.md) | <code>readonly</code> | [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md) | **_(BETA)_** |

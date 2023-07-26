@@ -12,7 +12,7 @@ hide_title: true
 
 The payload that is sent to be signed according to EIP712
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Eip712Payload = {

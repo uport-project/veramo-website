@@ -12,13 +12,13 @@ This is an implementation of [AbstractSecretBox](./key-manager.abstractsecretbox
 
 See [PrivateKeyStore](./data-store.privatekeystore.md) See [PrivateKeyStoreJson](./data-store-json.privatekeystorejson.md) See [AbstractSecretBox](./key-manager.abstractsecretbox.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SecretBox extends AbstractSecretBox
 ```
 
-<b>Extends:</b> [AbstractSecretBox](./key-manager.abstractsecretbox.md)
+**Extends:** [AbstractSecretBox](./key-manager.abstractsecretbox.md)
 
 ## Constructors
 

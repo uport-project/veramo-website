@@ -10,7 +10,7 @@ hide_title: true
 
 Returns an existing key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerGet(args: IKeyManagerGetArgs): Promise<IKey>;
@@ -22,6 +22,6 @@ keyManagerGet(args: IKeyManagerGetArgs): Promise<IKey>;
 | --------- | -------------------------------------------------------- | ----------- |
 | args      | [IKeyManagerGetArgs](./core-types.ikeymanagergetargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IKey](./core-types.ikey.md)&gt;

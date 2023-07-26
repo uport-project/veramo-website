@@ -12,7 +12,7 @@ hide_title: true
 
 Imposes constraints on the values of the given columns. WHERE clauses are combined using AND.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 where?: Where<TColumns>[];

@@ -8,7 +8,7 @@ hide_title: true
 
 ## IAgentBase.getSchema property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getSchema: () => IAgentPluginSchema

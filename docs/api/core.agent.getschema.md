@@ -10,13 +10,13 @@ hide_title: true
 
 Returns agent plugin schema
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getSchema(): IAgentPluginSchema;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 [IAgentPluginSchema](./core-types.iagentpluginschema.md)
 

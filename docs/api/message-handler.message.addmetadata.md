@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.addMetaData() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addMetaData(meta: IMetaData): void;
@@ -20,6 +20,6 @@ addMetaData(meta: IMetaData): void;
 | --------- | -------------------------------------- | ----------- |
 | meta      | [IMetaData](./core-types.imetadata.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

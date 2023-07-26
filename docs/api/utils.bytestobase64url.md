@@ -10,7 +10,7 @@ hide_title: true
 
 Converts a Uint8Array to a base64url string
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function bytesToBase64url(b: Uint8Array): string
@@ -22,6 +22,6 @@ export declare function bytesToBase64url(b: Uint8Array): string
 | --------- | ---------- | ------------------------- |
 | b         | Uint8Array | the array to be converted |
 
-<b>Returns:</b>
+**Returns:**
 
 string

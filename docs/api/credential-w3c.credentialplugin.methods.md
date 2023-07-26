@@ -8,7 +8,7 @@ hide_title: true
 
 ## CredentialPlugin.methods property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly methods: ICredentialPlugin;

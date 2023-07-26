@@ -12,7 +12,7 @@ The algorithm to use for signing. This must be one of the algorithms supported b
 
 The algorithm used here should match one of the names listed in `IKey.meta.algorithms`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 algorithm?: string;

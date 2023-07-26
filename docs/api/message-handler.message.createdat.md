@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.createdAt property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createdAt?: string;

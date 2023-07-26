@@ -14,7 +14,7 @@ A proof property of a [VerifiableCredential](./core-types.verifiablecredential.m
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ProofType
@@ -22,6 +22,6 @@ export interface ProofType
 
 ## Properties
 
-| Property                                | Modifiers | Type   | Description                            |
-| --------------------------------------- | --------- | ------ | -------------------------------------- |
-| [type?](./core-types.prooftype.type.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                | Modifiers | Type   | Description               |
+| --------------------------------------- | --------- | ------ | ------------------------- |
+| [type?](./core-types.prooftype.type.md) |           | string | **_(BETA)_** _(Optional)_ |

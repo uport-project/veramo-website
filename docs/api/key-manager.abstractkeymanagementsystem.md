@@ -10,7 +10,7 @@ hide_title: true
 
 This base abstract class should be extended to provide cryptographic functions to other Veramo plugins.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractKeyManagementSystem
@@ -18,13 +18,13 @@ export declare abstract class AbstractKeyManagementSystem
 
 ## Methods
 
-| Method                                                                                    | Modifiers | Description |
-| ----------------------------------------------------------------------------------------- | --------- | ----------- |
-| [createKey(args)](./key-manager.abstractkeymanagementsystem.createkey.md)                 |           |             |
-| [deleteKey(args)](./key-manager.abstractkeymanagementsystem.deletekey.md)                 |           |             |
-| [importKey(args)](./key-manager.abstractkeymanagementsystem.importkey.md)                 |           |             |
-| [listKeys()](./key-manager.abstractkeymanagementsystem.listkeys.md)                       |           |             |
-| [sharedSecret(args)](./key-manager.abstractkeymanagementsystem.sharedsecret.md)           |           |             |
-| [sign(args)](./key-manager.abstractkeymanagementsystem.sign.md)                           |           |             |
-| [signEthTX({ key, transaction })](./key-manager.abstractkeymanagementsystem.signethtx.md) |           |             |
-| [signJWT({ key, data })](./key-manager.abstractkeymanagementsystem.signjwt.md)            |           |             |
+| Method                                                                                    | Modifiers             | Description |
+| ----------------------------------------------------------------------------------------- | --------------------- | ----------- |
+| [createKey(args)](./key-manager.abstractkeymanagementsystem.createkey.md)                 | <code>abstract</code> |             |
+| [deleteKey(args)](./key-manager.abstractkeymanagementsystem.deletekey.md)                 | <code>abstract</code> |             |
+| [importKey(args)](./key-manager.abstractkeymanagementsystem.importkey.md)                 | <code>abstract</code> |             |
+| [listKeys()](./key-manager.abstractkeymanagementsystem.listkeys.md)                       | <code>abstract</code> |             |
+| [sharedSecret(args)](./key-manager.abstractkeymanagementsystem.sharedsecret.md)           | <code>abstract</code> |             |
+| [sign(args)](./key-manager.abstractkeymanagementsystem.sign.md)                           | <code>abstract</code> |             |
+| [signEthTX({ key, transaction })](./key-manager.abstractkeymanagementsystem.signethtx.md) |                       |             |
+| [signJWT({ key, data })](./key-manager.abstractkeymanagementsystem.signjwt.md)            |                       |             |

@@ -12,22 +12,22 @@ hide_title: true
 
 A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the mediator role. This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CoordinateMediationMediatorMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Constructors
 
-| Constructor                                                                              | Modifiers | Description                                                                                                        |
-| ---------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------ |
-| [(constructor)()](./did-comm.coordinatemediationmediatormessagehandler._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>CoordinateMediationMediatorMessageHandler</code> class |
+| Constructor                                                                              | Modifiers | Description                                                                                                |
+| ---------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------- |
+| [(constructor)()](./did-comm.coordinatemediationmediatormessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>CoordinateMediationMediatorMessageHandler</code> class |
 
 ## Methods
 
-| Method                                                                                     | Modifiers | Description                                                                                                                       |
-| ------------------------------------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| [handle(message, context)](./did-comm.coordinatemediationmediatormessagehandler.handle.md) |           | <b><i>(BETA)</i></b> Handles a Mediator Coordinator messages for the mediator role https://didcomm.org/mediator-coordination/2.0/ |
+| Method                                                                                     | Modifiers | Description                                                                                                               |
+| ------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------- |
+| [handle(message, context)](./did-comm.coordinatemediationmediatormessagehandler.handle.md) |           | **_(BETA)_** Handles a Mediator Coordinator messages for the mediator role https://didcomm.org/mediator-coordination/2.0/ |

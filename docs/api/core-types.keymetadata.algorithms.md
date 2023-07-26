@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyMetadata.algorithms property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 algorithms?: string[];

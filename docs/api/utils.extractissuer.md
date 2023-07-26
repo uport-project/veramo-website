@@ -12,7 +12,7 @@ hide_title: true
 
 Decodes a credential or presentation and returns the issuer ID `iss` from a JWT or `issuer`/`issuer.id` from a VC or `holder` from a VP
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function extractIssuer(
@@ -27,10 +27,10 @@ export declare function extractIssuer(
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                                                                                                         | Description                                                                                                                                                    |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) &#124; [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) &#124; [CredentialPayload](./core-types.credentialpayload.md) &#124; [PresentationPayload](./core-types.presentationpayload.md) &#124; null | <p><i>(Optional)</i> the credential or presentation whose issuer/holder needs to be extracted.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+| Parameter | Type                                                                                                                                                                                                                                                                                         | Description                                                                                                                                               |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) &#124; [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) &#124; [CredentialPayload](./core-types.credentialpayload.md) &#124; [PresentationPayload](./core-types.presentationpayload.md) &#124; null | <p>_(Optional)_ the credential or presentation whose issuer/holder needs to be extracted.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

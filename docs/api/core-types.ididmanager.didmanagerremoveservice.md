@@ -10,7 +10,7 @@ hide_title: true
 
 Removes a service from a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerRemoveService(args: IDIDManagerRemoveServiceArgs, context: IAgentContext<IKeyManager>): Promise<any>;
@@ -23,7 +23,7 @@ didManagerRemoveService(args: IDIDManagerRemoveServiceArgs, context: IAgentConte
 | args      | [IDIDManagerRemoveServiceArgs](./core-types.ididmanagerremoveserviceargs.md)                     |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

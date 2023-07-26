@@ -10,7 +10,7 @@ hide_title: true
 
 Adds a service to a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addService({ identifier, service, options }: {
@@ -27,7 +27,7 @@ addService({ identifier, service, options }: {
 | { identifier, service, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); service: [IService](./core-types.iservice.md); options?: IUpdateOpts; } |             |
 | context                          | IContext                                                                                                                          |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

@@ -10,7 +10,7 @@ hide_title: true
 
 The key handle, as returned during `keyManagerCreateKey`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyRef: string

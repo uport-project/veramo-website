@@ -10,7 +10,7 @@ hide_title: true
 
 Represents the minimum amount of information needed to import an [IIdentifier](./core-types.iidentifier.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type MinimalImportableIdentifier = {
@@ -19,4 +19,4 @@ export type MinimalImportableIdentifier = {
 } & Omit<IIdentifier, 'keys' | 'services'>
 ```
 
-<b>References:</b> [MinimalImportableKey](./core-types.minimalimportablekey.md), [IService](./core-types.iservice.md), [IIdentifier](./core-types.iidentifier.md)
+**References:** [MinimalImportableKey](./core-types.minimalimportablekey.md), [IService](./core-types.iservice.md), [IIdentifier](./core-types.iidentifier.md)

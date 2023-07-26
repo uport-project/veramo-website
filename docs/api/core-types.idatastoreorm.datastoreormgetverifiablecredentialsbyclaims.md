@@ -14,7 +14,7 @@ Returns a list of [UniqueVerifiableCredential](./core-types.uniqueverifiablecred
 
 These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetVerifiableCredentialsByClaims(args: FindClaimsArgs, context: AuthorizedDIDContext): Promise<Array<UniqueVerifiableCredential>>;
@@ -27,6 +27,6 @@ dataStoreORMGetVerifiableCredentialsByClaims(args: FindClaimsArgs, context: Auth
 | args      | [FindClaimsArgs](./core-types.findclaimsargs.md)             | The filter to apply when querying                                                                                                                                                                                                                    |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md) | <p>Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)&gt;&gt;

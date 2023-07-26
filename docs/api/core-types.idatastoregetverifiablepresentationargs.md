@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [dataStoreGetVerifiablePresentation](./core-types.idatastore.datastoregetverifiablepresentation.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDataStoreGetVerifiablePresentationArgs

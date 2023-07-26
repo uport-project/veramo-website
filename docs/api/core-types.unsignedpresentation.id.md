@@ -8,7 +8,7 @@ hide_title: true
 
 ## UnsignedPresentation.id property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 id?: string;

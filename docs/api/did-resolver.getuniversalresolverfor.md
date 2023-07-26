@@ -10,7 +10,7 @@ hide_title: true
 
 Creates a mapping of DID methods to a DIDResolver instance that can be used with `did-resolver`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getUniversalResolverFor(methods: string[], url?: string): Record<string, DIDResolver>
@@ -18,12 +18,12 @@ export declare function getUniversalResolverFor(methods: string[], url?: string)
 
 ## Parameters
 
-| Parameter | Type       | Description                                                                                 |
-| --------- | ---------- | ------------------------------------------------------------------------------------------- |
-| methods   | string\[\] | an array of DID methods that should be resolved by this universal resolver                  |
-| url       | string     | <i>(Optional)</i> the URL for the universal resolver instance (See https://uniresolver.io ) |
+| Parameter | Type       | Description                                                                            |
+| --------- | ---------- | -------------------------------------------------------------------------------------- |
+| methods   | string\[\] | an array of DID methods that should be resolved by this universal resolver             |
+| url       | string     | _(Optional)_ the URL for the universal resolver instance (See https://uniresolver.io ) |
 
-<b>Returns:</b>
+**Returns:**
 
 Record&lt;string, DIDResolver&gt;
 

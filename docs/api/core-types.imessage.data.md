@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Parsed data
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 data?: object | null;

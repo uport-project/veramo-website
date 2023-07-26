@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractIdentifierProvider.createIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract createIdentifier(args: {
@@ -25,6 +25,6 @@ abstract createIdentifier(args: {
 | args      | { kms?: string; alias?: string; options?: any; }                                                 |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

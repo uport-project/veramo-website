@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManagementSystem.sign() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sign({ keyRef, algorithm, data, }: {
@@ -24,6 +24,6 @@ sign({ keyRef, algorithm, data, }: {
 | ---------------------------- | -------------------------------------------------------------------------------------------------- | ----------- |
 | { keyRef, algorithm, data, } | { keyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; algorithm?: string; data: Uint8Array; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

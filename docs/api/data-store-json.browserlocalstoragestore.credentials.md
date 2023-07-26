@@ -8,7 +8,7 @@ hide_title: true
 
 ## BrowserLocalStorageStore.credentials property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentials: Record<string, CredentialTableEntry>

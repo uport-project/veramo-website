@@ -12,7 +12,7 @@ hide_title: true
 
 A URL where a credential of that type can be obtained.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 url: string

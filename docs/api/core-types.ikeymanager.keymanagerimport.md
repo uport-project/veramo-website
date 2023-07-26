@@ -10,7 +10,7 @@ hide_title: true
 
 Imports a created key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerImport(args: MinimalImportableKey): Promise<ManagedKeyInfo>;
@@ -22,6 +22,6 @@ keyManagerImport(args: MinimalImportableKey): Promise<ManagedKeyInfo>;
 | --------- | ------------------------------------------------------------ | ----------- |
 | args      | [MinimalImportableKey](./core-types.minimalimportablekey.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

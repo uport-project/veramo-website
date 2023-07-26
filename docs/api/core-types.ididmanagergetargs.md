@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerGet](./core-types.ididmanager.didmanagerget.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerGetArgs

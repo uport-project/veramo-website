@@ -18,7 +18,7 @@ See [Issuer data model](https://www.w3.org/TR/vc-data-model/#issuer)
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type IssuerType =

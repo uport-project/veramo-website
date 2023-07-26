@@ -10,7 +10,7 @@ hide_title: true
 
 Standard plugin method context interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAgentContext<T extends IPluginMethodMap>

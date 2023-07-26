@@ -8,7 +8,7 @@ hide_title: true
 
 ## SecretBox.decrypt() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 decrypt(encryptedMessageHex: string): Promise<string>;
@@ -20,6 +20,6 @@ decrypt(encryptedMessageHex: string): Promise<string>;
 | ------------------- | ------ | ----------- |
 | encryptedMessageHex | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

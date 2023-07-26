@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyStore.getKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getKey({ kid }: {
@@ -22,6 +22,6 @@ getKey({ kid }: {
 | --------- | ---------------- | ----------- |
 | { kid }   | { kid: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IKey](./core-types.ikey.md)&gt;

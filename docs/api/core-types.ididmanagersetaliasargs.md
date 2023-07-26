@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerSetAlias](./core-types.ididmanager.didmanagersetalias.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerSetAliasArgs

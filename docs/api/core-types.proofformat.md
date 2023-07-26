@@ -12,7 +12,7 @@ The type of encoding to be used for the Verifiable Credential or Presentation to
 
 Only `jwt` and `lds` is supported at the moment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ProofFormat = 'jwt' | 'lds' | 'EthereumEip712Signature2021'

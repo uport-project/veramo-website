@@ -12,7 +12,7 @@ hide_title: true
 
 Resolve a DID document or throw an error if the resolution fails.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveDidOrThrow(
@@ -28,7 +28,7 @@ export declare function resolveDidOrThrow(
 | didUrl    | string                                                                                       | the DID to be resolved                                                                                                                                             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the <code>didUrl</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;DIDDocument&gt;
 

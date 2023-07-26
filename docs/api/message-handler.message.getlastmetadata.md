@@ -8,12 +8,12 @@ hide_title: true
 
 ## Message.getLastMetaData() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getLastMetaData(): IMetaData | null;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 [IMetaData](./core-types.imetadata.md) \| null

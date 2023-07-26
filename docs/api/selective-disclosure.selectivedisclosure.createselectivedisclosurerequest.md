@@ -12,7 +12,7 @@ hide_title: true
 
 Creates a Selective disclosure request, encoded as a JWT.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createSelectiveDisclosureRequest(args: ICreateSelectiveDisclosureRequestArgs, context: IAgentContext<IDIDManager & IKeyManager>): Promise<string>;
@@ -25,7 +25,7 @@ createSelectiveDisclosureRequest(args: ICreateSelectiveDisclosureRequestArgs, co
 | args      | [ICreateSelectiveDisclosureRequestArgs](./selective-disclosure.icreateselectivedisclosurerequestargs.md)                                          | The param object with the properties necessary to create the request. See [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md)&gt; | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p>                     |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

@@ -16,13 +16,13 @@ When handling a message, the message is passed from one handler to the next, and
 
 If the message can be processed by a handler it is returned as an [IMessage](./core-types.imessage.md). If the message cannot be processed by any of the handlers, an error is thrown.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MessageHandler implements IAgentPlugin
 ```
 
-<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
+**Implements:** [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 

@@ -10,10 +10,10 @@ hide_title: true
 
 Plugin method map interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPluginMethodMap extends Record<string, IPluginMethod>
 ```
 
-<b>Extends:</b> Record&lt;string, [IPluginMethod](./core-types.ipluginmethod.md)&gt;
+**Extends:** Record&lt;string, [IPluginMethod](./core-types.ipluginmethod.md)&gt;

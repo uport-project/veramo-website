@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Private key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 privateKeyHex?: string;

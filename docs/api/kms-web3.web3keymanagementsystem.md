@@ -12,27 +12,27 @@ hide_title: true
 
 This is a [KMS](./key-manager.abstractkeymanagementsystem.md) implementation that uses the addresses of a web3 wallet as key identifiers, and calls the respective wallet for signing operations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Web3KeyManagementSystem extends AbstractKeyManagementSystem
 ```
 
-<b>Extends:</b> [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md)
+**Extends:** [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md)
 
 ## Constructors
 
-| Constructor                                                                     | Modifiers | Description                                                                                      |
-| ------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------ |
-| [(constructor)(providers)](./kms-web3.web3keymanagementsystem._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>Web3KeyManagementSystem</code> class |
+| Constructor                                                                     | Modifiers | Description                                                                              |
+| ------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------- |
+| [(constructor)(providers)](./kms-web3.web3keymanagementsystem._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>Web3KeyManagementSystem</code> class |
 
 ## Methods
 
-| Method                                                                           | Modifiers | Description          |
-| -------------------------------------------------------------------------------- | --------- | -------------------- |
-| [createKey({ type })](./kms-web3.web3keymanagementsystem.createkey.md)           |           | <b><i>(BETA)</i></b> |
-| [deleteKey(args)](./kms-web3.web3keymanagementsystem.deletekey.md)               |           | <b><i>(BETA)</i></b> |
-| [importKey(args)](./kms-web3.web3keymanagementsystem.importkey.md)               |           | <b><i>(BETA)</i></b> |
-| [listKeys()](./kms-web3.web3keymanagementsystem.listkeys.md)                     |           | <b><i>(BETA)</i></b> |
-| [sharedSecret(args)](./kms-web3.web3keymanagementsystem.sharedsecret.md)         |           | <b><i>(BETA)</i></b> |
-| [sign({ keyRef, algorithm, data, })](./kms-web3.web3keymanagementsystem.sign.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                                           | Modifiers | Description  |
+| -------------------------------------------------------------------------------- | --------- | ------------ |
+| [createKey({ type })](./kms-web3.web3keymanagementsystem.createkey.md)           |           | **_(BETA)_** |
+| [deleteKey(args)](./kms-web3.web3keymanagementsystem.deletekey.md)               |           | **_(BETA)_** |
+| [importKey(args)](./kms-web3.web3keymanagementsystem.importkey.md)               |           | **_(BETA)_** |
+| [listKeys()](./kms-web3.web3keymanagementsystem.listkeys.md)                     |           | **_(BETA)_** |
+| [sharedSecret(args)](./kms-web3.web3keymanagementsystem.sharedsecret.md)         |           | **_(BETA)_** |
+| [sign({ keyRef, algorithm, data, })](./kms-web3.web3keymanagementsystem.sign.md) |           | **_(BETA)_** |

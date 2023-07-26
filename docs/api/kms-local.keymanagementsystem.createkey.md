@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyManagementSystem.createKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createKey({ type }: {
@@ -22,6 +22,6 @@ createKey({ type }: {
 | --------- | ----------------------------------------------- | ----------- |
 | { type }  | { type: [TKeyType](./core-types.tkeytype.md); } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

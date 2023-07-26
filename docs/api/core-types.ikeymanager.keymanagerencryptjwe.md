@@ -12,7 +12,7 @@ hide_title: true
 
 Encrypts data This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerEncryptJWE(args: IKeyManagerEncryptJWEArgs): Promise<string>;
@@ -24,6 +24,6 @@ keyManagerEncryptJWE(args: IKeyManagerEncryptJWEArgs): Promise<string>;
 | --------- | ---------------------------------------------------------------------- | ----------- |
 | args      | [IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

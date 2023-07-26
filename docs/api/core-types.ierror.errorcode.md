@@ -12,7 +12,7 @@ hide_title: true
 
 The code for the error being throw
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 errorCode?: string;

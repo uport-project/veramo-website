@@ -10,7 +10,7 @@ hide_title: true
 
 Encapsulates the parameters required to verify a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IVerifyPresentationEIP712Args

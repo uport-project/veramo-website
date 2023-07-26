@@ -10,7 +10,7 @@ hide_title: true
 
 This collection defines the core event types.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CoreEvents: {

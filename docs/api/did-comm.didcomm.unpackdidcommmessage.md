@@ -12,7 +12,7 @@ hide_title: true
 
 Unpacks a possible DIDComm message and returns the [IDIDCommMessage](./did-comm.ididcommmessage.md) and [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) used to pack it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unpackDIDCommMessage(args: IUnpackDIDCommMessageArgs, context: IAgentContext<IDIDManager & IKeyManager & IResolver & IMessageHandler>): Promise<IUnpackedDIDCommMessage>;
@@ -25,7 +25,7 @@ unpackDIDCommMessage(args: IUnpackDIDCommMessageArgs, context: IAgentContext<IDI
 | args      | [IUnpackDIDCommMessageArgs](./did-comm.iunpackdidcommmessageargs.md)                                                                                                                                                                                    | an object containing the serialized message to be unpacked                                                                                                                                                                                                                                   |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md) &amp; [IMessageHandler](./core-types.imessagehandler.md)&gt; | This method requires an agent that also has [IDIDManager](./core-types.ididmanager.md), [IKeyManager](./core-types.ikeymanager.md) and [IResolver](./core-types.iresolver.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IUnpackedDIDCommMessage](./did-comm.iunpackeddidcommmessage.md)&gt;
 

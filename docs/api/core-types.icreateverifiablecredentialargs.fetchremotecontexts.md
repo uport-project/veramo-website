@@ -12,7 +12,7 @@ When dealing with JSON-LD you also MUST provide the proper contexts. Set this to
 
 Defaults to `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fetchRemoteContexts?: boolean;

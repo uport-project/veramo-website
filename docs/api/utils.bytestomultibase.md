@@ -10,7 +10,7 @@ hide_title: true
 
 Converts a Uint8Array to a multibase string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function bytesToMultibase(byteArray: Uint8Array, type: string): string
@@ -23,7 +23,7 @@ export declare function bytesToMultibase(byteArray: Uint8Array, type: string): s
 | byteArray | Uint8Array |                                       |
 | type      | string     | the type of the key to be represented |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

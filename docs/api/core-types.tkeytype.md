@@ -10,7 +10,7 @@ hide_title: true
 
 Cryptographic key type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TKeyType = 'Ed25519' | 'Secp256k1' | 'Secp256r1' | 'X25519' | 'Bls12381G1' | 'Bls12381G2'

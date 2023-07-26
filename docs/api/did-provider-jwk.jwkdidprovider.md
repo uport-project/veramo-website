@@ -14,28 +14,28 @@ hide_title: true
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class JwkDIDProvider extends AbstractIdentifierProvider
 ```
 
-<b>Extends:</b> [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)
+**Extends:** [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)
 
 ## Constructors
 
-| Constructor                                                                  | Modifiers | Description                                                                             |
-| ---------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------- |
-| [(constructor)(options)](./did-provider-jwk.jwkdidprovider._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>JwkDIDProvider</code> class |
+| Constructor                                                                  | Modifiers | Description                                                                     |
+| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------- |
+| [(constructor)(options)](./did-provider-jwk.jwkdidprovider._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>JwkDIDProvider</code> class |
 
 ## Methods
 
-| Method                                                                                                    | Modifiers | Description          |
-| --------------------------------------------------------------------------------------------------------- | --------- | -------------------- |
-| [addKey({ identifier, key, options, }, context)](./did-provider-jwk.jwkdidprovider.addkey.md)             |           | <b><i>(BETA)</i></b> |
-| [addService({ identifier, service, options, }, context)](./did-provider-jwk.jwkdidprovider.addservice.md) |           | <b><i>(BETA)</i></b> |
-| [createIdentifier({ kms, options }, context)](./did-provider-jwk.jwkdidprovider.createidentifier.md)      |           | <b><i>(BETA)</i></b> |
-| [deleteIdentifier(identifier, context)](./did-provider-jwk.jwkdidprovider.deleteidentifier.md)            |           | <b><i>(BETA)</i></b> |
-| [removeKey(args, context)](./did-provider-jwk.jwkdidprovider.removekey.md)                                |           | <b><i>(BETA)</i></b> |
-| [removeService(args, context)](./did-provider-jwk.jwkdidprovider.removeservice.md)                        |           | <b><i>(BETA)</i></b> |
-| [updateIdentifier(args, context)](./did-provider-jwk.jwkdidprovider.updateidentifier.md)                  |           | <b><i>(BETA)</i></b> |
+| Method                                                                                                    | Modifiers | Description  |
+| --------------------------------------------------------------------------------------------------------- | --------- | ------------ |
+| [addKey({ identifier, key, options, }, context)](./did-provider-jwk.jwkdidprovider.addkey.md)             |           | **_(BETA)_** |
+| [addService({ identifier, service, options, }, context)](./did-provider-jwk.jwkdidprovider.addservice.md) |           | **_(BETA)_** |
+| [createIdentifier({ kms, options }, context)](./did-provider-jwk.jwkdidprovider.createidentifier.md)      |           | **_(BETA)_** |
+| [deleteIdentifier(identifier, context)](./did-provider-jwk.jwkdidprovider.deleteidentifier.md)            |           | **_(BETA)_** |
+| [removeKey(args, context)](./did-provider-jwk.jwkdidprovider.removekey.md)                                |           | **_(BETA)_** |
+| [removeService(args, context)](./did-provider-jwk.jwkdidprovider.removeservice.md)                        |           | **_(BETA)_** |
+| [updateIdentifier(args, context)](./did-provider-jwk.jwkdidprovider.updateidentifier.md)                  |           | **_(BETA)_** |

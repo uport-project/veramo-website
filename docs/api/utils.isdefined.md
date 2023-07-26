@@ -12,7 +12,7 @@ hide_title: true
 
 Checks if a variable is defined and not null. After this check, typescript sees the variable as defined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isDefined<T>(arg: T): arg is Exclude<T, null | undefined>
@@ -24,7 +24,7 @@ export declare function isDefined<T>(arg: T): arg is Exclude<T, null | undefined
 | --------- | ---- | ------------------------ |
 | arg       | T    | The input to be verified |
 
-<b>Returns:</b>
+**Returns:**
 
 arg is Exclude&lt;T, null \| undefined&gt;
 

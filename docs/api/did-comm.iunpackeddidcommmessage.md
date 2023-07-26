@@ -14,7 +14,7 @@ The result of unpacking a DIDComm v2 message.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IUnpackedDIDCommMessage
@@ -22,7 +22,7 @@ export interface IUnpackedDIDCommMessage
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                                                             | Description          |
-| ---------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------- |
-| [message](./did-comm.iunpackeddidcommmessage.message.md)   |           | [IDIDCommMessage](./did-comm.ididcommmessage.md)                 | <b><i>(BETA)</i></b> |
-| [metaData](./did-comm.iunpackeddidcommmessage.metadata.md) |           | [IDIDCommMessageMetaData](./did-comm.ididcommmessagemetadata.md) | <b><i>(BETA)</i></b> |
+| Property                                                   | Modifiers | Type                                                             | Description  |
+| ---------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ------------ |
+| [message](./did-comm.iunpackeddidcommmessage.message.md)   |           | [IDIDCommMessage](./did-comm.ididcommmessage.md)                 | **_(BETA)_** |
+| [metaData](./did-comm.iunpackeddidcommmessage.metadata.md) |           | [IDIDCommMessageMetaData](./did-comm.ididcommmessagemetadata.md) | **_(BETA)_** |

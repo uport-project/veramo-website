@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreORMGetVerifiablePresentations(args: FindArgs<TPresentationColumns>, context: AuthorizedDIDContext): Promise<Array<UniqueVerifiablePresentation>>;
@@ -23,6 +23,6 @@ dataStoreORMGetVerifiablePresentations(args: FindArgs<TPresentationColumns>, con
 | args      | [FindArgs](./core-types.findargs.md)&lt;[TPresentationColumns](./core-types.tpresentationcolumns.md)&gt; |             |
 | context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)                                             |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)&gt;&gt;

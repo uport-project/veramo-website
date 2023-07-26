@@ -8,7 +8,7 @@ hide_title: true
 
 ## WebDIDProvider.createIdentifier() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createIdentifier({ kms, alias, options }: {
@@ -25,6 +25,6 @@ createIdentifier({ kms, alias, options }: {
 | { kms, alias, options } | { kms?: string; alias?: string; options: any; } |             |
 | context                 | IContext                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

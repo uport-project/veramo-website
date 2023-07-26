@@ -10,7 +10,7 @@ hide_title: true
 
 Dereferences a DID URL fragment and returns the corresponding DID document entry.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDIDComponentById({ didDocument, didUrl, section, }: {
@@ -26,7 +26,7 @@ getDIDComponentById({ didDocument, didUrl, section, }: {
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
 | { didDocument, didUrl, section, } | { didDocument: DIDDocument; didUrl: string; section?: [DIDDocumentSection](./core-types.diddocumentsection.md); } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;VerificationMethod \| ServiceEndpoint&gt;
 

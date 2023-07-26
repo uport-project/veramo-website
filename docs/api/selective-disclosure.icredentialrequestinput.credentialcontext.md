@@ -12,7 +12,7 @@ hide_title: true
 
 The credential context. See [W3C Credential Context](https://www.w3.org/TR/vc-data-model/#contexts)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentialContext?: string;

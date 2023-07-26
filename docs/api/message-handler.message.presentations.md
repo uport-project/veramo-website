@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.presentations property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 presentations?: VerifiablePresentation[];

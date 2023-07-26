@@ -12,7 +12,7 @@ hide_title: true
 
 This can be used to automatically create a did:web with signing and encryption keys and listing messaging and DIDComm service endpoints.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createDefaultDid(options: CreateDefaultDidOptions): Promise<void>
@@ -24,6 +24,6 @@ export declare function createDefaultDid(options: CreateDefaultDidOptions): Prom
 | --------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | options   | CreateDefaultDidOptions | <p>The options guiding the creation of the default DID</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

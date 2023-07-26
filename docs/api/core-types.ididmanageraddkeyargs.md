@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [didManagerAddKey](./core-types.ididmanager.didmanageraddkey.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDManagerAddKeyArgs
@@ -18,8 +18,8 @@ export interface IDIDManagerAddKeyArgs
 
 ## Properties
 
-| Property                                                  | Modifiers | Type                         | Description                                                      |
-| --------------------------------------------------------- | --------- | ---------------------------- | ---------------------------------------------------------------- |
-| [did](./core-types.ididmanageraddkeyargs.did.md)          |           | string                       | DID                                                              |
-| [key](./core-types.ididmanageraddkeyargs.key.md)          |           | [IKey](./core-types.ikey.md) | Key object                                                       |
-| [options?](./core-types.ididmanageraddkeyargs.options.md) |           | object                       | <i>(Optional)</i> Optional. Identifier provider specific options |
+| Property                                                  | Modifiers | Type                         | Description                                                 |
+| --------------------------------------------------------- | --------- | ---------------------------- | ----------------------------------------------------------- |
+| [did](./core-types.ididmanageraddkeyargs.did.md)          |           | string                       | DID                                                         |
+| [key](./core-types.ididmanageraddkeyargs.key.md)          |           | [IKey](./core-types.ikey.md) | Key object                                                  |
+| [options?](./core-types.ididmanageraddkeyargs.options.md) |           | object                       | _(Optional)_ Optional. Identifier provider specific options |

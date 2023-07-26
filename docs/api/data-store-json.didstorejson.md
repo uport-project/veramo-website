@@ -18,25 +18,25 @@ This class must be initialized with a [VeramoJsonStore](./data-store-json.veramo
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DIDStoreJson extends AbstractDIDStore
 ```
 
-<b>Extends:</b> [AbstractDIDStore](./did-manager.abstractdidstore.md)
+**Extends:** [AbstractDIDStore](./did-manager.abstractdidstore.md)
 
 ## Constructors
 
-| Constructor                                                                 | Modifiers | Description                                                                           |
-| --------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------- |
-| [(constructor)(jsonStore)](./data-store-json.didstorejson._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>DIDStoreJson</code> class |
+| Constructor                                                                 | Modifiers | Description                                                                   |
+| --------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------- |
+| [(constructor)(jsonStore)](./data-store-json.didstorejson._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>DIDStoreJson</code> class |
 
 ## Methods
 
-| Method                                                                        | Modifiers | Description          |
-| ----------------------------------------------------------------------------- | --------- | -------------------- |
-| [deleteDID({ did })](./data-store-json.didstorejson.deletedid.md)             |           | <b><i>(BETA)</i></b> |
-| [getDID({ did, alias, provider, })](./data-store-json.didstorejson.getdid.md) |           | <b><i>(BETA)</i></b> |
-| [importDID(args)](./data-store-json.didstorejson.importdid.md)                |           | <b><i>(BETA)</i></b> |
-| [listDIDs(args)](./data-store-json.didstorejson.listdids.md)                  |           | <b><i>(BETA)</i></b> |
+| Method                                                                        | Modifiers | Description  |
+| ----------------------------------------------------------------------------- | --------- | ------------ |
+| [deleteDID({ did })](./data-store-json.didstorejson.deletedid.md)             |           | **_(BETA)_** |
+| [getDID({ did, alias, provider, })](./data-store-json.didstorejson.getdid.md) |           | **_(BETA)_** |
+| [importDID(args)](./data-store-json.didstorejson.importdid.md)                |           | **_(BETA)_** |
+| [listDIDs(args)](./data-store-json.didstorejson.listdids.md)                  |           | **_(BETA)_** |

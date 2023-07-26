@@ -12,7 +12,7 @@ hide_title: true
 
 A list of accepted Issuers for this credential.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 issuers?: Issuer[];

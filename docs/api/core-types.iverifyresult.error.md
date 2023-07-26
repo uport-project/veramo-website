@@ -12,7 +12,7 @@ hide_title: true
 
 Optional Error object for the but currently the machine readable errors are not expored from DID-JWT package to be imported here
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 error?: IError;

@@ -12,7 +12,7 @@ hide_title: true
 
 Creates a Verifiable Presentation. The payload and signer are chosen based on the `args` parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createVerifiablePresentationEIP712(args: ICreateVerifiablePresentationEIP712Args, context: IRequiredContext): Promise<VerifiablePresentation>;
@@ -25,7 +25,7 @@ createVerifiablePresentationEIP712(args: ICreateVerifiablePresentationEIP712Args
 | args      | [ICreateVerifiablePresentationEIP712Args](./credential-eip712.icreateverifiablepresentationeip712args.md) | Arguments necessary to create the Presentation.                                              |
 | context   | [IRequiredContext](./credential-eip712.irequiredcontext.md)                                               | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;
 

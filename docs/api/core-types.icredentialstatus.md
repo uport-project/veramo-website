@@ -12,10 +12,10 @@ hide_title: true
 
 Veramo plugin interface for plugins implementing both the [manager](./core-types.icredentialstatusmanager.md) and the [verifier](./core-types.icredentialstatusverifier.md) aspects of Credential Status flow.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ICredentialStatus = ICredentialStatusVerifier & ICredentialStatusManager
 ```
 
-<b>References:</b> [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md), [ICredentialStatusManager](./core-types.icredentialstatusmanager.md)
+**References:** [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md), [ICredentialStatusManager](./core-types.icredentialstatusmanager.md)

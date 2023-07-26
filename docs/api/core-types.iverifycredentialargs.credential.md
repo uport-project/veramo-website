@@ -12,7 +12,7 @@ The Verifiable Credential object according to the [canonical model](https://www.
 
 The signer of the Credential is verified based on the `issuer.id` property of the `credential` or the `iss` property of the JWT payload respectively
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credential: W3CVerifiableCredential

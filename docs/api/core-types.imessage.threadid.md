@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Thread ID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 threadId?: string;

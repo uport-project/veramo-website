@@ -14,7 +14,7 @@ hide_title: true
 
 If this parameter is true, the resulting VerifiablePresentation is sent to the [storage plugin](./core-types.idatastore.md) to be saved.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 save?: boolean;

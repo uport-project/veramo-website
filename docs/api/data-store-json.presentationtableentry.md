@@ -14,7 +14,7 @@ This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) t
 
 This API may change in future versions without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface PresentationTableEntry
@@ -22,16 +22,16 @@ export interface PresentationTableEntry
 
 ## Properties
 
-| Property                                                                                   | Modifiers | Type                                                                   | Description                            |
-| ------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------- | -------------------------------------- |
-| [canonicalPresentation](./data-store-json.presentationtableentry.canonicalpresentation.md) |           | [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) | <b><i>(BETA)</i></b>                   |
-| [context](./data-store-json.presentationtableentry.context.md)                             |           | string\[\]                                                             | <b><i>(BETA)</i></b>                   |
-| [credentials](./data-store-json.presentationtableentry.credentials.md)                     |           | [VerifiableCredential](./core-types.verifiablecredential.md)\[\]       | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./data-store-json.presentationtableentry.expirationdate.md)              |           | Date                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [hash](./data-store-json.presentationtableentry.hash.md)                                   |           | string                                                                 | <b><i>(BETA)</i></b>                   |
-| [holder](./data-store-json.presentationtableentry.holder.md)                               |           | string                                                                 | <b><i>(BETA)</i></b>                   |
-| [id?](./data-store-json.presentationtableentry.id.md)                                      |           | String                                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate?](./data-store-json.presentationtableentry.issuancedate.md)                  |           | Date                                                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [parsedPresentation](./data-store-json.presentationtableentry.parsedpresentation.md)       |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)       | <b><i>(BETA)</i></b>                   |
-| [type](./data-store-json.presentationtableentry.type.md)                                   |           | string\[\]                                                             | <b><i>(BETA)</i></b>                   |
-| [verifier](./data-store-json.presentationtableentry.verifier.md)                           |           | string\[\]                                                             | <b><i>(BETA)</i></b>                   |
+| Property                                                                                   | Modifiers | Type                                                                   | Description               |
+| ------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------- | ------------------------- |
+| [canonicalPresentation](./data-store-json.presentationtableentry.canonicalpresentation.md) |           | [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) | **_(BETA)_**              |
+| [context](./data-store-json.presentationtableentry.context.md)                             |           | string\[\]                                                             | **_(BETA)_**              |
+| [credentials](./data-store-json.presentationtableentry.credentials.md)                     |           | [VerifiableCredential](./core-types.verifiablecredential.md)\[\]       | **_(BETA)_**              |
+| [expirationDate?](./data-store-json.presentationtableentry.expirationdate.md)              |           | Date                                                                   | **_(BETA)_** _(Optional)_ |
+| [hash](./data-store-json.presentationtableentry.hash.md)                                   |           | string                                                                 | **_(BETA)_**              |
+| [holder](./data-store-json.presentationtableentry.holder.md)                               |           | string                                                                 | **_(BETA)_**              |
+| [id?](./data-store-json.presentationtableentry.id.md)                                      |           | String                                                                 | **_(BETA)_** _(Optional)_ |
+| [issuanceDate?](./data-store-json.presentationtableentry.issuancedate.md)                  |           | Date                                                                   | **_(BETA)_** _(Optional)_ |
+| [parsedPresentation](./data-store-json.presentationtableentry.parsedpresentation.md)       |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)       | **_(BETA)_**              |
+| [type](./data-store-json.presentationtableentry.type.md)                                   |           | string\[\]                                                             | **_(BETA)_**              |
+| [verifier](./data-store-json.presentationtableentry.verifier.md)                           |           | string\[\]                                                             | **_(BETA)_**              |

@@ -8,7 +8,7 @@ hide_title: true
 
 ## ManagedPrivateKey.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: TKeyType

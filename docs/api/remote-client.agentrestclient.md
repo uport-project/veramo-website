@@ -14,13 +14,13 @@ The remote agent should be provided by [AgentRouter](./remote-server.agentrouter
 
 The schema of the remote agent is usually provided by [ApiSchemaRouter](./remote-server.apischemarouter.md).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AgentRestClient implements IAgentPlugin
 ```
 
-<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
+**Implements:** [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 
@@ -30,7 +30,7 @@ export declare class AgentRestClient implements IAgentPlugin
 
 ## Properties
 
-| Property                                              | Modifiers             | Type                                                     | Description       |
-| ----------------------------------------------------- | --------------------- | -------------------------------------------------------- | ----------------- |
-| [methods](./remote-client.agentrestclient.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core-types.ipluginmethodmap.md)     |                   |
-| [schema?](./remote-client.agentrestclient.schema.md)  | <code>readonly</code> | [IAgentPluginSchema](./core-types.iagentpluginschema.md) | <i>(Optional)</i> |
+| Property                                              | Modifiers             | Type                                                     | Description  |
+| ----------------------------------------------------- | --------------------- | -------------------------------------------------------- | ------------ |
+| [methods](./remote-client.agentrestclient.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core-types.ipluginmethodmap.md)     |              |
+| [schema?](./remote-client.agentrestclient.schema.md)  | <code>readonly</code> | [IAgentPluginSchema](./core-types.iagentpluginschema.md) | _(Optional)_ |

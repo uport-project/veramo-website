@@ -12,7 +12,7 @@ hide_title: true
 
 A list of issuer credentials that the target will use to establish trust
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentials?: string[];

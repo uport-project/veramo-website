@@ -12,7 +12,7 @@ Compute a shared secret with the public key of another party.
 
 This computes the raw shared secret (the result of a Diffie-Hellman computation) To use this for symmetric encryption you MUST apply a KDF on the result.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyManagerSharedSecret(args: IKeyManagerSharedSecretArgs): Promise<string>;
@@ -24,7 +24,7 @@ keyManagerSharedSecret(args: IKeyManagerSharedSecretArgs): Promise<string>;
 | --------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | args      | [IKeyManagerSharedSecretArgs](./core-types.ikeymanagersharedsecretargs.md) | The input to compute the shared secret, including the local key reference and remote key details. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

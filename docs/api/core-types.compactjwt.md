@@ -14,7 +14,7 @@ Represents a Json Web Token in compact form. "header.payload.signature"
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type CompactJWT = string

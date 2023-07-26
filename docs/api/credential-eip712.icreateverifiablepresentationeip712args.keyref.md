@@ -12,7 +12,7 @@ hide_title: true
 
 \[Optional\] The ID of the key that should sign this presentation. If this is not specified, the first matching key will be used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyRef?: string;

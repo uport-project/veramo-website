@@ -8,7 +8,7 @@ hide_title: true
 
 ## JwkDidImportOrGenerateKeyArgs type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type JwkDidImportOrGenerateKeyArgs = {

@@ -10,7 +10,7 @@ hide_title: true
 
 The URL path to the DID document, used by did:web when the identifier is a hostname.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didDocEndpoint = '/.well-known/did.json'

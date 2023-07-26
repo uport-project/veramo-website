@@ -12,7 +12,7 @@ hide_title: true
 
 Optional string domain parameter to add to the verifiable presentation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 domain?: string;

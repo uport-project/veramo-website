@@ -16,7 +16,7 @@ The signer of the Credential is chosen based on the `issuer.id` property of the 
 
 `@context`, 'type' and 'issuanceDate' will be added automatically if omitted
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credential: CredentialPayload

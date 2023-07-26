@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Array of message metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metaData?: IMetaData[] | null;

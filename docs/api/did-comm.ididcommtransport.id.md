@@ -12,7 +12,7 @@ hide_title: true
 
 Identifier of this transport that can be used in case the message thread supports reusing the transport connection.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 id: string

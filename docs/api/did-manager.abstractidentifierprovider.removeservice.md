@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractIdentifierProvider.removeService() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract removeService(args: {
@@ -25,6 +25,6 @@ abstract removeService(args: {
 | args      | { identifier: [IIdentifier](./core-types.iidentifier.md); id: string; options?: any; }           |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

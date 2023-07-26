@@ -12,7 +12,7 @@ hide_title: true
 
 Send presentation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 send: boolean

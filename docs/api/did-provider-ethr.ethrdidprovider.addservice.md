@@ -8,7 +8,7 @@ hide_title: true
 
 ## EthrDIDProvider.addService() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addService({ identifier, service, options, }: {
@@ -25,6 +25,6 @@ addService({ identifier, service, options, }: {
 | { identifier, service, options, } | { identifier: [IIdentifier](./core-types.iidentifier.md); service: [IService](./core-types.iservice.md); options?: TransactionOptions; } |             |
 | context                           | IRequiredContext                                                                                                                         |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;

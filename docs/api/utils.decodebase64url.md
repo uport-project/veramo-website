@@ -12,7 +12,7 @@ hide_title: true
 
 Decodes a base64url string to a utf8 string represented by the same bytes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function decodeBase64url(s: string): string
@@ -24,6 +24,6 @@ export declare function decodeBase64url(s: string): string
 | --------- | ------ | ----------------------------------------------------------------------------------------------------- |
 | s         | string | <p>the base64url string to be decoded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

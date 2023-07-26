@@ -12,7 +12,7 @@ hide_title: true
 
 Motive for requiring this credential.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 reason?: string;

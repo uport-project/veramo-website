@@ -12,18 +12,18 @@ hide_title: true
 
 Represents some properties of a [ManagedPrivateKey](./key-manager.managedprivatekey.md) that are stored in a TypeORM database when using a [PrivateKeyStore](./data-store.privatekeystore.md) to store private key data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PrivateKey extends BaseEntity
 ```
 
-<b>Extends:</b> BaseEntity
+**Extends:** BaseEntity
 
 ## Properties
 
-| Property                                                  | Modifiers | Type                                 | Description          |
-| --------------------------------------------------------- | --------- | ------------------------------------ | -------------------- |
-| [alias](./data-store.privatekey.alias.md)                 |           | string                               | <b><i>(BETA)</i></b> |
-| [privateKeyHex](./data-store.privatekey.privatekeyhex.md) |           | string                               | <b><i>(BETA)</i></b> |
-| [type](./data-store.privatekey.type.md)                   |           | [KeyType](./data-store.keytype_2.md) | <b><i>(BETA)</i></b> |
+| Property                                                  | Modifiers | Type                                 | Description  |
+| --------------------------------------------------------- | --------- | ------------------------------------ | ------------ |
+| [alias](./data-store.privatekey.alias.md)                 |           | string                               | **_(BETA)_** |
+| [privateKeyHex](./data-store.privatekey.privatekeyhex.md) |           | string                               | **_(BETA)_** |
+| [type](./data-store.privatekey.type.md)                   |           | [KeyType](./data-store.keytype_2.md) | **_(BETA)_** |

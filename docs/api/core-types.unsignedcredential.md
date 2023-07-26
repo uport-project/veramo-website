@@ -14,7 +14,7 @@ Represents an unsigned W3C Credential payload. See [VC data model](https://www.w
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UnsignedCredential
@@ -22,13 +22,13 @@ export interface UnsignedCredential
 
 ## Properties
 
-| Property                                                                  | Modifiers | Type                                                                   | Description                            |
-| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | -------------------------------------- |
-| ["@context"](./core-types.unsignedcredential.__context_.md)               |           | [ContextType](./core-types.contexttype.md)                             | <b><i>(BETA)</i></b>                   |
-| [credentialStatus?](./core-types.unsignedcredential.credentialstatus.md)  |           | [CredentialStatusReference](./core-types.credentialstatusreference.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentialSubject](./core-types.unsignedcredential.credentialsubject.md) |           | [CredentialSubject](./core-types.credentialsubject.md)                 | <b><i>(BETA)</i></b>                   |
-| [expirationDate?](./core-types.unsignedcredential.expirationdate.md)      |           | string                                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id?](./core-types.unsignedcredential.id.md)                              |           | string                                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate](./core-types.unsignedcredential.issuancedate.md)           |           | string                                                                 | <b><i>(BETA)</i></b>                   |
-| [issuer](./core-types.unsignedcredential.issuer.md)                       |           | [IssuerType](./core-types.issuertype.md)                               | <b><i>(BETA)</i></b>                   |
-| [type?](./core-types.unsignedcredential.type.md)                          |           | string\[\] &#124; string                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                                  | Modifiers | Type                                                                   | Description               |
+| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------------------- |
+| ["@context"](./core-types.unsignedcredential.__context_.md)               |           | [ContextType](./core-types.contexttype.md)                             | **_(BETA)_**              |
+| [credentialStatus?](./core-types.unsignedcredential.credentialstatus.md)  |           | [CredentialStatusReference](./core-types.credentialstatusreference.md) | **_(BETA)_** _(Optional)_ |
+| [credentialSubject](./core-types.unsignedcredential.credentialsubject.md) |           | [CredentialSubject](./core-types.credentialsubject.md)                 | **_(BETA)_**              |
+| [expirationDate?](./core-types.unsignedcredential.expirationdate.md)      |           | string                                                                 | **_(BETA)_** _(Optional)_ |
+| [id?](./core-types.unsignedcredential.id.md)                              |           | string                                                                 | **_(BETA)_** _(Optional)_ |
+| [issuanceDate](./core-types.unsignedcredential.issuancedate.md)           |           | string                                                                 | **_(BETA)_**              |
+| [issuer](./core-types.unsignedcredential.issuer.md)                       |           | [IssuerType](./core-types.issuertype.md)                               | **_(BETA)_**              |
+| [type?](./core-types.unsignedcredential.type.md)                          |           | string\[\] &#124; string                                               | **_(BETA)_** _(Optional)_ |

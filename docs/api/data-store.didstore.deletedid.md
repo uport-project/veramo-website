@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDStore.deleteDID() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteDID({ did }: {
@@ -22,6 +22,6 @@ deleteDID({ did }: {
 | --------- | ---------------- | ----------- |
 | { did }   | { did: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

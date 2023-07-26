@@ -12,7 +12,7 @@ hide_title: true
 
 Recipient key object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 to: Omit<IKey, 'kms'>

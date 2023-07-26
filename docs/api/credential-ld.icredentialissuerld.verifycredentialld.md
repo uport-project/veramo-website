@@ -12,7 +12,7 @@ hide_title: true
 
 Verifies a Verifiable Credential JWT or LDS Format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyCredentialLD(args: IVerifyCredentialLDArgs, context: IRequiredContext): Promise<boolean>;
@@ -25,7 +25,7 @@ verifyCredentialLD(args: IVerifyCredentialLDArgs, context: IRequiredContext): Pr
 | args      | [IVerifyCredentialLDArgs](./credential-ld.iverifycredentialldargs.md) | Arguments necessary to verify a VerifiableCredential                                         |
 | context   | [IRequiredContext](./credential-ld.irequiredcontext.md)               | This reserved param is automatically added and handled by the framework, \*do not override\* |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

@@ -14,7 +14,7 @@ Used as input when creating Verifiable Presentations
 
 This API may change without prior notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface PresentationPayload
@@ -22,13 +22,13 @@ export interface PresentationPayload
 
 ## Properties
 
-| Property                                                                          | Modifiers | Type                                                                   | Description                            |
-| --------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | -------------------------------------- |
-| ["@context"?](./core-types.presentationpayload.__context_.md)                     |           | [ContextType](./core-types.contexttype.md)                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [expirationDate?](./core-types.presentationpayload.expirationdate.md)             |           | [DateType](./core-types.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [holder](./core-types.presentationpayload.holder.md)                              |           | string                                                                 | <b><i>(BETA)</i></b>                   |
-| [id?](./core-types.presentationpayload.id.md)                                     |           | string                                                                 | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [issuanceDate?](./core-types.presentationpayload.issuancedate.md)                 |           | [DateType](./core-types.datetype.md)                                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type?](./core-types.presentationpayload.type.md)                                 |           | string\[\]                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [verifiableCredential?](./core-types.presentationpayload.verifiablecredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\] | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [verifier?](./core-types.presentationpayload.verifier.md)                         |           | string\[\]                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                                          | Modifiers | Type                                                                   | Description               |
+| --------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------------------- |
+| ["@context"?](./core-types.presentationpayload.__context_.md)                     |           | [ContextType](./core-types.contexttype.md)                             | **_(BETA)_** _(Optional)_ |
+| [expirationDate?](./core-types.presentationpayload.expirationdate.md)             |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
+| [holder](./core-types.presentationpayload.holder.md)                              |           | string                                                                 | **_(BETA)_**              |
+| [id?](./core-types.presentationpayload.id.md)                                     |           | string                                                                 | **_(BETA)_** _(Optional)_ |
+| [issuanceDate?](./core-types.presentationpayload.issuancedate.md)                 |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
+| [type?](./core-types.presentationpayload.type.md)                                 |           | string\[\]                                                             | **_(BETA)_** _(Optional)_ |
+| [verifiableCredential?](./core-types.presentationpayload.verifiablecredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\] | **_(BETA)_** _(Optional)_ |
+| [verifier?](./core-types.presentationpayload.verifier.md)                         |           | string\[\]                                                             | **_(BETA)_** _(Optional)_ |

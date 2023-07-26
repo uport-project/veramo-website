@@ -8,12 +8,12 @@ hide_title: true
 
 ## MemoryPrivateKeyStore.listKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 listKeys(): Promise<Array<ManagedPrivateKey>>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;&gt;

@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractDidDiscoveryProvider.discoverDid() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Promise<IDIDDiscoveryProviderResult>;
@@ -21,6 +21,6 @@ abstract discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<
 | args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md) |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;any&gt;                       |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)&gt;

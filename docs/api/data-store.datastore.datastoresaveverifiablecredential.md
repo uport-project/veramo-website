@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreSaveVerifiableCredential(args: IDataStoreSaveVerifiableCredentialArgs): Promise<string>;
@@ -22,6 +22,6 @@ dataStoreSaveVerifiableCredential(args: IDataStoreSaveVerifiableCredentialArgs):
 | --------- | ------------------------------------------------------------------------------------------------ | ----------- |
 | args      | [IDataStoreSaveVerifiableCredentialArgs](./core-types.idatastoresaveverifiablecredentialargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

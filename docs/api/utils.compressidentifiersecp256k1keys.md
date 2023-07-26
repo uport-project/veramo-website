@@ -12,7 +12,7 @@ hide_title: true
 
 Converts any Secp256k1 public keys of an [IIdentifier](./core-types.iidentifier.md) to their compressed form.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function compressIdentifierSecp256k1Keys(identifier: IIdentifier): IKey[]
@@ -24,7 +24,7 @@ export declare function compressIdentifierSecp256k1Keys(identifier: IIdentifier)
 | ---------- | ------------------------------------------ | ------------------------ |
 | identifier | [IIdentifier](./core-types.iidentifier.md) | the identifier with keys |
 
-<b>Returns:</b>
+**Returns:**
 
 [IKey](./core-types.ikey.md)\[\]
 

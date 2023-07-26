@@ -10,7 +10,7 @@ hide_title: true
 
 Configured agent
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 agent: TAgent<T>

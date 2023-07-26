@@ -12,7 +12,7 @@ Creates a router for handling incoming messages.
 
 Messages posted to this router get sent to the `handleMessage` method of the associated agent where this is used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MessagingRouter: (options: MessagingRouterOptions) => Router

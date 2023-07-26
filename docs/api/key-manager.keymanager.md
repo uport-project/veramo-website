@@ -14,13 +14,13 @@ This plugin orchestrates various implementations of [AbstractKeyManagementSystem
 
 The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class KeyManager implements IAgentPlugin
 ```
 
-<b>Implements:</b> [IAgentPlugin](./core-types.iagentplugin.md)
+**Implements:** [IAgentPlugin](./core-types.iagentplugin.md)
 
 ## Constructors
 

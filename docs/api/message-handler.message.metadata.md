@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.metaData property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metaData?: IMetaData[];

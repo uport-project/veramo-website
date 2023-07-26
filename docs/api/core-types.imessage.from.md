@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Sender DID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 from?: string;

@@ -12,7 +12,7 @@ hide_title: true
 
 Optional. Name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name?: string;

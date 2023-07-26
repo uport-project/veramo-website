@@ -12,7 +12,7 @@ hide_title: true
 
 policy to skip the revocation check (credentialStatus) when set to `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentialStatus?: boolean;

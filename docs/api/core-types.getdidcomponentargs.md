@@ -12,7 +12,7 @@ hide_title: true
 
 Input arguments for [getDIDComponentById](./core-types.iresolver.getdidcomponentbyid.md) This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface GetDIDComponentArgs
@@ -20,8 +20,8 @@ export interface GetDIDComponentArgs
 
 ## Properties
 
-| Property                                                       | Modifiers | Type                                                     | Description                                                                                                                                                                               |
-| -------------------------------------------------------------- | --------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [didDocument](./core-types.getdidcomponentargs.diddocument.md) |           | DIDDocument                                              | <b><i>(BETA)</i></b> the DID document from which to extract the fragment. This MUST be the document resolved by [IResolver.resolveDid()](./core-types.iresolver.resolvedid.md)            |
-| [didUrl](./core-types.getdidcomponentargs.didurl.md)           |           | string                                                   | <p><b><i>(BETA)</i></b> The DID URI that needs to be dereferenced. This should refer to the subsection by \#fragment.</p><p>Example: did:example:identifier\#controller</p>               |
-| [section?](./core-types.getdidcomponentargs.section.md)        |           | [DIDDocumentSection](./core-types.diddocumentsection.md) | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. The section of the DID document where to search for the fragment. Example 'keyAgreement', or 'assertionMethod', or 'authentication', etc |
+| Property                                                       | Modifiers | Type                                                     | Description                                                                                                                                                                  |
+| -------------------------------------------------------------- | --------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [didDocument](./core-types.getdidcomponentargs.diddocument.md) |           | DIDDocument                                              | **_(BETA)_** the DID document from which to extract the fragment. This MUST be the document resolved by [IResolver.resolveDid()](./core-types.iresolver.resolvedid.md)       |
+| [didUrl](./core-types.getdidcomponentargs.didurl.md)           |           | string                                                   | <p>**_(BETA)_** The DID URI that needs to be dereferenced. This should refer to the subsection by \#fragment.</p><p>Example: did:example:identifier\#controller</p>          |
+| [section?](./core-types.getdidcomponentargs.section.md)        |           | [DIDDocumentSection](./core-types.diddocumentsection.md) | **_(BETA)_** _(Optional)_ Optional. The section of the DID document where to search for the fragment. Example 'keyAgreement', or 'assertionMethod', or 'authentication', etc |

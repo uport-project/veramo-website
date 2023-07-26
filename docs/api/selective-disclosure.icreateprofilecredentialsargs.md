@@ -14,7 +14,7 @@ Profile data
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICreateProfileCredentialsArgs
@@ -22,12 +22,12 @@ export interface ICreateProfileCredentialsArgs
 
 ## Properties
 
-| Property                                                                      | Modifiers | Type    | Description                                                   |
-| ----------------------------------------------------------------------------- | --------- | ------- | ------------------------------------------------------------- |
-| [holder](./selective-disclosure.icreateprofilecredentialsargs.holder.md)      |           | string  | <b><i>(BETA)</i></b> Holder DID                               |
-| [name?](./selective-disclosure.icreateprofilecredentialsargs.name.md)         |           | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. Name         |
-| [picture?](./selective-disclosure.icreateprofilecredentialsargs.picture.md)   |           | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. Picture URL  |
-| [save](./selective-disclosure.icreateprofilecredentialsargs.save.md)          |           | boolean | <b><i>(BETA)</i></b> Save presentation                        |
-| [send](./selective-disclosure.icreateprofilecredentialsargs.send.md)          |           | boolean | <b><i>(BETA)</i></b> Send presentation                        |
-| [url?](./selective-disclosure.icreateprofilecredentialsargs.url.md)           |           | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. URL          |
-| [verifier?](./selective-disclosure.icreateprofilecredentialsargs.verifier.md) |           | string  | <b><i>(BETA)</i></b> <i>(Optional)</i> Optional. Verifier DID |
+| Property                                                                      | Modifiers | Type    | Description                                      |
+| ----------------------------------------------------------------------------- | --------- | ------- | ------------------------------------------------ |
+| [holder](./selective-disclosure.icreateprofilecredentialsargs.holder.md)      |           | string  | **_(BETA)_** Holder DID                          |
+| [name?](./selective-disclosure.icreateprofilecredentialsargs.name.md)         |           | string  | **_(BETA)_** _(Optional)_ Optional. Name         |
+| [picture?](./selective-disclosure.icreateprofilecredentialsargs.picture.md)   |           | string  | **_(BETA)_** _(Optional)_ Optional. Picture URL  |
+| [save](./selective-disclosure.icreateprofilecredentialsargs.save.md)          |           | boolean | **_(BETA)_** Save presentation                   |
+| [send](./selective-disclosure.icreateprofilecredentialsargs.send.md)          |           | boolean | **_(BETA)_** Send presentation                   |
+| [url?](./selective-disclosure.icreateprofilecredentialsargs.url.md)           |           | string  | **_(BETA)_** _(Optional)_ Optional. URL          |
+| [verifier?](./selective-disclosure.icreateprofilecredentialsargs.verifier.md) |           | string  | **_(BETA)_** _(Optional)_ Optional. Verifier DID |

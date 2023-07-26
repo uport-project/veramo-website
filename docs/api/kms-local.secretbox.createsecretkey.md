@@ -8,12 +8,12 @@ hide_title: true
 
 ## SecretBox.createSecretKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createSecretKey(): Promise<string>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

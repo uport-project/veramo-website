@@ -16,7 +16,7 @@ This metadata is most often used by [MessageHandler](./message-handler.messageha
 
 - This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MetaData
@@ -24,7 +24,7 @@ export interface MetaData
 
 ## Properties
 
-| Property                                 | Modifiers | Type   | Description                            |
-| ---------------------------------------- | --------- | ------ | -------------------------------------- |
-| [type](./data-store.metadata.type.md)    |           | string | <b><i>(BETA)</i></b>                   |
-| [value?](./data-store.metadata.value.md) |           | string | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                 | Modifiers | Type   | Description               |
+| ---------------------------------------- | --------- | ------ | ------------------------- |
+| [type](./data-store.metadata.type.md)    |           | string | **_(BETA)_**              |
+| [value?](./data-store.metadata.value.md) |           | string | **_(BETA)_** _(Optional)_ |

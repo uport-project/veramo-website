@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageAttachment.lastmod_time property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 lastmod_time?: string;

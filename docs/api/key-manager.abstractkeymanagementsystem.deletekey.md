@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractKeyManagementSystem.deleteKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract deleteKey(args: {
@@ -22,6 +22,6 @@ abstract deleteKey(args: {
 | --------- | ---------------- | ----------- |
 | args      | { kid: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

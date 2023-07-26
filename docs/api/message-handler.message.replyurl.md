@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.replyUrl property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 replyUrl?: string;

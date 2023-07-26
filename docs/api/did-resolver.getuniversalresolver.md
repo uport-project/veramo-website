@@ -10,7 +10,7 @@ hide_title: true
 
 Creates a DIDResolver instance that can be used with `did-resolver`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getUniversalResolver(url?: string): DIDResolver
@@ -18,11 +18,11 @@ export declare function getUniversalResolver(url?: string): DIDResolver
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                 |
-| --------- | ------ | ------------------------------------------------------------------------------------------- |
-| url       | string | <i>(Optional)</i> the URL for the universal resolver instance (See https://uniresolver.io ) |
+| Parameter | Type   | Description                                                                            |
+| --------- | ------ | -------------------------------------------------------------------------------------- |
+| url       | string | _(Optional)_ the URL for the universal resolver instance (See https://uniresolver.io ) |
 
-<b>Returns:</b>
+**Returns:**
 
 DIDResolver
 

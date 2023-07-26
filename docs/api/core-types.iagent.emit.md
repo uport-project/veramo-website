@@ -8,7 +8,7 @@ hide_title: true
 
 ## IAgent.emit property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emit: (eventType: string, data: any) => Promise<void>

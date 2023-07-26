@@ -8,7 +8,7 @@ hide_title: true
 
 ## BrowserLocalStorageStore.claims property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 claims: Record<string, ClaimTableEntry>

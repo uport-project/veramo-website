@@ -10,13 +10,13 @@ hide_title: true
 
 The interface definition for a plugin that can generate Verifiable Credentials and Presentations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICredentialIssuer extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Remarks
 

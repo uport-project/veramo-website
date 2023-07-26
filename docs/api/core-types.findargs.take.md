@@ -12,7 +12,7 @@ hide_title: true
 
 Returns at most this number of results from a [IDataStoreORM](./core-types.idatastoreorm.md) query.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 take?: number;

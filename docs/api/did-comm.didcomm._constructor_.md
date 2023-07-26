@@ -12,7 +12,7 @@ hide_title: true
 
 Constructor that takes a list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(transports?: IDIDCommTransport[]);
@@ -20,6 +20,6 @@ constructor(transports?: IDIDCommTransport[]);
 
 ## Parameters
 
-| Parameter  | Type                                                     | Description                                                                                                                                                      |
-| ---------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| transports | [IDIDCommTransport](./did-comm.ididcommtransport.md)\[\] | <i>(Optional)</i> A list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects. Defaults to [DIDCommHttpTransport](./did-comm.didcommhttptransport.md) |
+| Parameter  | Type                                                     | Description                                                                                                                                                 |
+| ---------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| transports | [IDIDCommTransport](./did-comm.ididcommtransport.md)\[\] | _(Optional)_ A list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects. Defaults to [DIDCommHttpTransport](./did-comm.didcommhttptransport.md) |

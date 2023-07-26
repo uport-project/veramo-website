@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Value
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value?: string;

@@ -10,7 +10,7 @@ hide_title: true
 
 DID URL
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didUrl: string

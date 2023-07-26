@@ -10,10 +10,10 @@ hide_title: true
 
 Represents a signed Verifiable Presentation (includes proof) in either JSON or compact JWT format. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type W3CVerifiablePresentation = VerifiablePresentation | CompactJWT
 ```
 
-<b>References:</b> [VerifiablePresentation](./core-types.verifiablepresentation.md), [CompactJWT](./core-types.compactjwt.md)
+**References:** [VerifiablePresentation](./core-types.verifiablepresentation.md), [CompactJWT](./core-types.compactjwt.md)

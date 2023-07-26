@@ -8,7 +8,7 @@ hide_title: true
 
 ## getDidIonResolver() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getDidIonResolver(): {
@@ -16,6 +16,6 @@ export declare function getDidIonResolver(): {
 }
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 { ion: DIDResolver; }

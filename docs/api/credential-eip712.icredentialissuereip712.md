@@ -12,13 +12,13 @@ hide_title: true
 
 The interface definition for a plugin that can issue and verify Verifiable Credentials and Presentations that use EIP712 proof format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICredentialIssuerEIP712 extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Remarks
 
@@ -28,9 +28,9 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Methods
 
-| Method                                                                                                                                 | Description                                                                                                                               |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| [createVerifiableCredentialEIP712(args, context)](./credential-eip712.icredentialissuereip712.createverifiablecredentialeip712.md)     | <b><i>(BETA)</i></b> Creates a Verifiable Credential. The payload, signer and format are chosen based on the <code>args</code> parameter. |
-| [createVerifiablePresentationEIP712(args, context)](./credential-eip712.icredentialissuereip712.createverifiablepresentationeip712.md) | <b><i>(BETA)</i></b> Creates a Verifiable Presentation. The payload and signer are chosen based on the <code>args</code> parameter.       |
-| [verifyCredentialEIP712(args, context)](./credential-eip712.icredentialissuereip712.verifycredentialeip712.md)                         | <b><i>(BETA)</i></b> Verifies a Verifiable Credential in EIP712 Format.                                                                   |
-| [verifyPresentationEIP712(args, context)](./credential-eip712.icredentialissuereip712.verifypresentationeip712.md)                     | <b><i>(BETA)</i></b> Verifies a Verifiable Presentation EIP712 Format.                                                                    |
+| Method                                                                                                                                 | Description                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [createVerifiableCredentialEIP712(args, context)](./credential-eip712.icredentialissuereip712.createverifiablecredentialeip712.md)     | **_(BETA)_** Creates a Verifiable Credential. The payload, signer and format are chosen based on the <code>args</code> parameter. |
+| [createVerifiablePresentationEIP712(args, context)](./credential-eip712.icredentialissuereip712.createverifiablepresentationeip712.md) | **_(BETA)_** Creates a Verifiable Presentation. The payload and signer are chosen based on the <code>args</code> parameter.       |
+| [verifyCredentialEIP712(args, context)](./credential-eip712.icredentialissuereip712.verifycredentialeip712.md)                         | **_(BETA)_** Verifies a Verifiable Credential in EIP712 Format.                                                                   |
+| [verifyPresentationEIP712(args, context)](./credential-eip712.icredentialissuereip712.verifypresentationeip712.md)                     | **_(BETA)_** Verifies a Verifiable Presentation EIP712 Format.                                                                    |

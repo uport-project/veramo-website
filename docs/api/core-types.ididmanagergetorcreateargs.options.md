@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Identifier provider specific options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 options?: object;

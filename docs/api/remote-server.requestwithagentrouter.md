@@ -12,7 +12,7 @@ Creates an expressjs router that adds a Veramo agent to the request object.
 
 This is needed by all other routers provided by this package to be able to perform their functions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RequestWithAgentRouter: (options: RequestWithAgentRouterOptions) => Router

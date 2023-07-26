@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createSelectiveDisclosureRequest(args: ICreateSelectiveDisclosureRequestArgs, context: IAgentContext<IDIDManager & IKeyManager>): Promise<string>;
@@ -23,6 +23,6 @@ createSelectiveDisclosureRequest(args: ICreateSelectiveDisclosureRequestArgs, co
 | args      | [ICreateSelectiveDisclosureRequestArgs](./selective-disclosure.icreateselectivedisclosurerequestargs.md)                                          |             |
 | context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md)&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

@@ -8,7 +8,7 @@ hide_title: true
 
 ## Message.data property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 data?: any;

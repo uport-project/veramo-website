@@ -18,25 +18,25 @@ If an [AbstractSecretBox](./key-manager.abstractsecretbox.md) is used, then key 
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PrivateKeyStoreJson extends AbstractPrivateKeyStore
 ```
 
-<b>Extends:</b> [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
+**Extends:** [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
 
 ## Constructors
 
-| Constructor                                                                                   | Modifiers | Description                                                                                  |
-| --------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------- |
-| [(constructor)(jsonStore, secretBox)](./data-store-json.privatekeystorejson._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>PrivateKeyStoreJson</code> class |
+| Constructor                                                                                   | Modifiers | Description                                                                          |
+| --------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ |
+| [(constructor)(jsonStore, secretBox)](./data-store-json.privatekeystorejson._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>PrivateKeyStoreJson</code> class |
 
 ## Methods
 
-| Method                                                                     | Modifiers | Description          |
-| -------------------------------------------------------------------------- | --------- | -------------------- |
-| [deleteKey({ alias })](./data-store-json.privatekeystorejson.deletekey.md) |           | <b><i>(BETA)</i></b> |
-| [getKey({ alias })](./data-store-json.privatekeystorejson.getkey.md)       |           | <b><i>(BETA)</i></b> |
-| [importKey(args)](./data-store-json.privatekeystorejson.importkey.md)      |           | <b><i>(BETA)</i></b> |
-| [listKeys()](./data-store-json.privatekeystorejson.listkeys.md)            |           | <b><i>(BETA)</i></b> |
+| Method                                                                     | Modifiers | Description  |
+| -------------------------------------------------------------------------- | --------- | ------------ |
+| [deleteKey({ alias })](./data-store-json.privatekeystorejson.deletekey.md) |           | **_(BETA)_** |
+| [getKey({ alias })](./data-store-json.privatekeystorejson.getkey.md)       |           | **_(BETA)_** |
+| [importKey(args)](./data-store-json.privatekeystorejson.importkey.md)      |           | **_(BETA)_** |
+| [listKeys()](./data-store-json.privatekeystorejson.listkeys.md)            |           | **_(BETA)_** |

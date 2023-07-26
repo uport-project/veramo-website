@@ -10,7 +10,7 @@ hide_title: true
 
 Required. VerifiablePresentation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifiablePresentation: VerifiablePresentation

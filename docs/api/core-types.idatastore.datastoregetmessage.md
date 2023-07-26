@@ -10,7 +10,7 @@ hide_title: true
 
 Gets message from the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreGetMessage(args: IDataStoreGetMessageArgs): Promise<IMessage>;
@@ -22,7 +22,7 @@ dataStoreGetMessage(args: IDataStoreGetMessageArgs): Promise<IMessage>;
 | --------- | -------------------------------------------------------------------- | ----------------------------- |
 | args      | [IDataStoreGetMessageArgs](./core-types.idatastoregetmessageargs.md) | arguments for getting message |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IMessage](./core-types.imessage.md)&gt;
 

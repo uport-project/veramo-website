@@ -12,13 +12,13 @@ hide_title: true
 
 The credentials that make up a response of a Selective Disclosure
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICredentialsForSdr extends ICredentialRequestInput
 ```
 
-<b>Extends:</b> [ICredentialRequestInput](./selective-disclosure.icredentialrequestinput.md)
+**Extends:** [ICredentialRequestInput](./selective-disclosure.icredentialrequestinput.md)
 
 ## Remarks
 
@@ -28,6 +28,6 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                | Modifiers | Type                                                                         | Description          |
-| ----------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- | -------------------- |
-| [credentials](./selective-disclosure.icredentialsforsdr.credentials.md) |           | [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)\[\] | <b><i>(BETA)</i></b> |
+| Property                                                                | Modifiers | Type                                                                         | Description  |
+| ----------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- | ------------ |
+| [credentials](./selective-disclosure.icredentialsforsdr.credentials.md) |           | [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)\[\] | **_(BETA)_** |

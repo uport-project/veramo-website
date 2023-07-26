@@ -10,7 +10,7 @@ hide_title: true
 
 DID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 did: string

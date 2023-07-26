@@ -10,13 +10,13 @@ hide_title: true
 
 Message handler plugin interface.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IMessageHandler extends IPluginMethodMap
 ```
 
-<b>Extends:</b> [IPluginMethodMap](./core-types.ipluginmethodmap.md)
+**Extends:** [IPluginMethodMap](./core-types.ipluginmethodmap.md)
 
 ## Methods
 

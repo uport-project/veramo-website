@@ -10,7 +10,7 @@ hide_title: true
 
 Optional (only JWT) string challenge parameter to add to the verifiable presentation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 challenge?: string;

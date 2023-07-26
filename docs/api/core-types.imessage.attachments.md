@@ -10,7 +10,7 @@ hide_title: true
 
 Optional. Array of generic attachments
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 attachments?: IMessageAttachment[];

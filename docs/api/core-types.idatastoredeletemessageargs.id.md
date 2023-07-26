@@ -10,7 +10,7 @@ hide_title: true
 
 Required. Message ID
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 id: string

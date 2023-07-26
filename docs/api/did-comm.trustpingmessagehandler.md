@@ -12,22 +12,22 @@ hide_title: true
 
 A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Trust Ping messages. This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TrustPingMessageHandler extends AbstractMessageHandler
 ```
 
-<b>Extends:</b> [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+**Extends:** [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
 
 ## Constructors
 
-| Constructor                                                            | Modifiers | Description                                                                                      |
-| ---------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------ |
-| [(constructor)()](./did-comm.trustpingmessagehandler._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>TrustPingMessageHandler</code> class |
+| Constructor                                                            | Modifiers | Description                                                                              |
+| ---------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------- |
+| [(constructor)()](./did-comm.trustpingmessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>TrustPingMessageHandler</code> class |
 
 ## Methods
 
-| Method                                                                   | Modifiers | Description                                                                                                                   |
-| ------------------------------------------------------------------------ | --------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [handle(message, context)](./did-comm.trustpingmessagehandler.handle.md) |           | <b><i>(BETA)</i></b> Handles a Trust Ping Message https://identity.foundation/didcomm-messaging/spec/\#trust-ping-protocol-10 |
+| Method                                                                   | Modifiers | Description                                                                                                           |
+| ------------------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------------------------------------------- |
+| [handle(message, context)](./did-comm.trustpingmessagehandler.handle.md) |           | **_(BETA)_** Handles a Trust Ping Message https://identity.foundation/didcomm-messaging/spec/\#trust-ping-protocol-10 |

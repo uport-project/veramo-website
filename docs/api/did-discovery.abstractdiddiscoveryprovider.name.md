@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractDidDiscoveryProvider.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract name: string;

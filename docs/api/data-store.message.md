@@ -12,39 +12,39 @@ hide_title: true
 
 Represents some common properties of an [IMessage](./core-types.imessage.md) that are stored in a TypeORM database for querying.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Message extends BaseEntity
 ```
 
-<b>Extends:</b> BaseEntity
+**Extends:** BaseEntity
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                                             | Description                            |
-| ------------------------------------------------------ | --------- | ---------------------------------------------------------------- | -------------------------------------- |
-| [createdAt?](./data-store.message.createdat.md)        |           | Date                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [credentials](./data-store.message.credentials.md)     |           | Relation&lt;[Credential](./data-store.credential_2.md)\[\]&gt;   | <b><i>(BETA)</i></b>                   |
-| [data?](./data-store.message.data.md)                  |           | object &#124; null                                               | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [expiresAt?](./data-store.message.expiresat.md)        |           | Date                                                             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [from?](./data-store.message.from.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [id](./data-store.message.id.md)                       |           | string                                                           | <b><i>(BETA)</i></b>                   |
-| [metaData?](./data-store.message.metadata.md)          |           | [MetaData](./data-store.metadata.md)\[\] &#124; null             | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [presentations](./data-store.message.presentations.md) |           | Relation&lt;[Presentation](./data-store.presentation.md)\[\]&gt; | <b><i>(BETA)</i></b>                   |
-| [raw?](./data-store.message.raw.md)                    |           | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [replyTo?](./data-store.message.replyto.md)            |           | string\[\]                                                       | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [replyUrl?](./data-store.message.replyurl.md)          |           | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [saveDate](./data-store.message.savedate.md)           |           | Date                                                             | <b><i>(BETA)</i></b>                   |
-| [threadId?](./data-store.message.threadid.md)          |           | string                                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [to?](./data-store.message.to.md)                      |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [type](./data-store.message.type.md)                   |           | string                                                           | <b><i>(BETA)</i></b>                   |
-| [updateDate](./data-store.message.updatedate.md)       |           | Date                                                             | <b><i>(BETA)</i></b>                   |
+| Property                                               | Modifiers | Type                                                             | Description               |
+| ------------------------------------------------------ | --------- | ---------------------------------------------------------------- | ------------------------- |
+| [createdAt?](./data-store.message.createdat.md)        |           | Date                                                             | **_(BETA)_** _(Optional)_ |
+| [credentials](./data-store.message.credentials.md)     |           | Relation&lt;[Credential](./data-store.credential_2.md)\[\]&gt;   | **_(BETA)_**              |
+| [data?](./data-store.message.data.md)                  |           | object &#124; null                                               | **_(BETA)_** _(Optional)_ |
+| [expiresAt?](./data-store.message.expiresat.md)        |           | Date                                                             | **_(BETA)_** _(Optional)_ |
+| [from?](./data-store.message.from.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | **_(BETA)_** _(Optional)_ |
+| [id](./data-store.message.id.md)                       |           | string                                                           | **_(BETA)_**              |
+| [metaData?](./data-store.message.metadata.md)          |           | [MetaData](./data-store.metadata.md)\[\] &#124; null             | **_(BETA)_** _(Optional)_ |
+| [presentations](./data-store.message.presentations.md) |           | Relation&lt;[Presentation](./data-store.presentation.md)\[\]&gt; | **_(BETA)_**              |
+| [raw?](./data-store.message.raw.md)                    |           | string                                                           | **_(BETA)_** _(Optional)_ |
+| [replyTo?](./data-store.message.replyto.md)            |           | string\[\]                                                       | **_(BETA)_** _(Optional)_ |
+| [replyUrl?](./data-store.message.replyurl.md)          |           | string                                                           | **_(BETA)_** _(Optional)_ |
+| [saveDate](./data-store.message.savedate.md)           |           | Date                                                             | **_(BETA)_**              |
+| [threadId?](./data-store.message.threadid.md)          |           | string                                                           | **_(BETA)_** _(Optional)_ |
+| [to?](./data-store.message.to.md)                      |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | **_(BETA)_** _(Optional)_ |
+| [type](./data-store.message.type.md)                   |           | string                                                           | **_(BETA)_**              |
+| [updateDate](./data-store.message.updatedate.md)       |           | Date                                                             | **_(BETA)_**              |
 
 ## Methods
 
-| Method                                                   | Modifiers | Description          |
-| -------------------------------------------------------- | --------- | -------------------- |
-| [setId()](./data-store.message.setid.md)                 |           | <b><i>(BETA)</i></b> |
-| [setSaveDate()](./data-store.message.setsavedate.md)     |           | <b><i>(BETA)</i></b> |
-| [setUpdateDate()](./data-store.message.setupdatedate.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                   | Modifiers | Description  |
+| -------------------------------------------------------- | --------- | ------------ |
+| [setId()](./data-store.message.setid.md)                 |           | **_(BETA)_** |
+| [setSaveDate()](./data-store.message.setsavedate.md)     |           | **_(BETA)_** |
+| [setUpdateDate()](./data-store.message.setupdatedate.md) |           | **_(BETA)_** |

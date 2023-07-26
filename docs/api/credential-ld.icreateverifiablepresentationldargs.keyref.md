@@ -12,7 +12,7 @@ hide_title: true
 
 Optional. The key handle ([IKey.kid](./core-types.ikey.kid.md)) from the internal database.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyRef?: string;

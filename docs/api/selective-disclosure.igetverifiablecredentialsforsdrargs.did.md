@@ -12,7 +12,7 @@ hide_title: true
 
 The DID of the subject
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 did?: string;

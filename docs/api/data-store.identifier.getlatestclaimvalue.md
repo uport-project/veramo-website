@@ -19,7 +19,7 @@ Example:
 const name = await identifier.getLatestClaimValue({ type: 'name' })
 ```
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getLatestClaimValue(dbConnection: Promise<Connection>, where: any): Promise<string | null | undefined>;
@@ -32,6 +32,6 @@ getLatestClaimValue(dbConnection: Promise<Connection>, where: any): Promise<stri
 | dbConnection | Promise&lt;Connection&gt; |                                               |
 | where        | any                       | The TypeORM <code>where</code> filter to use. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string \| null \| undefined&gt;

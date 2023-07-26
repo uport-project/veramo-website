@@ -14,7 +14,7 @@ Metadata resulting from unpacking a DIDComm v2 message.
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDIDCommMessageMetaData
@@ -22,6 +22,6 @@ export interface IDIDCommMessageMetaData
 
 ## Properties
 
-| Property                                                 | Modifiers | Type                                                         | Description          |
-| -------------------------------------------------------- | --------- | ------------------------------------------------------------ | -------------------- |
-| [packing](./did-comm.ididcommmessagemetadata.packing.md) |           | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | <b><i>(BETA)</i></b> |
+| Property                                                 | Modifiers | Type                                                         | Description  |
+| -------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------ |
+| [packing](./did-comm.ididcommmessagemetadata.packing.md) |           | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | **_(BETA)_** |

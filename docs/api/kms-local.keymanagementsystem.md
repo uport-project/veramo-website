@@ -12,13 +12,13 @@ This is an implementation of [AbstractKeyManagementSystem](./key-manager.abstrac
 
 The key material is used to provide local implementations of various cryptographic algorithms.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class KeyManagementSystem extends AbstractKeyManagementSystem
 ```
 
-<b>Extends:</b> [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md)
+**Extends:** [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md)
 
 ## Constructors
 

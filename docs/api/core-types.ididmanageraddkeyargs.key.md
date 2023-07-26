@@ -10,7 +10,7 @@ hide_title: true
 
 Key object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 key: IKey

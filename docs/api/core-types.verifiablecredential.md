@@ -14,7 +14,7 @@ Represents a signed Verifiable Credential payload (includes proof), using a JSON
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type VerifiableCredential = UnsignedCredential & {
@@ -22,4 +22,4 @@ export type VerifiableCredential = UnsignedCredential & {
 }
 ```
 
-<b>References:</b> [UnsignedCredential](./core-types.unsignedcredential.md), [ProofType](./core-types.prooftype.md)
+**References:** [UnsignedCredential](./core-types.unsignedcredential.md), [ProofType](./core-types.prooftype.md)

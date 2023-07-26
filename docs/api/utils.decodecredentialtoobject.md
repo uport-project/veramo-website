@@ -12,7 +12,7 @@ hide_title: true
 
 Parses a [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) and converts it to a [VerifiableCredential](./core-types.verifiablecredential.md) so it is easier to use programmatically.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function decodeCredentialToObject(input: W3CVerifiableCredential): VerifiableCredential
@@ -24,6 +24,6 @@ export declare function decodeCredentialToObject(input: W3CVerifiableCredential)
 | --------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
 | input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) | the raw credential to be transformed This API may change without a BREAKING CHANGE notice. |
 
-<b>Returns:</b>
+**Returns:**
 
 [VerifiableCredential](./core-types.verifiablecredential.md)

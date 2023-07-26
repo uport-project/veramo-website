@@ -10,12 +10,12 @@ hide_title: true
 
 Returns a list of available identifier providers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 didManagerGetProviders(): Promise<Array<string>>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Array&lt;string&gt;&gt;

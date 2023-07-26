@@ -14,19 +14,19 @@ An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that 
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MemoryDIDStore extends AbstractDIDStore
 ```
 
-<b>Extends:</b> [AbstractDIDStore](./did-manager.abstractdidstore.md)
+**Extends:** [AbstractDIDStore](./did-manager.abstractdidstore.md)
 
 ## Methods
 
-| Method                                                                      | Modifiers | Description          |
-| --------------------------------------------------------------------------- | --------- | -------------------- |
-| [deleteDID({ did })](./did-manager.memorydidstore.deletedid.md)             |           | <b><i>(BETA)</i></b> |
-| [getDID({ did, alias, provider, })](./did-manager.memorydidstore.getdid.md) |           | <b><i>(BETA)</i></b> |
-| [importDID(args)](./did-manager.memorydidstore.importdid.md)                |           | <b><i>(BETA)</i></b> |
-| [listDIDs(args)](./did-manager.memorydidstore.listdids.md)                  |           | <b><i>(BETA)</i></b> |
+| Method                                                                      | Modifiers | Description  |
+| --------------------------------------------------------------------------- | --------- | ------------ |
+| [deleteDID({ did })](./did-manager.memorydidstore.deletedid.md)             |           | **_(BETA)_** |
+| [getDID({ did, alias, provider, })](./did-manager.memorydidstore.getdid.md) |           | **_(BETA)_** |
+| [importDID(args)](./did-manager.memorydidstore.importdid.md)                |           | **_(BETA)_** |
+| [listDIDs(args)](./did-manager.memorydidstore.listdids.md)                  |           | **_(BETA)_** |

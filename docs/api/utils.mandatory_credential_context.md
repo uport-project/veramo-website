@@ -10,7 +10,7 @@ hide_title: true
 
 Every Verifiable Credential `@context` property must contain this.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MANDATORY_CREDENTIAL_CONTEXT = 'https://www.w3.org/2018/credentials/v1'

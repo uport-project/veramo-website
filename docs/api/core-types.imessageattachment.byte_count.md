@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageAttachment.byte_count property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 byte_count?: number;

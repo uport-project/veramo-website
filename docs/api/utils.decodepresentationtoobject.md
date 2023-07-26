@@ -12,7 +12,7 @@ hide_title: true
 
 Parses a [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) and converts it to a [VerifiablePresentation](./core-types.verifiablepresentation.md) so it is easier to use programmatically.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function decodePresentationToObject(input: W3CVerifiablePresentation): VerifiablePresentation
@@ -24,6 +24,6 @@ export declare function decodePresentationToObject(input: W3CVerifiablePresentat
 | --------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | input     | [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) | <p>the raw presentation to be transformed.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 [VerifiablePresentation](./core-types.verifiablepresentation.md)

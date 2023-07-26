@@ -12,7 +12,7 @@ hide_title: true
 
 Extracts the chain ID from a supporting legacy representations as well.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getChainIdForDidEthr(verificationMethod: _NormalizedVerificationMethod): number
@@ -24,7 +24,7 @@ export declare function getChainIdForDidEthr(verificationMethod: _NormalizedVeri
 | ------------------ | ------------------------------ | --------------------------------------------------- |
 | verificationMethod | \_NormalizedVerificationMethod | the VerificationMethod object (from a DID document) |
 
-<b>Returns:</b>
+**Returns:**
 
 number
 

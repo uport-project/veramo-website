@@ -14,10 +14,10 @@ The filter that can be used to find [VerifiablePresentation](./core-types.verifi
 
 This API may change without a BREAKING CHANGE notice.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type FindPresentationsArgs = FindArgs<TPresentationColumns>
 ```
 
-<b>References:</b> [FindArgs](./core-types.findargs.md), [TPresentationColumns](./core-types.tpresentationcolumns.md)
+**References:** [FindArgs](./core-types.findargs.md), [TPresentationColumns](./core-types.tpresentationcolumns.md)

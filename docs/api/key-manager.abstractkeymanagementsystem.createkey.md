@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractKeyManagementSystem.createKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract createKey(args: {
@@ -23,6 +23,6 @@ abstract createKey(args: {
 | --------- | ----------------------------------------------------------- | ----------- |
 | args      | { type: [TKeyType](./core-types.tkeytype.md); meta?: any; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

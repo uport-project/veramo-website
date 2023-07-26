@@ -10,7 +10,7 @@ hide_title: true
 
 The context object that will be available to the plugin methods
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 context?: Record<string, any>;

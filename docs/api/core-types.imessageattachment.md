@@ -10,7 +10,7 @@ hide_title: true
 
 Message attachment
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IMessageAttachment
@@ -18,13 +18,13 @@ export interface IMessageAttachment
 
 ## Properties
 
-| Property                                                         | Modifiers | Type                                                             | Description       |
-| ---------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ----------------- |
-| [byte_count?](./core-types.imessageattachment.byte_count.md)     |           | number                                                           | <i>(Optional)</i> |
-| [data](./core-types.imessageattachment.data.md)                  |           | [IMessageAttachmentData](./core-types.imessageattachmentdata.md) |                   |
-| [description?](./core-types.imessageattachment.description.md)   |           | string                                                           | <i>(Optional)</i> |
-| [filename?](./core-types.imessageattachment.filename.md)         |           | string                                                           | <i>(Optional)</i> |
-| [format?](./core-types.imessageattachment.format.md)             |           | string                                                           | <i>(Optional)</i> |
-| [id?](./core-types.imessageattachment.id.md)                     |           | string                                                           | <i>(Optional)</i> |
-| [lastmod_time?](./core-types.imessageattachment.lastmod_time.md) |           | string                                                           | <i>(Optional)</i> |
-| [media_type?](./core-types.imessageattachment.media_type.md)     |           | string                                                           | <i>(Optional)</i> |
+| Property                                                         | Modifiers | Type                                                             | Description  |
+| ---------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ------------ |
+| [byte_count?](./core-types.imessageattachment.byte_count.md)     |           | number                                                           | _(Optional)_ |
+| [data](./core-types.imessageattachment.data.md)                  |           | [IMessageAttachmentData](./core-types.imessageattachmentdata.md) |              |
+| [description?](./core-types.imessageattachment.description.md)   |           | string                                                           | _(Optional)_ |
+| [filename?](./core-types.imessageattachment.filename.md)         |           | string                                                           | _(Optional)_ |
+| [format?](./core-types.imessageattachment.format.md)             |           | string                                                           | _(Optional)_ |
+| [id?](./core-types.imessageattachment.id.md)                     |           | string                                                           | _(Optional)_ |
+| [lastmod_time?](./core-types.imessageattachment.lastmod_time.md) |           | string                                                           | _(Optional)_ |
+| [media_type?](./core-types.imessageattachment.media_type.md)     |           | string                                                           | _(Optional)_ |

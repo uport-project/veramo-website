@@ -10,7 +10,7 @@ hide_title: true
 
 Provides a mapping to a did:key resolver, usable by .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getDidKeyResolver(): {
@@ -18,6 +18,6 @@ export declare function getDidKeyResolver(): {
 }
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 { key: DIDResolver; }

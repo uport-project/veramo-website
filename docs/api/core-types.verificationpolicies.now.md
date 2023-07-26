@@ -12,7 +12,7 @@ hide_title: true
 
 policy to over the now (current time) during the verification check (UNIX time in seconds)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 now?: number;

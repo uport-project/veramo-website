@@ -12,7 +12,7 @@ hide_title: true
 
 Maps the keys of a locally managed [IIdentifier](./core-types.iidentifier.md) to the corresponding entries from the DID document.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function mapIdentifierKeysToDoc(
@@ -30,7 +30,7 @@ export declare function mapIdentifierKeysToDoc(
 | section    | [DIDDocumentSection](./core-types.diddocumentsection.md) &#124; undefined                    | the section of the DID document to be mapped (see [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)), but can also be <code>verificationMethod</code> to map all the keys. |
 | context    | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the identifier.                                                         |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;\_ExtendedIKey\[\]&gt;
 

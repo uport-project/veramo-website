@@ -12,7 +12,7 @@ hide_title: true
 
 Computes a hash for a given credential or presentation. This hash is usable as an internal ID for database indexing
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function computeEntryHash(
@@ -26,6 +26,6 @@ export declare function computeEntryHash(
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) &#124; [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) &#124; [IMessage](./core-types.imessage.md) | <p>the Credential or Presentation whose hash is neeeded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

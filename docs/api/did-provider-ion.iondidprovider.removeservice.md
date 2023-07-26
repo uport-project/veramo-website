@@ -10,7 +10,7 @@ hide_title: true
 
 Removes a service from a DID Document
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 removeService({ identifier, id, options }: {
@@ -27,7 +27,7 @@ removeService({ identifier, id, options }: {
 | { identifier, id, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); id: string; options?: IUpdateOpts; } |             |
 | context                     | IContext                                                                                       |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

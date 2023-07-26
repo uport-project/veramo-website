@@ -10,10 +10,10 @@ hide_title: true
 
 Represents information about a managed key. Private or secret key material is NOT present.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ManagedKeyInfo = Omit<IKey, 'privateKeyHex'>
 ```
 
-<b>References:</b> [IKey](./core-types.ikey.md)
+**References:** [IKey](./core-types.ikey.md)

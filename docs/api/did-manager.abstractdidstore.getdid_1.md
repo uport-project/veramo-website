@@ -8,7 +8,7 @@ hide_title: true
 
 ## AbstractDIDStore.getDID() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract getDID(args: {
@@ -23,6 +23,6 @@ abstract getDID(args: {
 | --------- | ------------------------------------ | ----------- |
 | args      | { alias: string; provider: string; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

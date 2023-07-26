@@ -22,7 +22,7 @@ In case an error is thrown while processing an event, the error is re-emitted as
 
 Note that `await agent.emit()` will NOT throw an error. To process errors, use a listener with `eventTypes: [ CoreEvents.error ]` in the definition.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emit(eventType: string, data: any): Promise<void>;
@@ -35,6 +35,6 @@ emit(eventType: string, data: any): Promise<void>;
 | eventType | string | the type of event being emitted                                                                       |
 | data      | any    | event payload. Use the same <code>data</code> type for events of a particular <code>eventType</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

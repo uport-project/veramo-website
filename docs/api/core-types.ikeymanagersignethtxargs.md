@@ -10,7 +10,7 @@ hide_title: true
 
 Input arguments for [keyManagerSignEthTX](./core-types.ikeymanager.keymanagersignethtx.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IKeyManagerSignEthTXArgs

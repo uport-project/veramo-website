@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sign({ keyRef, algorithm, data, }: {
@@ -26,6 +26,6 @@ sign({ keyRef, algorithm, data, }: {
 | ---------------------------- | -------------------------------------------------------------------------------------------------- | ----------- |
 | { keyRef, algorithm, data, } | { keyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; algorithm?: string; data: Uint8Array; } |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

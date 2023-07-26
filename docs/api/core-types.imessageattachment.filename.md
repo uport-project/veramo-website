@@ -8,7 +8,7 @@ hide_title: true
 
 ## IMessageAttachment.filename property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 filename?: string;

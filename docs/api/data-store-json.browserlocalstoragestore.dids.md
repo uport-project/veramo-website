@@ -8,7 +8,7 @@ hide_title: true
 
 ## BrowserLocalStorageStore.dids property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dids: Record<string, IIdentifier>

@@ -10,7 +10,7 @@ hide_title: true
 
 An abstract class for the [DIDDiscovery](./did-discovery.diddiscovery.md) providers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractDidDiscoveryProvider
@@ -18,12 +18,12 @@ export declare abstract class AbstractDidDiscoveryProvider
 
 ## Properties
 
-| Property                                                     | Modifiers | Type   | Description |
-| ------------------------------------------------------------ | --------- | ------ | ----------- |
-| [name](./did-discovery.abstractdiddiscoveryprovider.name.md) |           | string |             |
+| Property                                                     | Modifiers             | Type   | Description |
+| ------------------------------------------------------------ | --------------------- | ------ | ----------- |
+| [name](./did-discovery.abstractdiddiscoveryprovider.name.md) | <code>abstract</code> | string |             |
 
 ## Methods
 
-| Method                                                                                    | Modifiers | Description |
-| ----------------------------------------------------------------------------------------- | --------- | ----------- |
-| [discoverDid(args, context)](./did-discovery.abstractdiddiscoveryprovider.discoverdid.md) |           |             |
+| Method                                                                                    | Modifiers             | Description |
+| ----------------------------------------------------------------------------------------- | --------------------- | ----------- |
+| [discoverDid(args, context)](./did-discovery.abstractdiddiscoveryprovider.discoverdid.md) | <code>abstract</code> |             |

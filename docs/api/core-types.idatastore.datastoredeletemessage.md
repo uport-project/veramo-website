@@ -10,7 +10,7 @@ hide_title: true
 
 Deletes message from the data store
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataStoreDeleteMessage(args: IDataStoreDeleteMessageArgs): Promise<boolean>;
@@ -22,7 +22,7 @@ dataStoreDeleteMessage(args: IDataStoreDeleteMessageArgs): Promise<boolean>;
 | --------- | -------------------------------------------------------------------------- | ------------------------------ |
 | args      | [IDataStoreDeleteMessageArgs](./core-types.idatastoredeletemessageargs.md) | arguments for deleting message |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

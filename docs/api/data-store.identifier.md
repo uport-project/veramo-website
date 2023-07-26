@@ -12,40 +12,40 @@ hide_title: true
 
 Represents some properties and relationships of an [IIdentifier](./core-types.iidentifier.md) that are stored in a TypeORM database for the purpose of keeping track of keys and services associated with a DID managed by a Veramo agent.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Identifier extends BaseEntity
 ```
 
-<b>Extends:</b> BaseEntity
+**Extends:** BaseEntity
 
 ## Properties
 
-| Property                                                                  | Modifiers | Type                                             | Description                            |
-| ------------------------------------------------------------------------- | --------- | ------------------------------------------------ | -------------------------------------- |
-| [alias?](./data-store.identifier.alias.md)                                |           | string                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [controllerKeyId?](./data-store.identifier.controllerkeyid.md)            |           | string                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [did](./data-store.identifier.did.md)                                     |           | string                                           | <b><i>(BETA)</i></b>                   |
-| [issuedClaims](./data-store.identifier.issuedclaims.md)                   |           | [Claim](./data-store.claim.md)\[\]               | <b><i>(BETA)</i></b>                   |
-| [issuedCredentials](./data-store.identifier.issuedcredentials.md)         |           | [Credential](./data-store.credential_2.md)\[\]   | <b><i>(BETA)</i></b>                   |
-| [issuedPresentations](./data-store.identifier.issuedpresentations.md)     |           | [Presentation](./data-store.presentation.md)\[\] | <b><i>(BETA)</i></b>                   |
-| [keys](./data-store.identifier.keys.md)                                   |           | [Key](./data-store.key.md)\[\]                   | <b><i>(BETA)</i></b>                   |
-| [provider?](./data-store.identifier.provider.md)                          |           | string                                           | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [receivedClaims](./data-store.identifier.receivedclaims.md)               |           | [Claim](./data-store.claim.md)\[\]               | <b><i>(BETA)</i></b>                   |
-| [receivedCredentials](./data-store.identifier.receivedcredentials.md)     |           | [Credential](./data-store.credential_2.md)\[\]   | <b><i>(BETA)</i></b>                   |
-| [receivedMessages](./data-store.identifier.receivedmessages.md)           |           | [Message](./data-store.message.md)\[\]           | <b><i>(BETA)</i></b>                   |
-| [receivedPresentations](./data-store.identifier.receivedpresentations.md) |           | [Presentation](./data-store.presentation.md)\[\] | <b><i>(BETA)</i></b>                   |
-| [saveDate](./data-store.identifier.savedate.md)                           |           | Date                                             | <b><i>(BETA)</i></b>                   |
-| [sentMessages](./data-store.identifier.sentmessages.md)                   |           | [Message](./data-store.message.md)\[\]           | <b><i>(BETA)</i></b>                   |
-| [services](./data-store.identifier.services.md)                           |           | [Service](./data-store.service.md)\[\]           | <b><i>(BETA)</i></b>                   |
-| [updateDate](./data-store.identifier.updatedate.md)                       |           | Date                                             | <b><i>(BETA)</i></b>                   |
+| Property                                                                  | Modifiers | Type                                             | Description               |
+| ------------------------------------------------------------------------- | --------- | ------------------------------------------------ | ------------------------- |
+| [alias?](./data-store.identifier.alias.md)                                |           | string                                           | **_(BETA)_** _(Optional)_ |
+| [controllerKeyId?](./data-store.identifier.controllerkeyid.md)            |           | string                                           | **_(BETA)_** _(Optional)_ |
+| [did](./data-store.identifier.did.md)                                     |           | string                                           | **_(BETA)_**              |
+| [issuedClaims](./data-store.identifier.issuedclaims.md)                   |           | [Claim](./data-store.claim.md)\[\]               | **_(BETA)_**              |
+| [issuedCredentials](./data-store.identifier.issuedcredentials.md)         |           | [Credential](./data-store.credential_2.md)\[\]   | **_(BETA)_**              |
+| [issuedPresentations](./data-store.identifier.issuedpresentations.md)     |           | [Presentation](./data-store.presentation.md)\[\] | **_(BETA)_**              |
+| [keys](./data-store.identifier.keys.md)                                   |           | [Key](./data-store.key.md)\[\]                   | **_(BETA)_**              |
+| [provider?](./data-store.identifier.provider.md)                          |           | string                                           | **_(BETA)_** _(Optional)_ |
+| [receivedClaims](./data-store.identifier.receivedclaims.md)               |           | [Claim](./data-store.claim.md)\[\]               | **_(BETA)_**              |
+| [receivedCredentials](./data-store.identifier.receivedcredentials.md)     |           | [Credential](./data-store.credential_2.md)\[\]   | **_(BETA)_**              |
+| [receivedMessages](./data-store.identifier.receivedmessages.md)           |           | [Message](./data-store.message.md)\[\]           | **_(BETA)_**              |
+| [receivedPresentations](./data-store.identifier.receivedpresentations.md) |           | [Presentation](./data-store.presentation.md)\[\] | **_(BETA)_**              |
+| [saveDate](./data-store.identifier.savedate.md)                           |           | Date                                             | **_(BETA)_**              |
+| [sentMessages](./data-store.identifier.sentmessages.md)                   |           | [Message](./data-store.message.md)\[\]           | **_(BETA)_**              |
+| [services](./data-store.identifier.services.md)                           |           | [Service](./data-store.service.md)\[\]           | **_(BETA)_**              |
+| [updateDate](./data-store.identifier.updatedate.md)                       |           | Date                                             | **_(BETA)_**              |
 
 ## Methods
 
-| Method                                                                                     | Modifiers | Description                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [getLatestClaimValue(dbConnection, where)](./data-store.identifier.getlatestclaimvalue.md) |           | <p><b><i>(BETA)</i></b> Convenience method to get the most recent information about a subject DID as described by Verifiable Credential claims.</p><p>Example:</p> |
+| Method                                                                                     | Modifiers | Description                                                                                                                                                |
+| ------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [getLatestClaimValue(dbConnection, where)](./data-store.identifier.getlatestclaimvalue.md) |           | <p>**_(BETA)_** Convenience method to get the most recent information about a subject DID as described by Verifiable Credential claims.</p><p>Example:</p> |
 
 ```typescript
 // get the latest claim value for credentials containing `credentialSubject.name` and this Identifier as subject.
@@ -53,6 +53,6 @@ const name = await identifier.getLatestClaimValue({ type: 'name' })
 ```
 
 |
-| [setSaveDate()](./data-store.identifier.setsavedate.md) | | <b><i>(BETA)</i></b> |
-| [setUpdateDate()](./data-store.identifier.setupdatedate.md) | | <b><i>(BETA)</i></b> |
-| [shortDid()](./data-store.identifier.shortdid.md) | | <b><i>(BETA)</i></b> |
+| [setSaveDate()](./data-store.identifier.setsavedate.md) | | **_(BETA)_** |
+| [setUpdateDate()](./data-store.identifier.setupdatedate.md) | | **_(BETA)_** |
+| [shortDid()](./data-store.identifier.shortdid.md) | | **_(BETA)_** |
