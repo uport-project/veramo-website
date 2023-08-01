@@ -11,5 +11,7 @@ hide_title: true
 **Signature:**
 
 ```typescript
-export type JwkDidSupportedKeyTypes = 'Secp256r1' | 'Secp256k1' | 'Ed25519' | 'X25519'
+export type JwkDidSupportedKeyTypes = keyof typeof SupportedKeyTypes
 ```
+
+**References:** [SupportedKeyTypes](./did-provider-jwk.supportedkeytypes.md)

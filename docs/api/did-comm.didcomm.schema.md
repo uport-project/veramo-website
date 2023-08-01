@@ -170,6 +170,16 @@ readonly schema: {
                             };
                             description: string;
                         };
+                        enc: {
+                            type: string;
+                            enum: string[];
+                            description: string;
+                        };
+                        alg: {
+                            type: string;
+                            enum: string[];
+                            description: string;
+                        };
                     };
                     description: string;
                 };

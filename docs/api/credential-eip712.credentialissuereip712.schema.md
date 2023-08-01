@@ -47,7 +47,7 @@ readonly schema: {
                             };
                         };
                         "@context": {
-                            $ref: string; /** {@inheritdoc ICredentialIssuerEIP712.createVerifiableCredentialEIP712} */
+                            $ref: string;
                         };
                         issuanceDate: {
                             $ref: string;

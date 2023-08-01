@@ -22,7 +22,9 @@ export interface IDIDCommOptions
 
 ## Properties
 
-| Property                                                      | Modifiers | Type       | Description                                                            |
-| ------------------------------------------------------------- | --------- | ---------- | ---------------------------------------------------------------------- |
-| [bcc?](./did-comm.ididcommoptions.bcc.md)                     |           | string\[\] | **_(BETA)_** _(Optional)_ Add extra recipients for the packed message. |
-| [recipientKids?](./did-comm.ididcommoptions.recipientkids.md) |           | string\[\] | **_(BETA)_** _(Optional)_ Restrict to a set of kids for recipient      |
+| Property                                                      | Modifiers | Type                                                                                         | Description                                                                                    |
+| ------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [alg?](./did-comm.ididcommoptions.alg.md)                     |           | 'ECDH-ES+A256KW' &#124; 'ECDH-1PU+A256KW' &#124; 'ECDH-ES+XC20PKW' &#124; 'ECDH-1PU+XC20PKW' | **_(BETA)_** _(Optional)_ Optional key wrapping algorithm to use. Defaults to 'ECDH-ES+A256KW' |
+| [bcc?](./did-comm.ididcommoptions.bcc.md)                     |           | string\[\]                                                                                   | **_(BETA)_** _(Optional)_ Add extra recipients for the packed message.                         |
+| [enc?](./did-comm.ididcommoptions.enc.md)                     |           | 'XC20P' &#124; 'A256GCM' &#124; 'A256CBC-HS512'                                              | **_(BETA)_** _(Optional)_ Optional content encryption algorithm to use. Defaults to 'A256GCM'  |
+| [recipientKids?](./did-comm.ididcommoptions.recipientkids.md) |           | string\[\]                                                                                   | **_(BETA)_** _(Optional)_ Restrict to a set of kids for recipient                              |
