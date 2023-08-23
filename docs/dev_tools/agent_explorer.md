@@ -37,7 +37,7 @@ npx agent-explore serve
 
 ### Use the public version
 
-[https://explore.veramo.dev](https://explore.veramo.dev)
+[https://explore.veramo.io](https://explore.veramo.io)
 
 ### Clone the repo
 
