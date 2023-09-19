@@ -81,10 +81,14 @@ readonly schema: {
                         algorithms: {
                             type: string;
                             items: {
-                                type: string;
+                                $ref: string;
                             };
                         };
                     };
+                    description: string;
+                };
+                TAlg: {
+                    type: string;
                     description: string;
                 };
                 IDIDManagerAddServiceArgs: {

@@ -8,7 +8,7 @@ hide_title: true
 
 ## IKey interface
 
-Cryptographic key
+Cryptographic key, usually managed by the current Veramo instance.
 
 **Signature:**
 

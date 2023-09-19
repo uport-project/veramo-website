@@ -40,7 +40,17 @@ readonly schema: {
                             description: string;
                         };
                         save: {
-                            type: string;
+                            type: string; /**
+                             * This class adds support for creating
+                             * {@link https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md | Selective Disclosure}
+                             * requests and interpret the responses received.
+                             *
+                             * This implementation of the uPort protocol uses
+                             * {@link https://www.w3.org/TR/vc-data-model/#presentations | W3C Presentation}
+                             * as the response encoding instead of a `shareReq`.
+                             *
+                             * @beta This API may change without a BREAKING CHANGE notice.
+                             */
                             description: string;
                         };
                         send: {
@@ -70,7 +80,18 @@ readonly schema: {
                             anyOf: ({
                                 type: string;
                                 items: {
-                                    type: string;
+                                    type: string; /**
+                                     * Creates a Selective disclosure request, encoded as a JWT.
+                                     *
+                                     * @remarks See
+                                     *   {@link https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md | Selective Disclosure}
+                                     *
+                                     * @param args - The param object with the properties necessary to create the request. See
+                                     *   {@link ISelectiveDisclosureRequest}
+                                     * @param context - *RESERVED* This is filled by the framework when the method is called.
+                                     *
+                                     * @beta This API may change without a BREAKING CHANGE notice.
+                                     */
                                 };
                             } | {
                                 type: string;
