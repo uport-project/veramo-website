@@ -46,13 +46,13 @@ yarn add typescript ts-node --dev
 Install Veramo core and plugins
 
 ```bash
-yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver
+yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver did-resolver
 ```
 
 Install `sqlite`
 
 ```bash
-yarn add sqlite3
+yarn add sqlite3 typeorm
 ```
 
 Add a tsconfig.json to your project
