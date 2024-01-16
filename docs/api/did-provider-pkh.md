@@ -18,6 +18,6 @@ Provides `did:pkh` [identifier provider](./did-provider-pkh.pkhdidprovider.md) f
 
 ## Functions
 
-| Function                                                       | Description |
-| -------------------------------------------------------------- | ----------- |
-| [getDidPkhResolver()](./did-provider-pkh.getdidpkhresolver.md) |             |
+| Function                                                       | Description                                   |
+| -------------------------------------------------------------- | --------------------------------------------- |
+| [getDidPkhResolver()](./did-provider-pkh.getdidpkhresolver.md) | Creates a DID resolver that resolves PKH DIDs |

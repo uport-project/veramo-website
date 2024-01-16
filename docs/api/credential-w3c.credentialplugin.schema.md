@@ -455,6 +455,140 @@ readonly schema: {
                     required: string[];
                     description: string;
                 };
+                IIdentifier: {
+                    type: string;
+                    properties: {
+                        did: {
+                            type: string;
+                            description: string;
+                        };
+                        alias: {
+                            type: string;
+                            description: string;
+                        };
+                        provider: {
+                            type: string;
+                            description: string;
+                        };
+                        controllerKeyId: {
+                            type: string;
+                            description: string;
+                        };
+                        keys: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                            description: string;
+                        };
+                        services: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IKey: {
+                    type: string;
+                    properties: {
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
+                        kms: {
+                            type: string;
+                            description: string;
+                        };
+                        type: {
+                            $ref: string;
+                            description: string;
+                        };
+                        publicKeyHex: {
+                            type: string;
+                            description: string;
+                        };
+                        privateKeyHex: {
+                            type: string;
+                            description: string;
+                        };
+                        meta: {
+                            anyOf: ({
+                                $ref: string;
+                                type?: undefined;
+                            } | {
+                                type: string;
+                                $ref?: undefined;
+                            })[];
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                TKeyType: {
+                    type: string;
+                    enum: string[];
+                    description: string;
+                };
+                KeyMetadata: {
+                    type: string;
+                    properties: {
+                        algorithms: {
+                            type: string;
+                            items: {
+                                $ref: string;
+                            };
+                        };
+                    };
+                    description: string;
+                };
+                TAlg: {
+                    type: string;
+                    description: string;
+                };
+                IService: {
+                    type: string;
+                    properties: {
+                        id: {
+                            type: string;
+                            description: string;
+                        };
+                        type: {
+                            type: string;
+                            description: string;
+                        };
+                        serviceEndpoint: {
+                            anyOf: ({
+                                $ref: string;
+                                type?: undefined;
+                                items?: undefined;
+                            } | {
+                                type: string;
+                                items: {
+                                    $ref: string;
+                                };
+                                $ref?: undefined;
+                            })[];
+                            description: string;
+                        };
+                        description: {
+                            type: string;
+                            description: string;
+                        };
+                    };
+                    required: string[];
+                    description: string;
+                };
+                IServiceEndpoint: {
+                    anyOf: {
+                        type: string;
+                    }[];
+                    description: string;
+                };
             };
             methods: {
                 verifyCredential: {
@@ -491,6 +625,18 @@ readonly schema: {
                     };
                     returnType: {
                         $ref: string;
+                    };
+                };
+                listUsableProofFormats: {
+                    description: string;
+                    arguments: {
+                        $ref: string;
+                    };
+                    returnType: {
+                        type: string;
+                        items: {
+                            $ref: string;
+                        };
                     };
                 };
             };

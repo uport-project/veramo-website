@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-The input to the [DIDComm.unpackDIDCommMessage()](./did-comm.didcomm.unpackdidcommmessage.md) method.
+The input to the [IDIDComm.unpackDIDCommMessage()](./did-comm.ididcomm.unpackdidcommmessage.md) method.
 
 This API may change without a BREAKING CHANGE notice.
 

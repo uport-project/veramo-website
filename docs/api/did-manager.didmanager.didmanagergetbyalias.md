@@ -13,14 +13,14 @@ Returns a specific identifier by alias
 **Signature:**
 
 ```typescript
-didManagerGetByAlias({ alias, provider }: IDIDManagerGetByAliasArgs): Promise<IIdentifier>;
+didManagerGetByAlias({ alias }: IDIDManagerGetByAliasArgs): Promise<IIdentifier>;
 ```
 
 ## Parameters
 
-| Parameter           | Type                                                                   | Description |
-| ------------------- | ---------------------------------------------------------------------- | ----------- |
-| { alias, provider } | [IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md) |             |
+| Parameter | Type                                                                   | Description |
+| --------- | ---------------------------------------------------------------------- | ----------- |
+| { alias } | [IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md) |             |
 
 **Returns:**
 

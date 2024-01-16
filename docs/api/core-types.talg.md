@@ -10,7 +10,7 @@ hide_title: true
 
 Known algorithms supported by some of the above key types defined by [TKeyType](./core-types.tkeytype.md).
 
-Actual implementations of [Key Management Systems](./key-manager.abstractkeymanagementsystem.md) can support more. One should check the property to see what is possible for a particular managed key.
+Actual implementations of [Key Management Systems](./key-manager.abstractkeymanagementsystem.md) can support more. One should check the [IKey.meta.algorithms](./core-types.ikey.meta.md) property to see what is possible for a particular managed key.
 
 **Signature:**
 

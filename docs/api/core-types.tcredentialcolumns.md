@@ -27,4 +27,5 @@ export type TCredentialColumns =
   | 'subject'
   | 'expirationDate'
   | 'issuanceDate'
+  | 'hash'
 ```

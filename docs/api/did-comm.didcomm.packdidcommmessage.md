@@ -29,6 +29,6 @@ packDIDCommMessage(args: IPackDIDCommMessageArgs, context: IAgentContext<IDIDMan
 
 Promise&lt;[IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)&gt;
 
-a Promise that resolves to an object containing the serialized packed `message` string
+- a Promise that resolves to a [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) object containing the serialized packed `message` string
 
 This API may change without a BREAKING CHANGE notice.

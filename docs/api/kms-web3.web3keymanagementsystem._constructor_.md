@@ -15,11 +15,11 @@ Constructs a new instance of the `Web3KeyManagementSystem` class
 **Signature:**
 
 ```typescript
-constructor(providers: Record<string, Web3Provider>);
+constructor(providers: Record<string, BrowserProvider>);
 ```
 
 ## Parameters
 
-| Parameter | Type                               | Description                                                                                                               |
-| --------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| providers | Record&lt;string, Web3Provider&gt; | the key can be any unique name. Example <code>{ metamask: metamaskProvider, walletConnect: walletConnectProvider }</code> |
+| Parameter | Type                                  | Description                                                                                                               |
+| --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| providers | Record&lt;string, BrowserProvider&gt; | the key can be any unique name. Example <code>{ metamask: metamaskProvider, walletConnect: walletConnectProvider }</code> |

@@ -30,12 +30,12 @@ export declare class JwkDIDProvider extends AbstractIdentifierProvider
 
 ## Methods
 
-| Method                                                                                                    | Modifiers | Description  |
-| --------------------------------------------------------------------------------------------------------- | --------- | ------------ |
-| [addKey({ identifier, key, options, }, context)](./did-provider-jwk.jwkdidprovider.addkey.md)             |           | **_(BETA)_** |
-| [addService({ identifier, service, options, }, context)](./did-provider-jwk.jwkdidprovider.addservice.md) |           | **_(BETA)_** |
-| [createIdentifier({ kms, options }, context)](./did-provider-jwk.jwkdidprovider.createidentifier.md)      |           | **_(BETA)_** |
-| [deleteIdentifier(identifier, context)](./did-provider-jwk.jwkdidprovider.deleteidentifier.md)            |           | **_(BETA)_** |
-| [removeKey(args, context)](./did-provider-jwk.jwkdidprovider.removekey.md)                                |           | **_(BETA)_** |
-| [removeService(args, context)](./did-provider-jwk.jwkdidprovider.removeservice.md)                        |           | **_(BETA)_** |
-| [updateIdentifier(args, context)](./did-provider-jwk.jwkdidprovider.updateidentifier.md)                  |           | **_(BETA)_** |
+| Method                                                                                                   | Modifiers | Description  |
+| -------------------------------------------------------------------------------------------------------- | --------- | ------------ |
+| [addKey({ identifier, key, options }, context)](./did-provider-jwk.jwkdidprovider.addkey.md)             |           | **_(BETA)_** |
+| [addService({ identifier, service, options }, context)](./did-provider-jwk.jwkdidprovider.addservice.md) |           | **_(BETA)_** |
+| [createIdentifier({ kms, options }, context)](./did-provider-jwk.jwkdidprovider.createidentifier.md)     |           | **_(BETA)_** |
+| [deleteIdentifier(identifier, context)](./did-provider-jwk.jwkdidprovider.deleteidentifier.md)           |           | **_(BETA)_** |
+| [removeKey(args, context)](./did-provider-jwk.jwkdidprovider.removekey.md)                               |           | **_(BETA)_** |
+| [removeService(args, context)](./did-provider-jwk.jwkdidprovider.removeservice.md)                       |           | **_(BETA)_** |
+| [updateIdentifier(args, context)](./did-provider-jwk.jwkdidprovider.updateidentifier.md)                 |           | **_(BETA)_** |

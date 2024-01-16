@@ -28,4 +28,4 @@ getDidCommMessageMediaType({ message }: IPackedDIDCommMessage): Promise<DIDCommM
 
 Promise&lt;[DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)&gt;
 
-the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md) if it was successfully parsed
+- the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md) if it was successfully parsed

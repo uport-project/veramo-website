@@ -15,13 +15,5 @@ See [verification relationships](https://www.w3.org/TR/did-core/#verification-re
 **Signature:**
 
 ```typescript
-export type DIDDocumentSection =
-  | 'verificationMethod'
-  | 'publicKey'
-  | 'service'
-  | 'authentication'
-  | 'assertionMethod'
-  | 'keyAgreement'
-  | 'capabilityInvocation'
-  | 'capabilityDelegation'
+export type DIDDocumentSection = KeyCapabilitySection | 'verificationMethod' | 'publicKey' | 'service'
 ```

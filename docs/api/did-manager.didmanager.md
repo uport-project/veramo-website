@@ -41,7 +41,7 @@ export declare class DIDManager implements IAgentPlugin
 | [didManagerDelete({ did }, context)](./did-manager.didmanager.didmanagerdelete.md)                                     |           | Deletes identifier                                                        |
 | [didManagerFind(args)](./did-manager.didmanager.didmanagerfind.md)                                                     |           | Returns a list of managed identifiers                                     |
 | [didManagerGet({ did })](./did-manager.didmanager.didmanagerget.md)                                                    |           | Returns a specific identifier                                             |
-| [didManagerGetByAlias({ alias, provider })](./did-manager.didmanager.didmanagergetbyalias.md)                          |           | Returns a specific identifier by alias                                    |
+| [didManagerGetByAlias({ alias })](./did-manager.didmanager.didmanagergetbyalias.md)                                    |           | Returns a specific identifier by alias                                    |
 | [didManagerGetOrCreate({ provider, alias, kms, options }, context)](./did-manager.didmanager.didmanagergetorcreate.md) |           | Returns an existing identifier or creates a new one for a specific alias  |
 | [didManagerGetProviders()](./did-manager.didmanager.didmanagergetproviders.md)                                         |           | Returns a list of available identifier providers                          |
 | [didManagerImport(identifier, context)](./did-manager.didmanager.didmanagerimport.md)                                  |           | Imports identifier                                                        |

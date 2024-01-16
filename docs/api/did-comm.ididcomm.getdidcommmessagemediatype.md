@@ -20,15 +20,15 @@ getDIDCommMessageMediaType(args: IPackedDIDCommMessage): Promise<DIDCommMessageM
 
 ## Parameters
 
-| Parameter | Type                                                         | Description |
-| --------- | ------------------------------------------------------------ | ----------- |
-| args      | [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) |             |
+| Parameter | Type                                                         | Description                   |
+| --------- | ------------------------------------------------------------ | ----------------------------- |
+| args      | [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) | the message to be interpreted |
 
 **Returns:**
 
 Promise&lt;[DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)&gt;
 
-the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md) if it was successfully parsed
+- the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md) if it was successfully parsed
 
 ## Exceptions
 

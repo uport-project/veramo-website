@@ -13,15 +13,14 @@ hide_title: true
 ```typescript
 abstract getDID(args: {
         alias: string;
-        provider: string;
     }): Promise<IIdentifier>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                 | Description |
-| --------- | ------------------------------------ | ----------- |
-| args      | { alias: string; provider: string; } |             |
+| Parameter | Type               | Description |
+| --------- | ------------------ | ----------- |
+| args      | { alias: string; } |             |
 
 **Returns:**
 

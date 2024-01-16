@@ -18,4 +18,4 @@ export type JwkCreateIdentifierOptions = {
 }
 ```
 
-**References:** [JwkDidSupportedKeyTypes](./did-provider-jwk.jwkdidsupportedkeytypes.md), [KeyUse](./did-provider-jwk.keyuse.md)
+**References:** [JwkDidSupportedKeyTypes](./utils.jwkdidsupportedkeytypes.md), [KeyUse](./utils.keyuse.md)

@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-The input to the [DIDComm.packDIDCommMessage()](./did-comm.didcomm.packdidcommmessage.md) method. When `packing` is `authcrypt` or `jws`, a `keyRef` MUST be provided.
+The input to the [IDIDComm.packDIDCommMessage()](./did-comm.ididcomm.packdidcommmessage.md) method. When `packing` is `authcrypt` or `jws`, a `keyRef` MUST be provided.
 
 This API may change without a BREAKING CHANGE notice.
 

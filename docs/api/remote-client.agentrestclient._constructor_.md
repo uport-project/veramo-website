@@ -17,12 +17,12 @@ constructor(options: {
         url: string;
         enabledMethods: string[];
         schema?: IAgentPluginSchema;
-        headers?: Record<string, string>;
+        headers?: Record<string, string> | (() => Promise<Record<string, string>>);
     });
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                    | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | { url: string; enabledMethods: string\[\]; schema?: [IAgentPluginSchema](./core-types.iagentpluginschema.md); headers?: Record&lt;string, string&gt;; } |             |
+| Parameter | Type                                                                                                                                                                                                                  | Description |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| options   | { url: string; enabledMethods: string\[\]; schema?: [IAgentPluginSchema](./core-types.iagentpluginschema.md); headers?: Record&lt;string, string&gt; &#124; (() =&gt; Promise&lt;Record&lt;string, string&gt;&gt;); } |             |

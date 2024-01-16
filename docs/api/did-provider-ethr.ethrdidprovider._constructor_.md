@@ -17,7 +17,7 @@ constructor(options: {
         defaultKms: string;
         networks?: EthrNetworkConfiguration[];
         ttl?: number;
-        network?: string | number;
+        network?: string | number | bigint;
         name?: string;
         rpcUrl?: string;
         web3Provider?: Provider;
@@ -28,6 +28,6 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                     | Description |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | { defaultKms: string; networks?: EthrNetworkConfiguration\[\]; ttl?: number; network?: string &#124; number; name?: string; rpcUrl?: string; web3Provider?: Provider; registry?: string; gas?: number; } |             |
+| Parameter | Type                                                                                                                                                                                                                   | Description |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| options   | { defaultKms: string; networks?: EthrNetworkConfiguration\[\]; ttl?: number; network?: string &#124; number &#124; bigint; name?: string; rpcUrl?: string; web3Provider?: Provider; registry?: string; gas?: number; } |             |

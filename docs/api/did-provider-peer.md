@@ -18,6 +18,6 @@ Provides `did:key` [identifier provider](./did-provider-peer.peerdidprovider.md)
 
 ## Functions
 
-| Function                                            | Description |
-| --------------------------------------------------- | ----------- |
-| [getResolver()](./did-provider-peer.getresolver.md) |             |
+| Function                                            | Description                                                                         |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [getResolver()](./did-provider-peer.getresolver.md) | Creates a DID Resolver that can resolve Peer DIDs (for the 0 and 2 num_algo values) |

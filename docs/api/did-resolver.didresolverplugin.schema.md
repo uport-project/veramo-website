@@ -329,6 +329,18 @@ readonly schema: {
                     description: string;
                 };
                 DIDDocumentSection: {
+                    anyOf: ({
+                        $ref: string;
+                        type?: undefined;
+                        const?: undefined;
+                    } | {
+                        type: string;
+                        const: string;
+                        $ref?: undefined;
+                    })[];
+                    description: string;
+                };
+                KeyCapabilitySection: {
                     type: string;
                     enum: string[];
                     description: string;

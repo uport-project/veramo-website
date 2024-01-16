@@ -8,6 +8,8 @@ hide_title: true
 
 ## getDidPkhResolver() function
 
+Creates a DID resolver that resolves PKH DIDs
+
 **Signature:**
 
 ```typescript

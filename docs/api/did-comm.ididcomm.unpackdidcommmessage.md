@@ -29,6 +29,6 @@ unpackDIDCommMessage(args: IUnpackDIDCommMessageArgs, context: IAgentContext<IDI
 
 Promise&lt;[IUnpackedDIDCommMessage](./did-comm.iunpackeddidcommmessage.md)&gt;
 
-a Promise that resolves to an object containing the [IDIDCommMessage](./did-comm.ididcommmessage.md) and [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) used.
+- a Promise that resolves to an object containing the [IDIDCommMessage](./did-comm.ididcommmessage.md) and [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) used.
 
 This API may change without a BREAKING CHANGE notice.

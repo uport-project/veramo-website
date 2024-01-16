@@ -10,27 +10,27 @@ hide_title: true
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Sends the given message to the recipient. If a return transport is provided it will be checked whether the parent thread allows reusing the route. You cannot reuse the transport if the message was forwarded from a DIDComm mediator.
+Sends the given message to the recipient. If a return-transport is provided it will be checked whether the parent thread allows reusing the route. You cannot reuse the transport if the message was forwarded from a DIDComm mediator.
 
 Emits an eventType 'DIDCommV2Message-sent' that contains the message id of packed DIDComm message [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) after the message was sent.
 
 **Signature:**
 
 ```typescript
-sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IResolver>): Promise<string>;
+sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IDIDManager & IKeyManager & IResolver & IMessageHandler>): Promise<ISendDIDCommMessageResponse>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                         | Description                                                                                                                                                                                       |
-| --------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | ISendDIDCommMessageArgs                                                                      | An object containing the message, recipient information and optional information about the transport that should be used.                                                                         |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | This method requires an agent that also has [IResolver](./core-types.iresolver.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
+| Parameter | Type                                                                                                                                                                                                                                                    | Description                                                                                                                                                                                                                                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args      | [ISendDIDCommMessageArgs](./did-comm.isenddidcommmessageargs.md)                                                                                                                                                                                        | An object containing the message, recipient information and optional information about the transport that should be used.                                                                                                                                                                                                                         |
+| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md) &amp; [IMessageHandler](./core-types.imessagehandler.md)&gt; | This method requires an agent that also has [IResolver](./core-types.iresolver.md), [IKeyManager](./core-types.ikeymanager.md), [IDIDManager](./core-types.ididmanager.md), and [IMessageHandler](./core-types.imessagehandler.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
 
 **Returns:**
 
-Promise&lt;string&gt;
+Promise&lt;[ISendDIDCommMessageResponse](./did-comm.isenddidcommmessageresponse.md)&gt;
 
-The transport id that was used to send the message. It throws an error in case something went wrong.
+- a [ISendDIDCommMessageResponse](./did-comm.isenddidcommmessageresponse.md) containing the transport id that was used to send the message and a return message, if one is available. It throws an error in case something went wrong.
 
 This API may change without a BREAKING CHANGE notice.

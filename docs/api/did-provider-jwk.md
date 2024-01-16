@@ -16,12 +16,6 @@ Provides `did:jwk` [identifier provider](./did-provider-jwk.jwkdidprovider.md) f
 | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [JwkDIDProvider](./did-provider-jwk.jwkdidprovider.md) | <p>**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:jwk</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
 
-## Enumerations
-
-| Enumeration                                                  | Description |
-| ------------------------------------------------------------ | ----------- |
-| [SupportedKeyTypes](./did-provider-jwk.supportedkeytypes.md) |             |
-
 ## Functions
 
 | Function                                                       | Description                                           |
@@ -34,5 +28,3 @@ Provides `did:jwk` [identifier provider](./did-provider-jwk.jwkdidprovider.md) f
 | ------------------------------------------------------------------------------------ | ----------- |
 | [JwkCreateIdentifierOptions](./did-provider-jwk.jwkcreateidentifieroptions.md)       |             |
 | [JwkDidImportOrGenerateKeyArgs](./did-provider-jwk.jwkdidimportorgeneratekeyargs.md) |             |
-| [JwkDidSupportedKeyTypes](./did-provider-jwk.jwkdidsupportedkeytypes.md)             |             |
-| [KeyUse](./did-provider-jwk.keyuse.md)                                               |             |

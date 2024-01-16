@@ -15,11 +15,11 @@ Constructor that takes a list of [IDIDCommTransport](./did-comm.ididcommtranspor
 **Signature:**
 
 ```typescript
-constructor(transports?: IDIDCommTransport[]);
+constructor({ transports }?: DIDCommConfig);
 ```
 
 ## Parameters
 
-| Parameter  | Type                                                     | Description                                                                                                                                                 |
-| ---------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| transports | [IDIDCommTransport](./did-comm.ididcommtransport.md)\[\] | _(Optional)_ A list of [IDIDCommTransport](./did-comm.ididcommtransport.md) objects. Defaults to [DIDCommHttpTransport](./did-comm.didcommhttptransport.md) |
+| Parameter      | Type                                         | Description  |
+| -------------- | -------------------------------------------- | ------------ |
+| { transports } | [DIDCommConfig](./did-comm.didcommconfig.md) | _(Optional)_ |

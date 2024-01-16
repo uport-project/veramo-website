@@ -1,5 +1,5 @@
 ---
-id: did-provider-jwk.jwkdidsupportedkeytypes
+id: utils.jwkdidsupportedkeytypes
 title: JwkDidSupportedKeyTypes type
 hide_title: true
 ---
@@ -14,4 +14,4 @@ hide_title: true
 export type JwkDidSupportedKeyTypes = keyof typeof SupportedKeyTypes
 ```
 
-**References:** [SupportedKeyTypes](./did-provider-jwk.supportedkeytypes.md)
+**References:** [SupportedKeyTypes](./utils.supportedkeytypes.md)

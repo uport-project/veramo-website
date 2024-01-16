@@ -8,6 +8,8 @@ hide_title: true
 
 ## getResolver() function
 
+Creates a DID Resolver that can resolve Peer DIDs (for the 0 and 2 num_algo values)
+
 **Signature:**
 
 ```typescript

@@ -1,5 +1,5 @@
 ---
-id: did-provider-jwk.supportedkeytypes
+id: utils.supportedkeytypes
 title: SupportedKeyTypes enum
 hide_title: true
 ---

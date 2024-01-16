@@ -30,6 +30,12 @@ hide_title: true
 | [PrivateKeyStore](./data-store.privatekeystore.md)                       | <p>An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that uses a TypeORM database connection to store private key material.</p><p>The keys can be encrypted while at rest if this class is initialized with an [AbstractSecretBox](./key-manager.abstractsecretbox.md) implementation.</p>                                                                                                                                                                                                                                                                                   |
 | [Service](./data-store.service.md)                                       | <p>**_(BETA)_** Represents some properties of a as it is stored in a TypeORM database. This is used by [DIDStore](./data-store.didstore.md) to provide information to [DIDManager](./did-manager.didmanager.md) when DID management information is stored in a local TypeORM database.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                              |
 
+## Functions
+
+| Function                                                            | Description                                                                                            |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [migrationConcat(migrationArrays)](./data-store.migrationconcat.md) | The migrations helper that allows migrations from multiple sources to be combined into a single array. |
+
 ## Interfaces
 
 | Interface                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -38,10 +44,11 @@ hide_title: true
 
 ## Variables
 
-| Variable                                 | Description                                                                                                                                                                                                               |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Entities](./data-store.entities.md)     | <p>The TypeORM entities used by this package.</p><p>This array SHOULD be used when creating a TypeORM connection.</p>                                                                                                     |
-| [migrations](./data-store.migrations.md) | <p>The migrations array that SHOULD be used when initializing a TypeORM database connection.</p><p>These ensure the correct creation of tables and the proper migrations of data when tables change between versions.</p> |
+| Variable                                         | Description                                                                                                                                                                                                               |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Entities](./data-store.entities.md)             | <p>The TypeORM entities used by this package.</p><p>This array SHOULD be used when creating a TypeORM connection.</p>                                                                                                     |
+| [entitiesConcat](./data-store.entitiesconcat.md) | <p>Helper function to concatenate multiple arrays of TypeORM entities.</p><p>This array CAN be used when creating a TypeORM connection.</p>                                                                               |
+| [migrations](./data-store.migrations.md)         | <p>The migrations array that SHOULD be used when initializing a TypeORM database connection.</p><p>These ensure the correct creation of tables and the proper migrations of data when tables change between versions.</p> |
 
 ## Type Aliases
 

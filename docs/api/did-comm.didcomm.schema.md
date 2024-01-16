@@ -202,47 +202,18 @@ readonly schema: {
                     required: string[];
                     description: string;
                 };
-                ISendMessageDIDCommAlpha1Args: {
+                ISendDIDCommMessageResponse: {
                     type: string;
                     properties: {
-                        url: {
+                        transportId: {
                             type: string;
                         };
-                        save: {
-                            type: string;
-                        };
-                        data: {
-                            type: string;
-                            properties: {
-                                id: {
-                                    type: string;
-                                };
-                                from: {
-                                    type: string;
-                                };
-                                to: {
-                                    type: string;
-                                };
-                                type: {
-                                    type: string;
-                                };
-                                body: {
-                                    anyOf: {
-                                        type: string;
-                                    }[];
-                                };
-                            };
-                            required: string[];
-                        };
-                        headers: {
-                            type: string;
-                            additionalProperties: {
-                                type: string;
-                            };
+                        returnMessage: {
+                            $ref: string;
                         };
                     };
                     required: string[];
-                    deprecated: string;
+                    description: string;
                 };
                 IMessage: {
                     type: string;
@@ -564,6 +535,48 @@ readonly schema: {
                     };
                     description: string;
                 };
+                ISendMessageDIDCommAlpha1Args: {
+                    type: string;
+                    properties: {
+                        url: {
+                            type: string;
+                        };
+                        save: {
+                            type: string;
+                        };
+                        data: {
+                            type: string;
+                            properties: {
+                                id: {
+                                    type: string;
+                                };
+                                from: {
+                                    type: string;
+                                };
+                                to: {
+                                    type: string;
+                                };
+                                type: {
+                                    type: string;
+                                };
+                                body: {
+                                    anyOf: {
+                                        type: string;
+                                    }[];
+                                };
+                            };
+                            required: string[];
+                        };
+                        headers: {
+                            type: string;
+                            additionalProperties: {
+                                type: string;
+                            };
+                        };
+                    };
+                    required: string[];
+                    deprecated: string;
+                };
                 IUnpackDIDCommMessageArgs: {
                     $ref: string;
                     description: string;
@@ -617,7 +630,7 @@ readonly schema: {
                         $ref: string;
                     };
                     returnType: {
-                        type: string;
+                        $ref: string;
                     };
                 };
                 sendMessageDIDCommAlpha1: {

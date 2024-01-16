@@ -1,5 +1,5 @@
 ---
-id: did-provider-jwk.keyuse
+id: utils.keyuse
 title: KeyUse type
 hide_title: true
 ---
