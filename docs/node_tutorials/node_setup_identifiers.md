@@ -55,6 +55,12 @@ Install `sqlite`
 yarn add sqlite3 typeorm
 ```
 
+Generate your secret key and save for later in a safe place
+
+```bash
+npx @veramo/cli config create-secret-key
+```
+
 Add a tsconfig.json to your project
 
 ```json
@@ -74,8 +80,9 @@ Add a tsconfig.json to your project
 
 ## Bootstrap Veramo
 
-We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts`
-and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+
+Note: In this file we'll use that secret key that we generated in an earlier step, so have it handy.
 
 ```typescript
 // Core interfaces
@@ -126,7 +133,7 @@ const DATABASE_FILE = 'database.sqlite'
 // You will need to get a project ID from infura https://www.infura.io
 const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 
-// This will be the secret key for the KMS
+// This will be the secret key for the KMS (replace this with your secret key)
 const KMS_SECRET_KEY =
   '< you can generate a key by running `npx @veramo/cli config create-secret-key` in a terminal>'
 ```
