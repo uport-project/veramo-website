@@ -80,11 +80,9 @@ Add a tsconfig.json to your project
 
 ## Bootstrap Veramo
 
-We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts`
+We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
 
-In this file we'll use that secret key that we generated in an earlier step, so have it handy.
-
-and import the following dependencies:
+Note: In this file we'll use that secret key that we generated in an earlier step, so have it handy.
 
 ```typescript
 // Core interfaces
