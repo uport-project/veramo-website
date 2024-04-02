@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICredentialStatus type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Veramo plugin interface for plugins implementing both the [manager](./core-types.icredentialstatusmanager.md) and the [verifier](./core-types.icredentialstatusverifier.md) aspects of Credential Status flow.
 

@@ -8,7 +8,7 @@ hide_title: true
 
 ## SelectiveDisclosure.schema property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 **Signature:**
 
@@ -40,17 +40,7 @@ readonly schema: {
                             description: string;
                         };
                         save: {
-                            type: string; /**
-                             * This class adds support for creating
-                             * {@link https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md | Selective Disclosure}
-                             * requests and interpret the responses received.
-                             *
-                             * This implementation of the uPort protocol uses
-                             * {@link https://www.w3.org/TR/vc-data-model/#presentations | W3C Presentation}
-                             * as the response encoding instead of a `shareReq`.
-                             *
-                             * @beta This API may change without a BREAKING CHANGE notice.
-                             */
+                            type: string;
                             description: string;
                         };
                         send: {
@@ -80,18 +70,7 @@ readonly schema: {
                             anyOf: ({
                                 type: string;
                                 items: {
-                                    type: string; /**
-                                     * Creates a Selective disclosure request, encoded as a JWT.
-                                     *
-                                     * @remarks See
-                                     *   {@link https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md | Selective Disclosure}
-                                     *
-                                     * @param args - The param object with the properties necessary to create the request. See
-                                     *   {@link ISelectiveDisclosureRequest}
-                                     * @param context - *RESERVED* This is filled by the framework when the method is called.
-                                     *
-                                     * @beta This API may change without a BREAKING CHANGE notice.
-                                     */
+                                    type: string;
                                 };
                             } | {
                                 type: string;

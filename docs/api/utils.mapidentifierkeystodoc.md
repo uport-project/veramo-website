@@ -8,7 +8,7 @@ hide_title: true
 
 ## mapIdentifierKeysToDoc() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Maps the keys of a locally managed [IIdentifier](./core-types.iidentifier.md) to the corresponding entries from the DID document.
 
@@ -19,16 +19,18 @@ export declare function mapIdentifierKeysToDoc(
   identifier: IIdentifier,
   section: DIDDocumentSection | undefined,
   context: IAgentContext<IResolver>,
+  resolutionOptions?: DIDResolutionOptions,
 ): Promise<_ExtendedIKey[]>
 ```
 
 ## Parameters
 
-| Parameter  | Type                                                                                         | Description                                                                                                                                                                                                       |
-| ---------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| identifier | [IIdentifier](./core-types.iidentifier.md)                                                   | the identifier to be mapped                                                                                                                                                                                       |
-| section    | [DIDDocumentSection](./core-types.diddocumentsection.md) &#124; undefined                    | the section of the DID document to be mapped (see [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)), but can also be <code>verificationMethod</code> to map all the keys. |
-| context    | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the identifier.                                                         |
+| Parameter         | Type                                                                                         | Description                                                                                                                                                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| identifier        | [IIdentifier](./core-types.iidentifier.md)                                                   | the identifier to be mapped                                                                                                                                                                                       |
+| section           | [DIDDocumentSection](./core-types.diddocumentsection.md) &#124; undefined                    | the section of the DID document to be mapped (see [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)), but can also be <code>verificationMethod</code> to map all the keys. |
+| context           | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the identifier.                                                         |
+| resolutionOptions | DIDResolutionOptions                                                                         | _(Optional)_ optional parameters to be passed to the DID resolver                                                                                                                                                 |
 
 **Returns:**
 

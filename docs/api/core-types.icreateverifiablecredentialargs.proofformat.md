@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICreateVerifiableCredentialArgs.proofFormat property
 
-The desired format for the VerifiablePresentation to be created.
+The desired format for the VerifiableCredential to be created.
 
 **Signature:**
 

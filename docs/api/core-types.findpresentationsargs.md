@@ -8,7 +8,7 @@ hide_title: true
 
 ## FindPresentationsArgs type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The filter that can be used to find [VerifiablePresentation](./core-types.verifiablepresentation.md)s in the data store. See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md)
 

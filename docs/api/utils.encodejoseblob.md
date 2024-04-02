@@ -8,7 +8,7 @@ hide_title: true
 
 ## encodeJoseBlob() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Stringifies a JSON object and encodes the bytes of the resulting string to a base64url representation.
 

@@ -8,7 +8,7 @@ hide_title: true
 
 ## ISendDIDCommMessageArgs interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The input to the [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) method. The provided `messageId` will be used in the emitted event to allow event/message correlation.
 
@@ -17,8 +17,10 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export interface ISendDIDCommMessageArgs
+export interface ISendDIDCommMessageArgs extends UsingResolutionOptions
 ```
+
+**Extends:** [UsingResolutionOptions](./core-types.usingresolutionoptions.md)
 
 ## Properties
 

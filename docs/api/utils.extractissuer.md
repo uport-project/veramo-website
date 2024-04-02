@@ -8,7 +8,7 @@ hide_title: true
 
 ## extractIssuer() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Decodes a credential or presentation and returns the issuer ID `iss` from a JWT or `issuer`/`issuer.id` from a VC or `holder` from a VP
 

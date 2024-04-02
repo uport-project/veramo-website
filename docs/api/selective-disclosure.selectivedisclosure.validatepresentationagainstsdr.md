@@ -8,9 +8,9 @@ hide_title: true
 
 ## SelectiveDisclosure.validatePresentationAgainstSdr() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Validates a [Selective Disclosure response](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md) encoded as a `Presentation`
+Validates a [uPort Selective Disclosure response](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md) encoded as a `Presentation`
 
 **Signature:**
 

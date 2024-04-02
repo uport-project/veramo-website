@@ -8,7 +8,7 @@ hide_title: true
 
 ## IUnpackDIDCommMessageArgs type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The input to the [IDIDComm.unpackDIDCommMessage()](./did-comm.ididcomm.unpackdidcommmessage.md) method.
 
@@ -17,7 +17,7 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export type IUnpackDIDCommMessageArgs = IPackedDIDCommMessage
+export type IUnpackDIDCommMessageArgs = IPackedDIDCommMessage & UsingResolutionOptions
 ```
 
-**References:** [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)
+**References:** [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md), [UsingResolutionOptions](./core-types.usingresolutionoptions.md)

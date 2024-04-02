@@ -8,7 +8,7 @@ hide_title: true
 
 ## IVerifyPresentationLDArgs interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Encapsulates the parameters required to verify a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)
 
@@ -17,8 +17,10 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export interface IVerifyPresentationLDArgs
+export interface IVerifyPresentationLDArgs extends UsingResolutionOptions
 ```
+
+**Extends:** [UsingResolutionOptions](./core-types.usingresolutionoptions.md)
 
 ## Properties
 

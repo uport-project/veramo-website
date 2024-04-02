@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICreateVerifiablePresentationEIP712Args.keyRef property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 \[Optional\] The ID of the key that should sign this presentation. If this is not specified, the first matching key will be used.
 

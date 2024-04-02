@@ -8,7 +8,7 @@ hide_title: true
 
 ## IDIDComm.unpackDIDCommMessage() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Unpacks a possible DIDComm message and returns the [IDIDCommMessage](./did-comm.ididcommmessage.md) and [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) used to pack it.
 

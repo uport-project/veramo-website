@@ -8,7 +8,7 @@ hide_title: true
 
 ## Service class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Represents some properties of a as it is stored in a TypeORM database. This is used by [DIDStore](./data-store.didstore.md) to provide information to [DIDManager](./did-manager.didmanager.md) when DID management information is stored in a local TypeORM database.
 

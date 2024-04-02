@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDDocComponent type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Return type of [getDIDComponentById](./core-types.iresolver.getdidcomponentbyid.md) represents a `VerificationMethod` or a `ServiceEndpoint` entry from a This API may change without a BREAKING CHANGE notice.
 

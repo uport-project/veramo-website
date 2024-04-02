@@ -8,7 +8,7 @@ hide_title: true
 
 ## ProofType interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 A proof property of a [VerifiableCredential](./core-types.verifiablecredential.md) or [VerifiablePresentation](./core-types.verifiablepresentation.md)
 

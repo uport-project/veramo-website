@@ -8,14 +8,20 @@ hide_title: true
 
 ## extractPublicKeyHex() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Converts the publicKey of a VerificationMethod to hex encoding (publicKeyHex)
 
 **Signature:**
 
 ```typescript
-export declare function extractPublicKeyHex(pk: _ExtendedVerificationMethod, convert?: boolean): string
+export declare function extractPublicKeyHex(
+  pk: _ExtendedVerificationMethod,
+  convert?: boolean,
+): {
+  publicKeyHex: string
+  keyType: string | undefined
+}
 ```
 
 ## Parameters
@@ -27,8 +33,8 @@ export declare function extractPublicKeyHex(pk: _ExtendedVerificationMethod, con
 
 **Returns:**
 
-string
+{ publicKeyHex: string; keyType: string \| undefined; }
 
-the hex encoding of the public key
+the hex encoding of the public key along with the inferred key type
 
 This API may change without a BREAKING CHANGE notice.

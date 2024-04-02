@@ -8,7 +8,7 @@ hide_title: true
 
 ## FindCredentialsArgs type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The filter that can be used to find [VerifiableCredential](./core-types.verifiablecredential.md)s in the data store. See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md)
 

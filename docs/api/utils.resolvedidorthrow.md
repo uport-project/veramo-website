@@ -8,7 +8,7 @@ hide_title: true
 
 ## resolveDidOrThrow() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Resolve a DID document or throw an error if the resolution fails.
 
@@ -18,15 +18,17 @@ Resolve a DID document or throw an error if the resolution fails.
 export declare function resolveDidOrThrow(
   didUrl: string,
   context: IAgentContext<IResolver>,
+  resolutionOptions?: DIDResolutionOptions,
 ): Promise<DIDDocument>
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                         | Description                                                                                                                                                        |
-| --------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| didUrl    | string                                                                                       | the DID to be resolved                                                                                                                                             |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the <code>didUrl</code>. |
+| Parameter         | Type                                                                                         | Description                                                                                                                                                        |
+| ----------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| didUrl            | string                                                                                       | the DID to be resolved                                                                                                                                             |
+| context           | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the <code>didUrl</code>. |
+| resolutionOptions | DIDResolutionOptions                                                                         | _(Optional)_ optional parameters to be passed to the DID resolver                                                                                                  |
 
 **Returns:**
 

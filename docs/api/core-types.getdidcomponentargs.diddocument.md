@@ -8,7 +8,7 @@ hide_title: true
 
 ## GetDIDComponentArgs.didDocument property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 the DID document from which to extract the fragment. This MUST be the document resolved by [IResolver.resolveDid()](./core-types.iresolver.resolvedid.md)
 

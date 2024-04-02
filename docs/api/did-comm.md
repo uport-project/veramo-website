@@ -50,9 +50,15 @@ Provides a [plugin](./did-comm.didcomm.md) for the [Agent](./core.agent.md) that
 | [createMediateGrantMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createmediategrantmessage.md)                                    | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
 | [createMediateRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createmediaterequestmessage.md)                                      | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
 | [createStatusRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createstatusrequestmessage.md)                                        | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [createV3DeliveryRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3deliveryrequestmessage.md)                                | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [createV3MediateDenyMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createv3mediatedenymessage.md)                                  | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
 | [createV3MediateGrantMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createv3mediategrantmessage.md)                                | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
 | [createV3MediateRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3mediaterequestmessage.md)                                  | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [createV3RecipientQueryMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3recipientquerymessage.md)                                  | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [createV3RecipientQueryResponseMessage(recipientDidUrl, mediatorDidUrl, thid, dids)](./did-comm.createv3recipientqueryresponsemessage.md)      | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [createV3RecipientUpdateMessage(recipientDidUrl, mediatorDidUrl, updates)](./did-comm.createv3recipientupdatemessage.md)                       | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
 | [createV3RecipientUpdateResponseMessage(recipientDidUrl, mediatorDidUrl, thid, updates)](./did-comm.createv3recipientupdateresponsemessage.md) | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [createV3StatusRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3statusrequestmessage.md)                                    | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
 
 ## Interfaces
 
@@ -79,19 +85,14 @@ Provides a [plugin](./did-comm.didcomm.md) for the [Agent](./core.agent.md) that
 
 ## Variables
 
-| Variable                                                                                     | Description                                                        |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [createV3DeliveryRequestMessage](./did-comm.createv3deliveryrequestmessage.md)               | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3MediateDenyMessage](./did-comm.createv3mediatedenymessage.md)                       | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3RecipientQueryMessage](./did-comm.createv3recipientquerymessage.md)                 | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3RecipientQueryResponseMessage](./did-comm.createv3recipientqueryresponsemessage.md) | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3RecipientUpdateMessage](./did-comm.createv3recipientupdatemessage.md)               | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3StatusRequestMessage](./did-comm.createv3statusrequestmessage.md)                   | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [DELIVERY_REQUEST_MESSAGE_TYPE](./did-comm.delivery_request_message_type.md)                 | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [MEDIATE_DENY_MESSAGE_TYPE](./did-comm.mediate_deny_message_type.md)                         | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [MEDIATE_GRANT_MESSAGE_TYPE](./did-comm.mediate_grant_message_type.md)                       | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [MEDIATE_REQUEST_MESSAGE_TYPE](./did-comm.mediate_request_message_type.md)                   | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [STATUS_REQUEST_MESSAGE_TYPE](./did-comm.status_request_message_type.md)                     | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| Variable                                                                     | Description                                                        |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [DELIVERY_REQUEST_MESSAGE_TYPE](./did-comm.delivery_request_message_type.md) | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [MEDIATE_DENY_MESSAGE_TYPE](./did-comm.mediate_deny_message_type.md)         | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [MEDIATE_GRANT_MESSAGE_TYPE](./did-comm.mediate_grant_message_type.md)       | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [MEDIATE_REQUEST_MESSAGE_TYPE](./did-comm.mediate_request_message_type.md)   | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+| [schema](./did-comm.schema.md)                                               |                                                                    |
+| [STATUS_REQUEST_MESSAGE_TYPE](./did-comm.status_request_message_type.md)     | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
 
 ## Type Aliases
 

@@ -8,7 +8,7 @@ hide_title: true
 
 ## PresentationTableEntry interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent a Verifiable Presentation in a way that facilitates querying using the [IDataStoreORM](./core-types.idatastoreorm.md) interface.
 

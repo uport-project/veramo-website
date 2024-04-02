@@ -8,7 +8,7 @@ hide_title: true
 
 ## SelectiveDisclosure.createSelectiveDisclosureRequest() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Creates a Selective disclosure request, encoded as a JWT.
 
@@ -31,4 +31,4 @@ Promise&lt;string&gt;
 
 ## Remarks
 
-See [Selective Disclosure](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md)
+See [uPort Selective Disclosure](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md)

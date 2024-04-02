@@ -21,6 +21,6 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                         | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| options   | { contextMaps: [RecordLike](./utils.recordlike.md)&lt;OrPromise&lt;[ContextDoc](./credential-ld.contextdoc.md)&gt;&gt;\[\]; suites: VeramoLdSignature\[\]; } |             |
+| Parameter | Type                                                                                                                                                                                                 | Description |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| options   | { contextMaps: [RecordLike](./utils.recordlike.md)&lt;OrPromise&lt;[ContextDoc](./credential-ld.contextdoc.md)&gt;&gt;\[\]; suites: [VeramoLdSignature](./credential-ld.veramoldsignature.md)\[\]; } |             |

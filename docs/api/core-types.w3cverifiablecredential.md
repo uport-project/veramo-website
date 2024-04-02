@@ -8,7 +8,7 @@ hide_title: true
 
 ## W3CVerifiableCredential type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Represents a signed Verifiable Credential (includes proof), in either JSON or compact JWT format. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials) See [proof formats](https://www.w3.org/TR/vc-data-model/#proof-formats)
 

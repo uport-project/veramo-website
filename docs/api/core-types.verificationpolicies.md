@@ -8,7 +8,7 @@ hide_title: true
 
 ## VerificationPolicies interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 These optional settings can be used to override some default checks that are performed on Presentations during verification.
 

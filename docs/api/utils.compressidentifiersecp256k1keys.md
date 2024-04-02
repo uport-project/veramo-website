@@ -8,7 +8,7 @@ hide_title: true
 
 ## compressIdentifierSecp256k1Keys() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Converts any Secp256k1 public keys of an [IIdentifier](./core-types.iidentifier.md) to their compressed form.
 

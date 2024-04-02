@@ -8,7 +8,7 @@ hide_title: true
 
 ## VeramoJsonStore interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 An extension to [VeramoJsonCache](./data-store-json.veramojsoncache.md) that bundles an update notification callback that allows implementors to persist the [VeramoJsonCache](./data-store-json.veramojsoncache.md) and any other data it may contain to another storage medium.
 

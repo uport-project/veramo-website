@@ -8,7 +8,7 @@ hide_title: true
 
 ## Eip712Payload type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The payload that is sent to be signed according to EIP712
 

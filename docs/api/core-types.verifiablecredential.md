@@ -8,7 +8,7 @@ hide_title: true
 
 ## VerifiableCredential type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Represents a signed Verifiable Credential payload (includes proof), using a JSON representation. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)
 

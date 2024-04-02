@@ -8,7 +8,7 @@ hide_title: true
 
 ## createDefaultDid() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 This can be used to automatically create a did:web with signing and encryption keys and listing messaging and DIDComm service endpoints.
 

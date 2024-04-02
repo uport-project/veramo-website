@@ -8,7 +8,7 @@ hide_title: true
 
 ## IDIDComm.getDIDCommMessageMediaType() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Partially decodes a possible DIDComm message string to determine the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)
 

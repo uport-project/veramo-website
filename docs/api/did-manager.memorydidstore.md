@@ -8,7 +8,7 @@ hide_title: true
 
 ## MemoryDIDStore class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that stores everything in memory.
 

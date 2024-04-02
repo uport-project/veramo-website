@@ -24,6 +24,12 @@ hide_title: true
 | [IVerifyCredentialEIP712Args](./credential-eip712.iverifycredentialeip712args.md)                         | <p>**_(BETA)_** Encapsulates the parameters required to verify a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                           |
 | [IVerifyPresentationEIP712Args](./credential-eip712.iverifypresentationeip712args.md)                     | Encapsulates the parameters required to verify a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)                                                                                                                                                                                                       |
 
+## Variables
+
+| Variable                                | Description |
+| --------------------------------------- | ----------- |
+| [schema](./credential-eip712.schema.md) |             |
+
 ## Type Aliases
 
 | Type Alias                                                  | Description                                                                                                                                                                                                                                                                                                                 |

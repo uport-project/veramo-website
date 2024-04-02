@@ -8,7 +8,7 @@ hide_title: true
 
 ## IDIDCommMessage interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The DIDComm message structure. See https://identity.foundation/didcomm-messaging/spec/\#plaintext-message-structure
 
@@ -25,7 +25,7 @@ export interface IDIDCommMessage
 | Property                                                    | Modifiers | Type                                                                     | Description               |
 | ----------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ------------------------- |
 | [attachments?](./did-comm.ididcommmessage.attachments.md)   |           | [IDIDCommMessageAttachment](./did-comm.ididcommmessageattachment.md)\[\] | **_(BETA)_** _(Optional)_ |
-| [body](./did-comm.ididcommmessage.body.md)                  |           | any                                                                      | **_(BETA)_**              |
+| [body?](./did-comm.ididcommmessage.body.md)                 |           | any                                                                      | **_(BETA)_** _(Optional)_ |
 | [created_time?](./did-comm.ididcommmessage.created_time.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
 | [expires_time?](./did-comm.ididcommmessage.expires_time.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
 | [from_prior?](./did-comm.ididcommmessage.from_prior.md)     |           | string                                                                   | **_(BETA)_** _(Optional)_ |
@@ -35,5 +35,5 @@ export interface IDIDCommMessage
 | [pthid?](./did-comm.ididcommmessage.pthid.md)               |           | string                                                                   | **_(BETA)_** _(Optional)_ |
 | [return_route?](./did-comm.ididcommmessage.return_route.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
 | [thid?](./did-comm.ididcommmessage.thid.md)                 |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [to](./did-comm.ididcommmessage.to.md)                      |           | string                                                                   | **_(BETA)_**              |
+| [to?](./did-comm.ididcommmessage.to.md)                     |           | string\[\]                                                               | **_(BETA)_** _(Optional)_ |
 | [type](./did-comm.ididcommmessage.type.md)                  |           | string                                                                   | **_(BETA)_**              |

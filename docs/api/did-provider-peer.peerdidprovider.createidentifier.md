@@ -8,23 +8,23 @@ hide_title: true
 
 ## PeerDIDProvider.createIdentifier() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 **Signature:**
 
 ```typescript
 createIdentifier({ kms, options }: {
         kms?: string;
-        options?: any;
+        options?: CreatePeerDidOptions;
     }, context: IContext): Promise<Omit<IIdentifier, 'provider'>>;
 ```
 
 ## Parameters
 
-| Parameter        | Type                             | Description |
-| ---------------- | -------------------------------- | ----------- |
-| { kms, options } | { kms?: string; options?: any; } |             |
-| context          | IContext                         |             |
+| Parameter        | Type                                              | Description |
+| ---------------- | ------------------------------------------------- | ----------- |
+| { kms, options } | { kms?: string; options?: CreatePeerDidOptions; } |             |
+| context          | IContext                                          |             |
 
 **Returns:**
 

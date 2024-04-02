@@ -8,7 +8,7 @@ hide_title: true
 
 ## MEDIATE_DENY_MESSAGE_TYPE variable
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 This API may change without a BREAKING CHANGE notice.
 

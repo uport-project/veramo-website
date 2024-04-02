@@ -8,7 +8,7 @@ hide_title: true
 
 ## SelectiveDisclosure.getVerifiableCredentialsForSdr() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Gathers the required credentials necessary to fulfill a Selective Disclosure Request. It uses a [IDataStoreORM](./core-types.idatastoreorm.md) plugin implementation to query the local database for the required credentials.
 

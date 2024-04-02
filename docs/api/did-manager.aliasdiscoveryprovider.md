@@ -8,7 +8,7 @@ hide_title: true
 
 ## AliasDiscoveryProvider class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 A DID discovery provider that can filter DIDs by the `alias` used internally in [DIDManager](./did-manager.didmanager.md)
 

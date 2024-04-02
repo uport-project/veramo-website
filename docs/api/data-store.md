@@ -32,9 +32,10 @@ hide_title: true
 
 ## Functions
 
-| Function                                                            | Description                                                                                            |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [migrationConcat(migrationArrays)](./data-store.migrationconcat.md) | The migrations helper that allows migrations from multiple sources to be combined into a single array. |
+| Function                                                            | Description                                                                                                                                 |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [entitiesConcat(entityArrays)](./data-store.entitiesconcat.md)      | <p>Helper function to concatenate multiple arrays of TypeORM entities.</p><p>This array CAN be used when creating a TypeORM connection.</p> |
+| [migrationConcat(migrationArrays)](./data-store.migrationconcat.md) | The migrations helper that allows migrations from multiple sources to be combined into a single array.                                      |
 
 ## Interfaces
 
@@ -44,11 +45,10 @@ hide_title: true
 
 ## Variables
 
-| Variable                                         | Description                                                                                                                                                                                                               |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Entities](./data-store.entities.md)             | <p>The TypeORM entities used by this package.</p><p>This array SHOULD be used when creating a TypeORM connection.</p>                                                                                                     |
-| [entitiesConcat](./data-store.entitiesconcat.md) | <p>Helper function to concatenate multiple arrays of TypeORM entities.</p><p>This array CAN be used when creating a TypeORM connection.</p>                                                                               |
-| [migrations](./data-store.migrations.md)         | <p>The migrations array that SHOULD be used when initializing a TypeORM database connection.</p><p>These ensure the correct creation of tables and the proper migrations of data when tables change between versions.</p> |
+| Variable                                 | Description                                                                                                                                                                                                               |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Entities](./data-store.entities.md)     | <p>The TypeORM entities used by this package.</p><p>This array SHOULD be used when creating a TypeORM connection.</p>                                                                                                     |
+| [migrations](./data-store.migrations.md) | <p>The migrations array that SHOULD be used when initializing a TypeORM database connection.</p><p>These ensure the correct creation of tables and the proper migrations of data when tables change between versions.</p> |
 
 ## Type Aliases
 

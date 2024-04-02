@@ -8,7 +8,7 @@ hide_title: true
 
 ## computeEntryHash() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Computes a hash for a given credential or presentation. This hash is usable as an internal ID for database indexing
 

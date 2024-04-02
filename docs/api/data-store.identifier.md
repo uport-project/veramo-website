@@ -8,7 +8,7 @@ hide_title: true
 
 ## Identifier class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Represents some properties and relationships of an [IIdentifier](./core-types.iidentifier.md) that are stored in a TypeORM database for the purpose of keeping track of keys and services associated with a DID managed by a Veramo agent.
 

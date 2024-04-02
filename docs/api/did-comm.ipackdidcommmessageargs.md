@@ -8,7 +8,7 @@ hide_title: true
 
 ## IPackDIDCommMessageArgs interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The input to the [IDIDComm.packDIDCommMessage()](./did-comm.ididcomm.packdidcommmessage.md) method. When `packing` is `authcrypt` or `jws`, a `keyRef` MUST be provided.
 
@@ -17,8 +17,10 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export interface IPackDIDCommMessageArgs
+export interface IPackDIDCommMessageArgs extends UsingResolutionOptions
 ```
+
+**Extends:** [UsingResolutionOptions](./core-types.usingresolutionoptions.md)
 
 ## Properties
 

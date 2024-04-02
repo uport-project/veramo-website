@@ -12,7 +12,7 @@ hide_title: true
 >
 > Please call [dataStoreSaveVerifiableCredential()](./core-types.idatastore.datastoresaveverifiablecredential.md) to save the credential after creating it.
 
-If this parameter is true, the resulting VerifiablePresentation is sent to the [storage plugin](./core-types.idatastore.md) to be saved.
+If this parameter is true, the resulting VerifiableCredential is sent to the [storage plugin](./core-types.idatastore.md) to be saved.
 
 **Signature:**
 

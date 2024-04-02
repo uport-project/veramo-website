@@ -8,7 +8,7 @@ hide_title: true
 
 ## KeyStoreJson class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that uses a JSON object to store the relationships between keys, their IDs, aliases and [KMS implementations](./key-manager.abstractkeymanagementsystem.md), as they are known and managed by a Veramo agent.
 

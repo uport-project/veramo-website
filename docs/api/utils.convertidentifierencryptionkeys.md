@@ -8,7 +8,7 @@ hide_title: true
 
 ## convertIdentifierEncryptionKeys() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Converts any Ed25519 keys of an [IIdentifier](./core-types.iidentifier.md) to X25519 to be usable for encryption.
 
@@ -28,6 +28,6 @@ export declare function convertIdentifierEncryptionKeys(identifier: IIdentifier)
 
 [IKey](./core-types.ikey.md)\[\]
 
-the array of converted keys filtered to contain only those usable for encryption.
+the array of converted keys filtered to contain ONLY X25519 keys usable for encryption.
 
 This API may change without a BREAKING CHANGE notice.

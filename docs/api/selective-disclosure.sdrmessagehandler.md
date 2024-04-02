@@ -8,7 +8,11 @@ hide_title: true
 
 ## SdrMessageHandler class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+
+> Warning: This API is now obsolete.
+>
+> This plugin is deprecated as it implements a non-standard protocol created for the uPort project. It will be removed in a future release.
 
 A Veramo message handler plugin that can decode an incoming Selective Disclosure Response into the internal Message representation.
 

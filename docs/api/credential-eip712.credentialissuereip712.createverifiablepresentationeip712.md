@@ -8,7 +8,7 @@ hide_title: true
 
 ## CredentialIssuerEIP712.createVerifiablePresentationEIP712() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Creates a Verifiable Presentation. The payload and signer are chosen based on the `args` parameter.
 

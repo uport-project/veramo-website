@@ -8,7 +8,7 @@ hide_title: true
 
 ## AuthorizedDIDContext interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 This context can be used for Veramo Agents that are created behind an authorization mechanism, that attaches a DID as the authorized executor of certain actions. This authorized DID is used to further filter the data that is available for querying.
 

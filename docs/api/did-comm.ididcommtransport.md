@@ -8,7 +8,7 @@ hide_title: true
 
 ## IDIDCommTransport interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Common interface for transports that can be used in the [DIDComm](./did-comm.didcomm.md) module.
 

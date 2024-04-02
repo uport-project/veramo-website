@@ -13,8 +13,10 @@ Encapsulates the parameters required to verify a [W3C Verifiable Credential](htt
 **Signature:**
 
 ```typescript
-export interface IVerifyCredentialArgs
+export interface IVerifyCredentialArgs extends UsingResolutionOptions
 ```
+
+**Extends:** [UsingResolutionOptions](./core-types.usingresolutionoptions.md)
 
 ## Properties
 

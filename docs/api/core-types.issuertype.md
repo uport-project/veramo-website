@@ -8,7 +8,7 @@ hide_title: true
 
 ## IssuerType type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The issuer of a [VerifiableCredential](./core-types.verifiablecredential.md) or the holder of a [VerifiablePresentation](./core-types.verifiablepresentation.md).
 

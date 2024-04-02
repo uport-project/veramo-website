@@ -8,7 +8,7 @@ hide_title: true
 
 ## DiffCallback type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 A callback method that is called when the data stored in a [VeramoJsonCache](./data-store-json.veramojsoncache.md) is updated.
 

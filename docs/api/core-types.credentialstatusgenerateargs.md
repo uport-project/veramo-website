@@ -8,7 +8,7 @@ hide_title: true
 
 ## CredentialStatusGenerateArgs interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Arguments for generating a `credentialStatus` property for a [VerifiableCredential](./core-types.verifiablecredential.md).
 

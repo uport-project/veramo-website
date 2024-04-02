@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDStoreJson class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that uses a JSON object to store the relationships between DIDs, their providers and controllers and their keys and services as they are known and managed by a Veramo agent.
 

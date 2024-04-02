@@ -8,7 +8,7 @@ hide_title: true
 
 ## CredentialIssuerEIP712.schema property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 **Signature:**
 
@@ -19,6 +19,18 @@ readonly schema: {
                 ICreateVerifiableCredentialEIP712Args: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         credential: {
                             $ref: string;
                             description: string;
@@ -175,6 +187,18 @@ readonly schema: {
                 ICreateVerifiablePresentationEIP712Args: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         presentation: {
                             $ref: string;
                             description: string;
@@ -288,6 +312,18 @@ readonly schema: {
                 IVerifyCredentialEIP712Args: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         credential: {
                             $ref: string;
                             description: string;
@@ -299,6 +335,18 @@ readonly schema: {
                 IVerifyPresentationEIP712Args: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         presentation: {
                             $ref: string;
                             description: string;

@@ -13,8 +13,10 @@ Encapsulates the parameters required to create a [W3C Verifiable Presentation](h
 **Signature:**
 
 ```typescript
-export interface ICreateVerifiablePresentationArgs
+export interface ICreateVerifiablePresentationArgs extends UsingResolutionOptions
 ```
+
+**Extends:** [UsingResolutionOptions](./core-types.usingresolutionoptions.md)
 
 ## Properties
 

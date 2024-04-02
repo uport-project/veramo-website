@@ -8,7 +8,7 @@ hide_title: true
 
 ## PreMigrationKey class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 This represents the private key data of keys that were stored by [KeyStore](./data-store.keystore.md) before Veramo 3.0. During database migration this key material is moved to a different table and accessible by [PrivateKeyStore](./data-store.privatekeystore.md).
 

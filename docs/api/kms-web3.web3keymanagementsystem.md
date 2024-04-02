@@ -8,7 +8,7 @@ hide_title: true
 
 ## Web3KeyManagementSystem class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 This is a [KMS](./key-manager.abstractkeymanagementsystem.md) implementation that uses the addresses of a web3 wallet as key identifiers, and calls the respective wallet for signing operations.
 

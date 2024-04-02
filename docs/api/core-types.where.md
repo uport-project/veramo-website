@@ -8,7 +8,7 @@ hide_title: true
 
 ## Where interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Represents a WHERE predicate for a [FindArgs](./core-types.findargs.md) query. In situations where multiple WHERE predicates are present, they are combined with AND.
 

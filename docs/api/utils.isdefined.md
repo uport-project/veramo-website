@@ -8,7 +8,7 @@ hide_title: true
 
 ## isDefined() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Checks if a variable is defined and not null. After this check, typescript sees the variable as defined.
 

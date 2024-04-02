@@ -8,7 +8,7 @@ hide_title: true
 
 ## decodeBase64url() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Decodes a base64url string to a utf8 string represented by the same bytes.
 

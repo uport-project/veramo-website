@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICredentialStatusVerifier interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 This interface defines a plugin that can check the [status](https://www.w3.org/TR/vc-data-model/#status) of a [Verifiable Credential](./core-types.verifiablecredential.md).
 

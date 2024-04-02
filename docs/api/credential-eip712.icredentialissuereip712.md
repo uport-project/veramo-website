@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICredentialIssuerEIP712 interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The interface definition for a plugin that can issue and verify Verifiable Credentials and Presentations that use EIP712 proof format.
 

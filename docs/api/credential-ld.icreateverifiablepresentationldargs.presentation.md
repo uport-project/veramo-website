@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICreateVerifiablePresentationLDArgs.presentation property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 The json payload of the Presentation according to the [canonical model](https://www.w3.org/TR/vc-data-model/#presentations).
 

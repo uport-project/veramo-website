@@ -8,7 +8,7 @@ hide_title: true
 
 ## IDataStoreORM.dataStoreORMGetMessages() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Returns a list of [IMessage](./core-types.imessage.md)s that match the given filter. These are messages that were stored using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md).
 

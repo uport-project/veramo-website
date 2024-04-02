@@ -17,6 +17,18 @@ readonly schema: {
                 IVerifyCredentialArgs: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         credential: {
                             $ref: string;
                             description: string;
@@ -213,6 +225,18 @@ readonly schema: {
                 IVerifyPresentationArgs: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         presentation: {
                             $ref: string;
                             description: string;
@@ -297,6 +321,18 @@ readonly schema: {
                 ICreateVerifiableCredentialArgs: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         credential: {
                             $ref: string;
                             description: string;
@@ -375,6 +411,18 @@ readonly schema: {
                 ICreateVerifiablePresentationArgs: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         presentation: {
                             $ref: string;
                             description: string;

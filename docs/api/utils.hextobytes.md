@@ -8,7 +8,7 @@ hide_title: true
 
 ## hexToBytes() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Converts a hex string (with or without prefix) to a byte array (Uint8Array)
 

@@ -8,7 +8,7 @@ hide_title: true
 
 ## Key class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Represents some properties of a [IKey](./core-types.ikey.md) that are stored in a TypeORM database for the purpose of keeping track of the [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations and the keys they are able to use.
 

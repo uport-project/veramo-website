@@ -8,7 +8,7 @@ hide_title: true
 
 ## processEntryToArray() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Processes an entry or an array of entries into an array of entries. If a `startWithEntry` param is provided, it is set as the first item in the result array.
 

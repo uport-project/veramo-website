@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICreateVerifiablePresentationEIP712Args interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Encapsulates the parameters required to create a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations) using the [EthereumEip712Signature2021](https://w3c-ccg.github.io/ethereum-eip712-signature-2021-spec/) proof format.
 
@@ -17,8 +17,10 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export interface ICreateVerifiablePresentationEIP712Args
+export interface ICreateVerifiablePresentationEIP712Args extends UsingResolutionOptions
 ```
+
+**Extends:** [UsingResolutionOptions](./core-types.usingresolutionoptions.md)
 
 ## Properties
 

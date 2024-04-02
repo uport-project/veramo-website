@@ -8,7 +8,7 @@ hide_title: true
 
 ## MessageTypes variable
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Identifies a [IMessage](./core-types.imessage.md) that represents a Selective Disclosure Request
 
@@ -22,4 +22,4 @@ MessageTypes: {
 
 ## Remarks
 
-See [Selective Disclosure Request](https://github.com/uport-project/specs/blob/develop/messages/sharereq.md) This API may change without a BREAKING CHANGE notice.
+See [uPort Selective Disclosure Request](https://github.com/uport-project/specs/blob/develop/messages/sharereq.md) This API may change without a BREAKING CHANGE notice.

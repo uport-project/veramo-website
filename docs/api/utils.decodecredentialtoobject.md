@@ -8,7 +8,7 @@ hide_title: true
 
 ## decodeCredentialToObject() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 Parses a [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) and converts it to a [VerifiableCredential](./core-types.verifiablecredential.md) so it is easier to use programmatically.
 

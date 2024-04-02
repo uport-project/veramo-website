@@ -8,7 +8,7 @@ hide_title: true
 
 ## DIDComm.schema property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
 **Signature:**
 
@@ -34,6 +34,18 @@ readonly schema: {
                 IPackDIDCommMessageArgs: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         message: {
                             $ref: string;
                         };
@@ -53,6 +65,9 @@ readonly schema: {
                 IDIDCommMessage: {
                     type: string;
                     properties: {
+                        id: {
+                            type: string;
+                        };
                         type: {
                             type: string;
                         };
@@ -61,14 +76,14 @@ readonly schema: {
                         };
                         to: {
                             type: string;
+                            items: {
+                                type: string;
+                            };
                         };
                         thid: {
                             type: string;
                         };
                         pthid: {
-                            type: string;
-                        };
-                        id: {
                             type: string;
                         };
                         expires_time: {
@@ -124,7 +139,7 @@ readonly schema: {
                         data: {
                             $ref: string;
                         };
-                    };
+                    }; /** Plugin methods */
                     required: string[];
                     description: string;
                 };
@@ -186,6 +201,18 @@ readonly schema: {
                 ISendDIDCommMessageArgs: {
                     type: string;
                     properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
                         packedMessage: {
                             $ref: string;
                         };
@@ -578,7 +605,25 @@ readonly schema: {
                     deprecated: string;
                 };
                 IUnpackDIDCommMessageArgs: {
-                    $ref: string;
+                    type: string;
+                    properties: {
+                        resolutionOptions: {
+                            type: string;
+                            properties: {
+                                publicKeyFormat: {
+                                    type: string;
+                                };
+                                accept: {
+                                    type: string;
+                                };
+                            };
+                            description: string;
+                        };
+                        message: {
+                            type: string;
+                        };
+                    };
+                    required: string[];
                     description: string;
                 };
                 IUnpackedDIDCommMessage: {

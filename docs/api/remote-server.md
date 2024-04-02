@@ -46,10 +46,15 @@ app.listen(3002)
 
 ## Functions
 
-| Function                                                         | Description                                                                                                                                           |
-| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [apiKeyAuth({ apiKey })](./remote-server.apikeyauth.md)          | This provides a simple authorization mechanism based on a single pre-shared API key.                                                                  |
-| [createDefaultDid(options)](./remote-server.createdefaultdid.md) | **_(BETA)_** This can be used to automatically create a did:web with signing and encryption keys and listing messaging and DIDComm service endpoints. |
+| Function                                                                     | Description                                                                                                                                                                                                             |
+| ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [AgentRouter(options)](./remote-server.agentrouter.md)                       | <p>Creates a router that exposes [Agent](./core.agent.md) methods remotely.</p><p>This can be used by [AgentRestClient](./remote-client.agentrestclient.md) to instantiate the methods of this agent on the client.</p> |
+| [apiKeyAuth({ apiKey })](./remote-server.apikeyauth.md)                      | This provides a simple authorization mechanism based on a single pre-shared API key.                                                                                                                                    |
+| [ApiSchemaRouter(options)](./remote-server.apischemarouter.md)               | Creates a router that exposes [Agent](./core.agent.md) OpenAPI schema                                                                                                                                                   |
+| [createDefaultDid(options)](./remote-server.createdefaultdid.md)             | **_(BETA)_** This can be used to automatically create a did:web with signing and encryption keys and listing messaging and DIDComm service endpoints.                                                                   |
+| [MessagingRouter(options)](./remote-server.messagingrouter.md)               | <p>Creates a router for handling incoming messages.</p><p>Messages posted to this router get sent to the <code>handleMessage</code> method of the associated agent where this is used.</p>                              |
+| [RequestWithAgentRouter(options)](./remote-server.requestwithagentrouter.md) | <p>Creates an expressjs router that adds a Veramo agent to the request object.</p><p>This is needed by all other routers provided by this package to be able to perform their functions.</p>                            |
+| [WebDidDocRouter(options)](./remote-server.webdiddocrouter.md)               | Creates a router that serves <code>did:web</code> DID Documents                                                                                                                                                         |
 
 ## Interfaces
 
@@ -60,11 +65,6 @@ app.listen(3002)
 
 ## Variables
 
-| Variable                                                            | Description                                                                                                                                                                                                             |
-| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [AgentRouter](./remote-server.agentrouter.md)                       | <p>Creates a router that exposes [Agent](./core.agent.md) methods remotely.</p><p>This can be used by [AgentRestClient](./remote-client.agentrestclient.md) to instantiate the methods of this agent on the client.</p> |
-| [ApiSchemaRouter](./remote-server.apischemarouter.md)               | Creates a router that exposes [Agent](./core.agent.md) OpenAPI schema                                                                                                                                                   |
-| [didDocEndpoint](./remote-server.diddocendpoint.md)                 | The URL path to the DID document, used by did:web when the identifier is a hostname.                                                                                                                                    |
-| [MessagingRouter](./remote-server.messagingrouter.md)               | <p>Creates a router for handling incoming messages.</p><p>Messages posted to this router get sent to the <code>handleMessage</code> method of the associated agent where this is used.</p>                              |
-| [RequestWithAgentRouter](./remote-server.requestwithagentrouter.md) | <p>Creates an expressjs router that adds a Veramo agent to the request object.</p><p>This is needed by all other routers provided by this package to be able to perform their functions.</p>                            |
-| [WebDidDocRouter](./remote-server.webdiddocrouter.md)               | Creates a router that serves <code>did:web</code> DID Documents                                                                                                                                                         |
+| Variable                                            | Description                                                                          |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [didDocEndpoint](./remote-server.diddocendpoint.md) | The URL path to the DID document, used by did:web when the identifier is a hostname. |
