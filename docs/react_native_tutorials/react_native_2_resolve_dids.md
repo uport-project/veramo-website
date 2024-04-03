@@ -19,7 +19,7 @@ and/or encryption, what service endpoints can be used with them, etc.
 DID resolution depends on the DID method being used. This means that the ability to resolve various DID types, we have
 to find implementations of these DID method drivers and use them.
 There are lots of DID methods out there, and the choice of DID method to use is out of scope for this guide. But, since
-we already saw how to create `did:ethr` identifiers, let's see how to also resolve them to get the DID documents.
+we already saw how to create `did:peer` identifiers, let's see how to also resolve them to get the DID documents.
 
 ## Installation
 
@@ -27,7 +27,7 @@ The veramo list of "core" packages contains a DID resolver plugin. This plugin i
 drivers. Let's install that plugin as well as a DID resolver for `did:ethr`. And to see how multiple DID methods can be
 supported, let's also add support for resolving `did:web`.
 
-`npm install @veramo/did-resolver ethr-did-resolver web-did-resolver cross-fetch`
+`npm install @veramo/did-resolver web-did-resolver cross-fetch`
 
 ## Setup
 
@@ -44,8 +44,8 @@ import { IResolver } from '@veramo/core'
 // This plugin implements `IResolver`
 import { DIDResolverPlugin } from '@veramo/did-resolver'
 
-// the did:ethr resolver package
-import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
+// the did:peer resolver package
+import { getResolver as peerDidResolver } from '@veramo/did-provider-peer'
 // the did:web resolver package
 import { getResolver as webDidResolver } from 'web-did-resolver'
 ```
@@ -65,7 +65,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     // ... previously added plugins
     //
     new DIDResolverPlugin({
-      ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }), // and set it up to support `did:ethr`
+      ...peerDidResolver(), // and set it up to support `did:peer`
       ...webDidResolver(), // and `did:web`
     }),
   ],
