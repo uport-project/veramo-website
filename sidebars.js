@@ -55,7 +55,6 @@ module.exports = {
         'react_native_tutorials/react_native_2_resolve_dids',
         'react_native_tutorials/react_native_3_create_credentials',
         'react_native_tutorials/react_native_4_verify_credentials',
-        'react_native_tutorials/react_native_5_update_did_document',
       ],
     },
     {
