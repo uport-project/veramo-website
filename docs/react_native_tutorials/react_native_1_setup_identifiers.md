@@ -19,7 +19,7 @@ A finished example of this tutorial can be found on github at [https://github.co
 ## Introduction
 
 Let's set up Veramo to run locally on the device and use `expo-sqlite` to store data, identities, and keys. Our
-identifier provider will be `did:ethr`. Initially, we will set up the [agent](../veramo_agent/introduction.md) in the
+identifier provider will be `did:peer`. Initially, we will set up the [agent](../veramo_agent/introduction.md) in the
 most basic config and add more plugins for additional functionality as we go.
 
 Right now we just want to create an [identifier](../basics/identifiers.md).
@@ -31,13 +31,18 @@ Use the [Expo CLI](https://docs.expo.dev/workflow/expo-cli/) bootstrap a new typ
 Then, we initialize a new project like so:
 
 ```bash
-npx create-expo-app VeramoMobile --template expo-template-blank-typescript
+npx create-expo-app VeramoMobile --template expo-template-blank-typescript@49.0.15
 cd VeramoMobile
 ```
 
 Ensure your project is building and running ok before continuing to next steps (`npm run android` or `npm run ios`).
 
 ## Install Dependencies
+
+### Versions
+
+Different versions of our important dependencies may cause issues. This guide provides exact versions for those dependencies. If
+you're experiencing strange errors during development, you may want to check these versions, or use the [Finished Tutorial](https://github.com/veramolabs/veramo-react-native-tutorial) as a starting point.
 
 ### Prerequisite configuration
 
@@ -57,13 +62,14 @@ Create `metro.config.js` file and make sure it looks like this:
 
 ```js
 // filename: metro.config.js
-const { getDefaultConfig } = require('metro-config')
-const { resolver: defaultResolver } = getDefaultConfig.getDefaultValues()
+const { getDefaultConfig } = require('expo/metro-config')
 
-exports.resolver = {
-  ...defaultResolver,
-  sourceExts: [...defaultResolver.sourceExts, 'cjs'],
-}
+const config = getDefaultConfig(__dirname);
+
+config.resolver.sourceExts.push('cjs');
+config.resolver.unstable_enablePackageExports = true;
+
+module.exports = config;
 ```
 
 #### `crypto` shims
@@ -74,6 +80,7 @@ Next, we start setting up the shims that will be required by our libraries.
 npm i @sinonjs/text-encoding react-native-get-random-values @ethersproject/shims crypto-browserify stream-browserify cross-fetch
 npm i -D babel-plugin-rewrite-require
 npm i -D @babel/plugin-syntax-import-assertions
+npm i -D babel-plugin-transform-typescript-metadata
 ```
 
 Now edit your `babel.config.js` file at your project root and add the `babel-plugin-rewrite-require` to it, like so:
@@ -81,10 +88,21 @@ Now edit your `babel.config.js` file at your project root and add the `babel-plu
 ```js
 // filename: babel.config.js
 module.exports = function (api) {
-  api.cache(true)
+  api.cache(true);
   return {
-    presets: ['babel-preset-expo'],
+    presets: [['babel-preset-expo', { lazyImports: true }]],
     plugins: [
+      '@babel/transform-react-jsx-source',
+      [`@babel/plugin-transform-private-methods`, { loose: true }],
+      'babel-plugin-transform-typescript-metadata',
+      [
+        'module-resolver',
+        {
+          alias: {
+            '~': './src',
+          },
+        },
+      ],
       '@babel/plugin-syntax-import-assertions',
       [
         'babel-plugin-rewrite-require',
@@ -95,9 +113,11 @@ module.exports = function (api) {
           },
         },
       ],
+      // 'react-native-reanimated/plugin',
     ],
-  }
-}
+  };
+};
+
 ```
 
 Next, we can start adding the shims to the top of our `App.tsx` file. Read
@@ -133,7 +153,7 @@ npm install \
   @veramo/key-manager \
   @veramo/data-store \
   @veramo/kms-local \
-  @veramo/did-provider-ethr
+  @veramo/did-provider-peer
 ```
 
 ## Bootstrap Veramo
@@ -155,8 +175,8 @@ import { DIDManager } from '@veramo/did-manager'
 // This implements `IKeyManager`
 import { KeyManager } from '@veramo/key-manager'
 
-// This plugin allows us to create and manage `did:ethr` DIDs. (used by DIDManager)
-import { EthrDIDProvider } from '@veramo/did-provider-ethr'
+// This plugin allows us to create and manage `did:peer` DIDs (used by DIDManager)
+import { PeerDIDProvider } from '@veramo/did-provider-peer'
 
 // A key management system that uses a local database to store keys (used by KeyManager)
 import { KeyManagementSystem, SecretBox } from '@veramo/kms-local'
@@ -176,8 +196,6 @@ Create an Infura project ID and a database encryption key:
 // ... imports
 
 // CONSTANTS
-// You will need to get a project ID from infura https://www.infura.io
-const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 
 // This is a raw X25519 private key, provided as an example.
 // You can run `npx @veramo/cli config create-secret-key` in a terminal to generate a new key.
@@ -190,7 +208,7 @@ const DB_ENCRYPTION_KEY = '29739248cad1bd1a0fc4d9b75cd4d2990de535baf5caadfdf8d8f
 Since we're in an expo app, we'll use `expo-sqlite` as a database driver.
 
 ```bash
-npm i expo-sqlite
+npm i expo-sqlite@11.3.3
 ```
 
 Next initialize our sqlite database using TypeORM:
@@ -221,29 +239,24 @@ Finally, create the agent and add plugins for Key, Identifiers, Resolution, Cred
 
 // Veramo agent setup
 export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataStoreORM>({
-  plugins: [
-    new KeyManager({
-      store: new KeyStore(dbConnection),
-      kms: {
-        local: new KeyManagementSystem(new PrivateKeyStore(dbConnection, new SecretBox(DB_ENCRYPTION_KEY))),
-      },
-    }),
-    new DIDManager({
-      store: new DIDStore(dbConnection),
-      defaultProvider: 'did:ethr:goerli',
-      providers: {
-        'did:ethr:goerli': new EthrDIDProvider({
-          defaultKms: 'local',
-          network: 'goerli',
-          name: 'goerli',
-          rpcUrl: 'https://goerli.infura.io/v3/' + INFURA_PROJECT_ID,
-          gas: 1000001,
-          ttl: 31104001,
-        }),
-      },
-    }),
-  ],
-})
+    plugins: [
+      new KeyManager({
+        store: new KeyStore(dbConnection),
+        kms: {
+          local: new KeyManagementSystem(new PrivateKeyStore(dbConnection, new SecretBox(DB_ENCRYPTION_KEY))),
+        },
+      }),
+      new DIDManager({
+        store: new DIDStore(dbConnection),
+        defaultProvider: 'did:peer',
+        providers: {
+          'did:peer': new PeerDIDProvider({
+            defaultKms: 'local'
+          }),
+        },
+      }),
+    ],
+  })
 ```
 
 ### What we have so far.
@@ -303,7 +316,11 @@ const App = () => {
   // Add the new identifier to state
   const createIdentifier = async () => {
     const _id = await agent.didManagerCreate({
-      provider: 'did:ethr:goerli',
+      provider: 'did:peer',
+      options: {
+        num_algo: 2,
+        service: { id: '1', type: 'DIDCommMessaging', serviceEndpoint: "did:web:dev-didcomm-mediator.herokuapp.com", description: 'for messaging' } 
+      }
     })
     setIdentifiers((s) => s.concat([_id]))
   }
@@ -409,12 +426,10 @@ In this guide we:
 - created a very basic Veramo agent,
 - used that agent to create some DIDs and show them in a basic UI.
 
-These `did:ethr:goerli` identifiers we created
-are [Decentralized Identifiers(DIDs)](https://www.w3.org/TR/did-core/#a-simple-example) that use the `ethr` DID method
-and are anchored on the `goerli` network. This means that when someone wants to resolve these DIDs, the resolver uses
-that network to construct the corresponding DID documents. You may also have noticed that there was no transaction
-involved in creating these DIDs. You can read more about how this works by going through
-the [`did:ethr` spec](https://github.com/decentralized-identity/ethr-did-resolver/blob/master/doc/did-method-spec.md).
+These `did:peer` identifiers we created
+are [Decentralized Identifiers(DIDs)](https://www.w3.org/TR/did-core/#a-simple-example) that use the `peer` DID method. 
+You can read more about how this works by going through
+the [`did:peer` spec](https://identity.foundation/peer-did-method-spec/).
 
 Check out the next section to see how to set up your Veramo agent to resolve these DIDs and others and obtain their DID
 Documents.
