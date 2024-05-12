@@ -136,6 +136,10 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/uport-project/veramo',
             },
+            {
+              label: 'This website is powered by Netlify',
+              to: 'https://www.netlify.com/',
+            }
           ],
         },
       ],
