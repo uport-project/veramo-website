@@ -7,17 +7,15 @@ jobs:
   docs:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{secrets.GH_TOKEN}}
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
+      - uses: pnpm/action-setup@v4
       - name: 'setup node with cache'
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'pnpm'
       - run: pnpm add -g pnpm
       - name: 'build veramo API docs'
