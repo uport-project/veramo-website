@@ -138,6 +138,7 @@ And that's it! When you `yarn start` you should see a DID document being resolve
 
 ## Troubleshooting
 
+### Outdated templates
 If after running `create-react-app`, you see the following message:
 
 ```
@@ -146,6 +147,21 @@ Please note that global installs of create-react-app are no longer supported.
 You can fix this by running npm uninstall -g create-react-app or yarn global remove create-react-app before using create-react-app again.
 ```
 
+Errors
+
 Be sure to follow the instructions in that message, and then run the `npx` command again. If you still the
-message, [this answer may help](https://stackoverflow.com/questions/59188624/template-not-provided-using-create-react-app)
-.
+message, [this answer may help](https://stackoverflow.com/questions/59188624/template-not-provided-using-create-react-app).
+
+### Dependency issues
+
+Some of the Veramo packages that have to do with Verifiable Credentials (like `@veramo/credential-ld`) depend on a set of libraries from the `jsonld` ecosystem which weren't designed with the same multi-platform targets in mind. Forks of these dependencies exist, that work in all environments where Veramo should work, but you have to aid your package manager in finding them.
+
+The solution is to add a `resolutions` block to your `package.json` file and replacing the problematic dependencies:
+
+```json
+  "resolutions": {
+    "jsonld": "npm:@digitalcredentials/jsonld@^6.0.0"
+  },
+```
+
+See [this issue for more details](https://github.com/decentralized-identity/veramo/issues/1407)
