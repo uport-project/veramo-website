@@ -5,13 +5,15 @@ sidebar_label: Setup & Resolver
 ---
 
 Veramo core runs natively in the browser. The plugins you use also need to be browser compatible. This guide will set up
-a DID resolver to work in an application created with [Create React App](https://create-react-app.dev/) but uses [CRACO](https://craco.js.org/)
+a DID resolver to work in an application created with [Create React App](https://create-react-app.dev/) but
+uses [CRACO](https://craco.js.org/)
 to allow use of babel config required for ESM.
 It is possible to add your own identity, key management, and storage plugins that are browser compatible.
 
 #### Note
 
-A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-react-app-tutorial](https://github.com/veramolabs/veramo-react-app-tutorial)
+A finished example of this tutorial can be found on github
+at [https://github.com/veramolabs/veramo-react-app-tutorial](https://github.com/veramolabs/veramo-react-app-tutorial)
 
 ### Initialize app
 
@@ -85,17 +87,17 @@ Open `src/App.css` and add the following styles to the top of the file:
 
 ```css
 pre {
-  font-family: monospace;
-  white-space: pre;
+    font-family: monospace;
+    white-space: pre;
 }
 
 #result {
-  text-align: left;
-  width: 900px;
-  background-color: #24232d;
-  color: #25c2a0;
-  padding: 15px;
-  overflow: scroll;
+    text-align: left;
+    width: 900px;
+    background-color: #24232d;
+    color: #25c2a0;
+    padding: 15px;
+    overflow: scroll;
 }
 ```
 
@@ -139,6 +141,7 @@ And that's it! When you `yarn start` you should see a DID document being resolve
 ## Troubleshooting
 
 ### Outdated templates
+
 If after running `create-react-app`, you see the following message:
 
 ```
@@ -154,14 +157,21 @@ message, [this answer may help](https://stackoverflow.com/questions/59188624/tem
 
 ### Dependency issues
 
-Some of the Veramo packages that have to do with Verifiable Credentials (like `@veramo/credential-ld`) depend on a set of libraries from the `jsonld` ecosystem which weren't designed with the same multi-platform targets in mind. Forks of these dependencies exist, that work in all environments where Veramo should work, but you have to aid your package manager in finding them.
+Some of the Veramo packages that have to do with Verifiable Credentials (like `@veramo/credential-ld`) depend on a set
+of libraries from the `jsonld` ecosystem which weren't designed with the same multi-platform targets in mind. Forks of
+these dependencies exist, that work in all environments where Veramo should work, but you have to aid your package
+manager in finding them.
 
 The solution is to add a `resolutions` block to your `package.json` file and replacing the problematic dependencies:
 
-```json
+```json5
+// filename: package.json
+{
+  // ...
   "resolutions": {
     "jsonld": "npm:@digitalcredentials/jsonld@^6.0.0"
-  },
+  }
+}
 ```
 
-See [this issue for more details](https://github.com/decentralized-identity/veramo/issues/1407)
+Take a look at the [`Troubleshooting page`](../troubleshooting.md) for additional options.

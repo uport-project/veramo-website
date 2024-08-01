@@ -9,19 +9,13 @@ sidebar_label: Create Credentials
 The veramo list of "core" packages contains a W3C Credential plugin. This plugin allows us to
 create and verify credentials with JWT proof type.
 
-But first, add a `resolutions` block to your `package.json` file to prevent some problematic
-dependencies from causing issues
-(See [this issue](https://github.com/decentralized-identity/veramo/issues/1407) for more details):
+Now add the credential package:
 
-```js
-// filename: package.json
-  "resolutions": {
-    "jsonld": "npm:@digitalcredentials/jsonld@^6.0.0"
-  },
+```bash
+npm install @veramo/credential-w3c`
 ```
 
-Now add the credential package:
-`npm install @veramo/credential-w3c`
+> ℹ️ **Note:** In case you run into issues check out the [Troubleshooting](../troubleshooting.md) page for some options.
 
 ## Setup
 

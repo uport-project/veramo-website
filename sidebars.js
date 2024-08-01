@@ -83,6 +83,7 @@ module.exports = {
         'community/contributing',
       ],
     },
+    'troubleshooting'
     // {
     //   type: 'category',
     //   label: 'Resources',

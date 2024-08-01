@@ -8,9 +8,11 @@ This guide covers setting up an agent and creating identifiers in Node.
 
 #### Note
 
-A finished example of this tutorial can be found on github at [https://github.com/veramolabs/veramo-nodejs-tutorial](https://github.com/veramolabs/veramo-nodejs-tutorial)
+A finished example of this tutorial can be found on GitHub
+at [https://github.com/veramolabs/veramo-nodejs-tutorial](https://github.com/veramolabs/veramo-nodejs-tutorial)
 
-This tutorial has been updated to reflect the switch to ESM. Please take care to ensure you use proper ESM syntax in imports and commands. Also please carefully note `package.json` and `tsconfig.json`.
+This tutorial has been updated to reflect the switch to ESM. Please take care to ensure you use proper ESM syntax in
+imports and commands. Also, please carefully note `package.json` and `tsconfig.json`.
 
 Additional info regarding ESM can be found at the following links:
 [https://www.typescriptlang.org/docs/handbook/esm-node.html](https://www.typescriptlang.org/docs/handbook/esm-node.html)
@@ -19,8 +21,8 @@ Additional info regarding ESM can be found at the following links:
 
 ### Prerequisites
 
-You need to have Node v14 or later installed. In this example, we use yarn as the package manager, but you can also use
-npm.
+You need to have Node v14 or later installed. In this example, we use `yarn` as the package manager, but you can also
+use `npm`.
 
 Start by creating a directory for our project and initializing the npm package.
 
@@ -43,16 +45,7 @@ Install dev dependencies
 yarn add typescript ts-node --dev
 ```
 
-Next, add a `resolutions` block to your `package.json` file to prevent some problematic
-dependencies from causing issues
-(See [this issue](https://github.com/decentralized-identity/veramo/issues/1407) for more details):
-
-```js
-// filename: package.json
-  "resolutions": {
-    "jsonld": "npm:@digitalcredentials/jsonld@^6.0.0"
-  },
-```
+> ℹ️ **Note:** In case you run into issues check out the [Troubleshooting](../troubleshooting.md) page for some options.
 
 Install Veramo core and plugins
 
@@ -91,7 +84,8 @@ Add a tsconfig.json to your project
 
 ## Bootstrap Veramo
 
-We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts` and import the following dependencies:
+We bootstrap Veramo by creating a setup file and initializing the agent. Create a setup file in `src/veramo/setup.ts`
+and import the following dependencies:
 
 Note: In this file we'll use that secret key that we generated in an earlier step, so have it handy.
 
@@ -200,14 +194,16 @@ export const agent = createAgent<
 
 > **Note:**
 >
-> The types you specify for agent creation are optional, but may be very helpful when writing TypeScript, as long as they
+> The types you specify for agent creation are optional, but may be very helpful when writing TypeScript, as long as
+> they
 > match the plugins that you add to the agent.
 >
 > ```typescript
 > <IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver & ICredentialPlugin>
 > ```
 >
-> These types help the typescript compiler to figure out what plugin methods get exposed by the agent and what parameters
+> These types help the typescript compiler to figure out what plugin methods get exposed by the agent and what
+> parameters
 > those methods require. These types are also very helpful for development in VSCode, or other IDEs that provide
 > auto-complete.
 
@@ -215,7 +211,8 @@ That's one possible agent setup. Let's use it to create and list identifiers.
 
 ## App Logic
 
-Create 4 files `./src/create-identifier.ts`, `./src/list-identifiers.ts`, `./src/create-credential.ts` and `./src/verify-credential.ts`
+Create 4 files `./src/create-identifier.ts`, `./src/list-identifiers.ts`, `./src/create-credential.ts`
+and `./src/verify-credential.ts`
 
 Add the following code to `./src/list-identifiers.ts`
 
