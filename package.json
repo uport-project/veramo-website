@@ -20,8 +20,8 @@
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.1",
     "did-resolver": "^4.1.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "browserslist": {
     "production": [
@@ -42,9 +42,9 @@
     "@microsoft/api-extractor": "^7.34.8",
     "@tsconfig/docusaurus": "^1.0.7",
     "@types/node": "^20.0.0",
-    "@types/react": "^16.9.56",
-    "@types/react-helmet": "^6.1.0",
-    "@types/react-router-dom": "^5.1.6",
+    "@types/react": "^16.14.35",
+    "@types/react-helmet": "^6.1.6",
+    "@types/react-router-dom": "^5.3.3",
     "fs-extra": "^11.1.1",
     "path": "^0.12.7",
     "prettier": "^2.8.8",
@@ -55,5 +55,6 @@
   },
   "engines": {
     "node": ">18"
-  }
+  },
+  "packageManager": "pnpm@9.6.0"
 }
