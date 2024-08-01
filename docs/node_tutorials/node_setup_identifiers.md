@@ -43,10 +43,21 @@ Install dev dependencies
 yarn add typescript ts-node --dev
 ```
 
+Next, add a `resolutions` block to your `package.json` file to prevent some problematic
+dependencies from causing issues
+(See [this issue](https://github.com/decentralized-identity/veramo/issues/1407) for more details):
+
+```js
+// filename: package.json
+  "resolutions": {
+    "jsonld": "npm:@digitalcredentials/jsonld@^6.0.0"
+  },
+```
+
 Install Veramo core and plugins
 
 ```bash
-yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver did-resolver
+yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver
 ```
 
 Install `sqlite`
