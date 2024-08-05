@@ -46,6 +46,7 @@ dependencies:
 ```
 
 Different package managers use different configurations for such overrides:
+
 * [npm overrides](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#overrides)
 * [yarn v2+ resolutions](https://yarnpkg.com/configuration/manifest#resolutions)
 * [yarn v1 resolutions](https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/)
@@ -53,10 +54,10 @@ Different package managers use different configurations for such overrides:
 
 See [this issue for more details](https://github.com/decentralized-identity/veramo/issues/1407)
 
-### Expo apps
+### React Native / Expo apps
 
 If your project is a react-native app, then you will also benefit from replacing `isomorphic-webcrypto` with the [fork
-made by Sphereon](https://github.com/Sphereon-Opensource/isomorphic-webcrypto):
+maintained by Sphereon](https://github.com/Sphereon-Opensource/isomorphic-webcrypto):
 
 ```json5
 // filename: package.json
@@ -67,3 +68,10 @@ made by Sphereon](https://github.com/Sphereon-Opensource/isomorphic-webcrypto):
   }
 }
 ```
+
+#### Example React Native open-source production apps using Veramo
+
+Checkout the following to libraries to see how they have successfully configured their production-level React Native apps using Veramo:
+
+* [Sphereon mobile wallet](https://github.com/Sphereon-Opensource/mobile-wallet)
+* [Tonomy ID](https://github.com/Tonomy-Foundation/Tonomy-ID)
