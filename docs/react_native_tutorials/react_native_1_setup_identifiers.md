@@ -52,11 +52,12 @@ Some libraries that we will be depending on make use of the node `crypto` packag
 browsers. These are not yet available to react-native/expo environments out of the box, so there is a bit of ceremony to
 bundle everything properly.
 
-Also, the metro bundler that react-native uses doesn't yet support the `cjs` file extension (
-see [facebook/metro#535](https://github.com/facebook/metro/issues/535)) which is used by some libraries in the stack, so
+Also, the metro bundler that react-native uses doesn't support the `cjs` file extension until v0.72.0 (see [facebook/metro#535](https://github.com/facebook/metro/issues/535)) which is used by some libraries in the stack, so
 we have to configure these too.
 
-#### `cjs` extension
+> ℹ️ **Note:** In case you run into issues check out the [Troubleshooting](../troubleshooting.md) page for some options and example open-source React Native apps using Veramo.
+
+#### Support for ESM-only modules
 
 Create `metro.config.js` file and make sure it looks like this:
 
@@ -66,8 +67,10 @@ const { getDefaultConfig } = require('expo/metro-config')
 
 const config = getDefaultConfig(__dirname);
 
-config.resolver.sourceExts.push('cjs');
 config.resolver.unstable_enablePackageExports = true;
+
+// For React Native below v0.72.0 you need to also add:
+config.resolver.sourceExts.push('cjs');
 
 module.exports = config;
 ```
@@ -259,7 +262,7 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
   })
 ```
 
-### What we have so far.
+### What we have so far
 
 Let's take a moment to understand what's going on here.
 We created an `agent` object using the `createAgent` method and an array of `plugins`.
@@ -427,7 +430,7 @@ In this guide we:
 - used that agent to create some DIDs and show them in a basic UI.
 
 These `did:peer` identifiers we created
-are [Decentralized Identifiers(DIDs)](https://www.w3.org/TR/did-core/#a-simple-example) that use the `peer` DID method. 
+are [Decentralized Identifiers(DIDs)](https://www.w3.org/TR/did-core/#a-simple-example) that use the `peer` DID method.
 You can read more about how this works by going through
 the [`did:peer` spec](https://identity.foundation/peer-did-method-spec/).
 
