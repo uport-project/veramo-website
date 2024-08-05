@@ -71,7 +71,8 @@ maintained by Sphereon](https://github.com/Sphereon-Opensource/isomorphic-webcry
 
 #### Example React Native open-source production apps using Veramo
 
-Checkout the following to libraries to see how they have successfully configured their production-level React Native apps using Veramo:
+Checkout the following projects to see how they have successfully configured their production-level React Native apps using Veramo:
 
 * [Sphereon mobile wallet](https://github.com/Sphereon-Opensource/mobile-wallet)
 * [Tonomy ID](https://github.com/Tonomy-Foundation/Tonomy-ID)
+

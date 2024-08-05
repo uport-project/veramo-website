@@ -55,7 +55,7 @@ bundle everything properly.
 Also, the metro bundler that react-native uses doesn't support the `cjs` file extension until v0.72.0 (see [facebook/metro#535](https://github.com/facebook/metro/issues/535)) which is used by some libraries in the stack, so
 we have to configure these too.
 
-> ℹ️ **Note:** In case you run into issues check out the [Troubleshooting](../troubleshooting.md) page for some options.and example open-source React Native apps using veramo.
+> ℹ️ **Note:** In case you run into issues check out the [Troubleshooting](../troubleshooting.md) page for some options and example open-source React Native apps using Veramo.
 
 #### Support for ESM-only modules
 
@@ -383,8 +383,8 @@ migrations.
 
 To get around this issue, you can use one of the solutions from this thread:
 
-- <https://github.com/typeorm/typeorm/issues/4561#issuecomment-546010351>
-- <https://forums.expo.dev/t/change-minifierconfig-for-minify-uglify/36460>
+- https://github.com/typeorm/typeorm/issues/4561#issuecomment-546010351
+- https://forums.expo.dev/t/change-minifierconfig-for-minify-uglify/36460
 
 ## Troubleshooting
 
