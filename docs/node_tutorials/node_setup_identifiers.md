@@ -172,12 +172,12 @@ export const agent = createAgent<
     }),
     new DIDManager({
       store: new DIDStore(dbConnection),
-      defaultProvider: 'did:ethr:goerli',
+      defaultProvider: 'did:ethr:sepolia',
       providers: {
-        'did:ethr:goerli': new EthrDIDProvider({
+        'did:ethr:sepolia': new EthrDIDProvider({
           defaultKms: 'local',
-          network: 'goerli',
-          rpcUrl: 'https://goerli.infura.io/v3/' + INFURA_PROJECT_ID,
+          network: 'sepolia',
+          rpcUrl: 'https://sepolia.infura.io/v3/' + INFURA_PROJECT_ID,
         }),
       },
     }),
@@ -287,7 +287,7 @@ async function main() {
         id: 'did:web:example.com',
       },
       issuer: {
-        id: 'did:ethr:goerli:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16',
+        id: 'did:ethr:sepolia:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16',
       },
       type: ['VerifiableCredential'],
       '@context': ['https://www.w3.org/2018/credentials/v1'],
@@ -329,7 +329,7 @@ yarn ts-node --esm ./src/create-identifier.ts
 $ ts-node --esm ./src/create-identifier.ts
 New identifier created
 {
-  "did": "did:ethr:goerli:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16",
+  "did": "did:ethr:sepolia:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16",
   "controllerKeyId": "0450eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c1623b138f54e600141c5119f391eea730d3b1a089ed4ad35b25c2c646dee27a7bd",
   "keys": [
     {
@@ -349,7 +349,7 @@ New identifier created
     }
   ],
   "services": [],
-  "provider": "did:ethr:goerli",
+  "provider": "did:ethr:sepolia",
   "alias": "default"
 }
 ```
@@ -371,7 +371,7 @@ New credential created
     "id": "did:web:example.com"
   },
   "issuer": {
-    "id": "did:ethr:goerli:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16"
+    "id": "did:ethr:sepolia:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16"
   },
   "type": [
     "VerifiableCredential"
